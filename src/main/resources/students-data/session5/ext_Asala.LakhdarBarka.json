@@ -1,0 +1,52 @@
+{
+  "name": "ext_Asala.LakhdarBarka",
+  "session": 5,
+  "scripts": [],
+  "commands": [
+    {
+      "command": "nano",
+      "args": "tp5bis_exo4.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp5bis_exo3.sh",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "./tp5bis_exo3.sh",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "./tp5bis_exo4.sh",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp5bis_exo5.sh",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo1.sh",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo1.sh",
+      "score": 1
+    },
+    {
+      "command": "o",
+      "args": "tp6_exo1.sh",
+      "score": 0
+    },
+    {
+      "command": "nano",
+      "args": "tp5bis_exo5.sh",
+      "score": 1
+    }
+  ]
+}

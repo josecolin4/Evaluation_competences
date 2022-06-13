@@ -1,0 +1,93 @@
+{
+  "name": "ext_Leopold.Toure",
+  "session": 5,
+  "scripts": [
+    [
+      "read n1\n",
+      "if test n1 -gt 5\n",
+      "\tthen \n",
+      "\t\tif test n1 -lt 10 \n",
+      "\t\t\tthen echo La valeur est comprise entre 5 et 10. \n",
+      "\t\telse \n",
+      "\t\t\techo La valeur $n1 n'est pas comprise entre 5 et 10.\n",
+      "\telse\n",
+      "\t\techo La Valeur $n1 n'est pas comprise entre 5 et 10\n",
+      "\t\t\n",
+      "\n",
+      "\t\n"
+    ],
+    [
+      "read n1\n",
+      "if test n1 -gt 5\n",
+      "\tthen \n",
+      "\t\tif test n1 -lt 10 \n",
+      "\t\t\tthen echo La valeur est comprise entre 5 et 10. \n",
+      "\t\telse \n",
+      "\t\t\techo La valeur $n1 n'est pas comprise entre 5 et 10.\n",
+      "\telse\n",
+      "\t\techo La Valeur $n1 n'est pas comprise entre 5 et 10\n"
+    ]
+  ],
+  "commands": [
+    {
+      "command": "nano",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "chmod",
+      "args": "tp6_exo2.sh u+x",
+      "score": 0
+    },
+    {
+      "command": "chmod",
+      "args": "u+X tp6_exo2.sh",
+      "score": 0
+    },
+    {
+      "command": "chmod",
+      "args": "u+X tp6_exo2",
+      "score": 0
+    },
+    {
+      "command": "chmod",
+      "args": "u+X tp6_exo1",
+      "score": 0
+    },
+    {
+      "command": "ls",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "chmod",
+      "args": "u+x tp6_exo1",
+      "score": 0
+    },
+    {
+      "command": "chmod",
+      "args": "u+x tp6_exo1.sh",
+      "score": 1
+    },
+    {
+      "command": "l",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo1.sh",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo1.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo1.sh",
+      "args": "",
+      "score": 1
+    }
+  ]
+}

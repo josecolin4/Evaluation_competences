@@ -1,0 +1,268 @@
+{
+  "name": "ext_Leo.Dubosc",
+  "session": 5,
+  "scripts": [
+    [
+      "#!/bin/bash\n",
+      "\n",
+      "read $nombre\n",
+      "\n",
+      "if test $nombre -lt expr 5\n",
+      "elif test $nombre -gt expr 10\n",
+      "then echo $nombre se trouve entre 5 et 10 \n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "\n",
+      "read $nombre\n",
+      "\n",
+      "if test $nombre -lt expr 5\n",
+      "elif test $nombre -gt expr 10\n",
+      "then echo $nombre se trouve entre 5 et 10 \n",
+      "elif\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "\n",
+      "read $nombre\n",
+      "\n",
+      "if test $nombre -lt expr 5\n",
+      "elif test $nombre -gt expr 10\n",
+      "then echo $nombre se trouve entre 5 et 10 \n",
+      "fi\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "\n",
+      "\n",
+      "if test $1 -lt expr 5\n",
+      "elif test $1 -gt expr 10\n",
+      "then echo $1 se trouve entre 5 et 10 \n",
+      "fi\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "\n",
+      "read $1\n",
+      "if test $1 -lt expr 5\n",
+      "elif test $1 -gt expr 10\n",
+      "then echo $1 se trouve entre 5 et 10 \n",
+      "fi\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "\n",
+      "read $1\n",
+      "if test $1 -lt expr 5\n",
+      "-a  test $1 -gt expr 10\n",
+      "then echo $1 se trouve entre 5 et 10 \n",
+      "fi\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "\n",
+      "read $1\n",
+      "if test $1 -lt expr 5\n",
+      "-a if  test $1 -gt expr 10\n",
+      "then echo $1 se trouve entre 5 et 10 \n",
+      "fi\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "\n",
+      "read 1\n",
+      "if test $1 -lt expr 5\n",
+      "-a if  test $1 -gt expr 10\n",
+      "then echo $1 se trouve entre 5 et 10 \n",
+      "fi\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "\n",
+      "\n",
+      "if test $* -ge 4 -a $* -le 10\n",
+      "\n",
+      "\n",
+      "then\n",
+      "\n",
+      "\n",
+      "echo \"la valeur $* est comprise entre 5 et 10\"\n",
+      "\n",
+      "\n",
+      "else\n",
+      "\n",
+      "\n",
+      "echo \"La valeur $* n'est pas comprise entre 5 et 10\"\n",
+      "\n",
+      "\n",
+      "fi\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "\n",
+      "\n",
+      "if [$* -ge 4 -a $* -le 10]\n",
+      "\tthen\n",
+      "\t\techo \"la valeur $* est comprise entre 5 et 10\"\n",
+      "\telse\n",
+      "\t\techo \"La valeur $* n'est pas comprise entre 5 et 10\"\n",
+      "fi\n"
+    ]
+  ],
+  "commands": [
+    {
+      "command": "nano",
+      "args": "tp6_exo1.sh",
+      "score": 1
+    },
+    {
+      "command": "chmod",
+      "args": "tp6_exo1.sh ugo + rwx",
+      "score": 0
+    },
+    {
+      "command": "chmod",
+      "args": "tp6_exo1.sh ugo+rwx",
+      "score": 0
+    },
+    {
+      "command": "chmod",
+      "args": "ugo+rwx tp6_exo1.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo1.sh",
+      "args": "",
+      "score": 0
+    },
+    {
+      "command": "./tp6_exo1.sh",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo1.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo1.sh",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo1.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo1.sh",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo1.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo1.sh",
+      "args": "",
+      "score": 0
+    },
+    {
+      "command": "./tp6_exo1.sh",
+      "args": "7",
+      "score": 0
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo1.sh",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo2.sh",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo1.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo1.sh",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo1.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo1.sh",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo1.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo1.sh",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo1.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo1.sh",
+      "args": "",
+      "score": 0
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo1.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo1.sh",
+      "args": "",
+      "score": 0
+    },
+    {
+      "command": "./tp6_exo1.sh",
+      "args": "7",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo1.1.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo1.1.sh",
+      "args": "7",
+      "score": 0
+    },
+    {
+      "command": "chmod",
+      "args": "ugo+rwx tp6_exo1.1.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo1.1.sh",
+      "args": "7",
+      "score": 0
+    }
+  ]
+}

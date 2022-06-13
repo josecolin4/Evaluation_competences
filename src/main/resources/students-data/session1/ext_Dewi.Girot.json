@@ -1,0 +1,2000 @@
+{
+  "name": "ext_Dewi.Girot",
+  "session": 1,
+  "scripts": [
+    [
+      "#!/bin/bash\n",
+      "\n",
+      "echo cours\n",
+      "\n",
+      "cours=unix\n",
+      "\n",
+      "echo $cours\n",
+      "\n",
+      "echo je suis au cours $cours\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "\n",
+      "debutTexte='<'\n",
+      "\n",
+      "echo debutTexte\n",
+      "\n",
+      "finTexte='>'\n",
+      "\n",
+      "echo finTexte\n",
+      "\n",
+      "echo $debutTexte   $finTexte\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "\n",
+      "debutTexte='<'\n",
+      "\n",
+      "echo debutTexte\n",
+      "\n",
+      "finTexte='>'\n",
+      "\n",
+      "echo finTexte\n",
+      "\n",
+      "echo $debutTexte $USER  $finTexte\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "\n",
+      "echo 'Mon nom de login est :'\n",
+      "\n",
+      "debutTexte='<'\n",
+      "\n",
+      "echo debutTexte\n",
+      "\n",
+      "finTexte='>'\n",
+      "\n",
+      "echo finTexte\n",
+      "\n",
+      "echo $debutTexte $USER  $finTexte\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "\n",
+      "echo 'Mon nom de login est :'\n",
+      "\n",
+      "debutTexte='<'\n",
+      "\n",
+      "\n",
+      "finTexte='>'\n",
+      "\n",
+      "echo $debutTexte $USER  $finTexte\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "\n",
+      "debutTexte='<'\n",
+      "\n",
+      "finTexte='>'\n",
+      "\n",
+      "echo 'Mon nom de login est :' $debutTexte $USER  $finTexte\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "\n",
+      "debutTexte='<'\n",
+      "\n",
+      "finTexte='>'\n",
+      "\n",
+      "echo 'Mon nom de login est :' $debutTexte $USER $finTexte\n",
+      "\n",
+      "echo 'Mon shell est :' $debutTexte $SHELL $finTexte\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "\n",
+      "debutTexte='<'\n",
+      "\n",
+      "finTexte='>'\n",
+      "\n",
+      "echo 'Mon nom de login est :' $debutTexte $USER $finTexte\n",
+      "\n",
+      "echo 'Mon shell est :' $debutTexte $SHELL $finTexte\n",
+      "\n",
+      "echo 'Les variables du Shell sont :'\n",
+      "\n",
+      "echo $env\n",
+      "\n",
+      "\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "\n",
+      "debutTexte='<'\n",
+      "\n",
+      "finTexte='>'\n",
+      "\n",
+      "echo 'Mon nom de login est :' $debutTexte $USER $finTexte\n",
+      "\n",
+      "echo 'Mon shell est :' $debutTexte $SHELL $finTexte\n",
+      "\n",
+      "echo 'Les variables du Shell sont :'\n",
+      "\n",
+      "echo $env\n",
+      "\n",
+      "echo 'Celles d\u00e2\u20ac\u2122environnement sont :'\n",
+      "\n",
+      "echo $env\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "\n",
+      "debutTexte='<'\n",
+      "\n",
+      "finTexte='>'\n",
+      "\n",
+      "echo 'Mon nom de login est :' $debutTexte $USER $finTexte\n",
+      "\n",
+      "echo 'Mon shell est :' $debutTexte $SHELL $finTexte\n",
+      "\n",
+      "echo 'Les variables du Shell sont :'\n",
+      "\n",
+      "echo $*SHELL\n",
+      "\n",
+      "echo 'Celles d\u00e2\u20ac\u2122environnement sont :'\n",
+      "\n",
+      "echo $*env\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "\n",
+      "debutTexte='<'\n",
+      "\n",
+      "finTexte='>'\n",
+      "\n",
+      "echo 'Mon nom de login est :' $debutTexte $USER $finTexte\n",
+      "\n",
+      "echo 'Mon shell est :' $debutTexte $SHELL $finTexte\n",
+      "\n",
+      "echo 'Les variables du Shell sont :'\n",
+      "\n",
+      "echo $debutTexte $*SHELL $finTexte\n",
+      "\n",
+      "echo 'Celles d\u00e2\u20ac\u2122environnement sont :'\n",
+      "\n",
+      "echo $debutTexte $*env $finTexte\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "\n",
+      "debutTexte='<'\n",
+      "\n",
+      "finTexte='>'\n",
+      "\n",
+      "echo 'Mon nom de login est :' $debutTexte $USER $finTexte\n",
+      "\n",
+      "echo 'Mon shell est :' $debutTexte $SHELL $finTexte\n",
+      "\n",
+      "echo 'Les variables du Shell sont :'\n",
+      "\n",
+      "echo $debutTexte set $finTexte\n",
+      "\n",
+      "echo 'Celles d\u00e2\u20ac\u2122environnement sont :'\n",
+      "\n",
+      "echo $debutTexte env $finTexte\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "\n",
+      "echo Cher utilisateur quel est ton pr\u00c3\u00a9nom \\?\n",
+      "\n",
+      "read prenom\n",
+      "\n",
+      "echo Ravi de te connaitre, $prenom\n",
+      "\n",
+      "echo Quel est ton nom et ton age \\?\n",
+      "\n",
+      "read nom age\n",
+      "\n",
+      "echo Tu es $prenom $nom et tu as $age ans, n\\'est-ce\n",
+      "\n",
+      "pas \\?\n",
+      "\n",
+      "read reponse\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "\n",
+      "echo Cher utilisateur quel est ton pr\u00c3\u00a9nom \\?\n",
+      "\n",
+      "read prenom\n",
+      "\n",
+      "echo Ravi de te connaitre, $prenom\n",
+      "\n",
+      "echo Quel est ton nom et ton age \\?\n",
+      "\n",
+      "read nom age\n",
+      "\n",
+      "echo Tu es $prenom $nom et tu as $age ans, n\\'est-ce pas \\?\n",
+      "\n",
+      "read reponse\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "\n",
+      "echo Je suis le script Shell $0\n",
+      "\n",
+      "echo Mes arguments sont $*\n",
+      "\n",
+      "echo Le premier argument est $1\n",
+      "\n",
+      "echo Le deuxi\u00c3\u00a8me argument est $2\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "\n",
+      "echo Je suis le script Shell $0\n",
+      "\n",
+      "echo Mes arguments sont $*\n",
+      "\n",
+      "echo Le premier argument est $1\n",
+      "\n",
+      "echo Le deuxi\u00c3\u00a8me argument est $2\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "\n",
+      "echo Combien de param\u00c3\u00a8tre va poss\u00c3\u00a9der le programme ?/\n",
+      "\n",
+      "read n\n",
+      "\n",
+      "echo Le scripte '<' $0 '>'\n",
+      "\n",
+      "echo poss\u00c3\u00a8de $n 'parametre(s), que voici :'\n",
+      "\n",
+      "\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "\n",
+      "echo Combien de param\u00c3\u00a8tre va poss\u00c3\u00a9der le programme ?/\n",
+      "\n",
+      "read n\n",
+      "\n",
+      "echo Le scripte '<'$0'>' poss\u00c3\u00a8de '<'$n'>' 'parametre(s), que voici :' '<''>'\n",
+      "\n",
+      "\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "\n",
+      "echo Le scripte '<'$0'>' poss\u00c3\u00a8de '<'$#'>' 'parametre(s), que voici :' '<'$*'>'\n",
+      "\n",
+      "\n"
+    ],
+    [
+      "#!/bin/bash\n"
+    ],
+    [
+      "Contenu de F1\n"
+    ],
+    [
+      "contenue de F2\n"
+    ],
+    [
+      "Contenu de F1\n",
+      "contenue de F2\n"
+    ],
+    [
+      "Contenu de F1\n",
+      "contenue de F2\n",
+      "Contenu de F1\n",
+      "contenue de F2\n"
+    ],
+    [
+      "\n"
+    ],
+    [
+      "Contenu de F1\n",
+      "contenue de F2\n",
+      "Contenu de F1\n",
+      "contenue de F2\n"
+    ],
+    [
+      "echo F1 Contenu de F1\n",
+      "echo contenue de F2\n",
+      "echo Contenu de F1 \n",
+      "contenue de F2\n"
+    ],
+    [
+      "echo F1 Contenu de F1\n",
+      "echo contenue de F2\n",
+      "echo Contenu de F1 contenue de F2\n"
+    ],
+    [
+      "cat $F1 > $F3\n",
+      "\n",
+      "cat $F2 >> $F3\n",
+      "\n",
+      "echo $F1\n",
+      "\n",
+      "echo $F2\n",
+      "\n",
+      "echo $F3\n"
+    ],
+    [
+      "cat $F1 > $F3\n",
+      "\n",
+      "cat $F2 >> $F3\n",
+      "\n",
+      "echo $F1 $1\n",
+      "\n",
+      "echo $F2 $2\n",
+      "\n",
+      "echo $F3 $3\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "\n",
+      "cat $F1 > $F3\n",
+      "\n",
+      "cat $F2 >> $F3\n",
+      "\n",
+      "echo $F1 $1\n",
+      "\n",
+      "echo $F2 $2\n",
+      "\n",
+      "echo $F3 $3\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "\n",
+      "cat $F1 > $F3\n",
+      "\n",
+      "cat $F2 > $F3\n",
+      "\n",
+      "echo $F1 $1\n",
+      "\n",
+      "echo $F2 $2\n",
+      "\n",
+      "echo $F3 $3\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "\n",
+      "echo $F1 $1\n",
+      "\n",
+      "echo $F2 $2\n",
+      "\n",
+      "cat $F1 $F2 > $F3\n",
+      "\n",
+      "echo $F3 $3\n",
+      "\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "\n",
+      "echo $F1 $1\n",
+      "\n",
+      "echo $F2 $2\n",
+      "\n",
+      "cat F1 F2 > F3\n",
+      "\n",
+      "echo $F3 $3\n",
+      "\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "\n",
+      "echo F1 $1\n",
+      "\n",
+      "echo F2 $2\n",
+      "\n",
+      "cat F1 F2 > F3\n",
+      "\n",
+      "echo F3 $3\n",
+      "\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "\n",
+      "echo $F1 $1\n",
+      "\n",
+      "echo $F2 $2\n",
+      "\n",
+      "cat $F1 $F2 > $F3\n",
+      "\n",
+      "echo $F3 $3\n",
+      "\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "\n",
+      "echo $F1 $1\n",
+      "\n",
+      "echo $F2 $2\n",
+      "\n",
+      "cat $'../F1' $'../F2' > $F3\n",
+      "\n",
+      "echo $F3 $3\n",
+      "\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "\n",
+      "echo $F1 $1\n",
+      "\n",
+      "echo $F2 $2\n",
+      "\n",
+      "cat $F1 $F2 > $F3\n",
+      "\n",
+      "echo $F3 $3\n",
+      "\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "\n",
+      "echo Nous sommes le `date`\n",
+      "\n",
+      "echo Nous sommes le Mon Nov 16 15:20:46 CET 2020\n",
+      "\n",
+      "echo Ceci est\n",
+      "\n",
+      "echo une tr\u00c3\u00a8s\n",
+      "\n",
+      "echo longue phrase...\n",
+      "\n",
+      "echo Voici une \u00c3\u00a9toile : *\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "\n",
+      "echo Nous sommes le `date`\n",
+      "\n",
+      "echo Ceci est\n",
+      "\n",
+      "echo une tr\u00c3\u00a8s\n",
+      "\n",
+      "echo longue phrase...\n",
+      "\n",
+      "echo Voici une \u00c3\u00a9toile : '*'\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "\n",
+      "echo $1+1\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "\n",
+      "echo '$1+1'\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "\n",
+      "echo $1+1\n",
+      "\n",
+      "somme=$1+1\n",
+      "\n",
+      "echo somme\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "\n",
+      "echo $1+1\n",
+      "\n",
+      "somme=$1+1\n",
+      "\n",
+      "echo $somme\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "\n",
+      "somme=($1+1)\n",
+      "\n",
+      "echo $somme\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "\n",
+      "somme=[$1+1]\n",
+      "\n",
+      "echo $somme\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "\n",
+      "somme=awk ($1+1)\n",
+      "\n",
+      "echo $somme\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "\n",
+      "somme=awk[$1+1]\n",
+      "\n",
+      "echo $somme\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "\n",
+      "somme=(awk{$1+1})\n",
+      "\n",
+      "echo $somme\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "\n",
+      "somme=$1+1\n",
+      "\n",
+      "echo $somme\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "\n",
+      "somme=$(($1+1))\n",
+      "\n",
+      "echo $somme\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "\n",
+      "\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "\n",
+      "export PATH=$PATH:/~\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "\n",
+      "export PATH=$PATH:\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "\n",
+      "export PATH=$PATH:/test\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "\n",
+      "export PATH=$PATH:/~/test\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "\n",
+      "export PATH=$PATH:/usr/local/test\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "\n",
+      "export PATH=$PATH: /usr/local/test\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "\n",
+      "export PATH=$PATH:/usr/local/test\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "\n",
+      "export PATH=$PATH:/usr/local/sbin/test\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "\n",
+      "export $PATH:/usr/local/sbin/test\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "\n",
+      "export PATH=$PATH:/usr/local/sbin/test\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "\n",
+      "echo $F1 \n",
+      "\n",
+      "echo $F2 \n",
+      "\n",
+      "cat $F1 $F2 > $F3\n",
+      "\n",
+      "echo $F3 $3\n",
+      "\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "\n",
+      "echo $./F1\n",
+      "\n",
+      "echo $./F2\n",
+      "\n",
+      "cat $F1 $F2 > $F3\n",
+      "\n",
+      "echo $F3 $3\n",
+      "\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "\n",
+      "echo $F1\n",
+      "\n",
+      "echo $F2\n",
+      "\n",
+      "cat $F1 $F2 >> $F3\n",
+      "\n",
+      "echo $F3 $3\n",
+      "\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "\n",
+      "echo $F1 $1\n",
+      "\n",
+      "echo $F2 $2\n",
+      "\n",
+      "cat $F1 $F2 >> $F3\n",
+      "\n",
+      "echo $F3 $3\n",
+      "\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "\n",
+      "echo ./F1 $1\n",
+      "\n",
+      "echo ./F2 $2\n",
+      "\n",
+      "cat $F1 $F2 >> $F3\n",
+      "\n",
+      "echo $F3 $3\n",
+      "\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "\n",
+      "cat $1 $2 >> $3\n",
+      "\n",
+      "echo $F3 $3\n",
+      "\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "\n",
+      "echo $1\n",
+      "\n",
+      "echo $2\n",
+      "\n",
+      "cat $1 $2 >> $3\n",
+      "\n",
+      "echo $F3 $3\n",
+      "\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "\n",
+      "echo $1\n",
+      "\n",
+      "echo $2\n",
+      "\n",
+      "cat $1 $2 > $3\n",
+      "\n",
+      "echo $F3 $3\n",
+      "\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "\n",
+      "echo $1\n",
+      "\n",
+      "echo $2\n",
+      "\n",
+      "cat $1 > $3\n",
+      "\n",
+      "cat $2 > $3 \n",
+      "\n",
+      "echo $F3 $3\n",
+      "\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "\n",
+      "echo $1\n",
+      "\n",
+      "echo $2\n",
+      "\n",
+      "cat $1 > $3\n",
+      "\n",
+      "$cat $2 > $3 \n",
+      "\n",
+      "echo $F3 $3\n",
+      "\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "\n",
+      "cr\u00c3\u00a9er un\n",
+      "\n",
+      "script Shell tp5_exo6.sh qui concat\u00c3\u00a8ne\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "\n",
+      "echo $*\n",
+      "\n",
+      "echo Quelle valeur voulez vous mettre dans F1 /?\n",
+      "\n",
+      "read $1\n",
+      "\n",
+      "echo Quelle valeur voulez vous mettre dans F2 /?\n",
+      "\n",
+      "read $2\n",
+      "\n",
+      "F3=(($1+$2))\n",
+      "\n",
+      "echo F3\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "\n",
+      "echo $*\n",
+      "\n",
+      "echo Quelle valeur voulez vous mettre dans F1\n",
+      "\n",
+      "read $1\n",
+      "\n",
+      "echo Quelle valeur voulez vous mettre dans F2\n",
+      "\n",
+      "read $2\n",
+      "\n",
+      "F3=(($1+$2))\n",
+      "\n",
+      "echo F3\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "\n",
+      "echo $*\n",
+      "\n",
+      "echo Quelle valeur voulez vous mettre dans F1\n",
+      "\n",
+      "read 1\n",
+      "\n",
+      "echo Quelle valeur voulez vous mettre dans F2\n",
+      "\n",
+      "read 2\n",
+      "\n",
+      "F3=((1+2))\n",
+      "\n",
+      "echo F3\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "\n"
+    ],
+    [
+      "echo Je suis le script Shell $0\n",
+      "\n",
+      "\n",
+      "echo Mes arguments sont $*\n",
+      "\n",
+      "\n",
+      "echo Le premier argument est $1\n",
+      "\n",
+      "\n",
+      "echo Le deuxi\u00c3\u00a8me argument est $2\n"
+    ],
+    [
+      "echo Mes arguments sont $*\n",
+      "\n",
+      "\n",
+      "echo Le premier argument est $1\n",
+      "\n",
+      "\n",
+      "echo Le deuxi\u00c3\u00a8me argument est $2\n"
+    ],
+    [
+      "echo Mes arguments sont $*\n",
+      "\n",
+      "echo F1 est $1\n",
+      "\n",
+      "echo F2 est $2\n"
+    ],
+    [
+      "echo Mes arguments sont $*\n",
+      "\n",
+      "echo F1 est $1\n",
+      "\n",
+      "echo F2 est $2\n",
+      "\n",
+      "echo F3 est $F3\n",
+      "\n",
+      "somme=$(($1+$2))\n"
+    ],
+    [
+      "echo Mes arguments sont $*\n",
+      "\n",
+      "echo F1 est $1\n",
+      "\n",
+      "echo F2 est $2\n",
+      "\n",
+      "echo F3 est $3\n",
+      "\n",
+      "somme=$(($1+$2))\n",
+      "\n",
+      "$3=somme\n",
+      "\n",
+      "echo $3\n"
+    ],
+    [
+      "echo Mes arguments sont $*\n",
+      "\n",
+      "echo F1 est $1\n",
+      "\n",
+      "echo F2 est $2\n",
+      "\n",
+      "echo F3 est $3\n",
+      "\n",
+      "somme=$(($1+$2))\n",
+      "\n",
+      "$3=$somme\n",
+      "\n",
+      "echo $3\n"
+    ],
+    [
+      "echo Mes arguments sont $*\n",
+      "\n",
+      "echo F1 est $1\n",
+      "\n",
+      "echo F2 est $2\n",
+      "\n",
+      "echo F3 est $3\n",
+      "\n",
+      "somme=$(($1+$2))\n",
+      "\n",
+      "$3=$somme\n",
+      "\n",
+      "echo $3\n"
+    ],
+    [
+      "echo Mes arguments sont $*\n",
+      "\n",
+      "echo F1 est $1\n",
+      "\n",
+      "echo F2 est $2\n",
+      "\n",
+      "echo F3 est $3\n",
+      "\n",
+      "somme=$(($1+$2))\n",
+      "\n",
+      "echo $somme\n"
+    ],
+    [
+      "echo Mes arguments sont $*\n",
+      "\n",
+      "echo F1 est $1\n",
+      "\n",
+      "echo F2 est $2\n",
+      "\n",
+      "somme=$(($1+$2))\n",
+      "\n",
+      "echo F3 est $somme\n"
+    ]
+  ],
+  "profile": [
+    {
+      "name": "Afficher_la_valeur_dune_variable",
+      "mastery": 0.8,
+      "trust": 1
+    },
+    {
+      "name": "Affecter_une_valeur_\u00c3\u00a0_un_ou_plusieurs_param\u00c3\u00a8tres_de_position",
+      "mastery": 0,
+      "trust": 0
+    },
+    {
+      "name": "Modifier_la_valeur_de_une_variable",
+      "mastery": 0.8,
+      "trust": 1
+    },
+    {
+      "name": "Renommer_un_fichier_Unix",
+      "mastery": 0,
+      "trust": 0
+    },
+    {
+      "name": "Affecter_une_valeur_\u00c3\u00a0_une_variable",
+      "mastery": 0.8,
+      "trust": 1
+    },
+    {
+      "name": "Tester_l\u00c3\u00a9tat_dun_fichier",
+      "mastery": 0,
+      "trust": 0
+    },
+    {
+      "name": "Cr\u00c3\u00a9er_un_fichier_Unix",
+      "mastery": 0.8,
+      "trust": 1
+    },
+    {
+      "name": "Afficher_le_manuel_dune_commande_Unix",
+      "mastery": 0,
+      "trust": 0
+    },
+    {
+      "name": "Modifier_les_droits_dun_fichier_Unix",
+      "mastery": 0.6,
+      "trust": 1
+    },
+    {
+      "name": "Afficher_le_contenu_de_un_fichier_Unix",
+      "mastery": 0,
+      "trust": 0
+    },
+    {
+      "name": "Modifier_un_fichier_Unix",
+      "mastery": 0,
+      "trust": 0
+    },
+    {
+      "name": "Obtenir_la_valeur_affect\u00c3\u00a9e_\u00c3\u00a0_une_variable",
+      "mastery": 0.8,
+      "trust": 1
+    },
+    {
+      "name": "Comparer_des_nombres",
+      "mastery": 0,
+      "trust": 0
+    },
+    {
+      "name": "R\u00c3\u00a9cup\u00c3\u00a9rer_des_donn\u00c3\u00a9es_saisies_par_lutilisateur",
+      "mastery": 0.6,
+      "trust": 1
+    },
+    {
+      "name": "Obtenir_la_valeur_de_un_ou_plusieurs_param\u00c3\u00a8tres",
+      "mastery": 0.6,
+      "trust": 1
+    },
+    {
+      "name": "Banaliser_un_caract\u00c3\u00a8re",
+      "mastery": 0.6,
+      "trust": 1
+    },
+    {
+      "name": "Comparer_des_cha\u00c3\u00aenes_de_caract\u00c3\u00a8res",
+      "mastery": 0,
+      "trust": 0
+    },
+    {
+      "name": "Supprimer_un_fichier_Unix",
+      "mastery": 0,
+      "trust": 0
+    },
+    {
+      "name": "Interpr\u00c3\u00a9ter_de_fa\u00c3\u00a7on_num\u00c3\u00a9rique_la_valeur_dune_variable",
+      "mastery": 0.2,
+      "trust": 1
+    },
+    {
+      "name": "Conna\u00c3\u00aetre_les_op\u00c3\u00a9rateurs_de_comparaison_num\u00c3\u00a9rique",
+      "mastery": 0,
+      "trust": 0
+    },
+    {
+      "name": "Conna\u00c3\u00aetre_la_notion_de_redirection_entr\u00c3\u00a9e_et_sortie",
+      "mastery": 0.4,
+      "trust": 1
+    },
+    {
+      "name": "Conna\u00c3\u00aetre_les_commandes_de_base_Unix",
+      "mastery": 0,
+      "trust": 0
+    },
+    {
+      "name": "Conna\u00c3\u00aetre_la_syntaxe_dollar(cmd)",
+      "mastery": 0,
+      "trust": 0
+    },
+    {
+      "name": "Conna\u00c3\u00aetre_la_notion_de_droits_sous_Unix",
+      "mastery": 0.6,
+      "trust": 1
+    },
+    {
+      "name": "Conna\u00c3\u00aetre_la_notion_de_banalisation_de_caract\u00c3\u00a8res",
+      "mastery": 0.8,
+      "trust": 1
+    },
+    {
+      "name": "Conna\u00c3\u00aetre_les_variables_denvironnement",
+      "mastery": 0.6,
+      "trust": 1
+    },
+    {
+      "name": "Conna\u00c3\u00aetre_la_syntaxe_de_instruction_case",
+      "mastery": 0,
+      "trust": 0
+    },
+    {
+      "name": "Conna\u00c3\u00aetre_la_syntaxe_de_instruction_seq",
+      "mastery": 0,
+      "trust": 0
+    },
+    {
+      "name": "Conna\u00c3\u00aetre_le_caract\u00c3\u00a8re_de_substitution_de_commande",
+      "mastery": 0.2,
+      "trust": 1
+    },
+    {
+      "name": "Conna\u00c3\u00aetre_la_syntaxe_IfThenElifElse",
+      "mastery": 0,
+      "trust": 0
+    },
+    {
+      "name": "Conna\u00c3\u00aetre_la_syntaxe_de_instruction_set",
+      "mastery": 0,
+      "trust": 0
+    },
+    {
+      "name": "Conna\u00c3\u00aetre_la_notion_de_variable",
+      "mastery": 0.8,
+      "trust": 1
+    },
+    {
+      "name": "Conna\u00c3\u00aetre_la_syntaxe_de_instruction_while",
+      "mastery": 0,
+      "trust": 0
+    },
+    {
+      "name": "Conna\u00c3\u00aetre_la_notion_de_param\u00c3\u00a8tre",
+      "mastery": 0.6,
+      "trust": 1
+    },
+    {
+      "name": "Conna\u00c3\u00aetre_la_syntaxe_dollar((__))",
+      "mastery": 0,
+      "trust": 0
+    },
+    {
+      "name": "Conna\u00c3\u00aetre_les_op\u00c3\u00a9rateurs_de_comparaison_de_caract\u00c3\u00a8res",
+      "mastery": 0,
+      "trust": 0
+    },
+    {
+      "name": "Conna\u00c3\u00aetre_la_notion_de_fichier_Unix",
+      "mastery": 0.8,
+      "trust": 1
+    },
+    {
+      "name": "Conna\u00c3\u00aetre_la_syntaxe_CrochetCrochet",
+      "mastery": 0,
+      "trust": 0
+    },
+    {
+      "name": "Conna\u00c3\u00aetre_les_variables_sp\u00c3\u00a9ciales",
+      "mastery": 0.6,
+      "trust": 1
+    },
+    {
+      "name": "Conna\u00c3\u00aetre_la_syntaxe_de_instruction_for",
+      "mastery": 0,
+      "trust": 0
+    },
+    {
+      "name": "Conna\u00c3\u00aetre_la_notion_de_expression_arithm\u00c3\u00a9tique",
+      "mastery": 0,
+      "trust": 0
+    },
+    {
+      "name": "Conna\u00c3\u00aetre_les_op\u00c3\u00a9rateurs_logiques",
+      "mastery": 0,
+      "trust": 0
+    },
+    {
+      "name": "Conna\u00c3\u00aetre_les_tests_d\u00c3\u00a9tat_de_fichier",
+      "mastery": 0,
+      "trust": 0
+    },
+    {
+      "name": "Ex\u00c3\u00a9cuter_des_commandes_Unix",
+      "mastery": 0,
+      "trust": 0
+    },
+    {
+      "name": "Manipuler_des_fichiers_Unix",
+      "mastery": 0.35555555555555557,
+      "trust": 0.5555555555555556
+    },
+    {
+      "name": "Manipuler_les_param\u00c3\u00a8tres_dun_script",
+      "mastery": 0.6,
+      "trust": 1
+    },
+    {
+      "name": "Manipuler_des_variables",
+      "mastery": 0.5399999999999999,
+      "trust": 0.8
+    },
+    {
+      "name": "Ecrire_des_scripts_interactifs",
+      "mastery": 0.2,
+      "trust": 1
+    },
+    {
+      "name": "R\u00c3\u00a9aliser_des_calculs_arithm\u00c3\u00a9tiques",
+      "mastery": 0,
+      "trust": 0
+    },
+    {
+      "name": "Substituer_une_commande_par_son_ex\u00c3\u00a9cution",
+      "mastery": 0.39999999999999997,
+      "trust": 0.75
+    },
+    {
+      "name": "R\u00c3\u00a9p\u00c3\u00a9ter_des_instructions",
+      "mastery": 0,
+      "trust": 0
+    },
+    {
+      "name": "R\u00c3\u00a9aliser_des_tests_conditionnels",
+      "mastery": 0,
+      "trust": 0
+    },
+    {
+      "name": "Ex\u00c3\u00a9cuter_de_mani\u00c3\u00a8re_s\u00c3\u00a9lective_des_commandes",
+      "mastery": 0,
+      "trust": 0
+    },
+    {
+      "name": "G\u00c3\u00a9n\u00c3\u00a9rer_une_s\u00c3\u00a9quence_de_nombres",
+      "mastery": 0,
+      "trust": 0
+    }
+  ],
+  "commands": [
+    {
+      "command": "set",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "env",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "./tp5_exo1.sh",
+      "args": "",
+      "score": 0
+    },
+    {
+      "command": "tp5_exo1.sh=#!/bin/bash",
+      "args": "",
+      "score": 0
+    },
+    {
+      "command": "touch",
+      "args": "tp5_exo1.sh",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp5_exo1.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp5_exo1.sh",
+      "args": "",
+      "score": 0
+    },
+    {
+      "command": "chmod",
+      "args": "755 tp5_exo1.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp5_exo1.sh",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "touch",
+      "args": "tp5_exo2.sh",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp5_exo2.sh",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp5_exo2.sh",
+      "score": 1
+    },
+    {
+      "command": "env",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp5_exo2.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp5_exo2.sh",
+      "args": "",
+      "score": 0
+    },
+    {
+      "command": "chmod",
+      "args": "755 tp5_exo2.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp5_exo2.sh",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp5_exo2.sh",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp5_exo2.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp5_exo2.sh",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp5_exo2.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp5_exo2.sh",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp5_exo2.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp5_exo2.sh",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "env",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp5_exo2.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp5_exo2.sh",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp5_exo2.sh",
+      "score": 1
+    },
+    {
+      "command": "set",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "./tp5_exo2.sh",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp5_exo2.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp5_exo2.sh",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp5_exo2.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp5_exo2.sh",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp5_exo2.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp5_exo2.sh",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp5_exo2.sh",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp5_exo3.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp5_exo3.sh",
+      "args": "",
+      "score": 0
+    },
+    {
+      "command": "chmod",
+      "args": "755 tp5_exo3.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp5_exo3.sh",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "./tp5_exo3.sh",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp5_exo3.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp5_exo3.sh",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp5_exo3.sh",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp5_exo3.sh",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp5_exo3.sh",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp5_exo4.sh",
+      "score": 1
+    },
+    {
+      "command": "chmod",
+      "args": "tp5_exo4.sh",
+      "score": 1
+    },
+    {
+      "command": "chmod",
+      "args": "755 tp5_exo4.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp5_exo4.sh",
+      "args": "MOI MES ARGUMENTS",
+      "score": 1
+    },
+    {
+      "command": "./tp5_exo4.sh",
+      "args": "PREMIER DEUXIEME TROISIEME",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp5_exo4.sh",
+      "score": 1
+    },
+    {
+      "command": "env",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp5_exo5.sh",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp5_exo5.sh",
+      "score": 1
+    },
+    {
+      "command": "chmod",
+      "args": "755 tp5_exo5.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp5_exo5.sh",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp5_exo5.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp5_exo5.sh",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp5_exo5.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp5_exo5.sh",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "./tp5_exo5.sh",
+      "args": "1 2 3",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp5_exo5.sh",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "F1",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "F2",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "F3",
+      "score": 1
+    },
+    {
+      "command": "F3",
+      "args": "",
+      "score": 0
+    },
+    {
+      "command": "./F3",
+      "args": "",
+      "score": 0
+    },
+    {
+      "command": "chmod",
+      "args": "755 F3",
+      "score": 1
+    },
+    {
+      "command": "./F3",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "F3",
+      "score": 1
+    },
+    {
+      "command": "./F3",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "F3",
+      "score": 1
+    },
+    {
+      "command": "cat",
+      "args": "F1 F2 F3",
+      "score": 1
+    },
+    {
+      "command": "cat",
+      "args": "F1 F2 > F3",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "F3",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp5_exo6.sh",
+      "score": 1
+    },
+    {
+      "command": "ls",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "chmod",
+      "args": "755 tp5_exo6.sh",
+      "score": 0
+    },
+    {
+      "command": "nano",
+      "args": "tp5_exo6.sh",
+      "score": 1
+    },
+    {
+      "command": "chmod",
+      "args": "755 tp5_exo6.sh",
+      "score": 1
+    },
+    {
+      "command": "cat",
+      "args": "F1 > tp5_exo6.sh",
+      "score": 1
+    },
+    {
+      "command": "cat",
+      "args": "F2 > tp5_exo6.sh",
+      "score": 1
+    },
+    {
+      "command": "cat",
+      "args": "F3 > tp5_exo6.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp5_exo6.sh",
+      "args": "",
+      "score": 0
+    },
+    {
+      "command": "nano",
+      "args": "tp5_exo6.sh",
+      "score": 1
+    },
+    {
+      "command": "cat",
+      "args": "F1 F2 F3 > tp5_exo6.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp5_exo6.sh",
+      "args": "",
+      "score": 0
+    },
+    {
+      "command": "nano",
+      "args": "tp5_exo6.sh",
+      "score": 1
+    },
+    {
+      "command": "cat",
+      "args": "F1 F2 F3 > tp5_exo6.sh",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp5_exo6.sh",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp5_exo6.sh",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp5_exo6.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp5_exo6.sh",
+      "args": "",
+      "score": 0
+    },
+    {
+      "command": "nano",
+      "args": "tp5_exo6.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp5_exo6.sh",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp5_exo6.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp5_exo6.sh",
+      "args": "",
+      "score": 0
+    },
+    {
+      "command": "ls",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp5_exo6.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp5_exo6.sh",
+      "args": "",
+      "score": 0
+    },
+    {
+      "command": "nano",
+      "args": "tp5_exo6.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp5_exo6.sh",
+      "args": "",
+      "score": 0
+    },
+    {
+      "command": "./tp5_exo6.sh",
+      "args": "",
+      "score": 0
+    },
+    {
+      "command": "nano",
+      "args": "tp5_exo6.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp5_exo6.sh",
+      "args": "",
+      "score": 0
+    },
+    {
+      "command": "nano",
+      "args": "tp5_exo6.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp5_exo6.sh",
+      "args": "",
+      "score": 0
+    },
+    {
+      "command": "./tp5_exo6.sh",
+      "args": "Voila Voici",
+      "score": 1
+    },
+    {
+      "command": "./tp5_exo6.sh",
+      "args": "",
+      "score": 0
+    },
+    {
+      "command": "nano",
+      "args": "tp5_exo6.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp5_exo6.sh",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp5_exo6.sh",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp5_exo6.sh Voici Voila",
+      "score": 1
+    },
+    {
+      "command": "./tp5_exo6.sh",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp5_exo6.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp5_exo6.sh",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp5_exo6.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp5_exo6.sh",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "./tp5_exo6.sh",
+      "args": "Voici Voila",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp5_exo6.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp5_exo6.sh",
+      "args": "Voici Voila",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp5_exo6.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp5_exo6.sh",
+      "args": "Voici Voila",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp5_exo6.sh",
+      "score": 1
+    },
+    {
+      "command": "ls",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "F3",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "F2",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "F3",
+      "score": 1
+    },
+    {
+      "command": "cat",
+      "args": "F1 F2 > F3",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "F3",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "F3",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "F3",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp5_exo6.sh",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp5_exo7.sh",
+      "score": 1
+    },
+    {
+      "command": "chmod",
+      "args": "755 tp5_exo7.sh",
+      "score": 1
+    },
+    {
+      "command": "./",
+      "args": "tp5_exo7.sh",
+      "score": 0
+    },
+    {
+      "command": "nano",
+      "args": "tp5_exo7.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp5_exo7.sh",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp5_exo7.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp5_exo7.sh",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp5_exo7.sh",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp5_exo8.sh",
+      "score": 1
+    },
+    {
+      "command": "chmod",
+      "args": "755 tp5_exo8.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp5_exo8.sh",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "./tp5_exo8.sh",
+      "args": "3",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp5_exo8.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp5_exo8.sh",
+      "args": "3",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp5_exo8.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp5_exo8.sh",
+      "args": "3",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp5_exo8.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp5_exo8.sh",
+      "args": "3",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp5_exo8.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp5_exo8.sh",
+      "args": "3",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp5_exo8.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp5_exo8.sh",
+      "args": "3",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp5_exo8.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp5_exo8.sh",
+      "args": "3",
+      "score": 0
+    },
+    {
+      "command": "nano",
+      "args": "tp5_exo8.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp5_exo8.sh",
+      "args": "3",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp5_exo8.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp5_exo8.sh",
+      "args": "3",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp5_exo8.sh",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp5_exo8.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp5_exo8.sh",
+      "args": "3",
+      "score": 1
+    },
+    {
+      "command": "./tp5_exo8.sh",
+      "args": "5",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp5_exo8.sh",
+      "score": 1
+    }
+  ]
+}

@@ -1,0 +1,483 @@
+{
+  "name": "ext_Quentin.Dijoux",
+  "session": 5,
+  "scripts": [
+    [
+      "#!/bin/bash\n",
+      "\n",
+      "fact() {\n",
+      "\tn=$1\n",
+      "\tif [ $n -eq 0 ]\n",
+      "\tthen\n",
+      "\t\techo 1\n",
+      "\telse\n",
+      "\t\techo $(( n * `fact $(( n - 1 ))` ))\n",
+      "\tfi\n",
+      "}\n",
+      "echo `fact $1`\n"
+    ],
+    [
+      "echo \"Veuillez choisir une option :\"\n",
+      "read $choix\n",
+      "if choix=1 then\n",
+      "\tn=3\n",
+      "\tn=(n + 1)\n",
+      "fi\n"
+    ],
+    [
+      "echo \"Veuillez choisir une option :\"\n",
+      "read $choix\n",
+      "if [ $choix -eq 1 ] then\n",
+      "\techo 1;\n",
+      "fi\n",
+      "\n"
+    ],
+    [
+      "echo \"Veuillez choisir une option :\"\n",
+      "read $choix\n",
+      "if [ $choix -eq 1 ] then\n",
+      "\techo \"1\";\n",
+      "fi\n",
+      "\n"
+    ],
+    [
+      "echo \"Veuillez choisir une option :\"\n",
+      "read $choix\n",
+      "if [ $choix -eq 1 ] then\n",
+      "\techo 1;\n",
+      "fi\n",
+      "\n"
+    ],
+    [
+      "echo \"Veuillez choisir une option :\"\n",
+      "read $choix\n",
+      "if [ $choix -eq 1 ] then\n",
+      "\techo `date`;\n",
+      "fi\n",
+      "\n"
+    ],
+    [
+      "echo \"Veuillez choisir une option :\"\n",
+      "read $choix\n",
+      "if [ $choix -eq 1 ] then\n",
+      "\techo `date`\n",
+      "fi\n",
+      "\n"
+    ],
+    [
+      "echo \"Veuillez choisir une option :\"\n",
+      "read $choix\n",
+      "if [ $choix -eq 1 ] then\n",
+      "\techo \"nous somme le `date`\"\n",
+      "fi\n",
+      "\n"
+    ],
+    [
+      "echo \"Veuillez choisir une option :\"\n",
+      "read $choix\n",
+      "if [ $choix -eq 1 ] then\n",
+      " echo nous sommes le `date`\n",
+      "fi\n",
+      "\n"
+    ],
+    [
+      "echo \"Veuillez choisir une option :\"\n",
+      "read $choix\n",
+      "if [ $choix -eq 1 ] \n",
+      "  then\n",
+      "    echo nous sommes le `date`\n",
+      "  else\n",
+      "    echo \"erreur mec\"\n",
+      "fi\n",
+      "\n"
+    ],
+    [
+      "echo \"Veuillez choisir une option :\"\n",
+      "read $choix\n",
+      "nb=`who | wc -l`\n",
+      "case $choix in\n",
+      "\t[1] ) echo `date`\n",
+      "\t[2] ) echo $nb\n",
+      "\t[3] ) echo ls -f\n",
+      "\t[4] ) echo pwd\n",
+      "esac\n"
+    ],
+    [
+      "echo \"Veuillez choisir une option \"\n",
+      "read $choix\n",
+      "case $choix in\n",
+      "\t1) date;;\n",
+      "\t2) who | wc -l;;\n",
+      "\t3) ls ;;\n",
+      "\t4) pwd;;\n",
+      "esac\n"
+    ],
+    [
+      "echo \"Veuillez choisir une option \"\n",
+      "read choix\n",
+      "case $choix in\n",
+      "\t1) date;;\n",
+      "\t2) who | wc -l;;\n",
+      "\t3) ls ;;\n",
+      "\t4) pwd;;\n",
+      "esac\n"
+    ],
+    [
+      "echo \"entrer une chaine:\"\n",
+      "read chaine1\n",
+      "while [ $chaine1 != Sortir ] \n",
+      "do\n",
+      "\techo \"encore:\";;\n",
+      "\tread chaine1;;\n",
+      "done\n"
+    ],
+    [
+      "echo \"entrer une chaine:\"\n",
+      "read chaine1\n",
+      "while [ $chaine1 != Sortir ] \n",
+      "do\n",
+      "\techo \"encore:\"\n",
+      "\tread chaine1;;\n",
+      "done\n"
+    ],
+    [
+      "echo \"entrer une chaine:\"\n",
+      "read chaine1\n",
+      "while [ $chaine1 != Sortir ] \n",
+      "do\n",
+      "\techo \"encore:\"\n",
+      "\tread chaine1;\n",
+      "done\n"
+    ],
+    [
+      "echo \"entrer une chaine:\"\n",
+      "read chaine1\n",
+      "while [ $chaine1 != Sortir ] \n",
+      "do\n",
+      "\techo \"encore:\"\n",
+      "\tread chaine1\n",
+      "done\n"
+    ],
+    [
+      "echo \"Veuillez choisir une option:\"\n",
+      "read choix\n",
+      "while [ $choix -gt 1 ] && [ $choix -lt 4 ] do\n",
+      "\tcase $choix in\n",
+      "\t\t1) date;;\n",
+      "\t\t2) who | wc -l;;\n",
+      "\t\t3) ls;;\n",
+      "\t\t4) pwd;;\n",
+      "\tesac\n",
+      "\techo \"Veillez choisir une autre option:\"\n",
+      "\tread choix\n",
+      "done\n"
+    ],
+    [
+      "echo \"Veuillez choisir une option:\"\n",
+      "read choix\n",
+      "while [ $choix -ge 1 ] && [ $choix -le 4 ] \n",
+      "do\n",
+      "\tcase $choix in\n",
+      "\t\t1) date;;\n",
+      "\t\t2) who | wc -l;;\n",
+      "\t\t3) ls;;\n",
+      "\t\t4) pwd;;\n",
+      "\tesac\n",
+      "\techo \"Veillez choisir une autre option:\"\n",
+      "\tread choix\n",
+      "done\n"
+    ]
+  ],
+  "commands": [
+    {
+      "command": "nano",
+      "args": "tp6_exo6.sh",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo6.sh",
+      "score": 1
+    },
+    {
+      "command": "chmod",
+      "args": "777 tp6_exo6.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo6.sh",
+      "args": "",
+      "score": 0
+    },
+    {
+      "command": "./tp6_exo6.sh",
+      "args": "7",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo6.sh",
+      "args": "4",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo7.sh",
+      "score": 1
+    },
+    {
+      "command": "chmod",
+      "args": "777 tp6_exo7.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo7.sh",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo7.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo7.sh",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo1.sh",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo7.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo7.sh",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo7.sh",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp5_exo7.sh",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo7.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo7.sh",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo7.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo7.sh",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo7.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo7.sh",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo7.sh",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo7.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo7.sh",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo7.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo7.sh",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo7.sh",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo1.sh",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo2.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo7.sh",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo7.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo7.sh",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo7.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo7.sh",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo7.sh",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo7.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo7.sh",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo7.sh",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "who",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo8.sh",
+      "score": 1
+    },
+    {
+      "command": "chmod",
+      "args": "777 tp6_exo8.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo8.sh",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo8.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo8.sh",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo8.sh",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo8.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo8.sh",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo9.sh",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo7.sh",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo8.sh",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo9.sh",
+      "score": 1
+    },
+    {
+      "command": "chmod",
+      "args": "777 tp6_exo9.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo9.sh",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo9.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo9.sh",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo9.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo9.sh",
+      "args": "",
+      "score": 1
+    }
+  ]
+}

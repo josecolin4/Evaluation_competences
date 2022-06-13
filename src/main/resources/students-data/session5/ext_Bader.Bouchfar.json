@@ -1,0 +1,456 @@
+{
+  "name": "ext_Bader.Bouchfar",
+  "session": 5,
+  "scripts": [
+    [
+      "find / -name$1 -perm 4000 2>/dev/null\n"
+    ],
+    [
+      "find / -name $1 \n"
+    ],
+    [
+      "file =$(find / -name $1)\n",
+      " \n"
+    ],
+    [
+      "file=$(find / -name $1)\n",
+      " \n"
+    ],
+    [
+      "file=$(find / -name $1)\n",
+      "echo $file \n"
+    ]
+  ],
+  "commands": [
+    {
+      "command": "ls",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "cd",
+      "args": "tp6",
+      "score": 1
+    },
+    {
+      "command": "ls",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "cat",
+      "args": "5",
+      "score": 1
+    },
+    {
+      "command": "ls",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "ls",
+      "args": "-l",
+      "score": 1
+    },
+    {
+      "command": "rm",
+      "args": "5",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "exo1.sh",
+      "score": 1
+    },
+    {
+      "command": "./exo1.sh",
+      "args": "4",
+      "score": 0
+    },
+    {
+      "command": "nano",
+      "args": "exo1.sh",
+      "score": 1
+    },
+    {
+      "command": "./exo1.sh",
+      "args": "4",
+      "score": 0
+    },
+    {
+      "command": "./exo1.sh",
+      "args": "6",
+      "score": 0
+    },
+    {
+      "command": "nano",
+      "args": "exo1.sh",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "exo1.sh",
+      "score": 1
+    },
+    {
+      "command": "./exo1.sh",
+      "args": "6",
+      "score": 0
+    },
+    {
+      "command": "nano",
+      "args": "exo1.sh",
+      "score": 1
+    },
+    {
+      "command": "./exo1.sh",
+      "args": "6",
+      "score": 0
+    },
+    {
+      "command": "nano",
+      "args": "exo1.sh",
+      "score": 1
+    },
+    {
+      "command": "./exo1.sh",
+      "args": "6",
+      "score": 0
+    },
+    {
+      "command": "nano",
+      "args": "exo1.sh",
+      "score": 1
+    },
+    {
+      "command": "./exo1.sh",
+      "args": "6",
+      "score": 0
+    },
+    {
+      "command": "nano",
+      "args": "exo1.sh",
+      "score": 1
+    },
+    {
+      "command": "./exo1.sh",
+      "args": "6",
+      "score": 0
+    },
+    {
+      "command": "./exo1.sh",
+      "args": "5",
+      "score": 0
+    },
+    {
+      "command": "nano",
+      "args": "exo1.sh",
+      "score": 1
+    },
+    {
+      "command": "./exo1.sh",
+      "args": "5",
+      "score": 1
+    },
+    {
+      "command": "./exo1.sh",
+      "args": "4",
+      "score": 1
+    },
+    {
+      "command": "./exo1.sh",
+      "args": "6",
+      "score": 1
+    },
+    {
+      "command": "./exo1.sh",
+      "args": "11",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "exo1.sh",
+      "score": 1
+    },
+    {
+      "command": "./exo1.sh",
+      "args": "11",
+      "score": 0
+    },
+    {
+      "command": "nano",
+      "args": "exo1.sh",
+      "score": 1
+    },
+    {
+      "command": "./exo1.sh",
+      "args": "11",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "exo1.sh",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "exo2.sh",
+      "score": 1
+    },
+    {
+      "command": "find",
+      "args": "exo1.sh",
+      "score": 1
+    },
+    {
+      "command": "find",
+      "args": "passwd",
+      "score": 0
+    },
+    {
+      "command": "cat",
+      "args": "etc/passwd",
+      "score": 0
+    },
+    {
+      "command": "cd",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "ls",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "cd",
+      "args": "..",
+      "score": 1
+    },
+    {
+      "command": "ls",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "cd",
+      "args": "etc/",
+      "score": 1
+    },
+    {
+      "command": "cat",
+      "args": "passwd",
+      "score": 1
+    },
+    {
+      "command": "clear",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "search",
+      "args": "passwd",
+      "score": 0
+    },
+    {
+      "command": "find",
+      "args": "passwd",
+      "score": 1
+    },
+    {
+      "command": "cd",
+      "args": "..",
+      "score": 1
+    },
+    {
+      "command": "find",
+      "args": "passwd",
+      "score": 0
+    },
+    {
+      "command": "ls",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "ls",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo2.sh",
+      "score": 1
+    },
+    {
+      "command": "chmod",
+      "args": "+x tp6_exo2.sh",
+      "score": 1
+    },
+    {
+      "command": "cat",
+      "args": "file.txt",
+      "score": 0
+    },
+    {
+      "command": "nano",
+      "args": "file.txt",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo2.sh",
+      "args": "file.txt",
+      "score": 1
+    },
+    {
+      "command": "ls",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "cat",
+      "args": "> file.ttxtt",
+      "score": 1
+    },
+    {
+      "command": "ls",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "cat",
+      "args": "> file.ttxtt",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo2.sh",
+      "args": "file.ttxtt",
+      "score": 1
+    },
+    {
+      "command": "find",
+      "args": "/ -name file.ttxtt",
+      "score": 1
+    },
+    {
+      "command": "find",
+      "args": "/ -name file.ttxtt -perm 4000",
+      "score": 1
+    },
+    {
+      "command": "find",
+      "args": "/ -name file.ttxtt -perm 4",
+      "score": 1
+    },
+    {
+      "command": "find",
+      "args": "/ -name file.ttxtt -perm 7",
+      "score": 1
+    },
+    {
+      "command": "ls",
+      "args": "-l",
+      "score": 1
+    },
+    {
+      "command": "find",
+      "args": "/ -name file.ttxtt -perm 6",
+      "score": 1
+    },
+    {
+      "command": "find",
+      "args": "/  -perm 6",
+      "score": 0
+    },
+    {
+      "command": "find",
+      "args": "/ -perm 6",
+      "score": 0
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo2.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo2.sh",
+      "args": "file.ttxtt",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo2.sh",
+      "args": "file.ttxtt | set $f",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo2.sh",
+      "args": "file.ttxtt | set f",
+      "score": 1
+    },
+    {
+      "command": "ls",
+      "args": "$f",
+      "score": 1
+    },
+    {
+      "command": "ls",
+      "args": "-l $f",
+      "score": 1
+    },
+    {
+      "command": "cat",
+      "args": "$f",
+      "score": 1
+    },
+    {
+      "command": "ls",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo2.sh",
+      "args": "file.ttxtt",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo2.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo2.sh",
+      "args": "file.ttxtt",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo2.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo2.sh",
+      "args": "file.ttxtt",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo2.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo2.sh",
+      "args": "file.ttxtt",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo2.sh",
+      "score": 1
+    },
+    {
+      "command": "stat",
+      "args": "tp6_exo2.sh",
+      "score": 1
+    }
+  ]
+}

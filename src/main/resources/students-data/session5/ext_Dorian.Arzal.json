@@ -1,0 +1,17 @@
+{
+  "name": "ext_Dorian.Arzal",
+  "session": 5,
+  "scripts": [],
+  "commands": [
+    {
+      "command": "man",
+      "args": "bash",
+      "score": 1
+    },
+    {
+      "command": "man",
+      "args": " vi",
+      "score": 1
+    }
+  ]
+}

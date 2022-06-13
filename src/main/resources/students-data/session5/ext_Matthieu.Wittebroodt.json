@@ -1,0 +1,489 @@
+{
+  "name": "ext_Matthieu.Wittebroodt",
+  "session": 5,
+  "scripts": [
+    [
+      "#!/bin/bash\n",
+      "echo quelle est votre ann\u00c3\u00a9e de naissance \n",
+      "get $ann\u00c3\u00a9e\n",
+      "echo vous avez\n",
+      "expr  `date +y`-$ann\u00c3\u00a9e \n",
+      "echo ans\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "echo quelle est votre ann\u00c3\u00a9e de naissance \n",
+      "read $ann\u00c3\u00a9e\n",
+      "echo vous avez\n",
+      "expr  `date +y`-$ann\u00c3\u00a9e \n",
+      "echo ans\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "echo quelle est votre ann\u00c3\u00a9e de naissance \n",
+      "read $a\n",
+      "echo vous avez\n",
+      "expr  `date +y`-$ann\u00c3\u00a9e \n",
+      "echo ans\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "echo quelle est votre ann\u00c3\u00a9e de naissance \n",
+      "read $a\n",
+      "echo vous avez\n",
+      "expr  `date +y`-$annee \n",
+      "echo ans\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "echo quelle est votre ann\u00c3\u00a9e de naissance \n",
+      "read $a\n",
+      "echo vous avez\n",
+      "expr  `date + y` - $annee \n",
+      "echo ans\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "echo quelle est votre ann\u00c3\u00a9e de naissance \n",
+      "read $a\n",
+      "echo vous avez\n",
+      "expr  `date + y` - $a \n",
+      "echo ans\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "echo quelle est votre ann\u00c3\u00a9e de naissance \n",
+      "read $a\n",
+      "echo vous avez\n",
+      "expr  `date\"Y%\" + $a`\n",
+      "echo ans\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "echo quelle est votre ann\u00c3\u00a9e de naissance \n",
+      "read $a\n",
+      "echo vous avez\n",
+      "echo  `date\"Y%\" + $a`\n",
+      "echo ans\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "echo quelle est votre ann\u00c3\u00a9e de naissance \n",
+      "read $a\n",
+      "echo vous avez\n",
+      "expr  `date\"Y%\"+ $a`\n",
+      "echo ans\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "\n",
+      "$1=5\n",
+      "$2=10\n",
+      "\n",
+      "if test $3 -gt $1 && $3 -le $2\n",
+      "then \n",
+      "echo la valeur est comprise en 5 et 10\n",
+      "else \n",
+      "la valeur n'est pas comprise entre 5 et 10\n",
+      "fi\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "\n",
+      "$1=5\n",
+      "$2=10\n",
+      "\n",
+      "if test $3 -gt $1 && $3 -le $2\n",
+      "then \n",
+      "echo la valeur est comprise en 5 et 10\n",
+      "else \n",
+      "echo la valeur n'est pas comprise entre 5 et 10\n",
+      "fi\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "\n",
+      "$1=5\n",
+      "$2=10\n",
+      "\n",
+      "if test $3 -gt $1 -a test $3 -le $2\n",
+      "then \n",
+      "echo la valeur est comprise en 5 et 10\n",
+      "else \n",
+      "echo la valeur n'est pas comprise entre 5 et 10\n",
+      "fi\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "\n",
+      "$1=5\n",
+      "$2=10\n",
+      "\n",
+      "if test $3 -gt $1 -a test $3 -le $2\n",
+      "then \n",
+      "echo \"la valeur est comprise en 5 et 10\"\n",
+      "else \n",
+      "echo \"la valeur n'est pas comprise entre 5 et 10\"\n",
+      "fi\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "\n",
+      "$1=5\n",
+      "$2=10\n",
+      "\n",
+      "if test [$3 -gt $1] -a test [$3 -le $2]\n",
+      "then \n",
+      "echo \"la valeur est comprise en 5 et 10\"\n",
+      "else \n",
+      "echo \"la valeur n'est pas comprise entre 5 et 10\"\n",
+      "fi\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "\n",
+      "$1=5\n",
+      "$2=10\n",
+      "\n",
+      "if test [$3 -ge $1] -a test [$3 -le $2]\n",
+      "then \n",
+      "echo \"la valeur est comprise en 5 et 10\"\n",
+      "else \n",
+      "echo \"la valeur n'est pas comprise entre 5 et 10\"\n",
+      "fi\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "\n",
+      "\n",
+      "if [$1 -ge 5] -a  [$1 -le 10]\n",
+      "then \n",
+      "echo \"la valeur est comprise en 5 et 10\"\n",
+      "else \n",
+      "echo \"la valeur n'est pas comprise entre 5 et 10\"\n",
+      "fi\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "\n",
+      "read A\n",
+      "if [$A -ge 5] -a  [$A -le 10]\n",
+      "then \n",
+      "echo \"la valeur est comprise en 5 et 10\"\n",
+      "else \n",
+      "echo \"la valeur n'est pas comprise entre 5 et 10\"\n",
+      "fi\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "\n",
+      "read A\n",
+      "if [ $A -ge 5 ] -a [ $A -le 10 ]\n",
+      "then \n",
+      "echo \"la valeur est comprise en 5 et 10\"\n",
+      "else \n",
+      "echo \"la valeur n'est pas comprise entre 5 et 10\"\n",
+      "fi\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "\n",
+      "read A\n",
+      "if [ $A -ge 5 ] \n",
+      "then \n",
+      "echo \"la valeur est comprise en 5 et 10\"\n",
+      "else \n",
+      "echo \"la valeur n'est pas comprise entre 5 et 10\"\n",
+      "fi\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "\n",
+      "read A\n",
+      "if [ $A -ge 5 ] && [ $A -le 10 ]\n",
+      "then \n",
+      "echo \"la valeur est comprise en 5 et 10\"\n",
+      "else \n",
+      "echo \"la valeur n'est pas comprise entre 5 et 10\"\n",
+      "fi\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "\n",
+      "read A\n",
+      "if [ $A -ge 5 ] -a [ $A -le 10 ]\n",
+      "then \n",
+      "echo \"la valeur est comprise en 5 et 10\"\n",
+      "else \n",
+      "echo \"la valeur n'est pas comprise entre 5 et 10\"\n",
+      "fi\n"
+    ]
+  ],
+  "commands": [
+    {
+      "command": "nano",
+      "args": "tp5bis_exo3.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp5bis_exo3.sh",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp5bis_exo3.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp5bis_exo3.sh",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp5bis_exo3.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp5bis_exo3.sh",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "./tp5bis_exo3.sh",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp5bis_exo3.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp5bis_exo3.sh",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp5bis_exo3.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp5bis_exo3.sh",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp5bis_exo3.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp5bis_exo3.sh",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp5bis_exo3.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp5bis_exo3.sh",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp5bis_exo3.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp5bis_exo3.sh",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp5bis_exo3.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp5bis_exo4.sh",
+      "args": "",
+      "score": 0
+    },
+    {
+      "command": "nano",
+      "args": "tp5bis_exo3.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp5bis_exo4.sh",
+      "args": "",
+      "score": 0
+    },
+    {
+      "command": "./tp5bis_exo3.sh",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo1.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo1.sh",
+      "args": "",
+      "score": 0
+    },
+    {
+      "command": "chmod",
+      "args": "777 tp6_exo1.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo1.sh",
+      "args": "",
+      "score": 0
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo1.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo1.sh",
+      "args": "5",
+      "score": 0
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo1.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo1.sh",
+      "args": "5",
+      "score": 0
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo1.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo1.sh",
+      "args": "5",
+      "score": 0
+    },
+    {
+      "command": "./tp6_exo1.sh",
+      "args": "6",
+      "score": 0
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo1.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo1.sh",
+      "args": "6",
+      "score": 0
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo1.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo1.sh",
+      "args": "6",
+      "score": 0
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo1.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo1.sh",
+      "args": "6",
+      "score": 0
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo1.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo1.sh",
+      "args": "6",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo1.sh",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo1.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo1.sh",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo1.sh",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo1.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo1.sh",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo1.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo1.sh",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo1.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo1.sh",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo1.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo1.sh",
+      "args": "",
+      "score": 1
+    }
+  ]
+}

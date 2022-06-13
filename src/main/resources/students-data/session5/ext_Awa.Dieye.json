@@ -1,0 +1,613 @@
+{
+  "name": "ext_Awa.Dieye",
+  "session": 5,
+  "scripts": [
+    [
+      "set -- $(ls -l tp5bis_exo4.sh)\n",
+      "echo $6\n",
+      "\n"
+    ],
+    [
+      "set -- $(ls -l tp5bis_exo4.sh)\n",
+      "echo $5\n",
+      "\n"
+    ],
+    [
+      "PATH=$PATH:/home/root\n"
+    ],
+    [
+      "PATH=$PATH:/home/root\n",
+      "export $PATH\n",
+      "\n"
+    ],
+    [
+      "if test -e $1 -a -e $2\n",
+      "then\n",
+      "echo souhaitez vous concatener les fichiers \\?(veuillez r\\\u00c3\u00a9pondre OUI ou NON)\n",
+      "read r\\\u00c3\u00a9ponse\n",
+      "if r\\\u00c3\u00a9ponse=OUI\n",
+      "then \n",
+      "cat $1\n",
+      "cat $2\n",
+      "else\n",
+      "echo ERREUR\n",
+      "fi\n",
+      "else\n",
+      "echo l\\'un des fichiers n\\'existe pas\n",
+      "fi\n"
+    ],
+    [
+      "if test -e $1 -a -e $2\n",
+      "then\n",
+      "echo souhaitez vous concatener les fichiers \\? veuillez r\\\u00c3\u00a9pondre OUI ou NON\n",
+      "read r\\\u00c3\u00a9ponse\n",
+      "if r\\\u00c3\u00a9ponse=OUI\n",
+      "then \n",
+      "cat $1\n",
+      "cat $2\n",
+      "else\n",
+      "echo ERREUR\n",
+      "fi\n",
+      "else\n",
+      "echo l\\'un des fichiers n\\'existe pas\n",
+      "fi\n"
+    ],
+    [
+      "if test -e $1 -a -e $2\n",
+      "then\n",
+      "echo souhaitez vous concatener les fichiers \\? veuillez r\\\u00c3\u00a9pondre OUI ou NON\n",
+      "read r\\\u00c3\u00a9ponse\n",
+      "if $r\\\u00c3\u00a9ponse=OUI\n",
+      "then \n",
+      "cat $1\n",
+      "cat $2\n",
+      "else\n",
+      "echo ERREUR\n",
+      "fi\n",
+      "else\n",
+      "echo l\\'un des fichiers n\\'existe pas\n",
+      "fi\n"
+    ],
+    [
+      "if test -e $1 -a -e $2\n",
+      "then\n",
+      "echo souhaitez vous concatener les fichiers \\? veuillez r\\\u00c3\u00a9pondre OUI ou NON\n",
+      "read r\\\u00c3\u00a9ponse\n",
+      "if $ r\\\u00c3\u00a9ponse=OUI\n",
+      "then \n",
+      "cat $1\n",
+      "cat $2\n",
+      "else\n",
+      "echo ERREUR\n",
+      "fi\n",
+      "else\n",
+      "echo l\\'un des fichiers n\\'existe pas\n",
+      "fi\n"
+    ],
+    [
+      "if test -e $1 -a -e $2\n",
+      "then\n",
+      "echo souhaitez vous concatener les fichiers \\? veuillez r\\\u00c3\u00a9pondre OUI ou NON\n",
+      "read $ r\\\u00c3\u00a9ponse\n",
+      "if $ r\\\u00c3\u00a9ponse=OUI\n",
+      "then \n",
+      "cat $1\n",
+      "cat $2\n",
+      "else\n",
+      "echo ERREUR\n",
+      "fi\n",
+      "else\n",
+      "echo l\\'un des fichiers n\\'existe pas\n",
+      "fi\n"
+    ],
+    [
+      "if test -e $1 -a -e $2\n",
+      "then\n",
+      "echo souhaitez vous concatener les fichiers \\? veuillez r\\\u00c3\u00a9pondre OUI ou NON\n",
+      "read r\\\u00c3\u00a9ponse\n",
+      "if $ r\\\u00c3\u00a9ponse=OUI\n",
+      "then \n",
+      "cat $1\n",
+      "cat $2\n",
+      "else\n",
+      "echo ERREUR\n",
+      "fi\n",
+      "else\n",
+      "echo l\\'un des fichiers n\\'existe pas\n",
+      "fi\n"
+    ],
+    [
+      "if test -e $1 -a -e $2\n",
+      "then\n",
+      "echo souhaitez vous concatener les fichiers \\? veuillez r\\\u00c3\u00a9pondre OUI ou NON\n",
+      "read reponse\n",
+      "if $ rexponse=OUI\n",
+      "then \n",
+      "cat $1\n",
+      "cat $2\n",
+      "else\n",
+      "echo ERREUR\n",
+      "fi\n",
+      "else\n",
+      "echo l\\'un des fichiers n\\'existe pas\n",
+      "fi\n"
+    ],
+    [
+      "if test -e $1 -a -e $2\n",
+      "then\n",
+      "echo souhaitez vous concatener les fichiers \\? veuillez r\\\u00c3\u00a9pondre OUI ou NON\n",
+      "read reponse\n",
+      "if $reponse=OUI\n",
+      "then \n",
+      "cat $1\n",
+      "cat $2\n",
+      "else\n",
+      "echo ERREUR\n",
+      "fi\n",
+      "else\n",
+      "echo l\\'un des fichiers n\\'existe pas\n",
+      "fi\n"
+    ],
+    [
+      "if test -e $1 -a -e $2\n",
+      "then\n",
+      "echo souhaitez vous concatener les fichiers \\? veuillez r\\\u00c3\u00a9pondre OUI ou NON\n",
+      "read reponse\n",
+      "if $reponse = OUI\n",
+      "then \n",
+      "cat $1\n",
+      "cat $2\n",
+      "else\n",
+      "echo ERREUR\n",
+      "fi\n",
+      "else\n",
+      "echo l\\'un des fichiers n\\'existe pas\n",
+      "fi\n"
+    ],
+    [
+      "if test -e $1 -a -e $2\n",
+      "then\n",
+      "echo souhaitez vous concatener les fichiers \\? veuillez r\\\u00c3\u00a9pondre OUI ou NON\n",
+      "read reponse\n",
+      "if $reponse= OUI\n",
+      "then \n",
+      "cat $1\n",
+      "cat $2\n",
+      "else\n",
+      "echo ERREUR\n",
+      "fi\n",
+      "else\n",
+      "echo l\\'un des fichiers n\\'existe pas\n",
+      "fi\n"
+    ],
+    [
+      "if test -e $1 -a -e $2\n",
+      "then\n",
+      "echo souhaitez vous concatener les fichiers \\? veuillez r\\\u00c3\u00a9pondre OUI ou NON\n",
+      "read reponse\n",
+      "if $reponse =OUI\n",
+      "then \n",
+      "cat $1\n",
+      "cat $2\n",
+      "else\n",
+      "echo ERREUR\n",
+      "fi\n",
+      "else\n",
+      "echo l\\'un des fichiers n\\'existe pas\n",
+      "fi\n"
+    ],
+    [
+      "if test -e $1 -a -e $2\n",
+      "then\n",
+      "echo souhaitez vous concatener les fichiers \\? veuillez r\\\u00c3\u00a9pondre OUI ou NON\n",
+      "read reponse\n",
+      "if $reponse =`OUI`\n",
+      "then \n",
+      "cat $1\n",
+      "cat $2\n",
+      "else\n",
+      "echo ERREUR\n",
+      "fi\n",
+      "else\n",
+      "echo l\\'un des fichiers n\\'existe pas\n",
+      "fi\n"
+    ],
+    [
+      "if test -e $1 -a -e $2\n",
+      "then\n",
+      "echo souhaitez vous concatener les fichiers \\? veuillez r\\\u00c3\u00a9pondre OUI ou NON\n",
+      "read reponse\n",
+      "if $reponse = \"OUI\"\n",
+      "then \n",
+      "cat $1\n",
+      "cat $2\n",
+      "else\n",
+      "echo ERREUR\n",
+      "fi\n",
+      "else\n",
+      "echo l\\'un des fichiers n\\'existe pas\n",
+      "fi\n"
+    ],
+    [
+      "if test -e $1 -a -e $2\n",
+      "then\n",
+      "echo souhaitez vous concatener les fichiers \\? veuillez r\\\u00c3\u00a9pondre OUI ou NON\n",
+      "read reponse\n",
+      "if $reponse = OUI\n",
+      "then \n",
+      "cat $1\n",
+      "cat $2\n",
+      "else\n",
+      "echo ERREUR\n",
+      "fi\n",
+      "else\n",
+      "echo l\\'un des fichiers n\\'existe pas\n",
+      "fi\n"
+    ],
+    [
+      "if test -e $1 -a -e $2\n",
+      "then\n",
+      "echo souhaitez vous concatener les fichiers \\? veuillez r\\\u00c3\u00a9pondre OUI ou NON\n",
+      "read reponse\n",
+      "if test $reponse = \"OUI\"\n",
+      "then \n",
+      "cat $1\n",
+      "cat $2\n",
+      "else\n",
+      "echo ERREUR\n",
+      "fi\n",
+      "else\n",
+      "echo l\\'un des fichiers n\\'existe pas\n",
+      "fi\n"
+    ],
+    [
+      "for liste_commandes in date who pwd ls\n",
+      "do $liste_commandes\n",
+      "done\n"
+    ],
+    [
+      "for  arguments in $*\n",
+      "do\n",
+      "echo argument1 = $1\n",
+      "echo argument2 = $2\n",
+      "echo argument3 = $3\n",
+      "echo il y a $# arguments\n",
+      "done\n"
+    ],
+    [
+      "for arguments in $#\n",
+      "do\n",
+      "echo argument1 = $1\n",
+      "echo argument2 = $2\n",
+      "echo argument3 = $3\n",
+      "echo il y a $# arguments\n",
+      "done\n"
+    ],
+    [
+      "for $i in $#\n",
+      "do\n",
+      "echo argumenti = $1\n",
+      "echo argument2 = $i\n",
+      "echo argument3 = $3\n",
+      "echo il y a $# arguments\n",
+      "done\n"
+    ]
+  ],
+  "commands": [
+    {
+      "command": "cat",
+      "args": "tp5bis_exo5.sh",
+      "score": 1
+    },
+    {
+      "command": "./taille.sh",
+      "args": "tp5bis_exo4.sh",
+      "score": 0
+    },
+    {
+      "command": "./tp5bis_exo4.sh",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "./tp5bis_exo5.sh",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp5bis_exo5.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp5bis_exo5.sh",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp5bis_exo5.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp5bis_exo5.sh",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp5_exo9.sh",
+      "score": 1
+    },
+    {
+      "command": "PATH",
+      "args": "",
+      "score": 0
+    },
+    {
+      "command": "$PATH",
+      "args": "",
+      "score": 0
+    },
+    {
+      "command": "export",
+      "args": "$PATH",
+      "score": 0
+    },
+    {
+      "command": "nano",
+      "args": "tp5_exo9.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp5bis_exo5.sh",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "./tp5_exo9.sh",
+      "args": "",
+      "score": 0
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo3.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo3.sh",
+      "args": "",
+      "score": 0
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo3.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo3.sh",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo3.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo3.sh",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo3.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo3.sh",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo3.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo3.sh",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo3.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo3.sh",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo3.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo3.sh",
+      "args": "tp5_exo4.sh tp5bis_exo5.sh",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo3.sh",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo3.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo3.sh",
+      "args": "tp5_exo4.sh tp5bis_exo5.sh",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo3.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo3.sh",
+      "args": "tp5_exo4.sh tp5bis_exo5.sh",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo3.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo3.sh",
+      "args": "tp5_exo4.sh tp5bis_exo5.sh",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo3.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo3.sh",
+      "args": "tp5_exo4.sh tp5bis_exo5.sh",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo3.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo3.sh",
+      "args": "tp5_exo4.sh tp5bis_exo5.sh",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo3.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo3.sh",
+      "args": "tp5_exo4.sh tp5bis_exo5.sh",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo3.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo3.sh",
+      "args": "tp5_exo4.sh tp5bis_exo5.sh",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo3.sh",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo3.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo3.sh",
+      "args": "tp5_exo4.sh tp5bis_exo5.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo3.sh",
+      "args": "tp5_exo4.sh tp5bis_exo100.sh",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo4.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo4.sh",
+      "args": "",
+      "score": 0
+    },
+    {
+      "command": "chmod",
+      "args": "u+x tp6_exo4.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo4.sh",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo5.sh",
+      "score": 1
+    },
+    {
+      "command": "chmod",
+      "args": "u+x tp6_exo5.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo5.sh",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo5.sh",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo5.sh",
+      "args": "awa dieye dut",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo5.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo5.sh",
+      "args": "awa dieye dut",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo5.sh",
+      "args": "awa dieye dutinfo",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo5.sh",
+      "args": "awa dieye dutinfo thies senegal",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo5.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo5.sh",
+      "args": "awa dieye dutinfo thies senegal",
+      "score": 0
+    }
+  ]
+}

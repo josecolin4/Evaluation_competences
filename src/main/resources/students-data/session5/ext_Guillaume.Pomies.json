@@ -1,0 +1,37 @@
+{
+  "name": "ext_Guillaume.Pomies",
+  "session": 5,
+  "scripts": [
+    [
+      "\n"
+    ],
+    [
+      "#! /bin/bash\n",
+      "echo `ls -l $*`\n",
+      "set -- $(ls -l $*)\n",
+      "echo $7\n"
+    ]
+  ],
+  "commands": [
+    {
+      "command": "ls",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp5bis_exo5.sh",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp5bis_exo5.sh",
+      "score": 1
+    },
+    {
+      "command": "chmod",
+      "args": "u+x tp5bis_exo5.sh",
+      "score": 1
+    }
+  ]
+}

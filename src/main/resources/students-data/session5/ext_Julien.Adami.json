@@ -1,0 +1,831 @@
+{
+  "name": "ext_Julien.Adami",
+  "session": 5,
+  "scripts": [
+    [
+      "echo x\n",
+      "echo $listec date who pwd ls\n",
+      "for listec in date who pwd ls\n",
+      "\tdo $listec\n",
+      "done\n"
+    ],
+    [
+      "sss\n"
+    ],
+    [
+      "argument= \"argument 1\"\n",
+      "argument2=\"argument 2\"\n",
+      "argument3=\"argument 3\"\n",
+      "for i in $*\n",
+      "do\n",
+      "echo $i\n",
+      "done\n"
+    ],
+    [
+      "argument=\"argument 1\"\n",
+      "argument2=\"argument 2\"\n",
+      "argument3=\"argument 3\"\n",
+      "for i in $*\n",
+      "do\n",
+      "echo $i\n",
+      "done\n"
+    ],
+    [
+      "argument=\"argument 1\"\n",
+      "argument2=\"argument 2\"\n",
+      "argument3=\"argument 3\"\n",
+      "for i in $(seq 10)\n",
+      "do\n",
+      "echo argument $i\n",
+      "done\n"
+    ],
+    [
+      "argument=\"argument 1\"\n",
+      "argument2=\"argument 2\"\n",
+      "argument3=\"argument 3\"\n",
+      "for i in $(seq 10)\n",
+      "do\n",
+      "echo argument $i = $1\n",
+      "done\n"
+    ],
+    [
+      "\n",
+      "for i in $(seq 3)\n",
+      "do\n",
+      "echo argument i =$i\n",
+      "done\n"
+    ],
+    [
+      "arg1=\"cc\"\n",
+      "for i in $(seq 3)\n",
+      "do\n",
+      "echo argument $i = $arg($i) \n",
+      "done\n"
+    ],
+    [
+      "arg1=\"cc\"\n",
+      "for i in $(seq 3)\n",
+      "do\n",
+      "echo argument $i = $arg`($i) \n",
+      "done\n"
+    ],
+    [
+      "arg1=\"cc\"\n",
+      "for i in $(seq 3)\n",
+      "do\n",
+      "echo argument $i = $arg$i\n",
+      "done\n"
+    ],
+    [
+      "arg1=\"cc\"\n",
+      "for i in $(seq 3)\n",
+      "do\n",
+      "echo argument $i = $arg1\n",
+      "done\n"
+    ],
+    [
+      "arg1=\"cc\"\n",
+      "for i in $(seq 3)\n",
+      "do\n",
+      "echo argument $i = $1\n",
+      "done\n"
+    ],
+    [
+      "arg1=\"cc\"\n",
+      "for i in $(seq 3)\n",
+      "do\n",
+      "echo argument $i = $2\n",
+      "done\n"
+    ],
+    [
+      "arg1=\"cc\"\n",
+      "for i in $(seq 3)\n",
+      "do\n",
+      "echo argument $i = $1\n",
+      "done\n"
+    ],
+    [
+      "$1=\"cc\"\n",
+      "for i in $(seq 3)\n",
+      "do\n",
+      "echo argument $i = $1\n",
+      "done\n"
+    ],
+    [
+      "1=\"cc\"\n",
+      "for i in $(seq 3)\n",
+      "do\n",
+      "echo argument $i = $1\n",
+      "done\n"
+    ],
+    [
+      "o=\"cc\"\n",
+      "v=\"o\"\n",
+      "m=\"p\"\n",
+      "for i in $(o,v,m)\n",
+      "do\n",
+      "echo argument $i =$1 \n",
+      "done\n"
+    ],
+    [
+      "o=\"cc\"\n",
+      "v=\"o\"\n",
+      "m=\"p\"\n",
+      "for i in (o,v,m)\n",
+      "do\n",
+      "echo argument $i =$1 \n",
+      "done\n"
+    ],
+    [
+      "o=\"cc\"\n",
+      "v=\"o\"\n",
+      "m=\"p\"\n",
+      "for i in o,v,m\n",
+      "do\n",
+      "echo argument $i =$1 \n",
+      "done\n"
+    ],
+    [
+      "o=\"cc\"\n",
+      "v=\"o\"\n",
+      "m=\"p\"\n",
+      "for i in o,v,m\n",
+      "done  echo argument i =$1 \n",
+      "done\n"
+    ],
+    [
+      "o=\"cc\"\n",
+      "v=\"o\"\n",
+      "m=\"p\"\n",
+      "for i in o,v,m\n",
+      "done  echo argument i =$*\n",
+      "done\n"
+    ],
+    [
+      "o=\"cc\"\n",
+      "v=\"o\"\n",
+      "m=\"p\"\n",
+      "for i in o,v,m\n",
+      "done  echo argument i =$i\n",
+      "done\n"
+    ],
+    [
+      "o=\"cc\"\n",
+      "v=\"o\"\n",
+      "m=\"p\"\n",
+      "for i in o,v,m\n",
+      "  echo argument i =$i\n",
+      "done\n"
+    ],
+    [
+      "o=\"cc\"\n",
+      "v=\"o\"\n",
+      "m=\"p\"\n",
+      "for i in o,v,m\n",
+      "  echo argument i =$i\n",
+      "done\n"
+    ],
+    [
+      "o=\"cc\"\n",
+      "v=\"o\"\n",
+      "m=\"p\"\n",
+      "for i in o v m\n",
+      "  echo argument i =$i\n",
+      "done\n"
+    ],
+    [
+      "o=\"cc\"\n",
+      "v=\"o\"\n",
+      "m=\"p\"\n",
+      "for i in o v m\n",
+      "do\n",
+      "  echo argument i =$i\n",
+      "done\n"
+    ],
+    [
+      "o=\"cc\"\n",
+      "v=\"o\"\n",
+      "m=\"p\"\n",
+      "for i in $o $v $m\n",
+      "do\n",
+      "  echo argument i =$i\n",
+      "done\n"
+    ],
+    [
+      "o=\"cc\"\n",
+      "v=\"o\"\n",
+      "m=\"p\"\n",
+      "for i in $o $v $m (seq 3)\n",
+      "do\n",
+      "  echo argument  =$i\n",
+      "done\n"
+    ],
+    [
+      "o=\"cc\"\n",
+      "v=\"o\"\n",
+      "m=\"p\"\n",
+      "\n",
+      "for i in $o $v $m\n",
+      "do\n",
+      "  echo $i \n",
+      "  echo argument  =$i\n",
+      "done\n"
+    ],
+    [
+      "3=\"cc\"\n",
+      "2=\"o\"\n",
+      "1=\"p\"\n",
+      "\n",
+      "for i in $1 $2 $3\n",
+      "do\n",
+      "  echo $1\n",
+      "  echo argument  =$i\n",
+      "done\n"
+    ],
+    [
+      "a=\"cc\"\n",
+      "b=\"o\"\n",
+      "c=\"p\"\n",
+      "\n",
+      "for i in $a $b $c\n",
+      "do\n",
+      "  echo argument  =$i\n",
+      "done\n",
+      "echo il y a trois arguments\n"
+    ],
+    [
+      "a=\"cc\"\n",
+      "b=\"o\"\n",
+      "c=\"p\"\n",
+      "d=1\n",
+      "e=2\n",
+      "f=3\n",
+      "for i in $a $b $c $d $e $f\n",
+      "do\n",
+      "  echo argument $(i+3)  =$i\n",
+      "done\n",
+      "echo il y a trois arguments\n"
+    ],
+    [
+      "a=\"cc\"\n",
+      "b=\"o\"\n",
+      "c=\"p\"\n",
+      "d=1\n",
+      "e=2\n",
+      "f=3\n",
+      "for i in $a $b $c $d $e $f\n",
+      "do\n",
+      "  echo argument $i+3  =$i\n",
+      "done\n",
+      "echo il y a trois arguments\n"
+    ],
+    [
+      "s\n"
+    ],
+    [
+      "md=5\n",
+      "fin=0\n",
+      "for i in (seq $md)\n",
+      "do \n",
+      "$fin = $fin + $i\n",
+      "done\n"
+    ],
+    [
+      "md=5\n",
+      "fin=0\n",
+      "for i in (seq 5)\n",
+      "do \n",
+      "$fin = $fin + $i\n",
+      "done\n"
+    ],
+    [
+      "md=5\n",
+      "fin=0\n",
+      "for i in $(seq 5)\n",
+      "do \n",
+      "$fin = $fin + $i\n",
+      "done\n"
+    ],
+    [
+      "md=5\n",
+      "fin=0\n",
+      "for i in $(seq 5)\n",
+      "do \n",
+      "echo $fin + $i\n",
+      "done\n"
+    ],
+    [
+      "md=5\n",
+      "fin=0\n",
+      "for i in $(seq 5)\n",
+      "do \n",
+      "echo $fin = $fin + $i\n",
+      "done\n"
+    ],
+    [
+      "md=5\n",
+      "fin=0\n",
+      "for i in $(seq 5)\n",
+      "do \n",
+      "echo $fin =`$fin + $i`\n",
+      "done\n"
+    ]
+  ],
+  "commands": [
+    {
+      "command": "dir",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6exo4.sh",
+      "score": 1
+    },
+    {
+      "command": "/.tp6exo4.sh",
+      "args": "",
+      "score": 0
+    },
+    {
+      "command": "./tp6exo4.sh",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6exo4.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6exo4.sh",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "./tp6exo4.sh",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6exo5.sh",
+      "score": 1
+    },
+    {
+      "command": "chmod",
+      "args": "tp6exo5.sh 777",
+      "score": 0
+    },
+    {
+      "command": "chmod",
+      "args": "777  tp6exo5.sh",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6exo5.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6exo5.sh",
+      "args": "",
+      "score": 0
+    },
+    {
+      "command": "nano",
+      "args": "tp6exo5.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6exo5.sh",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "./tp6exo5.sh",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6exo5.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6exo5.sh",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6exo5.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6exo5.sh",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6exo5.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6exo5.sh",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6exo5.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6exo5.sh",
+      "args": "",
+      "score": 0
+    },
+    {
+      "command": "nano",
+      "args": "tp6exo5.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6exo5.sh",
+      "args": "",
+      "score": 0
+    },
+    {
+      "command": "nano",
+      "args": "tp6exo5.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6exo5.sh",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6exo5.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6exo5.sh",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6exo5.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6exo5.sh",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6exo5.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6exo5.sh",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6exo5.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6exo5.sh",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6exo5.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6exo5.sh",
+      "args": "",
+      "score": 0
+    },
+    {
+      "command": "nano",
+      "args": "tp6exo5.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6exo5.sh",
+      "args": "",
+      "score": 0
+    },
+    {
+      "command": "nano",
+      "args": "tp6exo5.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6exo5.sh",
+      "args": "",
+      "score": 0
+    },
+    {
+      "command": "nano",
+      "args": "tp6exo5.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6exo5.sh",
+      "args": "",
+      "score": 0
+    },
+    {
+      "command": "nano",
+      "args": "tp6exo5.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6exo5.sh",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6exo5.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6exo5.sh",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6exo5.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6exo5.sh",
+      "args": "",
+      "score": 0
+    },
+    {
+      "command": "nano",
+      "args": "tp6exo5.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6exo5.sh",
+      "args": "",
+      "score": 0
+    },
+    {
+      "command": "nano",
+      "args": "tp6exo5.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6exo5.sh",
+      "args": "",
+      "score": 0
+    },
+    {
+      "command": "nano",
+      "args": "tp6exo5.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6exo5.sh",
+      "args": "",
+      "score": 0
+    },
+    {
+      "command": "nano",
+      "args": "tp6exo5.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6exo5.sh",
+      "args": "",
+      "score": 0
+    },
+    {
+      "command": "./tp6exo5.sh",
+      "args": "",
+      "score": 0
+    },
+    {
+      "command": "nano",
+      "args": "tp6exo5.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6exo5.sh",
+      "args": "",
+      "score": 0
+    },
+    {
+      "command": "nano",
+      "args": "tp6exo5.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6exo5.sh",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6exo5.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6exo5.sh",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6exo5.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6exo5.sh",
+      "args": "",
+      "score": 0
+    },
+    {
+      "command": "nano",
+      "args": "tp6exo5.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6exo5.sh",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6exo5.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6exo5.sh",
+      "args": "",
+      "score": 0
+    },
+    {
+      "command": "nano",
+      "args": "tp6exo5.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6exo5.sh",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6exo5.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6exo5.sh",
+      "args": "",
+      "score": 0
+    },
+    {
+      "command": "nano",
+      "args": "tp6exo5.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6exo5.sh",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "./tp6exo5.sh",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6exo6",
+      "score": 1
+    },
+    {
+      "command": "chmod",
+      "args": "777 tp6exo6",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6exo6",
+      "score": 1
+    },
+    {
+      "command": "./tp6exo6",
+      "args": "",
+      "score": 0
+    },
+    {
+      "command": "nano",
+      "args": "tp6exo6",
+      "score": 1
+    },
+    {
+      "command": "./tp6exo6",
+      "args": "",
+      "score": 0
+    },
+    {
+      "command": "nano",
+      "args": "tp6exo6.sh",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6exo6.sh",
+      "score": 1
+    },
+    {
+      "command": "chmod",
+      "args": "777 tp6exo6.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6exo6.sh",
+      "args": "",
+      "score": 0
+    },
+    {
+      "command": "nano",
+      "args": "tp6exo6.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6exo6.sh",
+      "args": "",
+      "score": 0
+    },
+    {
+      "command": "nano",
+      "args": "tp6exo6.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6exo6.sh",
+      "args": "",
+      "score": 0
+    },
+    {
+      "command": "nano",
+      "args": "tp6exo6.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6exo6.sh",
+      "args": "",
+      "score": 0
+    },
+    {
+      "command": "nano",
+      "args": "tp6exo6.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6exo6.sh",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6exo6.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6exo6.sh",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6exo6.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6exo6.sh",
+      "args": "",
+      "score": 0
+    }
+  ]
+}

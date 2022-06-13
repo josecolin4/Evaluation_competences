@@ -1,0 +1,122 @@
+{
+  "name": "ext_Mathieu.Richard",
+  "session": 5,
+  "scripts": [],
+  "commands": [
+    {
+      "command": "htop",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "cd",
+      "args": "/home",
+      "score": 1
+    },
+    {
+      "command": "ls",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "ok.sh",
+      "score": 1
+    },
+    {
+      "command": "chmod",
+      "args": "777 ok.sh",
+      "score": 1
+    },
+    {
+      "command": "sh",
+      "args": "ok.sh  oui",
+      "score": 1
+    },
+    {
+      "command": "sh",
+      "args": "ok.sh non",
+      "score": 1
+    },
+    {
+      "command": "sh",
+      "args": "ok.sh no",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "ok.sh",
+      "score": 1
+    },
+    {
+      "command": "sh",
+      "args": "ok.sh no",
+      "score": 1
+    },
+    {
+      "command": "sh",
+      "args": "ok.sh oui",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "ok.sh",
+      "score": 1
+    },
+    {
+      "command": "sh",
+      "args": "ok.sh oui",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "ok.sh",
+      "score": 1
+    },
+    {
+      "command": "sh",
+      "args": "ok.sh oui",
+      "score": 1
+    },
+    {
+      "command": "sh",
+      "args": "ok.sh oui",
+      "score": 1
+    },
+    {
+      "command": "sh",
+      "args": "ok.sh oui",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "ok.sh",
+      "score": 1
+    },
+    {
+      "command": "sh",
+      "args": "ok.sh oui",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "ok.sh",
+      "score": 1
+    },
+    {
+      "command": "sh",
+      "args": "ok.sh oui",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "ok.sh",
+      "score": 1
+    },
+    {
+      "command": "sh",
+      "args": "ok.sh oui",
+      "score": 1
+    }
+  ]
+}

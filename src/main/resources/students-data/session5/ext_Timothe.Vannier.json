@@ -1,0 +1,565 @@
+{
+  "name": "ext_Timothe.Vannier",
+  "session": 5,
+  "scripts": [
+    [
+      "#!/bin/bash\n",
+      "resultat=1\n",
+      "for i in $(seq $1)\n",
+      "do\n",
+      "\tresultat=`expr $resultat * $1`\n",
+      "done\n",
+      "echo $resultat\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "resultat=1\n",
+      "for i in $(seq $1)\n",
+      "do\n",
+      "\tresultat=`expr $resultat \\* $1`\n",
+      "done\n",
+      "echo $resultat\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "resultat=1\n",
+      "for i in $(seq $1)\n",
+      "do\n",
+      "\tresultat=`expr $resultat \\* $i`\n",
+      "done\n",
+      "echo $resultat\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "echo Liste des commandes disponibles :\n",
+      "echo 1 \\- Date du jour\n",
+      "echo 2 \\- Liste des personnes connect\u00c3\u00a9es sur la machine\n",
+      "echo 3 \\- Liste des fichiers du r\u00c3\u00a9pertoire courant\n",
+      "echo 4 \\- Nom du r\u00c3\u00a9pertoire courant\n",
+      "\n",
+      "read rep\n",
+      "\n",
+      "case $rep in\n",
+      "\t1 ) date;;\n",
+      "\t2 ) who;;\n",
+      "\t3 ) ls;;\n",
+      "\t4 ) pwd;;\n",
+      "esac\n",
+      "\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "echo \u00c3\u00a9crivez une chaine de carat\u00c3\u00a8res\n",
+      "read rep\n",
+      "while [ $rep /= sortir ]\n",
+      "do \n",
+      "\techo \u00c3\u00a9crivez une nouvelle chaine de caract\u00c3\u00a8res\n",
+      "\tread rep\n",
+      "done\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "echo \u00c3\u00a9crivez une chaine de carat\u00c3\u00a8res\n",
+      "read rep\n",
+      "while [ $rep != sortir ]\n",
+      "do \n",
+      "\techo \u00c3\u00a9crivez une nouvelle chaine de caract\u00c3\u00a8res\n",
+      "\tread rep\n",
+      "done\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "rep=1\n",
+      "while [ $rep -eq 1 -o $rep -eq 2 -o $rep -eq 3 -o $rep -eq 4 ]\n",
+      "do\n",
+      "\techo Listes des commandes disponibles : \n",
+      "\techo 1 \\- Date du jour\n",
+      "\techo 2 \\- Liste des personnes connect\u00c3\u00a9es sur la machine\n",
+      "\techo 3 \\- Liste des fichiers du r\u00c3\u00a9pertoire courant\n",
+      "\techo 4 \\- Nom du r\u00c3\u00a9pertoire courant\n",
+      "\n",
+      "\tread rep\n",
+      "\n",
+      "\tcase $rep in\n",
+      "\t\t1 ) date;;\n",
+      "\t\t2 ) who;;\n",
+      "\t\t3 ) ls;;\n",
+      "\t\t4 ) pwd;;\n",
+      "\tesac\n",
+      "done\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "fct () {\n",
+      "\tvar2=\"variable 2\"\n",
+      "\techo \"\\nDans fonction\"\n",
+      "\techo \"\\$1 = $1\"\n",
+      "\techo \"var1 = $var1\"\n",
+      "\techo \"var2 = $var2\"\n",
+      "\techo \"fin fonction\\n\"\n",
+      "}\n",
+      "\n",
+      "var1=\"variable 1\"\n",
+      "echo \"dans script principal\"\n",
+      "echo \"\\$1 = $1\"\n",
+      "echo \"var1 = $var1\"\n",
+      "fct $var1\n",
+      "echo \"var2 = $var2\"\n",
+      "echo \"fin script principal\"\n",
+      "\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "cacul () {\n",
+      "\tresult=`expr $1 $3 $2`\n",
+      "\treturn result\n",
+      "}\n",
+      "\n",
+      "calcul $1 $2 $3\n",
+      "echo le resultat est $?\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "cacul () {\n",
+      "\tresult=`expr $1 $3 $2`\n",
+      "\treturn result\n",
+      "}\n",
+      "\n",
+      "cacul $1 $2 $3\n",
+      "echo le resultat est $?\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "cacul () {\n",
+      "\tresult=`expr $1 $3 $2`\n",
+      "\treturn $result\n",
+      "}\n",
+      "\n",
+      "cacul $1 $2 $3\n",
+      "echo le resultat est $?\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "cacul () {\n",
+      "\tresult=`expr $1 \\$3 $2`\n",
+      "\treturn $result\n",
+      "}\n",
+      "\n",
+      "cacul $1 $2 $3\n",
+      "echo le resultat est $?\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "cacul () {\n",
+      "\tif $3 = +\n",
+      "\t\tthen\n",
+      "\t\t\tresult=`expr $1 + $2`\n",
+      "\t\telif $3 = \\/\n",
+      "\t\tthen\n",
+      "\t\t\tresult=`expr $1 \\/ $2`\n",
+      "\t\telif $3 = \\*\n",
+      "\t\tthen\n",
+      "\t\t\tresult=`expr $1 \\* $2`\n",
+      "\t\telif $3 = \\-\n",
+      "\t\tthen\n",
+      "\t\t\tresult=`expr $1 \\- $2`\n",
+      "\tfi \n",
+      "\treturn $result\n",
+      "}\n",
+      "\n",
+      "cacul $1 $2 $3\n",
+      "echo le resultat est $?\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "cacul () {\n",
+      "\tif [ $3 = + ]\n",
+      "\t\tthen\n",
+      "\t\t\tresult=`expr $1 + $2`\n",
+      "\t\telif [ $3 = \\/ ]\n",
+      "\t\tthen\n",
+      "\t\t\tresult=`expr $1 \\/ $2`\n",
+      "\t\telif [ $3 = \\* ]\n",
+      "\t\tthen\n",
+      "\t\t\tresult=`expr $1 \\* $2`\n",
+      "\t\telif [ $3 = \\- ]\n",
+      "\t\tthen\n",
+      "\t\t\tresult=`expr $1 \\- $2`\n",
+      "\tfi \n",
+      "\treturn $result\n",
+      "}\n",
+      "\n",
+      "cacul $1 $2 $3\n",
+      "echo le resultat est $?\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "cacul () {\n",
+      "\tif [ $3 =\"+\" ]\n",
+      "\t\tthen\n",
+      "\t\t\tresult=`expr $1 + $2`\n",
+      "\t\telif [ $3 = \"/\" ]\n",
+      "\t\tthen\n",
+      "\t\t\tresult=`expr $1 \\/ $2`\n",
+      "\t\telif [ $3 = \"*\" ]\n",
+      "\t\tthen\n",
+      "\t\t\tresult=`expr $1 \\* $2`\n",
+      "\t\telif [ $3 = \"-\" ]\n",
+      "\t\tthen\n",
+      "\t\t\tresult=`expr $1 \\- $2`\n",
+      "\tfi \n",
+      "\treturn $result\n",
+      "}\n",
+      "\n",
+      "cacul $1 $2 $3\n",
+      "echo le resultat est $?\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "cacul () {\n",
+      "\tif [ $3 = \"+\" ]\n",
+      "\t\tthen\n",
+      "\t\t\tresult=`expr $1 \\+ $2`\n",
+      "\t\telif [ $3 = \"/\" ]\n",
+      "\t\t\tthen\n",
+      "\t\t\tresult=`expr $1 \\/ $2`\n",
+      "\t\telif [ $3 = \"*\" ]\n",
+      "\t\t\tthen\n",
+      "\t\t\tresult=`expr $1 \\* $2`\n",
+      "\t\telif [ $3 = \"-\" ]\n",
+      "\t\t\tthen\n",
+      "\t\t\tresult=`expr $1 \\- $2`\n",
+      "\tfi \n",
+      "\treturn $result\n",
+      "}\n",
+      "\n",
+      "cacul $1 $2 $3\n",
+      "echo le resultat est $?\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "calcul () {\n",
+      "result=0\n",
+      "\tif [ $3 = \"+\" ]\n",
+      "\t\tthen\n",
+      "\t\t\tresult=`expr $1 \\+ $2`\n",
+      "\t\telif [ $3 = \"/\" ]\n",
+      "\t\t\tthen\n",
+      "\t\t\tresult=`expr $1 \\/ $2`\n",
+      "\t\telif [ $3 = \"*\" ]\n",
+      "\t\t\tthen\n",
+      "\t\t\tresult=`expr $1 \\* $2`\n",
+      "\t\telif [ $3 = \"-\" ]\n",
+      "\t\t\tthen\n",
+      "\t\t\tresult=`expr $1 \\- $2`\n",
+      "\tfi \n",
+      "\treturn $result\n",
+      "}\n",
+      "\n",
+      "calcul $1 $2 $3\n",
+      "echo le resultat est $?\n"
+    ]
+  ],
+  "commands": [
+    {
+      "command": "ls",
+      "args": "-l",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo2.sh",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo6.sh",
+      "score": 1
+    },
+    {
+      "command": "chmod",
+      "args": "u+x tp6_exo6.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo6.sh",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo6.sh",
+      "args": "3",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo6.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo6.sh",
+      "args": "3",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo6.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo6.sh",
+      "args": "3",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo7.sh",
+      "score": 1
+    },
+    {
+      "command": "chmod",
+      "args": "u+x tp6_exo7.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo7.sh",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo7.sh",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo7.sh",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo7.sh",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo8.sh",
+      "score": 1
+    },
+    {
+      "command": "chmod",
+      "args": "u+x tp6_exo8.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo8.sh",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo8.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo8.sh",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo7.sh",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo7.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo7.sh",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo9.sh",
+      "score": 1
+    },
+    {
+      "command": "chmod",
+      "args": "u+x tp6_exo9.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo9.sh",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp7_exo1.sh",
+      "score": 1
+    },
+    {
+      "command": "chmod",
+      "args": "u+x tp7_exo1.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp7_exo1.sh",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp7_exo2.sh",
+      "score": 1
+    },
+    {
+      "command": "chmod",
+      "args": "u+x tp7_exo2.sh",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo3.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp7_exo2.sh",
+      "args": "2 3 *",
+      "score": 0
+    },
+    {
+      "command": "nano",
+      "args": "tp7_exo2.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp7_exo2.sh",
+      "args": "2 3 *",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp7_exo2.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp7_exo2.sh",
+      "args": "2 3 *",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp7_exo2.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp7_exo2.sh",
+      "args": "2 3 +",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp7_exo2.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp7_exo2.sh",
+      "args": "2 3 +",
+      "score": 1
+    },
+    {
+      "command": "./tp7_exo2.sh",
+      "args": "2 3 *",
+      "score": 1
+    },
+    {
+      "command": "./tp7_exo2.sh",
+      "args": "2 3 /",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp7_exo2.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp7_exo2.sh",
+      "args": "2 3 /",
+      "score": 0
+    },
+    {
+      "command": "./tp7_exo2.sh",
+      "args": "2 3 *",
+      "score": 0
+    },
+    {
+      "command": "nano",
+      "args": "tp7_exo2.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp7_exo2.sh",
+      "args": "2 3 *",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp7_exo2.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp7_exo2.sh",
+      "args": "2 3 *",
+      "score": 0
+    },
+    {
+      "command": "nano",
+      "args": "tp7_exo2.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp7_exo2.sh",
+      "args": "2 3 *",
+      "score": 1
+    },
+    {
+      "command": "./tp7_exo2.sh",
+      "args": "2 3 +",
+      "score": 1
+    },
+    {
+      "command": "./tp7_exo2.sh",
+      "args": "2 3 -",
+      "score": 1
+    },
+    {
+      "command": "./tp7_exo2.sh",
+      "args": "2 3 /",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp7_exo2.sh",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp7_exo2.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp7_exo2.sh",
+      "args": "2 3 /",
+      "score": 1
+    },
+    {
+      "command": "./tp7_exo2.sh",
+      "args": "2 3 *",
+      "score": 1
+    }
+  ]
+}

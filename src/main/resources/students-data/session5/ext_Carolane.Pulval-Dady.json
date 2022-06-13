@@ -1,0 +1,192 @@
+{
+  "name": "ext_Carolane.Pulval-Dady",
+  "session": 5,
+  "scripts": [],
+  "commands": [
+    {
+      "command": "./tp6_exo5.sh",
+      "args": "Toto tutu",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo5.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo5.sh",
+      "args": "Toto tutu",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo5.sh",
+      "args": "Toto tutu",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo5.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo5.sh",
+      "args": "Toto tutu",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo5.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo5.sh",
+      "args": "Toto tutu",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo5.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo5.sh",
+      "args": "Toto tutu",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo5.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo5.sh",
+      "args": "Toto tutu",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo5.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo5.sh",
+      "args": "Toto tutu",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo5.sh",
+      "args": "Toto tutu",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo5.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo5.sh",
+      "args": "Toto tutu",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo5.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo5.sh",
+      "args": "Toto tutu",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo5.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo5.sh",
+      "args": "Toto tutu",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo5.sh",
+      "args": "Toto tutu titi",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo6.sh",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo5.sh",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo6.sh",
+      "score": 1
+    },
+    {
+      "command": "chmod",
+      "args": "u+x tp6_exo6.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo6.sh",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "seq",
+      "args": "--help",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo6.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo6.sh",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo6.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo6.sh",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo6.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo6.sh",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo6.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo6.sh",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo6.sh",
+      "score": 1
+    }
+  ]
+}

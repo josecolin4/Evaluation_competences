@@ -1,0 +1,1006 @@
+{
+  "name": "ext_Nathan.Cloquemin",
+  "session": 5,
+  "scripts": [
+    [
+      "#!/bin/bash\n",
+      "fct() {\n",
+      "\tvar2=\"variable 2\"\n",
+      "\techo \"\\nDans fonction\"\n",
+      "\techo \"\\$1 = $1\"\n",
+      "\techo \"var1 = $var1\"\n",
+      "\techo \"var2 = $var2\"\n",
+      "\techo \"fin de fonction\\n\"\n",
+      "}\n",
+      "\n",
+      "var1=\"variable 1\"\n",
+      "echo \"dans script principal\"\n",
+      "echo \"\\$1 = $1\"\n",
+      "echo \"var1 = $var1\"\n",
+      "fct $var1\n",
+      "echo \"var2 = $var2\"\n",
+      "echo \"fin script principal\"\n"
+    ],
+    [
+      "#!/bin/bash\n"
+    ],
+    [
+      "#!/bin/sh\n",
+      "fct() {\n",
+      "\tvar2=\"variable 2\"\n",
+      "\techo \"\\nDans fonction\"\n",
+      "\techo \"\\$1 = $1\"\n",
+      "\techo \"var1 = $var1\"\n",
+      "\techo \"var2 = $var2\"\n",
+      "\techo \"fin de fonction\\n\"\n",
+      "}\n",
+      "\n",
+      "var1=\"variable 1\"\n",
+      "echo \"dans script principal\"\n",
+      "echo \"\\$1 = $1\"\n",
+      "echo \"var1 = $var1\"\n",
+      "fct $var1\n",
+      "echo \"var2 = $var2\"\n",
+      "echo \"fin script principal\"\n"
+    ],
+    [
+      "#!/bin/sh\n",
+      "calcul () {\n",
+      "\techo \"\\nDans fonction :\"\n",
+      "\t$rep=$(( $1 $3 $2 ))\n",
+      "\treturn $rep\n",
+      "}\n",
+      "echo $?\n"
+    ],
+    [
+      "#!/bin/sh\n",
+      "calcul () {\n",
+      "\techo \"\\nDans fonction :\"\n",
+      "\t$rep=$(( $1 $3 $2 ))\n",
+      "\treturn $rep\\n\n",
+      "}\n",
+      "ret=$?\n",
+      "echo \"Return value and so result is $ret\"\n"
+    ],
+    [
+      "#!/bin/sh\n",
+      "calcul () {\n",
+      "\techo \"\\nDans fonction :\"\n",
+      "\t$rep=$(( \\$1 \\$3 \\$2 ))\n",
+      "\treturn $rep\\n\n",
+      "}\n",
+      "ret=$?\n",
+      "echo \"Return value and so result is $ret\"\n"
+    ],
+    [
+      "#!/bin/sh\n",
+      "calcul () {\n",
+      "\techo \"\\nDans fonction :\"\n",
+      "\techo \"$rep=$(( \\$1 \\$3 \\$2 ))\"\n",
+      "\treturn $rep\\n\n",
+      "}\n",
+      "ret=$?\n",
+      "echo \"Return value and so result is $ret\"\n"
+    ],
+    [
+      "#!/bin/sh\n",
+      "echo \"Debut programme\"\n",
+      "calcul () {\n",
+      "\techo \"\\nDans fonction :\"\n",
+      "\techo \"$rep=$(( \\$1 \\$3 \\$2 ))\"\n",
+      "\treturn $rep\\n\n",
+      "}\n",
+      "calcul\n",
+      "ret=$?\n",
+      "echo \"Return value and so result is $ret\"\n",
+      "echo \"fin script principal\"\n"
+    ],
+    [
+      "#!/bin/sh\n",
+      "echo \"Debut programme\"\n",
+      "calcul () {\n",
+      "\techo \"\\nDans fonction :\"\n",
+      "\t$rep=$(( $1 $3 $2 ))\n",
+      "\treturn $rep\\n\n",
+      "}\n",
+      "calcul\n",
+      "ret=$?\n",
+      "echo \"Return value and so result is $ret\"\n",
+      "echo \"fin script principal\"\n"
+    ],
+    [
+      "#!/bin/sh\n",
+      "echo \"Debut programme\"\n",
+      "calcul () {\n",
+      "\techo \"\\nDans fonction :\"\n",
+      "\tnbr1=\\$1\n",
+      "\tnbr2=\\$2\n",
+      "\toperant=\\$3\n",
+      "\t$rep=$(( $nbr1 $operant $nbr2 ))\n",
+      "\treturn $rep\\n\n",
+      "}\n",
+      "calcul $1 $2 $3\n",
+      "ret=$?\n",
+      "echo \"Return value and so result is $ret\"\n",
+      "echo \"fin script principal\"\n"
+    ],
+    [
+      "#!/bin/sh\n",
+      "echo \"Debut programme\"\n",
+      "calcul () {\n",
+      "\techo \"\\nDans fonction :\"\n",
+      "\tnbr1=$1\n",
+      "\tnbr2=$2\n",
+      "\toperant=$3\n",
+      "\t$rep=$(( \\$nbr1 \\$operant \\$nbr2 ))\n",
+      "\treturn $rep\\n\n",
+      "}\n",
+      "calcul $1 $2 $3\n",
+      "ret=$?\n",
+      "echo \"Return value and so result is $ret\"\n",
+      "echo \"fin script principal\"\n"
+    ],
+    [
+      "#!/bin/sh\n",
+      "echo \"Debut programme\"\n",
+      "calcul () {\n",
+      "\techo \"\\nDans fonction :\"\n",
+      "\tnbr1=$1\n",
+      "\tnbr2=$2\n",
+      "\toperant=$3\n",
+      "\trep=$(( \\$nbr1 \\$operant \\$nbr2 ))\n",
+      "\treturn $rep\n",
+      "\t\\n\n",
+      "}\n",
+      "calcul $1 $2 $3\n",
+      "ret=$?\n",
+      "echo \"Return value and so result is $ret\"\n",
+      "echo \"fin script principal\"\n"
+    ],
+    [
+      "#!/bin/sh\n",
+      "echo \"Debut programme\"\n",
+      "calcul () {\n",
+      "\techo \"\\nDans fonction :\"\n",
+      "\tnbr1=$1\n",
+      "\tnbr2=$2\n",
+      "\toperant=$3\n",
+      "\trep=$(( \\$nbr1 \\$operant \\$nbr2 ))\n",
+      "\treturn $rep\n",
+      "\t\\n\n",
+      "}\n",
+      "calcul $1 $2 $3\n",
+      "ret=$?\n",
+      "echo \"Return value and so result is $ret\"\n",
+      "echo \"fin script principal\"\n"
+    ],
+    [
+      "#!/bin/sh\n",
+      "echo \"Debut programme\"\n",
+      "calcul () {\n",
+      "\techo \"\\nDans fonction :\"\n",
+      "\trep=$(( $nbr1 $operant $nbr2 ))\n",
+      "\treturn $rep\n",
+      "\t\\n\n",
+      "}\n",
+      "echo \"nbr1=$1\"\n",
+      "echo \"nbr2=$2\"\n",
+      "echo \"operant=$3\"\n",
+      "calcul $nbr1 $nbr2 $operant\n",
+      "ret=$?\n",
+      "echo \"Return value and so result is $ret\"\n",
+      "echo \"fin script principal\"\n"
+    ],
+    [
+      "#!/bin/sh\n",
+      "echo \"Debut programme\"\n",
+      "calcul () {\n",
+      "\techo \"\\nDans fonction :\"\n",
+      "\techo \"rep=$(( $nbr1 $operant $nbr2 ))\"\n",
+      "\treturn $rep\n",
+      "\t\\n\n",
+      "}\n",
+      "echo \"nbr1=$1\"\n",
+      "echo \"nbr2=$2\"\n",
+      "echo \"operant=$3\"\n",
+      "calcul $nbr1 $nbr2 $operant\n",
+      "ret=$?\n",
+      "echo \"Return value and so result is $ret\"\n",
+      "echo \"fin script principal\"\n"
+    ],
+    [
+      "#!/bin/sh\n",
+      "echo \"Debut programme\"\n",
+      "calcul () {\n",
+      "\techo \"\\nDans fonction :\"\n",
+      "\techo \"rep=$(( $nbr1 $operant $nbr2 ))\"\n",
+      "\treturn $rep\n",
+      "\t\\n\n",
+      "}\n",
+      "echo \"nbr1=$1\"\n",
+      "echo \"nbr2=$2\"\n",
+      "echo \"operant=$3\"\n",
+      "calcul $nbr1 $nbr2 $operant\n",
+      "ret=$?\n",
+      "echo \"Return value and so result is $ret\"\n",
+      "echo \"fin script principal\"\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "echo \"Debut programme\"\n",
+      "calcul () {\n",
+      "\techo \"\\nDans fonction :\"\n",
+      "\techo \"rep=$(( $nbr1 $operant $nbr2 ))\"\n",
+      "\treturn $rep\n",
+      "\t\\n\n",
+      "}\n",
+      "echo \"nbr1=$1\"\n",
+      "echo \"nbr2=$2\"\n",
+      "echo \"operant=$3\"\n",
+      "calcul $nbr1 $nbr2 $operant\n",
+      "ret=$?\n",
+      "echo \"Return value and so result is $ret\"\n",
+      "echo \"fin script principal\"\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "echo \"Debut programme\"\n",
+      "calcul () {\n",
+      "\techo\n",
+      "\techo \"Dans fonction :\"\n",
+      "\techo \"rep=$(( $nbr1 $operant $nbr2 ))\"\n",
+      "\treturn $rep\n",
+      "\techo\n",
+      "}\n",
+      "echo \"nbr1=$1\"\n",
+      "echo \"nbr2=$2\"\n",
+      "echo \"operant=$3\"\n",
+      "calcul $nbr1 $nbr2 $operant\n",
+      "ret=$?\n",
+      "echo \"Return value and so result is $ret\"\n",
+      "echo \"fin script principal\"\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "echo \"Debut programme\"\n",
+      "calcul () {\n",
+      "\techo\n",
+      "\techo \"Dans fonction :\"\n",
+      "\tlet \"rep=$nbr1 $operant $nbr2\"\n",
+      "\treturn $rep\n",
+      "\techo\n",
+      "}\n",
+      "echo \"nbr1=$1\"\n",
+      "echo \"nbr2=$2\"\n",
+      "echo \"operant=$3\"\n",
+      "calcul $nbr1 $nbr2 $operant\n",
+      "ret=$?\n",
+      "echo \"Return value and so result is $ret\"\n",
+      "echo \"fin script principal\"\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "echo \"Debut programme\"\n",
+      "calcul () {\n",
+      "\techo\n",
+      "\techo \"Dans fonction :\"\n",
+      "\techo \"rep=$(($nbr1 $operant $nbr2))\"\n",
+      "\treturn $rep\n",
+      "\techo\n",
+      "}\n",
+      "echo \"nbr1=$1\"\n",
+      "echo \"nbr2=$2\"\n",
+      "echo \"operant=$3\"\n",
+      "calcul $nbr1 $nbr2 $operant\n",
+      "ret=$?\n",
+      "echo \"Return value and so result is $ret\"\n",
+      "echo \"fin script principal\"\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "echo \"Debut programme\"\n",
+      "calcul () {\n",
+      "\techo\n",
+      "\techo \"Dans fonction :\"\n",
+      "\tlet \"rep=$nbr1 $operant $nbr2\"\n",
+      "\treturn $rep\n",
+      "\techo\n",
+      "}\n",
+      "echo \"nbr1=$1\"\n",
+      "echo \"nbr2=$2\"\n",
+      "echo \"operant=$3\"\n",
+      "calcul $nbr1 $nbr2 $operant\n",
+      "ret=$?\n",
+      "echo \"Return value and so result is $ret\"\n",
+      "echo \"fin script principal\"\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "echo \"Debut programme\"\n",
+      "calcul () {\n",
+      "\techo\n",
+      "\techo \"Dans fonction :\"\n",
+      "\techo \"rep=$(($nbr1$operant$nbr2))\"\n",
+      "\treturn $rep\n",
+      "\techo\n",
+      "}\n",
+      "echo \"nbr1=$1\"\n",
+      "echo \"nbr2=$2\"\n",
+      "echo \"operant=$3\"\n",
+      "calcul $nbr1 $nbr2 $operant\n",
+      "ret=$?\n",
+      "echo \"Return value and so result is $ret\"\n",
+      "echo \"fin script principal\"\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "echo \"Debut programme\"\n",
+      "calcul () {\n",
+      "\techo\n",
+      "\techo \"Dans fonction :\"\n",
+      "\techo $nbr1\n",
+      "\techo $nbr2\n",
+      "\techo $operant\n",
+      "\techo \"rep=$(($nbr1 $operant $nbr2))\"\n",
+      "\treturn $rep\n",
+      "\techo\n",
+      "}\n",
+      "echo \"nbr1=$1\"\n",
+      "echo \"nbr2=$2\"\n",
+      "echo \"operant=$3\"\n",
+      "calcul $nbr1 $nbr2 $operant\n",
+      "ret=$?\n",
+      "echo \"Return value and so result is $ret\"\n",
+      "echo \"fin script principal\"\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "echo \"Debut programme\"\n",
+      "calcul () {\n",
+      "\techo\n",
+      "\techo \"Dans fonction :\"\n",
+      "\techo $nbr1\n",
+      "\techo $nbr2\n",
+      "\techo $operant\n",
+      "\techo \"rep=$(($nbr1 $operant $nbr2))\"\n",
+      "\treturn $rep\n",
+      "\techo\n",
+      "}\n",
+      "echo \"nbr1=$1\"\n",
+      "echo \"nbr2=$2\"\n",
+      "echo \"operant=$3\"\n",
+      "echo $nbr1\n",
+      "calcul $nbr1 $nbr2 $operant\n",
+      "ret=$?\n",
+      "echo \"Return value and so result is $ret\"\n",
+      "echo \"fin script principal\"\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "echo \"Debut programme\"\n",
+      "calcul () {\n",
+      "\techo\n",
+      "\techo \"Dans fonction :\"\n",
+      "\techo $nbr1\n",
+      "\techo $nbr2\n",
+      "\techo $operant\n",
+      "\techo \"rep=$(($nbr1 $operant $nbr2))\"\n",
+      "\treturn $rep\n",
+      "\techo\n",
+      "}\n",
+      "echo nbr1=$1\n",
+      "echo nbr2=$2\n",
+      "echo operant=$3\n",
+      "echo $nbr1\n",
+      "calcul $nbr1 $nbr2 $operant\n",
+      "ret=$?\n",
+      "echo \"Return value and so result is $ret\"\n",
+      "echo \"fin script principal\"\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "echo \"Debut programme\"\n",
+      "calcul () {\n",
+      "\techo\n",
+      "\techo \"Dans fonction :\"\n",
+      "\techo $nbr1\n",
+      "\techo $nbr2\n",
+      "\techo $operant\n",
+      "\techo \"rep=$(($nbr1 $operant $nbr2))\"\n",
+      "\treturn $rep\n",
+      "\techo\n",
+      "}\n",
+      "nbr1=$1\n",
+      "echo nbr2=$2\n",
+      "echo operant=$3\n",
+      "echo $nbr1\n",
+      "calcul $nbr1 $nbr2 $operant\n",
+      "ret=$?\n",
+      "echo \"Return value and so result is $ret\"\n",
+      "echo \"fin script principal\"\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "echo \"Debut programme\"\n",
+      "calcul () {\n",
+      "\techo\n",
+      "\techo \"Dans fonction :\"\n",
+      "\techo $nbr1\n",
+      "\techo $nbr2\n",
+      "\techo $operant\n",
+      "\trep=$(($nbr1 $operant $nbr2))\n",
+      "\treturn $rep\n",
+      "\techo\n",
+      "}\n",
+      "nbr1=$1\n",
+      "nbr2=$2\n",
+      "operant=$3\n",
+      "calcul $nbr1 $nbr2 $operant\n",
+      "ret=$?\n",
+      "echo \"Return value and so result is $ret\"\n",
+      "echo \"fin script principal\"\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "echo \"Debut programme\"\n",
+      "calcul () {\n",
+      "\techo\n",
+      "\techo \"Dans fonction :\"\n",
+      "\techo $nbr1\n",
+      "\techo $nbr2\n",
+      "\techo $operant\n",
+      "\trep=$(($nbr1 \\$operant $nbr2))\n",
+      "\treturn $rep\n",
+      "\techo\n",
+      "}\n",
+      "nbr1=$1\n",
+      "nbr2=$2\n",
+      "operant=$3\n",
+      "calcul $nbr1 $nbr2 $operant\n",
+      "ret=$?\n",
+      "echo \"Return value and so result is $ret\"\n",
+      "echo \"fin script principal\"\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "echo \"Debut programme\"\n",
+      "calcul () {\n",
+      "\techo\n",
+      "\techo \"Dans fonction :\"\n",
+      "\techo $nbr1\n",
+      "\techo $nbr2\n",
+      "\techo $operant\n",
+      "\trep=$(($nbr1 \\$operant $nbr2))\n",
+      "\treturn $rep\n",
+      "\techo\n",
+      "}\n",
+      "nbr1=$1\n",
+      "nbr2=$2\n",
+      "operant=$3\n",
+      "calcul $nbr1 $nbr2 $operant\n",
+      "ret=$?\n",
+      "echo \"Return value and so result is $ret\"\n",
+      "echo \"fin script principal\"\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "echo \"Debut programme\"\n",
+      "calcul () {\n",
+      "\techo\n",
+      "\techo \"Dans fonction :\"\n",
+      "\techo $nbr1\n",
+      "\techo $nbr2\n",
+      "\techo $operant\n",
+      "\trep=$(($nbr1 \"$operant\" $nbr2))\n",
+      "\treturn $rep\n",
+      "\techo\n",
+      "}\n",
+      "nbr1=$1\n",
+      "nbr2=$2\n",
+      "operant=\"$3\"\n",
+      "calcul $nbr1 $nbr2 $operant\n",
+      "ret=$?\n",
+      "echo \"Return value and so result is $ret\"\n",
+      "echo \"fin script principal\"\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "echo \"Debut programme\"\n",
+      "calcul () {\n",
+      "\techo\n",
+      "\techo \"Dans fonction :\"\n",
+      "\techo $nbr1\n",
+      "\techo $nbr2\n",
+      "\techo $operant\n",
+      "\trep=$(($nbr1 $operant $nbr2))\n",
+      "\treturn $rep\n",
+      "\techo\n",
+      "}\n",
+      "nbr1=$1\n",
+      "nbr2=$2\n",
+      "operant=\"$3\"\n",
+      "calcul $nbr1 $nbr2 $operant\n",
+      "ret=$?\n",
+      "echo \"Return value and so result is $ret\"\n",
+      "echo \"fin script principal\"\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "echo \"Debut programme\"\n",
+      "calcul () {\n",
+      "\techo\n",
+      "\techo \"Dans fonction :\"\n",
+      "\techo $nbr1\n",
+      "\techo $nbr2\n",
+      "\techo $operant\n",
+      "\trep=$(($nbr1 $operant $nbr2))\n",
+      "\treturn $rep\n",
+      "\techo\n",
+      "}\n",
+      "nbr1=$1\n",
+      "nbr2=$2\n",
+      "operant=$3\n",
+      "calcul $nbr1 $nbr2 \"$operant\"\n",
+      "ret=$?\n",
+      "echo \"Return value and so result is $ret\"\n",
+      "echo \"fin script principal\"\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "echo \"Debut programme\"\n",
+      "calcul () {\n",
+      "\techo\n",
+      "\techo \"Dans fonction :\"\n",
+      "\trep=$(($1 $3 $2))\n",
+      "\treturn $rep\n",
+      "\techo\n",
+      "}\n",
+      "calcul $1 $2 \"$3\"\n",
+      "ret=$?\n",
+      "echo \"Return value and so result is $ret\"\n",
+      "echo \"fin script principal\"\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "echo \"Debut programme\"\n",
+      "calcul () {\n",
+      "\techo\n",
+      "\techo \"Dans fonction :\"\n",
+      "\trep=$(($1 $3 $2))\n",
+      "\treturn $rep\n",
+      "\techo\n",
+      "}\n",
+      "calcul $1 $2 \"$3\"\n",
+      "ret=$?\n",
+      "echo \"Return value and so result is $ret\"\n",
+      "echo \"fin script principal\"\n"
+    ]
+  ],
+  "commands": [
+    {
+      "command": "las",
+      "args": "-l",
+      "score": 0
+    },
+    {
+      "command": "ls",
+      "args": "-l",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo9.sh",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp9_exo1.sh",
+      "score": 1
+    },
+    {
+      "command": "chmod",
+      "args": "a+x tp9_exo1.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp9_exo1.sh",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp9_exo2.sh",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp9_exo1.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp9_exo1.sh",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp9_exo2.sh",
+      "score": 1
+    },
+    {
+      "command": "chmod",
+      "args": "a+x tp9_exo2.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp9_exo2.sh",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "./tp9_exo2.sh",
+      "args": "2 4 +",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp9_exo2.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp9_exo2.sh",
+      "args": "2 4 +",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp9_exo2.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp9_exo2.sh",
+      "args": "2 4 +",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp9_exo2.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp9_exo2.sh",
+      "args": "2 4 +",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp9_exo2.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp9_exo2.sh",
+      "args": "2 4 +",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp9_exo2.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp9_exo2.sh",
+      "args": "2 4 +",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp9_exo2.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp9_exo2.sh",
+      "args": "2 4 +",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp9_exo2.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp9_exo2.sh",
+      "args": "2 4 +",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp9_exo2.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp9_exo1.sh",
+      "args": "argum",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp9_exo2.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp9_exo2.sh",
+      "args": "2 4 +",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp9_exo2.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp9_exo2.sh",
+      "args": "6 3 +",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp9_exo2.sh",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp9_exo2.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp9_exo2.sh",
+      "args": "6 3 +",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp9_exo2.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp9_exo2.sh",
+      "args": "6 3 +",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp9_exo2.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp9_exo2.sh",
+      "args": "6 3 +",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp9_exo2.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp9_exo2.sh",
+      "args": "6 3 +",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp9_exo2.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp9_exo2.sh",
+      "args": "4 2 *",
+      "score": 1
+    },
+    {
+      "command": "man",
+      "args": "let",
+      "score": 0
+    },
+    {
+      "command": "nano",
+      "args": "tp9_exo2.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp9_exo2.sh",
+      "args": "4 2 *",
+      "score": 1
+    },
+    {
+      "command": "./tp9_exo2.sh",
+      "args": "4 2 -",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp9_exo2.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp9_exo2.sh",
+      "args": "4 2 -",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp9_exo2.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp9_exo2.sh",
+      "args": "4 2 -",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp9_exo2.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp9_exo2.sh",
+      "args": "4 2 -",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp9_exo2.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp9_exo2.sh",
+      "args": "4 2 -",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp9_exo2.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp9_exo2.sh",
+      "args": "4 2 -",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp9_exo2.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp9_exo2.sh",
+      "args": "4 2 -",
+      "score": 1
+    },
+    {
+      "command": "./tp9_exo2.sh",
+      "args": "10 5 /",
+      "score": 1
+    },
+    {
+      "command": "./tp9_exo2.sh",
+      "args": "20 2 /",
+      "score": 1
+    },
+    {
+      "command": "./tp9_exo2.sh",
+      "args": "5 6 +",
+      "score": 1
+    },
+    {
+      "command": "./tp9_exo2.sh",
+      "args": "3 7 *",
+      "score": 1
+    },
+    {
+      "command": "./tp9_exo2.sh",
+      "args": "3 7 \\*",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp9_exo2.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp9_exo2.sh",
+      "args": "3 7 *",
+      "score": 1
+    },
+    {
+      "command": "./tp9_exo2.sh",
+      "args": "3 7 \\*",
+      "score": 1
+    },
+    {
+      "command": "./tp9_exo2.sh",
+      "args": "3 7 /*",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp9_exo2.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp9_exo2.sh",
+      "args": "3 7 *",
+      "score": 1
+    },
+    {
+      "command": "./tp9_exo2.sh",
+      "args": "3 7 \"*\"",
+      "score": 1
+    },
+    {
+      "command": "./tp9_exo2.sh",
+      "args": "3 7 \\*",
+      "score": 1
+    },
+    {
+      "command": "./tp9_exo2.sh",
+      "args": "3 7 \\*",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp9_exo2.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp9_exo2.sh",
+      "args": "3 7 +",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp9_exo2.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp9_exo2.sh",
+      "args": "3 7 +",
+      "score": 1
+    },
+    {
+      "command": "./tp9_exo2.sh",
+      "args": "3 7 \\*",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp9_exo2.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp9_exo2.sh",
+      "args": "3 7 \\*",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp9_exo2.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp9_exo2.sh",
+      "args": "3 7 \\*",
+      "score": 1
+    },
+    {
+      "command": "ls",
+      "args": "-l /bin/sh",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp9_exo2.sh",
+      "score": 1
+    }
+  ]
+}

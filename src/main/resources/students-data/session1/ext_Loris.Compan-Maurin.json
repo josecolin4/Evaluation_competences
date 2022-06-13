@@ -1,0 +1,1065 @@
+{
+  "name": "ext_Loris.Compan-Maurin",
+  "session": 1,
+  "scripts": [
+    [
+      "#!/bin/bash\n",
+      "echo cours\n",
+      "cours=unix\n",
+      "echo $cours\n",
+      "echo je suis en cours $cours\n",
+      "\n"
+    ],
+    [
+      "Mon nom de login est : $login\n",
+      "Mon shell est : $shell\n",
+      "Les variables du Shell sont : $listevarShell\n",
+      "Celles d'environnement sont : $listeVarEnvi\n"
+    ],
+    [
+      "Mon nom de login est : $user\n",
+      "Mon shell est : $shell\n",
+      "Les variables du Shell sont : $listevarShell\n",
+      "Celles d'environnement sont : $listeVarEnvi\n"
+    ],
+    [
+      "Mon nom de login est : $USER\n",
+      "Mon shell est : $shell\n",
+      "Les variables du Shell sont : set\n",
+      "Celles d'environnement sont : $listeVarEnvi\n"
+    ],
+    [
+      "Mon nom de login est : echo USER\n",
+      "Mon shell est : echo BASH\n",
+      "Les variables du Shell sont : set\n",
+      "Celles d'environnement sont : $listeVarEnvi\n"
+    ],
+    [
+      "Mon nom de login est : echo USER\n",
+      "Mon shell est : echo BASH\n",
+      "Les variables du Shell sont : set\n",
+      "Celles d'environnement sont : env \n"
+    ],
+    [
+      "Mon nom de login est : $USER\n",
+      "Mon shell est : $BASH\n",
+      "Les variables du Shell sont : set\n",
+      "Celles d'environnement sont : env \n"
+    ],
+    [
+      "Mon nom de login est : echo $USER\n",
+      "Mon shell est : echo $BASH\n",
+      "Les variables du Shell sont : set\n",
+      "Celles d'environnement sont : env \n"
+    ],
+    [
+      "Mon nom de login est : echo $USER\n",
+      "Mon shell est : echo $SHELL\n",
+      "Les variables du Shell sont :\n",
+      "echo set | more\n",
+      "Celles d'environnement sont :\n",
+      "echo env | more\n"
+    ],
+    [
+      "Mon nom de login est : echo $LOGNAME\n",
+      "Mon shell est : echo $SHELL\n",
+      "Les variables du Shell sont :\n",
+      "echo set | more\n",
+      "Celles d'environnement sont :\n",
+      "echo env | more\n"
+    ],
+    [
+      "Mon nom de login est : echo $LOGNAME\n",
+      "Mon shell est : echo $SHELL\n",
+      "Les variables du Shell sont :\n",
+      "echo set | more\n",
+      "Celles d'environnement sont :\n",
+      "echo env | more\n"
+    ],
+    [
+      "echo Mon nom de login est : $LOGNAME\n",
+      "echo Mon shell est : $SHELL\n",
+      "echo Les variables du Shell sont :\n",
+      "set | more\n",
+      "echo Celles d'environnement sont :\n",
+      "env | more\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "echo Cher utilisateur quel est ton pr\u00c3\u00a9nom \\?\n",
+      "read prenom\n",
+      "echo Ravi de te connaitre, $prenom\n",
+      "echo Quel est ton nom et ton age \\?\n",
+      "read nom age\n",
+      "echo Tu es $prenom $nom et tu as $age ans, n\\'est-ce pas \\?\n",
+      "read reponse\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "echo Je suis le script Shell $0\n",
+      "echo Mes arguments sont $*\n",
+      "echo Le premier argument est $1\n",
+      "echo Le deuxi\u00c3\u00a8me argument est $2\n",
+      "\n"
+    ]
+  ],
+  "profile": [
+    {
+      "name": "Afficher_la_valeur_dune_variable",
+      "mastery": 0.8,
+      "trust": 1
+    },
+    {
+      "name": "Affecter_une_valeur_\u00c3\u00a0_un_ou_plusieurs_param\u00c3\u00a8tres_de_position",
+      "mastery": 0,
+      "trust": 0
+    },
+    {
+      "name": "Modifier_la_valeur_de_une_variable",
+      "mastery": 0.2,
+      "trust": 1
+    },
+    {
+      "name": "Renommer_un_fichier_Unix",
+      "mastery": 0,
+      "trust": 0
+    },
+    {
+      "name": "Affecter_une_valeur_\u00c3\u00a0_une_variable",
+      "mastery": 0.4,
+      "trust": 1
+    },
+    {
+      "name": "Tester_l\u00c3\u00a9tat_dun_fichier",
+      "mastery": 0,
+      "trust": 0
+    },
+    {
+      "name": "Cr\u00c3\u00a9er_un_fichier_Unix",
+      "mastery": 0.6,
+      "trust": 1
+    },
+    {
+      "name": "Afficher_le_manuel_dune_commande_Unix",
+      "mastery": 0.6,
+      "trust": 1
+    },
+    {
+      "name": "Modifier_les_droits_dun_fichier_Unix",
+      "mastery": 0.6,
+      "trust": 1
+    },
+    {
+      "name": "Afficher_le_contenu_de_un_fichier_Unix",
+      "mastery": 0.6,
+      "trust": 1
+    },
+    {
+      "name": "Modifier_un_fichier_Unix",
+      "mastery": 0.6,
+      "trust": 1
+    },
+    {
+      "name": "Obtenir_la_valeur_affect\u00c3\u00a9e_\u00c3\u00a0_une_variable",
+      "mastery": 0.8,
+      "trust": 1
+    },
+    {
+      "name": "Comparer_des_nombres",
+      "mastery": 0,
+      "trust": 0
+    },
+    {
+      "name": "R\u00c3\u00a9cup\u00c3\u00a9rer_des_donn\u00c3\u00a9es_saisies_par_lutilisateur",
+      "mastery": 0.6,
+      "trust": 1
+    },
+    {
+      "name": "Obtenir_la_valeur_de_un_ou_plusieurs_param\u00c3\u00a8tres",
+      "mastery": 0.8,
+      "trust": 1
+    },
+    {
+      "name": "Banaliser_un_caract\u00c3\u00a8re",
+      "mastery": 0.6,
+      "trust": 1
+    },
+    {
+      "name": "Comparer_des_cha\u00c3\u00aenes_de_caract\u00c3\u00a8res",
+      "mastery": 0,
+      "trust": 0
+    },
+    {
+      "name": "Supprimer_un_fichier_Unix",
+      "mastery": 0,
+      "trust": 0
+    },
+    {
+      "name": "Interpr\u00c3\u00a9ter_de_fa\u00c3\u00a7on_num\u00c3\u00a9rique_la_valeur_dune_variable",
+      "mastery": 0.2,
+      "trust": 1
+    },
+    {
+      "name": "Conna\u00c3\u00aetre_les_op\u00c3\u00a9rateurs_de_comparaison_num\u00c3\u00a9rique",
+      "mastery": 0,
+      "trust": 0
+    },
+    {
+      "name": "Conna\u00c3\u00aetre_la_notion_de_redirection_entr\u00c3\u00a9e_et_sortie",
+      "mastery": 0.4,
+      "trust": 1
+    },
+    {
+      "name": "Conna\u00c3\u00aetre_les_commandes_de_base_Unix",
+      "mastery": 0,
+      "trust": 0
+    },
+    {
+      "name": "Conna\u00c3\u00aetre_la_syntaxe_dollar(cmd)",
+      "mastery": 0,
+      "trust": 0
+    },
+    {
+      "name": "Conna\u00c3\u00aetre_la_notion_de_droits_sous_Unix",
+      "mastery": 0.6,
+      "trust": 1
+    },
+    {
+      "name": "Conna\u00c3\u00aetre_la_notion_de_banalisation_de_caract\u00c3\u00a8res",
+      "mastery": 0.6,
+      "trust": 1
+    },
+    {
+      "name": "Conna\u00c3\u00aetre_les_variables_denvironnement",
+      "mastery": 0.6,
+      "trust": 1
+    },
+    {
+      "name": "Conna\u00c3\u00aetre_la_syntaxe_de_instruction_case",
+      "mastery": 0,
+      "trust": 0
+    },
+    {
+      "name": "Conna\u00c3\u00aetre_la_syntaxe_de_instruction_seq",
+      "mastery": 0,
+      "trust": 0
+    },
+    {
+      "name": "Conna\u00c3\u00aetre_le_caract\u00c3\u00a8re_de_substitution_de_commande",
+      "mastery": 0.4,
+      "trust": 1
+    },
+    {
+      "name": "Conna\u00c3\u00aetre_la_syntaxe_IfThenElifElse",
+      "mastery": 0,
+      "trust": 0
+    },
+    {
+      "name": "Conna\u00c3\u00aetre_la_syntaxe_de_instruction_set",
+      "mastery": 0,
+      "trust": 0
+    },
+    {
+      "name": "Conna\u00c3\u00aetre_la_notion_de_variable",
+      "mastery": 0.6,
+      "trust": 1
+    },
+    {
+      "name": "Conna\u00c3\u00aetre_la_syntaxe_de_instruction_while",
+      "mastery": 0,
+      "trust": 0
+    },
+    {
+      "name": "Conna\u00c3\u00aetre_la_notion_de_param\u00c3\u00a8tre",
+      "mastery": 0.8,
+      "trust": 1
+    },
+    {
+      "name": "Conna\u00c3\u00aetre_la_syntaxe_dollar((__))",
+      "mastery": 0,
+      "trust": 0
+    },
+    {
+      "name": "Conna\u00c3\u00aetre_les_op\u00c3\u00a9rateurs_de_comparaison_de_caract\u00c3\u00a8res",
+      "mastery": 0,
+      "trust": 0
+    },
+    {
+      "name": "Conna\u00c3\u00aetre_la_notion_de_fichier_Unix",
+      "mastery": 0.8,
+      "trust": 1
+    },
+    {
+      "name": "Conna\u00c3\u00aetre_la_syntaxe_CrochetCrochet",
+      "mastery": 0,
+      "trust": 0
+    },
+    {
+      "name": "Conna\u00c3\u00aetre_les_variables_sp\u00c3\u00a9ciales",
+      "mastery": 0.8,
+      "trust": 1
+    },
+    {
+      "name": "Conna\u00c3\u00aetre_la_syntaxe_de_instruction_for",
+      "mastery": 0,
+      "trust": 0
+    },
+    {
+      "name": "Conna\u00c3\u00aetre_la_notion_de_expression_arithm\u00c3\u00a9tique",
+      "mastery": 0,
+      "trust": 0
+    },
+    {
+      "name": "Conna\u00c3\u00aetre_les_op\u00c3\u00a9rateurs_logiques",
+      "mastery": 0,
+      "trust": 0
+    },
+    {
+      "name": "Conna\u00c3\u00aetre_les_tests_d\u00c3\u00a9tat_de_fichier",
+      "mastery": 0,
+      "trust": 0
+    },
+    {
+      "name": "Ex\u00c3\u00a9cuter_des_commandes_Unix",
+      "mastery": 0.3,
+      "trust": 0.5
+    },
+    {
+      "name": "Manipuler_des_fichiers_Unix",
+      "mastery": 0.4666666666666667,
+      "trust": 0.7777777777777778
+    },
+    {
+      "name": "Manipuler_les_param\u00c3\u00a8tres_dun_script",
+      "mastery": 0.8000000000000002,
+      "trust": 1
+    },
+    {
+      "name": "Manipuler_des_variables",
+      "mastery": 0.44000000000000006,
+      "trust": 0.8
+    },
+    {
+      "name": "Ecrire_des_scripts_interactifs",
+      "mastery": 0.2,
+      "trust": 1
+    },
+    {
+      "name": "R\u00c3\u00a9aliser_des_calculs_arithm\u00c3\u00a9tiques",
+      "mastery": 0,
+      "trust": 0
+    },
+    {
+      "name": "Substituer_une_commande_par_son_ex\u00c3\u00a9cution",
+      "mastery": 0.2,
+      "trust": 1
+    },
+    {
+      "name": "R\u00c3\u00a9p\u00c3\u00a9ter_des_instructions",
+      "mastery": 0,
+      "trust": 0
+    },
+    {
+      "name": "R\u00c3\u00a9aliser_des_tests_conditionnels",
+      "mastery": 0,
+      "trust": 0
+    },
+    {
+      "name": "Ex\u00c3\u00a9cuter_de_mani\u00c3\u00a8re_s\u00c3\u00a9lective_des_commandes",
+      "mastery": 0,
+      "trust": 0
+    },
+    {
+      "name": "G\u00c3\u00a9n\u00c3\u00a9rer_une_s\u00c3\u00a9quence_de_nombres",
+      "mastery": 0,
+      "trust": 0
+    }
+  ],
+  "commands": [
+    {
+      "command": "/bin",
+      "args": "",
+      "score": 0
+    },
+    {
+      "command": "cd",
+      "args": "/bash",
+      "score": 0
+    },
+    {
+      "command": "cd",
+      "args": "basg",
+      "score": 0
+    },
+    {
+      "command": "cd",
+      "args": "bash",
+      "score": 0
+    },
+    {
+      "command": "clear",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "echo",
+      "args": "cours",
+      "score": 1
+    },
+    {
+      "command": "cours=unix",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "echo",
+      "args": "$cours",
+      "score": 1
+    },
+    {
+      "command": "echo",
+      "args": "je suis en cours $cours",
+      "score": 1
+    },
+    {
+      "command": "#!/bin/bash",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "echo",
+      "args": "cours",
+      "score": 1
+    },
+    {
+      "command": "cours=unix",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "echo",
+      "args": "$cours",
+      "score": 1
+    },
+    {
+      "command": "echo",
+      "args": "je suis en cours $cours",
+      "score": 1
+    },
+    {
+      "command": "./tp5_exo1.sh",
+      "args": "",
+      "score": 0
+    },
+    {
+      "command": "clear",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "clear",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "clear",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "clear",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "cd",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "cd",
+      "args": "shell",
+      "score": 0
+    },
+    {
+      "command": "clear",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "cd",
+      "args": "/shell",
+      "score": 0
+    },
+    {
+      "command": "clear",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "cleear",
+      "args": "",
+      "score": 0
+    },
+    {
+      "command": "clear",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "./tp5_exo1.sh",
+      "args": "",
+      "score": 0
+    },
+    {
+      "command": "clear",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "ls",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "chmod",
+      "args": "",
+      "score": 0
+    },
+    {
+      "command": "clear",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "umask",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "umask",
+      "args": "tp5_exo1.sh 022",
+      "score": 0
+    },
+    {
+      "command": "clear",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "umask",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "umask",
+      "args": "root 022",
+      "score": 0
+    },
+    {
+      "command": "clear",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "umask",
+      "args": "help",
+      "score": 0
+    },
+    {
+      "command": "h",
+      "args": "",
+      "score": 0
+    },
+    {
+      "command": "clear",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "./tp5_exo1.sh",
+      "args": "",
+      "score": 0
+    },
+    {
+      "command": "clear",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "/tp5_exo1.sh",
+      "args": "",
+      "score": 0
+    },
+    {
+      "command": "clear",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "ls",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "chmod",
+      "args": "g=x tp5_exo1.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp5_exo1.sh",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "login=WhiteWalker",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "shell=MonShell",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "listevarShell=login",
+      "args": "et shell",
+      "score": 0
+    },
+    {
+      "command": "listevarShell=Login,Shell",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "listeVarEnvi=Liste",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "./tp5_exo2.sh",
+      "args": "",
+      "score": 0
+    },
+    {
+      "command": "/bin/bash",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "ls",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "set",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "XM)|+([0-9]).@(vdr|VDR))?(.part)\"",
+      "args": "[lynx]=\"!*.@(?([xX]|[sS])[hH][tT][mM]?([lL]))\" [ps2pd f]=\"!*.@(?(e)ps|pdf)\" [kpdf]=\"!*.@(?(e)ps|pdf)\" [oomath]=\"!*.@(sxm|smf|mml|odf)\" [compr ess]=\"*.Z\" [iceweasel]=\"!*.@(?([xX]|[sS])[hH][tT][mM]?([lL]))\" [mpg321]=\"!*.mp3\" [mpg12 3]=\"!*.mp3\" [zcat]=\"!*.@(Z|[gGd]z|t[ag]z)\" [unzip]=\"!*.@(zip|[ejsw]ar|exe|pk3|wsz|zargo |xpi|s[tx][cdiw]|sx[gm]|o[dt][tspgfc]|od[bm]|oxt|epub|apk|do[ct][xm]|p[op]t[mx]|xl[st][ xm])\" [pbunzip2]=\"!*.?(t)bz?(2)\" [kid3]=\"!*.@(mp[234c]|og[ag]|@(fl|a)ac|m4[abp]|spx|tta |w?(a)v|wma|aif?(f)|asf|ape)\" [pdfjadetex]=\"!*.@(?(la)tex|texi|dtx|ins|ltx|dbj)\" [dvipd f]=\"!*.dvi\" [gharbour]=\"!*.@([Pp][Rr][Gg]|[Cc][Ll][Pp])\" [modplug123]=\"!*.@(669|abc|am[ fs]|d[bs]m|dmf|far|it|mdl|m[eo]d|mid?(i)|mt[2m]|okta|p[st]m|s[3t]m|ult|umx|wav|xm)\" [dv ipdfm]=\"!*.dvi\" [oobase]=\"!*.odb\" [texi2html]=\"!*.texi*\" [zipinfo]=\"!*.@(zip|[ejsw]ar|e xe|pk3|wsz|zargo|xpi|s[tx][cdiw]|sx[gm]|o[dt][tspgfc]|od[bm]|oxt|epub|apk|do[ct][xm]|p[ op]t[mx]|xl[st][xm])\" [epiphany]=\"!*.@(?([xX]|[sS])[hH][tT][mM]?([lL]))\" [gunzip]=\"!*.@ (Z|[gGd]z|t[ag]z)\" [google-chrome]=\"!*.@(?([xX]|[sS])[hH][tT][mM]?([lL]))\" [okular]=\"!* .@(okular|@(?(e|x)ps|?(E|X)PS|[pf]df|[PF]DF|dvi|DVI|cb[rz]|CB[RZ]|djv?(u)|DJV?(U)|dvi|D VI|gif|jp?(e)g|miff|tif?(f)|pn[gm]|p[bgp]m|bmp|xpm|ico|xwd|tga|pcx|GIF|JP?(E)G|MIFF|TIF ?(F)|PN[GM]|P[BGP]M|BMP|XPM|ICO|XWD|TGA|PCX|epub|EPUB|odt|ODT|fb?(2)|FB?(2)|mobi|MOBI|g 3|G3|chm|CHM)?(.?(gz|GZ|bz2|BZ2)))\" [slitex]=\"!*.@(?(la)tex|texi|dtx|ins|ltx|dbj)\" [gal eon]=\"!*.@(?([xX]|[sS])[hH][tT][mM]?([lL]))\" [bzme]=\"!*.@(zip|z|gz|tgz)\" [xfig]=\"!*.fig \" [xzcat]=\"!*.@(?(t)xz|tlz|lzma)\" [timidity]=\"!*.@(mid?(i)|rmi|rcp|[gr]36|g18|mod|xm|it |x3m|s[3t]m|kar)\" [dviselect]=\"!*.dvi\" [xdvi]=\"!*.@(dvi|DVI)?(.@(gz|Z|bz2))\" ) __expand_tilde_by_ref () { if [[ ${!1} == \\~* ]]; then if [[ ${!1} == */* ]]; then eval $1=\"${!1/%\\/*}\"/'${!1#*/}'; else eval $1=\"${!1}\"; fi; fi } __get_cword_at_cursor_by_ref () { local cword words=(); __reassemble_comp_words_by_ref \"$1\" words cword; local i cur index=$COMP_POINT lead=${COMP_LINE:0:$COMP_POINT}; if [[ $index -gt 0 && ( -n $lead && -n ${lead//[[:space:]]} ) ]]; then cur=$COMP_LINE; for ((i = 0; i <= cword; ++i )) do while [[ ${#cur} -ge ${#words[i]} && \"${cur:0:${#words[i]}}\" != \"${words[i] }\" ]]; do cur=\"${cur:1}\"; ((index--)); done; if [[ $i -lt $cword ]]; then local old_size=${#cur}; cur=\"${cur#\"${words[i]}\"}\"; local new_size=${#cur}; index=$(( index - old_size + new_size )); fi; done; [[ -n $cur && ! -n ${cur//[[:space:]]} ]] && cur=; [[ $index -lt 0 ]] && index=0; fi; local \"$2\" \"$3\" \"$4\" && _upvars -a${#words[@]} $2 \"${words[@]}\" -v $3 \"$cword\" -v $ 4 \"${cur:0:$index}\" } __grub_dir () { local i c=1 boot_dir; for ((c=1; c <= ${#COMP_WORDS[@]}; c++ )) do i=\"${COMP_WORDS[c]}\"; case \"$i\" in --boot-directory) c=$((++c)); i=\"${COMP_WORDS[c]}\"; boot_dir=\"${i##*=}\"; break ;; esac; done; boot_dir=${boot_dir-/boot}; echo \"${boot_dir%/}/grub\" } __grub_get_last_option () { local i; for ((i=$COMP_CWORD-1; i > 0; i-- )) do if [[ \"${COMP_WORDS[i]}\" == -* ]]; then echo \"${COMP_WORDS[i]}\"; break; fi; done } __grub_get_options_from_help () { local prog; if [ $# -ge 1 ]; then prog=\"$1\"; else prog=\"${COMP_WORDS[0]}\"; fi; local i IFS=\" \"'    '' '; for i in $(LC_ALL=C $prog --help); do case $i in --*) echo \"${i%=*}\" ;; esac; done } __grub_get_options_from_usage () { local prog; if [ $# -ge 1 ]; then prog=\"$1\"; else prog=\"${COMP_WORDS[0]}\"; fi; local i IFS=\" \"'    '' '; for i in $(LC_ALL=C $prog --usage); do case $i in \\[--*\\]) i=${i#[}; echo ${i%%?(=*)]} ;; esac; done } __grub_list_menuentries () { local cur=\"${COMP_WORDS[COMP_CWORD]}\"; local config_file=$(__grub_dir)/grub.cfg; if [ -f \"$config_file\" ]; then local IFS=' '; COMPREPLY=($(compgen             -W \"$( awk -F \"[\\\"']\" '/menuentry/ { print $2 }' $config_file )\"             -- \"$cur\" )); fi } __grub_list_modules () { local grub_dir=$(__grub_dir); local IFS=' '; COMPREPLY=($( compgen -f -X '!*/*.mod' -- \"${grub_dir}/$cur\" | { while read -r tmp; do [ -n $tmp ] && { tmp=${tmp##*/} printf '%s\\n' ${tmp%.mod} } done } )) } __grubcomp () { local cur=\"${COMP_WORDS[COMP_CWORD]}\"; if [ $# -gt 2 ]; then cur=\"$3\"; fi; case \"$cur\" in --*=) COMPREPLY=() ;; *) local IFS=' ''      '' '; COMPREPLY=($(compgen -P \"${2-}\" -W \"${1-}\" -S \"${4-}\" -- \"$cur\")) ;; esac } __ltrim_colon_completions () { if [[ \"$1\" == *:* && \"$COMP_WORDBREAKS\" == *:* ]]; then local colon_word=${1%\"${1##*:}\"}; local i=${#COMPREPLY[*]}; while [[ $((--i)) -ge 0 ]]; do COMPREPLY[$i]=${COMPREPLY[$i]#\"$colon_word\"}; done; fi } __parse_options () { local option option2 i IFS=' ,/|'; option=; for i in $1; do case $i in ---*) break ;; --?*) option=$i; break ;; -?*) [[ -n $option ]] || option=$i ;; *) break ;; esac; done; [[ -n $option ]] || return 0; IFS=' '; if [[ $option =~ (\\[((no|dont)-?)\\]). ]]; then option2=${option/\"${BASH_REMATCH[1]}\"/}; option2=${option2%%[<{().[]*}; printf '%s\\n' \"${option2/=*/=}\"; option=${option/\"${BASH_REMATCH[1]}\"/\"${BASH_REMATCH[2]}\"}; fi; option=${option%%[<{().[]*}; printf '%s\\n' \"${option/=*/=}\" } __reassemble_comp_words_by_ref () { local exclude i j line ref; if [[ -n $1 ]]; then exclude=\"${1//[^$COMP_WORDBREAKS]}\"; fi; eval $3=$COMP_CWORD; if [[ -n $exclude ]]; then line=$COMP_LINE; for ((i=0, j=0; i < ${#COMP_WORDS[@]}; i++, j++)) do while [[ $i -gt 0 && ${COMP_WORDS[$i]} == +([$exclude]) ]]; do [[ $line != ['  ']* ]] && (( j >= 2 )) && ((j--)); ref=\"$2[$j]\"; eval $2[$j]=\\${!ref}\\${COMP_WORDS[i]}; [[ $i == $COMP_CWORD ]] && eval $3=$j; line=${line#*\"${COMP_WORDS[$i]}\"}; [[ $line == ['  ']* ]] && ((j++)); (( $i < ${#COMP_WORDS[@]} - 1)) && ((i++)) || break 2; done; ref=\"$2[$j]\"; eval $2[$j]=\\${!ref}\\${COMP_WORDS[i]}; line=${line#*\"${COMP_WORDS[i]}\"}; [[ $i == $COMP_CWORD ]] && eval $3=$j; done; [[ $i == $COMP_CWORD ]] && eval $3=$j; else eval $2=\\( \\\"\\${COMP_WORDS[@]}\\\" \\); fi } _allowed_groups () { if _complete_as_root; then local IFS=' '; COMPREPLY=($( compgen -g -- \"$1\" )); else local IFS=' '; COMPREPLY=($( compgen -W             \"$( id -Gn 2>/dev/null || groups 2>/dev/nu ll )\" -- \"$1\" )); fi } _allowed_users () { if _complete_as_root; then local IFS=' '; COMPREPLY=($( compgen -u -- \"${1:-$cur}\" )); else local IFS=' '; COMPREPLY=($( compgen -W             \"$( id -un 2>/dev/null || whoami 2>/dev/nu ll )\" -- \"${1:-$cur}\" )); fi } _available_interfaces () { local cmd PATH=$PATH:/sbin; if [[ ${1:-} == -w ]]; then cmd=\"iwconfig\"; else if [[ ${1:-} == -a ]]; then cmd=\"{ ifconfig || ip link show up; }\"; else cmd=\"{ ifconfig -a || ip link show; }\"; fi; fi; COMPREPLY=($( eval $cmd 2>/dev/null | awk         '/^[^ \\t]/ { if ($1 ~ /^[0-9]+:/) { print $2 } else { print $1 } }' )); COMPREPLY=($( compgen -W '${COMPREPLY[@]/%[[:punct:]]/}' -- \"$cur\" )) } _cd () { local cur prev words cword; _init_completion || return; local IFS=' ' i j k; compopt -o filenames; if [[ -z \"${CDPATH:-}\" || \"$cur\" == ?(.)?(.)/* ]]; then _filedir -d; return 0; fi; local -r mark_dirs=$(_rl_enabled mark-directories && echo y); local -r mark_symdirs=$(_rl_enabled mark-symlinked-directories && echo y); for i in ${CDPATH//:/' '}; do k=\"${#COMPREPLY[@]}\"; for j in $( compgen -d $i/$cur ); do if [[ ( -n $mark_symdirs && -h $j || -n $mark_dirs && ! -h $j ) && ! -d ${j #$i/} ]]; then j+=\"/\"; fi; COMPREPLY[k++]=${j#$i/}; done; done; _filedir -d; if [[ ${#COMPREPLY[@]} -eq 1 ]]; then i=${COMPREPLY[0]}; if [[ \"$i\" == \"$cur\" && $i != \"*/\" ]]; then COMPREPLY[0]=\"${i}/\"; fi; fi; return 0 } _cd_devices () { COMPREPLY+=($( compgen -f -d -X \"!*/?([amrs])cd*\" -- \"${cur:-/dev/}\" )) } _command () { local offset i; offset=1; for ((i=1; i <= COMP_CWORD; i++ )) do if [[ \"${COMP_WORDS[i]}\" != -* ]]; then offset=$i; break; fi; done; _command_offset $offset } _command_offset () { local word_offset=$1 i j; for ((i=0; i < $word_offset; i++ )) do for ((j=0; j <= ${#COMP_LINE}; j++ )) do [[ \"$COMP_LINE\" == \"${COMP_WORDS[i]}\"* ]] && break; COMP_LINE=${COMP_LINE:1}; ((COMP_POINT--)); done; COMP_LINE=${COMP_LINE#\"${COMP_WORDS[i]}\"}; ((COMP_POINT-=${#COMP_WORDS[i]})); done; for ((i=0; i <= COMP_CWORD - $word_offset; i++ )) do COMP_WORDS[i]=${COMP_WORDS[i+$word_offset]}; done; for ((i; i <= COMP_CWORD; i++ )) do unset COMP_WORDS[i]; done; ((COMP_CWORD -= $word_offset)); COMPREPLY=(); local cur; _get_comp_words_by_ref cur; if [[ $COMP_CWORD -eq 0 ]]; then local IFS=' _x",
+      "score": 1
+    },
+    {
+      "command": "clear",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "umask",
+      "args": "g=x tp5_exo2.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp5_exo2.sh",
+      "args": "",
+      "score": 0
+    },
+    {
+      "command": "nano",
+      "args": "tp5_exo2.sh",
+      "score": 1
+    },
+    {
+      "command": "more",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "less",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "set",
+      "args": "pipe less",
+      "score": 1
+    },
+    {
+      "command": "pipe",
+      "args": "",
+      "score": 0
+    },
+    {
+      "command": "clear",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "less",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "ls",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "pipe",
+      "args": "set shell",
+      "score": 0
+    },
+    {
+      "command": "pipe",
+      "args": "set less shell",
+      "score": 0
+    },
+    {
+      "command": "clear",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "pipe",
+      "args": "set less",
+      "score": 0
+    },
+    {
+      "command": "pipe",
+      "args": "",
+      "score": 0
+    },
+    {
+      "command": "pipe",
+      "args": "help",
+      "score": 0
+    },
+    {
+      "command": "clear",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "$user",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "echo",
+      "args": "user",
+      "score": 1
+    },
+    {
+      "command": "set",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "clear",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp5_exo2.sh",
+      "score": 1
+    },
+    {
+      "command": "ls",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "clear",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "pipe",
+      "args": "set more",
+      "score": 0
+    },
+    {
+      "command": "clear",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "set",
+      "args": "less",
+      "score": 1
+    },
+    {
+      "command": "set",
+      "args": "pipe less",
+      "score": 1
+    },
+    {
+      "command": "clear",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "set",
+      "args": "| less",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp5_exo2.sh",
+      "score": 1
+    },
+    {
+      "command": "set",
+      "args": "| less",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp5_exo2.sh",
+      "score": 1
+    },
+    {
+      "command": "set",
+      "args": "| less",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp5_exo2.sh",
+      "score": 1
+    },
+    {
+      "command": "set",
+      "args": "| less",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp5_exo2.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp5_exo2.sh",
+      "args": "",
+      "score": 0
+    },
+    {
+      "command": "chmod",
+      "args": "g=x tp5_exo2.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp5_exo2.sh",
+      "args": "",
+      "score": 0
+    },
+    {
+      "command": "nano",
+      "args": "tp5_exo2.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp5_exo2.sh",
+      "args": "",
+      "score": 0
+    },
+    {
+      "command": "nano",
+      "args": "tp5_exo2.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp5_exo2.sh",
+      "args": "",
+      "score": 0
+    },
+    {
+      "command": "nano",
+      "args": "tp5_exo2.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp5_exo2.sh",
+      "args": "",
+      "score": 0
+    },
+    {
+      "command": "nano",
+      "args": "tp5_exo2.sh",
+      "score": 1
+    },
+    {
+      "command": "clear",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "ls",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "./tp5_exo2.sh",
+      "args": "",
+      "score": 0
+    },
+    {
+      "command": "nano",
+      "args": "tp5_exo2.sh",
+      "score": 1
+    },
+    {
+      "command": "pipe",
+      "args": "wc -l",
+      "score": 0
+    },
+    {
+      "command": "wc",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "wc",
+      "args": "pipe -l",
+      "score": 0
+    },
+    {
+      "command": "clear",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "pipe",
+      "args": "wc -l",
+      "score": 0
+    },
+    {
+      "command": "clear",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp5_exo2.sh",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp5_exo2.sh",
+      "score": 1
+    },
+    {
+      "command": "cat",
+      "args": "tp5_exo2.sh",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp5_exo2.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp5_exo2.sh",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "./tp5_exo2.sh",
+      "args": "",
+      "score": 0
+    },
+    {
+      "command": "clear",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "./tp5_exo5.sh",
+      "args": "",
+      "score": 0
+    },
+    {
+      "command": "chmod",
+      "args": "g=x tp5_exo5.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp5_exo5.sh",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "./tp5_exo6.sh",
+      "args": "",
+      "score": 0
+    },
+    {
+      "command": "chmod",
+      "args": "g=x tp5_exo6.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp5_exo6.sh",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp5_exo6.sh",
+      "score": 1
+    },
+    {
+      "command": "clear",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "./tp5_exo6.sh",
+      "args": "MES ARGUMENTS",
+      "score": 1
+    },
+    {
+      "command": "./tp5_exo6.sh",
+      "args": "premier secon troisi\u00c3\u00a8me",
+      "score": 1
+    }
+  ]
+}

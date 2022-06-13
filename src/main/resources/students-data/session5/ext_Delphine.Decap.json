@@ -1,0 +1,297 @@
+{
+  "name": "ext_Delphine.Decap",
+  "session": 5,
+  "scripts": [],
+  "commands": [
+    {
+      "command": "nano",
+      "args": "tp7_exo1.sh",
+      "score": 1
+    },
+    {
+      "command": "chmod",
+      "args": "u+x tp7_exo1.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp7_exo1.sh",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "./tp7_exo1.sh",
+      "args": "v1 v2",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp7_exo2.sh",
+      "score": 1
+    },
+    {
+      "command": "chmod",
+      "args": "u+x tp7_exo2.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp7_exo2.sh",
+      "args": "1 + 2",
+      "score": 0
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo4.sh",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp7_exo2.sh",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp7_exo2.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp7_exo2.sh",
+      "args": "1 + 2",
+      "score": 0
+    },
+    {
+      "command": "nano",
+      "args": "tp7_exo2.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp7_exo2.sh",
+      "args": "1 + 2",
+      "score": 0
+    },
+    {
+      "command": "nano",
+      "args": "tp7_exo2.sh",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp7_exo2.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp7_exo2.sh",
+      "args": "1 + 2",
+      "score": 0
+    },
+    {
+      "command": "nano",
+      "args": "tp7_exo2.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp7_exo2.sh",
+      "args": "1 + 2",
+      "score": 0
+    },
+    {
+      "command": "nano",
+      "args": "tp7_exo2.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp7_exo2.sh",
+      "args": "1 + 2",
+      "score": 0
+    },
+    {
+      "command": "nano",
+      "args": "tp7_exo2.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp7_exo2.sh",
+      "args": "",
+      "score": 0
+    },
+    {
+      "command": "nano",
+      "args": "tp7_exo2.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp7_exo2.sh",
+      "args": "",
+      "score": 0
+    },
+    {
+      "command": "nano",
+      "args": "tp7_exo2.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp7_exo2.sh",
+      "args": "",
+      "score": 0
+    },
+    {
+      "command": "./tp7_exo2.sh",
+      "args": "1 + 2",
+      "score": 0
+    },
+    {
+      "command": "nano",
+      "args": "tp7_exo2.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp7_exo2.sh",
+      "args": "1 + 2",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp7_exo2.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp7_exo2.sh",
+      "args": "1 2 +",
+      "score": 1
+    },
+    {
+      "command": "./tp7_exo2.sh",
+      "args": "1 + 2",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp7_exo2.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp7_exo2.sh",
+      "args": "1 + 2",
+      "score": 1
+    },
+    {
+      "command": "./tp7_exo2.sh",
+      "args": "1 - 2",
+      "score": 1
+    },
+    {
+      "command": "./tp7_exo2.sh",
+      "args": "1 / 2",
+      "score": 1
+    },
+    {
+      "command": "./tp7_exo2.sh",
+      "args": "1 \\* 2",
+      "score": 1
+    },
+    {
+      "command": "./tp7_exo2.sh",
+      "args": "1 * 2",
+      "score": 1
+    },
+    {
+      "command": "./tp7_exo2.sh",
+      "args": "2 \\* 2",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp7_exo2.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp7_exo2.sh",
+      "args": "2 \\* 2",
+      "score": 1
+    },
+    {
+      "command": "./tp7_exo2.sh",
+      "args": "2 * 2",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp7_exo2.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp7_exo2.sh",
+      "args": "2 \\* 2",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp7_exo2.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp7_exo2.sh",
+      "args": "2 *3",
+      "score": 1
+    },
+    {
+      "command": "./tp7_exo2.sh",
+      "args": "2 * 3",
+      "score": 1
+    },
+    {
+      "command": "./tp7_exo2.sh",
+      "args": "2 \\* 3",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp7_exo2.sh",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp7_exo3.sh",
+      "score": 1
+    },
+    {
+      "command": "chmod",
+      "args": "u+X tp7_exo3.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp7_exo3.sh",
+      "args": "3",
+      "score": 0
+    },
+    {
+      "command": "chmod",
+      "args": "u+x tp7_exo3.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp7_exo3.sh",
+      "args": "3",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp7_exo3.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp7_exo3.sh",
+      "args": "3",
+      "score": 1
+    },
+    {
+      "command": "./tp7_exo3.sh",
+      "args": "0",
+      "score": 1
+    },
+    {
+      "command": "./tp7_exo3.sh",
+      "args": "1",
+      "score": 1
+    }
+  ]
+}

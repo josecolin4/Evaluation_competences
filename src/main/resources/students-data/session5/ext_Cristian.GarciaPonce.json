@@ -1,0 +1,935 @@
+{
+  "name": "ext_Cristian.GarciaPonce",
+  "session": 5,
+  "scripts": [
+    [
+      "if [-e $1 -a -e $2 ]\n",
+      "\tthen\n",
+      "\t\techo \"Souhaitez-vous concat\u00c3\u00a9ner les fichiers ?\"\n",
+      "\t\tread $response\n",
+      "\tfi\n",
+      "if $reponse = oui\n",
+      "\tthen\n",
+      "\t\t$3 = $2 + $1\n",
+      "\t\techo $3\n",
+      "\tfi\n",
+      "\n"
+    ],
+    [
+      "if [ -e $1 -a -e $2 ]\n",
+      "\tthen\n",
+      "\t\techo \"Souhaitez-vous concat\u00c3\u00a9ner les fichiers ?\"\n",
+      "\t\tread $response\n",
+      "\tfi\n",
+      "if $reponse = oui\n",
+      "\tthen\n",
+      "\t\t$3 = $2 + $1\n",
+      "\t\techo $3\n",
+      "\tfi\n",
+      "\n"
+    ],
+    [
+      "if [ -e $1 -a -e $2 ]\n",
+      "\tthen\n",
+      "\t\techo \"Souhaitez-vous concat\u00c3\u00a9ner les fichiers ?\"\n",
+      "\t\tread $reponse\n",
+      "\tfi\n",
+      "if $reponse = oui\n",
+      "\tthen\n",
+      "\t\t$3 = $2 + $1\n",
+      "\t\techo $3\n",
+      "\tfi\n",
+      "\n"
+    ],
+    [
+      "if [ -e $1 -a -e $2 ]\n",
+      "\tthen\n",
+      "\t\techo \"Souhaitez-vous concat\u00c3\u00a9ner les fichiers ?\"\n",
+      "\t\tread $reponse\n",
+      "\tfi\n",
+      "if $reponse = \"oui\"\n",
+      "\tthen\n",
+      "\t\t$3 = $2 + $1\n",
+      "\t\techo $3\n",
+      "\tfi\n",
+      "\n"
+    ],
+    [
+      "if [ -e $1 -a -e $2 ]\n",
+      "\tthen\n",
+      "\t\techo \"Souhaitez-vous concat\u00c3\u00a9ner les fichiers ?\"\n",
+      "\t\tread $reponse\n",
+      "\tfi\n",
+      "if $reponse = \"oui\"\n",
+      "\tthen\n",
+      "\t\t$3 =$2$1\n",
+      "\t\techo $3\n",
+      "\tfi\n",
+      "\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "if [ -e $1 -a -e $2 ]\n",
+      "\tthen\n",
+      "\t\techo \"Souhaitez-vous concat\u00c3\u00a9ner les fichiers ?\"\n",
+      "\t\tread $reponse\n",
+      "\tfi\n",
+      "if $reponse = \"oui\"\n",
+      "\tthen\n",
+      "\t\t$3 =$2$1\n",
+      "\t\techo $3\n",
+      "\tfi\n",
+      "\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "if [ -e $1 -a -e $2 ]\n",
+      "\tthen\n",
+      "\t\techo \"Souhaitez-vous concat\u00c3\u00a9ner les fichiers ?\"\n",
+      "\t\tread $reponse\n",
+      "\tfi\n",
+      "if $reponse = \"oui\"\n",
+      "\tthen\n",
+      "\t\tcat $1\n",
+      "\t\tcat $2\n",
+      "\tfi\n",
+      "\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "if [ -e $1 -a -e $2 ]\n",
+      "\tthen\n",
+      "\t\techo \"Souhaitez-vous concat\u00c3\u00a9ner les fichiers ?\"\n",
+      "\t\tread $reponse\n",
+      "\tfi\n",
+      "if $reponse = oui\n",
+      "\tthen\n",
+      "\t\tcat $1\n",
+      "\t\tcat $2\n",
+      "\tfi\n",
+      "\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "if [ -e $1 -a -e $2 ]\n",
+      "\tthen\n",
+      "\t\techo \"Souhaitez-vous concat\u00c3\u00a9ner les fichiers ?\"\n",
+      "\t\tread $reponse\n",
+      "\tfi\n",
+      "if $reponse = oui\n",
+      "\tthen\n",
+      "\t\tcat $1 $2 >$3\n",
+      "\t\techo $3\n",
+      "\tfi\n",
+      "\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "if [ -e $1 -a -e $2 ]\n",
+      "\tthen\n",
+      "\t\techo \"Souhaitez-vous concat\u00c3\u00a9ner les fichiers ?\"\n",
+      "\t\tread $reponse\n",
+      "\tfi\n",
+      "if $reponse = oui\n",
+      "\tthen\n",
+      "\t\tcat $1 $2 >$3\n",
+      "\tfi\n",
+      "\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "if [ -e $1 -a -e $2 ]\n",
+      "\tthen\n",
+      "\t\techo \"Souhaitez-vous concat\u00c3\u00a9ner les fichiers ?\"\n",
+      "\t\tread $reponse\n",
+      "\tfi\n",
+      "if $reponse = oui\n",
+      "\tthen\n",
+      "\t\tcat $1 $2 >$3\n",
+      "\t\tcat $3\n",
+      "\tfi\n",
+      "\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "if [ -e $1 -a -e $2 ]\n",
+      "\tthen\n",
+      "\t\techo \"Souhaitez-vous concat\u00c3\u00a9ner les fichiers ?\"\n",
+      "\t\tread $reponse\n",
+      "\tfi\n",
+      "\n",
+      "if $reponse = oui\n",
+      "\tthen\n",
+      "\t\tcat $1 $2 >$3\n",
+      "\t\tcat $3\n",
+      "\tfi\n",
+      "\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "\n",
+      "liste_commandes = \"date who pwd ls\"\n",
+      "set liste_commandes\n",
+      "echo $1 $2 $3 $4\n",
+      "\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "if [ -e $1 -a -e $2 ]\n",
+      "\tthen\n",
+      "\t\techo \"Souhaitez-vous concat\u00c3\u00a9ner les fichiers ?\"\n",
+      "\t\tread reponse\n",
+      "\tfi\n",
+      "\n",
+      "if $reponse = \"oui\"\n",
+      "\tthen\n",
+      "\t\tcat $1 $2 >$3\n",
+      "\t\tcat $3\n",
+      "\tfi\n",
+      "\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "if [ -e $1 -a -e $2 ]\n",
+      "\tthen\n",
+      "\t\techo \"Souhaitez-vous concat\u00c3\u00a9ner les fichiers ?\"\n",
+      "\t\tread reponse\n",
+      "\tfi\n",
+      "\n",
+      "if $reponse = oui\n",
+      "\tthen\n",
+      "\t\tcat $1 $2 >$3\n",
+      "\t\tcat $3\n",
+      "\tfi\n",
+      "\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "if [ -e $1 -a -e $2 ]\n",
+      "\tthen\n",
+      "\t\techo \"Souhaitez-vous concat\u00c3\u00a9ner les fichiers ?\"\n",
+      "\t\tread reponse\n",
+      "\tfi\n",
+      "\n",
+      "if $reponse =\"oui\"\n",
+      "\tthen\n",
+      "\t\tcat $1 $2 >$3\n",
+      "\tfi\n",
+      "\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "if [ -e $1 -a -e $2 ]\n",
+      "\tthen\n",
+      "\t\techo \"Souhaitez-vous concat\u00c3\u00a9ner les fichiers ?\"\n",
+      "\t\tread reponse\n",
+      "\tfi\n",
+      "\n",
+      "if $reponse = \" oui \"\n",
+      "\tthen\n",
+      "\t\tcat $1 $2 >$3\n",
+      "\tfi\n",
+      "\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "if [ -e $1 -a -e $2 ]\n",
+      "\tthen\n",
+      "\t\techo \"Souhaitez-vous concat\u00c3\u00a9ner les fichiers ?\"\n",
+      "\t\tread reponse\n",
+      "\tfi\n",
+      "\n",
+      "if $reponse = \"oui\"\n",
+      "\tthen\n",
+      "\t\tcat $1 $2 >$3\n",
+      "\tfi\n",
+      "\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "if [ -e $1 -a -e $2 ]\n",
+      "\tthen\n",
+      "\t\techo \"Souhaitez-vous concat\u00c3\u00a9ner les fichiers ?\"\n",
+      "\t\tread reponse\n",
+      "\tfi\n",
+      "\n",
+      "if $reponse = \"oui\" \n",
+      "\tthen\n",
+      "\t\tcat $1 $2 >$3\n",
+      "\tfi\n",
+      "\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "if [ -e $1 -a -e $2 ]\n",
+      "\tthen\n",
+      "\t\techo \"Souhaitez-vous concat\u00c3\u00a9ner les fichiers ?\"\n",
+      "\t\tread reponse\n",
+      "\tfi\n",
+      "\n",
+      "if $reponse = \" oui \" \n",
+      "\tthen\n",
+      "\t\tcat $1 $2 >$3\n",
+      "\tfi\n",
+      "\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "if [ -e $1 -a -e $2 ]\n",
+      "\tthen\n",
+      "\t\techo \"Souhaitez-vous concat\u00c3\u00a9ner les fichiers ?\"\n",
+      "\t\tread reponse\n",
+      "\tfi\n",
+      "\n",
+      "if [ $reponse = \"oui\" ]\n",
+      "\tthen\n",
+      "\t\tcat $1 $2 >$3\n",
+      "\tfi\n",
+      "\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "if [ -e $1 -a -e $2 ]\n",
+      "\tthen\n",
+      "\t\techo \"Souhaitez-vous concat\u00c3\u00a9ner les fichiers ?\"\n",
+      "\t\tread reponse\n",
+      "\tfi\n",
+      "\n",
+      "if [ $reponse = \"oui\" ]\n",
+      "\tthen\n",
+      "\t\tcat $1 $2 > $3\n",
+      "\tfi\n",
+      "\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "if [ -e $1 -a -e $2 ]\n",
+      "\tthen\n",
+      "\t\techo \"Souhaitez-vous concat\u00c3\u00a9ner les fichiers ?\"\n",
+      "\t\tread reponse\n",
+      "\tfi\n",
+      "\n",
+      "if [ $reponse = \"oui\" ]\n",
+      "\tthen\n",
+      "\t\tcat $1 $2 > $3\n",
+      "\t\tcat $3\n",
+      "\tfi\n",
+      "\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "if [ -e $1 -a -e $2 ]\n",
+      "\tthen\n",
+      "\t\techo \"Souhaitez-vous concat\u00c3\u00a9ner les fichiers ?\"\n",
+      "\t\tread reponse\n",
+      "\tfi\n",
+      "\n",
+      "if [ $reponse = \"oui\" ]\n",
+      "\tthen\n",
+      "\t\tcat $1 $2\n",
+      "\tfi\n",
+      "\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "\n",
+      "liste_commandes = \"date who pwd ls\"\n",
+      "set $liste_commandes\n",
+      "echo $1 $2 $3 $4\n",
+      "\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "\n",
+      "liste_commandes = \"date who pwd ls\"\n",
+      "set $( cat liste_commandes)\n",
+      "echo $1 $2 $3 $4\n",
+      "\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "\n",
+      "liste_commandes=\"date who pwd ls\"\n",
+      "set $(cat $liste_commandes)\n",
+      "echo $1 $2 $3 $4\n",
+      "\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "\n",
+      "liste_commandes=\"date who pwd ls\"\n",
+      "set $(echo $liste_commandes)\n",
+      "echo $1 $2 $3 $4\n",
+      "\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "\n",
+      "liste_commandes=\"date who pwd ls\"\n",
+      "set $(echo $liste_commandes)\n",
+      "$1\n",
+      "$2\n",
+      "$3\n",
+      "$4\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "\n",
+      "liste_commandes=\"date who pwd ls\"\n",
+      "set $(echo $liste_commandes)\n",
+      "$1\n",
+      "$2\n",
+      "$3\n",
+      "$4\n",
+      "for i in 9 8 7 6 5 4 3 2 1\n",
+      "do\n",
+      "\techo $i\n",
+      "done\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "for i in $* \n",
+      "do\n",
+      "\techo $i\n",
+      "done\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "for i in $* \n",
+      "do\n",
+      "\ta = $a + 1\n",
+      "\techo Voici l'argument $a : $i\n",
+      "done\n",
+      "echo Il y a $a arguments\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "for i in $* \n",
+      "do\n",
+      "\ta = $a + 1\n",
+      "\techo Voici l'argument $a : $i\n",
+      "done\n",
+      "echo Il y a $a arguments\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "for i in $* \n",
+      "do\n",
+      "\ta=$a + 1\n",
+      "\techo Voici l'argument $a : $i\n",
+      "done\n",
+      "echo Il y a $a arguments\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "for i in 1 2 3\n",
+      "do\n",
+      "\techo \"argument $i = $($i) \"\n",
+      "done\n",
+      "echo Il y a $i arguments\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "for i in 1 2 3\n",
+      "do\n",
+      "\techo \"argument $i = $( $i ) \"\n",
+      "done\n",
+      "echo Il y a $i arguments\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "for i in 1 2 3\n",
+      "do\n",
+      "\techo \"argument $i = $($i)\"\n",
+      "done\n",
+      "echo Il y a $i arguments\n"
+    ]
+  ],
+  "commands": [
+    {
+      "command": "ls",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "ls",
+      "args": "-l",
+      "score": 1
+    },
+    {
+      "command": "tp6_exo2.sh",
+      "args": "F3",
+      "score": 0
+    },
+    {
+      "command": "./tp6_exo2.sh",
+      "args": "F3",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo2.sh",
+      "score": 1
+    },
+    {
+      "command": "ls",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo3.sh",
+      "score": 1
+    },
+    {
+      "command": "chmod",
+      "args": "777 tp6_exo3.sh",
+      "score": 1
+    },
+    {
+      "command": "ls",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo3.sh",
+      "args": "",
+      "score": 0
+    },
+    {
+      "command": "cat",
+      "args": "f1",
+      "score": 0
+    },
+    {
+      "command": "cat",
+      "args": "F1",
+      "score": 1
+    },
+    {
+      "command": "cat",
+      "args": "F2",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo3.sh",
+      "args": "F1 F2",
+      "score": 0
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo3.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo3.sh",
+      "args": "F1 F2",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo3.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo3.sh",
+      "args": "F1 F2",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo3.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo3.sh",
+      "args": "F1 F2",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo3.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo3.sh",
+      "args": "F1 F2",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo3.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo3.sh",
+      "args": "F1 F2",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo3.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo3.sh",
+      "args": "F1 F2",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo3.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo3.sh",
+      "args": "F1 F2",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo3.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo3.sh",
+      "args": "F1 F2",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo3.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo3.sh",
+      "args": "F1 F2",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo3.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo3.sh",
+      "args": "F1 F2",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo3.sh",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo4.sh",
+      "score": 1
+    },
+    {
+      "command": "chmod",
+      "args": "777 tp6_exo4.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo4.sh",
+      "args": "",
+      "score": 0
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo3.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo3.sh",
+      "args": "F1 F2",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo3.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo3.sh",
+      "args": "F1 F2",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo3.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo3.sh",
+      "args": "F1 F2",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo3.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo3.sh",
+      "args": "F1 F2",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo3.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo3.sh",
+      "args": "F1 F2",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo3.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo3.sh",
+      "args": "F1 F2",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo3.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo3.sh",
+      "args": "F1 F2",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo3.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo3.sh",
+      "args": "F1 F2",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo3.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo3.sh",
+      "args": "F1 F2",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo3.sh",
+      "score": 1
+    },
+    {
+      "command": "ls",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo3.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo3.sh",
+      "args": "F1 F2",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo3.sh",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo4.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo4.sh",
+      "args": "",
+      "score": 0
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo4.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo4.sh",
+      "args": "",
+      "score": 0
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo4.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo4.sh",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "cls",
+      "args": "",
+      "score": 0
+    },
+    {
+      "command": "clear",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "cls",
+      "args": "",
+      "score": 0
+    },
+    {
+      "command": "./tp6_exo4.sh",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo4.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo4.sh",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo4.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo4.sh",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo4.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo4.sh",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo5.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo5.sh",
+      "args": "",
+      "score": 0
+    },
+    {
+      "command": "chmod",
+      "args": "777 tp6_exo5.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo5.sh",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo5.sh",
+      "args": "1 2 3",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo5.sh",
+      "args": "1 2 fg",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo5.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo5.sh",
+      "args": "1 2 fg",
+      "score": 0
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo5.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo5.sh",
+      "args": "1 2 fg",
+      "score": 0
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo5.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo5.sh",
+      "args": "1 2 fg",
+      "score": 0
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo5.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo5.sh",
+      "args": "1 2 fg",
+      "score": 0
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo5.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo5.sh",
+      "args": "1 2 fg",
+      "score": 0
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo5.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo5.sh",
+      "args": "1 2 fg",
+      "score": 0
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo5.sh",
+      "score": 1
+    }
+  ]
+}

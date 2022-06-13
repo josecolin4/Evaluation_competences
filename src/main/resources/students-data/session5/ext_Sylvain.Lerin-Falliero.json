@@ -1,0 +1,306 @@
+{
+  "name": "ext_Sylvain.Lerin-Falliero",
+  "session": 5,
+  "scripts": [
+    [
+      "compteur = 1\n",
+      "for i in $*\n",
+      "do\n",
+      "echo Argument $compteur = $i\n",
+      "done\n",
+      "Il y a $compteur arguments.\n"
+    ],
+    [
+      "compteur=1\n",
+      "for i in $*\n",
+      "do\n",
+      "echo Argument $compteur = $i\n",
+      "compteur=$compteur+1\n",
+      "done\n",
+      "echo Il y a $compteur arguments.\n"
+    ],
+    [
+      "compteur=1\n",
+      "for i in $*\n",
+      "do\n",
+      "echo Argument $compteur = $i\n",
+      "compteur=expr $($compteur+1)\n",
+      "done\n",
+      "echo Il y a $compteur arguments.\n"
+    ],
+    [
+      "compteur=1\n",
+      "for i in $*\n",
+      "do\n",
+      "echo Argument $compteur = $i\n",
+      "compteur= $(expr $compteur+1)\n",
+      "done\n",
+      "echo Il y a $compteur arguments.\n"
+    ],
+    [
+      "compteur=1\n",
+      "for i in $*\n",
+      "do\n",
+      "echo Argument $compteur = $i\n",
+      "compteur= `expr $compteur+1`\n",
+      "done\n",
+      "echo Il y a $compteur arguments.\n"
+    ],
+    [
+      "compteur=0\n",
+      "for i in $*\n",
+      "do\n",
+      "echo Argument $compteur = $i\n",
+      "compteur= expr $compteur+1\n",
+      "done\n",
+      "echo Il y a $compteur arguments.\n",
+      "echo Il y a $# arguments.\n"
+    ],
+    [
+      "compteur=0\n",
+      "for i in $*\n",
+      "do\n",
+      "echo Argument $compteur = $i\n",
+      "compteur=expr $compteur+1\n",
+      "done\n",
+      "echo Il y a $# arguments.\n"
+    ],
+    [
+      "compteur=0\n",
+      "for i in $*\n",
+      "do\n",
+      "compteur=`expr $compteur + 1`\n",
+      "echo Argument $compteur = $i\n",
+      "done\n",
+      "echo Il y a $# arguments.\n"
+    ],
+    [
+      "factorielle=1\n",
+      "for i in seq $1\n",
+      "do\n",
+      "factorielle=`expr $factorielle * $i`\n",
+      "done\n",
+      "echo $factorielle\n"
+    ],
+    [
+      "factorielle=1\n",
+      "for i in seq $1\n",
+      "do\n",
+      "factorielle=`expr $factorielle \\* $i`\n",
+      "done\n",
+      "echo $factorielle\n"
+    ],
+    [
+      "factorielle=1\n",
+      "for i in `seq $1`\n",
+      "do\n",
+      "factorielle=`expr $factorielle \\* $i`\n",
+      "done\n",
+      "echo $factorielle\n"
+    ],
+    [
+      "echo Liste des commandes disponibles :\n"
+    ],
+    [
+      "echo Liste des commandes disponibles :\n",
+      "\n"
+    ]
+  ],
+  "commands": [
+    {
+      "command": "nano",
+      "args": "tp6_exo5.sh",
+      "score": 1
+    },
+    {
+      "command": "chmod",
+      "args": "u+x tp6_exo5.sh",
+      "score": 1
+    },
+    {
+      "command": "tp6_exo5.sh",
+      "args": "",
+      "score": 0
+    },
+    {
+      "command": "/.",
+      "args": "tp6_exo5.sh",
+      "score": 0
+    },
+    {
+      "command": "/.tp6_exo5.sh",
+      "args": "",
+      "score": 0
+    },
+    {
+      "command": "./tp6_exo6.sh",
+      "args": "",
+      "score": 0
+    },
+    {
+      "command": "./tp6_exo5.sh",
+      "args": "",
+      "score": 0
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo5.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo5.sh",
+      "args": "salut bonjour bonsoir",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo5.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo5.sh",
+      "args": "salut bonjour bonsoir",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo5.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo5.sh",
+      "args": "salut bonjour bonsoir",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo5.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo5.sh",
+      "args": "salut bonjour bonsoir",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo5.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo5.sh",
+      "args": "salut bonjour bonsoir",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo5.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo5.sh",
+      "args": "salut bonjour bonsoir",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo5.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo5.sh",
+      "args": "salut bonjour bonsoir",
+      "score": 1
+    },
+    {
+      "command": "man",
+      "args": "seq",
+      "score": 1
+    },
+    {
+      "command": "echo",
+      "args": "seq 5",
+      "score": 1
+    },
+    {
+      "command": "echo",
+      "args": "`expr seq 5`",
+      "score": 1
+    },
+    {
+      "command": "seq",
+      "args": "5",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo6.sh",
+      "score": 1
+    },
+    {
+      "command": "chmod",
+      "args": "u+x tp6_exo6.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo6.sh",
+      "args": "5",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo6.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo6.sh",
+      "args": "5",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo6.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo6.sh",
+      "args": "5",
+      "score": 1
+    },
+    {
+      "command": "echo",
+      "args": "\"Nique ta m\u00c3\u00a8re ????\"",
+      "score": 1
+    },
+    {
+      "command": "man",
+      "args": "case",
+      "score": 0
+    },
+    {
+      "command": "case",
+      "args": "",
+      "score": 0
+    },
+    {
+      "command": "--help",
+      "args": "case",
+      "score": 0
+    },
+    {
+      "command": "-help",
+      "args": "case",
+      "score": 0
+    },
+    {
+      "command": "help",
+      "args": "case",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo7.sh",
+      "score": 1
+    }
+  ]
+}

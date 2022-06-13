@@ -1,0 +1,170 @@
+{
+  "name": "ext_Paul-Adrien.Durand",
+  "session": 5,
+  "scripts": [
+    [
+      "#!/bin/bash\n",
+      "if [ $1 -gt 10 ]\n",
+      "\tthen\n",
+      "\t\techo Le nombre n'est pas compris entre 5 et 10\n",
+      "\telif [$1 -lt 5 ]\n",
+      "\t\tthen\n",
+      "\t\t\techo Le nombre n'est pas copris entre 5 et 10\n",
+      "\telse\n",
+      "\t\techo le nombre est compris entre 5 et 10\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "if [ $1 -gt 10 ]\n",
+      "\tthen\n",
+      "\t\techo Le nombre n'est pas compris entre 5 et 10\n",
+      "\telif [$1 -lt 5 ]\n",
+      "\t\tthen\n",
+      "\t\t\techo Le nombre n'est pas copris entre 5 et 10\n",
+      "\telse\n",
+      "\t\techo le nombre est compris entre 5 et 10\n",
+      "fi\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "if [ $1 -gt 10 ]\n",
+      "\tthen\n",
+      "\t\techo Le nombre n'est pas compris entre 5 et 10\n",
+      "fi\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "if [ $1 -gt 10 ]\n",
+      "\tthen\n",
+      "\t\techo Le nombre n\\'est pas compris entre 5 et 10\n",
+      "fi\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "if [ $1 -gt 10 ]\n",
+      "\tthen\n",
+      "\t\techo Le nombre n\\'est pas compris entre 5 et 10\n",
+      "\telif [ $1 -lt 5 ]\n",
+      "\t\tthen\n",
+      "\t\t\techo Le nombre n\\'est pas compris entre 5 et 10\n",
+      "\telse\n",
+      "\t\tthen\n",
+      "\t\t\techo Le nombre est compris entre 5 et 10\n",
+      "fi\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "if [ $1 -gt 10 ]\n",
+      "\tthen\n",
+      "\t\techo Le nombre n\\'est pas compris entre 5 et 10\n",
+      "\telif [ $1 -lt 5 ]\n",
+      "\t\tthen\n",
+      "\t\t\techo Le nombre n\\'est pas compris entre 5 et 10\n",
+      "\telse\n",
+      "\t\t\techo Le nombre est compris entre 5 et 10\n",
+      "fi\n"
+    ]
+  ],
+  "commands": [
+    {
+      "command": "ls",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo1.sh",
+      "score": 1
+    },
+    {
+      "command": "chmod",
+      "args": "u+x tp6_exo1.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo1.sh",
+      "args": "",
+      "score": 0
+    },
+    {
+      "command": "./tp6_exo1.sh",
+      "args": "4",
+      "score": 0
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo1.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo1.sh",
+      "args": "4",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo1.sh",
+      "args": "6",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo1.sh",
+      "args": "1",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo1.sh",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo1.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo1.sh",
+      "args": "14",
+      "score": 0
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo1.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo1.sh",
+      "args": "14",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo1.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo1.sh",
+      "args": "1",
+      "score": 0
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo1.sh",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo1.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo1.sh",
+      "args": "1",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo1.sh",
+      "args": "10",
+      "score": 1
+    }
+  ]
+}

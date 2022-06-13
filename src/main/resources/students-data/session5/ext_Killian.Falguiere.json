@@ -1,0 +1,22 @@
+{
+  "name": "ext_Killian.Falguiere",
+  "session": 5,
+  "scripts": [],
+  "commands": [
+    {
+      "command": "ls",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo9.sh",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "ls",
+      "args": "",
+      "score": 1
+    }
+  ]
+}

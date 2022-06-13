@@ -1,0 +1,501 @@
+{
+  "name": "ext_Martial.Geslin",
+  "session": 5,
+  "scripts": [
+    [
+      "#!/bin/bash\n",
+      "for i in $*\n",
+      "\techo argument \n",
+      "\t$i\n",
+      "done\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "for i in $*\n",
+      "do\n",
+      "\techo \"argument\" \n",
+      "\t$i\n",
+      "done\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "for i in $#\n",
+      "do\n",
+      "\techo \"argument `i`\" \n",
+      "\t$i\n",
+      "done\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "for i in $#\n",
+      "do\n",
+      "\techo \"argument $i\" \n",
+      "\t$i\n",
+      "done\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "for i in $#\n",
+      "do\n",
+      "\techo \"argument $i\"\n",
+      "done\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "for i in $*\n",
+      "do\n",
+      "\techo \"argument $i\"\n",
+      "done\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "a=0\n",
+      "for i in $*\n",
+      "do\n",
+      "\techo \"argument `a+1` = $i\"\n",
+      "done\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "a=0\n",
+      "for i in $*\n",
+      "do\n",
+      "\techo \"argument `$a+1` = $i\"\n",
+      "done\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "n=0\n",
+      "for i in $*\n",
+      "do\n",
+      "\techo \"argument $(( n + 1 )) = $i\"\n",
+      "done\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "n=0\n",
+      "for i in $*\n",
+      "do\n",
+      "\tn=$n+1\n",
+      "\techo \"argument $n = $i\"\n",
+      "done\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "n=0\n",
+      "for i in $*\n",
+      "do\n",
+      "\tn=$(( n + 1))\n",
+      "\techo \"argument $n = $i\"\n",
+      "done\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "n=0\n",
+      "for i in $*\n",
+      "do\n",
+      "\tn=$(( n + 1))\n",
+      "\techo \"argument $n = $i ,\"\n",
+      "done\n",
+      "echo \"il y a $# arguments.\"\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "n=0\n",
+      "for i in $*\n",
+      "do\n",
+      "\tn=$(( n + 1))\n",
+      "\techo \"argument $n = $i ,\",\n",
+      "done\n",
+      "echo \"il y a $# arguments.\"\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "n=0\n",
+      "for i in $*\n",
+      "do\n",
+      "\tn=$(( n + 1))\n",
+      "\techo \"argument $n = $i\",,\n",
+      "done\n",
+      "echo \"il y a $# arguments.\"\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "n=0\n",
+      "for i in $*\n",
+      "do\n",
+      "\tn=$(( n + 1))\n",
+      "\techo -e \"argument $n = $i /n\"\n",
+      "done\n",
+      "echo \"il y a $# arguments.\"\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "n=0\n",
+      "for i in $*\n",
+      "do\n",
+      "\tn=$(( n + 1))\n",
+      "\techo \"argument $n = $i \"\n",
+      "done\n",
+      "echo \"il y a $# arguments.\"\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "n=0\n",
+      "for i in $*\n",
+      "do\n",
+      "\tn=$((n + 1))\n",
+      "\techo \"argument $n = $i \"\n",
+      "done\n",
+      "echo \"il y a $# arguments.\"\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "message=\n",
+      "n=0\n",
+      "for i in $*\n",
+      "do\n",
+      "\tn=$((n + 1))\n",
+      "\tmessage=$message argument $n = $i\n",
+      "done\n",
+      "message=$message il y a $# arguments.\n",
+      "echo $message\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "message=\n",
+      "n=0\n",
+      "for i in $*\n",
+      "do\n",
+      "\tn=$((n + 1))\n",
+      "\tmessage=$message \"argument $n = $i,\"\n",
+      "done\n",
+      "message=$message \"il y a $# arguments.\"\n",
+      "echo $message\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "message=\n",
+      "n=0\n",
+      "for i in $*\n",
+      "do\n",
+      "\tn=$((n + 1))\n",
+      "\tmessage=\"$message argument $n = $i,\"\n",
+      "done\n",
+      "message=\"$message il y a $# arguments.\"\n",
+      "echo $message\n"
+    ]
+  ],
+  "commands": [
+    {
+      "command": "ls",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo4.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo4.sh",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo4.sh",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp5_exo4",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp5_exo4.sh",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp5_exo4.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp5_exo4.sh",
+      "args": "",
+      "score": 0
+    },
+    {
+      "command": "nano",
+      "args": "tp5_exo4.sh",
+      "score": 1
+    },
+    {
+      "command": "ls",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "chmod",
+      "args": "u+x tp5_exo4.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp5_exo4.sh",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "./tp5_exo4.sh",
+      "args": "1 2 3 4",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "chmod",
+      "args": "u+x tp6_exo5.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo5.sh",
+      "args": "tutu toto titi",
+      "score": 0
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo4.sh",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo5.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo5.sh",
+      "args": "tutu toto titi",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo5.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo5.sh",
+      "args": "tutu toto titi",
+      "score": 0
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo5.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo5.sh",
+      "args": "tutu toto titi",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo5.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo5.sh",
+      "args": "tutu toto titi",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo5.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo5.sh",
+      "args": "tutu toto titi",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo5.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo5.sh",
+      "args": "tutu toto titi",
+      "score": 0
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo5.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo5.sh",
+      "args": "tutu toto titi",
+      "score": 0
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo5.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo5.sh",
+      "args": "tutu toto titi",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo5.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo5.sh",
+      "args": "tutu toto titi",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo5.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo5.sh",
+      "args": "tutu toto titi",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo5.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo5.sh",
+      "args": "tutu toto titi",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo1",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo1.sh",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo5.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo5.sh",
+      "args": "tutu toto titi",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo5.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo5.sh",
+      "args": "tutu toto titi",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo5.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo5.sh",
+      "args": "tutu toto titi",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo5.sh",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo1.sh",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo5.sh",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo1V2.sh",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo1V2.sh",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo5.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo5.sh",
+      "args": "tutu toto titi",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo5.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo5.sh",
+      "args": "tutu toto titi",
+      "score": 0
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo5.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo5.sh",
+      "args": "tutu toto titi",
+      "score": 0
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo5.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo5.sh",
+      "args": "tutu toto titi",
+      "score": 1
+    }
+  ]
+}

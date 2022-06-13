@@ -1,0 +1,577 @@
+{
+  "name": "ext_Elian.Blanchard",
+  "session": 2,
+  "scripts": [
+    [
+      "echo qu'elle est votre valeur \\?\n",
+      "read n\n",
+      "expr $n / 2\n"
+    ],
+    [
+      "expr $1 / 2\n"
+    ],
+    [
+      "expr $1 / 2\n"
+    ],
+    [
+      "expr $1 * 2\n"
+    ],
+    [
+      "expr $1 * 2\n"
+    ],
+    [
+      "expr $* * 2\n"
+    ],
+    [
+      "expr $1 \\* 2\n"
+    ],
+    [
+      "!bin\n",
+      "echo Quelle est votre ann\u00c3\u00a9e de naissance \\?\n",
+      "j=2020\n",
+      "echo vous avez $((j-n)) ans \n"
+    ],
+    [
+      "echo Quelle est votre ann\u00c3\u00a9e de naissance \\?\n",
+      "read n\n",
+      "echo vous avez $(( `date + %Y` - $n))_\n",
+      "\n"
+    ],
+    [
+      "echo Quelle est votre ann\u00c3\u00a9e de naissance \\?\n",
+      "read n\n",
+      "echo vous avez $(( `date +%Y` - $n)) ans\n",
+      "\n"
+    ],
+    [
+      "echo Quelle est votre ann\u00c3\u00a9e de naissance \\?\n",
+      "read n\n",
+      "echo Vous \\^\u00c3\u00aates n\u00c3\u00a9 en $1, vous avez donc $(( `date +%Y` - $n)) ans\n",
+      "\n"
+    ],
+    [
+      "echo Quelle est votre ann\u00c3\u00a9e de naissance \\?\n",
+      "read n\n",
+      "echo Vous \\\u00c3\u00aates n\u00c3\u00a9 en $n, vous avez donc $(( `date +%Y` - $n)) ans\n"
+    ]
+  ],
+  "profile": [
+    {
+      "name": "Afficher_la_valeur_dune_variable",
+      "mastery": 0.8,
+      "trust": 1
+    },
+    {
+      "name": "Affecter_une_valeur_\u00c3\u00a0_un_ou_plusieurs_param\u00c3\u00a8tres_de_position",
+      "mastery": 0,
+      "trust": 0
+    },
+    {
+      "name": "Modifier_la_valeur_de_une_variable",
+      "mastery": 0.8,
+      "trust": 1
+    },
+    {
+      "name": "Renommer_un_fichier_Unix",
+      "mastery": 0,
+      "trust": 0
+    },
+    {
+      "name": "Affecter_une_valeur_\u00c3\u00a0_une_variable",
+      "mastery": 0.8,
+      "trust": 1
+    },
+    {
+      "name": "Tester_l\u00c3\u00a9tat_dun_fichier",
+      "mastery": 0,
+      "trust": 0
+    },
+    {
+      "name": "Cr\u00c3\u00a9er_un_fichier_Unix",
+      "mastery": 0.8,
+      "trust": 1
+    },
+    {
+      "name": "Afficher_le_manuel_dune_commande_Unix",
+      "mastery": 0,
+      "trust": 0
+    },
+    {
+      "name": "Modifier_les_droits_dun_fichier_Unix",
+      "mastery": 0.2,
+      "trust": 1
+    },
+    {
+      "name": "Afficher_le_contenu_de_un_fichier_Unix",
+      "mastery": 0,
+      "trust": 0
+    },
+    {
+      "name": "Modifier_un_fichier_Unix",
+      "mastery": 0,
+      "trust": 0
+    },
+    {
+      "name": "Obtenir_la_valeur_affect\u00c3\u00a9e_\u00c3\u00a0_une_variable",
+      "mastery": 0.8,
+      "trust": 1
+    },
+    {
+      "name": "Comparer_des_nombres",
+      "mastery": 0,
+      "trust": 0
+    },
+    {
+      "name": "R\u00c3\u00a9cup\u00c3\u00a9rer_des_donn\u00c3\u00a9es_saisies_par_lutilisateur",
+      "mastery": 0.6,
+      "trust": 1
+    },
+    {
+      "name": "Obtenir_la_valeur_de_un_ou_plusieurs_param\u00c3\u00a8tres",
+      "mastery": 0.6,
+      "trust": 1
+    },
+    {
+      "name": "Banaliser_un_caract\u00c3\u00a8re",
+      "mastery": 0.6,
+      "trust": 1
+    },
+    {
+      "name": "Comparer_des_cha\u00c3\u00aenes_de_caract\u00c3\u00a8res",
+      "mastery": 0,
+      "trust": 0
+    },
+    {
+      "name": "Supprimer_un_fichier_Unix",
+      "mastery": 0,
+      "trust": 0
+    },
+    {
+      "name": "Interpr\u00c3\u00a9ter_de_fa\u00c3\u00a7on_num\u00c3\u00a9rique_la_valeur_dune_variable",
+      "mastery": 0.2,
+      "trust": 1
+    },
+    {
+      "name": "Conna\u00c3\u00aetre_les_op\u00c3\u00a9rateurs_de_comparaison_num\u00c3\u00a9rique",
+      "mastery": 0,
+      "trust": 0
+    },
+    {
+      "name": "Conna\u00c3\u00aetre_la_notion_de_redirection_entr\u00c3\u00a9e_et_sortie",
+      "mastery": 0.2,
+      "trust": 1
+    },
+    {
+      "name": "Conna\u00c3\u00aetre_les_commandes_de_base_Unix",
+      "mastery": 0,
+      "trust": 0
+    },
+    {
+      "name": "Conna\u00c3\u00aetre_la_syntaxe_dollar(cmd)",
+      "mastery": 0,
+      "trust": 0
+    },
+    {
+      "name": "Conna\u00c3\u00aetre_la_notion_de_droits_sous_Unix",
+      "mastery": 0.6,
+      "trust": 1
+    },
+    {
+      "name": "Conna\u00c3\u00aetre_la_notion_de_banalisation_de_caract\u00c3\u00a8res",
+      "mastery": 0.8,
+      "trust": 1
+    },
+    {
+      "name": "Conna\u00c3\u00aetre_les_variables_denvironnement",
+      "mastery": 0.4,
+      "trust": 1
+    },
+    {
+      "name": "Conna\u00c3\u00aetre_la_syntaxe_de_instruction_case",
+      "mastery": 0,
+      "trust": 0
+    },
+    {
+      "name": "Conna\u00c3\u00aetre_la_syntaxe_de_instruction_seq",
+      "mastery": 0,
+      "trust": 0
+    },
+    {
+      "name": "Conna\u00c3\u00aetre_le_caract\u00c3\u00a8re_de_substitution_de_commande",
+      "mastery": 0.2,
+      "trust": 1
+    },
+    {
+      "name": "Conna\u00c3\u00aetre_la_syntaxe_IfThenElifElse",
+      "mastery": 0,
+      "trust": 0
+    },
+    {
+      "name": "Conna\u00c3\u00aetre_la_syntaxe_de_instruction_set",
+      "mastery": 0,
+      "trust": 0
+    },
+    {
+      "name": "Conna\u00c3\u00aetre_la_notion_de_variable",
+      "mastery": 0.8,
+      "trust": 1
+    },
+    {
+      "name": "Conna\u00c3\u00aetre_la_syntaxe_de_instruction_while",
+      "mastery": 0,
+      "trust": 0
+    },
+    {
+      "name": "Conna\u00c3\u00aetre_la_notion_de_param\u00c3\u00a8tre",
+      "mastery": 0.4,
+      "trust": 1
+    },
+    {
+      "name": "Conna\u00c3\u00aetre_la_syntaxe_dollar((__))",
+      "mastery": 0.6,
+      "trust": 1
+    },
+    {
+      "name": "Conna\u00c3\u00aetre_les_op\u00c3\u00a9rateurs_de_comparaison_de_caract\u00c3\u00a8res",
+      "mastery": 0,
+      "trust": 0
+    },
+    {
+      "name": "Conna\u00c3\u00aetre_la_notion_de_fichier_Unix",
+      "mastery": 0.8,
+      "trust": 1
+    },
+    {
+      "name": "Conna\u00c3\u00aetre_la_syntaxe_CrochetCrochet",
+      "mastery": 0,
+      "trust": 0
+    },
+    {
+      "name": "Conna\u00c3\u00aetre_les_variables_sp\u00c3\u00a9ciales",
+      "mastery": 0.6,
+      "trust": 1
+    },
+    {
+      "name": "Conna\u00c3\u00aetre_la_syntaxe_de_instruction_for",
+      "mastery": 0,
+      "trust": 0
+    },
+    {
+      "name": "Conna\u00c3\u00aetre_la_notion_de_expression_arithm\u00c3\u00a9tique",
+      "mastery": 0.8,
+      "trust": 1
+    },
+    {
+      "name": "Conna\u00c3\u00aetre_les_op\u00c3\u00a9rateurs_logiques",
+      "mastery": 0,
+      "trust": 0
+    },
+    {
+      "name": "Conna\u00c3\u00aetre_les_tests_d\u00c3\u00a9tat_de_fichier",
+      "mastery": 0,
+      "trust": 0
+    },
+    {
+      "name": "Ex\u00c3\u00a9cuter_des_commandes_Unix",
+      "mastery": 0,
+      "trust": 0
+    },
+    {
+      "name": "Manipuler_des_fichiers_Unix",
+      "mastery": 0.2888888888888889,
+      "trust": 0.5555555555555556
+    },
+    {
+      "name": "Manipuler_les_param\u00c3\u00a8tres_dun_script",
+      "mastery": 0.5333333333333333,
+      "trust": 1
+    },
+    {
+      "name": "Manipuler_des_variables",
+      "mastery": 0.52,
+      "trust": 0.8
+    },
+    {
+      "name": "Ecrire_des_scripts_interactifs",
+      "mastery": 0.2,
+      "trust": 1
+    },
+    {
+      "name": "R\u00c3\u00a9aliser_des_calculs_arithm\u00c3\u00a9tiques",
+      "mastery": 0.7,
+      "trust": 1
+    },
+    {
+      "name": "Substituer_une_commande_par_son_ex\u00c3\u00a9cution",
+      "mastery": 0.39999999999999997,
+      "trust": 0.75
+    },
+    {
+      "name": "R\u00c3\u00a9p\u00c3\u00a9ter_des_instructions",
+      "mastery": 0,
+      "trust": 0
+    },
+    {
+      "name": "R\u00c3\u00a9aliser_des_tests_conditionnels",
+      "mastery": 0,
+      "trust": 0
+    },
+    {
+      "name": "Ex\u00c3\u00a9cuter_de_mani\u00c3\u00a8re_s\u00c3\u00a9lective_des_commandes",
+      "mastery": 0,
+      "trust": 0
+    },
+    {
+      "name": "G\u00c3\u00a9n\u00c3\u00a9rer_une_s\u00c3\u00a9quence_de_nombres",
+      "mastery": 0,
+      "trust": 0
+    }
+  ],
+  "commands": [
+    {
+      "command": "ls",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp5bis_exo1.sh",
+      "score": 1
+    },
+    {
+      "command": "tp5bis_exo1.sh",
+      "args": "",
+      "score": 0
+    },
+    {
+      "command": "./tp5bis_exo1.sh",
+      "args": "",
+      "score": 0
+    },
+    {
+      "command": "chmod",
+      "args": "777 tp5bis_exo1.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp5bis_exo1.sh",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp5bis_exo1.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp5bis_exo1.sh",
+      "args": "6",
+      "score": 1
+    },
+    {
+      "command": "./tp5bis_exo1.sh",
+      "args": "8",
+      "score": 1
+    },
+    {
+      "command": "./tp5bis_exo1.sh",
+      "args": "8",
+      "score": 1
+    },
+    {
+      "command": "./tp5bis_exo1.sh",
+      "args": "10",
+      "score": 1
+    },
+    {
+      "command": "./tp5bis_exo1.sh",
+      "args": "12",
+      "score": 1
+    },
+    {
+      "command": "./tp5bis_exo1.sh",
+      "args": "14",
+      "score": 1
+    },
+    {
+      "command": "./tp5bis_exo1.sh",
+      "args": "16",
+      "score": 1
+    },
+    {
+      "command": "./tp5bis_exo1.sh",
+      "args": "18",
+      "score": 1
+    },
+    {
+      "command": "./tp5bis_exo1.sh",
+      "args": "20",
+      "score": 1
+    },
+    {
+      "command": "./tp5bis_exo1.sh",
+      "args": "22",
+      "score": 1
+    },
+    {
+      "command": "./tp5bis_exo1.sh",
+      "args": "24",
+      "score": 1
+    },
+    {
+      "command": "./tp5bis_exo1.sh",
+      "args": "26",
+      "score": 1
+    },
+    {
+      "command": "./tp5bis_exo1.sh",
+      "args": "28",
+      "score": 1
+    },
+    {
+      "command": "./tp5bis_exo1.sh",
+      "args": "30",
+      "score": 1
+    },
+    {
+      "command": "./tp5bis_exo1.sh",
+      "args": "32",
+      "score": 1
+    },
+    {
+      "command": "./tp5bis_exo1.sh",
+      "args": "34",
+      "score": 1
+    },
+    {
+      "command": "./tp5bis_exo1.sh",
+      "args": "36",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp5bis_exo2.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp5bis_exo2.sh",
+      "args": "4",
+      "score": 0
+    },
+    {
+      "command": "chmod",
+      "args": "777 tp5bis_exo2.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp5bis_exo2.sh",
+      "args": "4",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp5bis_exo2.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp5bis_exo2.sh",
+      "args": "4",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp5bis_exo2.sh",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp5bis_exo2.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp5bis_exo2.sh",
+      "args": "4",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp5bis_exo2.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp5bis_exo2.sh",
+      "args": "4",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp5bis_exo1.sh",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp5bis_exo3.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp5bis_exo3.sh",
+      "args": "",
+      "score": 0
+    },
+    {
+      "command": "chmod",
+      "args": "777 tp5bis_exo3.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp5bis_exo3.sh",
+      "args": "",
+      "score": 0
+    },
+    {
+      "command": "nano",
+      "args": "tp5bis_exo3.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp5bis_exo3.sh",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "./tp5bis_exo3.sh",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp5bis_exo3.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp5bis_exo3.sh",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp5bis_exo3.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp5bis_exo3.sh",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp5bis_exo3.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp5bis_exo3.sh",
+      "args": "",
+      "score": 1
+    }
+  ]
+}

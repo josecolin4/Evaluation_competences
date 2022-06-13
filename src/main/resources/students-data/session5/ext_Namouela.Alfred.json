@@ -1,0 +1,17 @@
+{
+  "name": "ext_Namouela.Alfred",
+  "session": 5,
+  "scripts": [],
+  "commands": [
+    {
+      "command": "ls-l",
+      "args": "",
+      "score": 0
+    },
+    {
+      "command": "ls",
+      "args": "-l",
+      "score": 1
+    }
+  ]
+}

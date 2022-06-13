@@ -1,0 +1,212 @@
+{
+  "name": "ext_Melina.Laval",
+  "session": 5,
+  "scripts": [],
+  "commands": [
+    {
+      "command": "ls",
+      "args": "-l",
+      "score": 1
+    },
+    {
+      "command": "mkdir",
+      "args": "tp6_exo2.sh",
+      "score": 1
+    },
+    {
+      "command": "cd",
+      "args": "tp6_exo2.sh",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "test",
+      "args": "-rw",
+      "score": 1
+    },
+    {
+      "command": "test",
+      "args": "-rw tp6_exo2.sh",
+      "score": 0
+    },
+    {
+      "command": "nano",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "test",
+      "args": "-rw exo2",
+      "score": 0
+    },
+    {
+      "command": "test",
+      "args": "-r exo2",
+      "score": 1
+    },
+    {
+      "command": "test",
+      "args": "-w exo2",
+      "score": 1
+    },
+    {
+      "command": "cd..",
+      "args": "",
+      "score": 0
+    },
+    {
+      "command": ".;",
+      "args": "",
+      "score": 0
+    },
+    {
+      "command": "..",
+      "args": "",
+      "score": 0
+    },
+    {
+      "command": "cd",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "test",
+      "args": "-r tp6_exo2.sh",
+      "score": 1
+    },
+    {
+      "command": "test",
+      "args": "-r tp6_exo2.sh",
+      "score": 1
+    },
+    {
+      "command": "test",
+      "args": "-w tp6_exo2.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo2.sh",
+      "args": "fichier_existant_rw",
+      "score": 0
+    },
+    {
+      "command": "cd",
+      "args": "tp6_exo2.sh",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "exo2",
+      "score": 1
+    },
+    {
+      "command": "cd",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "mkdir",
+      "args": "tp6_exo3.sh",
+      "score": 1
+    },
+    {
+      "command": "cd",
+      "args": "tp6_exo3.sh",
+      "score": 1
+    },
+    {
+      "command": "cd",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "cd",
+      "args": "tp6_exo2.sh",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "exo2",
+      "score": 1
+    },
+    {
+      "command": "cd",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "mkdir",
+      "args": "./tp6_exo3.sh",
+      "score": 0
+    },
+    {
+      "command": "rmdir",
+      "args": "tp6_exo3.sh",
+      "score": 1
+    },
+    {
+      "command": "mkdir",
+      "args": "./tp6_exo3.sh",
+      "score": 1
+    },
+    {
+      "command": "cd",
+      "args": "./tp6_exo3.sh",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "exo3",
+      "score": 1
+    },
+    {
+      "command": "cd",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "mkdir",
+      "args": "./tp6_exo4.sh",
+      "score": 1
+    },
+    {
+      "command": "cd",
+      "args": "./tp6_exo4.sh",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "exo4",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "exo4",
+      "score": 1
+    },
+    {
+      "command": "cd",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "mkdir",
+      "args": "./tp6_exo5.sh",
+      "score": 1
+    },
+    {
+      "command": "cd",
+      "args": "./tp6_exo5.sh",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "exo5",
+      "score": 1
+    }
+  ]
+}

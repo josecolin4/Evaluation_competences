@@ -1,0 +1,770 @@
+{
+  "name": "ext_Louis.Guillou",
+  "session": 5,
+  "scripts": [
+    [
+      "#!/bin/bash\n",
+      "calcul(){\n",
+      "\tres=$(($1 $2 $3))\n",
+      "\treturn $res\n",
+      "}\n",
+      "calcul\n",
+      "b=$?\n",
+      "echo $b\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "calcul(){\n",
+      "\tres=$(($1 $2 $3))\n",
+      "\treturn $res\n",
+      "}\n",
+      "calcul\n",
+      "b=$?\n",
+      "echo \"$b\"\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "calcul(){\n",
+      "\tres=$(($1 \"\"$2\"\" $3))\n",
+      "\treturn $res\n",
+      "}\n",
+      "calcul\n",
+      "b=$?\n",
+      "echo \"$b\"\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "calcul(){\n",
+      "\tres=$(($1 $2 $3))\n",
+      "\treturn $res\n",
+      "}\n",
+      "calcul\n",
+      "b=$?\n",
+      "echo \"$b\"\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "calcul(){\n",
+      "\tres=$(($1 $2 $3))\n",
+      "\techo $res \n",
+      "\treturn $res\n",
+      "}\n",
+      "calcul\n",
+      "b=$?\n",
+      "echo \"$b\"\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "calcul(){\n",
+      "\tres=$(($1 $c $3))\n",
+      "\techo $res \n",
+      "\treturn $res\n",
+      "}\n",
+      "c=$2\n",
+      "calcul\n",
+      "b=$?\n",
+      "echo \"$b\"\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "calcul(){\n",
+      "\tres=$(($1 $c $3))\n",
+      "\techo $res \n",
+      "\treturn $res\n",
+      "}\n",
+      "c=$2\n",
+      "calcul $c\n",
+      "b=$?\n",
+      "echo \"$b\"\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "calcul () {\n",
+      "\tres=$(($1 $2 $3))\n",
+      "\techo $res \n",
+      "\treturn $res\n",
+      "}\n",
+      "c=$2\n",
+      "calcul $c\n",
+      "b=$?\n",
+      "echo \"$b\"\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "calcul () {\n",
+      "\tres=$(($1 $2 $3))\n",
+      "\techo $res \n",
+      "\treturn $res\n",
+      "}\n",
+      "calcul\n",
+      "b=$?\n",
+      "echo \"$b\"\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "calcul () {\n",
+      "\tres=$(($1 $2 $3))\n",
+      "\techo $res\n",
+      "\treturn $res\n",
+      "}\n",
+      "calcul $1 $2 $3\n",
+      "b=$?\n",
+      "echo \"$b\"\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "calcul () {\n",
+      "\tres=$(($1 \"$2\" $3))\n",
+      "\techo $res\n",
+      "\treturn $res\n",
+      "}\n",
+      "calcul $1 \"$2\" $3\n",
+      "b=$?\n",
+      "echo \"$b\"\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "calcul () {\n",
+      "\tres=$(($1 $2 $3))\n",
+      "\techo $res\n",
+      "\treturn $res\n",
+      "}\n",
+      "calcul $1 \"$2\" $3\n",
+      "b=$?\n",
+      "echo \"$b\"\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "calcul () {\n",
+      "\tres=$(($1 $2 $3))\n",
+      "\techo $res\n",
+      "\treturn $res\n",
+      "}\n",
+      "calcul $1 \"\"$2\"\" $3\n",
+      "b=$?\n",
+      "echo \"$b\"\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "calcul () {\n",
+      "\tres=$(($1 \"\"$2\"\" $3))\n",
+      "\techo $res\n",
+      "\treturn $res\n",
+      "}\n",
+      "calcul $1 $2 $3\n",
+      "b=$?\n",
+      "echo \"$b\"\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "calcul () {\n",
+      "\tres=$(($1 \"$2\" $3))\n",
+      "\techo $res\n",
+      "\treturn $res\n",
+      "}\n",
+      "calcul $1 $2 $3\n",
+      "b=$?\n",
+      "echo \"$b\"\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "calcul () {\n",
+      "\tres=$(($1 $2 $3))\n",
+      "\techo $res\n",
+      "\treturn $res\n",
+      "}\n",
+      "calcul $1 \"$2\" $3\n",
+      "b=$?\n",
+      "echo \"$b\"\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "calcul () {\n",
+      "\tres=$(($1 $2 $3))\n",
+      "\techo $res\n",
+      "\treturn $res\n",
+      "}\n",
+      "calcul $1 $2 $3\n",
+      "b=$?\n",
+      "echo \"$b\"\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "calcul () {\n",
+      "\tres=$(($1 $2 $3))\n",
+      "\techo $res\n",
+      "\treturn $res\n",
+      "}\n",
+      "calcul $1 \"$2\" $3\n",
+      "b=$?\n",
+      "echo \"$b\"\n"
+    ]
+  ],
+  "commands": [
+    {
+      "command": "ls-l",
+      "args": "",
+      "score": 0
+    },
+    {
+      "command": "ls",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp7_exo1",
+      "score": 1
+    },
+    {
+      "command": "chmod",
+      "args": "a+x tp7_exo1",
+      "score": 1
+    },
+    {
+      "command": "./tp7_exo1",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "./tp7_exo1",
+      "args": "1",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp7_exo2",
+      "score": 1
+    },
+    {
+      "command": "chmod",
+      "args": "a+x tp7_exo2",
+      "score": 1
+    },
+    {
+      "command": "./tp7_exo2",
+      "args": "1+2",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp7_exo2",
+      "score": 1
+    },
+    {
+      "command": "./tp7_exo2",
+      "args": "1+2",
+      "score": 1
+    },
+    {
+      "command": "./tp7_exo2",
+      "args": "1 + 2",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp7_exo2",
+      "score": 1
+    },
+    {
+      "command": "./tp7_exo2",
+      "args": "1 + 2",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp7_exo2",
+      "score": 1
+    },
+    {
+      "command": "./tp7_exo2",
+      "args": "1 + 2",
+      "score": 0
+    },
+    {
+      "command": "nano",
+      "args": "tp7_exo2",
+      "score": 1
+    },
+    {
+      "command": "./tp7_exo2",
+      "args": "1 + 2",
+      "score": 0
+    },
+    {
+      "command": "./tp7_exo2",
+      "args": "1+2",
+      "score": 1
+    },
+    {
+      "command": "./tp7_exo2",
+      "args": "1 + 2",
+      "score": 0
+    },
+    {
+      "command": "nano",
+      "args": "tp7_exo2",
+      "score": 1
+    },
+    {
+      "command": "./tp7_exo2",
+      "args": "1 + 2",
+      "score": 0
+    },
+    {
+      "command": "nano",
+      "args": "tp7_exo2",
+      "score": 1
+    },
+    {
+      "command": "./tp7_exo2",
+      "args": "1 + 2",
+      "score": 0
+    },
+    {
+      "command": "nano",
+      "args": "tp7_exo2",
+      "score": 1
+    },
+    {
+      "command": "./tp7_exo2",
+      "args": "1 + 2",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp7_exo2",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp7_exo2",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp7_exo2",
+      "score": 1
+    },
+    {
+      "command": "./tp7_exo2",
+      "args": "10 / 5",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp7_exo2",
+      "score": 1
+    },
+    {
+      "command": "./tp7_exo2",
+      "args": "10 5 /",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp7_exo2",
+      "score": 1
+    },
+    {
+      "command": "./tp7_exo2",
+      "args": "10 5 /",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp7_exo2",
+      "score": 1
+    },
+    {
+      "command": "./tp7_exo2",
+      "args": "10 5 /",
+      "score": 0
+    },
+    {
+      "command": "nano",
+      "args": "tp7_exo2",
+      "score": 1
+    },
+    {
+      "command": "./tp7_exo2",
+      "args": "10 5 /",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp7_exo2",
+      "score": 1
+    },
+    {
+      "command": "./tp7_exo2",
+      "args": "10 5 /",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp7_exo2",
+      "score": 1
+    },
+    {
+      "command": "./tp7_exo2",
+      "args": "10 5 /",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp7_exo2",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp7_exo2",
+      "score": 1
+    },
+    {
+      "command": "./tp7_exo2",
+      "args": "10 5",
+      "score": 0
+    },
+    {
+      "command": "nano",
+      "args": "tp7_exo2",
+      "score": 1
+    },
+    {
+      "command": "./tp7_exo2",
+      "args": "10 5",
+      "score": 0
+    },
+    {
+      "command": "./tp7_exo2",
+      "args": "10 5",
+      "score": 0
+    },
+    {
+      "command": "nano",
+      "args": "tp7_exo2",
+      "score": 1
+    },
+    {
+      "command": "./tp7_exo2",
+      "args": "10 5",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp7_exo2",
+      "score": 1
+    },
+    {
+      "command": "./tp7_exo2",
+      "args": "10 5",
+      "score": 0
+    },
+    {
+      "command": "nano",
+      "args": "tp7_exo2",
+      "score": 1
+    },
+    {
+      "command": "./tp7_exo2",
+      "args": "10 5",
+      "score": 0
+    },
+    {
+      "command": "nano",
+      "args": "tp7_exo2",
+      "score": 1
+    },
+    {
+      "command": "./tp7_exo2",
+      "args": "10 5",
+      "score": 0
+    },
+    {
+      "command": "nano",
+      "args": "tp7_exo2",
+      "score": 1
+    },
+    {
+      "command": "o",
+      "args": "",
+      "score": 0
+    },
+    {
+      "command": "nano",
+      "args": "tp5_exo2.sh",
+      "score": 1
+    },
+    {
+      "command": "s",
+      "args": "",
+      "score": 0
+    },
+    {
+      "command": "ls",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp5bis_exo2",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp5bis_exo2.sh",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp5bis_exo3.sh",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp7_exo2",
+      "score": 1
+    },
+    {
+      "command": "./tp7_exo2",
+      "args": "10 5",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp5bis_exo3.sh",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp7_exo2",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp7_exo2.sh",
+      "score": 1
+    },
+    {
+      "command": "chmod",
+      "args": "a+x tp7_exo2.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp7_exo2.sh",
+      "args": "10 5",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp7_exo2.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp7_exo2.sh",
+      "args": "10 / 5",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp7_exo2.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp7_exo2.sh",
+      "args": "10 / 5",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp7_exo2.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp7_exo2.sh",
+      "args": "10 / 5",
+      "score": 0
+    },
+    {
+      "command": "nano",
+      "args": "tp7_exo2.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp7_exo2.sh",
+      "args": "10 / 5",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp7_exo2.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp7_exo2.sh",
+      "args": "10 + 5",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp7_exo2.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp7_exo2.sh",
+      "args": "10 + 5",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp7_exo2.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp7_exo2.sh",
+      "args": "10 + 5",
+      "score": 0
+    },
+    {
+      "command": "nano",
+      "args": "tp7_exo2.sh",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp7_exo2.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp7_exo2.sh",
+      "args": "10 + 5",
+      "score": 0
+    },
+    {
+      "command": "nano",
+      "args": "tp7_exo2.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp7_exo2.sh",
+      "args": "10 + 5",
+      "score": 0
+    },
+    {
+      "command": "nano",
+      "args": "tp7_exo2.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp7_exo2.sh",
+      "args": "10 + 5",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp7_exo2.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp7_exo2.sh",
+      "args": "10 + 5",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp7_exo2.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp7_exo2.sh",
+      "args": "10 + 5",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp7_exo2.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp7_exo2.sh",
+      "args": "10 + 5",
+      "score": 0
+    },
+    {
+      "command": "nano",
+      "args": "tp7_exo2.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp7_exo2.sh",
+      "args": "10 * 5",
+      "score": 0
+    },
+    {
+      "command": "nano",
+      "args": "tp7_exo2.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp7_exo2.sh",
+      "args": "10 * 5",
+      "score": 0
+    },
+    {
+      "command": "nano",
+      "args": "tp7_exo2.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp7_exo2.sh",
+      "args": "10 * 5",
+      "score": 0
+    },
+    {
+      "command": "nano",
+      "args": "tp7_exo2.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp7_exo2.sh",
+      "args": "10 * 5",
+      "score": 0
+    },
+    {
+      "command": "nano",
+      "args": "tp7_exo2.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp7_exo2.sh",
+      "args": "10 * 5",
+      "score": 0
+    },
+    {
+      "command": "nano",
+      "args": "tp7_exo2.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp7_exo2.sh",
+      "args": "10 \\* 5",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp7_exo2.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp7_exo2.sh",
+      "args": "10 \\* 5",
+      "score": 0
+    },
+    {
+      "command": "nano",
+      "args": "tp7_exo2.sh",
+      "score": 1
+    }
+  ]
+}

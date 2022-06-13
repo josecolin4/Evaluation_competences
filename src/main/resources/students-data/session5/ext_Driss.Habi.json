@@ -1,0 +1,601 @@
+{
+  "name": "ext_Driss.Habi",
+  "session": 5,
+  "scripts": [
+    [
+      "#!/bin/bash\n",
+      "if test -e $1 -a -e $2\n",
+      "then\n",
+      "\techo Souhaitez vous concat\u00c3\u00a9ner les fichiers ?\n",
+      "read rep\n",
+      "\tif $rep = oui\n",
+      "\tthen\n",
+      "\t\tcat $1 $2\n",
+      "\telse\n",
+      "\t\techo erreur\n",
+      "\tfi\n",
+      "else\n",
+      "\techo au moins 1 des deux fichiers n\\'existe pas\n",
+      "fi\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "if test -e $1 -a -e $2\n",
+      "then\n",
+      "\techo Souhaitez vous concat\u00c3\u00a9ner les fichiers ?\n",
+      "read rep\n",
+      "\tif $rep = 1\n",
+      "\tthen\n",
+      "\t\tcat $1 $2\n",
+      "\telse\n",
+      "\t\techo erreur\n",
+      "\tfi\n",
+      "else\n",
+      "\techo au moins 1 des deux fichiers n\\'existe pas\n",
+      "fi\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "if test -e $1 -a -e $2\n",
+      "then\n",
+      "\techo Souhaitez vous concat\u00c3\u00a9ner les fichiers ?\n",
+      "read rep\n",
+      "\tif test $rep = oui \n",
+      "\tthen\n",
+      "\t\tcat $1 $2\n",
+      "\telse\n",
+      "\t\techo erreur\n",
+      "\tfi\n",
+      "else\n",
+      "\techo au moins 1 des deux fichiers n\\'existe pas\n",
+      "fi\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "if test -e $1 -a -e $2\n",
+      "then\n",
+      "\techo Souhaitez vous concat\u00c3\u00a9ner les fichiers ?\n",
+      "read rep\n",
+      "\tif test $rep = oui\n",
+      "\tthen\n",
+      "\t\tcat $1 $2 > fic\n",
+      "\t\tcat fic\n",
+      "\telse\n",
+      "\t\techo erreur\n",
+      "\tfi\n",
+      "else\n",
+      "\techo au moins 1 des deux fichiers n\\'existe pas\n",
+      "fi\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "for liste_commande in date who pwd ls\n",
+      "do\n",
+      "\t$liste_commande\n",
+      "done\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "for arg in 1 2 3\n",
+      "do\n",
+      "\techo argument 1 = $arg, argument 2 = $arg, argument 3 = $arg. il y a $# arguments\n",
+      "done\n",
+      "\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "for arg in $1 $2 $3\n",
+      "do\n",
+      "\techo argument 1 = $arg, argument 2 = $arg, argument 3 = $arg. il y a $# arguments\n",
+      "done\n",
+      "\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "for arg in $1 $2 $3\n",
+      "do\n",
+      "\techo argument 1 = $arg, argument 2 = $arg, argument 3 = $arg. il y a $# arguments\n",
+      "done\n",
+      "\n",
+      "for arg in $2\n",
+      "do\n",
+      "\techo argument 2 = $arg,\n",
+      "done\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "for arg in $1 $2 $3\n",
+      "do\n",
+      "\techo argument 1 = $arg, argument 2 = $arg, argument 3 = $arg. il y a $# arguments\n",
+      "done\n",
+      "\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "for arg in 1 2 3\n",
+      "do\n",
+      "\techo argument 1 = $$arg, argument 2 = $arg, argument 3 = $arg. il y a $# arguments\n",
+      "done\n",
+      "\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "for arg in $1 $2 $3\n",
+      "do\n",
+      "\techo argument 1 = $arg, argument 2 = $arg, argument 3 = $arg. il y a $# arguments\n",
+      "done\n",
+      "\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "for arg in 1\n",
+      "do\n",
+      "\techo argument 1 = $arg, argument 2 = $arg, argument 3 = $arg. il y a $# arguments\n",
+      "done\n",
+      "\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "for arg in $1\n",
+      "for ar in $2\n",
+      "for a in $3\n",
+      "do\n",
+      "\techo argument 1 = $arg, argument 2 = $ar, argument 3 = $a. il y a $# arguments\n",
+      "done\n",
+      "\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "for arg in $1\n",
+      "do\n",
+      "for ar in $2\n",
+      "do\n",
+      "for a in $3\n",
+      "do\n",
+      "\techo argument 1 = $arg, argument 2 = $ar, argument 3 = $a. il y a $# arguments\n",
+      "done\n",
+      "\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "for arg in $1\n",
+      "do\n",
+      "for ar in $2\n",
+      "do\n",
+      "for a in $3\n",
+      "do\n",
+      "\techo argument 1 = $arg, argument 2 = $ar, argument 3 = $a. il y a $# arguments\n",
+      "done\n",
+      "done\n",
+      "done\n",
+      "\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "for arg in $1\n",
+      "do\n",
+      "for ar in $2\n",
+      "do\n",
+      "for a in $3\n",
+      "do\n",
+      "\techo argument 1 = $arg, argument 2 = $ar, argument 3 = $a. il y a : $# arguments\n",
+      "done\n",
+      "done\n",
+      "done\n",
+      "\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "val = 0\n",
+      "for i in $(seq $1)\n",
+      "\tval = val + i\n",
+      "done\n",
+      "echo $val\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "val=0\n",
+      "for i in $(seq $1)\n",
+      "\tval=$((val + i))\n",
+      "done\n",
+      "echo $val\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "val=0\n",
+      "for i in $(seq $1)\n",
+      "\tval=$((val + $i))\n",
+      "done\n",
+      "echo $val\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "val=0\n",
+      "for i in $(seq $1)\n",
+      "\tval=$(($val + $i))\n",
+      "done\n",
+      "echo $val\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "val=0\n",
+      "for i in $(seq $1)\n",
+      "\t`val=$((val + i))`\n",
+      "done\n",
+      "echo $val\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "val=0\n",
+      "for i in $(seq $1)\n",
+      "\tval=$((val + $i))\n",
+      "done\n",
+      "echo $val\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "val=0\n",
+      "for i in $(seq $1)\n",
+      "\tval=$((val * $i))\n",
+      "done\n",
+      "echo $val\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "val=0\n",
+      "for i in $(seq $1)\n",
+      "\tval=$((val*$i))\n",
+      "done\n",
+      "echo $val\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "val=0\n",
+      "for i in $(seq $1)\n",
+      "\tval=$((val\\*$i))\n",
+      "done\n",
+      "echo $val\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "val=0\n",
+      "for i in $(seq $1)\n",
+      "\tval=$((val*2))\n",
+      "done\n",
+      "echo $val\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "val=0\n",
+      "for i in $(seq $1)\n",
+      "\tval=$((val*$i))\n",
+      "done\n",
+      "echo $val\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "val=0\n",
+      "for i in $(seq $1)\n",
+      "\tval=$((val*$i))\n",
+      "done\n",
+      "echo $val\n"
+    ]
+  ],
+  "commands": [
+    {
+      "command": "ls",
+      "args": "-l",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo3.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo3.sh",
+      "args": "",
+      "score": 0
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo3.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo3.sh",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo3.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo3.sh",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo3.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo3.sh",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo3.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo3.sh",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo3.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo3.sh",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo4.sh",
+      "score": 1
+    },
+    {
+      "command": "chmod",
+      "args": "u+x tp6_exo4.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo4.sh",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo4.sh",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo5.sh",
+      "score": 1
+    },
+    {
+      "command": "chmod",
+      "args": "u+x tp6_exo5.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo5.sh",
+      "args": "tata titi toto",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo5.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo5.sh",
+      "args": "tata titi toto",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo5.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo5.sh",
+      "args": "tata titi toto",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo5.sh",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo5.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo5.sh",
+      "args": "tata titi toto",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo5.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo5.sh",
+      "args": "tata titi toto",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo5.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo5.sh",
+      "args": "tata titi toto",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo5.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo5.sh",
+      "args": "tata titi toto",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo5.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo5.sh",
+      "args": "tata titi toto",
+      "score": 0
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo5.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo5.sh",
+      "args": "tata titi toto",
+      "score": 0
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo5.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo5.sh",
+      "args": "tata titi toto",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo5.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo5.sh",
+      "args": "tata titi toto",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo6.sh",
+      "score": 1
+    },
+    {
+      "command": "chmod",
+      "args": "u+x tp6_exo6.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo6.sh",
+      "args": "3",
+      "score": 0
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo6.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo6.sh",
+      "args": "3",
+      "score": 0
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo6.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo6.sh",
+      "args": "3",
+      "score": 0
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo6.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo6.sh",
+      "args": "3",
+      "score": 0
+    },
+    {
+      "command": "./tp6_exo6.sh",
+      "args": "3",
+      "score": 0
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo6.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo6.sh",
+      "args": "3",
+      "score": 0
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo6.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo6.sh",
+      "args": "3",
+      "score": 0
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo6.sh",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo6.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo6.sh",
+      "args": "3",
+      "score": 0
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo6.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo6.sh",
+      "args": "3",
+      "score": 0
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo6.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo6.sh",
+      "args": "3",
+      "score": 0
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo6.sh",
+      "score": 1
+    }
+  ]
+}

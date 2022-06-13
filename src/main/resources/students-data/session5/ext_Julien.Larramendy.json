@@ -1,0 +1,32 @@
+{
+  "name": "ext_Julien.Larramendy",
+  "session": 5,
+  "scripts": [],
+  "commands": [
+    {
+      "command": "nano",
+      "args": "tp6_ex1.sh",
+      "score": 1
+    },
+    {
+      "command": "chmod",
+      "args": "7 tp6_ex1.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_ex1.sh",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "./tp5_ex1.sh",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp5_ex1.sh",
+      "score": 1
+    }
+  ]
+}

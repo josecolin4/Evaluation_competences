@@ -1,0 +1,12 @@
+{
+  "name": "ext_Kylan.Slamnia",
+  "session": 5,
+  "scripts": [],
+  "commands": [
+    {
+      "command": "nano",
+      "args": "tp6_exo3.sh",
+      "score": 1
+    }
+  ]
+}

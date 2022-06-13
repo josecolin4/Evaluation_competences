@@ -1,0 +1,201 @@
+{
+  "name": "ext_Tom.Courtejaire",
+  "session": 5,
+  "scripts": [
+    [
+      "\n",
+      "if -rw \n"
+    ],
+    [
+      "if -rw $1\n",
+      "\tthen\n",
+      "\t\techo \"Le fichier \"$1\" existe et est accessible en lecture et \u00c3\u00a9criture\"\n",
+      "\telse\n",
+      "\t\techo \"Le fichier \"$1\" n'existe pas ou n'est pas accessible en lecture et \u00c3\u00a9criture\"\n",
+      "fi\n"
+    ],
+    [
+      "if -rw $file\n",
+      "\tthen\n",
+      "\t\techo \"Le fichier \"$file\" existe et est accessible en lecture et \u00c3\u00a9criture\"\n",
+      "\telse\n",
+      "\t\techo \"Le fichier \"$file\" n'existe pas ou n'est pas accessible en lecture et \u00c3\u00a9criture\"\n",
+      "fi\n"
+    ],
+    [
+      "if -r -w $file\n",
+      "\tthen\n",
+      "\t\techo \"Le fichier \"$file\" existe et est accessible en lecture et \u00c3\u00a9criture\"\n",
+      "\telse\n",
+      "\t\techo \"Le fichier \"$file\" n'existe pas ou n'est pas accessible en lecture et \u00c3\u00a9criture\"\n",
+      "fi\n"
+    ],
+    [
+      "if test -r -a test -w $file\n",
+      "\tthen\n",
+      "\t\techo \"Le fichier \"$file\" existe et est accessible en lecture et \u00c3\u00a9criture\"\n",
+      "\telse\n",
+      "\t\techo \"Le fichier \"$file\" n'existe pas ou n'est pas accessible en lecture et \u00c3\u00a9criture\"\n",
+      "fi\n"
+    ],
+    [
+      "if test -r $file -a test -w $file\n",
+      "\tthen\n",
+      "\t\techo \"Le fichier \"$file\" existe et est accessible en lecture et \u00c3\u00a9criture\"\n",
+      "\telse\n",
+      "\t\techo \"Le fichier \"$file\" n'existe pas ou n'est pas accessible en lecture et \u00c3\u00a9criture\"\n",
+      "fi\n"
+    ],
+    [
+      "if test -r $file -a -w $file\n",
+      "\tthen\n",
+      "\t\techo \"Le fichier \"$file\" existe et est accessible en lecture et \u00c3\u00a9criture\"\n",
+      "\telse\n",
+      "\t\techo \"Le fichier \"$file\" n'existe pas ou n'est pas accessible en lecture et \u00c3\u00a9criture\"\n",
+      "fi\n"
+    ],
+    [
+      "if test -r $file -a -w $file\n",
+      "\tthen\n",
+      "\t\techo Le fichier $file existe et est accessible en lecture et \u00c3\u00a9criture\n",
+      "\telse\n",
+      "\t\techo Le fichier $file nexiste pas ou nest pas accessible en lecture et \u00c3\u00a9criture\n",
+      "fi\n"
+    ],
+    [
+      "if test -r $file -a -w $file\n",
+      "\tthen\n",
+      "\t\techo Le fichier \\$file existe et est accessible en lecture et \u00c3\u00a9criture\n",
+      "\telse\n",
+      "\t\techo Le fichier \\$file nexiste pas ou nest pas accessible en lecture et \u00c3\u00a9criture\n",
+      "fi\n"
+    ]
+  ],
+  "commands": [
+    {
+      "command": "cat",
+      "args": "tp6_exo1.sh",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo2.sh",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo2.sh",
+      "score": 1
+    },
+    {
+      "command": "chmod",
+      "args": "tp6_exo2.sh 757",
+      "score": 0
+    },
+    {
+      "command": "chmod",
+      "args": "757 tp6_exo2.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo2.sh",
+      "args": "tp6_exo1.sh",
+      "score": 0
+    },
+    {
+      "command": "./tp6_exo2.sh",
+      "args": "tp6_exo2.sh",
+      "score": 0
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo2.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo2.sh",
+      "args": "tp6_exo1.sh",
+      "score": 0
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo2.sh",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo2.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo2.sh",
+      "args": "tp6_exo1.sh",
+      "score": 0
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo1.sh",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo2.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo2.sh",
+      "args": "tp6_exo1.sh",
+      "score": 0
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo2.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo2.sh",
+      "args": "tp6_exo1.sh",
+      "score": 0
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo2.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo2.sh",
+      "args": "tp6_exo1.sh",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo2.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo2.sh",
+      "args": "tp6_exo1.sh",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo2.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo2.sh",
+      "args": "tp6_exo1.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo2.sh",
+      "args": "tp6_exo4.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo2.sh",
+      "args": "tp33_exo1.sh",
+      "score": 1
+    }
+  ]
+}

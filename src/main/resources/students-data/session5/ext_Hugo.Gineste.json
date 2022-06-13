@@ -1,0 +1,163 @@
+{
+  "name": "ext_Hugo.Gineste",
+  "session": 5,
+  "scripts": [
+    [
+      "#! /bin/bash\n",
+      "\n",
+      "if $1>5 $1<10\n",
+      "\tthen\t\n",
+      "\t\techo $1 est compris entre 5 et 10.\n",
+      "\telse\n",
+      "\t\techo $1 n est pas compris entre 5 et 10.\n",
+      "fi\n"
+    ],
+    [
+      "#! /bin/bash\n",
+      "\n",
+      "if [$*>5 -a $*<10]\n",
+      "\tthen\t\n",
+      "\t\techo $1 est compris entre 5 et 10.\n",
+      "\telse\n",
+      "\t\techo $1 n est pas compris entre 5 et 10.\n",
+      "fi\n"
+    ],
+    [
+      "#! /bin/bash\n",
+      "\n",
+      "if [$*>5 -a $*<10]\n",
+      "\tthen\t\n",
+      "\t\techo $1 est compris entre 5 et 10\n",
+      "\telse\n",
+      "\t\techo $1 n est pas compris entre 5 et 10\n",
+      "fi\n"
+    ],
+    [
+      "#! /bin/bash\n",
+      "\n",
+      "if [$* > 5 -a $* < 10]\n",
+      "\tthen\n",
+      "\t\techo $1 est compris entre 5 et 10\n",
+      "\telse\n",
+      "\t\techo $1 n est pas compris entre 5 et 10\n",
+      "fi\n"
+    ],
+    [
+      "#! /bin/bash\n",
+      "\n",
+      "if [$* -gt 5 -a $* -lt 10]\n",
+      "\tthen\n",
+      "\t\techo $1 est compris entre 5 et 10\n",
+      "\telse\n",
+      "\t\techo $1 n est pas compris entre 5 et 10\n",
+      "fi\n"
+    ],
+    [
+      "#! /bin/bash\n",
+      "\n",
+      "if  [$* -gt 5 -a $* -lt 10 ]\n",
+      "\tthen\n",
+      "\t\techo $1 est compris entre 5 et 10\n",
+      "\telse\n",
+      "\t\techo $1 n est pas compris entre 5 et 10\n",
+      "fi\n"
+    ],
+    [
+      "#! /bin/bash\n",
+      "\n",
+      "if  [ $* -gt 5 -a $* -lt 10 ]\n",
+      "\tthen\n",
+      "\t\techo $1 est compris entre 5 et 10\n",
+      "\telse\n",
+      "\t\techo $1 n est pas compris entre 5 et 10\n",
+      "fi\n"
+    ]
+  ],
+  "commands": [
+    {
+      "command": "ls",
+      "args": "-l",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp5bis_exo5.sh",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo1.sh",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp5bis_exo5.sh",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo1.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo1.sh",
+      "args": "",
+      "score": 0
+    },
+    {
+      "command": "./tp6_exo1.sh",
+      "args": "6",
+      "score": 0
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo1.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo1.sh",
+      "args": "6",
+      "score": 0
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo1.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo1.sh",
+      "args": "6",
+      "score": 0
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo1.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo1.sh",
+      "args": "6",
+      "score": 0
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo1.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo1.sh",
+      "args": "6",
+      "score": 0
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo1.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo1.sh",
+      "args": "6",
+      "score": 1
+    }
+  ]
+}

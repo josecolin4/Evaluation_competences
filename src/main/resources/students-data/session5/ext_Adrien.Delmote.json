@@ -1,0 +1,401 @@
+{
+  "name": "ext_Adrien.Delmote",
+  "session": 5,
+  "scripts": [
+    [
+      "case $1 in \n",
+      "\t\"1\" ) date;;\n",
+      "\t\"2\" ) who;;\n",
+      "\t\"3\" ) ls;;\n",
+      "\t\"4\" ) pdw;;\n",
+      "esac\n"
+    ],
+    [
+      "case $1 in \n",
+      "\t\"1\" ) date;;\n",
+      "\t\"2\" ) who;;\n",
+      "\t\"3\" ) ls;;\n",
+      "\t\"4\" ) pwd;;\n",
+      "esac\n"
+    ],
+    [
+      "echo quelle est votre character /?\n",
+      "read chaine\n",
+      "while [$chaine != \"sortir\"] \n",
+      "do\n",
+      "\techo quelle est votre character /?\n",
+      "\tread chaine\n",
+      "done \n",
+      "\t\n",
+      "\n"
+    ],
+    [
+      "echo quelle est votre character /?\n",
+      "read chaine\n",
+      "while [$chaine != \"sortir\"] \n",
+      "do\n",
+      "\techo quelle est votre character /?\n",
+      "\tread chaine\n",
+      "done \n",
+      "echo $chaine \t\n",
+      "\n"
+    ],
+    [
+      "echo quelle est votre character \\?\n",
+      "read chaine\n",
+      "while [$chaine != \"sortir\"] \n",
+      "do\n",
+      "\techo quelle est votre character \\?\n",
+      "\tread chaine\n",
+      "done \n",
+      "echo $chaine \t\n",
+      "\n"
+    ],
+    [
+      "echo quelle est votre character ?\n",
+      "read chaine\n",
+      "phraser=\"\"\n",
+      "\n",
+      "while [$chaine != \"sortir\"] \n",
+      "do\n",
+      "\tphrase+=$chaine\n",
+      "\techo quelle est votre character ?\n",
+      "\tread chaine\n",
+      "\t\n",
+      "done \n",
+      "echo $chaine \t\n",
+      "\n"
+    ],
+    [
+      "echo quelle est votre character ?\n",
+      "read chaine\n",
+      "phraser=\"\"\n",
+      "\n",
+      "while [ $chaine != \"sortir\" ] \n",
+      "do\n",
+      "\tphrase+=$chaine\n",
+      "\techo quelle est votre character ?\n",
+      "\tread chaine\n",
+      "\t\n",
+      "done \n",
+      "echo $chaine \t\n",
+      "\n"
+    ],
+    [
+      "echo quelle est votre character ?\n",
+      "read chaine\n",
+      "phraser=\"\"\n",
+      "\n",
+      "while [ $chaine != \"sortir\" ] \n",
+      "do\n",
+      "\tphrase+= \" $chaine \"\n",
+      "\techo quelle est votre character ?\n",
+      "\tread chaine\n",
+      "\t\n",
+      "done \n",
+      "echo $phrase  \t\n",
+      "\n"
+    ],
+    [
+      "echo quelle est votre character ?\n",
+      "read chaine\n",
+      "phraser=\" \"\n",
+      "\n",
+      "while [ $chaine != \"sortir\" ] \n",
+      "do\n",
+      "\tphrase+= \" $chaine \"\n",
+      "\techo quelle est votre character ?\n",
+      "\tread chaine\n",
+      "\t\n",
+      "done \n",
+      "echo $phrase  \t\n",
+      "\n"
+    ],
+    [
+      "echo quelle est votre character ?\n",
+      "read chaine\n",
+      "phraser=\" \"\n",
+      "\n",
+      "while [ $chaine != \"sortir\" ] \n",
+      "do\n",
+      "\tphrase+= \"$chaine \"\n",
+      "\techo quelle est votre character ?\n",
+      "\tread chaine\n",
+      "\t\n",
+      "done \n",
+      "echo $phrase  \t\n",
+      "\n"
+    ],
+    [
+      "echo quelle est votre character \n",
+      "read chaine\n",
+      "phraser=\" \"\n",
+      "\n",
+      "while [ $chaine != \"sortir\" ] \n",
+      "do\n",
+      "\tphrase+= \"$chaine \"\n",
+      "\techo quelle est votre character \n",
+      "\tread chaine\n",
+      "\t\n",
+      "done \n",
+      "echo $phrase  \t\n",
+      "\n"
+    ],
+    [
+      "echo quelle est votre character \n",
+      "read chaine\n",
+      "phrase=\" \"\n",
+      "\n",
+      "while [ $chaine != \"sortir\" ] \n",
+      "do\n",
+      "\tphrase+= \"$chaine \"\n",
+      "\techo quelle est votre character \n",
+      "\tread chaine\n",
+      "done\n",
+      "echo $phrase\n",
+      "\n"
+    ],
+    [
+      "echo quelle est votre character \n",
+      "read chaine\n",
+      "phrase=\"\"\n",
+      "\n",
+      "while [ $chaine != \"sortir\" ] \n",
+      "do\n",
+      "\tphrase+=\"$chaine \"\n",
+      "\techo quelle est votre character \n",
+      "\tread chaine\n",
+      "done\n",
+      "echo $phrase\n",
+      "\n"
+    ],
+    [
+      "echo quelle numero ?\n",
+      "read rep \n",
+      "while test $rep -le 4 -a $rep -ge 0\n",
+      "do   \n",
+      "case rep in \n",
+      "\t1 ) date;;\n",
+      "\t2 ) who;;\n",
+      "\t3 ) ls;;\n",
+      "\t4 ) pwd;;\n",
+      "esac\n",
+      "echo nouveau numero \n",
+      "read rep \n",
+      "done \n",
+      "\n"
+    ],
+    [
+      "echo quelle numero ?\n",
+      "read rep \n",
+      "while test $rep -le 4 -a $rep -ge 0\n",
+      "do\n",
+      "case $rep in\n",
+      "\t1 ) date;;\n",
+      "\t2 ) who;;\n",
+      "\t3 ) ls;;\n",
+      "\t4 ) pwd;;\n",
+      "esac\n",
+      "echo nouveau numero \n",
+      "read rep \n",
+      "done \n",
+      "\n"
+    ],
+    [
+      "echo quelle numero ?\n",
+      "read rep \n",
+      "while test $rep -le 4 -a $rep -ge 0\n",
+      "do\n",
+      "case $rep in\n",
+      "\t1 ) date;;\n",
+      "\t2 ) who;;\n",
+      "\t3 ) ls;;\n",
+      "\t4 ) pwd;;\n",
+      "esac\n",
+      "echo nouveau numero\n",
+      "read rep\n",
+      "done\n",
+      "\n"
+    ],
+    [
+      "echo quelle numero ?\n",
+      "read rep \n",
+      "while test $rep -le 4 -a $rep -ge 1\n",
+      "do\n",
+      "case $rep in\n",
+      "\t1 ) date;;\n",
+      "\t2 ) who;;\n",
+      "\t3 ) ls;;\n",
+      "\t4 ) pwd;;\n",
+      "esac\n",
+      "echo nouveau numero\n",
+      "read rep\n",
+      "done\n",
+      "\n"
+    ],
+    [
+      "fct(){\n",
+      "var2=\" variable 2\"\n",
+      "echo \"\\n dans fonction \"\n",
+      "echo \"\\$1 = $1\"\n",
+      "echo \"var1 = $var1\"\n",
+      "echo \"var2 = $var2\"\n",
+      "echo \"fin fonction\\n\"\n",
+      "}\n",
+      "var1=\"variable 1\"\n",
+      "echo \"dans script principal\"\n",
+      "echo \"\\$1 = $1\"\n",
+      "echo \"var1 = $var1\"\n",
+      "fct $var1\n",
+      "echo \"var2 = $var2\"\n",
+      "echo \"fin script principal\"\n"
+    ]
+  ],
+  "commands": [
+    {
+      "command": "ls",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo6",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo6.sh",
+      "score": 1
+    },
+    {
+      "command": "tp6_exo6.sh",
+      "args": "5",
+      "score": 0
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo6.sh",
+      "score": 1
+    },
+    {
+      "command": "tp6_exo6.sh",
+      "args": "",
+      "score": 0
+    },
+    {
+      "command": "tp6_exo6.sh",
+      "args": "6",
+      "score": 0
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo6.sh",
+      "score": 1
+    },
+    {
+      "command": "tp6_exo6.sh",
+      "args": "2",
+      "score": 0
+    },
+    {
+      "command": "./tp6_exo6.sh",
+      "args": "2",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo6.sh",
+      "args": "6",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo6.sh",
+      "args": "3",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo7.sh",
+      "score": 1
+    },
+    {
+      "command": "chmod",
+      "args": "777 tp6_exo7.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo7.sh",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo7.sh",
+      "args": "2",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo7.sh",
+      "args": "1",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo7.sh",
+      "args": "3",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo7.sh",
+      "args": "4",
+      "score": 0
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo7.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo7.sh",
+      "args": "4",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo7.sh",
+      "args": "2",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo6.sh",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo8.sh",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo8.sh*",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo8.sh",
+      "score": 1
+    },
+    {
+      "command": "chmod",
+      "args": "777 tp6_exo8.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo8.sh",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo8.sh",
+      "score": 1
+    }
+  ]
+}

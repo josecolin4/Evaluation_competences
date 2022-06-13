@@ -1,0 +1,32 @@
+{
+  "name": "ext_Thomas.Akezizi",
+  "session": 5,
+  "scripts": [],
+  "commands": [
+    {
+      "command": "nano",
+      "args": "tp6_exo1.sh",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo1.sh",
+      "args": "",
+      "score": 0
+    },
+    {
+      "command": "./tp6_exo1.sh",
+      "args": "6",
+      "score": 0
+    },
+    {
+      "command": "nano",
+      "args": "",
+      "score": 1
+    }
+  ]
+}

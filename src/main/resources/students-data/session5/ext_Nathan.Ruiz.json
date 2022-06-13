@@ -1,0 +1,245 @@
+{
+  "name": "ext_Nathan.Ruiz",
+  "session": 5,
+  "scripts": [
+    [
+      "#!/bin/bash\n",
+      "if [ -e $1 ] -a [ -e $2 ]\n",
+      "\tthen\n",
+      "\t\techo $1 $2\n",
+      "\telif [ -e $1 ] -a ! [ -e $2 ]\n",
+      "\t\tthen\n",
+      "\t\t\techo le 2nd fichier n'existe pas\n",
+      "\n",
+      "\t\telif ! [ -e $1 ] -a [ -e $2 ]\n",
+      "\t\t\tthen\n",
+      "\t\t\t\techo le 1er fichier n'existe pas\n",
+      "fi \n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "if test -e $1 -a test -e $2\n",
+      "\tthen\n",
+      "\t\techo $1 $2\n",
+      "\telif test -e $1 -a ! test -e $2\n",
+      "\t\tthen\n",
+      "\t\t\techo le 2nd fichier n'existe pas\n",
+      "\n",
+      "\t\telif ! test -e $1 -a test -e $2\n",
+      "\t\t\tthen\n",
+      "\t\t\t\techo le 1er fichier n'existe pas\n",
+      "fi \n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "if test -e $1 -a test -e $2\n",
+      "\tthen\n",
+      "\t\techo $1 $2\n",
+      "\telif test -e $1 -a ! test -e $2\n",
+      "\t\tthen\n",
+      "\t\t\techo le 2nd fichier n'existe pas\n",
+      "\n",
+      "\t\telif ! test -e $1 -a test -e $2\n",
+      "\t\t\tthen\n",
+      "\t\t\t\techo le 1er fichier n'existe pas\n",
+      "fi \n"
+    ]
+  ],
+  "commands": [
+    {
+      "command": "ls",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "ls",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "ls",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "ls",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "cd",
+      "args": ".aptitude/",
+      "score": 1
+    },
+    {
+      "command": "ls",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "cd",
+      "args": "./../..",
+      "score": 1
+    },
+    {
+      "command": "ls",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "cd",
+      "args": "./home",
+      "score": 1
+    },
+    {
+      "command": "ls",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "cd",
+      "args": "./../..",
+      "score": 1
+    },
+    {
+      "command": "ls",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "cd",
+      "args": "home",
+      "score": 1
+    },
+    {
+      "command": "ls",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "lz",
+      "args": "",
+      "score": 0
+    },
+    {
+      "command": "ls",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "cd",
+      "args": "client",
+      "score": 1
+    },
+    {
+      "command": "ls",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "./client.sh",
+      "score": 1
+    },
+    {
+      "command": "cd",
+      "args": "./../..",
+      "score": 1
+    },
+    {
+      "command": "cd",
+      "args": "root",
+      "score": 1
+    },
+    {
+      "command": "ls",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "-l",
+      "args": "",
+      "score": 0
+    },
+    {
+      "command": "ls",
+      "args": "-l",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "ls",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "chmod",
+      "args": "777 ./tp6_exo3.sh",
+      "score": 1
+    },
+    {
+      "command": "ls",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo3.sh",
+      "args": "",
+      "score": 0
+    },
+    {
+      "command": "nano",
+      "args": "./tp6_exo3.sh",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "./tp6_exo3.sh",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "ls",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo3.sh",
+      "args": "F1 F2",
+      "score": 0
+    },
+    {
+      "command": "nano",
+      "args": "./tp6_exo3.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo3.sh",
+      "args": "F1 F2",
+      "score": 0
+    },
+    {
+      "command": "ls",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "./tp6_exo3.sh",
+      "score": 1
+    }
+  ]
+}

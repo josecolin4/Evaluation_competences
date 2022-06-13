@@ -1,0 +1,552 @@
+{
+  "name": "ext_Naim.Etouati",
+  "session": 5,
+  "scripts": [
+    [
+      "for i in 3\n",
+      "do\n",
+      "\techo \"argument $1 = toto\"\n",
+      "\techo \"argument $2 = titi\"\n",
+      "\techo \"argument $3 = tutu\"\n",
+      "done\n"
+    ],
+    [
+      "for i in $0\n",
+      "do\n",
+      "\techo \"argument $1 = toto\"\n",
+      "\techo \"argument $2 = titi\"\n",
+      "\techo \"argument $3 = tutu\"\n",
+      "done\n"
+    ],
+    [
+      "for i in  3 2 1\n",
+      "do\n",
+      "\techo \"argument $i = toto\"\n",
+      "\techo \"argument $i = titi\"\n",
+      "\techo \"argument $i = tutu\"\n",
+      "done\n"
+    ],
+    [
+      "for i in  3\n",
+      "do\n",
+      "\techo \"argument $i = toto\"\n",
+      "\techo \"argument $i = titi\"\n",
+      "\techo \"argument $i = tutu\"\n",
+      "done\n"
+    ],
+    [
+      "for i in  3\n",
+      "do\n",
+      "\techo \"argument $1 = toto\"\n",
+      "\techo \"argument $2 = titi\"\n",
+      "\techo \"argument $3 = tutu\"\n",
+      "done\n"
+    ],
+    [
+      "result=1\n",
+      "for i in $(seq 2 $1)\n",
+      "do\n",
+      "\tresult=$(($i*result))\n",
+      "done\n",
+      "echo $result\n"
+    ],
+    [
+      "echo \"Liste des commandes disponibles: \"\n"
+    ],
+    [
+      "echo \"Liste des commandes disponibles: \n",
+      "1-Date du jour\n",
+      "2-Liste des personnes connect\u00c3\u00a9es sur la machine\n",
+      "3-Liste des fichiers du r\u00c3\u00a9pertoire courant\n",
+      "4-Nom du r\u00c3\u00a9pertoire courant\n",
+      "Faites votre choix:\"\n",
+      "\n"
+    ],
+    [
+      "echo \"Liste des commandes disponibles: \n",
+      "1-Date du jour\n",
+      "2-Liste des personnes connect\u00c3\u00a9es sur la machine\n",
+      "3-Liste des fichiers du r\u00c3\u00a9pertoire courant\n",
+      "4-Nom du r\u00c3\u00a9pertoire courant\n",
+      "Faites votre choix:\"\n",
+      "read reponse\n",
+      "case $reponse in\n",
+      "\t1)\n",
+      "\t\tdate;;\n",
+      "\t2)\n",
+      "\t\twho;;\n",
+      "\t3)\n",
+      "\t\t ls;;\n",
+      "\t4)\n",
+      "\t\tpwd;;\n",
+      "esac\n"
+    ],
+    [
+      "while [ $reponse != 'sortir' ]\n",
+      "\n",
+      "do\n",
+      "\n",
+      "        read -p 'pour arrete tapez sortir : ' reponse\n",
+      "\n",
+      "done\n"
+    ],
+    [
+      "reponse=commencez\n",
+      "while [ $reponse != 'sortir' ]\n",
+      "\n",
+      "do\n",
+      "\n",
+      "        read -p 'pour arrete tapez sortir : ' reponse\n",
+      "\n",
+      "done\n"
+    ],
+    [
+      "reponse=commencez\n",
+      "while [ $reponse != 'sortir' ]\n",
+      "\n",
+      "do\n",
+      "\n",
+      "        read -p 'pour arrete tapez sortir : ' reponse\n",
+      "\n",
+      "done\n"
+    ],
+    [
+      "reponse=oui\n",
+      "while [ $reponse != 'sortir' ]\n",
+      "\n",
+      "do\n",
+      "\n",
+      "        read -p 'pour arreter tapez sortir : ' reponse\n",
+      "\n",
+      "done\n"
+    ],
+    [
+      "echo \"Liste des commandes disponibles:\n",
+      "1-Date du jour\n",
+      "2-Liste des personnes connect\u00c3\u00a9es sur la machine\n",
+      "3-Liste des fichiers du r\u00c3\u00a9pertoire courant\n",
+      "4-Nom du r\u00c3\u00a9pertoire courant\n",
+      "Faites votre choix:\"\n",
+      "read reponse\n",
+      "\n",
+      "case $reponse in\n",
+      "\t1) date;;\n",
+      "\t2) who;;\n",
+      "\t3) ls;;\n",
+      "\t4) pwd;;\n",
+      "esac\n"
+    ],
+    [
+      "echo \"Liste des commandes disponibles:\n",
+      "1-Date du jour\n",
+      "2-Liste des personnes connect\u00c3\u00a9es sur la machine\n",
+      "3-Liste des fichiers du r\u00c3\u00a9pertoire courant\n",
+      "4-Nom du r\u00c3\u00a9pertoire courant\n",
+      "Faites votre choix:\"\n",
+      "read reponse\n",
+      "while [ $reponse -ge 1] || [$reponse -le 4 ] \n",
+      "do\n",
+      "\tcase $reponse in\n",
+      "\t\t1) date;;\n",
+      "\t\t2) who;;\n",
+      "\t\t3) ls;;\n",
+      "\t\t4) pwd;;\n",
+      "\tesac\n",
+      "\techo \"Veuillez choisir un autre choix\"\n",
+      "\tread choix\n",
+      "done\n"
+    ],
+    [
+      "echo \"Liste des commandes disponibles:\n",
+      "1-Date du jour\n",
+      "2-Liste des personnes connect\u00c3\u00a9es sur la machine\n",
+      "3-Liste des fichiers du r\u00c3\u00a9pertoire courant\n",
+      "4-Nom du r\u00c3\u00a9pertoire courant\n",
+      "Faites votre choix:\"\n",
+      "read reponse\n",
+      "while [ $reponse -ge 1] && [$reponse -le 4 ] \n",
+      "do\n",
+      "\tcase $reponse in\n",
+      "\t\t1) date;;\n",
+      "\t\t2) who;;\n",
+      "\t\t3) ls;;\n",
+      "\t\t4) pwd;;\n",
+      "\tesac\n",
+      "\techo \"Veuillez choisir un autre choix\"\n",
+      "\tread choix\n",
+      "done\n"
+    ],
+    [
+      "echo \"Liste des commandes disponibles:\n",
+      "1-Date du jour\n",
+      "2-Liste des personnes connect\u00c3\u00a9es sur la machine\n",
+      "3-Liste des fichiers du r\u00c3\u00a9pertoire courant\n",
+      "4-Nom du r\u00c3\u00a9pertoire courant\n",
+      "Faites votre choix:\"\n",
+      "read reponse\n",
+      "while [ $reponse -ge 1 ] && [ $reponse -le 4 ] \n",
+      "do\n",
+      "\tcase $reponse in\n",
+      "\t\t1) date;;\n",
+      "\t\t2) who;;\n",
+      "\t\t3) ls;;\n",
+      "\t\t4) pwd;;\n",
+      "\tesac\n",
+      "\techo \"Veuillez choisir un autre choix\"\n",
+      "\tread choix\n",
+      "done\n"
+    ]
+  ],
+  "commands": [
+    {
+      "command": "nano",
+      "args": "tp6exo4.sh",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6exo4.sh",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6exo5.sh",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "chmod",
+      "args": "777 tp6exo5.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6exo5.sh",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6exo5.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6exo5.sh",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "./tp6exo5.sh",
+      "args": "\"",
+      "score": 1
+    },
+    {
+      "command": "./tp6exo5.sh",
+      "args": "3",
+      "score": 1
+    },
+    {
+      "command": "./tp6exo5.sh",
+      "args": "3 2 1",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6exo5.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6exo5.sh",
+      "args": "3 2 1",
+      "score": 1
+    },
+    {
+      "command": "./tp6exo5.sh",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6exo5.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6exo5.sh",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6exo5.sh",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6exo5.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6exo5.sh",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "./tp6exo5.sh",
+      "args": "1 2 3",
+      "score": 1
+    },
+    {
+      "command": "./tp6exo5.sh",
+      "args": "1 2 3 4",
+      "score": 1
+    },
+    {
+      "command": "clear",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "chmod",
+      "args": "777 naim",
+      "score": 1
+    },
+    {
+      "command": "./naim",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "chmode",
+      "args": "777 tp6exo6.sh",
+      "score": 0
+    },
+    {
+      "command": "nano",
+      "args": "tp6exo6.sh",
+      "score": 1
+    },
+    {
+      "command": "chmod",
+      "args": "777 tp6exo6.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6exo6.sh",
+      "args": "5",
+      "score": 1
+    },
+    {
+      "command": "./tp6exo6.sh",
+      "args": "4",
+      "score": 1
+    },
+    {
+      "command": "./tp6exo6.sh",
+      "args": "6",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "chmod",
+      "args": "777 tp6exo7.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6exo7.sh",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6exo7.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6exo7.sh",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6exo7.sh",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6exo7.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6exo7.sh",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "./tp6exo7.sh",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "./tp6exo7.sh",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "./tp6exo7.sh",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "./tp6exo7.sh",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6exo7.sh",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "chmod",
+      "args": "777 tp6exo8.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6exo8.sh",
+      "args": "",
+      "score": 0
+    },
+    {
+      "command": "./tp6exo7.sh",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "./tp6exo8.sh",
+      "args": "1",
+      "score": 0
+    },
+    {
+      "command": "nano",
+      "args": "tp6exo8.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6exo8.sh",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "./tp6exo8.sh",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6exo8.sh",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6exo8.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6exo8.sh",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6exo8.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6exo8.sh",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "./tp6exo8.sh",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6exo8.sh",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6exo9.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6exo9.sh",
+      "args": "",
+      "score": 0
+    },
+    {
+      "command": "chmod",
+      "args": "777 tp6exo9.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6exo9.sh",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "./tp6exo9.sh",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6exo9.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6exo9.sh",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6exo9.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6exo9.sh",
+      "args": "",
+      "score": 1
+    }
+  ]
+}

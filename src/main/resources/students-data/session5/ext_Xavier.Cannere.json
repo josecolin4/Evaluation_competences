@@ -1,0 +1,174 @@
+{
+  "name": "ext_Xavier.Cannere",
+  "session": 5,
+  "scripts": [
+    [
+      "#!/bin/bash\n",
+      "echo $1 -a $2\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "echo \"$1 -a $2\"\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "echo $1 -a $2\n"
+    ],
+    [
+      "#!/bin/bash\n",
+      "if [ -e $1 -a -e $2 ]\n",
+      "\tthen\n",
+      "\t\techo \"soubaitez-vous concatener les fichiers ?\"\n",
+      "\t\tread reponse\n",
+      "\tif [ $reponse = oui ]\n",
+      "\t\tthen\n",
+      "\t\t\tcat $1 $2\n",
+      "\tfi\n",
+      "\telse\n",
+      "\t\techo \"Au moins un des deux fichiers n'existe pas\"\n",
+      "fi\n"
+    ]
+  ],
+  "commands": [
+    {
+      "command": "ls",
+      "args": "-l",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo2.sh",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo2.sh",
+      "args": "4",
+      "score": 0
+    },
+    {
+      "command": "./tp6_exo2.sh",
+      "args": "tp5_exo1.sh",
+      "score": 0
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo2.sh",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo3.sh",
+      "score": 1
+    },
+    {
+      "command": "chmod",
+      "args": "777 tp6_exo3.sh",
+      "score": 1
+    },
+    {
+      "command": "./tp6_exo3.sh",
+      "args": "",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo3.sh",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo3.sh aouif reed",
+      "score": 1
+    },
+    {
+      "command": "tp6_exo3.sh",
+      "args": "aouif reed",
+      "score": 0
+    },
+    {
+      "command": "tp6_exo3.sh",
+      "args": "un deux",
+      "score": 0
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo3.sh",
+      "score": 1
+    },
+    {
+      "command": "tp6_exo3.sh",
+      "args": "un deux",
+      "score": 0
+    },
+    {
+      "command": "tp6_exo3.sh",
+      "args": "un deux",
+      "score": 0
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo3.sh",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo3.sh",
+      "score": 1
+    },
+    {
+      "command": "tp6_exo3.sh",
+      "args": "un deux",
+      "score": 0
+    },
+    {
+      "command": "tp6_exo3.sh",
+      "args": "un deux",
+      "score": 0
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo3.sh",
+      "score": 1
+    },
+    {
+      "command": "tp6_exo3.sh",
+      "args": "un deux",
+      "score": 0
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo3.sh",
+      "score": 1
+    },
+    {
+      "command": "nano",
+      "args": "tp6_exo3.sh",
+      "score": 1
+    },
+    {
+      "command": "tp6_exo3.sh",
+      "args": "",
+      "score": 0
+    },
+    {
+      "command": "tp6_exo3.sh",
+      "args": "1",
+      "score": 0
+    },
+    {
+      "command": "touch",
+      "args": "a",
+      "score": 1
+    },
+    {
+      "command": "touch",
+      "args": "b",
+      "score": 1
+    },
+    {
+      "command": "tp6_exo3.sh",
+      "args": "a b",
+      "score": 0
+    }
+  ]
+}
