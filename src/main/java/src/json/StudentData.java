@@ -53,4 +53,8 @@ public class StudentData {
     public List<Command> getCommands() {
         return commands;
     }
+
+    public void setProfile(List<StudentCompetency> profile) {
+        this.profile = profile;
+    }
 }

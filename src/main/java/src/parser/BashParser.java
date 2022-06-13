@@ -19,7 +19,7 @@ public class BashParser {
     /**
      * Types of node for building bash ast.
      */
-    private static final HashMap<Integer, String> NODES = new HashMap<Integer, String>();
+    public static final HashMap<Integer, String> NODES_TYPES = new HashMap<Integer, String>();
 
     static {
         // init all types of nodes
@@ -29,7 +29,7 @@ public class BashParser {
                 if (Modifier.isPublic(mod) && Modifier.isFinal(mod) && Modifier.isStatic(mod)) {
                     try {
                         Integer i = (Integer) f.get(null);
-                        NODES.put(i, f.getName());
+                        NODES_TYPES.put(i, f.getName());
                     } catch (IllegalAccessException e) {
                         e.printStackTrace();
                     }
@@ -38,7 +38,7 @@ public class BashParser {
         }
     }
 
-    public Tree parse(String code) {
+    public static Tree parse(String code) {
         java_libbashLexer lexer = new java_libbashLexer(new ANTLRStringStream(code));
         try {
             return (Tree) (new java_libbashParser(new CommonTokenStream(lexer)).start().getTree());

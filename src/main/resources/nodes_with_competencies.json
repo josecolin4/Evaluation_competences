@@ -1,0 +1,716 @@
+{
+  "nodes": [
+    {
+      "name": "EOF",
+      "associatedCompetency": null
+    },
+    {
+      "name": "ANSI_C_QUOTING",
+      "associatedCompetency": null
+    },
+    {
+      "name": "ARG",
+      "associatedCompetency": null
+    },
+    {
+      "name": "ARRAY",
+      "associatedCompetency": null
+    },
+    {
+      "name": "ARRAY_SIZE",
+      "associatedCompetency": null
+    },
+    {
+      "name": "BRACE_EXP",
+      "associatedCompetency": null
+    },
+    {
+      "name": "COMMAND_SUB",
+      "associatedCompetency": null
+    },
+    {
+      "name": "CASE_PATTERN",
+      "associatedCompetency": null
+    },
+    {
+      "name": "CASE_COMMAND",
+      "associatedCompetency": null
+    },
+    {
+      "name": "SUBSHELL",
+      "associatedCompetency": null
+    },
+    {
+      "name": "CURRENT_SHELL",
+      "associatedCompetency": null
+    },
+    {
+      "name": "COMPOUND_COND",
+      "associatedCompetency": null
+    },
+    {
+      "name": "CFOR",
+      "associatedCompetency": null
+    },
+    {
+      "name": "FOR_INIT",
+      "associatedCompetency": null
+    },
+    {
+      "name": "FOR_COND",
+      "associatedCompetency": null
+    },
+    {
+      "name": "FOR_MOD",
+      "associatedCompetency": null
+    },
+    {
+      "name": "IF_STATEMENT",
+      "associatedCompetency": null
+    },
+    {
+      "name": "OP",
+      "associatedCompetency": null
+    },
+    {
+      "name": "PRE_INCR",
+      "associatedCompetency": null
+    },
+    {
+      "name": "PRE_DECR",
+      "associatedCompetency": null
+    },
+    {
+      "name": "POST_INCR",
+      "associatedCompetency": null
+    },
+    {
+      "name": "POST_DECR",
+      "associatedCompetency": null
+    },
+    {
+      "name": "PROCESS_SUBSTITUTION",
+      "associatedCompetency": null
+    },
+    {
+      "name": "VAR_REF",
+      "associatedCompetency": null
+    },
+    {
+      "name": "NEGATION",
+      "associatedCompetency": null
+    },
+    {
+      "name": "LIST",
+      "associatedCompetency": null
+    },
+    {
+      "name": "STRING",
+      "associatedCompetency": null
+    },
+    {
+      "name": "COMMAND",
+      "associatedCompetency": null
+    },
+    {
+      "name": "FILE_DESCRIPTOR",
+      "associatedCompetency": null
+    },
+    {
+      "name": "FILE_DESCRIPTOR_MOVE",
+      "associatedCompetency": null
+    },
+    {
+      "name": "REDIR",
+      "associatedCompetency": null
+    },
+    {
+      "name": "ARITHMETIC_CONDITION",
+      "associatedCompetency": null
+    },
+    {
+      "name": "ARITHMETIC_EXPRESSION",
+      "associatedCompetency": null
+    },
+    {
+      "name": "ARITHMETIC",
+      "associatedCompetency": null
+    },
+    {
+      "name": "KEYWORD_TEST",
+      "associatedCompetency": null
+    },
+    {
+      "name": "BUILTIN_TEST",
+      "associatedCompetency": null
+    },
+    {
+      "name": "MATCH_ANY_EXCEPT",
+      "associatedCompetency": null
+    },
+    {
+      "name": "EXTENDED_MATCH_EXACTLY_ONE",
+      "associatedCompetency": null
+    },
+    {
+      "name": "EXTENDED_MATCH_AT_MOST_ONE",
+      "associatedCompetency": null
+    },
+    {
+      "name": "EXTENDED_MATCH_NONE",
+      "associatedCompetency": null
+    },
+    {
+      "name": "EXTENDED_MATCH_ANY",
+      "associatedCompetency": null
+    },
+    {
+      "name": "EXTENDED_MATCH_AT_LEAST_ONE",
+      "associatedCompetency": null
+    },
+    {
+      "name": "BRANCH",
+      "associatedCompetency": null
+    },
+    {
+      "name": "MATCH_PATTERN",
+      "associatedCompetency": null
+    },
+    {
+      "name": "MATCH_REGULAR_EXPRESSION",
+      "associatedCompetency": null
+    },
+    {
+      "name": "ESCAPED_CHAR",
+      "associatedCompetency": null
+    },
+    {
+      "name": "NOT_MATCH_PATTERN",
+      "associatedCompetency": null
+    },
+    {
+      "name": "MATCH_ANY",
+      "associatedCompetency": null
+    },
+    {
+      "name": "MATCH_ALL",
+      "associatedCompetency": null
+    },
+    {
+      "name": "MATCH_ONE",
+      "associatedCompetency": null
+    },
+    {
+      "name": "CHARACTER_CLASS",
+      "associatedCompetency": null
+    },
+    {
+      "name": "EQUIVALENCE_CLASS",
+      "associatedCompetency": null
+    },
+    {
+      "name": "COLLATING_SYMBOL",
+      "associatedCompetency": null
+    },
+    {
+      "name": "DOUBLE_QUOTED_STRING",
+      "associatedCompetency": null
+    },
+    {
+      "name": "SINGLE_QUOTED_STRING",
+      "associatedCompetency": null
+    },
+    {
+      "name": "VARIABLE_DEFINITIONS",
+      "associatedCompetency": null
+    },
+    {
+      "name": "USE_DEFAULT_WHEN_UNSET",
+      "associatedCompetency": null
+    },
+    {
+      "name": "USE_ALTERNATE_WHEN_UNSET",
+      "associatedCompetency": null
+    },
+    {
+      "name": "DISPLAY_ERROR_WHEN_UNSET",
+      "associatedCompetency": null
+    },
+    {
+      "name": "ASSIGN_DEFAULT_WHEN_UNSET",
+      "associatedCompetency": null
+    },
+    {
+      "name": "USE_DEFAULT_WHEN_UNSET_OR_NULL",
+      "associatedCompetency": null
+    },
+    {
+      "name": "USE_ALTERNATE_WHEN_UNSET_OR_NULL",
+      "associatedCompetency": null
+    },
+    {
+      "name": "DISPLAY_ERROR_WHEN_UNSET_OR_NULL",
+      "associatedCompetency": null
+    },
+    {
+      "name": "ASSIGN_DEFAULT_WHEN_UNSET_OR_NULL",
+      "associatedCompetency": null
+    },
+    {
+      "name": "OFFSET",
+      "associatedCompetency": null
+    },
+    {
+      "name": "LIST_EXPAND",
+      "associatedCompetency": null
+    },
+    {
+      "name": "REPLACE_FIRST",
+      "associatedCompetency": null
+    },
+    {
+      "name": "REPLACE_ALL",
+      "associatedCompetency": null
+    },
+    {
+      "name": "REPLACE_AT_START",
+      "associatedCompetency": null
+    },
+    {
+      "name": "REPLACE_AT_END",
+      "associatedCompetency": null
+    },
+    {
+      "name": "LAZY_REMOVE_AT_START",
+      "associatedCompetency": null
+    },
+    {
+      "name": "LAZY_REMOVE_AT_END",
+      "associatedCompetency": null
+    },
+    {
+      "name": "EMPTY_EXPANSION_VALUE",
+      "associatedCompetency": null
+    },
+    {
+      "name": "PLUS_SIGN",
+      "associatedCompetency": null
+    },
+    {
+      "name": "MINUS_SIGN",
+      "associatedCompetency": null
+    },
+    {
+      "name": "PLUS_ASSIGN",
+      "associatedCompetency": null
+    },
+    {
+      "name": "MINUS_ASSIGN",
+      "associatedCompetency": null
+    },
+    {
+      "name": "DIVIDE_ASSIGN",
+      "associatedCompetency": null
+    },
+    {
+      "name": "MUL_ASSIGN",
+      "associatedCompetency": null
+    },
+    {
+      "name": "MOD_ASSIGN",
+      "associatedCompetency": null
+    },
+    {
+      "name": "LSHIFT_ASSIGN",
+      "associatedCompetency": null
+    },
+    {
+      "name": "RSHIFT_ASSIGN",
+      "associatedCompetency": null
+    },
+    {
+      "name": "AND_ASSIGN",
+      "associatedCompetency": null
+    },
+    {
+      "name": "XOR_ASSIGN",
+      "associatedCompetency": null
+    },
+    {
+      "name": "OR_ASSIGN",
+      "associatedCompetency": null
+    },
+    {
+      "name": "LEQ",
+      "associatedCompetency": null
+    },
+    {
+      "name": "GEQ",
+      "associatedCompetency": null
+    },
+    {
+      "name": "NOT_EQUALS",
+      "associatedCompetency": null
+    },
+    {
+      "name": "EQUALS_TO",
+      "associatedCompetency": null
+    },
+    {
+      "name": "BUILTIN_LOGIC_AND",
+      "associatedCompetency": null
+    },
+    {
+      "name": "BUILTIN_LOGIC_OR",
+      "associatedCompetency": null
+    },
+    {
+      "name": "FUNCTION",
+      "associatedCompetency": null
+    },
+    {
+      "name": "EOL",
+      "associatedCompetency": null
+    },
+    {
+      "name": "BLANK",
+      "associatedCompetency": null
+    },
+    {
+      "name": "SEMIC",
+      "associatedCompetency": null
+    },
+    {
+      "name": "AMP",
+      "associatedCompetency": null
+    },
+    {
+      "name": "POUND",
+      "associatedCompetency": null
+    },
+    {
+      "name": "LOGICAND",
+      "associatedCompetency": null
+    },
+    {
+      "name": "LOGICOR",
+      "associatedCompetency": null
+    },
+    {
+      "name": "BANG",
+      "associatedCompetency": null
+    },
+    {
+      "name": "PIPE",
+      "associatedCompetency": null
+    },
+    {
+      "name": "TIME",
+      "associatedCompetency": null
+    },
+    {
+      "name": "MINUS",
+      "associatedCompetency": null
+    },
+    {
+      "name": "LETTER",
+      "associatedCompetency": null
+    },
+    {
+      "name": "LESS_THAN",
+      "associatedCompetency": null
+    },
+    {
+      "name": "GREATER_THAN",
+      "associatedCompetency": null
+    },
+    {
+      "name": "LPAREN",
+      "associatedCompetency": null
+    },
+    {
+      "name": "RPAREN",
+      "associatedCompetency": null
+    },
+    {
+      "name": "DIGIT",
+      "associatedCompetency": null
+    },
+    {
+      "name": "HERE_STRING_OP",
+      "associatedCompetency": null
+    },
+    {
+      "name": "LSHIFT",
+      "associatedCompetency": null
+    },
+    {
+      "name": "RSHIFT",
+      "associatedCompetency": null
+    },
+    {
+      "name": "AMP_LESS_THAN",
+      "associatedCompetency": null
+    },
+    {
+      "name": "AMP_GREATER_THAN",
+      "associatedCompetency": null
+    },
+    {
+      "name": "AMP_RSHIFT",
+      "associatedCompetency": null
+    },
+    {
+      "name": "NAME",
+      "associatedCompetency": null
+    },
+    {
+      "name": "EXPORT",
+      "associatedCompetency": null
+    },
+    {
+      "name": "LOCAL",
+      "associatedCompetency": null
+    },
+    {
+      "name": "DECLARE",
+      "associatedCompetency": null
+    },
+    {
+      "name": "LSQUARE",
+      "associatedCompetency": null
+    },
+    {
+      "name": "RSQUARE",
+      "associatedCompetency": null
+    },
+    {
+      "name": "EQUALS",
+      "associatedCompetency": null
+    },
+    {
+      "name": "PLUS",
+      "associatedCompetency": null
+    },
+    {
+      "name": "DQUOTE",
+      "associatedCompetency": null
+    },
+    {
+      "name": "LBRACE",
+      "associatedCompetency": null
+    },
+    {
+      "name": "RBRACE",
+      "associatedCompetency": null
+    },
+    {
+      "name": "FOR",
+      "associatedCompetency": null
+    },
+    {
+      "name": "IN",
+      "associatedCompetency": null
+    },
+    {
+      "name": "DO",
+      "associatedCompetency": null
+    },
+    {
+      "name": "DONE",
+      "associatedCompetency": null
+    },
+    {
+      "name": "LLPAREN",
+      "associatedCompetency": null
+    },
+    {
+      "name": "DOUBLE_SEMIC",
+      "associatedCompetency": null
+    },
+    {
+      "name": "SELECT",
+      "associatedCompetency": null
+    },
+    {
+      "name": "IF",
+      "associatedCompetency": null
+    },
+    {
+      "name": "THEN",
+      "associatedCompetency": null
+    },
+    {
+      "name": "ELSE",
+      "associatedCompetency": null
+    },
+    {
+      "name": "FI",
+      "associatedCompetency": null
+    },
+    {
+      "name": "ELIF",
+      "associatedCompetency": null
+    },
+    {
+      "name": "WHILE",
+      "associatedCompetency": null
+    },
+    {
+      "name": "UNTIL",
+      "associatedCompetency": null
+    },
+    {
+      "name": "CASE",
+      "associatedCompetency": null
+    },
+    {
+      "name": "ESAC",
+      "associatedCompetency": null
+    },
+    {
+      "name": "TILDE",
+      "associatedCompetency": null
+    },
+    {
+      "name": "ESC",
+      "associatedCompetency": null
+    },
+    {
+      "name": "ESC_LT",
+      "associatedCompetency": null
+    },
+    {
+      "name": "ESC_GT",
+      "associatedCompetency": null
+    },
+    {
+      "name": "UNDERSCORE",
+      "associatedCompetency": null
+    },
+    {
+      "name": "NUMBER",
+      "associatedCompetency": null
+    },
+    {
+      "name": "DOLLAR",
+      "associatedCompetency": null
+    },
+    {
+      "name": "SINGLE_QUOTED_STRING_TOKEN",
+      "associatedCompetency": null
+    },
+    {
+      "name": "TICK",
+      "associatedCompetency": null
+    },
+    {
+      "name": "SLASH",
+      "associatedCompetency": null
+    },
+    {
+      "name": "OTHER",
+      "associatedCompetency": null
+    },
+    {
+      "name": "PCT",
+      "associatedCompetency": null
+    },
+    {
+      "name": "PCTPCT",
+      "associatedCompetency": null
+    },
+    {
+      "name": "DOT",
+      "associatedCompetency": null
+    },
+    {
+      "name": "DOTDOT",
+      "associatedCompetency": null
+    },
+    {
+      "name": "COLON",
+      "associatedCompetency": null
+    },
+    {
+      "name": "CARET",
+      "associatedCompetency": null
+    },
+    {
+      "name": "COMMA",
+      "associatedCompetency": null
+    },
+    {
+      "name": "AT",
+      "associatedCompetency": null
+    },
+    {
+      "name": "ESC_RPAREN",
+      "associatedCompetency": null
+    },
+    {
+      "name": "ESC_LPAREN",
+      "associatedCompetency": null
+    },
+    {
+      "name": "ESC_RSQUARE",
+      "associatedCompetency": null
+    },
+    {
+      "name": "ESC_LSQUARE",
+      "associatedCompetency": null
+    },
+    {
+      "name": "ESC_DOLLAR",
+      "associatedCompetency": null
+    },
+    {
+      "name": "ESC_TICK",
+      "associatedCompetency": null
+    },
+    {
+      "name": "ESC_DQUOTE",
+      "associatedCompetency": null
+    },
+    {
+      "name": "ESC_SQUOTE",
+      "associatedCompetency": null
+    },
+    {
+      "name": "TIMES",
+      "associatedCompetency": null
+    },
+    {
+      "name": "QMARK",
+      "associatedCompetency": null
+    },
+    {
+      "name": "ALPHANUM",
+      "associatedCompetency": null
+    },
+    {
+      "name": "SQUOTE",
+      "associatedCompetency": null
+    },
+    {
+      "name": "COMMAND_SUBSTITUTION_PAREN",
+      "associatedCompetency": null
+    },
+    {
+      "name": "COMMAND_SUBSTITUTION_TICK",
+      "associatedCompetency": null
+    },
+    {
+      "name": "EXP",
+      "associatedCompetency": null
+    },
+    {
+      "name": "COMMENT",
+      "associatedCompetency": null
+    },
+    {
+      "name": "CONTINUE_LINE",
+      "associatedCompetency": null
+    }
+  ]
+}

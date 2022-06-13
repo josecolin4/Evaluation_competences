@@ -3,6 +3,7 @@ package src.evaluation;
 import src.json.StudentData;
 
 import java.util.HashMap;
+import java.util.List;
 
 /**
  * Evaluation of students competency by transforming their code into Abstract Syntax Tree and analysing it
@@ -10,11 +11,12 @@ import java.util.HashMap;
 public class ASTEvaluation implements Evaluation {
 
     @Override
-    public HashMap<String, Integer> evaluate(StudentData data) {
-        HashMap<String, Integer> profile = new HashMap<>();
+    public HashMap<String, Double> evaluate(StudentData data, List<String> competenciesToEvaluate) {
+        return null;
+    }
 
-        // TODO loop through all competencies and add them to the profile
-
+    @Override
+    public HashMap<String, Double> evaluate(StudentData data) {
         return null;
     }
 }
