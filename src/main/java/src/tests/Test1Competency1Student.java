@@ -1,7 +1,7 @@
 package src.tests;
 
 import src.evaluation.Evaluation;
-import src.evaluation.SimpleEvaluation;
+import src.evaluation.SimpleEvaluationRegex;
 import src.json.StudentData;
 import src.util.JsonUtils;
 
@@ -13,10 +13,10 @@ import java.util.stream.Collectors;
 /**
  * test on a single competency
  */
-public class Test1Competency {
+public class Test1Competency1Student {
 
     public static void main(String[] args) {
-        String studentName = "ext_Ambre.Rouillon";
+        String studentName = "ext_Alexis.Duval";
         int session = 1;
         String toEvaluate = "Conna\u00c3\u00aetre_la_syntaxe_de_instruction_set";
 
@@ -25,10 +25,10 @@ public class Test1Competency {
         // keep only 1 competency
         data.setProfile(data.getProfile().stream().filter(studentCompetency -> studentCompetency.getName().equals(toEvaluate)).collect(Collectors.toList()));
 
-        Evaluation simpleEvaluation = new SimpleEvaluation();
-        HashMap<String, Double> generatedProfile = simpleEvaluation.evaluate(data, new ArrayList<>(Collections.singleton(toEvaluate)));    // TODO generate profile
+        Evaluation simpleEvaluation = new SimpleEvaluationRegex();
+        HashMap<String, Double> generatedProfile = simpleEvaluation.evaluate(data, new ArrayList<>(Collections.singleton(toEvaluate)), true);    // TODO generate profile
         HashMap<String, Double> correctProfile = data.getHashMapProfile();
 
-        ResultAnalyser.mesureError(generatedProfile, correctProfile);
+        ResultAnalyser.mesureError(generatedProfile, correctProfile, true);
     }
 }

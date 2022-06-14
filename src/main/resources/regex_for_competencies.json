@@ -1,0 +1,10 @@
+{
+  "competencies": [
+    {
+      "name": "Conna\u00c3\u00aetre_la_syntaxe_de_instruction_set",
+      "regex": [
+        "set .+"
+      ]
+    }
+  ]
+}

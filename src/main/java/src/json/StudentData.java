@@ -2,6 +2,7 @@ package src.json;
 
 import com.google.gson.annotations.Expose;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
@@ -31,10 +32,17 @@ public class StudentData {
     }
 
     public List<List<String>> getScripts() {
+        if (scripts == null) {
+            return new ArrayList<>();
+        }
         return scripts;
     }
 
     public List<StudentCompetency> getProfile() {
+        if (profile == null) {
+            return new ArrayList<>();
+        }
+
         return profile;
     }
 
@@ -51,6 +59,9 @@ public class StudentData {
     }
 
     public List<Command> getCommands() {
+        if (commands == null) {
+            return new ArrayList<>();
+        }
         return commands;
     }
 

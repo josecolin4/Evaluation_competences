@@ -1,11 +1,8 @@
 package src.evaluation;
 
 import org.antlr.runtime.tree.Tree;
-import src.json.Command;
 import src.json.StudentData;
-import src.parser.BashParser;
 
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
@@ -17,10 +14,10 @@ import java.util.List;
  * If it is a skill, then we check if the command or the script runs correctly, and then
  * we increase the mastery in that competency
  */
-public class SimpleEvaluation implements Evaluation {
+public class SimpleEvaluation extends Evaluation {
 
     @Override
-    public HashMap<String, Double> evaluate(StudentData data, List<String> competenciesToEvaluate) {
+    public HashMap<String, Double> evaluate(StudentData data, List<String> competenciesToEvaluate, boolean printWhenFound) {
         HashMap<String, Double> profile = new HashMap<>();
 
         // init at 0
@@ -29,21 +26,7 @@ public class SimpleEvaluation implements Evaluation {
         }
 
         // get the AST for all the commands and scripts
-        List<Tree> astList = new ArrayList<>();
-        for (List<String> script : data.getScripts()) {
-
-            // reformat the script to be a single string with \n
-            String scriptOneLine = "";
-            for (String line : script) {
-                scriptOneLine += line;
-            }
-
-            astList.add(BashParser.parse(scriptOneLine));
-        }
-
-        for (Command command : data.getCommands()) {
-            astList.add(BashParser.parse(command.getCommand()));
-        }
+        List<Tree> astList = getAllAST(data);
 
         // TODO loop through all competencies and add them to the profile
         for (String competency : competenciesToEvaluate) {
