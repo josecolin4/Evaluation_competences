@@ -2,108 +2,44 @@
   "name": "ext_Hippolyte.Durand",
   "session": 3,
   "scripts": [
-    [
-      "#!/bin/bash\n",
-      "echo saisir une valeur \n",
-      "$read a\n",
-      "echo $a\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo saisir une valeur \n",
-      "$read a\n",
-      "toto\n",
-      "echo $a\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo saisir une valeur \n",
-      "$read a\n",
-      "echo $a\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Rentre un charactere \\?\n",
-      "read charactere\n",
-      "if [$charactere -gt 5]-a[$charactere -it 10]\n",
-      "then\n",
-      "echo valeur comprise entre 5 et 10\n",
-      "else \n",
-      "echo valeur non comprise\n",
-      "fi\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Rentre un charactere \\?\n",
-      "read charactere\n",
-      "if [$charactere -gt 5]-a[$charactere -lt 10]\n",
-      "then\n",
-      "echo valeur comprise entre 5 et 10\n",
-      "else \n",
-      "echo valeur non comprise\n",
-      "fi\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Rentre un charactere \\?\n",
-      "read charactere\n",
-      "if [$charactere -gt 5] -a [$charactere -lt 10]\n",
-      "then\n",
-      "echo valeur comprise entre 5 et 10\n",
-      "else \n",
-      "echo valeur non comprise\n",
-      "fi\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Rentre un charactere \\?\n",
-      "read charactere\n",
-      "if [$charactere -gt 5 -a $charactere -lt 10]\n",
-      "then\n",
-      "echo valeur comprise entre 5 et 10\n",
-      "else \n",
-      "echo valeur non comprise\n",
-      "fi\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Rentre un charactere \\?\n",
-      "read charactere\n",
-      "if [ $charactere -gt 5 -a $charactere -lt 10 ]\n",
-      "then\n",
-      "echo valeur comprise entre 5 et 10\n",
-      "else \n",
-      "echo valeur non comprise\n",
-      "fi\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Quel fichier voulez vous tester /?\n",
-      "read fichier\n",
-      "if test -e $fichier \n",
-      "then\n",
-      "echo le fichier existe\n",
-      "if test -r $fichier \n",
-      "then\n",
-      "echo droit de lecture accorde\n",
-      "else\n",
-      "echo droit de lecture non accorde\n",
-      "fi\n",
-      "if test -w $charactere then \n",
-      "echo droit d ecriture non accorde\n",
-      "fi\n",
-      "else\n",
-      "echo fichier inexistant\n",
-      "fi\n"
-    ]
+    {
+      "name": "tp6_exo1.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo Rentre un charactere \\?\n",
+        "read charactere\n",
+        "if [ $charactere -gt 5 -a $charactere -lt 10 ]\n",
+        "then\n",
+        "echo valeur comprise entre 5 et 10\n",
+        "else \n",
+        "echo valeur non comprise\n",
+        "fi\n",
+        "\n"
+      ]
+    },
+    {
+      "name": "tp6_exo2.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo Quel fichier voulez vous tester /?\n",
+        "read fichier\n",
+        "if test -e $fichier \n",
+        "then\n",
+        "echo le fichier existe\n",
+        "if test -r $fichier \n",
+        "then\n",
+        "echo droit de lecture accorde\n",
+        "else\n",
+        "echo droit de lecture non accorde\n",
+        "fi\n",
+        "if test -w $charactere then \n",
+        "echo droit d ecriture non accorde\n",
+        "fi\n",
+        "else\n",
+        "echo fichier inexistant\n",
+        "fi\n"
+      ]
+    }
   ],
   "profile": [
     {

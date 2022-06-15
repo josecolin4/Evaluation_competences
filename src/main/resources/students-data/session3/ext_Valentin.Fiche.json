@@ -2,184 +2,51 @@
   "name": "ext_Valentin.Fiche",
   "session": 3,
   "scripts": [
-    [
-      "expr $1/2\n"
-    ],
-    [
-      "expr $1 / 2\n"
-    ],
-    [
-      "expr $1 / 2\n",
-      "\n",
-      "n=2\n",
-      "echo $((n / 2))\n"
-    ],
-    [
-      "expr $1 / 2\n",
-      "\n",
-      "n=4\n",
-      "echo $((n / 2))\n"
-    ],
-    [
-      "exp $1 * 2\n",
-      "n=5\n",
-      "echo $(( 5 * 2))\n"
-    ],
-    [
-      "expr $1 / 2\n",
-      "\n",
-      "n=$1\n",
-      "echo $((n / 2))\n"
-    ],
-    [
-      "exp $1 * 2\n",
-      "n=$1\n",
-      "echo $(( $1 * 2))\n"
-    ],
-    [
-      "expr $1 * 2\n",
-      "n=$1\n",
-      "echo $(( $1 * 2))\n"
-    ],
-    [
-      "expr $1*2\n",
-      "n=$1\n",
-      "echo $(( $1 * 2))\n"
-    ],
-    [
-      "expr $1 \\* 2\n",
-      "n=$1\n",
-      "echo $(( $1 * 2))\n"
-    ],
-    [
-      "echo quelle est votre annee de naissance\n",
-      "read anne\n",
-      "echo vous avez donc\n",
-      "expr 2020 - $anne\n"
-    ],
-    [
-      "echo quelle est votre annee de naissance\n",
-      "read anne\n",
-      "echo vous avez donc\n",
-      "expr 2020 - $anne\n",
-      "$(( 2020 - $anee))\n"
-    ],
-    [
-      "echo quelle est votre annee de naissance\n",
-      "read anne\n",
-      "echo vous avez donc\n",
-      "expr 2020 - $anne\n",
-      "$((2020 - $anee))\n"
-    ],
-    [
-      "echo quelle est votre annee de naissance\n",
-      "read anne\n",
-      "echo vous avez donc\n",
-      "expr 2020 - $anne\n",
-      "$((2020-$anee))\n"
-    ],
-    [
-      "echo quelle est votre annee de naissance\n",
-      "read anne\n",
-      "echo vous avez donc\n",
-      "expr 2020 - $anne\n",
-      "$((2020\\-$anee))\n"
-    ],
-    [
-      "echo quelle est votre annee de naissance\n",
-      "read anne\n",
-      "echo vous avez donc\n",
-      "expr 2020 - $anne\n",
-      "$((2020 - $anee))\n"
-    ],
-    [
-      "echo hostname\n"
-    ],
-    [
-      "hostname\n"
-    ],
-    [
-      "\n",
-      "\n",
-      "\n",
-      "\n",
-      "who\n",
-      "hostname\n"
-    ],
-    [
-      "\n",
-      "\n",
-      "\n",
-      "\n",
-      "`who`\n",
-      "hostname\n"
-    ],
-    [
-      "\n",
-      "\n",
-      "\n",
-      "echo  il y a `who`utilisateur sur $(hostname)\n",
-      "\n"
-    ],
-    [
-      "\n",
-      "\n",
-      "\n",
-      "echo  il y a `who -q ` utilisateur sur $(hostname)\n",
-      "\n"
-    ],
-    [
-      "\n",
-      "echo 'il y a'\n",
-      "echo $(who -q)\n"
-    ],
-    [
-      "\n",
-      "echo 'il y a'\n",
-      "echo $(who -q)\n",
-      "echo 'personnes connectes sur'\n",
-      "echo `hostname`\n"
-    ],
-    [
-      "set $(ls -l file)\n",
-      "echo $1\n"
-    ],
-    [
-      "mdate=$(date +'%Y')\n",
-      "echo quelle est votre annee de naissance\n",
-      "read anne\n",
-      "echo vous avez donc\n",
-      "expr 2020 - $anne\n",
-      "$(($\u00c3\u00b9date - $anee))\n"
-    ],
-    [
-      "mdate=$(date +'%Y')\n",
-      "echo quelle est votre annee de naissance\n",
-      "read anne\n",
-      "echo vous avez donc\n",
-      "expr 2020 - $anne\n",
-      "$(($mdate - $anne))\n"
-    ],
-    [
-      "\n",
-      "echo quelle est votre annee de naissance\n",
-      "read anne\n",
-      "echo vous avez donc\n",
-      "expr 2020 - $anne\n",
-      "$((2020 - $anne))\n"
-    ],
-    [
-      "set -- $(ls -l tp4_ex.sh)\n",
-      "echo $5\n"
-    ],
-    [
-      "set -- $(ls -l tp3bis_ex.sh)\n",
-      "echo $5\n"
-    ],
-    [
-      "set -- $(ls -l tp5bis_ex3.sh)\n",
-      "echo $5\n"
-    ]
+    {
+      "name": "tp5bis_ex1.sh",
+      "lines": [
+        "expr $1 / 2\n",
+        "\n",
+        "n=$1\n",
+        "echo $((n / 2))\n"
+      ]
+    },
+    {
+      "name": "tp5bis_ex2.sh",
+      "lines": [
+        "expr $1 \\* 2\n",
+        "n=$1\n",
+        "echo $(( $1 * 2))\n"
+      ]
+    },
+    {
+      "name": "tp5bis_ex3.sh",
+      "lines": [
+        "\n",
+        "echo quelle est votre annee de naissance\n",
+        "read anne\n",
+        "echo vous avez donc\n",
+        "expr 2020 - $anne\n",
+        "$((2020 - $anne))\n"
+      ]
+    },
+    {
+      "name": "tp5bis_ex4.sh",
+      "lines": [
+        "\n",
+        "echo 'il y a'\n",
+        "echo $(who -q)\n",
+        "echo 'personnes connectes sur'\n",
+        "echo `hostname`\n"
+      ]
+    },
+    {
+      "name": "tp5bis_ex5.sh",
+      "lines": [
+        "set -- $(ls -l tp5bis_ex3.sh)\n",
+        "echo $5\n"
+      ]
+    }
   ],
   "profile": [
     {

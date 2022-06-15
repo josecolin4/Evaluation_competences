@@ -2,56 +2,31 @@
   "name": "ext_Masao.Ascencio",
   "session": 2,
   "scripts": [
-    [
-      "Le script \n"
-    ],
-    [
-      "nom_script = tp5.exo5.sh\n",
-      "echo Le script\n",
-      "read nom_script\n",
-      "echo poss\u00c3\u00a8de\n",
-      "read\n",
-      "echo parametres que voici :\n",
-      "read\n",
-      "\n"
-    ],
-    [
-      "cat F1 > F2\n"
-    ],
-    [
-      "!/bin/bash\n",
-      "cat F1 F2 > F3\n",
-      "\n"
-    ],
-    [
-      "cat F1 F2 > F3\n",
-      "\n"
-    ],
-    [
-      "echo le script $0 poss\u00c3\u00a8de $# parametres que voici : $*\n"
-    ],
-    [
-      "cat $1 $2 > $3\n",
-      "\n"
-    ],
-    [
-      "echo nous sommes le 'date'\n",
-      "echo ceci est\n",
-      "echo une tr\u00c3\u00a9s \n",
-      "echo longue phrase...\n",
-      "echo Voici une \u00c3\u00a9toile : *\n",
-      "\n",
-      "\n"
-    ],
-    [
-      "echo nous sommes le `date`\n",
-      "echo ceci est\n",
-      "echo une tr\u00c3\u00a9s \n",
-      "echo longue phrase...\n",
-      "echo Voici une \u00c3\u00a9toile : *\n",
-      "\n",
-      "\n"
-    ]
+    {
+      "name": "tp5_exo5.sh",
+      "lines": [
+        "echo le script $0 poss\u00c3\u00a8de $# parametres que voici : $*\n"
+      ]
+    },
+    {
+      "name": "tp5_exo6.sh",
+      "lines": [
+        "cat $1 $2 > $3\n",
+        "\n"
+      ]
+    },
+    {
+      "name": "tp5_exo7.sh",
+      "lines": [
+        "echo nous sommes le `date`\n",
+        "echo ceci est\n",
+        "echo une tr\u00c3\u00a9s \n",
+        "echo longue phrase...\n",
+        "echo Voici une \u00c3\u00a9toile : *\n",
+        "\n",
+        "\n"
+      ]
+    }
   ],
   "profile": [
     {

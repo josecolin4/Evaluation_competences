@@ -2,214 +2,74 @@
   "name": "ext_Gwenael.Guillaume",
   "session": 5,
   "scripts": [
-    [
-      "#!/bin/bash\n",
-      "p=1\n",
-      "for i in $(seq $1)\n",
-      "\tdo\n",
-      "\t\tp=$((($p)*($i)))\n",
-      "done\n",
-      "echo $p\n"
-    ],
-    [
-      "#$/bin/bash\n",
-      "echo \"Liste des commandes disponibles : \\n1- Date du jour\\n2- Liste des personnes connect\u00c3\u00a9es sur la machine\\n3- Liste des fichiers du r\u00c3\u00a9pertoire courant\\n4- Nom du r\u00c3\u00a9pertoire courant\\n\\nFaites votre choix :\"\n"
-    ],
-    [
-      "#$/bin/bash\n",
-      "echo \"Liste des commandes disponibles :\" \n",
-      "echo \"1- Date du jour\"\n",
-      "echo \"2- Liste des personnes connect\u00c3\u00a9es sur la machine\"\n",
-      "echo \"3- Liste des fichiers du r\u00c3\u00a9pertoire courant\"\n",
-      "echo \"4- Nom du r\u00c3\u00a9pertoire courant\"\n",
-      "echo\n",
-      "echo \"Faites votre choix :\"\n"
-    ],
-    [
-      "#$/bin/bash\n",
-      "echo \"Liste des commandes disponibles :\" \n",
-      "echo \"1- Date du jour\"\n",
-      "echo \"2- Liste des personnes connect\u00c3\u00a9es sur la machine\"\n",
-      "echo \"3- Liste des fichiers du r\u00c3\u00a9pertoire courant\"\n",
-      "echo \"4- Nom du r\u00c3\u00a9pertoire courant\"\n",
-      "echo\n",
-      "echo \"Faites votre choix :\"\n",
-      "read choix\n"
-    ],
-    [
-      "#$/bin/bash\n",
-      "echo \"Liste des commandes disponibles :\" \n",
-      "echo \"1- Date du jour\"\n",
-      "echo \"2- Liste des personnes connect\u00c3\u00a9es sur la machine\"\n",
-      "echo \"3- Liste des fichiers du r\u00c3\u00a9pertoire courant\"\n",
-      "echo \"4- Nom du r\u00c3\u00a9pertoire courant\"\n",
-      "echo\n",
-      "echo \"Faites votre choix :\"\n",
-      "read choix\n",
-      "case choix in\n",
-      "\t1 ) echo $(date) ;;\n",
-      "\t2 ) echo $(user) ;;\n",
-      "\t3 ) echo $(ls) ;;\n",
-      "\t4 ) echo $(dir) ;;\n",
-      "esac\n",
-      "\n"
-    ],
-    [
-      "#$/bin/bash\n",
-      "echo \"Liste des commandes disponibles :\" \n",
-      "echo \"1- Date du jour\"\n",
-      "echo \"2- Liste des personnes connect\u00c3\u00a9es sur la machine\"\n",
-      "echo \"3- Liste des fichiers du r\u00c3\u00a9pertoire courant\"\n",
-      "echo \"4- Nom du r\u00c3\u00a9pertoire courant\"\n",
-      "echo\n",
-      "echo \"Faites votre choix :\"\n",
-      "read choix\n",
-      "case $choix in\n",
-      "\t1 ) echo $(date) ;;\n",
-      "\t2 ) echo $(user) ;;\n",
-      "\t3 ) echo $(ls) ;;\n",
-      "\t4 ) echo $(dir) ;;\n",
-      "esac\n",
-      "\n"
-    ],
-    [
-      "#$/bin/bash\n",
-      "echo \"Liste des commandes disponibles :\" \n",
-      "echo \"1- Date du jour\"\n",
-      "echo \"2- Liste des personnes connect\u00c3\u00a9es sur la machine\"\n",
-      "echo \"3- Liste des fichiers du r\u00c3\u00a9pertoire courant\"\n",
-      "echo \"4- Nom du r\u00c3\u00a9pertoire courant\"\n",
-      "echo\n",
-      "echo \"Faites votre choix :\"\n",
-      "read choix\n",
-      "case $choix in\n",
-      "\t1 ) echo $(date) ;;\n",
-      "\t2 ) echo $(who) ;;\n",
-      "\t3 ) echo $(ls) ;;\n",
-      "\t4 ) echo $(pwd) ;;\n",
-      "esac\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "chaine=\"\"\n",
-      "while $chaine != \"sortir\"\n",
-      "\tdo\n",
-      "\t\tread chaine\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "chaine=\"\"\n",
-      "while ($chaine)!=(\"sortir\")\n",
-      "\tdo\n",
-      "\t\tread chaine\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "chaine=\"\"\n",
-      "while [ ($chaine)!=(\"sortir\") ]\n",
-      "\tdo\n",
-      "\t\tread chaine\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "chaine=\"\"\n",
-      "while [ $chaine != \"sortir\" ]\n",
-      "\tdo\n",
-      "\t\tread chaine\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "chaine=\" \"\n",
-      "while [ $chaine != \"sortir\" ]\n",
-      "\tdo\n",
-      "\t\tread chaine\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "chaine=\" \"\n",
-      "while (($chaine != \"sortir\"))\n",
-      "\tdo\n",
-      "\t\tread chaine\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "chaine=\" \"\n",
-      "while test $chaine != \"sortir\"\n",
-      "\tdo\n",
-      "\t\tread chaine\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "chaine=\" \"\n",
-      "while test $chaine != sortir\n",
-      "\tdo\n",
-      "\t\tread chaine\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "chaine=\" \"\n",
-      "while [ \"$chaine\" != \"sortir\" ]\n",
-      "\tdo\n",
-      "\t\tread chaine\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "p=1\n",
-      "for i in $(seq $1)\n",
-      "\tdo\n",
-      "\t\tp=$((($p)*($i)))\n",
-      "done\n",
-      "echo $p\n"
-    ],
-    [
-      "#$/bin/bash\n",
-      "echo \"Liste des commandes disponibles :\" \n",
-      "echo \"1- Date du jour\"\n",
-      "echo \"2- Liste des personnes connect\u00c3\u00a9es sur la machine\"\n",
-      "echo \"3- Liste des fichiers du r\u00c3\u00a9pertoire courant\"\n",
-      "echo \"4- Nom du r\u00c3\u00a9pertoire courant\"\n",
-      "echo\n",
-      "echo \"Faites votre choix :\"\n",
-      "read choix\n",
-      "case $choix in\n",
-      "\t1 ) echo $(date) ;;\n",
-      "\t2 ) echo $(who) ;;\n",
-      "\t3 ) echo $(ls) ;;\n",
-      "\t4 ) echo $(pwd) ;;\n",
-      "esac\n",
-      "\n"
-    ],
-    [
-      "#$/bin/bash\n",
-      "choix=1\n",
-      "while [ $choix -le 4 -a $choix -ge 1 ]\n",
-      "\tdo\n",
-      "\t\techo \"Liste des commandes disponibles :\" \n",
-      "\t\techo \"1- Date du jour\"\n",
-      "\t\techo \"2- Liste des personnes connect\u00c3\u00a9es sur la machine\"\n",
-      "\t\techo \"3- Liste des fichiers du r\u00c3\u00a9pertoire courant\"\n",
-      "\t\techo \"4- Nom du r\u00c3\u00a9pertoire courant\"\n",
-      "\t\techo\n",
-      "\t\techo \"Faites votre choix :\"\n",
-      "\t\tread choix\n",
-      "\t\tcase $choix in\n",
-      "\t\t\t1 ) echo $(date) ;;\n",
-      "\t\t\t2 ) echo $(who) ;;\n",
-      "\t\t\t3 ) echo $(ls) ;;\n",
-      "\t\t\t4 ) echo $(pwd) ;;\n",
-      "\t\tesac\n",
-      "done\n"
-    ]
+    {
+      "name": "tp6_exo6.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "p=1\n",
+        "for i in $(seq $1)\n",
+        "\tdo\n",
+        "\t\tp=$((($p)*($i)))\n",
+        "done\n",
+        "echo $p\n"
+      ]
+    },
+    {
+      "name": "tp6_exo7.sh",
+      "lines": [
+        "#$/bin/bash\n",
+        "echo \"Liste des commandes disponibles :\" \n",
+        "echo \"1- Date du jour\"\n",
+        "echo \"2- Liste des personnes connect\u00c3\u00a9es sur la machine\"\n",
+        "echo \"3- Liste des fichiers du r\u00c3\u00a9pertoire courant\"\n",
+        "echo \"4- Nom du r\u00c3\u00a9pertoire courant\"\n",
+        "echo\n",
+        "echo \"Faites votre choix :\"\n",
+        "read choix\n",
+        "case $choix in\n",
+        "\t1 ) echo $(date) ;;\n",
+        "\t2 ) echo $(who) ;;\n",
+        "\t3 ) echo $(ls) ;;\n",
+        "\t4 ) echo $(pwd) ;;\n",
+        "esac\n",
+        "\n"
+      ]
+    },
+    {
+      "name": "tp6_exo8.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "chaine=\" \"\n",
+        "while [ \"$chaine\" != \"sortir\" ]\n",
+        "\tdo\n",
+        "\t\tread chaine\n",
+        "done\n"
+      ]
+    },
+    {
+      "name": "tp6_exo9.sh",
+      "lines": [
+        "#$/bin/bash\n",
+        "choix=1\n",
+        "while [ $choix -le 4 -a $choix -ge 1 ]\n",
+        "\tdo\n",
+        "\t\techo \"Liste des commandes disponibles :\" \n",
+        "\t\techo \"1- Date du jour\"\n",
+        "\t\techo \"2- Liste des personnes connect\u00c3\u00a9es sur la machine\"\n",
+        "\t\techo \"3- Liste des fichiers du r\u00c3\u00a9pertoire courant\"\n",
+        "\t\techo \"4- Nom du r\u00c3\u00a9pertoire courant\"\n",
+        "\t\techo\n",
+        "\t\techo \"Faites votre choix :\"\n",
+        "\t\tread choix\n",
+        "\t\tcase $choix in\n",
+        "\t\t\t1 ) echo $(date) ;;\n",
+        "\t\t\t2 ) echo $(who) ;;\n",
+        "\t\t\t3 ) echo $(ls) ;;\n",
+        "\t\t\t4 ) echo $(pwd) ;;\n",
+        "\t\tesac\n",
+        "done\n"
+      ]
+    }
   ],
   "commands": [
     {

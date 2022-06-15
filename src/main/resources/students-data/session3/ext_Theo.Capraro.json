@@ -2,98 +2,52 @@
   "name": "ext_Theo.Capraro",
   "session": 3,
   "scripts": [
-    [
-      "#!/bin/bash\n",
-      "expr $4  - $2\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo $((4 / 2))\n",
-      "\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo $((3 / 2))\n",
-      "\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "expr $(( 4 * 2))\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
-      "echo 1999\n",
-      "expr $(( 2020 - 1999)\n",
-      "echo vous \u00c3\u00aates n\u00c3\u00a9 en 1999, vous avez donc \n",
-      "\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
-      "echo vous \u00c3\u00aates n\u00c3\u00a9 en 1999, vous avez donc expr $(( 2020 - 1999 ))\n",
-      "\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
-      "echo vous \u00c3\u00aates n\u00c3\u00a9 en 1999, vous avez donc $(( 2020 - 1999 ))\n",
-      "\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
-      "read ann\u00c3\u00a9e de naissance\n",
-      "echo vous \u00c3\u00aates n\u00c3\u00a9 en 1999, vous avez donc $(( 2020 - $1999 ))\n",
-      "\n",
-      "\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
-      "read ann\u00c3\u00a9e de naissance\n",
-      "echo vous \u00c3\u00aates n\u00c3\u00a9 en $1999, vous avez donc $(( 2020 - 1999 ))\n",
-      "\n",
-      "\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "date \"+%Y\"\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
-      "read ann\u00c3\u00a9e de naissance\n",
-      "echo vous \u00c3\u00aates n\u00c3\u00a9 en $1999, vous avez donc $(( 2020 - 1999 ))\n",
-      "\n",
-      "\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo nous sommes le `date`\n",
-      "echo nous sommes le $`date\n",
-      "` \n"
-    ]
+    {
+      "name": "tp5bis_EXO1.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo $((3 / 2))\n",
+        "\n",
+        "\n"
+      ]
+    },
+    {
+      "name": "tp5bis_EXO2.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "expr $(( 4 * 2))\n",
+        "\n"
+      ]
+    },
+    {
+      "name": "tp5bis_EXO3.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "date \"+%Y\"\n",
+        "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
+        "read ann\u00c3\u00a9e de naissance\n",
+        "echo vous \u00c3\u00aates n\u00c3\u00a9 en $1999, vous avez donc $(( 2020 - 1999 ))\n",
+        "\n",
+        "\n",
+        "\n"
+      ]
+    },
+    {
+      "name": "tp5bis_EXO4.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "\n"
+      ]
+    },
+    {
+      "name": "tp5_EXO7.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo nous sommes le `date`\n",
+        "echo nous sommes le $`date\n",
+        "` \n"
+      ]
+    }
   ],
   "profile": [
     {

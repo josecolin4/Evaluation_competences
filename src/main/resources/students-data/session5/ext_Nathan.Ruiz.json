@@ -2,48 +2,23 @@
   "name": "ext_Nathan.Ruiz",
   "session": 5,
   "scripts": [
-    [
-      "#!/bin/bash\n",
-      "if [ -e $1 ] -a [ -e $2 ]\n",
-      "\tthen\n",
-      "\t\techo $1 $2\n",
-      "\telif [ -e $1 ] -a ! [ -e $2 ]\n",
-      "\t\tthen\n",
-      "\t\t\techo le 2nd fichier n'existe pas\n",
-      "\n",
-      "\t\telif ! [ -e $1 ] -a [ -e $2 ]\n",
-      "\t\t\tthen\n",
-      "\t\t\t\techo le 1er fichier n'existe pas\n",
-      "fi \n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test -e $1 -a test -e $2\n",
-      "\tthen\n",
-      "\t\techo $1 $2\n",
-      "\telif test -e $1 -a ! test -e $2\n",
-      "\t\tthen\n",
-      "\t\t\techo le 2nd fichier n'existe pas\n",
-      "\n",
-      "\t\telif ! test -e $1 -a test -e $2\n",
-      "\t\t\tthen\n",
-      "\t\t\t\techo le 1er fichier n'existe pas\n",
-      "fi \n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test -e $1 -a test -e $2\n",
-      "\tthen\n",
-      "\t\techo $1 $2\n",
-      "\telif test -e $1 -a ! test -e $2\n",
-      "\t\tthen\n",
-      "\t\t\techo le 2nd fichier n'existe pas\n",
-      "\n",
-      "\t\telif ! test -e $1 -a test -e $2\n",
-      "\t\t\tthen\n",
-      "\t\t\t\techo le 1er fichier n'existe pas\n",
-      "fi \n"
-    ]
+    {
+      "name": "tp6_exo3.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "if test -e $1 -a test -e $2\n",
+        "\tthen\n",
+        "\t\techo $1 $2\n",
+        "\telif test -e $1 -a ! test -e $2\n",
+        "\t\tthen\n",
+        "\t\t\techo le 2nd fichier n'existe pas\n",
+        "\n",
+        "\t\telif ! test -e $1 -a test -e $2\n",
+        "\t\t\tthen\n",
+        "\t\t\t\techo le 1er fichier n'existe pas\n",
+        "fi \n"
+      ]
+    }
   ],
   "commands": [
     {

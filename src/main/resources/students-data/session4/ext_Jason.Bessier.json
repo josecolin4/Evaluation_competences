@@ -2,264 +2,50 @@
   "name": "ext_Jason.Bessier",
   "session": 4,
   "scripts": [
-    [
-      "#!bin/bash\n",
-      "if test -e tp6_exo1.sh\n",
-      "then\n",
-      "\ttest -r -w\n",
-      "else\n",
-      "\techo exite pas\n",
-      "fi\n"
-    ],
-    [
-      "#!bin/bash/\n",
-      "if test -e tp6_exo1.sh\n",
-      "then\n",
-      "\ttest -r -w\n",
-      "else\n",
-      "\techo exite pas\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash/\n",
-      "if test -e tp6_exo1.sh\n",
-      "then\n",
-      "\ttest -r -w\n",
-      "else\n",
-      "\techo exite pas\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash/\n",
-      "if test -e tp6_exo1.sh\n",
-      "then\n",
-      "\techo test -r -w\n",
-      "else\n",
-      "\techo exite pas\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash/\n",
-      "if test -e tp6_exo1.sh\n",
-      "then\n",
-      "\techo test -r -w\n",
-      "else\n",
-      "\techo \"existe pas\"\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash/\n",
-      "if test -e tp6_exo1.sh\n",
-      "then\n",
-      "\techo test -r -w tp6_exo1.sh\n",
-      "else\n",
-      "\techo \"existe pas\"\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash/\n",
-      "if [ -e tp6_exo1.sh ]\n",
-      "then\n",
-      "\techo [ -r -w tp6_exo1.sh ]\n",
-      "else\n",
-      "\techo \"existe pas\"\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if [ -e tp6_exo1.sh ]\n",
-      "then\n",
-      "\techo [ -r -w tp6_exo1.sh ]\n",
-      "else\n",
-      "\techo \"existe pas\"\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if [ -e $1 ]\n",
-      "then\n",
-      "\techo [ -r -w $1 ]\n",
-      "else\n",
-      "\techo \"existe pas\"\n",
-      "fi\n"
-    ],
-    [
-      "#!bin/bash\n",
-      "echo $1 $2\n"
-    ],
-    [
-      "#!bin/bash\n",
-      "if [ -e $1 $2 ]\n",
-      "then\n",
-      "\techo \"Souhaitez\\-vous concat\u00c3\u00a9ner les fichiers ?\"\n",
-      "\tread reponse\n",
-      "\n",
-      "\tif [ reponse = oui ]\n",
-      "\tthen\n",
-      "\t\techo $1\n",
-      "\t\techo $2\n",
-      "\telse\n",
-      "\t\techo \"Bah laisse tomber\"\n",
-      "\tfi\n",
-      "else\n",
-      "\techo \"y\\'en en un j\\'connais pas\"\n",
-      "fi\n"
-    ],
-    [
-      "#!bin/bash\n",
-      "if [ -e $1 $2 ]\n",
-      "then\n",
-      "\techo \"Souhaitez\\-vous concat\u00c3\u00a9ner les fichiers ?\"\n",
-      "\tread reponse\n",
-      "\n",
-      "\tif [ reponse = oui ]\n",
-      "\tthen\n",
-      "\t\tcat $1>$2\n",
-      "\telse\n",
-      "\t\techo \"Bah laisse tomber\"\n",
-      "\tfi\n",
-      "else\n",
-      "\techo \"y\\'en en un j\\'connais pas\"\n",
-      "fi\n"
-    ],
-    [
-      "#!bin/bash\n",
-      "if [ -e $1 $2 ]\n",
-      "then\n",
-      "\techo \"Souhaitez\\-vous concat\u00c3\u00a9ner les fichiers ?\"\n",
-      "\tread reponse\n",
-      "\n",
-      "\tif [ reponse = oui ]\n",
-      "\tthen\n",
-      "\t\tcat $1\n",
-      "\t\tcat $2\n",
-      "\telse\n",
-      "\t\techo \"Bah laisse tomber\"\n",
-      "\tfi\n",
-      "else\n",
-      "\techo \"y\\'en en un j\\'connais pas\"\n",
-      "fi\n"
-    ],
-    [
-      "#!bin/bash\n",
-      "if [ -e $1 $2 ]\n",
-      "then\n",
-      "\techo \"Souhaitez\\-vous concat\u00c3\u00a9ner les fichiers ?\"\n",
-      "\tread reponse\n",
-      "\n",
-      "\tif [ $reponse = \"oui\" ]\n",
-      "\tthen\n",
-      "\t\tcat $1\n",
-      "\t\tcat $2\n",
-      "\telse\n",
-      "\t\techo \"Bah laisse tomber\"\n",
-      "\tfi\n",
-      "else\n",
-      "\techo \"y\\'en en un j\\'connais pas\"\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if [ -e $1 $2 ]\n",
-      "then\n",
-      "\techo \"Souhaitez\\-vous concat\u00c3\u00a9ner les fichiers ?\"\n",
-      "\tread reponse\n",
-      "\n",
-      "\tif [ $reponse = \"oui\" ]\n",
-      "\tthen\n",
-      "\t\tcat $1\n",
-      "\t\tcat $2\n",
-      "\telse\n",
-      "\t\techo \"Bah laisse tomber\"\n",
-      "\tfi\n",
-      "else\n",
-      "\techo \"y\\'en en un j\\'connais pas\"\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if [ -e $1 $2 ]\n",
-      "then\n",
-      "\techo \"Souhaitez\\-vous concat\u00c3\u00a9ner les fichiers ?\"\n",
-      "\tread reponse\n",
-      "\n",
-      "\tif [ $reponse = \"oui\" ]\n",
-      "\tthen\n",
-      "\t\tcat $1\n",
-      "\t\tcat $2\n",
-      "\telse\n",
-      "\t\techo \"Bah laisse tomber\"\n",
-      "\tfi\n",
-      "else\n",
-      "\techo \"y'en en un j'connais pas\"\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if [ -e $1 -a -e $2 ]\n",
-      "then\n",
-      "\techo \"Souhaitez\\-vous concat\u00c3\u00a9ner les fichiers ?\"\n",
-      "\tread reponse\n",
-      "\n",
-      "\tif [ $reponse = \"oui\" ]\n",
-      "\tthen\n",
-      "\t\tcat $1\n",
-      "\t\tcat $2\n",
-      "\telse\n",
-      "\t\techo \"Bah laisse tomber\"\n",
-      "\tfi\n",
-      "else\n",
-      "\techo \"y'en en un j'connais pas\"\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "liste_commandes = \"date who pwd ls\"\n",
-      "for i in liste_commandes\n",
-      "do\n",
-      "\t$i\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "liste_commandes = \"date who pwd ls\"\n",
-      "for i in liste_commandes\n",
-      "do\n",
-      "\techo $i\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "liste_commandes = \"date who pwd ls\"\n",
-      "for i in $liste_commandes\n",
-      "do\n",
-      "\techo $i\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "liste_commandes = \"date who pwd ls\"\n",
-      "for i in $liste_commandes\n",
-      "do\n",
-      "\techo $i\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "liste_commandes=\"date who pwd ls\"\n",
-      "for i in $liste_commandes\n",
-      "do\n",
-      "\techo $i\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "liste_commandes=\"date who pwd ls\"\n",
-      "for i in $liste_commandes\n",
-      "do\n",
-      "\techo $($i)\n",
-      "done\n"
-    ]
+    {
+      "name": "tp6_exo2.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "if [ -e $1 ]\n",
+        "then\n",
+        "\techo [ -r -w $1 ]\n",
+        "else\n",
+        "\techo \"existe pas\"\n",
+        "fi\n"
+      ]
+    },
+    {
+      "name": "tp6_exo3.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "if [ -e $1 -a -e $2 ]\n",
+        "then\n",
+        "\techo \"Souhaitez\\-vous concat\u00c3\u00a9ner les fichiers ?\"\n",
+        "\tread reponse\n",
+        "\n",
+        "\tif [ $reponse = \"oui\" ]\n",
+        "\tthen\n",
+        "\t\tcat $1\n",
+        "\t\tcat $2\n",
+        "\telse\n",
+        "\t\techo \"Bah laisse tomber\"\n",
+        "\tfi\n",
+        "else\n",
+        "\techo \"y'en en un j'connais pas\"\n",
+        "fi\n"
+      ]
+    },
+    {
+      "name": "tp6_exo4.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "liste_commandes=\"date who pwd ls\"\n",
+        "for i in $liste_commandes\n",
+        "do\n",
+        "\techo $($i)\n",
+        "done\n"
+      ]
+    }
   ],
   "profile": [
     {

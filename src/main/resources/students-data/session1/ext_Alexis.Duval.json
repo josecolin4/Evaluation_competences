@@ -2,164 +2,93 @@
   "name": "ext_Alexis.Duval",
   "session": 1,
   "scripts": [
-    [
-      "#!/bin/bash\n",
-      "echo cours\n",
-      "cours=unix\n",
-      "echo $cours\n",
-      "echo je suis au cours $cours\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo salut\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Mon nom de login est\n",
-      "log=\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Mon nom de login est\n",
-      "log=$LOGNAME\n",
-      "echo log\n",
-      "echo Mon shell est :\n",
-      "nom_shell=$\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Mon nom de login est $LOGNAME\n",
-      "echo Mon shell est : $SHELL\n",
-      "echo les variables du Shell sont :\n",
-      "set\n",
-      "echo Celles d'environnement sont :\n",
-      "env\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Mon nom de login est $LOGNAME\n",
-      "echo Mon shell est : $SHELL\n",
-      "echo les variables du Shell sont :\n",
-      "set\n",
-      "echo Celles d\\'environnement sont :\n",
-      "env\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Cher utilisteur quel est ton pr\u00c3\u00a9nom \\?\n",
-      "read prenom\n",
-      "echo Ravi de te connaitre, $prenom\n",
-      "echo Quel est ton nom et ton age \\?\n",
-      "read nom age\n",
-      "echo Tu es $prenom $nom et tu as $age ans, n\\'est-ce pas \\?\n",
-      "read reponse\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Je suis le script Shell $0\n",
-      "echo Mes arguments sont $*\n",
-      "echo le premier argument est $1\n",
-      "echo Le deuxi\u00c3\u00a8me argument est $2\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo le script $0 poss\u00c3\u00a8de $# param\u00c3\u00a8tre(s), que voici: $*\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo le script $0 poss\u00c3\u00a8de $# param\u00c3\u00a8tre\\(s\\), que voici: $*\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "cat $1 $2 $3\n",
-      " \n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "cat $1 $2 > $3\n",
-      " \n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Nous sommes le `date`\n",
-      "echo Nous somme le Mon Nov 15\\:20\\:46 CET 2020 \n",
-      "echo Ceci est\n",
-      "echo une tr\u00c3\u00a8s\n",
-      "echo longe phrase\\.\\.\\.\n",
-      "echo Voici une \u00c3\u00a9toile : \\*\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "val=expr $1+expr 1 \n",
-      "echo La valeur est maintenant $val \n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "val=`expr $1 + 1` \n",
-      "echo La valeur est maintenant $val \n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "PATH\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "PATH=\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/root\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "PATH=`/usr`/local`/sbin`:`/usr`/local`/bin`:`/usr`/sbin`:`/usr`/bin`:`/sbin`:`/bin`:`/root\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "PATH=`/usr`/local`/sbin`:`/usr`/local`/bin`:`/usr`/sbin`:`/usr`/bin`:`/sbin`:`/bin`:`/root\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "PATH=`expr /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/root7`\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "PATH=\\/usr\\/local\\/sbin\\:\\/usr\\/local\\/bin\\:\\/usr\\/sbin\\:\\/usr\\/bin\\:\\/sbin\\:\\/bin\\:\\/root7\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "PATH=\\/usr\\/local\\/sbin\\:\\/usr\\/local\\/bin\\:\\/usr\\/sbin\\:\\/usr\\/bin\\:\\/sbin\\:\\/bin\\:\\/root\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "PATH=$PATH\\:$HOME\n",
-      "echo $PATH\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "export PATH=$PATH\\:$HOME\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "export PATH=$PATH:/root\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "export PATH=$PATH:/root\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "export PATH=$PATH:/root\n"
-    ]
+    {
+      "name": "tp5_exo1.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo cours\n",
+        "cours=unix\n",
+        "echo $cours\n",
+        "echo je suis au cours $cours\n"
+      ]
+    },
+    {
+      "name": "tp5_exo2.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo Mon nom de login est $LOGNAME\n",
+        "echo Mon shell est : $SHELL\n",
+        "echo les variables du Shell sont :\n",
+        "set\n",
+        "echo Celles d\\'environnement sont :\n",
+        "env\n"
+      ]
+    },
+    {
+      "name": "tp5_exo3.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo Cher utilisteur quel est ton pr\u00c3\u00a9nom \\?\n",
+        "read prenom\n",
+        "echo Ravi de te connaitre, $prenom\n",
+        "echo Quel est ton nom et ton age \\?\n",
+        "read nom age\n",
+        "echo Tu es $prenom $nom et tu as $age ans, n\\'est-ce pas \\?\n",
+        "read reponse\n"
+      ]
+    },
+    {
+      "name": "tp5_exo4.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo Je suis le script Shell $0\n",
+        "echo Mes arguments sont $*\n",
+        "echo le premier argument est $1\n",
+        "echo Le deuxi\u00c3\u00a8me argument est $2\n"
+      ]
+    },
+    {
+      "name": "tp5_exo5.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo le script $0 poss\u00c3\u00a8de $# param\u00c3\u00a8tre\\(s\\), que voici: $*\n"
+      ]
+    },
+    {
+      "name": "tp5_exo6.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "cat $1 $2 > $3\n",
+        " \n"
+      ]
+    },
+    {
+      "name": "tp5_exo7.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo Nous sommes le `date`\n",
+        "echo Nous somme le Mon Nov 15\\:20\\:46 CET 2020 \n",
+        "echo Ceci est\n",
+        "echo une tr\u00c3\u00a8s\n",
+        "echo longe phrase\\.\\.\\.\n",
+        "echo Voici une \u00c3\u00a9toile : \\*\n"
+      ]
+    },
+    {
+      "name": "tp5_exo8.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "val=`expr $1 + 1` \n",
+        "echo La valeur est maintenant $val \n"
+      ]
+    },
+    {
+      "name": "tp5_exo9.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "export PATH=$PATH:/root\n"
+      ]
+    }
   ],
   "profile": [
     {

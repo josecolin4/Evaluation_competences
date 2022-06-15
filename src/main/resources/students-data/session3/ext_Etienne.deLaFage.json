@@ -2,189 +2,53 @@
   "name": "ext_Etienne.deLaFage",
   "session": 3,
   "scripts": [
-    [
-      "#! /bin/bash\n",
-      "nombre=$1\n",
-      "echo resultat=`expr $nombre / 2`\n",
-      "rep=$(resultat)\n"
-    ],
-    [
-      "#! /bin/bash\n",
-      "nombre=$1\n",
-      "resultat=`expr $nombre / 2`\n",
-      "echo $resultat\n"
-    ],
-    [
-      "#! /bin/bash\n",
-      "v=$1\n",
-      "resultat=`expr v * 2`\n",
-      "echo $resultat\n"
-    ],
-    [
-      "#! /bin/bash\n",
-      "v=$1\n",
-      "resultat=`expr $v * 2`\n",
-      "echo $resultat\n"
-    ],
-    [
-      "#! /bin/bash\n",
-      "v=$1\n",
-      "resultat=`expr $v \\* 2`\n",
-      "echo $resultat\n"
-    ],
-    [
-      "#! /bin/bash\n",
-      "v=$1\n",
-      "resultat=`expr $v \\* 2`\n",
-      "echo $resultat\n"
-    ],
-    [
-      "#\u00c2\u00a7 /bin/bash\n",
-      "echo Quelle est votre date de naissance?\n",
-      "read datenaissance \n",
-      "age = `expe  `date` \\- $datenaissance`\n",
-      "echo $age\n",
-      "\n"
-    ],
-    [
-      "#\u00c2\u00a7 /bin/bash\n",
-      "echo Quelle est votre date de naissance?\n",
-      "read datenaissance \n",
-      "age = `expr  `date` \\- $datenaissance`\n",
-      "echo $age\n",
-      "\n"
-    ],
-    [
-      "#! /bin/bash\n",
-      "echo Quelle est votre date de naissance?\n",
-      "read datenaissance \n",
-      "age = `expr  `date` - $datenaissance`\n",
-      "echo $age\n",
-      "\n"
-    ],
-    [
-      "#! /bin/bash\n",
-      "echo Quelle est votre date de naissance?\n",
-      "read datenaissance \n",
-      "age=`expr `date` - $datenaissance`\n",
-      "echo Vous \u00c3\u00aates n\u00c3\u00a9 $datenaissance, vous avez donc $age ans.\n",
-      "\n"
-    ],
-    [
-      "#! /bin/bash\n",
-      "echo Quelle est votre date de naissance?\n",
-      "read datenaissance \n",
-      "age=`expr `date`\\- $datenaissance`\n",
-      "echo Vous \u00c3\u00aates n\u00c3\u00a9 $datenaissance, vous avez donc $age ans.\n",
-      "\n"
-    ],
-    [
-      "#! /bin/bash\n",
-      "echo Quelle est votre date de naissance?\n",
-      "read datenaissance \n",
-      "age=`expr `date`\\- $datenaissance`\n",
-      "echo Vous \u00c3\u00aates n\u00c3\u00a9 $datenaissance, vous avez donc $age ans.\n",
-      "\n"
-    ],
-    [
-      "#! /bin/bash\n",
-      "echo Quelle est votre date de naissance?\n",
-      "read datenaissance \n",
-      "age=`expr date\\- $datenaissance`\n",
-      "echo Vous \u00c3\u00aates n\u00c3\u00a9 en $datenaissance, vous avez donc $age ans.\n",
-      "\n"
-    ],
-    [
-      "#! /bin/bash\n",
-      "echo Quelle est votre date de naissance?\n",
-      "read datenaissance \n",
-      "age=`expr `date`\\- $datenaissance`\n",
-      "echo Vous \u00c3\u00aates n\u00c3\u00a9 en $datenaissance, vous avez donc $age ans.\n",
-      "\n"
-    ],
-    [
-      "#! /bin/bash\n",
-      "echo Quelle est votre date de naissance?\n",
-      "read datenaissance\n",
-      "date=`date+%Y` \n",
-      "age=`expr $date \\- $datenaissance`\n",
-      "echo Vous \u00c3\u00aates n\u00c3\u00a9 en $datenaissance, vous avez donc $age ans.\n",
-      "\n"
-    ],
-    [
-      "#! /bin/bash\n",
-      "echo Quelle est votre date de naissance?\n",
-      "read datenaissance\n",
-      "date=`date +%Y` \n",
-      "age=`expr $date \\- $datenaissance`\n",
-      "echo Vous \u00c3\u00aates n\u00c3\u00a9 en $datenaissance, vous avez donc $age ans.\n",
-      "\n"
-    ],
-    [
-      "#! /bin/bash\n",
-      "utilisateur=`who`\n",
-      "machine=`hostname`\n",
-      "echo il y a $utilisateur utilisateur connect\u00c3\u00a9 sur $machine \n"
-    ],
-    [
-      "#! /bin/bash\n",
-      "utilisateur=`who-q`\n",
-      "machine=`hostname`\n",
-      "echo il y a $utilisateur utilisateur connect\u00c3\u00a9 sur $machine \n"
-    ],
-    [
-      "#! /bin/bash\n",
-      "utilisateur=`who -q`\n",
-      "machine=`hostname`\n",
-      "echo il y a $utilisateur utilisateur connect\u00c3\u00a9 sur $machine \n"
-    ],
-    [
-      "#! /bin/bash\n",
-      "utilisateur=`who [wc-]`\n",
-      "machine=`hostname`\n",
-      "echo il y a $utilisateur utilisateur connect\u00c3\u00a9 sur $machine \n"
-    ],
-    [
-      "#! /bin/bash\n",
-      "utilisateur=`who |wc-|`\n",
-      "machine=`hostname`\n",
-      "echo il y a $utilisateur utilisateur connect\u00c3\u00a9 sur $machine \n"
-    ],
-    [
-      "#! /bin/bash\n",
-      "utilisateur=`who |wc -|`\n",
-      "machine=`hostname`\n",
-      "echo il y a $utilisateur utilisateur connect\u00c3\u00a9 sur $machine \n"
-    ],
-    [
-      "#! /bin/bash\n",
-      "utilisateur=`who|wc -|`\n",
-      "machine=`hostname`\n",
-      "echo il y a $utilisateur utilisateur connect\u00c3\u00a9 sur $machine \n"
-    ],
-    [
-      "#! /bin/bash\n",
-      "utilisateur=`who|wc-|`\n",
-      "machine=`hostname`\n",
-      "echo il y a $utilisateur utilisateur connect\u00c3\u00a9 sur $machine \n"
-    ],
-    [
-      "#! /bin/bash\n",
-      "utilisateur=`who -q`\n",
-      "machine=`hostname`\n",
-      "echo il y a $utilisateur utilisateur connect\u00c3\u00a9 sur $machine \n"
-    ],
-    [
-      "#! /bin/bash\n",
-      "\n",
-      "set --$(ls -l file)\n"
-    ],
-    [],
-    [
-      "#! /bin/bash\n",
-      "set -- (ls -l r Rugby)\n",
-      "echo $1\n"
-    ]
+    {
+      "name": "tp5bis_exo1.sh",
+      "lines": [
+        "#! /bin/bash\n",
+        "nombre=$1\n",
+        "resultat=`expr $nombre / 2`\n",
+        "echo $resultat\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo2.sh",
+      "lines": [
+        "#! /bin/bash\n",
+        "v=$1\n",
+        "resultat=`expr $v \\* 2`\n",
+        "echo $resultat\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo3.sh",
+      "lines": [
+        "#! /bin/bash\n",
+        "echo Quelle est votre date de naissance?\n",
+        "read datenaissance\n",
+        "date=`date +%Y` \n",
+        "age=`expr $date \\- $datenaissance`\n",
+        "echo Vous \u00c3\u00aates n\u00c3\u00a9 en $datenaissance, vous avez donc $age ans.\n",
+        "\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo4.sh",
+      "lines": [
+        "#! /bin/bash\n",
+        "utilisateur=`who -q`\n",
+        "machine=`hostname`\n",
+        "echo il y a $utilisateur utilisateur connect\u00c3\u00a9 sur $machine \n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo5.sh",
+      "lines": [
+        "#! /bin/bash\n",
+        "set -- (ls -l r Rugby)\n",
+        "echo $1\n"
+      ]
+    }
   ],
   "profile": [
     {

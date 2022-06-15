@@ -2,187 +2,310 @@
   "name": "ext_Theo.Vidal",
   "session": 2,
   "scripts": [
-    [
-      "n=1\n"
-    ],
-    [
-      "n=6\n"
-    ],
-    [
-      "n=6\n",
-      "expr $n / 2\n"
-    ],
-    [
-      "n=6\n"
-    ],
-    [
-      "n=6\n",
-      "echo $((n / 2))"
-    ],
-    [
-      "n=6\n",
-      "echo $((n / 2))\n"
-    ],
-    [
-      "n=6\n"
-    ],
-    [
-      "n=6\n",
-      "expr $n * 2\n"
-    ],
-    [
-      "n=6\n"
-    ],
-    [
-      "n=6\n",
-      "expr $n \\* 2"
-    ],
-    [
-      "n=6\n",
-      "expr $n \\* 2\n"
-    ],
-    [
-      "n=6\n"
-    ],
-    [
-      "n=6\n",
-      "echo $((n \\* \u00c32))\n"
-    ],
-    [
-      "echo \"Ann\u00c3\u00a9e de naissance?\"\n"
-    ],
-    [
-      "echo \"Ann\u00c3\u00a9e de naissance?\"\n",
-      "read n\n"
-    ],
-    [
-      "echo \"Ann\u00c3\u00a9e de naissance?\"\n",
-      "read n\n",
-      "done\n"
-    ],
-    [
-      "echo \"Ann\u00c3\u00a9e de naissance?\"\n",
-      "read n\n",
-      "done\n",
-      "\n"
-    ],
-    [
-      "echo \"date de naissance\"\n"
-    ],
-    [
-      "echo \"date de naissance\"\n",
-      "read n\n"
-    ],
-    [
-      "echo annee de naissance \\?\n"
-    ],
-    [
-      "echo annee de naissance \\?\n",
-      "read n\n"
-    ],
-    [
-      "echo annee de naissance \\?\n",
-      "read n\n",
-      "ed= date '+$Y'\n"
-    ],
-    [
-      "echo annee de naissance \\?\n",
-      "read n\n",
-      "ed= date '+$Y'\n",
-      "echo vous etes ne en, $n, vous avez $(( d - n ))\n"
-    ],
-    [
-      "echo annee de naissance \\?                                                             \n",
-      "\n",
-      "read n                                                                                 \n",
-      "\n",
-      "d= date '+$Y'\n",
-      "\n"
-    ],
-    [
-      "echo annee \\?\n"
-    ],
-    [
-      "echo annee \\?\n",
-      "read n\n"
-    ],
-    [
-      "echo annee \\?\n",
-      "read n\n",
-      "d=date\"+$Y\"\n"
-    ],
-    [
-      "echo annee \\?\n",
-      "read n\n",
-      "d=date\"+$Y\"\n",
-      "echo n\u00c3e en, $n, vous avez, $((d - n))"
-    ],
-    [
-      "echo annee \\?\n",
-      "read n\n",
-      "d=date\"+$Y\"\n",
-      "echo n\u00c3e en, $n, vous avez, $((d - n))\n"
-    ],
-    [
-      "echo annee \\?\n"
-    ],
-    [
-      "echo annee \\?\n",
-      "read n\n"
-    ],
-    [
-      "echo annee \\?\n",
-      "read n\n",
-      "d=date\"%Y\"\n"
-    ],
-    [
-      "echo annee \\?\n",
-      "read n\n",
-      "d=date\"%Y\"\n",
-      "echo ne en, $n, vous avez, $(( d - n ))\n"
-    ],
-    [
-      "echo annee\n"
-    ],
-    [
-      "echo annee \\?\n"
-    ],
-    [
-      "echo annee \\?\n",
-      "read n\n"
-    ],
-    [
-      "echo annee \\?\n",
-      "read n\n",
-      "d=$(date + %Y)\n"
-    ],
-    [
-      "echo annee \\?\n",
-      "read n\n",
-      "d=$(date + %Y)\n",
-      "echo ne en, $n, vous avez, $((d - n))\n"
-    ],
-    [
-      "echo annee \\?                                                                          \n",
-      "\n",
-      "read n                                                                                 \n",
-      "\n"
-    ],
-    [
-      "echo annee \\?                                                                          \n",
-      "\n",
-      "read n                                                                                 \n",
-      "\n",
-      "d=$(date +%Y)\n"
-    ],
-    [
-      "echo annee \\?                                                                          \n",
-      "\n",
-      "read n                                                                                 \n",
-      "\n",
-      "d=$(date +%Y)\n",
-      "echo ne en, $n, vous avez, $((d-n))\n"
-    ]
+    {
+      "name": "_1606125637__root_Exo1__tp5bis_exo1.sh",
+      "lines": [
+        "n=1\n"
+      ]
+    },
+    {
+      "name": "_1606125716__root_Exo1__tp5bis_exo1.sh",
+      "lines": [
+        "n=6\n"
+      ]
+    },
+    {
+      "name": "_1606125742__root_Exo1__tp5bis_exo1.sh",
+      "lines": [
+        "n=6\n",
+        "expr $n / 2\n"
+      ]
+    },
+    {
+      "name": "_1606126013__root_Exo1__tp5bis_exo1bis.sh",
+      "lines": [
+        "n=6\n"
+      ]
+    },
+    {
+      "name": "_1606126029__root_Exo1__tp5bis_exo1bis.sh",
+      "lines": [
+        "n=6\n",
+        "echo $((n / 2))"
+      ]
+    },
+    {
+      "name": "_1606126032__root_Exo1__tp5bis_exo1bis.sh",
+      "lines": [
+        "n=6\n",
+        "echo $((n / 2))\n"
+      ]
+    },
+    {
+      "name": "_1606126132__root_Exo1__tp5bis_exo2.sh",
+      "lines": [
+        "n=6\n"
+      ]
+    },
+    {
+      "name": "_1606126143__root_Exo1__tp5bis_exo2.sh",
+      "lines": [
+        "n=6\n",
+        "expr $n * 2\n"
+      ]
+    },
+    {
+      "name": "_1606126237__root_Exo1__tp5bis_exo2.sh",
+      "lines": [
+        "n=6\n"
+      ]
+    },
+    {
+      "name": "_1606126250__root_Exo1__tp5bis_exo2.sh",
+      "lines": [
+        "n=6\n",
+        "expr $n \\* 2"
+      ]
+    },
+    {
+      "name": "_1606126251__root_Exo1__tp5bis_exo2.sh",
+      "lines": [
+        "n=6\n",
+        "expr $n \\* 2\n"
+      ]
+    },
+    {
+      "name": "_1606126275__root_Exo1__tp5bis_exo2bis.sh",
+      "lines": [
+        "n=6\n"
+      ]
+    },
+    {
+      "name": "_1606126291__root_Exo1__tp5bis_exo2bis.sh",
+      "lines": [
+        "n=6\n",
+        "echo $((n \\* \u00c32))\n"
+      ]
+    },
+    {
+      "name": "_1606126593__root_Exo1__tp5bis_exo3.sh",
+      "lines": [
+        "echo \"Ann\u00c3\u00a9e de naissance?\"\n"
+      ]
+    },
+    {
+      "name": "_1606126605__root_Exo1__tp5bis_exo3.sh",
+      "lines": [
+        "echo \"Ann\u00c3\u00a9e de naissance?\"\n",
+        "read n\n"
+      ]
+    },
+    {
+      "name": "_1606126607__root_Exo1__tp5bis_exo3.sh",
+      "lines": [
+        "echo \"Ann\u00c3\u00a9e de naissance?\"\n",
+        "read n\n",
+        "done\n"
+      ]
+    },
+    {
+      "name": "_1606126610__root_Exo1__tp5bis_exo3.sh",
+      "lines": [
+        "echo \"Ann\u00c3\u00a9e de naissance?\"\n",
+        "read n\n",
+        "done\n",
+        "\n"
+      ]
+    },
+    {
+      "name": "_1606126761__root_Exo1__tp5bis_exo3.sh",
+      "lines": [
+        "echo \"date de naissance\"\n"
+      ]
+    },
+    {
+      "name": "_1606126765__root_Exo1__tp5bis_exo3.sh",
+      "lines": [
+        "echo \"date de naissance\"\n",
+        "read n\n"
+      ]
+    },
+    {
+      "name": "_1606126894__root_Exo1__tp5bis_exo3.sh",
+      "lines": [
+        "echo annee de naissance \\?\n"
+      ]
+    },
+    {
+      "name": "_1606126897__root_Exo1__tp5bis_exo3.sh",
+      "lines": [
+        "echo annee de naissance \\?\n",
+        "read n\n"
+      ]
+    },
+    {
+      "name": "_1606127072__root_Exo1__tp5bis_exo3.sh",
+      "lines": [
+        "echo annee de naissance \\?\n",
+        "read n\n",
+        "ed= date '+$Y'\n"
+      ]
+    },
+    {
+      "name": "_1606127110__root_Exo1__tp5bis_exo3.sh",
+      "lines": [
+        "echo annee de naissance \\?\n",
+        "read n\n",
+        "ed= date '+$Y'\n",
+        "echo vous etes ne en, $n, vous avez $(( d - n ))\n"
+      ]
+    },
+    {
+      "name": "_1606127159__root_Exo1__tp5bis_exo3.sh",
+      "lines": [
+        "echo annee de naissance \\?                                                             \n",
+        "\n",
+        "read n                                                                                 \n",
+        "\n",
+        "d= date '+$Y'\n",
+        "\n"
+      ]
+    },
+    {
+      "name": "_1606127351__root_TP5__tp5bis_exo3.sh",
+      "lines": [
+        "echo annee \\?\n"
+      ]
+    },
+    {
+      "name": "_1606127354__root_TP5__tp5bis_exo3.sh",
+      "lines": [
+        "echo annee \\?\n",
+        "read n\n"
+      ]
+    },
+    {
+      "name": "_1606127403__root_TP5__tp5bis_exo3.sh",
+      "lines": [
+        "echo annee \\?\n",
+        "read n\n",
+        "d=date\"+$Y\"\n"
+      ]
+    },
+    {
+      "name": "_1606127445__root_TP5__tp5bis_exo3.sh",
+      "lines": [
+        "echo annee \\?\n",
+        "read n\n",
+        "d=date\"+$Y\"\n",
+        "echo n\u00c3e en, $n, vous avez, $((d - n))"
+      ]
+    },
+    {
+      "name": "_1606127447__root_TP5__tp5bis_exo3.sh",
+      "lines": [
+        "echo annee \\?\n",
+        "read n\n",
+        "d=date\"+$Y\"\n",
+        "echo n\u00c3e en, $n, vous avez, $((d - n))\n"
+      ]
+    },
+    {
+      "name": "_1606127680__root_TP5__tp5bis_exo3.sh",
+      "lines": [
+        "echo annee \\?\n"
+      ]
+    },
+    {
+      "name": "_1606127682__root_TP5__tp5bis_exo3.sh",
+      "lines": [
+        "echo annee \\?\n",
+        "read n\n"
+      ]
+    },
+    {
+      "name": "_1606127695__root_TP5__tp5bis_exo3.sh",
+      "lines": [
+        "echo annee \\?\n",
+        "read n\n",
+        "d=date\"%Y\"\n"
+      ]
+    },
+    {
+      "name": "_1606127723__root_TP5__tp5bis_exo3.sh",
+      "lines": [
+        "echo annee \\?\n",
+        "read n\n",
+        "d=date\"%Y\"\n",
+        "echo ne en, $n, vous avez, $(( d - n ))\n"
+      ]
+    },
+    {
+      "name": "_1606127805__root_TP5__tp5bis_exo3.sh",
+      "lines": [
+        "echo annee\n"
+      ]
+    },
+    {
+      "name": "_1606127815__root_TP5__tp5bis_exo3.sh",
+      "lines": [
+        "echo annee \\?\n"
+      ]
+    },
+    {
+      "name": "_1606127818__root_TP5__tp5bis_exo3.sh",
+      "lines": [
+        "echo annee \\?\n",
+        "read n\n"
+      ]
+    },
+    {
+      "name": "_1606127871__root_TP5__tp5bis_exo3.sh",
+      "lines": [
+        "echo annee \\?\n",
+        "read n\n",
+        "d=$(date + %Y)\n"
+      ]
+    },
+    {
+      "name": "_1606127896__root_TP5__tp5bis_exo3.sh",
+      "lines": [
+        "echo annee \\?\n",
+        "read n\n",
+        "d=$(date + %Y)\n",
+        "echo ne en, $n, vous avez, $((d - n))\n"
+      ]
+    },
+    {
+      "name": "_1606127953__root_TP5__tp5bis_exo3.sh",
+      "lines": [
+        "echo annee \\?                                                                          \n",
+        "\n",
+        "read n                                                                                 \n",
+        "\n"
+      ]
+    },
+    {
+      "name": "_1606127961__root_TP5__tp5bis_exo3.sh",
+      "lines": [
+        "echo annee \\?                                                                          \n",
+        "\n",
+        "read n                                                                                 \n",
+        "\n",
+        "d=$(date +%Y)\n"
+      ]
+    },
+    {
+      "name": "_1606127987__root_TP5__tp5bis_exo3.sh",
+      "lines": [
+        "echo annee \\?                                                                          \n",
+        "\n",
+        "read n                                                                                 \n",
+        "\n",
+        "d=$(date +%Y)\n",
+        "echo ne en, $n, vous avez, $((d-n))\n"
+      ]
+    }
   ],
   "profile": [
     {

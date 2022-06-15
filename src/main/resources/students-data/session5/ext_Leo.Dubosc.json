@@ -2,116 +2,51 @@
   "name": "ext_Leo.Dubosc",
   "session": 5,
   "scripts": [
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "read $nombre\n",
-      "\n",
-      "if test $nombre -lt expr 5\n",
-      "elif test $nombre -gt expr 10\n",
-      "then echo $nombre se trouve entre 5 et 10 \n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "read $nombre\n",
-      "\n",
-      "if test $nombre -lt expr 5\n",
-      "elif test $nombre -gt expr 10\n",
-      "then echo $nombre se trouve entre 5 et 10 \n",
-      "elif\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "read $nombre\n",
-      "\n",
-      "if test $nombre -lt expr 5\n",
-      "elif test $nombre -gt expr 10\n",
-      "then echo $nombre se trouve entre 5 et 10 \n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "\n",
-      "if test $1 -lt expr 5\n",
-      "elif test $1 -gt expr 10\n",
-      "then echo $1 se trouve entre 5 et 10 \n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "read $1\n",
-      "if test $1 -lt expr 5\n",
-      "elif test $1 -gt expr 10\n",
-      "then echo $1 se trouve entre 5 et 10 \n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "read $1\n",
-      "if test $1 -lt expr 5\n",
-      "-a  test $1 -gt expr 10\n",
-      "then echo $1 se trouve entre 5 et 10 \n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "read $1\n",
-      "if test $1 -lt expr 5\n",
-      "-a if  test $1 -gt expr 10\n",
-      "then echo $1 se trouve entre 5 et 10 \n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "read 1\n",
-      "if test $1 -lt expr 5\n",
-      "-a if  test $1 -gt expr 10\n",
-      "then echo $1 se trouve entre 5 et 10 \n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "\n",
-      "if test $* -ge 4 -a $* -le 10\n",
-      "\n",
-      "\n",
-      "then\n",
-      "\n",
-      "\n",
-      "echo \"la valeur $* est comprise entre 5 et 10\"\n",
-      "\n",
-      "\n",
-      "else\n",
-      "\n",
-      "\n",
-      "echo \"La valeur $* n'est pas comprise entre 5 et 10\"\n",
-      "\n",
-      "\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "\n",
-      "if [$* -ge 4 -a $* -le 10]\n",
-      "\tthen\n",
-      "\t\techo \"la valeur $* est comprise entre 5 et 10\"\n",
-      "\telse\n",
-      "\t\techo \"La valeur $* n'est pas comprise entre 5 et 10\"\n",
-      "fi\n"
-    ]
+    {
+      "name": "tp6_exo1.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "\n",
+        "\n",
+        "if test $* -ge 4 -a $* -le 10\n",
+        "\n",
+        "\n",
+        "then\n",
+        "\n",
+        "\n",
+        "echo \"la valeur $* est comprise entre 5 et 10\"\n",
+        "\n",
+        "\n",
+        "else\n",
+        "\n",
+        "\n",
+        "echo \"La valeur $* n'est pas comprise entre 5 et 10\"\n",
+        "\n",
+        "\n",
+        "fi\n"
+      ]
+    },
+    {
+      "name": "tp6_exo2.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "\n"
+      ]
+    },
+    {
+      "name": "tp6_exo1.1.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "\n",
+        "\n",
+        "if [$* -ge 4 -a $* -le 10]\n",
+        "\tthen\n",
+        "\t\techo \"la valeur $* est comprise entre 5 et 10\"\n",
+        "\telse\n",
+        "\t\techo \"La valeur $* n'est pas comprise entre 5 et 10\"\n",
+        "fi\n"
+      ]
+    }
   ],
   "commands": [
     {

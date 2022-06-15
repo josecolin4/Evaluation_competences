@@ -3,7 +3,37 @@
     {
       "name": "Conna\u00c3\u00aetre_la_syntaxe_de_instruction_set",
       "regex": [
-        "set .+"
+        "(.*;)?set(;.*)?",
+        ".*\\$(set).*",
+        ".*`set`.*",
+        "(.*;)?set .+"
+      ]
+    },
+    {
+      "name": "Conna\u00c3\u00aetre_les_variables_denvironnement",
+      "regex": [
+        "(.*;)?env(;.*)?",
+        ".*\\$(env).*",
+        ".*`env`.*",
+        ".*\\$PATH.*"
+      ]
+    },
+    {
+      "name": "Conna\u00c3\u00aetre_les_variables_sp\u00c3\u00a9ciales",
+      "regex": [
+        ".*\\$#.*",
+        ".*\\$\\-.*",
+        ".*\\$\\?.*",
+        ".*\\$\\$.*",
+        ".*\\$!.*",
+        ".*\\$0.*",
+        ".*\\$\\*.*"
+      ]
+    },
+    {
+      "name": "Afficher_le_manuel_dune_commande_Unix",
+      "regex": [
+        "man .+"
       ]
     }
   ]

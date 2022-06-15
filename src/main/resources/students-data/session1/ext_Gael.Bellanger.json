@@ -2,164 +2,31 @@
   "name": "ext_Gael.Bellanger",
   "session": 1,
   "scripts": [
-    [
-      "#!/bin/bash\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo cours\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo cours\n",
-      "cours=unix\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo cours\n",
-      "cours=unix\n",
-      "echo $cours\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo cours\n",
-      "cours=unix\n",
-      "echo je suis au cours $cours\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "login=login\n",
-      "shell=shell\n",
-      "Vshell=Vshell\n",
-      "Venviro=Venviro\n",
-      "\n",
-      "echo le nom de login est : $login\n",
-      "echo Mon shell est : $shell\n",
-      "echo Les variables du shell sont :\n",
-      "echo $Vshell\n",
-      "echo Celles d'environnement sont :\n",
-      "echo $Venciro\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "login=USER\n",
-      "shell=SHELL\n",
-      "Vshell=set\n",
-      "Venviro=env\n",
-      "\n",
-      "echo le nom de login est : $login\n",
-      "echo Mon shell est : $shell\n",
-      "echo Les variables du shell sont :\n",
-      "echo $Vshell\n",
-      "echo Celles d'environnement sont :\n",
-      "echo $Venciro\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "login=USER\n",
-      "shell=SHELL\n",
-      "Vshell=set\n",
-      "Venviro=env\n",
-      "\n",
-      "echo le nom de login est : $login\n",
-      "echo Mon shell est : $shell\n",
-      "echo Les variables du shell sont :\n",
-      "echo Vshell\n",
-      "echo Celles d'environnement sont :\n",
-      "echo Venciro\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "login=USER\n",
-      "shell=SHELL\n",
-      "Vshell=set\n",
-      "Venviro=env\n",
-      "\n",
-      "echo le nom de login est : $login\n",
-      "echo Mon shell est : $shell\n",
-      "echo Les variables du shell sont :\n",
-      "Vshell\n",
-      "echo Celles d'environnement sont :\n",
-      "Venciro\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "login=USER\n",
-      "shell=SHELL\n",
-      "Vshell=set\n",
-      "Venviro=env\n",
-      "\n",
-      "echo le nom de login est : $login\n",
-      "echo Mon shell est : $shell\n",
-      "echo Les variables du shell sont :\n",
-      "set\n",
-      "echo Celles d'environnement sont :\n",
-      "env\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "shell=SHELL\n",
-      "Vshell=set\n",
-      "Venviro=env\n",
-      "\n",
-      "echo le nom de login est : $login\n",
-      "echo Mon shell est : $shell\n",
-      "echo Les variables du shell sont :\n",
-      "set\n",
-      "echo Celles d'environnement sont :\n",
-      "env\n",
-      "env USER\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo le nom de login est : $USER\n",
-      "echo Mon shell est : $SHELL\n",
-      "echo Les variables du shell sont :\n",
-      "set\n",
-      "echo Celles d'environnement sont :\n",
-      "env\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "shell=bash\n",
-      "\n",
-      "\n",
-      "echo le nom de login est : $USER\n",
-      "echo Mon shell est : $shell\n",
-      "echo Les variables du shell sont :\n",
-      "set\n",
-      "echo Celles d'environnement sont :\n",
-      "env\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "shell=bash\n",
-      "user=root\n",
-      "\n",
-      "echo le nom de login est : $user\n",
-      "echo Mon shell est : $shell\n",
-      "echo Les variables du shell sont :\n",
-      "set\n",
-      "echo Celles d'environnement sont :\n",
-      "env\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "shell=bash\n",
-      "user=root\n",
-      "\n",
-      "echo \"le nom de login est : \"$user\n",
-      "echo \"Mon shell est : \"$shell\n",
-      "echo \"Les variables du shell sont :\"\n",
-      "set\n",
-      "echo \"Celles d'environnement sont :\"\n",
-      "env\n"
-    ]
+    {
+      "name": "tp5_exo1.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo cours\n",
+        "cours=unix\n",
+        "echo je suis au cours $cours\n"
+      ]
+    },
+    {
+      "name": "tp5_exo2.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "\n",
+        "shell=bash\n",
+        "user=root\n",
+        "\n",
+        "echo \"le nom de login est : \"$user\n",
+        "echo \"Mon shell est : \"$shell\n",
+        "echo \"Les variables du shell sont :\"\n",
+        "set\n",
+        "echo \"Celles d'environnement sont :\"\n",
+        "env\n"
+      ]
+    }
   ],
   "profile": [
     {

@@ -2,32 +2,41 @@
   "name": "ext_Theo.Wazydrag",
   "session": 3,
   "scripts": [
-    [
-      "#!bin/bash\n",
-      "cat $1 $2 > $3\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "expr 6 / 2 #affiche 2\n",
-      "a =4 ; b=5 \n",
-      "expr $a / $b  #affiche9\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo $((3 / 2))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo $(( 6 * 3))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n"
-    ],
-    [
-      "\n",
-      "\n"
-    ]
+    {
+      "name": "tp5_exo6.sh",
+      "lines": [
+        "#!bin/bash\n",
+        "cat $1 $2 > $3\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo1.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo $((3 / 2))\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo2.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo $(( 6 * 3))\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo3.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "\n"
+      ]
+    },
+    {
+      "name": "tp5_exo7.sh",
+      "lines": [
+        "\n",
+        "\n"
+      ]
+    }
   ],
   "profile": [
     {

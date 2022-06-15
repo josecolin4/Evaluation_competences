@@ -2,284 +2,31 @@
   "name": "ext_Nathan.Piazzi",
   "session": 2,
   "scripts": [
-    [
-      "a=6 ;\n",
-      "expr $a/2 #affiche 2\n"
-    ],
-    [
-      "echo Quel est le chiffre a \\? read $a\n",
-      "\n"
-    ],
-    [
-      "expr 6 / 2 #affiche 3\n",
-      "\n"
-    ],
-    [
-      "expr 6 / 2 #affiche\n",
-      "\n"
-    ],
-    [
-      "n=6\n",
-      "echo $((n / 2 )) #affiche\n",
-      "\n"
-    ],
-    [
-      "n=7\n",
-      "echo $((n / 2 )) #affiche\n",
-      "\n"
-    ],
-    [
-      "n=8\n",
-      "echo $((n / 2 )) #affiche\n",
-      "\n"
-    ],
-    [
-      "expr 6 * 2 #affiche\n"
-    ],
-    [
-      "echo Quel est le param\u00c3\u00a8tre n \\?\n",
-      "read $n\n",
-      "echo $((n / 2 )) #affiche\n",
-      "\n"
-    ],
-    [
-      "echo Quel est le param\u00c3\u00a8tre n \\?\n",
-      "read $n\n",
-      "expr $n / 2 #affiche\n",
-      "\n"
-    ],
-    [
-      "echo Quel est le param\u00c3\u00a8tre n \\?\n",
-      "read $n\n",
-      "expr n / 2 #affiche\n",
-      "\n"
-    ],
-    [
-      "echo Quel est le param\u00c3\u00a8tre n \\?\n",
-      "read $n\n",
-      "expr $n / 2 #affiche\n",
-      "\n"
-    ],
-    [
-      "read n\n",
-      "expr $n / 2 #affiche\n",
-      "\n"
-    ],
-    [
-      "echo Quel est le parametre \\? \n",
-      "read n\n",
-      "expr $n / 2 #affiche\n",
-      "\n"
-    ],
-    [
-      "echo Quel est le parametre \\? \n",
-      "read n\n",
-      "echo $(( $n / 2 )) #affiche\n",
-      "\n"
-    ],
-    [
-      "echo quel est le param\u00c3\u00a8tre \\?\n",
-      "read n\n",
-      "expr n \\* 2 #affiche\n"
-    ],
-    [
-      "echo quel est le param\u00c3\u00a8tre \\?\n",
-      "read n\n",
-      "expr $n * 2 #affiche\n"
-    ],
-    [
-      "echo quel est le param\u00c3\u00a8tre \\?\n",
-      "read n\n",
-      "expr $n /* 2 #affiche\n"
-    ],
-    [
-      "echo quel est le param\u00c3\u00a8tre \\?\n",
-      "read n\n",
-      "expr $n * 2 #affiche\n"
-    ],
-    [
-      "echo quel est le param\u00c3\u00a8tre \\?\n",
-      "read n\n",
-      "expr $n \\* 2 #affiche\n"
-    ],
-    [
-      "echo quel est le param\u00c3\u00a8tre \\?\n",
-      "read n\n",
-      "echo $(($n \\* 2)) #affiche\n"
-    ],
-    [
-      "echo quel est le param\u00c3\u00a8tre \\?\n",
-      "read n\n",
-      "echo $(($n /* 2)) #affiche\n"
-    ],
-    [
-      "echo quel est le param\u00c3\u00a8tre \\?\n",
-      "read n\n",
-      "echo $(($n \\* 2)) #affiche\n"
-    ],
-    [
-      "echo quel est le param\u00c3\u00a8tre \\?\n",
-      "read n\n",
-      "echo $(($n * 2)) #affiche\n"
-    ],
-    [
-      "echo quel est le param\u00c3\u00a8tre \\?\n",
-      "read n\n",
-      "expr $n \\* 2 #affiche\n"
-    ],
-    [
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance \\?\n",
-      "read n \n",
-      "expr date - $n = q\n",
-      "echo Vous \u00c3\u00aates n\u00c3\u00a9 en 1990, vous avez donc $q.\n"
-    ],
-    [
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance \\?\n",
-      "read n \n",
-      "expr (date - $n) = q\n",
-      "echo Vous \u00c3\u00aates n\u00c3\u00a9 en 1990, vous avez donc $q.\n"
-    ],
-    [
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance \\?\n",
-      "read n \n",
-      "expr (date - $n) = q\n",
-      "echo Vous \u00c3\u00aates n\u00c3\u00a9 en 1990, vous avez donc $q ans\\.\n"
-    ],
-    [
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance \\?\n",
-      "read n \n",
-      "expr (%Ydate - $n) = q\n",
-      "echo Vous \u00c3\u00aates n\u00c3\u00a9 en 1990, vous avez donc $q ans\\.\n"
-    ],
-    [
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance \\?\n",
-      "read n \n",
-      "expr (date%Y - $n) = q\n",
-      "echo Vous \u00c3\u00aates n\u00c3\u00a9 en 1990, vous avez donc $q ans\\.\n"
-    ],
-    [
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance \\?\n",
-      "read n \n",
-      "expr (date %Y) - $n = q\n",
-      "echo Vous \u00c3\u00aates n\u00c3\u00a9 en 1990, vous avez donc $q ans\\.\n"
-    ],
-    [
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance \\?\n",
-      "read n \n",
-      "expr (date +%Y) - $n = q\n",
-      "echo Vous \u00c3\u00aates n\u00c3\u00a9 en 1990, vous avez donc $q ans\\.\n"
-    ],
-    [
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance \\?\n",
-      "read n \n",
-      "expr 2020 - $n = q\n",
-      "echo Vous \u00c3\u00aates n\u00c3\u00a9 en 1990, vous avez donc $q ans\\.\n"
-    ],
-    [
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance \\?\n",
-      "read n \n",
-      "expr 2020 - $n = q\n",
-      "echo Vous \u00c3\u00aates n\u00c3\u00a9 en $n, vous avez donc $q ans\\.\n"
-    ],
-    [
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance \\?\n",
-      "read n \n",
-      "expr 2020 - $n #affiche q\n",
-      "echo Vous \u00c3\u00aates n\u00c3\u00a9 en $n, vous avez donc $q ans\\.\n"
-    ],
-    [
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance \\?\n",
-      "read n \n",
-      "expr 2020 - $n =q\n",
-      "echo Vous \u00c3\u00aates n\u00c3\u00a9 en $n, vous avez donc $q ans\\.\n"
-    ],
-    [
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance \\?\n",
-      "read n \n",
-      "expr date +%Y - $n = q\n",
-      "echo Vous \u00c3\u00aates n\u00c3\u00a9 en $n, vous avez donc $q ans\\.\n"
-    ],
-    [
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance \\?\n",
-      "read n \n",
-      "expr date +%Y \\- $n = q\n",
-      "echo Vous \u00c3\u00aates n\u00c3\u00a9 en $n, vous avez donc $q ans\\.\n"
-    ],
-    [
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance \\?\n",
-      "read n \n",
-      "expr (date +%Y \\- $n) = q\n",
-      "echo Vous \u00c3\u00aates n\u00c3\u00a9 en $n, vous avez donc $q ans\\.\n"
-    ],
-    [
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance \\?\n",
-      "read n \n",
-      "expr q = (date +%Y \\- $n) \n",
-      "echo Vous \u00c3\u00aates n\u00c3\u00a9 en $n, vous avez donc $q ans\\.\n"
-    ],
-    [
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance \\?\n",
-      "read n \n",
-      "expr (date +%Y \\- $n) = q \n",
-      "echo Vous \u00c3\u00aates n\u00c3\u00a9 en $n, vous avez donc $q ans\\.\n"
-    ],
-    [
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance \\?\n",
-      "read n \n",
-      "expr (date +%Y \\- $n) = q \n",
-      "echo Vous \u00c3\u00aates n\u00c3\u00a9(e) en $n, vous avez donc $q ans\\.\n"
-    ],
-    [
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance \\?\n",
-      "read n \n",
-      "expr (date %Y \\- $n) = q \n",
-      "echo Vous \u00c3\u00aates n\u00c3\u00a9(e) en $n, vous avez donc $q ans\\.\n"
-    ],
-    [
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance \\?\n",
-      "read n \n",
-      "expr (data %Y \\- $n) = q \n",
-      "echo Vous \u00c3\u00aates n\u00c3\u00a9(e) en $n, vous avez donc $q ans\\.\n"
-    ],
-    [
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance \\?\n",
-      "read n \n",
-      "expr ('date %Y' \\- $n) = q \n",
-      "echo Vous \u00c3\u00aates n\u00c3\u00a9(e) en $n, vous avez donc $q ans\\.\n"
-    ],
-    [
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance \\?\n",
-      "read n \n",
-      "expr date `+%Y` \\- $n = q \n",
-      "echo Vous \u00c3\u00aates n\u00c3\u00a9(e) en $n, vous avez donc $q ans\\.\n"
-    ],
-    [
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance \\?\n",
-      "read n \n",
-      "expr `date +%Y` \\- $n = q \n",
-      "echo Vous \u00c3\u00aates n\u00c3\u00a9(e) en $n, vous avez donc $q ans\\.\n"
-    ],
-    [
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance \\?\n",
-      "read n \n",
-      "expr `date +%Y` \\- $n = q \n",
-      "echo Vous \u00c3\u00aates n\u00c3\u00a9(e) en $n, vous avez donc $q ans.\n"
-    ],
-    [
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance \\?\n",
-      "read n \n",
-      "echo Vous \u00c3\u00aates n\u00c3\u00a9(e) en $n, vous avez donc expr `date +%Y \\i $n` ans.\n"
-    ],
-    [
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance \\?\n",
-      "read n \n",
-      "echo Vous etes ne en $n, vous avez donc expr `date +%Y \\i $n` ans.\n"
-    ],
-    [
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance \\?\n",
-      "read n \n",
-      "echo Vous etes ne en $n, vous avez donc $((`date +%Y` - $n)) ans.\n"
-    ]
+    {
+      "name": "tp5bis_exo1.sh",
+      "lines": [
+        "echo Quel est le parametre \\? \n",
+        "read n\n",
+        "echo $(( $n / 2 )) #affiche\n",
+        "\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo2.sh",
+      "lines": [
+        "echo quel est le param\u00c3\u00a8tre \\?\n",
+        "read n\n",
+        "expr $n \\* 2 #affiche\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo3.sh",
+      "lines": [
+        "echo Quelle est votre ann\u00c3\u00a9e de naissance \\?\n",
+        "read n \n",
+        "echo Vous etes ne en $n, vous avez donc $((`date +%Y` - $n)) ans.\n"
+      ]
+    }
   ],
   "profile": [
     {

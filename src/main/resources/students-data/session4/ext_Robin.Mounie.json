@@ -2,339 +2,121 @@
   "name": "ext_Robin.Mounie",
   "session": 4,
   "scripts": [
-    [
-      "#!/bin/bash\n",
-      "if $1>5 -a $1<10 then\n",
-      "\techo $1 'est compries entre 5 et 10'\n",
-      "else\n",
-      "\techo $1'est pas compris entre 5 et 1' \n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test $1 -gt 5 -a $1 -lt 5  then\n",
-      "\techo $1 'est compries entre 5 et 10'\n",
-      "else\n",
-      "\techo $1'est pas compris entre 5 et 1' \n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test $1 -gt 5 -a $1 -lt 5  then\n",
-      "\techo $1 'est compries entre 5 et 10'\n",
-      "`else\n",
-      "\techo $1'est pas compris entre 5 et 1' \n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test $1 -gt 5 -a $1 -lt 5  then\n",
-      "\techo $1 'est compries entre 5 et 10'\n",
-      "else\n",
-      "\techo $1'est pas compris entre 5 et 10' \n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test $1 -gt 5 -a $1 -lt 5 \n",
-      "then\n",
-      "\techo $1 \"est compries entre 5 et 10\"\n",
-      "else\n",
-      "\techo $1\"est pas compris entre 5 et 10\" \n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test $1 -ge 5 -a $1 -le 10\n",
-      "then\n",
-      "\techo $1 \"est compries entre 5 et 10\"\n",
-      "else\n",
-      "\techo $1\"est pas compris entre 5 et 10\" \n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test $1 -ge 5 -a $1 -le 10\n",
-      "then\n",
-      "\techo $1 \"est compris entre 5 et 10\"\n",
-      "else\n",
-      "\techo $1\"est pas compris entre 5 et 10\" \n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if [$1 -ge 5 -a $1 -le 10]\n",
-      " then\n",
-      "        echo $1 \"est compris entre 5 et 10\" else\n",
-      "        echo $1\"est pas compris entre 5 et 10\" fi\n",
-      "                                                                                       \n",
-      "     \n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if [$1 -ge 5 -a $1 -le 10]\n",
-      " then\n",
-      "        echo $1 \"est compris entre 5 et 10\" \n",
-      "else\n",
-      "        echo $1\"est pas compris entre 5 et 10\" \n",
-      "fi\n"
-    ],
-    [
-      "\n",
-      "#!/bin/bash\n",
-      "\n",
-      "if test $1 -e \n",
-      "then\n",
-      "\techo $1 \"le fichier existe\"\n",
-      "\t\tif test $1 -r then\n",
-      "\t\t\techo\"vous pouvez lire lz fichier\"\n",
-      "\t\telse\n",
-      "\t\t\techo\"vous ne pouvez pas lire le fichier\"\n",
-      "\t\tfi\n",
-      "\t\tif test $1 -w then\n",
-      "\t\t\techo\"vous pouvez ecrire le fichier\"\n",
-      "\t\telse\n",
-      "\t\t\techo\"vous ne pouver pas lire ce fichier\"\n",
-      "\t\tfi\n",
-      "fi\n"
-    ],
-    [
-      "\n",
-      "#!/bin/bash\n",
-      "\n",
-      "if test $1 -e\n",
-      "then\n",
-      "\techo $1 \"le fichier existe\"\n",
-      "\t\tif test $1 -r\n",
-      "\t\tthen\n",
-      "\t\t\techo\"vous pouvez lire lz fichier\"\n",
-      "\t\telse\n",
-      "\t\t\techo\"vous ne pouvez pas lire le fichier\"\n",
-      "\t\tfi\n",
-      "\t\tif test $1 -w\n",
-      "\t\tthen\n",
-      "\t\t\techo\"vous pouvez ecrire le fichier\"\n",
-      "\t\telse\n",
-      "\t\t\techo\"vous ne pouver pas lire ce fichier\"\n",
-      "\t\tfi\n",
-      "fi\n"
-    ],
-    [
-      "\n",
-      "#!/bin/bash\n",
-      "\n",
-      "if test -e $1\n",
-      "then\n",
-      "\techo $1 \"le fichier existe\"\n",
-      "\t\tif test -r $1\n",
-      "\t\tthen\n",
-      "\t\t\techo\"vous pouvez lire lz fichier\"\n",
-      "\t\telse\n",
-      "\t\t\techo\"vous ne pouvez pas lire le fichier\"\n",
-      "\t\tfi\n",
-      "\t\tif test -w $1\n",
-      "\t\tthen\n",
-      "\t\t\techo\"vous pouvez ecrire le fichier\"\n",
-      "\t\telse\n",
-      "\t\t\techo\"vous ne pouver pas lire ce fichier\"\n",
-      "\t\tfi\n",
-      "fi\n"
-    ],
-    [
-      "\n",
-      "#!/bin/bash\n",
-      "\n",
-      "if test -e $1\n",
-      "then\n",
-      "\techo $1 \"le fichier existe\"\n",
-      "\t\tif test -r $1\n",
-      "\t\tthen\n",
-      "\t\t\techo \"vous pouvez lire lz fichier\"\n",
-      "\t\telse\n",
-      "\t\t\techo \"vous ne pouvez pas lire le fichier\"\n",
-      "\t\tfi\n",
-      "\t\tif test -w $1\n",
-      "\t\tthen\n",
-      "\t\t\techo \"vous pouvez ecrire le fichier\"\n",
-      "\t\telse\n",
-      "\t\t\techo \"vous ne pouver pas lire ce fichier\"\n",
-      "\t\tfi\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test -e $1 -a -e $2\n",
-      "then\n",
-      "echo \"shouaitez vous concatener les fichiers ?\"\n",
-      "case $3 in\n",
-      "oui) echo $1 $2\n",
-      "non) echo \"aurevoir\"\n",
-      "esac\n",
-      "else\n",
-      "echo \"Error un des fichier ou les deux n'existes pas\"\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test -e $1 -a -e $2\n",
-      "then\n",
-      "echo \"shouaitez vous concatener les fichiers ?\"\n",
-      "case $3 in\n",
-      "oui ) echo $1 $2\n",
-      "non ) echo \"aurevoir\"\n",
-      "esac\n",
-      "else\n",
-      "echo \"Error un des fichier ou les deux n'existes pas\"\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test -e $1 -a -e $2\n",
-      "then\n",
-      "echo \"shouaitez vous concatener les fichiers ?\"\n",
-      "case $3 in\n",
-      "oui ) echo $1 $2\n",
-      "esac\n",
-      "else\n",
-      "echo \"Error un des fichier ou les deux n'existes pas\"\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test -e $1 -a -e $2\n",
-      "then\n",
-      "echo \"shouaitez vous concatener les fichiers ?\"\n",
-      "case $3 in\n",
-      "oui ) echo less $1 $2\n",
-      "esac\n",
-      "else\n",
-      "echo \"Error un des fichier ou les deux n'existes pas\"\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test -e $1 -a -e $2\n",
-      "then\n",
-      "echo \"shouaitez vous concatener les fichiers ?\"\n",
-      "case $3 in\n",
-      "oui ) echo less.$1\n",
-      "esac\n",
-      "else\n",
-      "echo \"Error un des fichier ou les deux n'existes pas\"\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test -e $1 -a -e $2\n",
-      "then\n",
-      "echo \"shouaitez vous concatener les fichiers ?\"\n",
-      "case $3 in\n",
-      "oui ) more $1 $2\n",
-      "esac\n",
-      "else\n",
-      "echo \"Error un des fichier ou les deux n'existes pas\"\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "for liste_commandes in date who pwd ls\n",
-      "do\n",
-      "echo $liste_commandes\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "for liste_commandes in date who pwd ls\n",
-      "do\n",
-      "echo $liste_commandes\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "a=0\n",
-      "for i in toto titi tutu\n",
-      "do\n",
-      "expr a=a+1\n",
-      "echo \"argument\" $a\"=\"$i\n",
-      "done\n",
-      "echo \"il y a\" $a \"arguments\"\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "a=0\n",
-      "for i in toto titi tutu\n",
-      "do\n",
-      "a=expr a + 1\n",
-      "echo \"argument\" $a\"=\"$i\n",
-      "done\n",
-      "echo \"il y a\" $a \"arguments\"\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "a=0\n",
-      "for i in toto titi tutu\n",
-      "do\n",
-      "a=`expr a + 1`\n",
-      "echo \"argument\" $a\"=\"$i\n",
-      "done\n",
-      "echo \"il y a\" $a \"arguments\"\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "a=0\n",
-      "for i in toto titi tutu\n",
-      "do\n",
-      "a=`expr $a + 1`\n",
-      "echo \"argument\" $a\"=\"$i\n",
-      "done\n",
-      "echo \"il y a\" $a \"arguments\"\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "a=0\n",
-      "for i in $(seq $1)\n",
-      "do\n",
-      "a=`expr $a - $i`\n",
-      "done\n",
-      "echo $a\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "a=0\n",
-      "for i in $(seq $1)\n",
-      "do\n",
-      "a=`expr $a + $i`\n",
-      "done\n",
-      "echo $a\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo \"bienvenu au menu voici vos options:\"\n",
-      "echo \"-Date du jour(Date)\"\n",
-      "echo \"-liste de persones coo sur la machine(lc)\"\n",
-      "echo \"-liste de fichier du r\u00c3\u00a9p\u00c3\u00a9rtoire courant(ls)\"\n",
-      "echo \"-Nom du repertoire courant(Nom)\"\n",
-      "case $1 in\n",
-      "Date ) echo `date`\n",
-      "lc   ) echo watch lsof -i\n",
-      "ls   ) echo ls\n",
-      "Nom  ) echo pwd\n",
-      "esac\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo \"bienvenu au menu voici vos options:\"\n",
-      "echo \"-Date du jour(Date)\"\n",
-      "echo \"-liste de persones coo sur la machine(lc)\"\n",
-      "echo \"-liste de fichier du r\u00c3\u00a9p\u00c3\u00a9rtoire courant(ls)\"\n",
-      "echo \"-Nom du repertoire courant(Nom)\"\n",
-      "case $1 in\n",
-      "Date ) echo `date`\n",
-      "lc   ) echo `watch lsof -i`\n",
-      "ls   ) echo `ls`\n",
-      "Nom  ) echo `pwd`\n",
-      "esac\n"
-    ]
+    {
+      "name": "tp6_exo1.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "if test $1 -ge 5 -a $1 -le 10\n",
+        "then\n",
+        "\techo $1 \"est compris entre 5 et 10\"\n",
+        "else\n",
+        "\techo $1\"est pas compris entre 5 et 10\" \n",
+        "fi\n"
+      ]
+    },
+    {
+      "name": "tp6_exo1V2.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "if [$1 -ge 5 -a $1 -le 10]\n",
+        " then\n",
+        "        echo $1 \"est compris entre 5 et 10\" \n",
+        "else\n",
+        "        echo $1\"est pas compris entre 5 et 10\" \n",
+        "fi\n"
+      ]
+    },
+    {
+      "name": "tp6_exo2.sh",
+      "lines": [
+        "\n",
+        "#!/bin/bash\n",
+        "\n",
+        "if test -e $1\n",
+        "then\n",
+        "\techo $1 \"le fichier existe\"\n",
+        "\t\tif test -r $1\n",
+        "\t\tthen\n",
+        "\t\t\techo \"vous pouvez lire lz fichier\"\n",
+        "\t\telse\n",
+        "\t\t\techo \"vous ne pouvez pas lire le fichier\"\n",
+        "\t\tfi\n",
+        "\t\tif test -w $1\n",
+        "\t\tthen\n",
+        "\t\t\techo \"vous pouvez ecrire le fichier\"\n",
+        "\t\telse\n",
+        "\t\t\techo \"vous ne pouver pas lire ce fichier\"\n",
+        "\t\tfi\n",
+        "fi\n"
+      ]
+    },
+    {
+      "name": "tp6_exo3.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "if test -e $1 -a -e $2\n",
+        "then\n",
+        "echo \"shouaitez vous concatener les fichiers ?\"\n",
+        "case $3 in\n",
+        "oui ) more $1 $2\n",
+        "esac\n",
+        "else\n",
+        "echo \"Error un des fichier ou les deux n'existes pas\"\n",
+        "fi\n"
+      ]
+    },
+    {
+      "name": "tp6_exo4.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "for liste_commandes in date who pwd ls\n",
+        "do\n",
+        "echo $liste_commandes\n",
+        "done\n"
+      ]
+    },
+    {
+      "name": "tp6_exo5.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "a=0\n",
+        "for i in toto titi tutu\n",
+        "do\n",
+        "a=`expr $a + 1`\n",
+        "echo \"argument\" $a\"=\"$i\n",
+        "done\n",
+        "echo \"il y a\" $a \"arguments\"\n"
+      ]
+    },
+    {
+      "name": "tp6_exo6.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "a=0\n",
+        "for i in $(seq $1)\n",
+        "do\n",
+        "a=`expr $a + $i`\n",
+        "done\n",
+        "echo $a\n"
+      ]
+    },
+    {
+      "name": "tp6_exo7.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo \"bienvenu au menu voici vos options:\"\n",
+        "echo \"-Date du jour(Date)\"\n",
+        "echo \"-liste de persones coo sur la machine(lc)\"\n",
+        "echo \"-liste de fichier du r\u00c3\u00a9p\u00c3\u00a9rtoire courant(ls)\"\n",
+        "echo \"-Nom du repertoire courant(Nom)\"\n",
+        "case $1 in\n",
+        "Date ) echo `date`\n",
+        "lc   ) echo `watch lsof -i`\n",
+        "ls   ) echo `ls`\n",
+        "Nom  ) echo `pwd`\n",
+        "esac\n"
+      ]
+    }
   ],
   "profile": [
     {

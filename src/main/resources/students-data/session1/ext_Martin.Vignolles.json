@@ -2,304 +2,69 @@
   "name": "ext_Martin.Vignolles",
   "session": 1,
   "scripts": [
-    [
-      "#!/bin/bash\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo cours\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo cours\n",
-      "cours=unix\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo cours\n",
-      "cours=unix\n",
-      "echo $cours\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo cours\n",
-      "cours=unix\n",
-      "echo $cours\n",
-      "echo je suis au cours $cours\n"
-    ],
-    [
-      "Mon nom de login est : <mon login>\n"
-    ],
-    [
-      "Mon nom de login est : <mon login>\n",
-      "Mon shell est : <mon shell>\n"
-    ],
-    [
-      "Mon nom de login est : <mon login>\n",
-      "Mon shell est : <mon shell>\n",
-      "Les variables du Shell sont :\n"
-    ],
-    [
-      "Mon nom de login est : <mon login>\n",
-      "Mon shell est : <mon shell>\n",
-      "Les variables du Shell sont :\n",
-      "<liste des variables du Shell>\n"
-    ],
-    [
-      "Mon nom de login est : <mon login>\n",
-      "Mon shell est : <mon shell>\n",
-      "Les variables du Shell sont :\n",
-      "<liste des variables du Shell>\n",
-      "Celles d'environnement sont :\n"
-    ],
-    [
-      "Mon nom de login est : <mon login>\n",
-      "Mon shell est : <mon shell>\n",
-      "Les variables du Shell sont :\n",
-      "<liste des variables du Shell>\n",
-      "Celles d'environnement sont :\n",
-      "<liste des variables d'environnement>\n"
-    ],
-    [
-      "#!/bin/bash\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Cher utilisateur quel est ton prenom \\?\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Cher utilisateur quel est ton prenom \\?\n",
-      "read prenom\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Cher utilisateur quel est ton prenom \\?\n",
-      "read prenom\n",
-      "echo Ravi de te connaitre, $prenom\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Cher utilisateur quel est ton prenom \\?\n",
-      "read prenom\n",
-      "echo Ravi de te connaitre, $prenom\n",
-      "echo Quel est ton nom et ton age \\?\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Cher utilisateur quel est ton prenom \\?\n",
-      "read prenom\n",
-      "echo Ravi de te connaitre, $prenom\n",
-      "echo Quel est ton nom et ton age \\?\n",
-      "read nom age\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Cher utilisateur quel est ton prenom \\?\n",
-      "read prenom\n",
-      "echo Ravi de te connaitre, $prenom\n",
-      "echo Quel est ton nom et ton age \\?\n",
-      "read nom age\n",
-      "echo Tu es $prenom $nom et tu as $age ans,n\\'est-ce pas\\?\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Cher utilisateur quel est ton prenom \\?\n",
-      "read prenom\n",
-      "echo Ravi de te connaitre, $prenom\n",
-      "echo Quel est ton nom et ton age \\?\n",
-      "read nom age\n",
-      "echo Tu es $prenom $nom et tu as $age ans,n\\'est-ce pas\\?\n",
-      "read reponse\n"
-    ],
-    [
-      "#!/bin/bash\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Je suis le script Shell $0\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Je suis le script Shell $0\n",
-      "echo Mes arguments sont $*\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Je suis le script Shell $0\n",
-      "echo Mes arguments sont $*\n",
-      "echo Le premier argument est $1\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Je suis le script Shell $0\n",
-      "echo Mes arguments sont $*\n",
-      "echo Le premier argument est $1\n",
-      "echo Le deuxieme argument est $2\n"
-    ],
-    [
-      "#!/bin/bash\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Quel est le nom du script \\?\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Quel est le nom du script \\?\n",
-      "read nom\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Quel est le nom du script \\?\n",
-      "read nom\n",
-      "echo Quel est le nombre de parametres \\?\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Quel est le nom du script \\?\n",
-      "read nom\n",
-      "echo Quel est le nombre de parametres \\?\n",
-      "read parametre\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Quel est le nom du script \\?\n",
-      "read nom\n",
-      "echo Quel est le nombre de parametres \\?\n",
-      "read parametre\n",
-      "echo Donner le nom des parametres\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Quel est le nom du script \\?\n",
-      "read nom\n",
-      "echo Quel est le nombre de parametres \\?\n",
-      "read parametre\n",
-      "echo Donner le nom des parametres\n",
-      "read nomParametre\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Quel est le nom du script \\?\n",
-      "read nom\n",
-      "echo Quel est le nombre de parametres \\?\n",
-      "read parametre\n",
-      "echo Donner le nom des parametres\n",
-      "read nomParametre\n",
-      "le script $nom possede $parametre parametres, que voici : $ nomParametre\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Quel est le nom du script \\?\n",
-      "read nom\n",
-      "echo Quel est le nombre de parametres \\?\n",
-      "read parametre\n",
-      "echo Donner le nom des parametres\n",
-      "read nomParametre\n",
-      "echo le script $nom possede $parametre parametres, que voici : $ nomParametre\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Quel est le nom du script \\?\n",
-      "read nom\n",
-      "echo Quel est le nombre de parametres \\?\n",
-      "read parametre\n",
-      "echo Donner le nom des parametres\n",
-      "read nomParametre\n",
-      "echo le script $nom possede $parametre parametres, que voici : $nomParametre\n"
-    ],
-    [
-      "#!/bin/bash\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "cat -n $0 $1 > $3\n"
-    ],
-    [
-      "echo Nous sommes le 'date'\n"
-    ],
-    [
-      "echo Nous sommes le 'date'\n",
-      "echo Ceci\n"
-    ],
-    [
-      "echo Nous sommes le 'date'\n",
-      "echo Ceci\n",
-      "echo une tres\n"
-    ],
-    [
-      "echo Nous sommes le 'date'\n",
-      "echo Ceci\n",
-      "echo une tres\n",
-      "echo longue phrase...\n"
-    ],
-    [
-      "echo Nous sommes le 'date'\n",
-      "echo Ceci\n",
-      "echo une tres\n",
-      "echo longue phrase...\n",
-      "echo Voici une \u00c3\u00a9toile : *\n"
-    ],
-    [
-      "echo Nous sommes le 'date'\n",
-      "echo Ceci est\n",
-      "echo une tres\n",
-      "echo longue phrase...\n",
-      "echo Voici une \u00c3\u00a9toile : \\*\n"
-    ],
-    [
-      "echo Nous sommes le 'date'\n",
-      "echo Ceci est\n",
-      "echo une tres\n",
-      "echo longue phrase...\n",
-      "echo Voici une \u00c3\u00a9toile : \\*\n"
-    ],
-    [
-      "echo Nous sommes le `date`\n",
-      "echo Ceci est\n",
-      "echo une tres\n",
-      "echo longue phrase...\n",
-      "echo Voici une \u00c3\u00a9toile : \\*\n"
-    ],
-    [
-      "A=1\n",
-      "B=0\n",
-      "B='expr $A + $0'\n",
-      "echo $B\n",
-      "\n"
-    ],
-    [
-      "A=1\n",
-      "B=0\n",
-      "B=`expr $A + $07`\n",
-      "echo $B\n",
-      "\n"
-    ],
-    [
-      "A=1\n",
-      "((B=$A+$0))\n",
-      "echo $B\n",
-      "\n"
-    ],
-    [
-      "A=1;\n",
-      "let c=A+$0;\n",
-      "echo $B;\n",
-      "\n"
-    ],
-    [
-      "echo $(($0+1))\n"
-    ],
-    [
-      "echo $((3+1))\n"
-    ],
-    [
-      "echo $(($1+1))\n"
-    ],
-    [
-      "export PATH=$PATH:/root\n"
-    ]
+    {
+      "name": "tp5_exo1.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo cours\n",
+        "cours=unix\n",
+        "echo $cours\n",
+        "echo je suis au cours $cours\n"
+      ]
+    },
+    {
+      "name": "tp5_exo2.sh",
+      "lines": [
+        "Mon nom de login est : <mon login>\n",
+        "Mon shell est : <mon shell>\n",
+        "Les variables du Shell sont :\n",
+        "<liste des variables du Shell>\n",
+        "Celles d'environnement sont :\n",
+        "<liste des variables d'environnement>\n"
+      ]
+    },
+    {
+      "name": "tp5_exo5.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo Quel est le nom du script \\?\n",
+        "read nom\n",
+        "echo Quel est le nombre de parametres \\?\n",
+        "read parametre\n",
+        "echo Donner le nom des parametres\n",
+        "read nomParametre\n",
+        "echo le script $nom possede $parametre parametres, que voici : $nomParametre\n"
+      ]
+    },
+    {
+      "name": "tp5_exo6.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "cat -n $0 $1 > $3\n"
+      ]
+    },
+    {
+      "name": "tp5_exo7.sh",
+      "lines": [
+        "echo Nous sommes le `date`\n",
+        "echo Ceci est\n",
+        "echo une tres\n",
+        "echo longue phrase...\n",
+        "echo Voici une \u00c3\u00a9toile : \\*\n"
+      ]
+    },
+    {
+      "name": "tp5_exo8.sh",
+      "lines": [
+        "echo $(($1+1))\n"
+      ]
+    },
+    {
+      "name": "tp5_exo9.sh",
+      "lines": [
+        "export PATH=$PATH:/root\n"
+      ]
+    }
   ],
   "profile": [
     {

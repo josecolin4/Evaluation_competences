@@ -2,189 +2,21 @@
   "name": "ext_Martial.Geslin",
   "session": 5,
   "scripts": [
-    [
-      "#!/bin/bash\n",
-      "for i in $*\n",
-      "\techo argument \n",
-      "\t$i\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "for i in $*\n",
-      "do\n",
-      "\techo \"argument\" \n",
-      "\t$i\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "for i in $#\n",
-      "do\n",
-      "\techo \"argument `i`\" \n",
-      "\t$i\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "for i in $#\n",
-      "do\n",
-      "\techo \"argument $i\" \n",
-      "\t$i\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "for i in $#\n",
-      "do\n",
-      "\techo \"argument $i\"\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "for i in $*\n",
-      "do\n",
-      "\techo \"argument $i\"\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "a=0\n",
-      "for i in $*\n",
-      "do\n",
-      "\techo \"argument `a+1` = $i\"\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "a=0\n",
-      "for i in $*\n",
-      "do\n",
-      "\techo \"argument `$a+1` = $i\"\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "n=0\n",
-      "for i in $*\n",
-      "do\n",
-      "\techo \"argument $(( n + 1 )) = $i\"\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "n=0\n",
-      "for i in $*\n",
-      "do\n",
-      "\tn=$n+1\n",
-      "\techo \"argument $n = $i\"\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "n=0\n",
-      "for i in $*\n",
-      "do\n",
-      "\tn=$(( n + 1))\n",
-      "\techo \"argument $n = $i\"\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "n=0\n",
-      "for i in $*\n",
-      "do\n",
-      "\tn=$(( n + 1))\n",
-      "\techo \"argument $n = $i ,\"\n",
-      "done\n",
-      "echo \"il y a $# arguments.\"\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "n=0\n",
-      "for i in $*\n",
-      "do\n",
-      "\tn=$(( n + 1))\n",
-      "\techo \"argument $n = $i ,\",\n",
-      "done\n",
-      "echo \"il y a $# arguments.\"\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "n=0\n",
-      "for i in $*\n",
-      "do\n",
-      "\tn=$(( n + 1))\n",
-      "\techo \"argument $n = $i\",,\n",
-      "done\n",
-      "echo \"il y a $# arguments.\"\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "n=0\n",
-      "for i in $*\n",
-      "do\n",
-      "\tn=$(( n + 1))\n",
-      "\techo -e \"argument $n = $i /n\"\n",
-      "done\n",
-      "echo \"il y a $# arguments.\"\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "n=0\n",
-      "for i in $*\n",
-      "do\n",
-      "\tn=$(( n + 1))\n",
-      "\techo \"argument $n = $i \"\n",
-      "done\n",
-      "echo \"il y a $# arguments.\"\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "n=0\n",
-      "for i in $*\n",
-      "do\n",
-      "\tn=$((n + 1))\n",
-      "\techo \"argument $n = $i \"\n",
-      "done\n",
-      "echo \"il y a $# arguments.\"\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "message=\n",
-      "n=0\n",
-      "for i in $*\n",
-      "do\n",
-      "\tn=$((n + 1))\n",
-      "\tmessage=$message argument $n = $i\n",
-      "done\n",
-      "message=$message il y a $# arguments.\n",
-      "echo $message\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "message=\n",
-      "n=0\n",
-      "for i in $*\n",
-      "do\n",
-      "\tn=$((n + 1))\n",
-      "\tmessage=$message \"argument $n = $i,\"\n",
-      "done\n",
-      "message=$message \"il y a $# arguments.\"\n",
-      "echo $message\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "message=\n",
-      "n=0\n",
-      "for i in $*\n",
-      "do\n",
-      "\tn=$((n + 1))\n",
-      "\tmessage=\"$message argument $n = $i,\"\n",
-      "done\n",
-      "message=\"$message il y a $# arguments.\"\n",
-      "echo $message\n"
-    ]
+    {
+      "name": "tp6_exo5.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "message=\n",
+        "n=0\n",
+        "for i in $*\n",
+        "do\n",
+        "\tn=$((n + 1))\n",
+        "\tmessage=\"$message argument $n = $i,\"\n",
+        "done\n",
+        "message=\"$message il y a $# arguments.\"\n",
+        "echo $message\n"
+      ]
+    }
   ],
   "commands": [
     {

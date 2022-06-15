@@ -2,85 +2,24 @@
   "name": "ext_Dewi.Girot",
   "session": 2,
   "scripts": [
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "somme=`expr $1+1`\n",
-      "\n",
-      "echo $somme\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "somme=`expr $1 + 1`\n",
-      "\n",
-      "echo $somme\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "export PATH=$PATH:/home/usr\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "export 'PATH=$PATH:/home/usr/local/sbin' /home/user/.bashrc\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "export 'PATH=$PATH:/home/usr/local/sbin' /home/usr/.bashrc\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "export 'PATH=$PATH:/home/usr/local/sbin' /home/usr/\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo 'export PATH=$PATH:/home/user/mes_prog' >> /home/user/.bashrc\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo 'export PATH=$PATH:/home/usr/mes_prog' >> /home/user/.bashrc\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo 'export PATH=$PATH:/home/usr/mes_prog' >> /home/user/.bashrc\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo 'export PATH=$PATH:/home/usr/' >> /home/usr/.bashrc\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo 'export PATH=$PATH:/home/usr/local/sbin/' >> /home/usr/.bashrc\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo 'export PATH=$PATH:/home/usr/local/sbin/' >> /home/usr/\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo 'export PATH=$PATH:/home/usr/local/sbin/' >> /home/usr/tp5_exo9.sh\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo 'export PATH=$PATH:/home/usr/local/sbin/' >> /home/usr/local/sbin/test/\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo 'export PATH=$PATH:/home/usr/local/sbin/' >> /home/usr/\n"
-    ]
+    {
+      "name": "tp5_exo8.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "\n",
+        "somme=`expr $1 + 1`\n",
+        "\n",
+        "echo $somme\n"
+      ]
+    },
+    {
+      "name": "tp5_exo9.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "\n",
+        "echo 'export PATH=$PATH:/home/usr/local/sbin/' >> /home/usr/\n"
+      ]
+    }
   ],
   "profile": [
     {

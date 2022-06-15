@@ -2,20 +2,16 @@
   "name": "ext_Hicham.Lotfi",
   "session": 1,
   "scripts": [
-    [
-      "#!/bin/bash\n",
-      "echo cours\n",
-      "cours=unix\n",
-      "echo $cours\n",
-      "echo je suis au cours $cours\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo cours\n",
-      "cours=unix\n",
-      "echo $cours\n",
-      "echo je suis au cours $cours\n"
-    ]
+    {
+      "name": "tp5_exo1.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo cours\n",
+        "cours=unix\n",
+        "echo $cours\n",
+        "echo je suis au cours $cours\n"
+      ]
+    }
   ],
   "profile": [
     {

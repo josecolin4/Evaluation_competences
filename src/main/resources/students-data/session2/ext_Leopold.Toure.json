@@ -2,38 +2,40 @@
   "name": "ext_Leopold.Toure",
   "session": 2,
   "scripts": [
-    [
-      "#!/bin/bash\n",
-      "echo Cher utilisateur quel est ton pr\u00c3\u00a9nom \\?\n",
-      "read prenom\n",
-      "echo Ravi de te connaitre, $prenom\n",
-      "echo Quel est ton nom et ton age \\?\n",
-      "read nom age\n",
-      "echo Tu es $prenom $nom et tu as $age ans, n\\'est-ce pas \\?\n",
-      "read reponse\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Je suis le script Shell $0\n",
-      "echo Mes arguments sont $*\n",
-      "echo Le premier argument est $1\n",
-      "echo Le deuxi\u00c3\u00a8me argument est $2\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "nom_scirpt=texte\n",
-      "n=nombre_entier\n",
-      "parametre=liste\n",
-      "echo Le script $nom_script possede $n parametre(s), que voici :$parametre\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "nom_script=texte\n",
-      "n=nombre_entier\n",
-      "parametre=liste\n",
-      "echo Le script $nom_script possede $n parametre, que voici :$parametre\n"
-    ]
+    {
+      "name": "tp5_exo5.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo Cher utilisateur quel est ton pr\u00c3\u00a9nom \\?\n",
+        "read prenom\n",
+        "echo Ravi de te connaitre, $prenom\n",
+        "echo Quel est ton nom et ton age \\?\n",
+        "read nom age\n",
+        "echo Tu es $prenom $nom et tu as $age ans, n\\'est-ce pas \\?\n",
+        "read reponse\n"
+      ]
+    },
+    {
+      "name": "tp5_exo6.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo Je suis le script Shell $0\n",
+        "echo Mes arguments sont $*\n",
+        "echo Le premier argument est $1\n",
+        "echo Le deuxi\u00c3\u00a8me argument est $2\n",
+        "\n"
+      ]
+    },
+    {
+      "name": "tp5_exo7.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "nom_script=texte\n",
+        "n=nombre_entier\n",
+        "parametre=liste\n",
+        "echo Le script $nom_script possede $n parametre, que voici :$parametre\n"
+      ]
+    }
   ],
   "profile": [
     {

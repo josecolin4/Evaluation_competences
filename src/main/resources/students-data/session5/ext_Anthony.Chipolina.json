@@ -2,126 +2,47 @@
   "name": "ext_Anthony.Chipolina",
   "session": 5,
   "scripts": [
-    [
-      "#!/bin/bash\n",
-      "if $1<10 and $1>5\n",
-      "then\n",
-      "echo \"Le chiffre est compris entre 5 et 10\"\n",
-      "else\n",
-      "echo \"Le chiffre n'est pas compris entre 5 et 10\"\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if $1<10 and $1>5\n",
-      "then\n",
-      "echo \"Le chiffre est compris entre 5 et 10\"\n",
-      "else\n",
-      "echo \"Le chiffre n'est pas compris entre 5 et 10\"\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test $1 -lt 10 -a $1 -gt 5\n",
-      "then\n",
-      "echo \"Le chiffre est compris entre 5 et 10\"\n",
-      "else\n",
-      "echo \"Le chiffre n'est pas compris entre 5 et 10\"\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if $1\n",
-      "then\n",
-      "echo \"Le fichier $1 existe et est accessible en lecture et \u00c3\u00a9criture\"\n",
-      "else\n",
-      "echo \"Le fichier $1 n'existe pas ou, n'est pas accessible en lecture, ou n'est pas accessible en \u00c3\u00a9criture\"\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if $1 -r -a $1 -w\n",
-      "then\n",
-      "echo \"Le fichier $1 existe et est accessible en lecture et \u00c3\u00a9criture\"\n",
-      "else\n",
-      "echo \"Le fichier $1 n'existe pas ou, n'est pas accessible en lecture, ou n'est pas accessible en \u00c3\u00a9criture\"\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test $1 -r -a $1 -w\n",
-      "then\n",
-      "echo \"Le fichier $1 existe et est accessible en lecture et \u00c3\u00a9criture\"\n",
-      "else\n",
-      "echo \"Le fichier $1 n'existe pas ou, n'est pas accessible en lecture, ou n'est pas accessible en \u00c3\u00a9criture\"\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test -r $1 -a -w $1\n",
-      "then\n",
-      "echo \"Le fichier $1 existe et est accessible en lecture et \u00c3\u00a9criture\"\n",
-      "else\n",
-      "echo \"Le fichier $1 n'existe pas ou, n'est pas accessible en lecture, ou n'est pas accessible en \u00c3\u00a9criture\"\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test -e $1 -a -e $2\n",
-      "then\n",
-      "echo \"Souhaitez vous concat\u00c3\u00a9ner les fichiers ?\"\n",
-      "read REP\n",
-      "\tif test REP=OUI\n",
-      "\tthen cat $1 -a cat $2\n",
-      "\tfi\n",
-      "else \"Un des fichiers n'existe pas\"\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test -e $1 -a -e $2\n",
-      "then\n",
-      "echo \"Souhaitez vous concat\u00c3\u00a9ner les fichiers ?\"\n",
-      "read REP\n",
-      "\tif test REP=OUI\n",
-      "\tthen cat $1 -a cat $2\n",
-      "\telse\n",
-      "\techo \"Le fichier ne s'affiche donc pas\"\n",
-      "\tfi\n",
-      "else \"Un des fichiers n'existe pas\"\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test -e $1 -a -e $2\n",
-      "then\n",
-      "echo \"Souhaitez vous concat\u00c3\u00a9ner les fichiers ?\"\n",
-      "read REP\n",
-      "\tif test REP=OUI\n",
-      "\tthen test cat $1 -a cat $2\n",
-      "\telse\n",
-      "\techo \"Le fichier ne s'affiche donc pas\"\n",
-      "\tfi\n",
-      "else \"Un des fichiers n'existe pas\"\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test -e $1 -a -e $2\n",
-      "then\n",
-      "echo \"Souhaitez vous concat\u00c3\u00a9ner les fichiers ?\"\n",
-      "read REP\n",
-      "\tif test REP='OUI'\n",
-      "\tthen test cat $1 -a cat $2\n",
-      "\telse\n",
-      "\techo \"Le fichier ne s'affiche donc pas\"\n",
-      "\tfi\n",
-      "else \"Un des fichiers n'existe pas\"\n",
-      "fi\n"
-    ]
+    {
+      "name": "tp6_exo1.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "if test $1 -lt 10 -a $1 -gt 5\n",
+        "then\n",
+        "echo \"Le chiffre est compris entre 5 et 10\"\n",
+        "else\n",
+        "echo \"Le chiffre n'est pas compris entre 5 et 10\"\n",
+        "fi\n"
+      ]
+    },
+    {
+      "name": "tp6_exo2.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "if test -r $1 -a -w $1\n",
+        "then\n",
+        "echo \"Le fichier $1 existe et est accessible en lecture et \u00c3\u00a9criture\"\n",
+        "else\n",
+        "echo \"Le fichier $1 n'existe pas ou, n'est pas accessible en lecture, ou n'est pas accessible en \u00c3\u00a9criture\"\n",
+        "fi\n"
+      ]
+    },
+    {
+      "name": "tp6_exo3.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "if test -e $1 -a -e $2\n",
+        "then\n",
+        "echo \"Souhaitez vous concat\u00c3\u00a9ner les fichiers ?\"\n",
+        "read REP\n",
+        "\tif test REP='OUI'\n",
+        "\tthen test cat $1 -a cat $2\n",
+        "\telse\n",
+        "\techo \"Le fichier ne s'affiche donc pas\"\n",
+        "\tfi\n",
+        "else \"Un des fichiers n'existe pas\"\n",
+        "fi\n"
+      ]
+    }
   ],
   "commands": [
     {

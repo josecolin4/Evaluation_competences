@@ -2,132 +2,52 @@
   "name": "ext_Theo.Pellefigue",
   "session": 3,
   "scripts": [
-    [
-      "#!/bin/bash\n",
-      "echo choisir un nombre\n",
-      "read nombre\n",
-      "let resultat=$nombre/2\n",
-      "echo $resultat\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo choisire un nombre\n",
-      "read nombre\n",
-      "let resultat=$nombre*2\n",
-      "echo $resultat\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo quelle est votre ann\u00c3\u00a9e de naissance?\n",
-      "read annee\n",
-      "let resultat=date-annee\n",
-      "echo resultat\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo quelle est votre ann\u00c3\u00a9e de naissance?\n",
-      "read annee\n",
-      "let resultat=date%y-annee\n",
-      "echo resultat\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo quelle est votre ann\u00c3\u00a9e de naissance?\n",
-      "read annee\n",
-      "let resultat=date%Y-annee\n",
-      "echo resultat\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo quelle est votre ann\u00c3\u00a9e de naissance?\n",
-      "read annee\n",
-      "let resultat=date%Y-$annee\n",
-      "echo resultat\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo quelle est votre ann\u00c3\u00a9e de naissance?\n",
-      "read annee\n",
-      "anneeacc=date%Y\n",
-      "let resultat=$anneacc-$annee\n",
-      "echo resultat\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo quelle est votre ann\u00c3\u00a9e de naissance?\n",
-      "read annee\n",
-      "anneeacc=date%Y\n",
-      "let resultat=$anneexacc-$annee\n",
-      "echo resultat\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo quelle est votre ann\u00c3\u00a9e de naissance?\n",
-      "read annee\n",
-      "anneeacc=`date %Y`\n",
-      "let resultat=$anneexacc-$annee\n",
-      "echo resultat\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo quelle est votre ann\u00c3\u00a9e de naissance?\n",
-      "read annee\n",
-      "anneeacc=`date +%Y`\n",
-      "let resultat=$anneexacc-$annee\n",
-      "echo resultat\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo quelle est votre ann\u00c3\u00a9e de naissance?\n",
-      "read annee\n",
-      "anneeacc=`date +%Y`\n",
-      "let resultat=$anneexacc-$annee\n",
-      "echo $resultat\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo quelle est votre ann\u00c3\u00a9e de naissance?\n",
-      "read annee\n",
-      "anneeacc=`date +%Y`\n",
-      "echo $anneeacc\n",
-      "let resultat=$anneexacc-$annee\n",
-      "echo $resultat\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo quelle est votre ann\u00c3\u00a9e de naissance?\n",
-      "read annee\n",
-      "anneeacc=`date +%Y`\n",
-      "echo $anneeacc\n",
-      "let resultat=$anneeacc-$annee\n",
-      "echo $resultat\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo quelle est votre ann\u00c3\u00a9e de naissance?\n",
-      "read annee\n",
-      "anneeacc=`date +%Y`\n",
-      "let resultat=$anneeacc-$annee\n",
-      "echo $resultat\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "liste=who\n",
-      "echo $liste\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "liste=`who`\n",
-      "echo $liste\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "ls -l tp5bis_exo4.sh\n"
-    ]
+    {
+      "name": "tp5bis_exo1.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo choisir un nombre\n",
+        "read nombre\n",
+        "let resultat=$nombre/2\n",
+        "echo $resultat\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo2.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo choisire un nombre\n",
+        "read nombre\n",
+        "let resultat=$nombre*2\n",
+        "echo $resultat\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo3.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo quelle est votre ann\u00c3\u00a9e de naissance?\n",
+        "read annee\n",
+        "anneeacc=`date +%Y`\n",
+        "let resultat=$anneeacc-$annee\n",
+        "echo $resultat\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo4.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "liste=`who`\n",
+        "echo $liste\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo5.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "ls -l tp5bis_exo4.sh\n"
+      ]
+    }
   ],
   "profile": [
     {

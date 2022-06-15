@@ -2,136 +2,35 @@
   "name": "ext_Nicolas.Rousseau",
   "session": 3,
   "scripts": [
-    [
-      "#!/bin/bash\n",
-      "echo expr $1/2\n",
-      "echo $(($1 / 2))\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo expr $1/2\n",
-      "echo $(($1/2))\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "expr $1/2\n",
-      "echo $(($1/2))\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "expr $1 / 2\n",
-      "echo $(($1 / 2))\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "expr $1 * 2\n",
-      "echo $(($1 * 2))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "expr $1\\*2\n",
-      "echo $(($1 * 2))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "expr $1 * 2\n",
-      "echo $(($1 * 2))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "expr $1 * 3\n",
-      "echo $(($1 * 2))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "expr $1 \\* 2\n",
-      "echo $(($1 * 2))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "expr $1 \\* 2\n",
-      "echo $(($1 * 2))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
-      "read $naissance\n",
-      "echo vous \u00c3\u00aates n\u00c3\u00a9(e) en \n",
-      "expr $naissance - $date\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
-      "read $naissance\n",
-      "echo vous \u00c3\u00aates n\u00c3\u00a9\\(e\\) en \n",
-      "expr $naissance - $date\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
-      "read $naissance\n",
-      "echo vous \u00c3\u00aates n\u00c3\u00a9\\(e\\) en \n",
-      "expr $naissance - `date +%j`\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
-      "read $naissance\n",
-      "echo vous \u00c3\u00aates n\u00c3\u00a9\\(e\\) en \n",
-      "expr `date +%Y` - $naissance\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
-      "read $naissance\n",
-      "$annee=date \"+%Y\"\n",
-      "$resultat=$annee-$naissance\n",
-      "echo vous \u00c3\u00aates n\u00c3\u00a9\\(e\\) en $resultat\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
-      "read $naissance\n",
-      "$annee=date \"+%Y\"\n",
-      "echo $annee\n",
-      "$resultat=$annee-$naissance\n",
-      "echo vous \u00c3\u00aates n\u00c3\u00a9\\(e\\) en $resultat\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
-      "read $naissance\n",
-      "$annee=date\"+%Y\"\n",
-      "echo $annee\n",
-      "$resultat=$annee-$naissance\n",
-      "echo vous \u00c3\u00aates n\u00c3\u00a9\\(e\\) en $resultat\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
-      "read $naissance\n",
-      "$annee=date`+%Y\"`\n",
-      "echo $annee\n",
-      "$resultat=$annee-$naissance\n",
-      "echo vous \u00c3\u00aates n\u00c3\u00a9\\(e\\) en $resultat\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
-      "read $naissance\n",
-      "$annee=date \"+%Y\"\n",
-      "$resultat=expr $annee-$naissace\n",
-      "echo vous \u00c3\u00aates n\u00c3\u00a9\\(e\\) en $resultat\n",
-      "\n"
-    ]
+    {
+      "name": "tp5bis_exo1.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "expr $1 / 2\n",
+        "echo $(($1 / 2))\n",
+        "\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo2.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "expr $1 \\* 2\n",
+        "echo $(($1 * 2))\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo3.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
+        "read $naissance\n",
+        "$annee=date \"+%Y\"\n",
+        "$resultat=expr $annee-$naissace\n",
+        "echo vous \u00c3\u00aates n\u00c3\u00a9\\(e\\) en $resultat\n",
+        "\n"
+      ]
+    }
   ],
   "profile": [
     {

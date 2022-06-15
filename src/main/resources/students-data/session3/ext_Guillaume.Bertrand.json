@@ -2,209 +2,37 @@
   "name": "ext_Guillaume.Bertrand",
   "session": 3,
   "scripts": [
-    [
-      "#!/bin/bash\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo voici la \u00c3`date`\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo voici la \u00c3`date`\n",
-      "echo Nous sommes le Mon Nov 16 15:20:46 CET 2020\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo voici la \u00c3`date`\n",
-      "echo Nous sommes le Mon Nov 16 15:20:46 CET 2020\n",
-      "echo Ceci est \n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo voici la \u00c3`date`\n",
-      "echo Nous sommes le Mon Nov 16 15:20:46 CET 2020\n",
-      "echo Ceci est \n",
-      "echo une tr\u00c3\u00a8s\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo voici la \u00c3`date`\n",
-      "echo Nous sommes le Mon Nov 16 15:20:46 CET 2020\n",
-      "echo Ceci est \n",
-      "echo une tr\u00c3\u00a8s\n",
-      "echo longue phrase...\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo voici la \u00c3`date`\n",
-      "echo Nous sommes le Mon Nov 16 15:20:46 CET 2020\n",
-      "echo Ceci est \n",
-      "echo une tr\u00c3\u00a8s\n",
-      "echo longue phrase...\n",
-      "echo Voici une \u00c3\u00a9toile : *\n"
-    ],
-    [
-      "#!/bin/bash\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo $1\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo $1+1\n"
-    ],
-    [
-      "#!/bin/bash\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if $1>3\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if $1>3\n",
-      "\techo hi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if $1>3\n",
-      "\techo hi\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if $1 > 3\n",
-      "\techo hi\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if $1 > 3\n",
-      "\tthen\n",
-      "\t\techo hi\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if $1 > 3\n",
-      "\tthen\n",
-      "\t\techo hi\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if \"$1\" > 3\n",
-      "\tthen\n",
-      "\t\techo hi\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test $1 > 3\n",
-      "\tthen\n",
-      "\t\techo hi\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test $1 -gt 3\n",
-      "\tthen\n",
-      "\t\techo hi\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if [$1 -gt 3]\n",
-      "\tthen\n",
-      "\t\techo hi\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if [ $1 -gt 3 ]\n",
-      "\tthen\n",
-      "\t\techo hi\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if [ $1 -gt 5 $1 -lt 10 ]\n",
-      "\tthen\n",
-      "\t\techo hi\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if [ $1 -gt 5 -a $1 -lt 10 ]\n",
-      "\tthen\n",
-      "\t\techo hi\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if [ $1 -gt 5 -a $1 -lt 10 ]\n",
-      "\tthen\n",
-      "\t\techo La valeur $1 est comprise entre 5 et 10\n",
-      "\telse\n",
-      "\t\techo La valeur $1 n'est pas comprise entre 5 et 10\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if [ $1 -gt 5 -a $1 -lt 10 ]\n",
-      "\tthen\n",
-      "\t\techo La valeur est comprise entre 5 et 10\n",
-      "\telse\n",
-      "\t\techo La valeur n'est pas comprise entre 5 et 10\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if [ $1 -gt 5 ]\n",
-      "\tthen\n",
-      "\t\techo La valeur $1 est comprise entre 5 et 10\n",
-      "\telse\n",
-      "\t\techo La valeur $1 n'est pas comprise entre 5 et 10\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if [ $1 -gt 5 -a $1 -lt 10 ]\n",
-      "\tthen\n",
-      "\t\techo La valeur $1 est comprise entre 5 et 10\n",
-      "\telif\n",
-      "\t\techo La valeur $1 n'est pas comprise entre 5 et 10\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if [ $1 -gt 5 -a $1 -lt 10 ]\n",
-      "\tthen\n",
-      "\t\techo La valeur $1 est comprise entre 5 et 10\n",
-      "\telse\n",
-      "\t\techo La valeur $1 n'est pas comprise entre 5 et 10\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if [ $1 -gt 5 -a $1 -lt 10 ]\n",
-      "\tthen\n",
-      "\t\techo La valeur $1 est comprise entre 5 et 10\n",
-      "\telse\n",
-      "\t\techo La valeur $1 /n'est pas comprise entre 5 et 10\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if [ $1 -gt 5 -a $1 -lt 10 ]\n",
-      "\tthen\n",
-      "\t\techo La valeur $1 est comprise entre 5 et 10\n",
-      "\telse\n",
-      "\t\techo La valeur $1 \"n'est pas comprise entre 5 et 10\"\n",
-      "fi\n"
-    ]
+    {
+      "name": "tp5_exo7.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo voici la \u00c3`date`\n",
+        "echo Nous sommes le Mon Nov 16 15:20:46 CET 2020\n",
+        "echo Ceci est \n",
+        "echo une tr\u00c3\u00a8s\n",
+        "echo longue phrase...\n",
+        "echo Voici une \u00c3\u00a9toile : *\n"
+      ]
+    },
+    {
+      "name": "tp5_exo8.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo $1+1\n"
+      ]
+    },
+    {
+      "name": "tp6_exo1.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "if [ $1 -gt 5 -a $1 -lt 10 ]\n",
+        "\tthen\n",
+        "\t\techo La valeur $1 est comprise entre 5 et 10\n",
+        "\telse\n",
+        "\t\techo La valeur $1 \"n'est pas comprise entre 5 et 10\"\n",
+        "fi\n"
+      ]
+    }
   ],
   "profile": [
     {

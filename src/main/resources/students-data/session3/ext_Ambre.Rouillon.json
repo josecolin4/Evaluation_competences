@@ -2,204 +2,44 @@
   "name": "ext_Ambre.Rouillon",
   "session": 3,
   "scripts": [
-    [
-      "if i in 5 6 7 8 9 10\n",
-      "\tthen\n",
-      "\t\techo La valeur $i est comprise entre 5 et 10\n",
-      "\telse\n",
-      "\t\techo La valeur $i n'est pas comprise entre 5 et 10\n",
-      "fi\n"
-    ],
-    [
-      "if test $1 -gt 5 and test $1 -lt 10\n",
-      "\tthen\n",
-      "\t\techo La valeur $i est comprise entre 5 et 10\n",
-      "\telse\n",
-      "\t\techo La valeur $i n'est pas comprise entre 5 et 10\n",
-      "fi\n"
-    ],
-    [
-      "if test $1 -gt 5 and test $1 -lt 10\n",
-      "\tthen\n",
-      "\t\techo La valeur $i est comprise entre -gt 5 et -lt 10\n",
-      "\telse\n",
-      "\t\techo La valeur $i n\\'est pas comprise entre -gt 5 et -lt 10\\\n",
-      "fi\n"
-    ],
-    [
-      "if test $1 -gt 5 and test $1 -lt 10\n",
-      "\tthen\n",
-      "\t\techo La valeur $1 est comprise entre -gt 5 et -lt 10\n",
-      "\telse\n",
-      "\t\techo La valeur $1 n\\'est pas comprise entre -gt 5 et -lt 10\\\n",
-      "fi\n"
-    ],
-    [
-      "if test $1 -gt 5 and test $1 -lt 10\n",
-      "\tthen\n",
-      "\t\techo La valeur $1 est comprise entre -gt 5 et -lt 10\n",
-      "\telse\n",
-      "\t\techo La valeur $1 n est pas comprise entre -gt 5 et -lt 10\\\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test $1 -gt 5 and test $1 -lt 10\n",
-      "\tthen\n",
-      "\t\techo La valeur $1 est comprise entre -gt 5 et -lt 10\n",
-      "\telse\n",
-      "\t\techo La valeur $1 n est pas comprise entre -gt 5 et -lt 10\\\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test $1 -gt 5 and test $1 -lt 10\n",
-      "\tthen\n",
-      "\t\techo La valeur $1 est comprise entre 5 et 10\n",
-      "\telse\n",
-      "\t\techo La valeur $1 n est pas comprise entre 5 et 10\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test $i -gt 5 and test $i -lt 10\n",
-      "\tthen\n",
-      "\t\techo La valeur $i est comprise entre 5 et 10\n",
-      "\telse\n",
-      "\t\techo La valeur $i n est pas comprise entre 5 et 10\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test $1 -gt 5 and test $1 -lt 10\n",
-      "\tthen\n",
-      "\t\techo La valeur $1 est comprise entre 5 et 10\n",
-      "\telse\n",
-      "\t\techo La valeur $1 n est pas comprise entre 5 et 10\n",
-      "fi\n"
-    ],
-    [
-      "\n",
-      "if test $1 -gt 5 and test $1 -lt 10\n",
-      "\tthen\n",
-      "\t\techo La valeur $1 est comprise entre 5 et 10\n",
-      "\telse\n",
-      "\t\techo La valeur $1 n est pas comprise entre 5 et 10\n",
-      "fi\n"
-    ],
-    [
-      "\n",
-      "if test $1 -gt 5 -a $1 -lt 10\n",
-      "\tthen\n",
-      "\t\techo La valeur $1 est comprise entre 5 et 10\n",
-      "\telse\n",
-      "\t\techo La valeur $1 n est pas comprise entre 5 et 10\n",
-      "fi\n"
-    ],
-    [
-      "\n",
-      "if [ $1 -gt 5 -a $1 -lt 10 ] \n",
-      "\tthen\n",
-      "\t\techo La valeur $1 est comprise entre 5 et 10\n",
-      "\telse\n",
-      "\t\techo La valeur $1 n est pas comprise entre 5 et 10\n",
-      "fi\n"
-    ],
-    [
-      "if test $1 \n",
-      "\n"
-    ],
-    [
-      "if test -e $1 -r $1 -w $1\n",
-      "\tthen\n",
-      "\t\techo Le fichier $1 existe et est accessible en lecture et ecriture\n",
-      "\telse\n",
-      "\t\techo Le fichier $1 n existe pas, ou n est pas accessible en lecture, ou n est pas eccassible en ecriture\n",
-      "fi \n",
-      "\n"
-    ],
-    [
-      "if test -e $1 text -r $1 test -w $1\n",
-      "\tthen\n",
-      "\t\techo Le fichier $1 existe et est accessible en lecture et ecriture\n",
-      "\telse\n",
-      "\t\techo Le fichier $1 n existe pas, ou n est pas accessible en lecture, ou n est pas eccassible en ecriture\n",
-      "fi \n",
-      "\n"
-    ],
-    [
-      "if test -e $1 -a -r $1 -a -w $1\n",
-      "\tthen\n",
-      "\t\techo Le fichier $1 existe et est accessible en lecture et ecriture\n",
-      "\telse\n",
-      "\t\techo Le fichier $1 n existe pas, ou n est pas accessible en lecture, ou n est pas eccassible en ecriture\n",
-      "fi \n",
-      "\n"
-    ],
-    [
-      "if test -e $1 -a -r $1 -a -w $1\n",
-      "\tthen\n",
-      "\t\techo Le fichier $1 existe et est accessible en lecture et ecriture\n",
-      "\telse\n",
-      "\t\techo Le fichier $1 n existe pas, ou n est pas accessible en lecture, ou n est pas accessible en ecriture\n",
-      "fi \n",
-      "\n"
-    ],
-    [
-      "if test -e $1 -a -e $2\n",
-      "\tthen \n",
-      "\t\techo Souhaitez-vous  concatener les fichiers ?\n",
-      "\t\tread $Rep\n",
-      "\t\tcase $Rep in\n",
-      "\t\t\toui ) echo $1 -a $2\n",
-      "\t\t\tnon ) echo Erreur, l un ou les deux fichiers n existent pas\n",
-      "\t\tesac\n",
-      "fi\n"
-    ],
-    [
-      "if test -e $1 -a -e $2\n",
-      "\tthen \n",
-      "\t\techo Souhaitez-vous  concatener les fichiers ?\n",
-      "\t\tread $Rep\n",
-      "\t\tcase $Rep in\n",
-      "\t\t\toui) echo $1 -a $2\n",
-      "\t\t\tnon) echo Erreur, l un ou les deux fichiers n existent pas\n",
-      "\t\tesac\n",
-      "fi\n"
-    ],
-    [
-      "if test -e $1 -a -e $2\n",
-      "\tthen \n",
-      "\t\techo Souhaitez-vous  concatener les fichiers ?\n",
-      "\t\tread $Rep\n",
-      "\t\tcase $Rep in\n",
-      "\t\t\toui) echo $1 -a $2 ;;\n",
-      "\t\t\tnon) echo Erreur, l un ou les deux fichiers n existent pas ;;\n",
-      "\t\tesac\n",
-      "fi\n"
-    ],
-    [
-      "if test -e $1 -a -e $2\n",
-      "\tthen \n",
-      "\t\techo Souhaitez-vous  concatener les fichiers ?\n",
-      "\t\tread Rep\n",
-      "\t\tcase Rep in\n",
-      "\t\t\toui) echo $1 -a $2 ;;\n",
-      "\t\t\tnon) echo Erreur, l un ou les deux fichiers n existent pas ;;\n",
-      "\t\tesac\n",
-      "fi\n"
-    ],
-    [
-      "if test -e $1 -a -e $2\n",
-      "\tthen \n",
-      "\t\techo Souhaitez-vous  concatener les fichiers ?\n",
-      "\t\tread Rep\n",
-      "\t\tcase $Rep in\n",
-      "\t\t\toui) echo $1 -a $2 ;;\n",
-      "\t\t\tnon) echo Erreur, l un ou les deux fichiers n existent pas ;;\n",
-      "\t\tesac\n",
-      "fi\n"
-    ]
+    {
+      "name": "tp6_exo1.sh",
+      "lines": [
+        "\n",
+        "if [ $1 -gt 5 -a $1 -lt 10 ] \n",
+        "\tthen\n",
+        "\t\techo La valeur $1 est comprise entre 5 et 10\n",
+        "\telse\n",
+        "\t\techo La valeur $1 n est pas comprise entre 5 et 10\n",
+        "fi\n"
+      ]
+    },
+    {
+      "name": "tp6_exo2.sh",
+      "lines": [
+        "if test -e $1 -a -r $1 -a -w $1\n",
+        "\tthen\n",
+        "\t\techo Le fichier $1 existe et est accessible en lecture et ecriture\n",
+        "\telse\n",
+        "\t\techo Le fichier $1 n existe pas, ou n est pas accessible en lecture, ou n est pas accessible en ecriture\n",
+        "fi \n",
+        "\n"
+      ]
+    },
+    {
+      "name": "tp6_exo3.sh",
+      "lines": [
+        "if test -e $1 -a -e $2\n",
+        "\tthen \n",
+        "\t\techo Souhaitez-vous  concatener les fichiers ?\n",
+        "\t\tread Rep\n",
+        "\t\tcase $Rep in\n",
+        "\t\t\toui) echo $1 -a $2 ;;\n",
+        "\t\t\tnon) echo Erreur, l un ou les deux fichiers n existent pas ;;\n",
+        "\t\tesac\n",
+        "fi\n"
+      ]
+    }
   ],
   "profile": [
     {

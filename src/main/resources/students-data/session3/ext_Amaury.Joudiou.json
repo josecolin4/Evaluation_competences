@@ -2,60 +2,21 @@
   "name": "ext_Amaury.Joudiou",
   "session": 3,
   "scripts": [
-    [
-      "#!/bin/bash\n",
-      "expr $a / 2\n",
-      "echo $(( a / 2 )\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "expr $a / 2\n",
-      "echo $(( a / 2 )\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "expr `$a / 2`\n",
-      "echo $(( a / 2 )\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "expr $a / 2\n",
-      "echo $(( a / 2 )\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "expr *A / 2\n",
-      "echo $(( a / 2 )\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "expr $1 / 2\n",
-      "echo $(( a / 2 )\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "expr $1 / 2\n",
-      "echo $(( n / 2 )\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "expr $1 / 2\n",
-      "echo $(( $1 / 2 )\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "expr $1 / 2\n",
-      "echo $(( $1 / 2 )\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "expr $1 * 2\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "expr $1 * 2\n"
-    ]
+    {
+      "name": "tp5bis_exo1.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "expr $1 * 2\n",
+        "\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo2.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "expr $1 * 2\n"
+      ]
+    }
   ],
   "profile": [
     {

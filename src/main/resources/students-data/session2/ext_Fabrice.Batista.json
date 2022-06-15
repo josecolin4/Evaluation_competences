@@ -2,155 +2,20 @@
   "name": "ext_Fabrice.Batista",
   "session": 2,
   "scripts": [
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo \"donnez un parametre\"\n",
-      "\n",
-      "read parametre\n",
-      "\n",
-      "expr parametre +1\n",
-      "\n",
-      "echo $parametre\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo \"donnez un parametre\"\n",
-      "\n",
-      "read parametre\n",
-      "\n",
-      "b=parametre\n",
-      "\n",
-      "b= `expr $b +1`\n",
-      "\n",
-      "echo $y\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo \"donnez un parametre\"\n",
-      "\n",
-      "read parametre\n",
-      "\n",
-      "b=parametre\n",
-      "\n",
-      "b= `expr $b +1`\n",
-      "\n",
-      "echo $b\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo \"donnez un parametre\"\n",
-      "\n",
-      "read parametre\n",
-      "\n",
-      "b=parametre\n",
-      "\n",
-      "b= expr $b +1\n",
-      "\n",
-      "echo $b\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo \"donnez un parametre\"\n",
-      "\n",
-      "read parametre\n",
-      "\n",
-      "parametre= expr $parametre +1\n",
-      "\n",
-      "echo $parametre\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo \"donnez un parametre\"\n",
-      "\n",
-      "read parametre\n",
-      "\n",
-      "parametre= expr \"$parametre\" +1\n",
-      "\n",
-      "echo $parametre\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo \"donnez un parametre\"\n",
-      "\n",
-      "read parametre\n",
-      "\n",
-      "$parametre= $parametre+1\n",
-      "\n",
-      "echo $parametre\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo \"donnez un parametre\"\n",
-      "\n",
-      "read parametre\n",
-      "\n",
-      "parametre= $parametre+1\n",
-      "\n",
-      "echo $parametre\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo \"donnez un parametre\"\n",
-      "\n",
-      "read parametre\n",
-      "\n",
-      "$(parametre=parametre+1)\n",
-      "\n",
-      "echo $parametre\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo \"donnez un parametre\"\n",
-      "\n",
-      "read parametre\n",
-      "\n",
-      "$((parametre=parametre+1))\n",
-      "\n",
-      "echo $parametre\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo \"donnez un parametre\"\n",
-      "\n",
-      "read parametre\n",
-      "\n",
-      "$((parametre+1))\n",
-      "\n",
-      "echo $parametre\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo \"donnez un parametre\"\n",
-      "\n",
-      "read parametre\n",
-      "\n",
-      "$((parametre=parametre+1))\n",
-      "\n",
-      "echo $parametre\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo \"donnez un parametre\"\n",
-      "\n",
-      "read parametre\n",
-      "\n",
-      "resultat=$(($parametre+1))\n",
-      "\n",
-      "echo $resultat\n"
-    ]
+    {
+      "name": "tp5_exo10.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "\n",
+        "echo \"donnez un parametre\"\n",
+        "\n",
+        "read parametre\n",
+        "\n",
+        "resultat=$(($parametre+1))\n",
+        "\n",
+        "echo $resultat\n"
+      ]
+    }
   ],
   "profile": [
     {

@@ -2,47 +2,16 @@
   "name": "ext_Robbe.Leushuis",
   "session": 4,
   "scripts": [
-    [
-      "res=expr $*/2\n",
-      "echo res\n"
-    ],
-    [
-      "res='expr $*/2'\n",
-      "echo res\n"
-    ],
-    [
-      "$res=`expr $*/2`\n",
-      "echo $res\n",
-      "\n"
-    ],
-    [
-      "res=`expr $*/2`\n",
-      "echo $res\n",
-      "\n"
-    ],
-    [
-      "res = `expr $* / 2`\n",
-      "echo $res\n",
-      "\n"
-    ],
-    [
-      "res = `expr $0 / 2`\n",
-      "echo $res\n",
-      "\n"
-    ],
-    [
-      "a=$0\n",
-      "resultat = `expr $a / 2`\n",
-      "echo $resultat\n",
-      "\n"
-    ],
-    [
-      "#!bin/bash\n",
-      "a=$0\n",
-      "resultat = `expr $a / 2`\n",
-      "echo $resultat\n",
-      "\n"
-    ]
+    {
+      "name": "tp5bis_exo1.sh",
+      "lines": [
+        "#!bin/bash\n",
+        "a=$0\n",
+        "resultat = `expr $a / 2`\n",
+        "echo $resultat\n",
+        "\n"
+      ]
+    }
   ],
   "profile": [
     {

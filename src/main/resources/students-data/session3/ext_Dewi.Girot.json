@@ -2,438 +2,90 @@
   "name": "ext_Dewi.Girot",
   "session": 3,
   "scripts": [
-    [
-      "echo $(( $1 / 2))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "$division = $(( $1 / 2))\n",
-      "\n",
-      "echo $divison\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "$division = $(($1/2))\n",
-      "\n",
-      "echo $divison\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "n=$1\n",
-      "\n",
-      "echo $((n/2))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "n=$1\n",
-      "\n",
-      "echo $((n*2))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo 'Quel est votre annee de naissance ?'\n",
-      "\n",
-      "read $naissance\n",
-      "\n",
-      "expr `date` - $naissance /365\n",
-      "\n",
-      "read $age\n",
-      "\n",
-      "echo $age\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo 'Quel est votre annee de naissance ?'\n",
-      "\n",
-      "read $naissance\n",
-      "\n",
-      "$annee=$naissance-`date`\n",
-      "\n",
-      "expr $annee/365\n",
-      "\n",
-      "read $age\n",
-      "\n",
-      "echo $age\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo 'Quel est votre annee de naissance ?'\n",
-      "\n",
-      "read $naissance\n",
-      "\n"
-    ],
-    [
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo 'il y a'\n",
-      "\n",
-      "echo `who`\n",
-      "\n",
-      "echo 'personnes connect\u00c3\u00a9s sur'\n",
-      "\n",
-      "echo `hostname`\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo 'il y a'\n",
-      "\n",
-      "echo ls `who`\n",
-      "\n",
-      "echo 'personnes connect\u00c3\u00a9s sur'\n",
-      "\n",
-      "echo `hostname`\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo 'il y a'\n",
-      "\n",
-      "echo ls | `who`\n",
-      "\n",
-      "echo 'personnes connect\u00c3\u00a9s sur'\n",
-      "\n",
-      "echo `hostname`\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo 'il y a'\n",
-      "\n",
-      "echo `who`\n",
-      "\n",
-      "echo 'personnes connect\u00c3\u00a9s sur'\n",
-      "\n",
-      "echo `hostname`\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo 'il y a'\n",
-      "\n",
-      "echo `who -u`\n",
-      "\n",
-      "echo 'personnes connect\u00c3\u00a9s sur'\n",
-      "\n",
-      "echo `hostname`\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo 'il y a'\n",
-      "\n",
-      "echo `who -q`\n",
-      "\n",
-      "echo 'personnes connect\u00c3\u00a9s sur'\n",
-      "\n",
-      "echo `hostname`\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo 'il y a'\n",
-      "\n",
-      "echo $(who -q)\n",
-      "\n",
-      "echo 'personnes connect\u00c3\u00a9s sur'\n",
-      "\n",
-      "echo $(hostname)\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "n=$1\n",
-      "\n",
-      "expr n * 2\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "n=$1\n",
-      "\n",
-      "expr n * 2\n",
-      "\n",
-      "read $resultat\n",
-      "\n",
-      "echo $resultat\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "n=$1\n",
-      "\n",
-      "$div=2\n",
-      "\n",
-      "expr $n * $div\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "n=$1\n",
-      "\n",
-      "div=2\n",
-      "\n",
-      "expr $n * $div\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "n=$1\n",
-      "\n",
-      "div= '2'\n",
-      "\n",
-      "expr $n * $div\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "n=$1\n",
-      "\n",
-      "div= '2'\n",
-      "\n",
-      "expr $n + $div\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "n=$1\n",
-      "\n",
-      "div=2\n",
-      "\n",
-      "expr $n + $div\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "n=$1\n",
-      "\n",
-      "div=2\n",
-      "\n",
-      "expr $n * $div\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "n=$1\n",
-      "\n",
-      "div=2\n",
-      "\n",
-      "expr $n /* $div\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "n=$1\n",
-      "\n",
-      "div=2\n",
-      "\n",
-      "expr $n * $div\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "n=$1\n",
-      "\n",
-      "div=2\n",
-      "\n",
-      "expr $n \\* $div\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "n=$1\n",
-      "\n",
-      "div=2\n",
-      "\n",
-      "expr $n \\/ $div\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "n=$1\n",
-      "\n",
-      "div=2\n",
-      "\n",
-      "expr $n \\/ $div\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo 'Quel est votre annee de naissance ?'\n",
-      "\n",
-      "read $naissance\n",
-      "\n",
-      "annee= $(`date` +%Y) - $naissance\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo 'Quel est votre annee de naissance ?'\n",
-      "\n",
-      "read $naissance\n",
-      "\n",
-      "annee= $(`date` +%Y) - $naissance\n",
-      "\n",
-      "echo $annee\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo 'Quel est votre annee de naissance ?'\n",
-      "\n",
-      "read $naissance\n",
-      "\n",
-      "annee= $(`date` +%Y) \\- $naissance\n",
-      "\n",
-      "echo $annee\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo 'Quel est votre annee de naissance ?'\n",
-      "read $naissance\n",
-      "\n",
-      "Date=$(date +'%Y')\n",
-      "\n",
-      "echo 'Vous etes n\u00c3\u00a9(e) en $naissance, vous avez donc $(( $Date - $naissance )) ans.'\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo 'Quel est votre annee de naissance ?'\n",
-      "read $naissance\n",
-      "\n",
-      "Date=$(date +'%Y')\n",
-      "\n",
-      "echo 'Vous etes n\u00c3\u00a9(e) en '$naissance', vous avez donc '$(( $Date - $naissance ))' ans.'\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo 'Quel est votre annee de naissance ?'\n",
-      "read $naissance\n",
-      "\n",
-      "Date=$(date +'%Y')\n",
-      "\n",
-      "echo Vous etes n\u00c3\u00a9\\(e\\) en $naissance, vous avez donc $(( $Date - $naissance )) ans.\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo 'Quel est votre annee de naissance ?'\n",
-      "read naissance\n",
-      "\n",
-      "Date=$(date +'%Y')\n",
-      "\n",
-      "echo Vous etes n\u00c3\u00a9\\(e\\) en $naissance, vous avez donc $(( $Date - $naissance )) ans.\n"
-    ],
-    [
-      "#! /bin/bash\n",
-      "\n",
-      "\n"
-    ],
-    [
-      "#! /bin/bash\n",
-      "\n",
-      "echo La taille du fichier est\n",
-      "\n",
-      "echo $((set($1)))\n"
-    ],
-    [
-      "#! /bin/bash\n",
-      "\n",
-      "echo La taille de ce fichier est\n",
-      "\n",
-      "echo \n"
-    ],
-    [
-      "#! /bin/bash\n",
-      "\n",
-      "echo ls-l\n",
-      "\n",
-      "echo La taille de ce fichier est\n",
-      "\n"
-    ],
-    [
-      "#! /bin/bash\n",
-      "\n",
-      "echo La taille de ce fichier est\n",
-      "\n",
-      "echo $(ls -l $1)\n"
-    ],
-    [
-      "#! /bin/bash\n",
-      "\n",
-      "echo La taille de ce fichier est\n",
-      "\n",
-      "echo $set $( ls -l .bashrc)\n"
-    ],
-    [
-      "#! /bin/bash\n",
-      "\n",
-      "echo La taille de ce fichier est\n",
-      "\n",
-      "echo $set $( ls -l .F1)\n"
-    ],
-    [
-      "#! /bin/bash\n",
-      "\n",
-      "echo La taille de ce fichier est\n",
-      "\n",
-      "echo $set $( ls -l F1)\n"
-    ],
-    [
-      "#! /bin/bash\n",
-      "\n",
-      "echo La taille de ce fichier est\n",
-      "\n",
-      "echo $ set $( ls -l F1)\n"
-    ],
-    [
-      "#! /bin/bash\n",
-      "\n",
-      "echo La taille de ce fichier est\n",
-      "\n",
-      "echo $set $(ls -l /F1)\n"
-    ],
-    [
-      "#! /bin/bash\n",
-      "\n",
-      "echo La taille de ce fichier est\n",
-      "\n",
-      "set -- $(ls -l tp5bis_exo3.sh)\n",
-      "\n",
-      "echo taille: $5\n"
-    ],
-    [
-      "#! /bin/bash\n",
-      "\n",
-      "echo La taille de ce fichier est\n",
-      "\n",
-      "set -- $(ls -l tp5bis_exo3.sh)\n",
-      "\n",
-      "echo taille: $4\n"
-    ],
-    [
-      "#! /bin/bash\n",
-      "\n",
-      "echo La taille de ce fichier est\n",
-      "\n",
-      "set -- $(ls -l tp5bis_exo3.sh)\n",
-      "\n",
-      "echo taille: $5\n"
-    ]
+    {
+      "name": "tp5bis_exo1.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "\n",
+        "n=$1\n",
+        "\n",
+        "div=2\n",
+        "\n",
+        "expr $n \\/ $div\n",
+        "\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo2.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "\n",
+        "n=$1\n",
+        "\n",
+        "div=2\n",
+        "\n",
+        "expr $n \\* $div\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo3.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "\n",
+        "echo 'Quel est votre annee de naissance ?'\n",
+        "read naissance\n",
+        "\n",
+        "Date=$(date +'%Y')\n",
+        "\n",
+        "echo Vous etes n\u00c3\u00a9\\(e\\) en $naissance, vous avez donc $(( $Date - $naissance )) ans.\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo4.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "\n",
+        "echo 'il y a'\n",
+        "\n",
+        "echo $(who -q)\n",
+        "\n",
+        "echo 'personnes connect\u00c3\u00a9s sur'\n",
+        "\n",
+        "echo $(hostname)\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo6.sh",
+      "lines": [
+        "#! /bin/bash\n",
+        "\n",
+        "echo La taille du fichier est\n",
+        "\n",
+        "echo $((set($1)))\n"
+      ]
+    },
+    {
+      "name": "tp6bis_exo5.sh",
+      "lines": [
+        "#! /bin/bash\n",
+        "\n",
+        "echo La taille de ce fichier est\n",
+        "\n",
+        "echo \n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo5.sh",
+      "lines": [
+        "#! /bin/bash\n",
+        "\n",
+        "echo La taille de ce fichier est\n",
+        "\n",
+        "set -- $(ls -l tp5bis_exo3.sh)\n",
+        "\n",
+        "echo taille: $5\n"
+      ]
+    }
   ],
   "profile": [
     {

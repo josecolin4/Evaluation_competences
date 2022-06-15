@@ -2,188 +2,46 @@
   "name": "ext_Louis.Leleu",
   "session": 3,
   "scripts": [
-    [
-      "expr ($1) / 2\n",
-      "n=$1\n",
-      "echo $((n/2))\n"
-    ],
-    [
-      "n=$1\n",
-      "expr n / 2\n",
-      "echo $((n/2))\n"
-    ],
-    [
-      "n=$1\n",
-      "expr $1/2\n",
-      "echo $((n/2))\n"
-    ],
-    [
-      "n=$1\n",
-      "expr $1 / 2\n",
-      "echo $((n/2))\n"
-    ],
-    [
-      "expr $1 * 2\n",
-      "n=$1\n",
-      "echo $((n*2))\n"
-    ],
-    [
-      "expr $1 *2\n",
-      "n=$1\n",
-      "echo $((n*2))\n"
-    ],
-    [
-      "expr $1 x 2\n",
-      "n=$1\n",
-      "echo $((n*2))\n"
-    ],
-    [
-      "expr $1 x 2\n",
-      "n=$1\n",
-      "echo $((n*2))\n"
-    ],
-    [
-      "n=$1\n",
-      "expr $n * 2\n",
-      "echo $((n*2))\n"
-    ],
-    [
-      "n=$1\n",
-      "expr $1 \\* 2\n",
-      "echo $((n*2))\n"
-    ],
-    [
-      "echo Quel est votre date de naissance ?\n",
-      "read naissance\n",
-      "expr $date - $naissance\n",
-      "echo $((date-naissance))\n"
-    ],
-    [
-      "echo Quel est votre ann\u00c3\u00a9e de naissance ?\n",
-      "read naissance\n",
-      "expr $(date + \"%y\") - $naissance\n",
-      "echo $(($(date+\"%y\")-naissance))\n",
-      "echo Vous etes ne en $naissance donc vous avez \n"
-    ],
-    [
-      "echo Quel est votre ann\u00c3\u00a9e de naissance ?\n",
-      "read naissance\n",
-      "expr $(date + \"%y\") - $naissance\n",
-      "echo $(($(date + \"%y\")-naissance))\n",
-      "echo Vous etes ne en $naissance donc vous avez \n"
-    ],
-    [
-      "echo Quel est votre ann\u00c3\u00a9e de naissance ?\n",
-      "read naissance\n",
-      "expr $(date + \"%Y\") - $naissance\n",
-      "echo $(($(date + \"%Y\")-naissance))\n",
-      "echo Vous etes ne en $naissance donc vous avez \n"
-    ],
-    [
-      "echo Quel est votre ann\u00c3\u00a9e de naissance ?\n",
-      "read naissance\n",
-      "expr $(date + %Y) - $naissance\n",
-      "echo $(($(date + %Y)-naissance))\n",
-      "echo Vous etes ne en $naissance donc vous avez \n"
-    ],
-    [
-      "echo Quel est votre ann\u00c3\u00a9e de naissance ?\n",
-      "read naissance\n",
-      "annee=$(date + \"%Y\")\n",
-      "expr $annee - $naissance\n",
-      "echo $((annee-naissance))\n",
-      "echo Vous etes ne en $naissance donc vous avez \n"
-    ],
-    [
-      "echo Quel est votre ann\u00c3\u00a9e de naissance ?\n",
-      "read naissance\n",
-      "annee=$(date + \"%Y\")\n",
-      "echo $annee\n",
-      "expr $annee - $naissance\n",
-      "echo $((annee-naissance))\n",
-      "echo Vous etes ne en $naissance donc vous avez \n"
-    ],
-    [
-      "echo Quel est votre ann\u00c3\u00a9e de naissance ?\n",
-      "read naissance\n",
-      "annee=$(date -u + \"%Y\")\n",
-      "echo $annee\n",
-      "expr $annee - $naissance\n",
-      "echo $((annee-naissance))\n",
-      "echo Vous etes ne en $naissance donc vous avez \n"
-    ],
-    [
-      "echo Quel est votre ann\u00c3\u00a9e de naissance ?\n",
-      "read naissance\n",
-      "annee=$(date -u +\"%Y\")\n",
-      "echo $annee\n",
-      "expr $annee - $naissance\n",
-      "echo $((annee-naissance))\n",
-      "echo Vous etes ne en $naissance donc vous avez \n"
-    ],
-    [
-      "echo Quel est votre ann\u00c3\u00a9e de naissance ?\n",
-      "read naissance\n",
-      "annee=$(date -u +\"%Y\")\n",
-      "expr $annee - $naissance\n",
-      "echo $((annee-naissance))\n"
-    ],
-    [
-      "echo il y a `who` utilisateurs sur `hostname`\n"
-    ],
-    [
-      "echo il y a `who -u` utilisateurs sur `hostname`\n"
-    ],
-    [
-      "echo il y a `who -q` utilisateurs sur `hostname`\n"
-    ],
-    [
-      "set -- $(ls -l ./)\n",
-      "echo $1\n"
-    ],
-    [
-      "set -- $(ls -l)\n",
-      "echo $1\n"
-    ],
-    [
-      "set -- $(ls -l)\n",
-      "echo $6\n"
-    ],
-    [
-      "set -- $(ls -l file)\n",
-      "echo $6\n"
-    ],
-    [
-      "set -- $(ls -l)\n",
-      "echo $1\n"
-    ],
-    [
-      "set --r $(ls -l)\n",
-      "echo $1\n"
-    ],
-    [
-      "set -- $(ls -l)\n",
-      "echo $1\n"
-    ],
-    [
-      "set -- $(ls -l ~)\n",
-      "echo $1\n"
-    ],
-    [
-      "set -- $(ls -l ~)\n",
-      "echo $6\n",
-      "\n"
-    ],
-    [
-      "set -- $(ls -l ~)\n",
-      "echo $8\n",
-      "\n"
-    ],
-    [
-      "set -- $(ls -l F1)\n",
-      "echo $5\n",
-      "\n"
-    ]
+    {
+      "name": "tp5bis_exo1.sh",
+      "lines": [
+        "n=$1\n",
+        "expr $1 / 2\n",
+        "echo $((n/2))\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo2.sh",
+      "lines": [
+        "n=$1\n",
+        "expr $1 \\* 2\n",
+        "echo $((n*2))\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo3.sh",
+      "lines": [
+        "echo Quel est votre ann\u00c3\u00a9e de naissance ?\n",
+        "read naissance\n",
+        "annee=$(date -u +\"%Y\")\n",
+        "expr $annee - $naissance\n",
+        "echo $((annee-naissance))\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo4.sh",
+      "lines": [
+        "echo il y a `who -q` utilisateurs sur `hostname`\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo5.sh",
+      "lines": [
+        "set -- $(ls -l F1)\n",
+        "echo $5\n",
+        "\n"
+      ]
+    }
   ],
   "profile": [
     {

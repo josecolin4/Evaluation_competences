@@ -2,18 +2,13 @@
   "name": "ext_Maxime.Miquel",
   "session": 3,
   "scripts": [
-    [
-      "#!/bin/bash\n",
-      "PATH=~/bin:$PATH\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "PATH=/root:$PATH\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo 'PATH=/root:$PATH' >> ~/.bashrc && source ~/.bashrc\n"
-    ]
+    {
+      "name": "tp5_exo9.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo 'PATH=/root:$PATH' >> ~/.bashrc && source ~/.bashrc\n"
+      ]
+    }
   ],
   "profile": [
     {

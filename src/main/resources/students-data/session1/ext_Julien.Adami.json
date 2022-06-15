@@ -2,367 +2,97 @@
   "name": "ext_Julien.Adami",
   "session": 1,
   "scripts": [
-    [
-      "#!/bin/bash\n",
-      "echo cours\n",
-      "cours=unix\n",
-      "echo $cours\n",
-      "echo je suis au cours $cours\n"
-    ],
-    [
-      "#/bin/bash\n",
-      "Login=Julien\n",
-      "echo Mon nom de login :\n",
-      "echo  $Login\n",
-      "Shell=Root\n",
-      "echo Mon shell est :\n",
-      "echo $Shell\n",
-      "Var1=Contenuvar1\n",
-      "Var2=Contenuvar2\n",
-      "Var3=Contenuvar3\n",
-      "Var4=Contenuvar4\n",
-      "echo Les variables de mon shell sont :\n",
-      "echo $Var1  $Var2\n",
-      "echo Celles d'environnement sont :\n",
-      "echo $Var3 $Var4\n"
-    ],
-    [
-      "#/bin/bash\n",
-      "Login=Julien\n",
-      "echo Mon nom de login :\n",
-      "echo  $Login\n",
-      "Shell=Root\n",
-      "echo Mon shell est :\n",
-      "echo $Shell\n",
-      "Var1=Contenuvar1\n",
-      "Var2=Contenuvar2\n",
-      "Var3=Contenuvar3\n",
-      "Var4=Contenuvar4\n",
-      "echo Les variables de mon shell sont :\n",
-      "echo $Var1,  $Var2\n",
-      "echo Celles d'environnement sont :\n",
-      "echo $Var3, $Var4\n"
-    ],
-    [
-      "#/bin/bash\n",
-      "Login=Julien\n",
-      "echo Mon nom de login :\n",
-      "echo  $Login\n",
-      "Shell=Root\n",
-      "echo Mon shell est :\n",
-      "echo $Shell\n",
-      "Var1=Contenuvar1\n",
-      "Var2=Contenuvar2\n",
-      "Var3=Contenuvar3\n",
-      "Var4=Contenuvar4\n",
-      "echo Les variables de mon shell sont :\n",
-      "echo $Var1\n",
-      "echo Celles d'environnement sont :\n",
-      "echo $Var3\n"
-    ],
-    [
-      "#/bin/bash\n",
-      "echo Login\n",
-      "Login=Julien\n",
-      "echo Mon nom de login :\n",
-      "echo  $Login\n",
-      "Shell=Root\n",
-      "echo Mon shell est :\n",
-      "echo $Shell\n",
-      "Var1=Contenuvar1\n",
-      "Var2=Contenuvar2\n",
-      "Var3=Contenuvar3\n",
-      "Var4=Contenuvar4\n",
-      "echo Les variables de mon shell sont :\n",
-      "echo $Var1\n",
-      "echo Celles d'environnement sont :\n",
-      "echo $Var3\n"
-    ],
-    [
-      "#/bin/bash\n",
-      "echo Login\n",
-      "Login=Julien\n",
-      "echo Mon nom de login :\n",
-      "echo  $Login\n",
-      "Shell=Root\n",
-      "echo Mon shell est :\n",
-      "echo $Shell\n",
-      "Var1=Contenuvar1\n",
-      "Var2=Contenuvar2\n",
-      "Var3=Contenuvar3\n",
-      "Var4=Contenuvar4\n",
-      "echo Les variables de mon shell sont :\n",
-      "echo $Var1\n",
-      "echo Celles d'environnement sont :\n",
-      "echo $Var3\n"
-    ],
-    [
-      "#/bin/bash\n",
-      "echo Mon login est :$login\n",
-      "login=Oui\n"
-    ],
-    [
-      "#/bin/bash\n",
-      "echo Mon login est :$login\n",
-      "echo login\n",
-      "login=Oui\n"
-    ],
-    [
-      "#/bin/bash\n",
-      "echo Mon login est :$login\n",
-      "login=Oui\n",
-      "echo $login\n"
-    ],
-    [
-      "#/bin/bash\n",
-      "echo Mon login est :\n",
-      "login=Oui\n",
-      "echo $login\n",
-      "shell=shell\n",
-      "echo Mon shell est :$shell\n"
-    ],
-    [
-      "#/bin/bash\n",
-      "echo Mon login est :\n",
-      "login=Oui\n",
-      "echo $login\n",
-      "shell=shell\n",
-      "echo Mon shell est :$shell\n",
-      "va1=va1\n",
-      "va2=va2\n",
-      "va3=va3\n",
-      "va4=va4\n",
-      "echo variables shell: $va1 $va2\n"
-    ],
-    [
-      "#/bin/bash\n",
-      "echo Mon login est :\n",
-      "login=Oui\n",
-      "echo $login\n",
-      "shell=shell\n",
-      "echo Mon shell est :$shell\n",
-      "va1=varpds\n",
-      "va2=vafdxcs\n",
-      "va3=vafed\n",
-      "va4=vafk\n",
-      "echo variables shell: $va1 $va2\n",
-      "echo variables d'environnement: $va3 $va4\n"
-    ],
-    [
-      "#/bin/bash\n",
-      "echo Mon login est :\n",
-      "login=Oui\n",
-      "echo $login\n",
-      "shell=shell\n",
-      "echo Mon shell est :$shell\n",
-      "va1=va1\n",
-      "va2=va2\n",
-      "va3=va3\n",
-      "va4=va4\n",
-      "echo variables shell: $va1 $va2\n",
-      "echo variables d'environnement: $va3 $va4\n"
-    ],
-    [
-      "#/bin/bash\n",
-      "echo Mon login est :\n",
-      "login=Oui\n",
-      "echo $login\n",
-      "shell=shell\n",
-      "echo Mon shell est :$shell\n",
-      "va1=va1\n",
-      "va2=va2\n",
-      "echo variables shell: $va1 $va2\n",
-      "va3=va3\n",
-      "va4=va4\n",
-      "echo variables d'environnement: $va3 $va4\n"
-    ],
-    [
-      "#/bin/bash\n",
-      "echo Mon login est :\n",
-      "login=Oui\n",
-      "echo $login\n",
-      "shell=shell\n",
-      "echo Mon shell est :$shell\n",
-      "va1=va1\n",
-      "va2=va2\n",
-      "echo variables shell: $va1 $va2\n"
-    ],
-    [
-      "#/bin/bash\n",
-      "echo Mon login est :\n",
-      "login=Oui\n",
-      "echo $login\n",
-      "shell=shell\n",
-      "echo Mon shell est :$shell\n",
-      "va1=va1\n",
-      "va2=va2\n",
-      "echo variables shell: $va1 $va2\n",
-      "echo variable environnement :\n"
-    ],
-    [
-      "#/bin/bash\n",
-      "echo Mon login est :\n",
-      "login=Oui\n",
-      "echo $login\n",
-      "shell=shell\n",
-      "echo Mon shell est :$shell\n",
-      "va1=va1\n",
-      "va2=va2\n",
-      "echo variables shell: $va1 $va2\n",
-      "echo variable environnement :\n",
-      "popo=popopo\n",
-      "okckoul=ok\n",
-      "echo $popo\n",
-      "echo $okckoul\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Cher utilisateur quel est ton pr\u00c3\u00a9nom |?\n",
-      "read prenom\n",
-      "echo Ravi de te connaitre, $prenom\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Cher utilisateur quel est ton pr\u00c3\u00a9nom /?\n",
-      "read prenom\n",
-      "echo Ravi de te connaitre, $prenom\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Cher utilisateur quel est ton pr\u00c3\u00a9nom /?\n",
-      "read prenom\n",
-      "echo Ravi de te connaitre, $prenom\n",
-      "echo Quel est ton nom et ton age /?\n",
-      "read nom age\n",
-      "echo Tu es $prenom $nom et tu as $age ans, n'est-ce pas /?\n",
-      "read reponse\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Cher utilisateur quel est ton pr\u00c3\u00a9nom /?\n",
-      "read prenom\n",
-      "echo Ravi de te connaitre, $prenom\n",
-      "echo Quel est ton nom et ton age /?\n",
-      "read nom age\n",
-      "echo Tu es $prenom $nom et tu as $age ans, nest-ce pas /?\n",
-      "read reponse\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Je suis le script Shell $0\n",
-      "echo Mes arguments sont $*\n",
-      "echo Le premier argument est $1\n",
-      "echo Le deuxi\u00c3\u00a8me argument est $2\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Je suis le script Shell $0\n",
-      "echo Mes arguments sont $*\n",
-      "echo Le premier argument est $1\n",
-      "echo Le deuxi\u00c3\u00a8me argument est $2\n",
-      "--$0 est le nom du script ex\u00c3\u00a9cut\u00c3\u00a9\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Je suis le script Shell $0\n",
-      "echo Mes arguments sont $*\n",
-      "echo Le premier argument est $1\n",
-      "echo Le deuxi\u00c3\u00a8me argument est $2\n",
-      "\n"
-    ],
-    [
-      "n=12\n",
-      "echo le script $0 possede\n"
-    ],
-    [
-      "n=12\n",
-      "para=oui\n",
-      "echo le script $0 possede $1 parametres, que voici : $2\n"
-    ],
-    [
-      "n=12\n",
-      "para=oui\n",
-      "para1=dspxw\n",
-      "echo le script $0 possede $n  parametres, que voici : $para $para1\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Mon login est :\n",
-      "login=Oui\n",
-      "echo $login\n",
-      "shell=shell\n",
-      "echo Mon shell est :$shell\n",
-      "va1=va1\n",
-      "va2=va2\n",
-      "echo variables shell: $va1 $va2\n",
-      "echo variable environnement :\n",
-      "popo=popopo\n",
-      "okckoul=ok\n",
-      "echo $popo\n",
-      "echo $okckoul\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "n=12\n",
-      "para=oui\n",
-      "para1=dspxw\n",
-      "echo le script $0 possede $n  parametres, que voici : $para $para1\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Les textes sont $1 $2 $3\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Les textes sont cat $1 $2 $3\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Les textes sont cat $F1 \n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Les textes sont cat  $F\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Les textes sont cat F.txt\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Les textes sont cat 'F'\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Les textes sont 'F'\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Nous sommes le `date`\n",
-      "echo Nous sommes le Mon 16:20:46 CET 2020\n",
-      "echo Ceci est\n",
-      "echo une tr\u00c3\u00a8s\n",
-      "echo longue phrase...\n",
-      "echo Voici uen \u00c3\u00a9toise:*\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "read var\n",
-      "echo $var+1\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "read var\n",
-      "var=var+1\n",
-      "echo $var\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "read var\n",
-      "vad=1\n",
-      "echo $var + $vad\n"
-    ]
+    {
+      "name": "tp5_exo1.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo cours\n",
+        "cours=unix\n",
+        "echo $cours\n",
+        "echo je suis au cours $cours\n"
+      ]
+    },
+    {
+      "name": "tp5_exo2.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo Mon login est :\n",
+        "login=Oui\n",
+        "echo $login\n",
+        "shell=shell\n",
+        "echo Mon shell est :$shell\n",
+        "va1=va1\n",
+        "va2=va2\n",
+        "echo variables shell: $va1 $va2\n",
+        "echo variable environnement :\n",
+        "popo=popopo\n",
+        "okckoul=ok\n",
+        "echo $popo\n",
+        "echo $okckoul\n"
+      ]
+    },
+    {
+      "name": "tp5_exo3.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo Cher utilisateur quel est ton pr\u00c3\u00a9nom /?\n",
+        "read prenom\n",
+        "echo Ravi de te connaitre, $prenom\n",
+        "echo Quel est ton nom et ton age /?\n",
+        "read nom age\n",
+        "echo Tu es $prenom $nom et tu as $age ans, nest-ce pas /?\n",
+        "read reponse\n"
+      ]
+    },
+    {
+      "name": "tp5_exo4.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo Je suis le script Shell $0\n",
+        "echo Mes arguments sont $*\n",
+        "echo Le premier argument est $1\n",
+        "echo Le deuxi\u00c3\u00a8me argument est $2\n",
+        "\n"
+      ]
+    },
+    {
+      "name": "tp5_exo5.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "n=12\n",
+        "para=oui\n",
+        "para1=dspxw\n",
+        "echo le script $0 possede $n  parametres, que voici : $para $para1\n"
+      ]
+    },
+    {
+      "name": "tp5_exo6.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo Les textes sont 'F'\n"
+      ]
+    },
+    {
+      "name": "tp5_exo7.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo Nous sommes le `date`\n",
+        "echo Nous sommes le Mon 16:20:46 CET 2020\n",
+        "echo Ceci est\n",
+        "echo une tr\u00c3\u00a8s\n",
+        "echo longue phrase...\n",
+        "echo Voici uen \u00c3\u00a9toise:*\n"
+      ]
+    },
+    {
+      "name": "tp5_exo8.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "read var\n",
+        "vad=1\n",
+        "echo $var + $vad\n"
+      ]
+    }
   ],
   "profile": [
     {

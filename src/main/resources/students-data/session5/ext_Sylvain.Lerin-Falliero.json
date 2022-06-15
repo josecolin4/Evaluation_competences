@@ -2,109 +2,36 @@
   "name": "ext_Sylvain.Lerin-Falliero",
   "session": 5,
   "scripts": [
-    [
-      "compteur = 1\n",
-      "for i in $*\n",
-      "do\n",
-      "echo Argument $compteur = $i\n",
-      "done\n",
-      "Il y a $compteur arguments.\n"
-    ],
-    [
-      "compteur=1\n",
-      "for i in $*\n",
-      "do\n",
-      "echo Argument $compteur = $i\n",
-      "compteur=$compteur+1\n",
-      "done\n",
-      "echo Il y a $compteur arguments.\n"
-    ],
-    [
-      "compteur=1\n",
-      "for i in $*\n",
-      "do\n",
-      "echo Argument $compteur = $i\n",
-      "compteur=expr $($compteur+1)\n",
-      "done\n",
-      "echo Il y a $compteur arguments.\n"
-    ],
-    [
-      "compteur=1\n",
-      "for i in $*\n",
-      "do\n",
-      "echo Argument $compteur = $i\n",
-      "compteur= $(expr $compteur+1)\n",
-      "done\n",
-      "echo Il y a $compteur arguments.\n"
-    ],
-    [
-      "compteur=1\n",
-      "for i in $*\n",
-      "do\n",
-      "echo Argument $compteur = $i\n",
-      "compteur= `expr $compteur+1`\n",
-      "done\n",
-      "echo Il y a $compteur arguments.\n"
-    ],
-    [
-      "compteur=0\n",
-      "for i in $*\n",
-      "do\n",
-      "echo Argument $compteur = $i\n",
-      "compteur= expr $compteur+1\n",
-      "done\n",
-      "echo Il y a $compteur arguments.\n",
-      "echo Il y a $# arguments.\n"
-    ],
-    [
-      "compteur=0\n",
-      "for i in $*\n",
-      "do\n",
-      "echo Argument $compteur = $i\n",
-      "compteur=expr $compteur+1\n",
-      "done\n",
-      "echo Il y a $# arguments.\n"
-    ],
-    [
-      "compteur=0\n",
-      "for i in $*\n",
-      "do\n",
-      "compteur=`expr $compteur + 1`\n",
-      "echo Argument $compteur = $i\n",
-      "done\n",
-      "echo Il y a $# arguments.\n"
-    ],
-    [
-      "factorielle=1\n",
-      "for i in seq $1\n",
-      "do\n",
-      "factorielle=`expr $factorielle * $i`\n",
-      "done\n",
-      "echo $factorielle\n"
-    ],
-    [
-      "factorielle=1\n",
-      "for i in seq $1\n",
-      "do\n",
-      "factorielle=`expr $factorielle \\* $i`\n",
-      "done\n",
-      "echo $factorielle\n"
-    ],
-    [
-      "factorielle=1\n",
-      "for i in `seq $1`\n",
-      "do\n",
-      "factorielle=`expr $factorielle \\* $i`\n",
-      "done\n",
-      "echo $factorielle\n"
-    ],
-    [
-      "echo Liste des commandes disponibles :\n"
-    ],
-    [
-      "echo Liste des commandes disponibles :\n",
-      "\n"
-    ]
+    {
+      "name": "tp6_exo5.sh",
+      "lines": [
+        "compteur=0\n",
+        "for i in $*\n",
+        "do\n",
+        "compteur=`expr $compteur + 1`\n",
+        "echo Argument $compteur = $i\n",
+        "done\n",
+        "echo Il y a $# arguments.\n"
+      ]
+    },
+    {
+      "name": "tp6_exo6.sh",
+      "lines": [
+        "factorielle=1\n",
+        "for i in `seq $1`\n",
+        "do\n",
+        "factorielle=`expr $factorielle \\* $i`\n",
+        "done\n",
+        "echo $factorielle\n"
+      ]
+    },
+    {
+      "name": "tp6_exo7.sh",
+      "lines": [
+        "echo Liste des commandes disponibles :\n",
+        "\n"
+      ]
+    }
   ],
   "commands": [
     {

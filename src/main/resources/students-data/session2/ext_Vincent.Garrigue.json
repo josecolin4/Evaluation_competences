@@ -2,11 +2,14 @@
   "name": "ext_Vincent.Garrigue",
   "session": 2,
   "scripts": [
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "expr \n"
-    ]
+    {
+      "name": "tp5bis_exo1.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "\n",
+        "expr \n"
+      ]
+    }
   ],
   "profile": [
     {

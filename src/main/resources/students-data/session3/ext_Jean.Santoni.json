@@ -2,161 +2,45 @@
   "name": "ext_Jean.Santoni",
   "session": 3,
   "scripts": [
-    [
-      "expr $a + 24"
-    ],
-    [
-      "expr $a + 24\n"
-    ],
-    [],
-    [
-      "expr $a + 2\n"
-    ],
-    [
-      "expr $a / 2\n"
-    ],
-    [
-      "set a\n"
-    ],
-    [
-      "set a\n",
-      "expr $a / 2\n"
-    ],
-    [
-      "set a = 6\n",
-      "expr $a / 2\n"
-    ],
-    [
-      "set a = 6\n",
-      "expr a / 2\n"
-    ],
-    [
-      "set a =6\n",
-      "expr a / 2\n"
-    ],
-    [
-      "set a =6\n",
-      "expr a / 2\n"
-    ],
-    [
-      "expr $1 / 2\n"
-    ],
-    [
-      "expr $1 / 2\n",
-      "\n",
-      "n=$1\n",
-      "echo $(n / 2)\n"
-    ],
-    [
-      "expr $1 / 2\n",
-      "\n",
-      "n=$1\n",
-      "echo $((n / 2))\n"
-    ],
-    [
-      "expr $1 / 2\n",
-      "\n",
-      "n=$1\n",
-      "echo $((n / 2))\n"
-    ],
-    [
-      "expr $1 * 2\n",
-      "\n",
-      "n=$1\n",
-      "echo $((n * 2))\n"
-    ],
-    [
-      "expr $1 / 2\n",
-      "\n",
-      "n=$1\n",
-      "echo $((n / 2))\n"
-    ],
-    [
-      "expr  2020 - $1\n",
-      "\n",
-      "n=$1\n",
-      "echo $((2020 - $1))\n"
-    ],
-    [
-      "expr  date(//) - $1\n",
-      "\n",
-      "n=$1\n",
-      "echo $((2020 - $1))\n"
-    ],
-    [
-      "expr  date -I years - $1\n",
-      "\n",
-      "n=$1\n",
-      "echo $((2020 - $1))\n"
-    ],
-    [
-      "expr (date +' %Y') - $1\n",
-      "\n",
-      "n=$1\n",
-      "echo $((2020 - $1))\n"
-    ],
-    [
-      "expr (date + '%Y') - $1\n",
-      "\n",
-      "n=$1\n",
-      "echo $((2020 - $1))\n"
-    ],
-    [
-      "mydte = $(date + '%Y') \n",
-      "\n",
-      "expr $mydte - $1\n",
-      "\n",
-      "n=$1\n",
-      "echo $((2020 - $1))\n"
-    ],
-    [
-      "mydte = $(date + '%Y') \n",
-      "\n",
-      "\n",
-      "\n",
-      "n=$1\n",
-      "echo $(($mydte -n))\n"
-    ],
-    [
-      "mydte = $(date +'%Y') \n",
-      "\n",
-      "\n",
-      "\n",
-      "n=$1\n",
-      "echo $(($mydte - $1 ))\n"
-    ],
-    [
-      "#!/bin/bash\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo 'il y a '\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo 'il y a '\n",
-      "echo $(who-q)\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo 'il y a '\n",
-      "echo $(who-q)\n",
-      "echo 'personnes connect\u00c3\u00a9 sur'\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo 'il y a '\n",
-      "echo $(who-q)\n",
-      "echo 'personnes connect\u00c3\u00a9 sur'\n",
-      "echo $(hostname)\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo 'il y a '\n",
-      "echo $(who -q)\n",
-      "echo 'personnes connect\u00c3\u00a9 sur'\n",
-      "echo $(hostname)\n"
-    ]
+    {
+      "name": "tp5bis_exo1.sh",
+      "lines": [
+        "expr $1 / 2\n",
+        "\n",
+        "n=$1\n",
+        "echo $((n / 2))\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo2.sh",
+      "lines": [
+        "expr $1 * 2\n",
+        "\n",
+        "n=$1\n",
+        "echo $((n * 2))\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo3.sh",
+      "lines": [
+        "mydte = $(date +'%Y') \n",
+        "\n",
+        "\n",
+        "\n",
+        "n=$1\n",
+        "echo $(($mydte - $1 ))\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo4.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo 'il y a '\n",
+        "echo $(who -q)\n",
+        "echo 'personnes connect\u00c3\u00a9 sur'\n",
+        "echo $(hostname)\n"
+      ]
+    }
   ],
   "profile": [
     {

@@ -2,154 +2,50 @@
   "name": "ext_Shijie.Tian",
   "session": 3,
   "scripts": [
-    [
-      "if $1 -gt 5 and $1 -lt 10\n",
-      "then\n",
-      "echo La valeur $1 est comprise entre 5 et 10\n",
-      "else\n",
-      "echo la valeur $1 nest pas comprise entre 5 et 10\n"
-    ],
-    [
-      "if $1 -gt 5 and $1 -lt 10\n",
-      "then\n",
-      "echo La valeur $1 est comprise entre 5 et 10\n",
-      "else\n",
-      "echo la valeur $1 nest pas comprise entre 5 et 10\n",
-      "fi\n"
-    ],
-    [
-      "if test $1 -gt 5 and test $1 -lt 10\n",
-      "then\n",
-      "echo La valeur $1 est comprise entre 5 et 10\n",
-      "else\n",
-      "echo la valeur $1 nest pas comprise entre 5 et 10\n",
-      "fi\n"
-    ],
-    [
-      "echo test -r -w $1\n"
-    ],
-    [
-      "if test -r -w $1\n",
-      "then\n",
-      "echo le fichier $1 existe et est accessible ne lecture et ecriture\n",
-      "elif test : ! -r $1\n",
-      "then\n",
-      "echo le fichier $1 existe pas ou nest pas accessible ne lecture ou nest pas lecture\n",
-      "fi\n",
-      "\n"
-    ],
-    [
-      "if test -r -w $1\n",
-      "then\n",
-      "echo le fichier $1 existe et est accessible ne lecture et ecriture\n",
-      "elif test ! -r $1\n",
-      "then\n",
-      "echo le fichier $1 existe pas ou nest pas accessible ne lecture ou nest pas lecture\n",
-      "fi\n",
-      "\n"
-    ],
-    [
-      "if test -rw $1\n",
-      "then\n",
-      "echo le fichier $1 existe et est accessible ne lecture et ecriture\n",
-      "elif test ! -r $1\n",
-      "then\n",
-      "echo le fichier $1 existe pas ou nest pas accessible ne lecture ou nest pas lecture\n",
-      "fi\n",
-      "\n"
-    ],
-    [
-      "if test -r $1 -a -w $1\n",
-      "then\n",
-      "echo le fichier $1 existe et est accessible ne lecture et ecriture\n",
-      "elif test ! -r $1\n",
-      "then\n",
-      "echo le fichier $1 existe pas ou nest pas accessible ne lecture ou nest pas lecture\n",
-      "fi\n",
-      "\n"
-    ],
-    [
-      "if ! test -e $1 -a -e $2 \n",
-      "then\n",
-      "echo erreur\n",
-      "else\n",
-      "echo souhaitez vous concatener les fichiers\n",
-      "fi\n",
-      "read b\n",
-      "if test $b -eq oui\n",
-      "then\n",
-      "echo $1 $2\n",
-      "else\n",
-      "echo erreur\n",
-      "fi\n",
-      "\n",
-      "\n"
-    ],
-    [
-      "if ! test -e $1 -a -e $2 \n",
-      "then\n",
-      "echo erreur\n",
-      "elif\n",
-      "echo souhaitez vous concatener les fichiers\n",
-      "read b\n",
-      "\tif test $b -eq oui\n",
-      "\tthen\n",
-      "\techo $1 $2\n",
-      "\telse\n",
-      "\techo erreur\n",
-      "\tfi\n",
-      "fi\n",
-      "\n"
-    ],
-    [
-      "if ! test -e $1 -a -e $2 \n",
-      "then\n",
-      "echo erreur\n",
-      "elif test -e $1 -a -e $2\n",
-      "echo souhaitez vous concatener les fichiers\n",
-      "read b\n",
-      "\telif test $b -eq oui\n",
-      "\tthen\n",
-      "\techo $1 $2\n",
-      "\telse\n",
-      "\techo erreur\n",
-      "\tfi\n",
-      "\n",
-      "\n"
-    ],
-    [
-      "if ! test -e $1 -a -e $2 \n",
-      "then\n",
-      "echo erreur\n",
-      "elif test -e $1 -a -e $2\n",
-      "echo souhaitez vous concatener les fichiers\n",
-      "read b\n",
-      "\telif test -e $1 -a -e $2 -a test $b -eq oui\n",
-      "\tthen\n",
-      "\techo $1 $2\n",
-      "\telse\n",
-      "\techo erreur\n",
-      "\tfi\n",
-      "\n",
-      "\n"
-    ],
-    [
-      "if ! test -e $1 -a -e $2 \n",
-      "then\n",
-      "echo erreur\n",
-      "elif test -e $1 -a -e $2\n",
-      "then\n",
-      "echo souhaitez vous concatener les fichiers\n",
-      "read b\n",
-      "\telif test -e $1 -a -e $2 -a test $b -eq oui\n",
-      "\tthen\n",
-      "\techo $1 $2\n",
-      "\telse\n",
-      "\techo erreur\n",
-      "\tfi\n",
-      "\n",
-      "\n"
-    ]
+    {
+      "name": "tp6_exo1.sh",
+      "lines": [
+        "if test $1 -gt 5 and test $1 -lt 10\n",
+        "then\n",
+        "echo La valeur $1 est comprise entre 5 et 10\n",
+        "else\n",
+        "echo la valeur $1 nest pas comprise entre 5 et 10\n",
+        "fi\n"
+      ]
+    },
+    {
+      "name": "tp6_exo2.sh",
+      "lines": [
+        "if test -r $1 -a -w $1\n",
+        "then\n",
+        "echo le fichier $1 existe et est accessible ne lecture et ecriture\n",
+        "elif test ! -r $1\n",
+        "then\n",
+        "echo le fichier $1 existe pas ou nest pas accessible ne lecture ou nest pas lecture\n",
+        "fi\n",
+        "\n"
+      ]
+    },
+    {
+      "name": "tp6_exo3.sh",
+      "lines": [
+        "if ! test -e $1 -a -e $2 \n",
+        "then\n",
+        "echo erreur\n",
+        "elif test -e $1 -a -e $2\n",
+        "then\n",
+        "echo souhaitez vous concatener les fichiers\n",
+        "read b\n",
+        "\telif test -e $1 -a -e $2 -a test $b -eq oui\n",
+        "\tthen\n",
+        "\techo $1 $2\n",
+        "\telse\n",
+        "\techo erreur\n",
+        "\tfi\n",
+        "\n",
+        "\n"
+      ]
+    }
   ],
   "profile": [
     {

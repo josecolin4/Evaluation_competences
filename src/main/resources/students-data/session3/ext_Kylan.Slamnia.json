@@ -2,141 +2,49 @@
   "name": "ext_Kylan.Slamnia",
   "session": 3,
   "scripts": [
-    [
-      "if [ $0 -gt 5 ] and [ $0 -lt 10 ]\n",
-      "\tthen\n",
-      "\t\techo \"Le nombre est compris entre 5 et 10\"\n",
-      "\telse\n",
-      "\t\techo \"Le nombre n'est pas compris entre 5 et 10\"\n",
-      "fi\n"
-    ],
-    [
-      "min=5\n",
-      "max=10\n",
-      "if [ $0 -gt $min ] and [ $0 -lt $max ]\n",
-      "\tthen\n",
-      "\t\techo \"Le nombre est compris entre 5 et 10\"\n",
-      "\telse\n",
-      "\t\techo \"Le nombre n\\'est pas compris entre 5 et 10\"\n",
-      "fi\n"
-    ],
-    [
-      "min=5\n",
-      "max=10\n",
-      "if [ $0 -ge $min ]\n",
-      "\tthen\n",
-      "\t\tif [ $0 -le $max ]\n",
-      "\t\t\tthen\n",
-      "\t\t\t\techo \"Le nombre est compris entre 5 et 10\"\n",
-      "\t\t\telse\n",
-      "\t\t\t\techo \"Le nombre n'est pas compris entre 5 et 10\"\n",
-      "\t\tfi\n",
-      "\telse\n",
-      "\t\techo \"Le nombre n'est pas compris entre 5 et 10\"\n",
-      "fi\n"
-    ],
-    [
-      "min=5\n",
-      "max=10\n",
-      "if [ $1 -ge $min ]\n",
-      "\tthen\n",
-      "\t\tif [ $1 -le $max ]\n",
-      "\t\t\tthen\n",
-      "\t\t\t\techo \"Le nombre est compris entre 5 et 10\"\n",
-      "\t\t\telse\n",
-      "\t\t\t\techo \"Le nombre n'est pas compris entre 5 et 10\"\n",
-      "\t\tfi\n",
-      "\telse\n",
-      "\t\techo \"Le nombre n'est pas compris entre 5 et 10\"\n",
-      "fi\n"
-    ],
-    [
-      "min=5\n",
-      "max=10\n",
-      "if [ $1 -ge $min ] -a if [ $1 -le $max ]\n",
-      "\tthen\n",
-      "\t\techo \"Le nombre est compris entre 5 et 10\"\n",
-      "\telse\n",
-      "\t\techo \"Le nombre n'est pas compris entre 5 et 10\"\n",
-      "fi\n"
-    ],
-    [
-      "min=5\n",
-      "max=10\n",
-      "if [ $1 -ge $min ] -a [ $1 -le $max ]\n",
-      "\tthen\n",
-      "\t\techo \"Le nombre est compris entre 5 et 10\"\n",
-      "\telse\n",
-      "\t\techo \"Le nombre n'est pas compris entre 5 et 10\"\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "min=5\n",
-      "max=10\n",
-      "if [ $1 -ge $min -a $1 -le $max ]\n",
-      "\tthen\n",
-      "\t\techo \"Le nombre est compris entre 5 et 10\"\n",
-      "\telse\n",
-      "\t\techo \"Le nombre n'est pas compris entre 5 et 10\"\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "min=5\n",
-      "max=10\n",
-      "if test $1 -ge $min -a $1 -le $max\n",
-      "\tthen\n",
-      "\t\techo \"Le nombre est compris entre 5 et 10\"\n",
-      "\telse\n",
-      "\t\techo \"Le nombre n'est pas compris entre 5 et 10\"\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "min=5\n",
-      "max=10\n",
-      "if [ $1 -ge $min -a $1 -le $max ]\n",
-      "\tthen\n",
-      "\t\techo \"Le nombre est compris entre 5 et 10\"\n",
-      "\telse\n",
-      "\t\techo \"Le nombre n'est pas compris entre 5 et 10\"\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if [ $1 -ge 5 -a $1 -le 10 ]\n",
-      "\tthen\n",
-      "\t\techo \"Le nombre est compris entre 5 et 10\"\n",
-      "\telse\n",
-      "\t\techo \"Le nombre n'est pas compris entre 5 et 10\"\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if [ -e $1 -a -r $1 -a -w $1 ]\n",
-      "\tthen\n",
-      "\t\techo Le fichier $1 existe et est accessible en lecture et en ecriture.\n",
-      "\telse\n",
-      "\t\techo Le fichier $1 n\\'existe pas ou n\\'est pas accessible en lecture ou en ecriture.\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if [ -e $1 -a -e $2 ]\n",
-      "\tthen\n",
-      "\t\techo Souhaitez-vous concat\u00c3\u00a9ner les fichiers?\n",
-      "\t\tread $rep\n",
-      "\t\tif [ $rep=\"OUI\" ]\n",
-      "\t\t\tthen\n",
-      "\t\t\t\techo $*\n",
-      "\t\t\telse\n",
-      "\t\t\t\techo Erreur\n",
-      "\t\tfi\n",
-      "\telse\n",
-      "\t\techo Err: au moins un des fichiers n'existe pas\n",
-      "fi\n"
-    ]
+    {
+      "name": "tp6_exo1.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "if [ $1 -ge 5 -a $1 -le 10 ]\n",
+        "\tthen\n",
+        "\t\techo \"Le nombre est compris entre 5 et 10\"\n",
+        "\telse\n",
+        "\t\techo \"Le nombre n'est pas compris entre 5 et 10\"\n",
+        "fi\n"
+      ]
+    },
+    {
+      "name": "tp6_exo2.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "if [ -e $1 -a -r $1 -a -w $1 ]\n",
+        "\tthen\n",
+        "\t\techo Le fichier $1 existe et est accessible en lecture et en ecriture.\n",
+        "\telse\n",
+        "\t\techo Le fichier $1 n\\'existe pas ou n\\'est pas accessible en lecture ou en ecriture.\n",
+        "fi\n"
+      ]
+    },
+    {
+      "name": "tp6_exo3.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "if [ -e $1 -a -e $2 ]\n",
+        "\tthen\n",
+        "\t\techo Souhaitez-vous concat\u00c3\u00a9ner les fichiers?\n",
+        "\t\tread $rep\n",
+        "\t\tif [ $rep=\"OUI\" ]\n",
+        "\t\t\tthen\n",
+        "\t\t\t\techo $*\n",
+        "\t\t\telse\n",
+        "\t\t\t\techo Erreur\n",
+        "\t\tfi\n",
+        "\telse\n",
+        "\t\techo Err: au moins un des fichiers n'existe pas\n",
+        "fi\n"
+      ]
+    }
   ],
   "profile": [
     {

@@ -2,29 +2,20 @@
   "name": "ext_Tom.Escudie",
   "session": 2,
   "scripts": [
-    [
-      "echo(($1+1))\n"
-    ],
-    [
-      "echo($1+1)\n"
-    ],
-    [
-      "a=1\n",
-      "echo $(($i+1))\n"
-    ],
-    [
-      "a=1\n",
-      "b=$1\n",
-      "echo $(($i+$b))\n"
-    ],
-    [
-      "a=1\n",
-      "b=$1\n",
-      "echo $(($a+$b))\n"
-    ],
-    [
-      "export PATH=$PATH:~\n"
-    ]
+    {
+      "name": "tp5_exo8.sh",
+      "lines": [
+        "a=1\n",
+        "b=$1\n",
+        "echo $(($a+$b))\n"
+      ]
+    },
+    {
+      "name": "tp5_exo9.sh",
+      "lines": [
+        "export PATH=$PATH:~\n"
+      ]
+    }
   ],
   "profile": [
     {

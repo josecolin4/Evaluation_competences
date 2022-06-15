@@ -2,173 +2,36 @@
   "name": "ext_Daniel.AntunesDosSantosNabais",
   "session": 3,
   "scripts": [
-    [
-      "#!/bin/bash\n",
-      "$DATE\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo $DATE\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo $date\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "read \"Quelle est votre ann\u00c3\u00a9e de naissance ?\" annee\n",
-      "age= `expr $date - $annee`\n",
-      "echo vous avez $age et vous \\\u00c3\u00a9\\tes n\\\u00c3\u00a9\\e en $annee\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "read -p  \"Quelle est votre ann\u00c3\u00a9e de naissance ?\" annee\n",
-      "age= `expr $date - $annee`\n",
-      "echo vous avez $age et vous \\\u00c3\u00a9\\tes n\\\u00c3\u00a9\\e en $annee\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "read -p  \"Quelle est votre ann\u00c3\u00a9e de naissance ?\" annee\n",
-      "calc= `date +%Y`\n",
-      "age= `expr $calc - $annee`\n",
-      "echo vous avez $age et vous \\\u00c3\u00aa\\tes n\\\u00c3\u00a9\\e en $annee\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "read -p  \"Quelle est votre ann\u00c3\u00a9e de naissance ?\" annee\n",
-      "calc=`date +%Y`\n",
-      "age= `expr $calc - $annee`\n",
-      "echo vous avez $age et vous \\\u00c3\u00aa\\tes n\\\u00c3\u00a9\\e en $annee\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "read -p  \"Quelle est votre ann\u00c3\u00a9e de naissance ?\" annee\n",
-      "calc=`date +%Y`\n",
-      "age= `expr $calc - $annee`\n",
-      "echo vous avez $age et vous \\\u00c3\u00aa\\tes n\\\u00c3\u00a9\\e en $annee\n",
-      "age=$((calc-annee))\n",
-      "echo $age\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "read -p  \"Quelle est votre ann\u00c3\u00a9e de naissance ?\" annee\n",
-      "calc=`date +%Y`\n",
-      "age=`expr $calc - $annee`\n",
-      "echo vous avez $age et vous \\\u00c3\u00aa\\tes n\\\u00c3\u00a9\\e en $annee\n",
-      "age=$((calc-annee))\n",
-      "echo $age\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo who\n",
-      "echo hostname\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo $who\n",
-      "echo $hostname\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo $WHO\n",
-      "echo $hostname\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo $who\n",
-      "echo $hostname\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo $who|wc -l\n",
-      "echo $hostname\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo who=$who|wc -l\n",
-      "echo il y a $who utilisateur connect\\\u00c3\u00a9\\s sur r\\-\\info\\-\\nacre\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo $who=$who|wc -l\n",
-      "echo il y a $who utilisateur connect\\\u00c3\u00a9\\s sur r\\-\\info\\-\\nacre\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo $who|wc -l\n",
-      "echo il y a $who|wc -l utilisateur connect\\\u00c3\u00a9\\s sur r\\-\\info\\-\\nacre\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo $who|wc -l\n",
-      "echo il y a $who|wc utilisateur connect\\\u00c3\u00a9\\s sur r\\-\\info\\-\\nacre\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo $who|wc -l\n",
-      "echo il y a `who` utilisateur connect\\\u00c3\u00a9\\s sur r\\-\\info\\-\\nacre\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo $who|wc -l\n",
-      "echo il y a `who|wc -l` utilisateur connect\\\u00c3\u00a9\\s sur r\\-\\info\\-\\nacre\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo ls -l tp5bis_exo4.sh\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo `ls -l tp5bis_exo4.sh`\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo `ls -l tp5bis_exo4.sh`\n",
-      "set tp5bis_exo4.sh\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo `ls -l tp5bis_exo4.sh`\n",
-      "set `tp5bis_exo4.sh`\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "set $(ls -l tp5bis_exo4.sh)\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "set -- $(ls -l tp5bis_exo4.sh)\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "set -- $(ls -l tp5bis_exo4.sh)\n",
-      "echo $1\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "set -- $(ls -l tp5bis_exo4.sh)\n",
-      "echo les droits du fichier tp5bis_exo4.sh est $1\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "set -- $(ls -l tp5bis_exo4.sh)\n",
-      "echo les droits du fichier tp5bis_exo4.sh sont \n",
-      "echo $1\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "set -- $(ls -l tp5bis_exo4.sh)\n",
-      "echo les droits du fichier tp5bis_exo4.sh sont \n",
-      "echo $1\n",
-      "\n"
-    ]
+    {
+      "name": "tp5bis_exo3.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "read -p  \"Quelle est votre ann\u00c3\u00a9e de naissance ?\" annee\n",
+        "calc=`date +%Y`\n",
+        "age=`expr $calc - $annee`\n",
+        "echo vous avez $age et vous \\\u00c3\u00aa\\tes n\\\u00c3\u00a9\\e en $annee\n",
+        "age=$((calc-annee))\n",
+        "echo $age\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo4.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo $who|wc -l\n",
+        "echo il y a `who|wc -l` utilisateur connect\\\u00c3\u00a9\\s sur r\\-\\info\\-\\nacre\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo5.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "set -- $(ls -l tp5bis_exo4.sh)\n",
+        "echo les droits du fichier tp5bis_exo4.sh sont \n",
+        "echo $1\n",
+        "\n"
+      ]
+    }
   ],
   "profile": [
     {

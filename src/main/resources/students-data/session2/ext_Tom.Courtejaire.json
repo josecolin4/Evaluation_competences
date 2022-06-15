@@ -2,19 +2,19 @@
   "name": "ext_Tom.Courtejaire",
   "session": 2,
   "scripts": [
-    [
-      "echo Le script $0 poss\u00c3\u00a8de $# param\u00c3\u00a8tres, que voici: $*\n",
-      "\n"
-    ],
-    [
-      "f3>f2>f1\n"
-    ],
-    [
-      "echo f1 f2>f3\n"
-    ],
-    [
-      "cat f1 f2>f3\n"
-    ]
+    {
+      "name": "tp5_exo5.sh",
+      "lines": [
+        "echo Le script $0 poss\u00c3\u00a8de $# param\u00c3\u00a8tres, que voici: $*\n",
+        "\n"
+      ]
+    },
+    {
+      "name": "tp5_exo6.sh",
+      "lines": [
+        "cat f1 f2>f3\n"
+      ]
+    }
   ],
   "profile": [
     {

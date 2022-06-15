@@ -2,14 +2,14 @@
   "name": "ext_Benjamin.Wattre",
   "session": 3,
   "scripts": [
-    [
-      "\n"
-    ],
-    [
-      "set 7\n",
-      "test $1 -gt 5 -a $1 -lt 5\n",
-      "\n"
-    ]
+    {
+      "name": "tp6_exo1.sh",
+      "lines": [
+        "set 7\n",
+        "test $1 -gt 5 -a $1 -lt 5\n",
+        "\n"
+      ]
+    }
   ],
   "profile": [
     {

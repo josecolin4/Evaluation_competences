@@ -2,87 +2,132 @@
   "name": "ext_Mathieu.Richard",
   "session": 1,
   "scripts": [
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo cours\n",
-      "\n",
-      "cours=unix\n",
-      "\n",
-      "echo $cours\n",
-      "\n",
-      "echo je suis au cours $cours\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo Je suis le script Shell $0\n",
-      "\n",
-      "echo Mes arguments sont $*\n",
-      "\n",
-      "echo Le premier argument est $1\n",
-      "\n",
-      "echo Le deuxi\u00c3\u00a8me argument est $2\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Le script $0 poss\u00c3\u00a8de $# param\u00c3\u00a8tre(s), que voici $*\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Le script $0 poss\u00c3\u00a8de $# param\u00c3\u00a8tre, que voici $*\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "cat $0 > $2\n",
-      "cat $1 > $2\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "cat $1 > $3\n",
-      "cat $2 > $3\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "cat $1 > $3\n",
-      "echo cat $2 > $3\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "cat $1 > $3\n",
-      "cat $2 >> $3\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Nous sommes le `date()`\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Nous sommes le `date`\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo $1+1\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo ($1+1)\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "$1=$1+1\n",
-      "echo $1\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo $($1+1)\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo $(($1+1))\n",
-      "\n"
-    ]
+    {
+      "name": "_1605519995__home_tp5__tp5-1.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "\n",
+        "echo cours\n",
+        "\n",
+        "cours=unix\n",
+        "\n",
+        "echo $cours\n",
+        "\n",
+        "echo je suis au cours $cours\n"
+      ]
+    },
+    {
+      "name": "_1605520135__home_tp5__tp5-4.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "\n",
+        "echo Je suis le script Shell $0\n",
+        "\n",
+        "echo Mes arguments sont $*\n",
+        "\n",
+        "echo Le premier argument est $1\n",
+        "\n",
+        "echo Le deuxi\u00c3\u00a8me argument est $2\n"
+      ]
+    },
+    {
+      "name": "_1605520317__home_tp5__tp5-5.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo Le script $0 poss\u00c3\u00a8de $# param\u00c3\u00a8tre(s), que voici $*\n"
+      ]
+    },
+    {
+      "name": "_1605520344__home_tp5__tp5-5.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo Le script $0 poss\u00c3\u00a8de $# param\u00c3\u00a8tre, que voici $*\n"
+      ]
+    },
+    {
+      "name": "_1605520458__home_tp5__tp5-6.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "cat $0 > $2\n",
+        "cat $1 > $2\n"
+      ]
+    },
+    {
+      "name": "_1605520537__home_tp5__tp5-6.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "cat $1 > $3\n",
+        "cat $2 > $3\n"
+      ]
+    },
+    {
+      "name": "_1605520648__home_tp5__tp5-6.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "cat $1 > $3\n",
+        "echo cat $2 > $3\n"
+      ]
+    },
+    {
+      "name": "_1605520711__home_tp5__tp5-6.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "cat $1 > $3\n",
+        "cat $2 >> $3\n"
+      ]
+    },
+    {
+      "name": "_1605520819__home_tp5__tp5-7.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo Nous sommes le `date()`\n"
+      ]
+    },
+    {
+      "name": "_1605520852__home_tp5__tp5-7.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo Nous sommes le `date`\n"
+      ]
+    },
+    {
+      "name": "_1605520889__home_tp5__tp5-8.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo $1+1\n"
+      ]
+    },
+    {
+      "name": "_1605520898__home_tp5__tp5-8.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo ($1+1)\n"
+      ]
+    },
+    {
+      "name": "_1605521007__home_tp5__tp5-8.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "$1=$1+1\n",
+        "echo $1\n"
+      ]
+    },
+    {
+      "name": "_1605521044__home_tp5__tp5-8.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo $($1+1)\n",
+        "\n"
+      ]
+    },
+    {
+      "name": "_1605521069__home_tp5__tp5-8.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo $(($1+1))\n",
+        "\n"
+      ]
+    }
   ],
   "profile": [
     {

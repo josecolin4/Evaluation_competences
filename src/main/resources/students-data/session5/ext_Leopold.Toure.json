@@ -2,31 +2,20 @@
   "name": "ext_Leopold.Toure",
   "session": 5,
   "scripts": [
-    [
-      "read n1\n",
-      "if test n1 -gt 5\n",
-      "\tthen \n",
-      "\t\tif test n1 -lt 10 \n",
-      "\t\t\tthen echo La valeur est comprise entre 5 et 10. \n",
-      "\t\telse \n",
-      "\t\t\techo La valeur $n1 n'est pas comprise entre 5 et 10.\n",
-      "\telse\n",
-      "\t\techo La Valeur $n1 n'est pas comprise entre 5 et 10\n",
-      "\t\t\n",
-      "\n",
-      "\t\n"
-    ],
-    [
-      "read n1\n",
-      "if test n1 -gt 5\n",
-      "\tthen \n",
-      "\t\tif test n1 -lt 10 \n",
-      "\t\t\tthen echo La valeur est comprise entre 5 et 10. \n",
-      "\t\telse \n",
-      "\t\t\techo La valeur $n1 n'est pas comprise entre 5 et 10.\n",
-      "\telse\n",
-      "\t\techo La Valeur $n1 n'est pas comprise entre 5 et 10\n"
-    ]
+    {
+      "name": "tp6_exo1.sh",
+      "lines": [
+        "read n1\n",
+        "if test n1 -gt 5\n",
+        "\tthen \n",
+        "\t\tif test n1 -lt 10 \n",
+        "\t\t\tthen echo La valeur est comprise entre 5 et 10. \n",
+        "\t\telse \n",
+        "\t\t\techo La valeur $n1 n'est pas comprise entre 5 et 10.\n",
+        "\telse\n",
+        "\t\techo La Valeur $n1 n'est pas comprise entre 5 et 10\n"
+      ]
+    }
   ],
   "commands": [
     {

@@ -2,105 +2,49 @@
   "name": "ext_Timothe.Vannier",
   "session": 2,
   "scripts": [
-    [
-      "#!/bin/bash\n",
-      "export PATH=$PATH:$HOME\n",
-      "echo $PATH\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo `expr $1 / 2`\n",
-      "\n",
-      "echo $(($1 / 2))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo `expr $1 * 2`\n",
-      "\n",
-      "echo $(($1 * 2))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo `expr$1 * 2`\n",
-      "\n",
-      "echo $(($1 * 2))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo `expr $1 \\* 2`\n",
-      "\n",
-      "echo $(($1 * 2))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
-      "\n",
-      "read ann\u00c3\u00a9e\n",
-      "\n",
-      "age=`expr $date - ann\u00c3\u00a9e`\n",
-      "\n",
-      "echo Vous etes n\u00c3\u00a9\\(e\\) en $ann\u00c3\u00a9e, vous avez donc $age ans.\n",
-      "\n",
-      "echo Vous etes n\u00c3\u00a9\\(e\\) en $ann\u00c3\u00a9e, vous avez donc $(($date - $ann\u00c3\u00a9e)) ans\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
-      "\n",
-      "read annee\n",
-      "\n",
-      "age=`expr $date - annee`\n",
-      "\n",
-      "echo Vous etes n\u00c3\u00a9\\(e\\) en $annee, vous avez donc $age ans.\n",
-      "\n",
-      "echo Vous etes n\u00c3\u00a9\\(e\\) en $annee, vous avez donc $(($date - $annee)) ans\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
-      "\n",
-      "read annee\n",
-      "\n",
-      "age=`expr $date - $annee`\n",
-      "\n",
-      "echo Vous etes n\u00c3\u00a9\\(e\\) en $annee, vous avez donc $age ans.\n",
-      "\n",
-      "echo Vous etes n\u00c3\u00a9\\(e\\) en $annee, vous avez donc $(($date - $annee)) ans\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
-      "\n",
-      "read annee\n",
-      "\n",
-      "age=`expr $date \"+%Y\" - $annee`\n",
-      "\n",
-      "echo Vous etes n\u00c3\u00a9\\(e\\) en $annee, vous avez donc $age ans.\n",
-      "\n",
-      "echo Vous etes n\u00c3\u00a9\\(e\\) en $annee, vous avez donc $(($date \"+%Y\"  - $annee)) ans\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
-      "\n",
-      "read annee\n",
-      "\n",
-      "age=`expr $date \"+%Y\" - $annee`\n",
-      "\n",
-      "echo Vous etes n\u00c3\u00a9\\(e\\) en $annee, vous avez donc $age ans.\n",
-      "\n",
-      "echo Vous etes n\u00c3\u00a9\\(e\\) en $annee, vous avez donc $(($date \"+%Y\"  - $annee)) ans\n",
-      "\n"
-    ]
+    {
+      "name": "tp5_exo9.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "export PATH=$PATH:$HOME\n",
+        "echo $PATH\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo1.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo `expr $1 / 2`\n",
+        "\n",
+        "echo $(($1 / 2))\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo2.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo `expr $1 \\* 2`\n",
+        "\n",
+        "echo $(($1 * 2))\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo3.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "\n",
+        "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
+        "\n",
+        "read annee\n",
+        "\n",
+        "age=`expr $date \"+%Y\" - $annee`\n",
+        "\n",
+        "echo Vous etes n\u00c3\u00a9\\(e\\) en $annee, vous avez donc $age ans.\n",
+        "\n",
+        "echo Vous etes n\u00c3\u00a9\\(e\\) en $annee, vous avez donc $(($date \"+%Y\"  - $annee)) ans\n",
+        "\n"
+      ]
+    }
   ],
   "profile": [
     {

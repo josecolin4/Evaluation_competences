@@ -2,95 +2,34 @@
   "name": "ext_Fabio.Bentaila",
   "session": 3,
   "scripts": [
-    [
-      "#!/bin/bash\n",
-      "expr `n / 2`\n",
-      "echo $((n / 2))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "expr n / 2\n",
-      "echo $((n / 2))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo expr n / 2\n",
-      "echo $((n / 2))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo expr `n / 2`\n",
-      "echo $((n / 2))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "expr $n / 2\n",
-      "echo $(($n / 2))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "expr $1 / 2\n",
-      "echo $(($1 / 2))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "expr $1 * 2\n",
-      "echo $(($1 * 2))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "expr $1 * 2\n",
-      "echo $(($1 * 2))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "expr $1 \\* 2\n",
-      "echo $(($1 * 2))\n"
-    ],
-    [
-      "#!/bin/bash \n",
-      "echo Quelle est votre date de naissance?\n",
-      "read annee\n",
-      "echo $annee\n",
-      "echo Vous \u00c3\u00aates n\u00c3\u00a9(e) en $annee , vous avez donc expr $date - $annee ans.\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash \n",
-      "echo Quelle est votre date de naissance?\n",
-      "read annee\n",
-      "echo $annee\n",
-      "diff= expr $date\"+%Y\" - $annee\n",
-      "echo Vous \u00c3\u00aates n\u00c3\u00a9(e) en $annee , vous avez donc $diff ans.\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash \n",
-      "echo Quelle est votre date de naissance?\n",
-      "read annee\n",
-      "echo $annee\n",
-      "diff= expr $date\"+%Y\" - $annee\n",
-      "echo Vous \u00c3\u00aates n\u00c3\u00a9\\(e\\) en $annee , vous avez donc $diff ans.\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash \n",
-      "echo Quelle est votre date de naissance?\n",
-      "read annee\n",
-      "echo $annee\n",
-      "diff= expr $date\"+%Y\" \\- $annee\n",
-      "echo Vous \u00c3\u00aates n\u00c3\u00a9\\(e\\) en $annee , vous avez donc $diff ans.\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash \n",
-      "echo Quelle est votre date de naissance?\n",
-      "read annee\n",
-      "echo $annee\n",
-      "diff= expr `$date\"+%Y\" - $annee`\n",
-      "echo Vous \u00c3\u00aates n\u00c3\u00a9\\(e\\) en $annee , vous avez donc $diff ans.\n",
-      "\n"
-    ]
+    {
+      "name": "tp5bis_exo1.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "expr $1 / 2\n",
+        "echo $(($1 / 2))\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo2.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "expr $1 \\* 2\n",
+        "echo $(($1 * 2))\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo3.sh",
+      "lines": [
+        "#!/bin/bash \n",
+        "echo Quelle est votre date de naissance?\n",
+        "read annee\n",
+        "echo $annee\n",
+        "diff= expr `$date\"+%Y\" - $annee`\n",
+        "echo Vous \u00c3\u00aates n\u00c3\u00a9\\(e\\) en $annee , vous avez donc $diff ans.\n",
+        "\n"
+      ]
+    }
   ],
   "profile": [
     {

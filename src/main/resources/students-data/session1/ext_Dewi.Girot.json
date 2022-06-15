@@ -2,881 +2,134 @@
   "name": "ext_Dewi.Girot",
   "session": 1,
   "scripts": [
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo cours\n",
-      "\n",
-      "cours=unix\n",
-      "\n",
-      "echo $cours\n",
-      "\n",
-      "echo je suis au cours $cours\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "debutTexte='<'\n",
-      "\n",
-      "echo debutTexte\n",
-      "\n",
-      "finTexte='>'\n",
-      "\n",
-      "echo finTexte\n",
-      "\n",
-      "echo $debutTexte   $finTexte\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "debutTexte='<'\n",
-      "\n",
-      "echo debutTexte\n",
-      "\n",
-      "finTexte='>'\n",
-      "\n",
-      "echo finTexte\n",
-      "\n",
-      "echo $debutTexte $USER  $finTexte\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo 'Mon nom de login est :'\n",
-      "\n",
-      "debutTexte='<'\n",
-      "\n",
-      "echo debutTexte\n",
-      "\n",
-      "finTexte='>'\n",
-      "\n",
-      "echo finTexte\n",
-      "\n",
-      "echo $debutTexte $USER  $finTexte\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo 'Mon nom de login est :'\n",
-      "\n",
-      "debutTexte='<'\n",
-      "\n",
-      "\n",
-      "finTexte='>'\n",
-      "\n",
-      "echo $debutTexte $USER  $finTexte\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "debutTexte='<'\n",
-      "\n",
-      "finTexte='>'\n",
-      "\n",
-      "echo 'Mon nom de login est :' $debutTexte $USER  $finTexte\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "debutTexte='<'\n",
-      "\n",
-      "finTexte='>'\n",
-      "\n",
-      "echo 'Mon nom de login est :' $debutTexte $USER $finTexte\n",
-      "\n",
-      "echo 'Mon shell est :' $debutTexte $SHELL $finTexte\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "debutTexte='<'\n",
-      "\n",
-      "finTexte='>'\n",
-      "\n",
-      "echo 'Mon nom de login est :' $debutTexte $USER $finTexte\n",
-      "\n",
-      "echo 'Mon shell est :' $debutTexte $SHELL $finTexte\n",
-      "\n",
-      "echo 'Les variables du Shell sont :'\n",
-      "\n",
-      "echo $env\n",
-      "\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "debutTexte='<'\n",
-      "\n",
-      "finTexte='>'\n",
-      "\n",
-      "echo 'Mon nom de login est :' $debutTexte $USER $finTexte\n",
-      "\n",
-      "echo 'Mon shell est :' $debutTexte $SHELL $finTexte\n",
-      "\n",
-      "echo 'Les variables du Shell sont :'\n",
-      "\n",
-      "echo $env\n",
-      "\n",
-      "echo 'Celles d\u00e2\u20ac\u2122environnement sont :'\n",
-      "\n",
-      "echo $env\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "debutTexte='<'\n",
-      "\n",
-      "finTexte='>'\n",
-      "\n",
-      "echo 'Mon nom de login est :' $debutTexte $USER $finTexte\n",
-      "\n",
-      "echo 'Mon shell est :' $debutTexte $SHELL $finTexte\n",
-      "\n",
-      "echo 'Les variables du Shell sont :'\n",
-      "\n",
-      "echo $*SHELL\n",
-      "\n",
-      "echo 'Celles d\u00e2\u20ac\u2122environnement sont :'\n",
-      "\n",
-      "echo $*env\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "debutTexte='<'\n",
-      "\n",
-      "finTexte='>'\n",
-      "\n",
-      "echo 'Mon nom de login est :' $debutTexte $USER $finTexte\n",
-      "\n",
-      "echo 'Mon shell est :' $debutTexte $SHELL $finTexte\n",
-      "\n",
-      "echo 'Les variables du Shell sont :'\n",
-      "\n",
-      "echo $debutTexte $*SHELL $finTexte\n",
-      "\n",
-      "echo 'Celles d\u00e2\u20ac\u2122environnement sont :'\n",
-      "\n",
-      "echo $debutTexte $*env $finTexte\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "debutTexte='<'\n",
-      "\n",
-      "finTexte='>'\n",
-      "\n",
-      "echo 'Mon nom de login est :' $debutTexte $USER $finTexte\n",
-      "\n",
-      "echo 'Mon shell est :' $debutTexte $SHELL $finTexte\n",
-      "\n",
-      "echo 'Les variables du Shell sont :'\n",
-      "\n",
-      "echo $debutTexte set $finTexte\n",
-      "\n",
-      "echo 'Celles d\u00e2\u20ac\u2122environnement sont :'\n",
-      "\n",
-      "echo $debutTexte env $finTexte\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo Cher utilisateur quel est ton pr\u00c3\u00a9nom \\?\n",
-      "\n",
-      "read prenom\n",
-      "\n",
-      "echo Ravi de te connaitre, $prenom\n",
-      "\n",
-      "echo Quel est ton nom et ton age \\?\n",
-      "\n",
-      "read nom age\n",
-      "\n",
-      "echo Tu es $prenom $nom et tu as $age ans, n\\'est-ce\n",
-      "\n",
-      "pas \\?\n",
-      "\n",
-      "read reponse\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo Cher utilisateur quel est ton pr\u00c3\u00a9nom \\?\n",
-      "\n",
-      "read prenom\n",
-      "\n",
-      "echo Ravi de te connaitre, $prenom\n",
-      "\n",
-      "echo Quel est ton nom et ton age \\?\n",
-      "\n",
-      "read nom age\n",
-      "\n",
-      "echo Tu es $prenom $nom et tu as $age ans, n\\'est-ce pas \\?\n",
-      "\n",
-      "read reponse\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo Je suis le script Shell $0\n",
-      "\n",
-      "echo Mes arguments sont $*\n",
-      "\n",
-      "echo Le premier argument est $1\n",
-      "\n",
-      "echo Le deuxi\u00c3\u00a8me argument est $2\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo Je suis le script Shell $0\n",
-      "\n",
-      "echo Mes arguments sont $*\n",
-      "\n",
-      "echo Le premier argument est $1\n",
-      "\n",
-      "echo Le deuxi\u00c3\u00a8me argument est $2\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo Combien de param\u00c3\u00a8tre va poss\u00c3\u00a9der le programme ?/\n",
-      "\n",
-      "read n\n",
-      "\n",
-      "echo Le scripte '<' $0 '>'\n",
-      "\n",
-      "echo poss\u00c3\u00a8de $n 'parametre(s), que voici :'\n",
-      "\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo Combien de param\u00c3\u00a8tre va poss\u00c3\u00a9der le programme ?/\n",
-      "\n",
-      "read n\n",
-      "\n",
-      "echo Le scripte '<'$0'>' poss\u00c3\u00a8de '<'$n'>' 'parametre(s), que voici :' '<''>'\n",
-      "\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo Le scripte '<'$0'>' poss\u00c3\u00a8de '<'$#'>' 'parametre(s), que voici :' '<'$*'>'\n",
-      "\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n"
-    ],
-    [
-      "Contenu de F1\n"
-    ],
-    [
-      "contenue de F2\n"
-    ],
-    [
-      "Contenu de F1\n",
-      "contenue de F2\n"
-    ],
-    [
-      "Contenu de F1\n",
-      "contenue de F2\n",
-      "Contenu de F1\n",
-      "contenue de F2\n"
-    ],
-    [
-      "\n"
-    ],
-    [
-      "Contenu de F1\n",
-      "contenue de F2\n",
-      "Contenu de F1\n",
-      "contenue de F2\n"
-    ],
-    [
-      "echo F1 Contenu de F1\n",
-      "echo contenue de F2\n",
-      "echo Contenu de F1 \n",
-      "contenue de F2\n"
-    ],
-    [
-      "echo F1 Contenu de F1\n",
-      "echo contenue de F2\n",
-      "echo Contenu de F1 contenue de F2\n"
-    ],
-    [
-      "cat $F1 > $F3\n",
-      "\n",
-      "cat $F2 >> $F3\n",
-      "\n",
-      "echo $F1\n",
-      "\n",
-      "echo $F2\n",
-      "\n",
-      "echo $F3\n"
-    ],
-    [
-      "cat $F1 > $F3\n",
-      "\n",
-      "cat $F2 >> $F3\n",
-      "\n",
-      "echo $F1 $1\n",
-      "\n",
-      "echo $F2 $2\n",
-      "\n",
-      "echo $F3 $3\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "cat $F1 > $F3\n",
-      "\n",
-      "cat $F2 >> $F3\n",
-      "\n",
-      "echo $F1 $1\n",
-      "\n",
-      "echo $F2 $2\n",
-      "\n",
-      "echo $F3 $3\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "cat $F1 > $F3\n",
-      "\n",
-      "cat $F2 > $F3\n",
-      "\n",
-      "echo $F1 $1\n",
-      "\n",
-      "echo $F2 $2\n",
-      "\n",
-      "echo $F3 $3\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo $F1 $1\n",
-      "\n",
-      "echo $F2 $2\n",
-      "\n",
-      "cat $F1 $F2 > $F3\n",
-      "\n",
-      "echo $F3 $3\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo $F1 $1\n",
-      "\n",
-      "echo $F2 $2\n",
-      "\n",
-      "cat F1 F2 > F3\n",
-      "\n",
-      "echo $F3 $3\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo F1 $1\n",
-      "\n",
-      "echo F2 $2\n",
-      "\n",
-      "cat F1 F2 > F3\n",
-      "\n",
-      "echo F3 $3\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo $F1 $1\n",
-      "\n",
-      "echo $F2 $2\n",
-      "\n",
-      "cat $F1 $F2 > $F3\n",
-      "\n",
-      "echo $F3 $3\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo $F1 $1\n",
-      "\n",
-      "echo $F2 $2\n",
-      "\n",
-      "cat $'../F1' $'../F2' > $F3\n",
-      "\n",
-      "echo $F3 $3\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo $F1 $1\n",
-      "\n",
-      "echo $F2 $2\n",
-      "\n",
-      "cat $F1 $F2 > $F3\n",
-      "\n",
-      "echo $F3 $3\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo Nous sommes le `date`\n",
-      "\n",
-      "echo Nous sommes le Mon Nov 16 15:20:46 CET 2020\n",
-      "\n",
-      "echo Ceci est\n",
-      "\n",
-      "echo une tr\u00c3\u00a8s\n",
-      "\n",
-      "echo longue phrase...\n",
-      "\n",
-      "echo Voici une \u00c3\u00a9toile : *\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo Nous sommes le `date`\n",
-      "\n",
-      "echo Ceci est\n",
-      "\n",
-      "echo une tr\u00c3\u00a8s\n",
-      "\n",
-      "echo longue phrase...\n",
-      "\n",
-      "echo Voici une \u00c3\u00a9toile : '*'\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo $1+1\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo '$1+1'\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo $1+1\n",
-      "\n",
-      "somme=$1+1\n",
-      "\n",
-      "echo somme\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo $1+1\n",
-      "\n",
-      "somme=$1+1\n",
-      "\n",
-      "echo $somme\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "somme=($1+1)\n",
-      "\n",
-      "echo $somme\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "somme=[$1+1]\n",
-      "\n",
-      "echo $somme\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "somme=awk ($1+1)\n",
-      "\n",
-      "echo $somme\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "somme=awk[$1+1]\n",
-      "\n",
-      "echo $somme\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "somme=(awk{$1+1})\n",
-      "\n",
-      "echo $somme\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "somme=$1+1\n",
-      "\n",
-      "echo $somme\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "somme=$(($1+1))\n",
-      "\n",
-      "echo $somme\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "export PATH=$PATH:/~\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "export PATH=$PATH:\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "export PATH=$PATH:/test\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "export PATH=$PATH:/~/test\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "export PATH=$PATH:/usr/local/test\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "export PATH=$PATH: /usr/local/test\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "export PATH=$PATH:/usr/local/test\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "export PATH=$PATH:/usr/local/sbin/test\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "export $PATH:/usr/local/sbin/test\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "export PATH=$PATH:/usr/local/sbin/test\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo $F1 \n",
-      "\n",
-      "echo $F2 \n",
-      "\n",
-      "cat $F1 $F2 > $F3\n",
-      "\n",
-      "echo $F3 $3\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo $./F1\n",
-      "\n",
-      "echo $./F2\n",
-      "\n",
-      "cat $F1 $F2 > $F3\n",
-      "\n",
-      "echo $F3 $3\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo $F1\n",
-      "\n",
-      "echo $F2\n",
-      "\n",
-      "cat $F1 $F2 >> $F3\n",
-      "\n",
-      "echo $F3 $3\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo $F1 $1\n",
-      "\n",
-      "echo $F2 $2\n",
-      "\n",
-      "cat $F1 $F2 >> $F3\n",
-      "\n",
-      "echo $F3 $3\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo ./F1 $1\n",
-      "\n",
-      "echo ./F2 $2\n",
-      "\n",
-      "cat $F1 $F2 >> $F3\n",
-      "\n",
-      "echo $F3 $3\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "cat $1 $2 >> $3\n",
-      "\n",
-      "echo $F3 $3\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo $1\n",
-      "\n",
-      "echo $2\n",
-      "\n",
-      "cat $1 $2 >> $3\n",
-      "\n",
-      "echo $F3 $3\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo $1\n",
-      "\n",
-      "echo $2\n",
-      "\n",
-      "cat $1 $2 > $3\n",
-      "\n",
-      "echo $F3 $3\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo $1\n",
-      "\n",
-      "echo $2\n",
-      "\n",
-      "cat $1 > $3\n",
-      "\n",
-      "cat $2 > $3 \n",
-      "\n",
-      "echo $F3 $3\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo $1\n",
-      "\n",
-      "echo $2\n",
-      "\n",
-      "cat $1 > $3\n",
-      "\n",
-      "$cat $2 > $3 \n",
-      "\n",
-      "echo $F3 $3\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "cr\u00c3\u00a9er un\n",
-      "\n",
-      "script Shell tp5_exo6.sh qui concat\u00c3\u00a8ne\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo $*\n",
-      "\n",
-      "echo Quelle valeur voulez vous mettre dans F1 /?\n",
-      "\n",
-      "read $1\n",
-      "\n",
-      "echo Quelle valeur voulez vous mettre dans F2 /?\n",
-      "\n",
-      "read $2\n",
-      "\n",
-      "F3=(($1+$2))\n",
-      "\n",
-      "echo F3\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo $*\n",
-      "\n",
-      "echo Quelle valeur voulez vous mettre dans F1\n",
-      "\n",
-      "read $1\n",
-      "\n",
-      "echo Quelle valeur voulez vous mettre dans F2\n",
-      "\n",
-      "read $2\n",
-      "\n",
-      "F3=(($1+$2))\n",
-      "\n",
-      "echo F3\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo $*\n",
-      "\n",
-      "echo Quelle valeur voulez vous mettre dans F1\n",
-      "\n",
-      "read 1\n",
-      "\n",
-      "echo Quelle valeur voulez vous mettre dans F2\n",
-      "\n",
-      "read 2\n",
-      "\n",
-      "F3=((1+2))\n",
-      "\n",
-      "echo F3\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n"
-    ],
-    [
-      "echo Je suis le script Shell $0\n",
-      "\n",
-      "\n",
-      "echo Mes arguments sont $*\n",
-      "\n",
-      "\n",
-      "echo Le premier argument est $1\n",
-      "\n",
-      "\n",
-      "echo Le deuxi\u00c3\u00a8me argument est $2\n"
-    ],
-    [
-      "echo Mes arguments sont $*\n",
-      "\n",
-      "\n",
-      "echo Le premier argument est $1\n",
-      "\n",
-      "\n",
-      "echo Le deuxi\u00c3\u00a8me argument est $2\n"
-    ],
-    [
-      "echo Mes arguments sont $*\n",
-      "\n",
-      "echo F1 est $1\n",
-      "\n",
-      "echo F2 est $2\n"
-    ],
-    [
-      "echo Mes arguments sont $*\n",
-      "\n",
-      "echo F1 est $1\n",
-      "\n",
-      "echo F2 est $2\n",
-      "\n",
-      "echo F3 est $F3\n",
-      "\n",
-      "somme=$(($1+$2))\n"
-    ],
-    [
-      "echo Mes arguments sont $*\n",
-      "\n",
-      "echo F1 est $1\n",
-      "\n",
-      "echo F2 est $2\n",
-      "\n",
-      "echo F3 est $3\n",
-      "\n",
-      "somme=$(($1+$2))\n",
-      "\n",
-      "$3=somme\n",
-      "\n",
-      "echo $3\n"
-    ],
-    [
-      "echo Mes arguments sont $*\n",
-      "\n",
-      "echo F1 est $1\n",
-      "\n",
-      "echo F2 est $2\n",
-      "\n",
-      "echo F3 est $3\n",
-      "\n",
-      "somme=$(($1+$2))\n",
-      "\n",
-      "$3=$somme\n",
-      "\n",
-      "echo $3\n"
-    ],
-    [
-      "echo Mes arguments sont $*\n",
-      "\n",
-      "echo F1 est $1\n",
-      "\n",
-      "echo F2 est $2\n",
-      "\n",
-      "echo F3 est $3\n",
-      "\n",
-      "somme=$(($1+$2))\n",
-      "\n",
-      "$3=$somme\n",
-      "\n",
-      "echo $3\n"
-    ],
-    [
-      "echo Mes arguments sont $*\n",
-      "\n",
-      "echo F1 est $1\n",
-      "\n",
-      "echo F2 est $2\n",
-      "\n",
-      "echo F3 est $3\n",
-      "\n",
-      "somme=$(($1+$2))\n",
-      "\n",
-      "echo $somme\n"
-    ],
-    [
-      "echo Mes arguments sont $*\n",
-      "\n",
-      "echo F1 est $1\n",
-      "\n",
-      "echo F2 est $2\n",
-      "\n",
-      "somme=$(($1+$2))\n",
-      "\n",
-      "echo F3 est $somme\n"
-    ]
+    {
+      "name": "tp5_exo1.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "\n",
+        "echo cours\n",
+        "\n",
+        "cours=unix\n",
+        "\n",
+        "echo $cours\n",
+        "\n",
+        "echo je suis au cours $cours\n"
+      ]
+    },
+    {
+      "name": "tp5_exo2.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "\n",
+        "debutTexte='<'\n",
+        "\n",
+        "finTexte='>'\n",
+        "\n",
+        "echo 'Mon nom de login est :' $debutTexte $USER $finTexte\n",
+        "\n",
+        "echo 'Mon shell est :' $debutTexte $SHELL $finTexte\n",
+        "\n",
+        "echo 'Les variables du Shell sont :'\n",
+        "\n",
+        "echo $debutTexte set $finTexte\n",
+        "\n",
+        "echo 'Celles d\u00e2\u20ac\u2122environnement sont :'\n",
+        "\n",
+        "echo $debutTexte env $finTexte\n"
+      ]
+    },
+    {
+      "name": "tp5_exo3.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "\n",
+        "echo Cher utilisateur quel est ton pr\u00c3\u00a9nom \\?\n",
+        "\n",
+        "read prenom\n",
+        "\n",
+        "echo Ravi de te connaitre, $prenom\n",
+        "\n",
+        "echo Quel est ton nom et ton age \\?\n",
+        "\n",
+        "read nom age\n",
+        "\n",
+        "echo Tu es $prenom $nom et tu as $age ans, n\\'est-ce pas \\?\n",
+        "\n",
+        "read reponse\n"
+      ]
+    },
+    {
+      "name": "tp5_exo4.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "\n",
+        "echo Je suis le script Shell $0\n",
+        "\n",
+        "echo Mes arguments sont $*\n",
+        "\n",
+        "echo Le premier argument est $1\n",
+        "\n",
+        "echo Le deuxi\u00c3\u00a8me argument est $2\n"
+      ]
+    },
+    {
+      "name": "tp5_exo5.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "\n",
+        "echo Le scripte '<'$0'>' poss\u00c3\u00a8de '<'$#'>' 'parametre(s), que voici :' '<'$*'>'\n",
+        "\n",
+        "\n"
+      ]
+    },
+    {
+      "name": "tp5_exo6.sh",
+      "lines": [
+        "echo Mes arguments sont $*\n",
+        "\n",
+        "echo F1 est $1\n",
+        "\n",
+        "echo F2 est $2\n",
+        "\n",
+        "somme=$(($1+$2))\n",
+        "\n",
+        "echo F3 est $somme\n"
+      ]
+    },
+    {
+      "name": "tp5_exo7.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "\n",
+        "echo Nous sommes le `date`\n",
+        "\n",
+        "echo Ceci est\n",
+        "\n",
+        "echo une tr\u00c3\u00a8s\n",
+        "\n",
+        "echo longue phrase...\n",
+        "\n",
+        "echo Voici une \u00c3\u00a9toile : '*'\n"
+      ]
+    },
+    {
+      "name": "tp5_exo8.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "\n",
+        "somme=$(($1+1))\n",
+        "\n",
+        "echo $somme\n"
+      ]
+    },
+    {
+      "name": "tp5_exo9.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "\n",
+        "export PATH=$PATH:/usr/local/sbin/test\n"
+      ]
+    }
   ],
   "profile": [
     {

@@ -2,16 +2,15 @@
   "name": "ext_Nathan.Cloquemin",
   "session": 2,
   "scripts": [
-    [
-      "#!/bin/bash\n",
-      "export PATH=.:$PATH\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo $PATH | tr : \\n\n",
-      "export PATH=.:$PATH\n",
-      "echo $PATH | tr : \\n\n"
-    ]
+    {
+      "name": "tp5_exo9.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo $PATH | tr : \\n\n",
+        "export PATH=.:$PATH\n",
+        "echo $PATH | tr : \\n\n"
+      ]
+    }
   ],
   "profile": [
     {

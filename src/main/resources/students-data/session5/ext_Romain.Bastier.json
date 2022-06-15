@@ -2,52 +2,50 @@
   "name": "ext_Romain.Bastier",
   "session": 5,
   "scripts": [
-    [
-      "case $1 in\n",
-      "\t\"1\") date;;\n",
-      "\t\"2\") who;;\n",
-      "\t\"3\") ls;;\n",
-      "\t\"4\") pwd;;\n",
-      "esac\n"
-    ],
-    [
-      "echo saisissez une chaine de character\n",
-      "read rep\n",
-      "\n",
-      "while [ $rep != \"sortir\" ]\n",
-      "do\n",
-      "\tphrase+=\"$rep \"\n",
-      "\techo saisissez une chaine de character\n",
-      "\tread rep\n",
-      "done echo \"$phrase\"\n"
-    ],
-    [
-      "echo saisissez une chaine de character\n",
-      "read rep\n",
-      "\n",
-      "while [ $rep != \"sortir\" ]\n",
-      "do\n",
-      "\tphrase+=\"$rep \"\n",
-      "\techo saisissez une chaine de character\n",
-      "\tread rep\n",
-      "done\n",
-      "echo \"$phrase\"\n"
-    ],
-    [
-      "echo quel numero ?\n",
-      "read rep\n",
-      "while test $rep -le 4 -a $rep -ge 0\n",
-      "do\n",
-      "case $rep in \n",
-      "\t1 ) date;;\n",
-      "\t2 ) who;;\n",
-      "\t3 ) ls;;\n",
-      "\t4 ) pwd;;\n",
-      "esac\n",
-      "echo nouveau numero\n",
-      "read rep\n",
-      "done\n"
-    ]
+    {
+      "name": "tp6_exo7.sh",
+      "lines": [
+        "case $1 in\n",
+        "\t\"1\") date;;\n",
+        "\t\"2\") who;;\n",
+        "\t\"3\") ls;;\n",
+        "\t\"4\") pwd;;\n",
+        "esac\n"
+      ]
+    },
+    {
+      "name": "tp6_exo8.sh",
+      "lines": [
+        "echo saisissez une chaine de character\n",
+        "read rep\n",
+        "\n",
+        "while [ $rep != \"sortir\" ]\n",
+        "do\n",
+        "\tphrase+=\"$rep \"\n",
+        "\techo saisissez une chaine de character\n",
+        "\tread rep\n",
+        "done\n",
+        "echo \"$phrase\"\n"
+      ]
+    },
+    {
+      "name": "tp6_exo9.sh",
+      "lines": [
+        "echo quel numero ?\n",
+        "read rep\n",
+        "while test $rep -le 4 -a $rep -ge 0\n",
+        "do\n",
+        "case $rep in \n",
+        "\t1 ) date;;\n",
+        "\t2 ) who;;\n",
+        "\t3 ) ls;;\n",
+        "\t4 ) pwd;;\n",
+        "esac\n",
+        "echo nouveau numero\n",
+        "read rep\n",
+        "done\n"
+      ]
+    }
   ],
   "commands": [
     {

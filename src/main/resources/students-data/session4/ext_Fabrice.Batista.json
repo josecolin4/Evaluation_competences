@@ -2,167 +2,49 @@
   "name": "ext_Fabrice.Batista",
   "session": 4,
   "scripts": [
-    [
-      "#!/bin/bash\n",
-      "set 2\n",
-      "expr $1 / 2\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "set 3\n",
-      "expr $1 / 2\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "$(($1 * 2))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "$(($1 `*` 2))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "set 6\n",
-      "echo $(($1 `*` 2))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "set 6\n",
-      "echo $(($1 * 2))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo quelle est votre date de naissance `?`\n",
-      "read $4\n",
-      "echo vous \u00c3\u00aates n\u00c3\u00a9 en $4, vous avez donc $((date - $4))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo quelle est votre date de naissance ?\n",
-      "read $4\n",
-      "echo vous \u00c3\u00aates n\u00c3\u00a9 en $4, vous avez donc $((date - $4))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo quelle est votre date de naissance ?\n",
-      "read $4\n",
-      "echo vous \u00c3\u00aates n\u00c3\u00a9 en $4, vous avez donc `$((date - $4))`\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo quelle est votre date de naissance ?\n",
-      "read $4\n",
-      "echo vous \u00c3\u00aates n\u00c3\u00a9 en $4, vous avez donc expr `date` - $4\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo quelle est votre date de naissance ?\n",
-      "read $4\n",
-      "echo vous \u00c3\u00aates n\u00c3\u00a9 en $4 , vous avez donc expr `date` - $4\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo quelle est votre date de naissance ?\n",
-      "read $4\n",
-      "echo vous \u00c3\u00aates n\u00c3\u00a9 en $4 , vous avez donc $(( `date` - $4))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo quelle est votre date de naissance ?\n",
-      "read $4\n",
-      "echo vous \u00c3\u00aates n\u00c3\u00a9 en $4 , vous avez donc $((2020 - $4))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo quelle est votre date de naissance ?\n",
-      "read $4\n",
-      "echo vous \u00c3\u00aates n\u00c3\u00a9 en $4 , vous avez donc\n",
-      "$((2020 - $4))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo quelle est votre date de naissance ?\n",
-      "read $pui\n",
-      "echo vous \u00c3\u00aates n\u00c3\u00a9 en $pui , vous avez donc\n",
-      "expr 2020 - $pui\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo quelle est votre date de naissance ?\n",
-      "read $pui\n",
-      "echo vous \u00c3\u00aates n\u00c3\u00a9 en $pui , vous avez donc\n",
-      "expr 2020 \\-\\ $pui\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo quelle est votre date de naissance ?\n",
-      "read $pui\n",
-      "echo vous \u00c3\u00aates n\u00c3\u00a9 en $pui , vous avez donc\n",
-      "expr 2020 `-` $pui\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo quelle est votre date de naissance ?\n",
-      "read $annee\n",
-      "\n",
-      "echo Vous etes ne en $annee, vous avez donc `expr $(date +%Y) - $annee` ans\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo quelle est votre date de naissance ?\n",
-      "read $annee\n",
-      "echo Vous etes ne en $annee vous avez donc `expr $(date +%Y) - $annee` ans\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo quelle est votre date de naissance ?\n",
-      "read $annee\n",
-      "echo Vous etes ne en $annee vous avez donc $(expr) `date +%Y` - $annee) ans\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo quelle est votre date de naissance ?\n",
-      "read annee\n",
-      "echo Vous etes ne en $annee vous avez donc `expr $(date +%Y) - $annee` ans\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "`who` utilisateurs connectes sur `hostname`\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo `who` utilisateurs connectes sur `hostname`\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "rep=$(who)\n",
-      "rep2=$(hostname)\n",
-      "echo $rep utilisateurs connectes sur $rep2\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "rep=$(who|wc -l)\n",
-      "rep2=$(hostname)\n",
-      "echo $rep utilisateurs connectes sur $rep2\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "set tp5bis_exo2.sh\n",
-      "\n",
-      "echo ls -lh $1\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "set -- $(ls -lh tp5bis_exo2.sh\n",
-      "\n",
-      "echo $1\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "set -- $(ls -lh tp5bis_exo2.sh)\n",
-      "\n",
-      "echo $1\n"
-    ]
+    {
+      "name": "tp5bis_exo1.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "set 3\n",
+        "expr $1 / 2\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo2.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "set 6\n",
+        "echo $(($1 * 2))\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo3.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo quelle est votre date de naissance ?\n",
+        "read annee\n",
+        "echo Vous etes ne en $annee vous avez donc `expr $(date +%Y) - $annee` ans\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo4.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "rep=$(who|wc -l)\n",
+        "rep2=$(hostname)\n",
+        "echo $rep utilisateurs connectes sur $rep2\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo5.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "set -- $(ls -lh tp5bis_exo2.sh)\n",
+        "\n",
+        "echo $1\n"
+      ]
+    }
   ],
   "profile": [
     {

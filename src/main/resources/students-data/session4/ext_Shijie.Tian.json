@@ -2,93 +2,41 @@
   "name": "ext_Shijie.Tian",
   "session": 4,
   "scripts": [
-    [
-      "echo $1 $2 $(($1 / 2))  \n"
-    ],
-    [
-      "echo $1  $(($1 / 2))  \n"
-    ],
-    [
-      "expr $1 / 2\n"
-    ],
-    [
-      "expr $1 * 2\n"
-    ],
-    [
-      "echo $(($1 * 2))\n"
-    ],
-    [
-      "expr $1 * 2\n"
-    ],
-    [
-      "expr $1 * $2\n"
-    ],
-    [
-      "expr $1 \\* 2\n",
-      "\n"
-    ],
-    [
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
-      "read annee\n",
-      "echo vous etes ne en $annee vous avez donc `expr $(date +%Y) - $annee` ans\n"
-    ],
-    [
-      "echo il y a `wc -l who` utilisateurs connectes sur `hostname`\n"
-    ],
-    [
-      "a=wc -l `who`\n",
-      "echo il y a $a utilisateurs connectes sur `hostname`\n"
-    ],
-    [
-      "\n",
-      "echo il y a $(who)|$(wc -l) utilisateurs connectes sur `hostname`\n"
-    ],
-    [
-      "echo il y a `who`|$(wc -l) utilisateurs connectes sur `hostname`\n"
-    ],
-    [
-      "echo il y a $(who|wc -l) utilisateurs connectes sur `hostname`\n"
-    ],
-    [
-      "echo il y a $(who|wc -l) utilisateurs connectes sur $(hostname)\n"
-    ],
-    [
-      "echo il y a `who|wc -l` utilisateurs connectes sur $(hostname)\n"
-    ],
-    [
-      "echo $1 $(ls -l $1|set)\n"
-    ],
-    [
-      "echo $1 $(ls -l $1) set $1\n"
-    ],
-    [
-      "echo $1 $(ls -l $1) $(set $1)\n"
-    ],
-    [
-      "set -- ls -l tp5bis_exo4.sh\n",
-      "echo $1 $2 $3 $4\n"
-    ],
-    [
-      "$(set -- ls -l tp5bis_exo4.sh)\n",
-      "echo $1 $2 $3 $4\n"
-    ],
-    [
-      "$( ls -l tp5bis_exo4.sh)\n",
-      "echo $1 $2 $3 $4\n"
-    ],
-    [
-      "$(ls -l tp5bis_exo4.sh)\n",
-      "echo $1 $2 $3 $4\n"
-    ],
-    [
-      "$(set $3 ls -l tp5bis_exo4.sh)\n",
-      "echo $1 $2 $3 $4\n"
-    ],
-    [
-      "set -- $(ls -l $1)\n",
-      "\n",
-      "echo $5\n"
-    ]
+    {
+      "name": "tp5bis_exo1.sh",
+      "lines": [
+        "expr $1 / 2\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo2.sh",
+      "lines": [
+        "expr $1 \\* 2\n",
+        "\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo3.sh",
+      "lines": [
+        "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
+        "read annee\n",
+        "echo vous etes ne en $annee vous avez donc `expr $(date +%Y) - $annee` ans\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo4.sh",
+      "lines": [
+        "echo il y a `who|wc -l` utilisateurs connectes sur $(hostname)\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo5.sh",
+      "lines": [
+        "set -- $(ls -l $1)\n",
+        "\n",
+        "echo $5\n"
+      ]
+    }
   ],
   "profile": [
     {

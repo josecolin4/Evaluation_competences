@@ -2,286 +2,79 @@
   "name": "ext_Louis.Richards",
   "session": 1,
   "scripts": [
-    [
-      "#!/bin/bash\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo cours\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo cours\n",
-      "cours=unix\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo cours\n",
-      "cours=unix\n",
-      "echo $cours\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo cours\n",
-      "cours=unix\n",
-      "echo $cours\n",
-      "echo je suis au cours $cours\n"
-    ],
-    [],
-    [
-      "#!/bin/bash\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo cours\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo cours\n",
-      "cours=unix\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo cours\n",
-      "cours=unix\n",
-      "echo $cours\n"
-    ],
-    [],
-    [],
-    [
-      "#!/bin/bash\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo cours\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo cours\n",
-      "cours=unix\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo cours\n",
-      "cours=unix\n",
-      "echo $cours\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo cours\n",
-      "cours=unix\n",
-      "echo $cours\n",
-      "echo je suis au cours $cours\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo cours\n",
-      "\n",
-      "cours=unix\n",
-      "\n",
-      "echo $cours\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo cours\n",
-      "\n",
-      "cours=unix\n",
-      "\n",
-      "echo $cours\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo cours\n",
-      "\n",
-      "cours=unix\n",
-      "\n",
-      "echo $cours\n",
-      "\n",
-      "echo je suis au cours $cours\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "login=root\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "login=root\n",
-      "\n",
-      "shell=$iutinfo\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "login=root\n",
-      "\n",
-      "shell=$iutinfo\n",
-      "\n",
-      "varSh=$# : nombre de param\u00c3\u00a8tres positionnels\n",
-      "\n",
-      "$- : options du shell\n",
-      "\n",
-      "$? : valeur r\u00c3\u00a9sultat (\u00c3\u00a9tat de sortie) de la derni\u00c3\u00a8re commande ex\u00c3\u00a9cut\u00c3\u00a9e\n",
-      "\n",
-      "$$ : num\u00c3\u00a9ro de processus du shell courant\n",
-      "\n",
-      "$! : num\u00c3\u00a9ro de processus du dernier processus en arri\u00c3\u00a8re plan\n",
-      "\n",
-      "$0 : nom de la commande en cours\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "login=root\n",
-      "\n",
-      "shell=$iutinfo\n",
-      "\n",
-      "varSh=$# : nombre de param\u00c3\u00a8tres positionnels\n",
-      "\n",
-      "$- : options du shell\n",
-      "\n",
-      "$? : valeur r\u00c3\u00a9sultat (\u00c3\u00a9tat de sortie) de la derni\u00c3\u00a8re commande ex\u00c3\u00a9cut\u00c3\u00a9e\n",
-      "\n",
-      "$$ : num\u00c3\u00a9ro de processus du shell courant\n",
-      "\n",
-      "$! : num\u00c3\u00a9ro de processus du dernier processus en arri\u00c3\u00a8re plan\n",
-      "\n",
-      "$0 : nom de la commande en cours\n",
-      "\n",
-      "$* : liste des param\u00c3\u00a8tres positionnels.\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "login=root\n",
-      "\n",
-      "shell=shell\n",
-      "\n",
-      "varSh=set\n",
-      "\n",
-      "varEnv=env\n",
-      "\n",
-      "echo Mon nom de login est : $login\n",
-      "\n",
-      "echo Mon shell est : $shell\n",
-      "\n",
-      "echo Les variables du Shell sont : $varSh\n",
-      "\n",
-      "echo Celles d'environnement sont : $varEnv\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "login=root\n",
-      "\n",
-      "shell=shell\n",
-      "\n",
-      "varSh=set\n",
-      "\n",
-      "varEnv=env\n",
-      "\n",
-      "echo Mon nom de login est : $login\n",
-      "\n",
-      "echo Mon shell est : $shell\n",
-      "\n",
-      "echo Les variables du Shell sont : $varSh\n",
-      "\n",
-      "echo Celles denvironnement sont : $varEnv\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "login=root\n",
-      "\n",
-      "shell=shell\n",
-      "\n",
-      "echo Mon nom de login est : $login\n",
-      "\n",
-      "echo Mon shell est : $shell\n",
-      "\n",
-      "echo Les variables du Shell sont :\n",
-      "set\n",
-      "echo Celles denvironnement sont :\n",
-      "env\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "login=root\n",
-      "\n",
-      "shell=shell\n",
-      "\n",
-      "echo Mon nom de login est : $login\n",
-      "\n",
-      "echo Mon shell est : $shell\n",
-      "\n",
-      "echo Les variables du Shell sont :\n",
-      "set\n",
-      "\n",
-      "echo Celles denvironnement sont :\n",
-      "env\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "shell=shell\n",
-      "\n",
-      "echo Mon nom de login est : $user\n",
-      "\n",
-      "echo Mon shell est : $shell\n",
-      "\n",
-      "echo Les variables du Shell sont :\n",
-      "set\n",
-      "\n",
-      "echo Celles denvironnement sont :\n",
-      "env\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Cher utilisateur quel est ton pr\u00c3\u00a9nom \\?\n",
-      "\n",
-      "read prenom\n",
-      "\n",
-      "echo Ravi de te connaitre, $prenom\n",
-      "\n",
-      "echo Quel est ton nom et ton age \\?\n",
-      "\n",
-      "read nom age\n",
-      "\n",
-      "echo Tu es $prenom $nom et tu as $age ans, n\\'est-ce pas \\?\n",
-      "\n",
-      "read reponse\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo Je suis le script Shell $0\n",
-      "\n",
-      "echo Mes arguments sont $*\n",
-      "\n",
-      "echo Le premier argument est $1\n",
-      "\n",
-      "echo Le deuxi\u00c3\u00a8me argument est $2\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo Le script $1 poss\u00c3\u00a8de $# param\u00c3\u00a8tres, que voici : $*\n"
-    ]
+    {
+      "name": "tp5_exo1.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "\n",
+        "echo cours\n",
+        "\n",
+        "cours=unix\n",
+        "\n",
+        "echo $cours\n",
+        "\n",
+        "echo je suis au cours $cours\n"
+      ]
+    },
+    {
+      "name": "tp5_exo2.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "\n",
+        "shell=shell\n",
+        "\n",
+        "echo Mon nom de login est : $user\n",
+        "\n",
+        "echo Mon shell est : $shell\n",
+        "\n",
+        "echo Les variables du Shell sont :\n",
+        "set\n",
+        "\n",
+        "echo Celles denvironnement sont :\n",
+        "env\n"
+      ]
+    },
+    {
+      "name": "tp5_exo3.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo Cher utilisateur quel est ton pr\u00c3\u00a9nom \\?\n",
+        "\n",
+        "read prenom\n",
+        "\n",
+        "echo Ravi de te connaitre, $prenom\n",
+        "\n",
+        "echo Quel est ton nom et ton age \\?\n",
+        "\n",
+        "read nom age\n",
+        "\n",
+        "echo Tu es $prenom $nom et tu as $age ans, n\\'est-ce pas \\?\n",
+        "\n",
+        "read reponse\n"
+      ]
+    },
+    {
+      "name": "tp5_exo6.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "\n",
+        "echo Je suis le script Shell $0\n",
+        "\n",
+        "echo Mes arguments sont $*\n",
+        "\n",
+        "echo Le premier argument est $1\n",
+        "\n",
+        "echo Le deuxi\u00c3\u00a8me argument est $2\n"
+      ]
+    },
+    {
+      "name": "tp5_exo5.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "\n",
+        "echo Le script $1 poss\u00c3\u00a8de $# param\u00c3\u00a8tres, que voici : $*\n"
+      ]
+    }
   ],
   "profile": [
     {

@@ -2,35 +2,25 @@
   "name": "ext_Theo.Vidal",
   "session": 1,
   "scripts": [
-    [
-      "#!/bin/bashecho \n",
-      "cours\n",
-      "cours=unix \n",
-      "echo $cours\n",
-      "echo je suis au cours $cours\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo cours\n",
-      "cours=unix\n",
-      "echo $cours\n",
-      "echo je suis au cours $cours\n"
-    ],
-    [
-      "echo nom de login est:$login\n",
-      "echo mon shell est: $shell\n",
-      "echo les variables du shell sont: set\n",
-      "echo celles d'environnement sont: env\n"
-    ],
-    [
-      "echo Mon nom est $login\n"
-    ],
-    [
-      "echo Mon nom est $LOGIN\n",
-      "echo Mon shell est $SHELL\n",
-      "echo variable set\n",
-      "echo environnement env\n"
-    ]
+    {
+      "name": "tp5_exo1.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo cours\n",
+        "cours=unix\n",
+        "echo $cours\n",
+        "echo je suis au cours $cours\n"
+      ]
+    },
+    {
+      "name": "tp5_exo2.sh",
+      "lines": [
+        "echo Mon nom est $LOGIN\n",
+        "echo Mon shell est $SHELL\n",
+        "echo variable set\n",
+        "echo environnement env\n"
+      ]
+    }
   ],
   "profile": [
     {

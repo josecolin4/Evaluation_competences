@@ -2,30 +2,27 @@
   "name": "ext_Asala.LakhdarBarka",
   "session": 4,
   "scripts": [
-    [
-      "#!/bin/bash\n",
-      "echo Ins\u00c3\u00a9rez votre ann\u00c3\u00a9e de naissance?\n",
-      "read annee\n",
-      "date1=`date \"+%y\"`\n",
-      "age=`expr $date1 - $annee` \n",
-      "echo vous \u00c3\u00aates n\u00c3\u00a9 en  $annee, Vous avez donc $age ans \\.\n",
-      " \n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Ins\u00c3\u00a9rez votre ann\u00c3\u00a9e de naissance?\n",
-      "read annee\n",
-      "date1=`date \"+%Y\"`\n",
-      "age=`expr $date1 - $annee` \n",
-      "echo vous \u00c3\u00aates n\u00c3\u00a9 en  $annee, Vous avez donc $age ans \\.\n",
-      " \n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "utilisateur=`who | wc -l`\n",
-      "host=`hostname`\n",
-      "echo Il y a $utilisateur utilisateurs connect\u00c3\u00a9s sur $host \\.\n"
-    ]
+    {
+      "name": "tp5bis_exo3.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo Ins\u00c3\u00a9rez votre ann\u00c3\u00a9e de naissance?\n",
+        "read annee\n",
+        "date1=`date \"+%Y\"`\n",
+        "age=`expr $date1 - $annee` \n",
+        "echo vous \u00c3\u00aates n\u00c3\u00a9 en  $annee, Vous avez donc $age ans \\.\n",
+        " \n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo4.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "utilisateur=`who | wc -l`\n",
+        "host=`hostname`\n",
+        "echo Il y a $utilisateur utilisateurs connect\u00c3\u00a9s sur $host \\.\n"
+      ]
+    }
   ],
   "profile": [
     {

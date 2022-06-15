@@ -2,28 +2,34 @@
   "name": "ext_Leopold.Toure",
   "session": 1,
   "scripts": [
-    [
-      "#!/bin/bash\n",
-      "echo cours\n",
-      "cours=unix\n",
-      "echo $cours\n",
-      "echo je suis au cour $cours\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "monlogin=root\n",
-      "monshell=unix\n",
-      "Vshell=listeShell\n",
-      "environnement=Venvironnement\n",
-      "echo Mon nom de login est : $monlogin\n",
-      "echo Mon shell est : $monshell\n",
-      "Les variables du Shell sont : \n",
-      "echo $Vshell\n",
-      "Celles d'environnement sont :\n",
-      "echo $environnement\n",
-      "\n",
-      "\n"
-    ]
+    {
+      "name": "tp5_exo1.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo cours\n",
+        "cours=unix\n",
+        "echo $cours\n",
+        "echo je suis au cour $cours\n"
+      ]
+    },
+    {
+      "name": "tp5_exo2.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "monlogin=root\n",
+        "monshell=unix\n",
+        "Vshell=listeShell\n",
+        "environnement=Venvironnement\n",
+        "echo Mon nom de login est : $monlogin\n",
+        "echo Mon shell est : $monshell\n",
+        "Les variables du Shell sont : \n",
+        "echo $Vshell\n",
+        "Celles d'environnement sont :\n",
+        "echo $environnement\n",
+        "\n",
+        "\n"
+      ]
+    }
   ],
   "profile": [
     {

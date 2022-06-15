@@ -2,427 +2,622 @@
   "name": "ext_Theo.Vidal",
   "session": 3,
   "scripts": [
-    [
-      "echo il y a 'who' connect\u00c3e sur 'hostname'\n"
-    ],
-    [
-      "il y a `who\u00c3o\u00c3` connect\u00c3\u00a9 sur \u00c3`\u00c3hostname\u00c3\u00c3\u00c3`\u00c3\n"
-    ],
-    [
-      "il y a `\u00c3who -q`\u00c3 et `hostname`\n"
-    ],
-    [
-      "echo il y a 7`a `who -q` sur `hostname`\n"
-    ],
-    [
-      "n=6\n"
-    ],
-    [
-      "n=6\n",
-      "Lif test n -gt 5  -a test n -lt 10\n"
-    ],
-    [
-      "n=6\n",
-      "Lif test n -gt 5  -a test n -lt 10\n",
-      "\tthen\n"
-    ],
-    [
-      "n=6\n",
-      "Lif test n -gt 5  -a test n -lt 10\n",
-      "\tthen\n",
-      "\t\techo $n est compris entre 5 et 10\n"
-    ],
-    [
-      "n=6\n",
-      "Lif test n -gt 5  -a test n -lt 10\n",
-      "\tthen\n",
-      "\t\techo $n est compris entre 5 et 10\n",
-      "\telse\n"
-    ],
-    [
-      "n=6\n",
-      "Lif test n -gt 5  -a test n -lt 10\n",
-      "\tthen\n",
-      "\t\techo $n est compris entre 5 et 10\n",
-      "\telse\n",
-      "\t\techo $n n'est pas compris entre 5 et 10\n"
-    ],
-    [
-      "n=6\n",
-      "Lif test n -gt 5  -a test n -lt 10\n",
-      "\tthen\n",
-      "\t\techo $n est compris entre 5 et 10\n",
-      "\telse\n",
-      "\t\techo $n n'est pas compris entre 5 et 10\n",
-      "fi\n"
-    ],
-    [
-      "n=6\n"
-    ],
-    [
-      "n=6\n",
-      "if test n -gt 5 -a n -lt 10\n"
-    ],
-    [
-      "n=6\n",
-      "if test n -gt 5 -a n -lt 10\n",
-      "then\n"
-    ],
-    [
-      "n=6\n",
-      "if test n -gt 5 -a n -lt 10\n",
-      "then\n",
-      "echo c'est bon\n"
-    ],
-    [
-      "n=6\n",
-      "if test n -gt 5 -a n -lt 10\n",
-      "then\n",
-      "echo c'est bon\n",
-      "else\n"
-    ],
-    [
-      "n=6\n",
-      "if test n -gt 5 -a n -lt 10\n",
-      "then\n",
-      "echo c'est bon\n",
-      "else\n",
-      "echo pas bon\n"
-    ],
-    [
-      "n=6\n",
-      "if test n -gt 5 -a n -lt 10\n",
-      "then\n",
-      "echo c'est bon\n",
-      "else\n",
-      "echo pas bon\n",
-      "fi"
-    ],
-    [
-      "n=6\n",
-      "if test n -gt 5 -a n -lt 10\n",
-      "then\n",
-      "echo c'est bon\n",
-      "else\n",
-      "echo pas bon\n",
-      "fi\n"
-    ],
-    [
-      "n=6\n"
-    ],
-    [
-      "n=6\n",
-      "if test n -gt 5 -a test n -lt 10\n"
-    ],
-    [
-      "n=6\n",
-      "if test n -gt 5 -a test n -lt 10\n",
-      "\tthen\n"
-    ],
-    [
-      "n=6\n",
-      "if test n -gt 5 -a test n -lt 10\n",
-      "\tthen\n",
-      "\t\techo bon\n"
-    ],
-    [
-      "n=6\n",
-      "if test n -gt 5 -a test n -lt 10\n",
-      "\tthen\n",
-      "\t\techo bon\n",
-      "\telse\n"
-    ],
-    [
-      "n=6\n",
-      "if test n -gt 5 -a test n -lt 10\n",
-      "\tthen\n",
-      "\t\techo bon\n",
-      "\telse\n",
-      "\t\techo pas bon\n"
-    ],
-    [
-      "n=6\n",
-      "if test n -gt 5 -a test n -lt 10\n",
-      "\tthen\n",
-      "\t\techo bon\n",
-      "\telse\n",
-      "\t\techo pas bon\n",
-      "fi\n"
-    ],
-    [
-      "n=6\n"
-    ],
-    [
-      "n=6\n",
-      "if test $n - gt 5 -a test $n -lt 10\n"
-    ],
-    [
-      "n=6\n",
-      "if test $n - gt 5 -a test $n -lt 10\n",
-      "\tthen\n"
-    ],
-    [
-      "n=6\n",
-      "if test $n - gt 5 -a test $n -lt 10\n",
-      "\tthen\n",
-      "\t\techo bon\n"
-    ],
-    [
-      "n=6\n",
-      "if test $n - gt 5 -a test $n -lt 10\n",
-      "\tthen\n",
-      "\t\techo bon\n",
-      "\telse\n"
-    ],
-    [
-      "n=6\n",
-      "if test $n - gt 5 -a test $n -lt 10\n",
-      "\tthen\n",
-      "\t\techo bon\n",
-      "\telse\n",
-      "\t\techo pas bon\n"
-    ],
-    [
-      "n=6\n",
-      "if test $n - gt 5 -a test $n -lt 10\n",
-      "\tthen\n",
-      "\t\techo bon\n",
-      "\telse\n",
-      "\t\techo pas bon\n",
-      "fi\n"
-    ],
-    [
-      "n=6\n"
-    ],
-    [
-      "n=6\n",
-      "if test $n - gt\n"
-    ],
-    [
-      "n=6\n"
-    ],
-    [
-      "n=6\n",
-      "if test $n -gt 5\n"
-    ],
-    [
-      "n=6\n",
-      "if test $n -gt 5\n",
-      "\tthen\n"
-    ],
-    [
-      "n=6\n",
-      "if test $n -gt 5\n",
-      "\tthen\n",
-      "\t\techo  \n"
-    ],
-    [
-      "n=6\n",
-      "if test $n -gt 5\n",
-      "\tthen\n",
-      "\t\techo  \n",
-      "\telif test *n -lt 10\n"
-    ],
-    [
-      "n=6\n",
-      "if test $n -gt 5\n",
-      "\tthen\n",
-      "\t\techo  \n",
-      "\telif test *n -lt 10\n",
-      "\t\tthen\n"
-    ],
-    [
-      "n=6\n",
-      "if test $n -gt 5\n",
-      "\tthen\n",
-      "\t\techo  \n",
-      "\telif test *n -lt 10\n",
-      "\t\tthen\n",
-      "\t\t\techo c'est bon\n"
-    ],
-    [
-      "n=6\n",
-      "if test $n -gt 5\n",
-      "\tthen\n",
-      "\t\techo  \n",
-      "\telif test *n -lt 10\n",
-      "\t\tthen\n",
-      "\t\t\techo c'est bon\n",
-      "\telse\n"
-    ],
-    [
-      "n=6\n",
-      "if test $n -gt 5\n",
-      "\tthen\n",
-      "\t\techo  \n",
-      "\telif test *n -lt 10\n",
-      "\t\tthen\n",
-      "\t\t\techo c'est bon\n",
-      "\telse\n",
-      "\t\techo pas bon\n"
-    ],
-    [
-      "n=6\n",
-      "if test $n -gt 5\n",
-      "\tthen\n",
-      "\t\techo  \n",
-      "\telif test *n -lt 10\n",
-      "\t\tthen\n",
-      "\t\t\techo c'est bon\n",
-      "\telse\n",
-      "\t\techo pas bon\n",
-      "fi\n"
-    ],
-    [
-      "n=6\n"
-    ],
-    [
-      "n=6\n",
-      "if test $n -gt 5\n"
-    ],
-    [
-      "n=6\n",
-      "if test $n -gt 5\n",
-      "\tthen\n"
-    ],
-    [
-      "n=6\n",
-      "if test $n -gt 5\n",
-      "\tthen\n",
-      "\t\techo un bon\n"
-    ],
-    [
-      "n=6\n",
-      "if test $n -gt 5\n",
-      "\tthen\n",
-      "\t\techo un bon\n",
-      "\telif test $n -lt 10\n"
-    ],
-    [
-      "n=6\n",
-      "if test $n -gt 5\n",
-      "\tthen\n",
-      "\t\techo un bon\n",
-      "\telif test $n -lt 10\n",
-      "\t\tthen\n"
-    ],
-    [
-      "n=6\n",
-      "if test $n -gt 5\n",
-      "\tthen\n",
-      "\t\techo un bon\n",
-      "\telif test $n -lt 10\n",
-      "\t\tthen\n",
-      "\t\t\techo Bon\n"
-    ],
-    [
-      "n=6\n",
-      "if test $n -gt 5\n",
-      "\tthen\n",
-      "\t\techo un bon\n",
-      "\telif test $n -lt 10\n",
-      "\t\tthen\n",
-      "\t\t\techo Bon\n",
-      "\telse\n"
-    ],
-    [
-      "n=6\n",
-      "if test $n -gt 5\n",
-      "\tthen\n",
-      "\t\techo un bon\n",
-      "\telif test $n -lt 10\n",
-      "\t\tthen\n",
-      "\t\t\techo Bon\n",
-      "\telse\n",
-      "\t\techo pas bon\n"
-    ],
-    [
-      "n=6\n",
-      "if test $n -gt 5\n",
-      "\tthen\n",
-      "\t\techo un bon\n",
-      "\telif test $n -lt 10\n",
-      "\t\tthen\n",
-      "\t\t\techo Bon\n",
-      "\telse\n",
-      "\t\techo pas bon\n",
-      "fi\n"
-    ],
-    [
-      "n=3\n"
-    ],
-    [
-      "n=3\n",
-      "if [ [ $n -gt 5 ]\n"
-    ],
-    [
-      "n=3\n",
-      "if [ [ $n -gt 5 ]\n",
-      "\tthen\n"
-    ],
-    [
-      "n=3\n",
-      "if [ [ $n -gt 5 ]\n",
-      "\tthen\n",
-      "\t\techo un bon\n"
-    ],
-    [
-      "n=3\n",
-      "if [ [ $n -gt 5 ]\n",
-      "\tthen\n",
-      "\t\techo un bon\n",
-      "\telif [$n -lt 10 ]\n"
-    ],
-    [
-      "n=3\n",
-      "if [ [ $n -gt 5 ]\n",
-      "\tthen\n",
-      "\t\techo un bon\n",
-      "\telif [$n -lt 10 ]\n",
-      "\t\tthen\n"
-    ],
-    [
-      "n=3\n",
-      "if [ [ $n -gt 5 ]\n",
-      "\tthen\n",
-      "\t\techo un bon\n",
-      "\telif [$n -lt 10 ]\n",
-      "\t\tthen\n",
-      "\t\t\techo Bon\n"
-    ],
-    [
-      "n=3\n",
-      "if [ [ $n -gt 5 ]\n",
-      "\tthen\n",
-      "\t\techo un bon\n",
-      "\telif [$n -lt 10 ]\n",
-      "\t\tthen\n",
-      "\t\t\techo Bon\n",
-      "\telse\n"
-    ],
-    [
-      "n=3\n",
-      "if [ [ $n -gt 5 ]\n",
-      "\tthen\n",
-      "\t\techo un bon\n",
-      "\telif [$n -lt 10 ]\n",
-      "\t\tthen\n",
-      "\t\t\techo Bon\n",
-      "\telse\n",
-      "\t\techo pas bon\n"
-    ],
-    [
-      "n=3\n",
-      "if [ [ $n -gt 5 ]\n",
-      "\tthen\n",
-      "\t\techo un bon\n",
-      "\telif [$n -lt 10 ]\n",
-      "\t\tthen\n",
-      "\t\t\techo Bon\n",
-      "\telse\n",
-      "\t\techo pas bon\n",
-      "fi\n"
-    ]
+    {
+      "name": "_1606728069__root_TP5bis__tp5bis_exo4.sh",
+      "lines": [
+        "echo il y a 'who' connect\u00c3e sur 'hostname'\n"
+      ]
+    },
+    {
+      "name": "_1606728219__root_TP5bis__tp5bis_exo4.sh",
+      "lines": [
+        "il y a `who\u00c3o\u00c3` connect\u00c3\u00a9 sur \u00c3`\u00c3hostname\u00c3\u00c3\u00c3`\u00c3\n"
+      ]
+    },
+    {
+      "name": "_1606728452__root_TP5bis__tp5bis_exo4.sh",
+      "lines": [
+        "il y a `\u00c3who -q`\u00c3 et `hostname`\n"
+      ]
+    },
+    {
+      "name": "_1606728690__root_TP5bis__tp5bis_exo4.sh",
+      "lines": [
+        "echo il y a 7`a `who -q` sur `hostname`\n"
+      ]
+    },
+    {
+      "name": "_1606729674__root_TP6__tp6_exo1.sh",
+      "lines": [
+        "n=6\n"
+      ]
+    },
+    {
+      "name": "_1606729841__root_TP6__tp6_exo1.sh",
+      "lines": [
+        "n=6\n",
+        "Lif test n -gt 5  -a test n -lt 10\n"
+      ]
+    },
+    {
+      "name": "_1606729853__root_TP6__tp6_exo1.sh",
+      "lines": [
+        "n=6\n",
+        "Lif test n -gt 5  -a test n -lt 10\n",
+        "\tthen\n"
+      ]
+    },
+    {
+      "name": "_1606729871__root_TP6__tp6_exo1.sh",
+      "lines": [
+        "n=6\n",
+        "Lif test n -gt 5  -a test n -lt 10\n",
+        "\tthen\n",
+        "\t\techo $n est compris entre 5 et 10\n"
+      ]
+    },
+    {
+      "name": "_1606729878__root_TP6__tp6_exo1.sh",
+      "lines": [
+        "n=6\n",
+        "Lif test n -gt 5  -a test n -lt 10\n",
+        "\tthen\n",
+        "\t\techo $n est compris entre 5 et 10\n",
+        "\telse\n"
+      ]
+    },
+    {
+      "name": "_1606729911__root_TP6__tp6_exo1.sh",
+      "lines": [
+        "n=6\n",
+        "Lif test n -gt 5  -a test n -lt 10\n",
+        "\tthen\n",
+        "\t\techo $n est compris entre 5 et 10\n",
+        "\telse\n",
+        "\t\techo $n n'est pas compris entre 5 et 10\n"
+      ]
+    },
+    {
+      "name": "_1606729919__root_TP6__tp6_exo1.sh",
+      "lines": [
+        "n=6\n",
+        "Lif test n -gt 5  -a test n -lt 10\n",
+        "\tthen\n",
+        "\t\techo $n est compris entre 5 et 10\n",
+        "\telse\n",
+        "\t\techo $n n'est pas compris entre 5 et 10\n",
+        "fi\n"
+      ]
+    },
+    {
+      "name": "_1606730025__root_TP6__tp6_exo1.sh",
+      "lines": [
+        "n=6\n"
+      ]
+    },
+    {
+      "name": "_1606730068__root_TP6__tp6_exo1.sh",
+      "lines": [
+        "n=6\n",
+        "if test n -gt 5 -a n -lt 10\n"
+      ]
+    },
+    {
+      "name": "_1606730074__root_TP6__tp6_exo1.sh",
+      "lines": [
+        "n=6\n",
+        "if test n -gt 5 -a n -lt 10\n",
+        "then\n"
+      ]
+    },
+    {
+      "name": "_1606730091__root_TP6__tp6_exo1.sh",
+      "lines": [
+        "n=6\n",
+        "if test n -gt 5 -a n -lt 10\n",
+        "then\n",
+        "echo c'est bon\n"
+      ]
+    },
+    {
+      "name": "_1606730093__root_TP6__tp6_exo1.sh",
+      "lines": [
+        "n=6\n",
+        "if test n -gt 5 -a n -lt 10\n",
+        "then\n",
+        "echo c'est bon\n",
+        "else\n"
+      ]
+    },
+    {
+      "name": "_1606730097__root_TP6__tp6_exo1.sh",
+      "lines": [
+        "n=6\n",
+        "if test n -gt 5 -a n -lt 10\n",
+        "then\n",
+        "echo c'est bon\n",
+        "else\n",
+        "echo pas bon\n"
+      ]
+    },
+    {
+      "name": "_1606730099__root_TP6__tp6_exo1.sh",
+      "lines": [
+        "n=6\n",
+        "if test n -gt 5 -a n -lt 10\n",
+        "then\n",
+        "echo c'est bon\n",
+        "else\n",
+        "echo pas bon\n",
+        "fi"
+      ]
+    },
+    {
+      "name": "_1606730100__root_TP6__tp6_exo1.sh",
+      "lines": [
+        "n=6\n",
+        "if test n -gt 5 -a n -lt 10\n",
+        "then\n",
+        "echo c'est bon\n",
+        "else\n",
+        "echo pas bon\n",
+        "fi\n"
+      ]
+    },
+    {
+      "name": "_1606730132__root_TP6__tp6_exo1.sh",
+      "lines": [
+        "n=6\n"
+      ]
+    },
+    {
+      "name": "_1606730180__root_TP6__tp6_exo1.sh",
+      "lines": [
+        "n=6\n",
+        "if test n -gt 5 -a test n -lt 10\n"
+      ]
+    },
+    {
+      "name": "_1606730183__root_TP6__tp6_exo1.sh",
+      "lines": [
+        "n=6\n",
+        "if test n -gt 5 -a test n -lt 10\n",
+        "\tthen\n"
+      ]
+    },
+    {
+      "name": "_1606730188__root_TP6__tp6_exo1.sh",
+      "lines": [
+        "n=6\n",
+        "if test n -gt 5 -a test n -lt 10\n",
+        "\tthen\n",
+        "\t\techo bon\n"
+      ]
+    },
+    {
+      "name": "_1606730191__root_TP6__tp6_exo1.sh",
+      "lines": [
+        "n=6\n",
+        "if test n -gt 5 -a test n -lt 10\n",
+        "\tthen\n",
+        "\t\techo bon\n",
+        "\telse\n"
+      ]
+    },
+    {
+      "name": "_1606730196__root_TP6__tp6_exo1.sh",
+      "lines": [
+        "n=6\n",
+        "if test n -gt 5 -a test n -lt 10\n",
+        "\tthen\n",
+        "\t\techo bon\n",
+        "\telse\n",
+        "\t\techo pas bon\n"
+      ]
+    },
+    {
+      "name": "_1606730202__root_TP6__tp6_exo1.sh",
+      "lines": [
+        "n=6\n",
+        "if test n -gt 5 -a test n -lt 10\n",
+        "\tthen\n",
+        "\t\techo bon\n",
+        "\telse\n",
+        "\t\techo pas bon\n",
+        "fi\n"
+      ]
+    },
+    {
+      "name": "_1606730251__root_TP6__tp6_exo1.sh",
+      "lines": [
+        "n=6\n"
+      ]
+    },
+    {
+      "name": "_1606730268__root_TP6__tp6_exo1.sh",
+      "lines": [
+        "n=6\n",
+        "if test $n - gt 5 -a test $n -lt 10\n"
+      ]
+    },
+    {
+      "name": "_1606730271__root_TP6__tp6_exo1.sh",
+      "lines": [
+        "n=6\n",
+        "if test $n - gt 5 -a test $n -lt 10\n",
+        "\tthen\n"
+      ]
+    },
+    {
+      "name": "_1606730275__root_TP6__tp6_exo1.sh",
+      "lines": [
+        "n=6\n",
+        "if test $n - gt 5 -a test $n -lt 10\n",
+        "\tthen\n",
+        "\t\techo bon\n"
+      ]
+    },
+    {
+      "name": "_1606730278__root_TP6__tp6_exo1.sh",
+      "lines": [
+        "n=6\n",
+        "if test $n - gt 5 -a test $n -lt 10\n",
+        "\tthen\n",
+        "\t\techo bon\n",
+        "\telse\n"
+      ]
+    },
+    {
+      "name": "_1606730282__root_TP6__tp6_exo1.sh",
+      "lines": [
+        "n=6\n",
+        "if test $n - gt 5 -a test $n -lt 10\n",
+        "\tthen\n",
+        "\t\techo bon\n",
+        "\telse\n",
+        "\t\techo pas bon\n"
+      ]
+    },
+    {
+      "name": "_1606730284__root_TP6__tp6_exo1.sh",
+      "lines": [
+        "n=6\n",
+        "if test $n - gt 5 -a test $n -lt 10\n",
+        "\tthen\n",
+        "\t\techo bon\n",
+        "\telse\n",
+        "\t\techo pas bon\n",
+        "fi\n"
+      ]
+    },
+    {
+      "name": "_1606730315__root_TP6__tp6_exo1.sh",
+      "lines": [
+        "n=6\n"
+      ]
+    },
+    {
+      "name": "_1606730339__root_TP6__tp6_exo1.sh",
+      "lines": [
+        "n=6\n",
+        "if test $n - gt\n"
+      ]
+    },
+    {
+      "name": "_1606730351__root_TP6__tp6_exo1.sh",
+      "lines": [
+        "n=6\n"
+      ]
+    },
+    {
+      "name": "_1606730358__root_TP6__tp6_exo1.sh",
+      "lines": [
+        "n=6\n",
+        "if test $n -gt 5\n"
+      ]
+    },
+    {
+      "name": "_1606730361__root_TP6__tp6_exo1.sh",
+      "lines": [
+        "n=6\n",
+        "if test $n -gt 5\n",
+        "\tthen\n"
+      ]
+    },
+    {
+      "name": "_1606730369__root_TP6__tp6_exo1.sh",
+      "lines": [
+        "n=6\n",
+        "if test $n -gt 5\n",
+        "\tthen\n",
+        "\t\techo  \n"
+      ]
+    },
+    {
+      "name": "_1606730396__root_TP6__tp6_exo1.sh",
+      "lines": [
+        "n=6\n",
+        "if test $n -gt 5\n",
+        "\tthen\n",
+        "\t\techo  \n",
+        "\telif test *n -lt 10\n"
+      ]
+    },
+    {
+      "name": "_1606730401__root_TP6__tp6_exo1.sh",
+      "lines": [
+        "n=6\n",
+        "if test $n -gt 5\n",
+        "\tthen\n",
+        "\t\techo  \n",
+        "\telif test *n -lt 10\n",
+        "\t\tthen\n"
+      ]
+    },
+    {
+      "name": "_1606730409__root_TP6__tp6_exo1.sh",
+      "lines": [
+        "n=6\n",
+        "if test $n -gt 5\n",
+        "\tthen\n",
+        "\t\techo  \n",
+        "\telif test *n -lt 10\n",
+        "\t\tthen\n",
+        "\t\t\techo c'est bon\n"
+      ]
+    },
+    {
+      "name": "_1606730413__root_TP6__tp6_exo1.sh",
+      "lines": [
+        "n=6\n",
+        "if test $n -gt 5\n",
+        "\tthen\n",
+        "\t\techo  \n",
+        "\telif test *n -lt 10\n",
+        "\t\tthen\n",
+        "\t\t\techo c'est bon\n",
+        "\telse\n"
+      ]
+    },
+    {
+      "name": "_1606730417__root_TP6__tp6_exo1.sh",
+      "lines": [
+        "n=6\n",
+        "if test $n -gt 5\n",
+        "\tthen\n",
+        "\t\techo  \n",
+        "\telif test *n -lt 10\n",
+        "\t\tthen\n",
+        "\t\t\techo c'est bon\n",
+        "\telse\n",
+        "\t\techo pas bon\n"
+      ]
+    },
+    {
+      "name": "_1606730419__root_TP6__tp6_exo1.sh",
+      "lines": [
+        "n=6\n",
+        "if test $n -gt 5\n",
+        "\tthen\n",
+        "\t\techo  \n",
+        "\telif test *n -lt 10\n",
+        "\t\tthen\n",
+        "\t\t\techo c'est bon\n",
+        "\telse\n",
+        "\t\techo pas bon\n",
+        "fi\n"
+      ]
+    },
+    {
+      "name": "_1606730452__root_TP6__tp6_exo1.sh",
+      "lines": [
+        "n=6\n"
+      ]
+    },
+    {
+      "name": "_1606730461__root_TP6__tp6_exo1.sh",
+      "lines": [
+        "n=6\n",
+        "if test $n -gt 5\n"
+      ]
+    },
+    {
+      "name": "_1606730464__root_TP6__tp6_exo1.sh",
+      "lines": [
+        "n=6\n",
+        "if test $n -gt 5\n",
+        "\tthen\n"
+      ]
+    },
+    {
+      "name": "_1606730472__root_TP6__tp6_exo1.sh",
+      "lines": [
+        "n=6\n",
+        "if test $n -gt 5\n",
+        "\tthen\n",
+        "\t\techo un bon\n"
+      ]
+    },
+    {
+      "name": "_1606730483__root_TP6__tp6_exo1.sh",
+      "lines": [
+        "n=6\n",
+        "if test $n -gt 5\n",
+        "\tthen\n",
+        "\t\techo un bon\n",
+        "\telif test $n -lt 10\n"
+      ]
+    },
+    {
+      "name": "_1606730486__root_TP6__tp6_exo1.sh",
+      "lines": [
+        "n=6\n",
+        "if test $n -gt 5\n",
+        "\tthen\n",
+        "\t\techo un bon\n",
+        "\telif test $n -lt 10\n",
+        "\t\tthen\n"
+      ]
+    },
+    {
+      "name": "_1606730491__root_TP6__tp6_exo1.sh",
+      "lines": [
+        "n=6\n",
+        "if test $n -gt 5\n",
+        "\tthen\n",
+        "\t\techo un bon\n",
+        "\telif test $n -lt 10\n",
+        "\t\tthen\n",
+        "\t\t\techo Bon\n"
+      ]
+    },
+    {
+      "name": "_1606730494__root_TP6__tp6_exo1.sh",
+      "lines": [
+        "n=6\n",
+        "if test $n -gt 5\n",
+        "\tthen\n",
+        "\t\techo un bon\n",
+        "\telif test $n -lt 10\n",
+        "\t\tthen\n",
+        "\t\t\techo Bon\n",
+        "\telse\n"
+      ]
+    },
+    {
+      "name": "_1606730497__root_TP6__tp6_exo1.sh",
+      "lines": [
+        "n=6\n",
+        "if test $n -gt 5\n",
+        "\tthen\n",
+        "\t\techo un bon\n",
+        "\telif test $n -lt 10\n",
+        "\t\tthen\n",
+        "\t\t\techo Bon\n",
+        "\telse\n",
+        "\t\techo pas bon\n"
+      ]
+    },
+    {
+      "name": "_1606730501__root_TP6__tp6_exo1.sh",
+      "lines": [
+        "n=6\n",
+        "if test $n -gt 5\n",
+        "\tthen\n",
+        "\t\techo un bon\n",
+        "\telif test $n -lt 10\n",
+        "\t\tthen\n",
+        "\t\t\techo Bon\n",
+        "\telse\n",
+        "\t\techo pas bon\n",
+        "fi\n"
+      ]
+    },
+    {
+      "name": "_1606730555__root_TP6__tp6_exo1bis.sh",
+      "lines": [
+        "n=3\n"
+      ]
+    },
+    {
+      "name": "_1606730648__root_TP6__tp6_exo1bis.sh",
+      "lines": [
+        "n=3\n",
+        "if [ [ $n -gt 5 ]\n"
+      ]
+    },
+    {
+      "name": "_1606730650__root_TP6__tp6_exo1bis.sh",
+      "lines": [
+        "n=3\n",
+        "if [ [ $n -gt 5 ]\n",
+        "\tthen\n"
+      ]
+    },
+    {
+      "name": "_1606730655__root_TP6__tp6_exo1bis.sh",
+      "lines": [
+        "n=3\n",
+        "if [ [ $n -gt 5 ]\n",
+        "\tthen\n",
+        "\t\techo un bon\n"
+      ]
+    },
+    {
+      "name": "_1606730669__root_TP6__tp6_exo1bis.sh",
+      "lines": [
+        "n=3\n",
+        "if [ [ $n -gt 5 ]\n",
+        "\tthen\n",
+        "\t\techo un bon\n",
+        "\telif [$n -lt 10 ]\n"
+      ]
+    },
+    {
+      "name": "_1606730674__root_TP6__tp6_exo1bis.sh",
+      "lines": [
+        "n=3\n",
+        "if [ [ $n -gt 5 ]\n",
+        "\tthen\n",
+        "\t\techo un bon\n",
+        "\telif [$n -lt 10 ]\n",
+        "\t\tthen\n"
+      ]
+    },
+    {
+      "name": "_1606730678__root_TP6__tp6_exo1bis.sh",
+      "lines": [
+        "n=3\n",
+        "if [ [ $n -gt 5 ]\n",
+        "\tthen\n",
+        "\t\techo un bon\n",
+        "\telif [$n -lt 10 ]\n",
+        "\t\tthen\n",
+        "\t\t\techo Bon\n"
+      ]
+    },
+    {
+      "name": "_1606730680__root_TP6__tp6_exo1bis.sh",
+      "lines": [
+        "n=3\n",
+        "if [ [ $n -gt 5 ]\n",
+        "\tthen\n",
+        "\t\techo un bon\n",
+        "\telif [$n -lt 10 ]\n",
+        "\t\tthen\n",
+        "\t\t\techo Bon\n",
+        "\telse\n"
+      ]
+    },
+    {
+      "name": "_1606730684__root_TP6__tp6_exo1bis.sh",
+      "lines": [
+        "n=3\n",
+        "if [ [ $n -gt 5 ]\n",
+        "\tthen\n",
+        "\t\techo un bon\n",
+        "\telif [$n -lt 10 ]\n",
+        "\t\tthen\n",
+        "\t\t\techo Bon\n",
+        "\telse\n",
+        "\t\techo pas bon\n"
+      ]
+    },
+    {
+      "name": "_1606730688__root_TP6__tp6_exo1bis.sh",
+      "lines": [
+        "n=3\n",
+        "if [ [ $n -gt 5 ]\n",
+        "\tthen\n",
+        "\t\techo un bon\n",
+        "\telif [$n -lt 10 ]\n",
+        "\t\tthen\n",
+        "\t\t\techo Bon\n",
+        "\telse\n",
+        "\t\techo pas bon\n",
+        "fi\n"
+      ]
+    }
   ],
   "profile": [
     {

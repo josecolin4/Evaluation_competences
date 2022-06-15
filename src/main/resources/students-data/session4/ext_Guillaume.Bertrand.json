@@ -2,558 +2,129 @@
   "name": "ext_Guillaume.Bertrand",
   "session": 4,
   "scripts": [
-    [
-      "#!/bin/bash\n",
-      "if [ $1 -gt 5 -a $1 -lt 10 ]\n",
-      "\tthen\n",
-      "\t\techo La valeur $1 est comprise entre 5 et 10\n",
-      "\telse\n",
-      "\t\techo La valeur $1 \"n'est pas comprise entre 5 et 10\"\n",
-      "fi\n"
-    ],
-    [
-      "if [ $1 = -e\n"
-    ],
-    [
-      "if [ $1 -e ] \n",
-      "\tthen\n",
-      "\t\tget Le fichier existe\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if [ $1 -e ] \n",
-      "\tthen\n",
-      "\t\techo Le fichier existe\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if [ -e $1 ] \n",
-      "\tthen\n",
-      "\t\techo Le fichier existe\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if [ -e $1 ] \n",
-      "\tthen\n",
-      "\t\techo Le fichier existe\n",
-      "\telse echo \"Le fichier n'existe pas\"\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if [ -e $1 ] \n",
-      "\tthen\n",
-      "\t\techo Le fichier existe\n",
-      "\telse\n",
-      "\t\t echo \"Le fichier n'existe pas\"\n",
-      "fi\n"
-    ],
-    [
-      "if [ $1 -e -a $2 -e ]\n",
-      "\tthen\n",
-      "\t\techo Les fichier existe\n",
-      "\telse \n",
-      "\t\techo \"Au moins un des deux fichier n'existe pas\"\n",
-      "fi\n"
-    ],
-    [
-      "if [ -e $1 -a -e $2 ]\n",
-      "\tthen\n",
-      "\t\techo Les fichier existe\n",
-      "\telse \n",
-      "\t\techo \"Au moins un des deux fichier n'existe pas\"\n",
-      "fi\n"
-    ],
-    [
-      "if [ -e $1 -a -e $2 ]\n",
-      "\tthen\n",
-      "\t\techo Les fichier existe\n",
-      "\t\techo Souhaitez-vous concatenez les fichiers ?\n",
-      "\t\tif [ $1 = oui ]\n",
-      "\t\t\tthen\n",
-      "\t\t\t\techo hi\n",
-      "\t\tfi\n",
-      "\telse \n",
-      "\t\techo \"Au moins un des deux fichier n'existe pas\"\n",
-      "fi\n"
-    ],
-    [
-      "if [ -e $1 -a -e $2 ]\n",
-      "\tthen\n",
-      "\t\techo Les fichier existe\n",
-      "\t\techo \"Souhaitez-vous concatenez les fichiers ?\"\n",
-      "\tif [ $1 = oui ]\n",
-      "\t\t\tthen\n",
-      "\t\t\t\techo hi\n",
-      "\t\tfi\n",
-      "\telse \n",
-      "\t\techo \"Au moins un des deux fichier n'existe pas\"\n",
-      "fi\n"
-    ],
-    [
-      "if [ -e $1 -a -e $2 ]\n",
-      "\tthen\n",
-      "\t\techo Les fichier existe\n",
-      "\t\techo \"Souhaitez-vous concatenez les fichiers ?\"\n",
-      "\t\t\tread nom\n",
-      "\tif [ $1 = oui ]\n",
-      "\t\t\tthen\n",
-      "\t\t\t\techo hi\n",
-      "\t\tfi\n",
-      "\telse \n",
-      "\t\techo \"Au moins un des deux fichier n'existe pas\"\n",
-      "fi\n"
-    ],
-    [
-      "if [ -e $1 -a -e $2 ]\n",
-      "\tthen\n",
-      "\t\techo Les fichier existe\n",
-      "\t\techo \"Souhaitez-vous concatenez les fichiers ?\"\n",
-      "\t\t\tread \n",
-      "\tif [ $1 = oui ]\n",
-      "\t\t\tthen\n",
-      "\t\t\t\techo hi\n",
-      "\t\tfi\n",
-      "\telse \n",
-      "\t\techo \"Au moins un des deux fichier n'existe pas\"\n",
-      "fi\n"
-    ],
-    [
-      "if [ -e $1 -a -e $2 ]\n",
-      "\tthen\n",
-      "\t\techo Les fichier existe\n",
-      "\t\techo \"Souhaitez-vous concatenez les fichiers ?\"\n",
-      "\t\t\tread reponse\n",
-      "\tif [ reponse = oui ]\n",
-      "\t\t\tthen\n",
-      "\t\t\t\techo hi\n",
-      "\t\tfi\n",
-      "\telse \n",
-      "\t\techo \"Au moins un des deux fichier n'existe pas\"\n",
-      "fi\n"
-    ],
-    [
-      "if [ -e $1 -a -e $2 ]\n",
-      "\tthen\n",
-      "\t\techo Les fichier existe\n",
-      "\t\techo \"Souhaitez-vous concatenez les fichiers ?\"\n",
-      "\t\t\tread reponse\n",
-      "\t\t\techo $reponse\n",
-      "\tif [ reponse = oui ]\n",
-      "\t\t\tthen\n",
-      "\t\t\t\techo hi\n",
-      "\tfi\n",
-      "\telse \n",
-      "\t\techo \"Au moins un des deux fichier n'existe pas\"\n",
-      "fi\n"
-    ],
-    [
-      "if [ -e $1 -a -e $2 ]\n",
-      "\tthen\n",
-      "\t\techo Les fichier existe\n",
-      "\t\techo \"Souhaitez-vous concatenez les fichiers ?\"\n",
-      "\t\t\tread reponse\n",
-      "\tif [ $reponse = oui ]\n",
-      "\t\t\tthen\n",
-      "\t\t\t\techo hi\n",
-      "\tfi\n",
-      "\telse \n",
-      "\t\techo \"Au moins un des deux fichier n'existe pas\"\n",
-      "fi\n"
-    ],
-    [
-      "if [ -e $1 -a -e $2 ]\n",
-      "\tthen\n",
-      "\t\techo Les fichier existe\n",
-      "\t\techo \"Souhaitez-vous concatenez les fichiers ?\"\n",
-      "\t\t\tread reponse\n",
-      "\tif [ $reponse = oui ]\n",
-      "\t\t\tthen\n",
-      "\t\t\t\techo $1 $2\n",
-      "\tfi\n",
-      "\telse \n",
-      "\t\techo \"Au moins un des deux fichier n'existe pas\"\n",
-      "fi\n"
-    ],
-    [
-      "if [ -e $1 -a -e $2 ]\n",
-      "\tthen\n",
-      "\t\techo Les fichier existe\n",
-      "\t\techo \"Souhaitez-vous concatenez les fichiers ?\"\n",
-      "\t\t\tread reponse\n",
-      "\tif [ $reponse = oui ]\n",
-      "\t\t\tthen\n",
-      "\t\t\t\tcat $1 $2\n",
-      "\tfi\n",
-      "\telse \n",
-      "\t\techo \"Au moins un des deux fichier n'existe pas\"\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "a = 3\n",
-      "echo $a\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "let a = 3\n",
-      "echo $a\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "let a=3\n",
-      "echo $a\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "a=3\n",
-      "echo $a\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "liste_commande=date who pwd ls\n",
-      "echo $liste_commande\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "liste_commande=date who pwd ls\n",
-      "for i in $liste_commande\n",
-      "do\n",
-      "\techo $i\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "liste_commande=date who pwd ls\n",
-      "for i in $liste_commande\n",
-      "do\n",
-      "\techo $i\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "liste_commande=date who pwd ls\n",
-      "for liste_commande in $liste_commande\n",
-      "do\n",
-      "\techo $liste_commande\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "for in\n",
-      "do \n",
-      "\techo argument 1 = $1, argument 2 = $2, argument 3 = $3\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "for i in i\n",
-      "do \n",
-      "\techo argument 1 = $1, argument 2 = $2, argument 3 = $3\n",
-      "\techo Il y a $* arguments\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "for i in $(seq 10)\n",
-      "do\n",
-      "\techo $i\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "for i in $(seq 10)\n",
-      "do\n",
-      "\tcalcul=$i\n",
-      "\techo $calcul\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "for i in $(seq 10)\n",
-      "do\n",
-      "\tcalcul=$i\n",
-      "\techo $calcul\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "for i in $(seq 10)\n",
-      "do\n",
-      "\tcalcul=$i*2\n",
-      "\techo $calcul\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "for i in $(seq 10)\n",
-      "do\n",
-      "\tcalcul=$i+2\n",
-      "\techo $calcul\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "for i in $(seq 10)\n",
-      "do\n",
-      "\tcalcul=i+2\n",
-      "\techo $calcul\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "for i in $(seq 10)\n",
-      "do\n",
-      "\tcalcul=$*i+2\n",
-      "\techo $calcul\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "for i in $(seq 10)\n",
-      "do\n",
-      "\techo $i\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "for i in $(seq 10)+2\n",
-      "do\n",
-      "\techo $i\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "for i in $(seq 10)\n",
-      "do\n",
-      "\techo $i\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "calcul=$1/2\n",
-      "echo $calcul\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "calcul=6/2\n",
-      "echo $calcul\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "calcul=6/2\n",
-      "echo calcul\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "calcul=$((3+3))\n",
-      "echo $calcul\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "calcul=$(($1/2))\n",
-      "echo $calcul\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "calcul=$(($1/2))\n",
-      "echo $calcul\n",
-      "calcul1=`expr $1/2`\n",
-      "echo $calcul\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "calcul=`expr $1/2`\n",
-      "echo $calcul\n",
-      "calcul1=$(($1/2))\n",
-      "echo $calcul1\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "calcul=`expr $1*2`\n",
-      "echo $calcul\n",
-      "calcul1=$(($1*2))\n",
-      "echo $calcul1\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "calcul=`expr $1 * 2`\n",
-      "echo $calcul\n",
-      "calcul1=$(($1*2))\n",
-      "echo $calcul1\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "calcul=`expr $1 * 2`\n",
-      "echo $calcul\n",
-      "calcul1=$(($1*2))\n",
-      "echo $calcul\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "calcul=`expr $1 * 2`\n",
-      "echo $calcul1\n",
-      "calcul1=$(($1*2))\n",
-      "echo $calcul1\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "calcul1=$(($1*2))\n",
-      "echo $calcul1\n",
-      "calcul=`expr $1 / 2`\n",
-      "echo $calcul\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "calcul1=$(($1*2))\n",
-      "echo $calcul1\n",
-      "calcul=`expr $1 * 2`\n",
-      "echo $calcul\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "calcul1=$(($1*2))\n",
-      "echo $calcul1\n",
-      "calcul=`expr $1 \\* 2`\n",
-      "echo $calcul\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Quelle est votre annee de nnaissance ?\n",
-      "read annee\n",
-      "echo Vous \u00c3\u00aates n\u00c3\u00a9e en annee\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo \"Quelle est votre ann\u00c3\u00a9e de naissance ?\"\n",
-      "read annee\n",
-      "echo Vous \u00c3\u00aates n\u00c3\u00a9e en $annee\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo \"Quelle est votre ann\u00c3\u00a9e de naissance ?\"\n",
-      "read annee\n",
-      "echo Vous \u00c3\u00aates n\u00c3\u00a9e en $annee, vous avez `date`\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo \"Quelle est votre ann\u00c3\u00a9e de naissance ?\"\n",
-      "read annee\n",
-      "echo Vous \u00c3\u00aates n\u00c3\u00a9e en $annee, vous avez `date-$annee`\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo \"Quelle est votre ann\u00c3\u00a9e de naissance ?\"\n",
-      "read annee\n",
-      "echo Vous \u00c3\u00aates n\u00c3\u00a9e en $annee, vous avez `date`\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo \"Quelle est votre ann\u00c3\u00a9e de naissance ?\"\n",
-      "read n\n",
-      "annee=$(date '+%y')\n",
-      "echo Vous avez $(( 2000+annee-n)) ans\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "who `wc | -l`\n",
-      "hostname\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo who `wc | -l`\n",
-      "hostname\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo `who wc | -l`\n",
-      "hostname\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo `who wc | -l`\n",
-      "echo hostname\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo `who wc | -l`\n",
-      "echo host=`hostname`\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo `who wc | -l`\n",
-      "host=`hostname`\n",
-      "echo $host\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "var=`who wc | -l`\n",
-      "echo $var\n",
-      "host=`hostname`\n",
-      "echo $host\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "var=`who wc | -l`\n",
-      "\n",
-      "host=`hostname`\n",
-      "echo $host\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo wc | -l\n",
-      "host=`hostname`\n",
-      "echo $host\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo `wc | -l`\n",
-      "host=`hostname`\n",
-      "echo $host\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "`wc | -l`\n",
-      "host=`hostname`\n",
-      "echo $host\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "var=`wc | -l`\n",
-      "echo $var\n",
-      "host=`hostname`\n",
-      "echo $host\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "var=wc | -l\n",
-      "echo $var\n",
-      "host=`hostname`\n",
-      "echo $host\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo hi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo ls -l $1\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "set -- $(ls -l $1)\n",
-      "echo $5\n",
-      "\n",
-      "\n"
-    ]
+    {
+      "name": "tp6_exo1.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "if [ $1 -gt 5 -a $1 -lt 10 ]\n",
+        "\tthen\n",
+        "\t\techo La valeur $1 est comprise entre 5 et 10\n",
+        "\telse\n",
+        "\t\techo La valeur $1 \"n'est pas comprise entre 5 et 10\"\n",
+        "fi\n"
+      ]
+    },
+    {
+      "name": "tp6_exo2.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "if [ -e $1 ] \n",
+        "\tthen\n",
+        "\t\techo Le fichier existe\n",
+        "\telse\n",
+        "\t\t echo \"Le fichier n'existe pas\"\n",
+        "fi\n"
+      ]
+    },
+    {
+      "name": "tp6_exo3.sh",
+      "lines": [
+        "if [ -e $1 -a -e $2 ]\n",
+        "\tthen\n",
+        "\t\techo Les fichier existe\n",
+        "\t\techo \"Souhaitez-vous concatenez les fichiers ?\"\n",
+        "\t\t\tread reponse\n",
+        "\tif [ $reponse = oui ]\n",
+        "\t\t\tthen\n",
+        "\t\t\t\tcat $1 $2\n",
+        "\tfi\n",
+        "\telse \n",
+        "\t\techo \"Au moins un des deux fichier n'existe pas\"\n",
+        "fi\n"
+      ]
+    },
+    {
+      "name": "tp6_exo4.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "liste_commande=date who pwd ls\n",
+        "for liste_commande in $liste_commande\n",
+        "do\n",
+        "\techo $liste_commande\n",
+        "done\n"
+      ]
+    },
+    {
+      "name": "tp6_exo5.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "for i in i\n",
+        "do \n",
+        "\techo argument 1 = $1, argument 2 = $2, argument 3 = $3\n",
+        "\techo Il y a $* arguments\n",
+        "done\n"
+      ]
+    },
+    {
+      "name": "tp6_exo6.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "for i in $(seq 10)\n",
+        "do\n",
+        "\techo $i\n",
+        "done\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo1.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "calcul=$(($1/2))\n",
+        "echo $calcul\n",
+        "calcul1=`expr $1/2`\n",
+        "echo $calcul\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo2.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "calcul1=$(($1*2))\n",
+        "echo $calcul1\n",
+        "calcul=`expr $1 \\* 2`\n",
+        "echo $calcul\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo3.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo \"Quelle est votre ann\u00c3\u00a9e de naissance ?\"\n",
+        "read n\n",
+        "annee=$(date '+%y')\n",
+        "echo Vous avez $(( 2000+annee-n)) ans\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo4.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "var=wc | -l\n",
+        "echo $var\n",
+        "host=`hostname`\n",
+        "echo $host\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo5.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "set -- $(ls -l $1)\n",
+        "echo $5\n",
+        "\n",
+        "\n"
+      ]
+    }
   ],
   "profile": [
     {

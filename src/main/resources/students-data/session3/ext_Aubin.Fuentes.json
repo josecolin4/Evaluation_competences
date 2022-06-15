@@ -2,397 +2,46 @@
   "name": "ext_Aubin.Fuentes",
   "session": 3,
   "scripts": [
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "valeur = `expr $1/2`\n",
-      "echo $valeur\n",
-      "\n",
-      "n = $1\n",
-      "valeur = `expr $((n/2))`\n",
-      "echo $valeur\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "valeur = `expr $1/2`\n",
-      "echo $valeur\n",
-      "n = $1\n",
-      "valeur = `expr $(($n/2))`\n",
-      "echo $valeur\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "valeur=`expr $1/2`\n",
-      "echo $valeur\n",
-      "n=$1\n",
-      "valeur=`expr $(($n/2))`\n",
-      "echo $valeur\n"
-    ],
-    [
-      "#!/bin/bash\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "valeur=`expr $1 * 2`\n",
-      "echo $valeur\n",
-      "\n",
-      "n=$1\n",
-      "echo $((n*2))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "valeur=`expr $1/2`\n",
-      "echo $valeur\n",
-      "n=$1\n",
-      "valeur=$(($n/2))\n",
-      "echo $valeur\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "valeur=`expr $1/2`\n",
-      "echo $valeur\n",
-      "n=$1\n",
-      "echo $(($n/2))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "valeur=`expr $1*2`\n",
-      "echo $valeur\n",
-      "\n",
-      "n=$1\n",
-      "echo $((n*2))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "expr $1 * 2\n",
-      "\n",
-      "n=$1\n",
-      "echo $((n*2))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo `expr $1*2`\n",
-      "\n",
-      "n=$1\n",
-      "echo $((n*2))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "valeur=expr $1/2\n",
-      "echo $valeur\n",
-      "n=$1\n",
-      "echo $(($n/2))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo `expr $1/2`\n",
-      "n=$1\n",
-      "echo $(($n/2))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo $`expr $1/2`\n",
-      "n=$1\n",
-      "echo $(($n/2))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "expr $1 / 2\n",
-      "n=$1\n",
-      "echo $(($n/2))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "expr $1 * 2\n",
-      "\n",
-      "echo $(($1*2))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "expr $1 * 2\n",
-      "\n",
-      "n=$1\n",
-      "echo $((n*2))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "expr $1*2\n",
-      "\n",
-      "echo $(($1*2))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "expr $1 * 2\n",
-      "\n",
-      "echo $(($1*2))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "valeur=$1\n",
-      "expr valeur * 2\n",
-      "\n",
-      "echo $(($1*2))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "valeur=$1\n",
-      "expr $valeur * 2\n",
-      "\n",
-      "echo $(($1*2))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "valeur=`$1 * 2`\n",
-      "expr $valeur\n",
-      "\n",
-      "echo $(($1*2))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "valeur=`$1*2`\n",
-      "expr $valeur\n",
-      "\n",
-      "echo $(($1*2))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "valeur=expr `$1*2`\n",
-      "echo $valeur\n",
-      "\n",
-      "echo $(($1*2))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "valeur=`expr $1 * 2`\n",
-      "echo $valeur\n",
-      "\n",
-      "echo $(($1*2))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "valeur=`expr $1*2`\n",
-      "echo $valeur\n",
-      "\n",
-      "echo $(($1*2))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "valeur=`expr $1*2`\n",
-      "echo `expr $1*2`\n",
-      "\n",
-      "echo $(($1*2))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo `expr $1 * 2`\n",
-      "\n",
-      "echo $(($1*2))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo expr $1 * 2\n",
-      "\n",
-      "echo $(($1*2))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo expr $1*2\n",
-      "\n",
-      "echo $(($1*2))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "expr $1 * 2\n",
-      "\n",
-      "echo $(($1*2))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "expr $1*2\n",
-      "\n",
-      "echo $(($1*2))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "expr $1 / 2\n",
-      "echo $(($1/2))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "expr $1 * 2\n",
-      "echo $(($1*2))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "expr $1 \\* 2\n",
-      "echo $(($1*2))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
-      "read ann\u00c3\u00a9e\n",
-      "n=`expr $date - $ann\u00c3\u00a9e`\n",
-      "echo Vous \u00c3\u00aates n\u00c3\u00a9(e) en $ann\u00c3\u00a9e, vous avez donc $n ans.\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
-      "read ann\u00c3\u00a9e\n",
-      "n=`expr $date - $ann\u00c3\u00a9e`\n",
-      "echo Vous \u00c3\u00aates n\u00c3\u00a9\\(e\\) en $ann\u00c3\u00a9e, vous avez donc $n ans.\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
-      "read annee\n",
-      "n=`expr $date - $annee`\n",
-      "echo Vous \u00c3\u00aates n\u00c3\u00a9\\(e\\) en $annee, vous avez donc $n ans.\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
-      "read annee\n",
-      "n=`expr date - $annee`\n",
-      "echo Vous \u00c3\u00aates n\u00c3\u00a9\\(e\\) en $annee, vous avez donc $n ans.\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
-      "read annee\n",
-      "an=$date\n",
-      "n=`expr an - $annee`\n",
-      "echo Vous \u00c3\u00aates n\u00c3\u00a9\\(e\\) en $annee, vous avez donc $n ans.\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
-      "read annee\n",
-      "an=$date\n",
-      "n=`expr $an - $annee`\n",
-      "echo Vous \u00c3\u00aates n\u00c3\u00a9\\(e\\) en $annee, vous avez donc $n ans.\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
-      "read annee\n",
-      "an=date\n",
-      "n=`expr $an - $annee`\n",
-      "echo Vous \u00c3\u00aates n\u00c3\u00a9\\(e\\) en $annee, vous avez donc $n ans.\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
-      "read annee\n",
-      "an=date\n",
-      "echo $an\n",
-      "echo Vous \u00c3\u00aates n\u00c3\u00a9\\(e\\) en $annee, vous avez donc \\$n ans.\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
-      "read annee\n",
-      "an=$date\n",
-      "echo $an\n",
-      "echo Vous \u00c3\u00aates n\u00c3\u00a9\\(e\\) en $annee, vous avez donc \\$n ans.\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
-      "read annee\n",
-      "date\n",
-      "echo Vous \u00c3\u00aates n\u00c3\u00a9\\(e\\) en $annee, vous avez donc \\$n ans.\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
-      "read annee\n",
-      "n=`expr `date` - $annee`\n",
-      "echo Vous \u00c3\u00aates n\u00c3\u00a9\\(e\\) en $annee, vous avez donc \\$n ans.\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
-      "read annee\n",
-      "v=`date`\n",
-      "n=`expr $v - $annee`\n",
-      "echo Vous \u00c3\u00aates n\u00c3\u00a9\\(e\\) en $annee, vous avez donc \\$n ans.\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
-      "read annee\n",
-      "v=`date +%Y`\n",
-      "n=`expr $v - $annee`\n",
-      "echo Vous \u00c3\u00aates n\u00c3\u00a9\\(e\\) en $annee, vous avez donc \\$n ans.\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
-      "read annee\n",
-      "v=`date \"+%Y\"`\n",
-      "n=`expr $v - $annee`\n",
-      "echo Vous \u00c3\u00aates n\u00c3\u00a9\\(e\\) en $annee, vous avez donc \\$n ans.\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
-      "read annee\n",
-      "v=`date \"+%Y\"`\n",
-      "n=`expr $v - $annee`\n",
-      "echo Vous \u00c3\u00aates n\u00c3\u00a9\\(e\\) en $annee, vous avez donc $n ans.\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
-      "read annee\n",
-      "v=`date \"+%Y\"`\n",
-      "n=`expr $v - $annee`\n",
-      "echo Vous \u00c3\u00aates n\u00c3\u00a9\\(e\\) en $annee, vous avez donc $n ans.\n",
-      "\n",
-      "echo test 2e methode :\n",
-      "echo Vous \u00c3\u00aates n\u00c3\u00a9\\(e\\) en $annee, vous avez donc $((`date \"+%Y\"-$annee`)) ans.\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "`hostname`\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "hostname\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "$(who)\n",
-      "$(hostname)\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "who\n",
-      "$(who)\n",
-      "hostname\n",
-      "$(hostname)\n"
-    ]
+    {
+      "name": "tp5bis_exo1.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "expr $1 / 2\n",
+        "echo $(($1/2))\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo2.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "expr $1 \\* 2\n",
+        "echo $(($1*2))\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo3.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
+        "read annee\n",
+        "v=`date \"+%Y\"`\n",
+        "n=`expr $v - $annee`\n",
+        "echo Vous \u00c3\u00aates n\u00c3\u00a9\\(e\\) en $annee, vous avez donc $n ans.\n",
+        "\n",
+        "echo test 2e methode :\n",
+        "echo Vous \u00c3\u00aates n\u00c3\u00a9\\(e\\) en $annee, vous avez donc $((`date \"+%Y\"-$annee`)) ans.\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo4.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "who\n",
+        "$(who)\n",
+        "hostname\n",
+        "$(hostname)\n"
+      ]
+    }
   ],
   "profile": [
     {

@@ -1,25 +1,21 @@
 package src;
 
-import org.antlr.runtime.Token;
 import org.antlr.runtime.tree.Tree;
 import src.parser.BashParser;
-
-import java.util.List;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
+import src.util.BashUtils;
 
 public class Main {
 
     public static void main(String[] args) {
-        BashParser parser = new BashParser();
-        // Tree tree = parser.parse("for i in 1 2 3\n do\n echo i\n done");
-        Tree tree = parser.parse("set 1 2 3");
-        visit(tree, 0);
-        // System.out.println(BashParser.NODES_TYPES);
+//        BashParser parser = new BashParser();
+//        Tree tree = parser.parse("if condition\n then; echo bonjour; fi");
+//        visit(tree, 0);
 
-//        Pattern pattern = Pattern.compile("set .+");
-//        Matcher matcher = pattern.matcher("set");
+//        Pattern pattern = Pattern.compile("(.*;)?set(;.*)?");
+//        Matcher matcher = pattern.matcher("ihrgihdorghdrgd;set;efsefs");
 //        System.out.println("match : " + matcher.matches());
+
+        BashUtils.isCommandSyntaxCorrect("> test.sh");
     }
 
     public static void visit(Tree tree, int depth){

@@ -2,52 +2,65 @@
   "name": "ext_Thomas.Doumeng",
   "session": 1,
   "scripts": [
-    [
-      "#!/bin/bash\n",
-      "echo \"Cher utilisateur quel est ton pr\u00c3\u00a9nom\" \\?\n",
-      "read prenom\n",
-      "echo Ravi de te connaitre, $prenom \n",
-      "echo Quel est ton nom et ton age \\?\n",
-      "read nom age\n",
-      "echo Tu es $prenom $nom et tu as $age ans, n\\'est-ce pas\\?\n",
-      "read reponse\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo \"Je suis le script Shell\" $0\n",
-      "echo \"Mes arguments sont \"$*\n",
-      "echo \"Le premier argument est \"$1\n",
-      "echo \"Le deuxi\u00c3\u00a8me argument est \"$2\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo \"Le script\" $0 \"poss\u00c3\u00a8de\" $# \"param\u00c3\u00a8tre(s), que voici:\"  $*\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo \"Nous somme le :\"\\`date\\`\n",
-      "echo \"Nous sommes le\" $(date)\n",
-      "echo \"Ceci est\"\n",
-      "echo \"une tr\u00c3\u00a8s\"\n",
-      "echo \"longue phrase\"\n",
-      "echo \"Voici une etoile\" :\\*\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "a=$($1 + 1)\n",
-      "echo \"Devra afficher\" $a\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "a=$(($1 + 1))\n",
-      "echo \"Devra afficher\" $a\n"
-    ],
-    [
-      "#!bin/bin/bash\n",
-      "export PATH=~:$PATH\n"
-    ]
+    {
+      "name": "tp5_exo5.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo \"Cher utilisateur quel est ton pr\u00c3\u00a9nom\" \\?\n",
+        "read prenom\n",
+        "echo Ravi de te connaitre, $prenom \n",
+        "echo Quel est ton nom et ton age \\?\n",
+        "read nom age\n",
+        "echo Tu es $prenom $nom et tu as $age ans, n\\'est-ce pas\\?\n",
+        "read reponse\n"
+      ]
+    },
+    {
+      "name": "tp5_exo6.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo \"Je suis le script Shell\" $0\n",
+        "echo \"Mes arguments sont \"$*\n",
+        "echo \"Le premier argument est \"$1\n",
+        "echo \"Le deuxi\u00c3\u00a8me argument est \"$2\n",
+        "\n"
+      ]
+    },
+    {
+      "name": "tp5_exo52.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo \"Le script\" $0 \"poss\u00c3\u00a8de\" $# \"param\u00c3\u00a8tre(s), que voici:\"  $*\n"
+      ]
+    },
+    {
+      "name": "tp5_exo7.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo \"Nous somme le :\"\\`date\\`\n",
+        "echo \"Nous sommes le\" $(date)\n",
+        "echo \"Ceci est\"\n",
+        "echo \"une tr\u00c3\u00a8s\"\n",
+        "echo \"longue phrase\"\n",
+        "echo \"Voici une etoile\" :\\*\n",
+        "\n"
+      ]
+    },
+    {
+      "name": "tp5_exo8.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "a=$(($1 + 1))\n",
+        "echo \"Devra afficher\" $a\n"
+      ]
+    },
+    {
+      "name": "tp5_exo9.sh",
+      "lines": [
+        "#!bin/bin/bash\n",
+        "export PATH=~:$PATH\n"
+      ]
+    }
   ],
   "profile": [
     {

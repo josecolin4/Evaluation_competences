@@ -2,101 +2,51 @@
   "name": "ext_Cristian.GarciaPonce",
   "session": 3,
   "scripts": [
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "expr $(( $1 / 2))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "expr (( $1 * 2))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "expr (( $1 \\* 2))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "expr (( $1 * 2))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "expr $(( $1 * 2))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "year=$(date -Y)\n",
-      "echo $year\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "year=$(date +%Y)\n",
-      "echo $year\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "year=$(date +%Y)\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissaince \\?\n",
-      "read age\n",
-      "echo Vous \u00c3\u00aates n\u00c3\u00a9\\(\\\u00c3\u00a9\\) en 1990\\,vous avez donc `expr $(( $year - $age))`\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "year=$(date +%Y)\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissaince \\?\n",
-      "read age\n",
-      "echo Vous \u00c3\u00aates n\u00c3\u00a9\\(\\\u00c3\u00a9\\) en $age,vous avez donc `expr $(( $year - $age))`\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "machine= $(hostname)\n",
-      "echo Il y a `who | wc -l` utilisateurs connect\\\u00c3\u00a9s sur $machine\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "machine=$(hostname)\n",
-      "echo Il y a `who | wc -l` utilisateurs connect\\\u00c3\u00a9s sur $machine\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "set --$(ls -l $1)\n",
-      "echo $2\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "set $(ls -l $1)\n",
-      "echo $2\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "set -- $(ls -l $1)\n",
-      "echo $2\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "set -- $(ls -l $1)\n",
-      "echo $6\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "set -- $(ls -l $1)\n",
-      "echo $5\n"
-    ]
+    {
+      "name": "tp5bis_exo1.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "\n",
+        "expr $(( $1 / 2))\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo2.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "\n",
+        "expr $(( $1 * 2))\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo3.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "\n",
+        "year=$(date +%Y)\n",
+        "echo Quelle est votre ann\u00c3\u00a9e de naissaince \\?\n",
+        "read age\n",
+        "echo Vous \u00c3\u00aates n\u00c3\u00a9\\(\\\u00c3\u00a9\\) en $age,vous avez donc `expr $(( $year - $age))`\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo4.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "\n",
+        "machine=$(hostname)\n",
+        "echo Il y a `who | wc -l` utilisateurs connect\\\u00c3\u00a9s sur $machine\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo5.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "\n",
+        "set -- $(ls -l $1)\n",
+        "echo $5\n"
+      ]
+    }
   ],
   "profile": [
     {

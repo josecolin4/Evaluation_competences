@@ -2,243 +2,55 @@
   "name": "ext_Anthony.Sageloly",
   "session": 4,
   "scripts": [
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo expr $1/2 \n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo `expr $1/2` \n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo `expr ($1/2)` \n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo `expr` $1/2 \n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo `expr $1/2` \n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "nb=`expr $1/2`\n",
-      "echo nb\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "nb=`expr $1/2`\n",
-      "echo $nb\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "div=`expr $1/2`\n",
-      "echo $div\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "div=expr $1/2\n",
-      "echo $div\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "div=expr $1 / 2\n",
-      "echo $div\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "div=$(expr $1 / 2)\n",
-      "echo $div\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "div=$(($1 / 2))\n",
-      "echo $div\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "prod= $(expr $1 * 2)\n",
-      "\n",
-      "echo $prod\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "prod= $(expr $1 `* 2`)\n",
-      "\n",
-      "echo $prod\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "prod= $(expr $1 \\* 2)\n",
-      "\n",
-      "echo $prod\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "prod= $(expr $1 \\*2)\n",
-      "\n",
-      "echo $prod\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "prod = $(expr $1 \\* 2)\n",
-      "\n",
-      "echo $prod\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "prod=$(expr $1 \\* 2)\n",
-      "\n",
-      "echo $prod\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "prod=$(($1 \\* 2))\n",
-      "\n",
-      "echo $prod\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "prod=$(($1 * 2))\n",
-      "\n",
-      "echo $prod\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance ? \n",
-      "\n",
-      "echo read $1\n",
-      "\n",
-      "echo $(expr 2020 \\- $1)\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance ? \n",
-      "\n",
-      "echo `read $1`\n",
-      "\n",
-      "echo $(expr 2020 \\- $1)\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance ? \n",
-      "\n",
-      "echo `read $1`\n",
-      "\n",
-      "echo $(expr 2020 - $1)\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance ? \n",
-      "\n",
-      "echo `read $1`\n",
-      "\n",
-      "echo Vous \u00c3\u00aates n\u00c3\u00a9 en $1, vous avez $(expr `date+%Y` - $1)\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance ? \n",
-      "\n",
-      "echo `read annee`\n",
-      "\n",
-      "echo Vous \u00c3\u00aates n\u00c3\u00a9 en $annee, vous avez $(expr `date+%Y` - $annee)\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance ? \n",
-      "\n",
-      "echo read annee\n",
-      "\n",
-      "echo Vous \u00c3\u00aates n\u00c3\u00a9 en $annee, vous avez $(expr `date+%Y` - $annee)\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance ? \n",
-      "\n",
-      "echo read annee\n",
-      "\n",
-      "echo Vous \u00c3\u00aates n\u00c3\u00a9 en $annee, vous avez $( expr `date+%Y` - $annee ) ans.\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance ? \n",
-      "\n",
-      "echo read annee\n",
-      "\n",
-      "echo Vous \u00c3\u00aates n\u00c3\u00a9 en $annee, vous avez $(expr `date +%Y` - $annee) ans.\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance ? \n",
-      "\n",
-      "echo `read annee`\n",
-      "\n",
-      "echo Vous \u00c3\u00aates n\u00c3\u00a9 en $annee, vous avez $(expr `date +%Y` - $annee) ans.\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance ? \n",
-      "\n",
-      "read annee\n",
-      "\n",
-      "echo Vous \u00c3\u00aates n\u00c3\u00a9 en $annee, vous avez $(expr `date +%Y` - $annee) ans.\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo Il y a $(who|ls -l) utilisateurs connect\u00c3\u00a9s sur $(hostname)\n",
-      "\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo Il y a $(who|wc -l) utilisateurs connect\u00c3\u00a9s sur $(hostname)\n",
-      "\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "set --$(ls -l $1)\n",
-      "echo $5\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "set --$(ls -l $1)\n",
-      "echo $5\n"
-    ]
+    {
+      "name": "tp5bis_exo1.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "div=$(($1 / 2))\n",
+        "echo $div\n",
+        "\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo2.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "\n",
+        "prod=$(($1 * 2))\n",
+        "\n",
+        "echo $prod\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo3.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "\n",
+        "echo Quelle est votre ann\u00c3\u00a9e de naissance ? \n",
+        "\n",
+        "read annee\n",
+        "\n",
+        "echo Vous \u00c3\u00aates n\u00c3\u00a9 en $annee, vous avez $(expr `date +%Y` - $annee) ans.\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo4.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "\n",
+        "echo Il y a $(who|wc -l) utilisateurs connect\u00c3\u00a9s sur $(hostname)\n",
+        "\n",
+        "\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo5.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "set --$(ls -l $1)\n",
+        "echo $5\n"
+      ]
+    }
   ],
   "profile": [
     {

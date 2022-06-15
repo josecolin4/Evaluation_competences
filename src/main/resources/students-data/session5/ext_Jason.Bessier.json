@@ -2,345 +2,54 @@
   "name": "ext_Jason.Bessier",
   "session": 5,
   "scripts": [
-    [
-      "#!bin/bash\n",
-      "arguments = \"argument_1=toto argument_2=titi argument_3=tutu\"\n",
-      "for i in $arguments\n",
-      "do\n",
-      "\techo $i\n",
-      "done\n"
-    ],
-    [
-      "#!bin/bash\n",
-      "\n",
-      "x-1\n",
-      "for i in $*\n",
-      "\n",
-      "do\n",
-      "\tlet x++\n",
-      "\techo \"argument\"\n",
-      "done\n"
-    ],
-    [
-      "#!bin/bash\n",
-      "\n",
-      "x=1\n",
-      "for i in $*\n",
-      "\n",
-      "do\n",
-      "\tlet x++\n",
-      "\techo \"argument\"\n",
-      "done\n"
-    ],
-    [
-      "#!bin/bash\n",
-      "\n",
-      "x=1\n",
-      "for i in $*\n",
-      "\n",
-      "do\n",
-      "\tlet x++\n",
-      "\techo $i\n",
-      "done\n"
-    ],
-    [
-      "#!bin/bash\n",
-      "\n",
-      "x=1\n",
-      "for i in $*\n",
-      "\n",
-      "do\n",
-      "\tlet x++\n",
-      "\techo $i\n",
-      "done\n"
-    ],
-    [
-      "#!bin/bash\n",
-      "\n",
-      "x=1\n",
-      "for i in $#\n",
-      "\n",
-      "do\n",
-      "\tlet x++\n",
-      "\techo \"argument\"\n",
-      "done\n"
-    ],
-    [
-      "#!bin/bash\n",
-      "\n",
-      "x=1\n",
-      "for i in $#\n",
-      "\n",
-      "do\n",
-      "\tlet x++\n",
-      "\techo $i\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "x=1\n",
-      "for i in $#\n",
-      "\n",
-      "do\n",
-      "\tlet x++\n",
-      "\techo $i\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "x=1\n",
-      "for i in $*\n",
-      "\n",
-      "do\n",
-      "\tlet x++\n",
-      "\techo $i\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "x=1\n",
-      "for i in $*\n",
-      "\n",
-      "do\n",
-      "\tlet x++\n",
-      "\techo \"argument\" $x \"=\"\n",
-      "\techo $i\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "x=1\n",
-      "for i in $*\n",
-      "\n",
-      "do\n",
-      "\tlet x++\n",
-      "\techo \"argument\" $x \"=\" $i\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "x=0\n",
-      "for i in $*\n",
-      "\n",
-      "do\n",
-      "\tlet x++\n",
-      "\techo \"argument\" $x \"=\" $i\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "for i in $(seq $1)\n",
-      "do\n",
-      "\ts = $(($1 - 1) * $1)\n",
-      "\techo\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "for i in $(seq $1);\n",
-      "do\n",
-      "\ts = $(($1 - 1) * $1)\n",
-      "\techo\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "for i in $(seq $1)\n",
-      "do\n",
-      "\ts = $(($1 - 1) * $1)\n",
-      "\techo\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "for i in $(seq $1)\n",
-      "do\n",
-      "\ts = $(($1 - 1) * $1)\n",
-      "\techo s\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "for i in $(seq $1)\n",
-      "do\n",
-      "\ts = $(($1 - 1) * $1)\n",
-      "\techo $s\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "for i in $(seq $1)\n",
-      "do\n",
-      "\ts = $(($1 - 1) * $1)\n",
-      "\techo s\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "for i in $(seq $1)\n",
-      "do\n",
-      "\ts = $(($1 - 1) * $1)\n",
-      "\techo $s\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "for i in $(seq $1)\n",
-      "do\n",
-      "\ts=$(($1 -1)*$1)\n",
-      "\techo $s\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "for i in $(seq $1)\n",
-      "do\n",
-      "\ts=$(($1 -1)* $1)\n",
-      "\techo $s\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "for i in $(seq $1)\n",
-      "do\n",
-      "\ts=$(($i -1)* $i)\n",
-      "\techo $s\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "for i in $(seq $1)\n",
-      "do\n",
-      "\ts= $(($i -1)* $i)\n",
-      "\techo $s\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "for i in $(seq $1)\n",
-      "do\n",
-      "\ts= $(($i - 1) * $i)\n",
-      "\techo $s\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "for i in $(seq $1)\n",
-      "do\n",
-      "\ts=$((($i)-1)*($i))\n",
-      "\techo $s\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "for i in $(seq $1)\n",
-      "do\n",
-      "\ts=$((($i)-(1))*($i))\n",
-      "\techo $s\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "for i in $(seq $1)\n",
-      "do\n",
-      "\ts=($s)*($i)\n",
-      "\techo $s\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "for i in $(seq $1)\n",
-      "do\n",
-      "\ts=$(($s)*($i))\n",
-      "\techo $s\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "for i in $(seq $1)\n",
-      "do\n",
-      "\ts=$((($s)*($i)))\n",
-      "\techo $s\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "for i in $(seq $1)\n",
-      "s=1\n",
-      "do\n",
-      "\ts=$((($s)*($i)))\n",
-      "\techo $s\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "s=1\n",
-      "for i in $(seq $1)\n",
-      "do\n",
-      "\ts=$((($s)*($i)))\n",
-      "\techo $s\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo \"Liste des commandes disponibles :\"\n",
-      "echo \"1 - Date du Jour\"\n",
-      "echo \"2 - Liste des personnes connect\u00c3\u00a9es sur la machine\"\n",
-      "echo \"3 - Liste des fichiers du r\u00c3\u00a9pertoire courant\"\n",
-      "echo \"4 - Nom du r\u00c3\u00a9pertoire courant\"\n",
-      "echo\n",
-      "echo \"Faites votre choix\"\n",
-      "read choix\n",
-      "echo\n",
-      "case $choix in\n",
-      "\t1 ) echo 'date' ;;\n",
-      "\t2 ) echo 'who' ;;\n",
-      "\t3 ) echo 'ls -l' ;;\n",
-      "\t4 ) echo 'pwd' ;;\n",
-      "esac\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo \"Liste des commandes disponibles :\"\n",
-      "echo \"1 - Date du Jour\"\n",
-      "echo \"2 - Liste des personnes connect\u00c3\u00a9es sur la machine\"\n",
-      "echo \"3 - Liste des fichiers du r\u00c3\u00a9pertoire courant\"\n",
-      "echo \"4 - Nom du r\u00c3\u00a9pertoire courant\"\n",
-      "echo\n",
-      "echo \"Faites votre choix\"\n",
-      "read choix\n",
-      "echo\n",
-      "case $choix in\n",
-      "\t1 ) echo `date` ;;\n",
-      "\t2 ) echo `who` ;;\n",
-      "\t3 ) echo `ls -l` ;;\n",
-      "\t4 ) echo `pwd` ;;\n",
-      "esac\n"
-    ]
+    {
+      "name": "tp6_exo5.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "\n",
+        "x=0\n",
+        "for i in $*\n",
+        "\n",
+        "do\n",
+        "\tlet x++\n",
+        "\techo \"argument\" $x \"=\" $i\n",
+        "done\n"
+      ]
+    },
+    {
+      "name": "tp6_exo6.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "\n",
+        "s=1\n",
+        "for i in $(seq $1)\n",
+        "do\n",
+        "\ts=$((($s)*($i)))\n",
+        "\techo $s\n",
+        "done\n"
+      ]
+    },
+    {
+      "name": "tp6_exo7.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo \"Liste des commandes disponibles :\"\n",
+        "echo \"1 - Date du Jour\"\n",
+        "echo \"2 - Liste des personnes connect\u00c3\u00a9es sur la machine\"\n",
+        "echo \"3 - Liste des fichiers du r\u00c3\u00a9pertoire courant\"\n",
+        "echo \"4 - Nom du r\u00c3\u00a9pertoire courant\"\n",
+        "echo\n",
+        "echo \"Faites votre choix\"\n",
+        "read choix\n",
+        "echo\n",
+        "case $choix in\n",
+        "\t1 ) echo `date` ;;\n",
+        "\t2 ) echo `who` ;;\n",
+        "\t3 ) echo `ls -l` ;;\n",
+        "\t4 ) echo `pwd` ;;\n",
+        "esac\n"
+      ]
+    }
   ],
   "commands": [
     {

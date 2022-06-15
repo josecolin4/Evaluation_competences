@@ -2,207 +2,54 @@
   "name": "ext_Paul-Adrien.Durand",
   "session": 3,
   "scripts": [
-    [
-      "#!/bin/bash\n",
-      "echo $(( $1 * 2))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo $(( $1 / 2))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo $(( $1 / 2))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo $(( $1 * 2))\n"
-    ],
-    [
-      "#!/bin/bass\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
-      "set arg1\n",
-      "echo $1\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
-      "set arg1\n",
-      "echo $1\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
-      "set $1\n",
-      "echo $1\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
-      "read adn\n",
-      "expr date +%Y - $adn\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
-      "read adn\n",
-      "expr (date +%Y) - $adn\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
-      "read adn\n",
-      "expr `date +%Y` - $adn\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
-      "read adn\n",
-      "adn=expr `date +%Y` - $adn\n",
-      "echo Vous \u00c3\u00aates n\u00c3\u00a9(e) en 1990, vous avez donc $adn ans\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
-      "read adn\n",
-      "echo Vous \u00c3\u00aates n\u00c3\u00a9(e) en $adn , vous avez donc `expr `date +%Y` - adn` ans\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
-      "read adn\n",
-      "echo Vous \u00c3\u00aates n\u00c3\u00a9 en $adn , vous avez donc `expr `date +%Y` - adn` ans\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
-      "read adn\n",
-      "echo Vous \u00c3\u00aates n\u00c3\u00a9 en $adn , vous avez donc `expr `date +%Y` - $adn` ans\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
-      "read adn\n",
-      "ajdh=`date +%Y`\n",
-      "echo Vous \u00c3\u00aates n\u00c3\u00a9 en $adn , vous avez donc `expr ajdh - $adn` ans\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
-      "read adn\n",
-      "ajdh=`date +%Y`\n",
-      "echo Vous \u00c3\u00aates n\u00c3\u00a9 en $adn , vous avez donc `expr $ajdh - $adn` ans\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
-      "read adn\n",
-      "ajdh=`date +%Y`\n",
-      "echo Vous \u00c3\u00aates n\u00c3\u00a9\\(e\\) en $adn , vous avez donc `expr $ajdh - $adn` ans\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
-      "read adn\n",
-      "ajdh=`date +%Y`\n",
-      "echo Vous \u00c3\u00aates n\u00c3\u00a9\\(e\\) en $adn , vous avez donc `expr $ajdh - $adn` ans\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
-      "read adn\n",
-      "echo Vous \u00c3\u00aates n\u00c3\u00a9\\(e\\) en $adn , vous avez donc `expr $ajdh - $adn` ans\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
-      "read adn\n",
-      "echo Vous \u00c3\u00aates n\u00c3\u00a9\\(e\\) en $adn , vous avez donc $(( `date +%Y` - $adn )) ans\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo il y a $(who) connect\u00c3\u00a9s sur $(hostname)\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo il y a $(who -q) connect\u00c3\u00a9s sur $(hostname)\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo il y a $(who -H | wc -l) connect\u00c3\u00a9s sur $(hostname)\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo il y a $(who -H | wc -l) connect\u00c3\u00a9s sur $(hostname)\n"
-    ],
-    [
-      "#!/bin/bash\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "set $1 -- $(ls -l $1)\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "set $1\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "cat $1\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "set ./test  -- $(ls -l $1)\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "set -- $(ls -l $1)\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "set ./test\n",
-      "cat $1\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "set ./test -- $(ls -l $1)\n",
-      "echo $2\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "set -- $(ls -l $1)\n",
-      "echo $1\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "set $1 -- $(ls -l $1)\n",
-      "echo $1\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "set $1 -- $(ls -l $1)\n",
-      "cat $1\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "set $1 -- $(ls -l $1)\n",
-      "echo $2\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "set $1 $(ls -l $1)\n",
-      "echo $2\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "set $1 $(ls -l $1)\n",
-      "echo `ls -l $1`\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "set $1 --$(ls -l $1)\n",
-      "echo `ls -l $1`\n"
-    ]
+    {
+      "name": "tp5bis_exo1.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo $(( $1 / 2))\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo2.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo $(( $1 * 2))\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo3V1.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
+        "read adn\n",
+        "ajdh=`date +%Y`\n",
+        "echo Vous \u00c3\u00aates n\u00c3\u00a9\\(e\\) en $adn , vous avez donc `expr $ajdh - $adn` ans\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo3V2.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
+        "read adn\n",
+        "echo Vous \u00c3\u00aates n\u00c3\u00a9\\(e\\) en $adn , vous avez donc $(( `date +%Y` - $adn )) ans\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo4.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo il y a $(who -H | wc -l) connect\u00c3\u00a9s sur $(hostname)\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo5.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "set $1 --$(ls -l $1)\n",
+        "echo `ls -l $1`\n"
+      ]
+    }
   ],
   "profile": [
     {

@@ -2,94 +2,33 @@
   "name": "ext_Jean.Santoni",
   "session": 2,
   "scripts": [
-    [
-      "cat $1> $3\n"
-    ],
-    [
-      "cat $1> $3\n",
-      "cat $2>>$3\n"
-    ],
-    [
-      "cat $1> $3\n",
-      "cat $2>>$3\n",
-      "cat $3\n"
-    ],
-    [
-      "echo Nous somme  le 7`date7`\n"
-    ],
-    [
-      "echo Nous somme  le 7`date7`\n",
-      "echo nous somme le date\n"
-    ],
-    [
-      "echo Nous somme  le 7`date7`\n",
-      "echo nous somme le date\n",
-      "echo ceci est \n"
-    ],
-    [
-      "echo Nous somme  le 7`date7`\n",
-      "echo nous somme le date\n",
-      "echo ceci est \n",
-      "echo une tres\n"
-    ],
-    [
-      "echo Nous somme  le 7`date7`\n",
-      "echo nous somme le date\n",
-      "echo ceci est \n",
-      "echo une tres\n",
-      "echo longue phrase\n"
-    ],
-    [
-      "echo Nous somme  le 7`date7`\n",
-      "echo nous somme le date\n",
-      "echo ceci est \n",
-      "echo une tres\n",
-      "echo longue phrase\n",
-      "echo voici une \u00c3etoile: \\*\n"
-    ],
-    [
-      "echo Nous somme  le `date`\n",
-      "echo nous somme le date\n",
-      "echo ceci est \n",
-      "echo une tres\n",
-      "echo longue phrase\n",
-      "echo voici une \u00c3etoile: \\*\n"
-    ],
-    [
-      "echo Nous somme  le date\n",
-      "echo nous somme le `date`\n",
-      "echo ceci est \n",
-      "echo une tres\n",
-      "echo longue phrase\n",
-      "echo voici une \u00c3etoile: \\*\n"
-    ],
-    [
-      "#!/bin/bash\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "somme = $(($1+1))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "somme = $(($1+1))\n",
-      "echo $somme\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "somme =`expr $1+1`\n",
-      "echo $somme\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "somme =$(($1+1))\n",
-      "echo $somme\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "$somme =$(($1+1))\n",
-      "echo $somme\n"
-    ]
+    {
+      "name": "tp5_exo6.sh",
+      "lines": [
+        "cat $1> $3\n",
+        "cat $2>>$3\n",
+        "cat $3\n"
+      ]
+    },
+    {
+      "name": "tp5_exo7.sh",
+      "lines": [
+        "echo Nous somme  le date\n",
+        "echo nous somme le `date`\n",
+        "echo ceci est \n",
+        "echo une tres\n",
+        "echo longue phrase\n",
+        "echo voici une \u00c3etoile: \\*\n"
+      ]
+    },
+    {
+      "name": "tp5_exo8.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "$somme =$(($1+1))\n",
+        "echo $somme\n"
+      ]
+    }
   ],
   "profile": [
     {

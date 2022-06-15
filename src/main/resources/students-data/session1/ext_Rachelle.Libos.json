@@ -2,92 +2,27 @@
   "name": "ext_Rachelle.Libos",
   "session": 1,
   "scripts": [
-    [
-      "#!/bin/bash\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo cours\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo cours\n",
-      "cours=unix\n"
-    ],
-    [
-      "#!/bin/bash\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo cours\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo cours\n",
-      "cours=unix\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo cours\n",
-      "cours=unix\n",
-      "echo $cours\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo cours\n",
-      "cours=unix\n",
-      "echo $cours\n",
-      "echo je suis au cours $cours\n"
-    ],
-    [
-      "echo \u00c3mon nom login est :$LOGNAME\n"
-    ],
-    [
-      "mon nom de login est : echo $LOGNAME\n",
-      "mon shell est  : echo $SHELL\n",
-      "les variables du Shell sont : echo  set\n",
-      "Celles d'environnement sont: echo env \n"
-    ],
-    [
-      "echo mon nom de login est :  $LOGNAME\n",
-      "echo mon shell est  :  $SHELL\n",
-      "echo les variables du Shell sont :   set\n",
-      "echo Celles d'environnement sont: env \n"
-    ],
-    [
-      "echo mon nom de login est :  $LOGNAME\n",
-      "echo mon shell est  :  $SHELL\n",
-      "echo les variables du Shell sont :   set\n",
-      "echo Celles d'environnement sont: env \n"
-    ],
-    [
-      "echo mon nom de login est :  $LOGNAME\n",
-      "echo mon shell est  :  $SHELL\n",
-      "echo les variables du Shell sont : \\ set\n",
-      "echo Celles d'environnement sont:\\ env \n"
-    ],
-    [
-      "echo mon nom de login est :  $LOGNAME\n",
-      "echo mon shell est  :  $SHELL\n",
-      "echo les variables du Shell sont: set\n",
-      "echo Celles d'environnement sont: env \n"
-    ],
-    [
-      " echo mon nom de login est :  $LOGNAME\n",
-      "echo mon shell est  :  $SHELL\n",
-      "echo les variables du Shell sont:\n",
-      " set\n",
-      "echo Celles d'environnement sont:\n",
-      " env \n"
-    ],
-    [
-      " echo mon nom de login est :  $LOGNAME\n",
-      "echo mon shell est  :  $SHELL\n",
-      "echo les variables du Shell sont:\n",
-      " set\n",
-      "echo Celles d\\'environnement sont:\n",
-      " env \n"
-    ]
+    {
+      "name": "tp5_exo1.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo cours\n",
+        "cours=unix\n",
+        "echo $cours\n",
+        "echo je suis au cours $cours\n"
+      ]
+    },
+    {
+      "name": "tp5_exo2.sh",
+      "lines": [
+        " echo mon nom de login est :  $LOGNAME\n",
+        "echo mon shell est  :  $SHELL\n",
+        "echo les variables du Shell sont:\n",
+        " set\n",
+        "echo Celles d\\'environnement sont:\n",
+        " env \n"
+      ]
+    }
   ],
   "profile": [
     {

@@ -2,49 +2,25 @@
   "name": "ext_Florian.Chicot",
   "session": 5,
   "scripts": [
-    [
-      "#\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test-e $1 -a -e $2\n",
-      "   then\n",
-      "   echo Souhaitez-vous concat\u00c3\u00a9ner les fichiers \\?\n",
-      "   read $concat\n",
-      "   if $concat=\"OUI\"\n",
-      "      then\n",
-      "      echo $1 $2\n",
-      "      else\n",
-      "      echo Erreur\n",
-      "   fi\n",
-      "   else\n",
-      "   echo Erreur \\: Au moins un des fichiers n\\'existe pas\n",
-      "fi \n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test -e $1 -a -e $2\n",
-      "   then\n",
-      "   echo Souhaitez-vous concat\u00c3\u00a9ner les fichiers \\?\n",
-      "   read $concat\n",
-      "   if $concat=\"OUI\"\n",
-      "      then\n",
-      "      echo $1 $2\n",
-      "      else\n",
-      "      echo Erreur\n",
-      "   fi\n",
-      "   else\n",
-      "   echo Erreur \\: Au moins un des fichiers n\\'existe pas\n",
-      "fi \n"
-    ]
+    {
+      "name": "tp6_exo3.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "if test -e $1 -a -e $2\n",
+        "   then\n",
+        "   echo Souhaitez-vous concat\u00c3\u00a9ner les fichiers \\?\n",
+        "   read $concat\n",
+        "   if $concat=\"OUI\"\n",
+        "      then\n",
+        "      echo $1 $2\n",
+        "      else\n",
+        "      echo Erreur\n",
+        "   fi\n",
+        "   else\n",
+        "   echo Erreur \\: Au moins un des fichiers n\\'existe pas\n",
+        "fi \n"
+      ]
+    }
   ],
   "commands": [
     {

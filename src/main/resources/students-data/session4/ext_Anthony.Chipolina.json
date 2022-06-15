@@ -2,109 +2,20 @@
   "name": "ext_Anthony.Chipolina",
   "session": 4,
   "scripts": [
-    [
-      "#/bin/bash\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo \"il y a utilisateurs connect\u00c3\u00a9s sur r-info-nacre.\"\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo \"il y a \\who\\ utilisateurs connect\u00c3\u00a9s sur r-info-nacre.\"\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo \"il y a --\\who\\ utilisateurs connect\u00c3\u00a9s sur r-info-nacre.\"\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo \"il y a `$who` utilisateurs connect\u00c3\u00a9s sur r-info-nacre.\"\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo \"il y a `$wc who` utilisateurs connect\u00c3\u00a9s sur $hostname\"\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo \"il y a `$wc -l who` utilisateurs connect\u00c3\u00a9s sur $hostname\"\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo \"il y a `$wc -l who` utilisateurs connect\u00c3\u00a9s sur `$hostname`\"\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo \"il y a `$wc -l who` utilisateurs connect\u00c3\u00a9s sur $hostname\"\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo \"il y a `$who | wc -l` utilisateurs connect\u00c3\u00a9s sur $hostname\"\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo \"il y a `who | wc -l` utilisateurs connect\u00c3\u00a9s sur $hostname\"\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo \"il y a `who | wc -l` utilisateurs connect\u00c3\u00a9s sur hostname\"\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo \"il y a `who | wc -l` utilisateurs connect\u00c3\u00a9s sur `hostname`\"\n"
-    ],
-    [
-      "#!/bin/bash\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo \n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "taille=$#\n",
-      "echo \"`$5 | ls -l taille`\"\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo \"`$5 | ls -l $#`\"\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo \"`$5 | ls -l $1`\"\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo \"`ls -l $1 | $5`\"\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo \"`ls -l $1`\"\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo \"`ls -l $1 | $5`\"\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo \"`ls -l $1 | echo $5`\"\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo \"`ls -m $1 | echo $5`\"\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo \"`ls -m $1`\"\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo \"`ls -l $1 | $5`\"\n"
-    ]
+    {
+      "name": "tp5bis_exo4.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo \"il y a `who | wc -l` utilisateurs connect\u00c3\u00a9s sur `hostname`\"\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo5.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo \"`ls -l $1 | $5`\"\n"
+      ]
+    }
   ],
   "profile": [
     {

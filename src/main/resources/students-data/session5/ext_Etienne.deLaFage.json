@@ -2,151 +2,41 @@
   "name": "ext_Etienne.deLaFage",
   "session": 5,
   "scripts": [
-    [
-      "#!/bin/bash\n",
-      "if test -r $1 -a test -r $2 \n",
-      "then\n",
-      "echo  souhaitez vous concatenez les deux fichiers\n",
-      "read $3\n",
-      "else \n",
-      "echo error\n",
-      "fi\n",
-      "if $3 = oui \n",
-      "then\n",
-      "cp $1 $2\n",
-      "if\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test -r $1 -o test -r $2 \n",
-      "then\n",
-      "echo  souhaitez vous concatenez les deux fichiers\n",
-      "read  reponse\n",
-      "\n",
-      "case reponse  in \n",
-      "oui) cat>> $1 $2 >F3  echo fichier concatener\n",
-      "non) echo error\n",
-      "esac\n",
-      "else \n",
-      "echo error\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test -r $1 -o test -r $2 \n",
-      "then\n",
-      "echo  souhaitez vous concatenez les deux fichiers\n",
-      "read  reponse\n",
-      "\n",
-      "case $reponse  in \n",
-      "oui) cat $1 $2> >F3  echo fichier concatener\n",
-      "non) echo error\n",
-      "esac\n",
-      "else \n",
-      "echo error\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test -r $1 -o test -r $2 \n",
-      "then\n",
-      "echo  souhaitez vous concatenez les deux fichiers\n",
-      "read  reponse\n",
-      "\n",
-      "case $reponse  in \n",
-      "oui) cat $1 $2 >>F3  echo fichier concatener\n",
-      "non) echo error\n",
-      "esac\n",
-      "else \n",
-      "echo error\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test -r $1 -o test -r $2 \n",
-      "then\n",
-      "echo  souhaitez vous concatenez les deux fichiers\n",
-      "read  reponse\n",
-      "\n",
-      "case $reponse  in \n",
-      "oui) cat $1 $2 >>F3  echo fichier concatener;;\n",
-      "non) echo error;;\n",
-      "esac\n",
-      "else \n",
-      "echo error\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test -r $1 -o -r $2 \n",
-      "then\n",
-      "echo  souhaitez vous concatenez les deux fichiers\n",
-      "read  reponse\n",
-      "\n",
-      "case $reponse  in \n",
-      "oui) cat $1 $2 >>F3  echo fichier concatener;;\n",
-      "non) echo error;;\n",
-      "esac\n",
-      "else \n",
-      "echo error\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test -r $1 -o -r $2 \n",
-      "then\n",
-      "echo  souhaitez vous concatenez les deux fichiers\n",
-      "read  reponse\n",
-      "\n",
-      "case $reponse  in \n",
-      "oui) cat $1 $2 >> F3  echo fichier concatener;;\n",
-      "non) echo error;;\n",
-      "esac\n",
-      "else \n",
-      "echo error\n",
-      "fi\n"
-    ],
-    [
-      "#! /bin/bash\n",
-      "for liste_commande in `date`  `who` `pwd` `ls`\n",
-      "do\n",
-      "echo $liste_commande\n",
-      "done\n"
-    ],
-    [
-      "#! /bin/bash\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test -e $1 -o -e $2 \n",
-      "then\n",
-      "\techo  \"Ce script ne fonctionne pas\"\n",
-      "\tread  reponse\n",
-      "\n",
-      "case $reponse  in \n",
-      "\toui) cat $1 $2 >> F3  \n",
-      "\t\techo \"fichier concatener\";;\n",
-      "\tnon) echo\" vous n avez pas concater\";;\n",
-      "esac\n",
-      "\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test -e $1 -o -e $2 \n",
-      "then\n",
-      "\techo  \"Ce script ne fonctionne pas\"\n",
-      "\tread  reponse\n",
-      "\n",
-      "case $reponse  in \n",
-      "\toui) cp $1 $2 >> F3  \n",
-      "\t\techo \"fichier concatener\";;\n",
-      "\tnon) echo\" vous n avez pas concater\";;\n",
-      "esac\n",
-      "\n",
-      "fi\n"
-    ]
+    {
+      "name": "tp6_exo3.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "if test -e $1 -o -e $2 \n",
+        "then\n",
+        "\techo  \"Ce script ne fonctionne pas\"\n",
+        "\tread  reponse\n",
+        "\n",
+        "case $reponse  in \n",
+        "\toui) cp $1 $2 >> F3  \n",
+        "\t\techo \"fichier concatener\";;\n",
+        "\tnon) echo\" vous n avez pas concater\";;\n",
+        "esac\n",
+        "\n",
+        "fi\n"
+      ]
+    },
+    {
+      "name": "tp6_exo4.sh",
+      "lines": [
+        "#! /bin/bash\n",
+        "for liste_commande in `date`  `who` `pwd` `ls`\n",
+        "do\n",
+        "echo $liste_commande\n",
+        "done\n"
+      ]
+    },
+    {
+      "name": "tp6_exo5.sh",
+      "lines": [
+        "#! /bin/bash\n",
+        "\n"
+      ]
+    }
   ],
   "commands": [
     {

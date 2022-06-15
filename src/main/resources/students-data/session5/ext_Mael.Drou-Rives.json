@@ -2,291 +2,60 @@
   "name": "ext_Mael.Drou-Rives",
   "session": 5,
   "scripts": [
-    [
-      "#!/bin/bash\n",
-      "x = 1\n",
-      "for i in $*\n",
-      "do\n",
-      "  $x = $x + 1\n",
-      "  echo \"argument\" $i \"=\" $i\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "x=1\n",
-      "for i in $*\n",
-      "do\n",
-      "  $x=$x+1\n",
-      "  echo \"argument\" $i \"=\" $i\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "x=1\n",
-      "for i in $*\n",
-      "do\n",
-      "  $x=$i+1\n",
-      "  echo \"argument\" $i \"=\" $i\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "x=1\n",
-      "for i in $*\n",
-      "do\n",
-      "  let x++\n",
-      "  echo \"argument\" $i \"=\" $i\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "x=1\n",
-      "for i in $*\n",
-      "do\n",
-      "  let x++\n",
-      "  echo \"argument\" $i \"=\" $x\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "x=1\n",
-      "for i in $*\n",
-      "do\n",
-      "  echo \"argument\" $i \"=\" $x\n",
-      "  let x++\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "for i in $*\n",
-      "do\n",
-      "  $seq $i\n",
-      "done \n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "x=1\n",
-      "for i in $*\n",
-      "do\n",
-      "  echo \"argument\" $i \"=\" $x\n",
-      "  let x++\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "for i in seq $1\n",
-      "do\n",
-      "  i=$i* seq $1\n",
-      "  echo $i\n",
-      "done \n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "for i in seq $1\n",
-      "do\n",
-      "  i=$i*$i\n",
-      "  echo $i\n",
-      "done \n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "for i in seq $1\n",
-      "do\n",
-      "  i=$i*$i\n",
-      "  echo $i\n",
-      "done \n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "for i in seq $1\n",
-      "do\n",
-      "  i=$i*$*\n",
-      "  echo $i\n",
-      "done \n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "for i in seq $1\n",
-      "do\n",
-      "  i=$i * $*\n",
-      "  echo $i\n",
-      "done \n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "p=1\n",
-      "for i in seq $1\n",
-      "do\n",
-      "  p=$((($p)*($i)))\n",
-      "done \n",
-      "echo $p\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "p=1\n",
-      "for i in seq $1\n",
-      "do\n",
-      "  p=$((($p)*($i)))\n",
-      "done \n",
-      "echo $p\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "p=1\n",
-      "for i in $(seq $1)\n",
-      "do\n",
-      "  p=$((($p)*($i)))\n",
-      "done \n",
-      "echo $p\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "case $# in\n",
-      "1 ) $date\n",
-      "2 ) $who\n",
-      "3 ) $ls\n",
-      "4 ) $pwd\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "case $# in\n",
-      "1 ) $date\n",
-      "2 ) $who\n",
-      "3 ) $ls\n",
-      "4 ) $pwd\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "case $# in\n",
-      "1 ) $(`date +%J`)\n",
-      "2 ) $(who)\n",
-      "3 ) $(ls -l)\n",
-      "4 ) $(pwd)\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "case $# in\n",
-      "1 ) $(`date +%J`);;\n",
-      "2 ) $(who);;\n",
-      "3 ) $(ls -l);;\n",
-      "4 ) $(pwd);;\n",
-      "esac\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "case $# in\n",
-      "1 ) $(`date +%J`);;\n",
-      "2 ) $(who);;\n",
-      "3 ) $(ls -l);;\n",
-      "4 ) $(pwd);;\n",
-      "esac\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "case $1 in\n",
-      "1 ) $(`date +%J`);;\n",
-      "2 ) $(who);;\n",
-      "3 ) $(ls -l);;\n",
-      "4 ) $(pwd);;\n",
-      "esac\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "case $# in\n",
-      "1 ) echo `date`;;\n",
-      "2 ) echo `who`;;\n",
-      "3 ) echo `ls -l`;;\n",
-      "4 ) echo `pwd`;;\n",
-      "esac\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "case $1 in\n",
-      "1 ) echo `date`;;\n",
-      "2 ) echo `who`;;\n",
-      "3 ) echo `ls -l`;;\n",
-      "4 ) echo `pwd`;;\n",
-      "esac\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo \" 1 - la date \"\n",
-      "echo \" 2 - le nom de l'utilisateur \"\n",
-      "echo \" 3 - la liste du repertoire courant \"\n",
-      "echo \" 4 - le nom du repertoire courant \"\n",
-      "read choix\n",
-      "case $choix in\n",
-      "1 ) echo `date`;;\n",
-      "2 ) echo `who`;;\n",
-      "3 ) echo `ls -l`;;\n",
-      "4 ) echo `pwd`;;\n",
-      "esac\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "read chaine\n",
-      "while $chaine -ne \"sortir\"\n",
-      "do\n",
-      "\techo $chaine\n",
-      "\tread chaine\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "read chaine\n",
-      "while chaine -ne \"sortir\"\n",
-      "do\n",
-      "\techo $chaine\n",
-      "\tread chaine\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "read chaine\n",
-      "while chaine != \"sortir\"\n",
-      "do\n",
-      "\techo $chaine\n",
-      "\tread chaine\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "read chaine\n",
-      "while chaine != \"sortir\"\n",
-      "do\n",
-      "\techo $chaine\n",
-      "\tread chaine\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "read chaine\n",
-      "while $chaine != \"sortir\"\n",
-      "do\n",
-      "\techo $chaine\n",
-      "\tread chaine\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "read chaine\n",
-      "while $(($chaine != \"sortir\"))\n",
-      "do\n",
-      "\techo $chaine\n",
-      "\tread chaine\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "read chaine\n",
-      "while $(($chaine != sortir))\n",
-      "do\n",
-      "\techo $chaine\n",
-      "\tread chaine\n",
-      "done\n"
-    ]
+    {
+      "name": "tp6_exo5.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "x=1\n",
+        "for i in $*\n",
+        "do\n",
+        "  echo \"argument\" $i \"=\" $x\n",
+        "  let x++\n",
+        "done\n"
+      ]
+    },
+    {
+      "name": "tp6_exo6.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "p=1\n",
+        "for i in $(seq $1)\n",
+        "do\n",
+        "  p=$((($p)*($i)))\n",
+        "done \n",
+        "echo $p\n",
+        "\n"
+      ]
+    },
+    {
+      "name": "tp6_exo7.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo \" 1 - la date \"\n",
+        "echo \" 2 - le nom de l'utilisateur \"\n",
+        "echo \" 3 - la liste du repertoire courant \"\n",
+        "echo \" 4 - le nom du repertoire courant \"\n",
+        "read choix\n",
+        "case $choix in\n",
+        "1 ) echo `date`;;\n",
+        "2 ) echo `who`;;\n",
+        "3 ) echo `ls -l`;;\n",
+        "4 ) echo `pwd`;;\n",
+        "esac\n"
+      ]
+    },
+    {
+      "name": "tp6_exo8.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "read chaine\n",
+        "while $(($chaine != sortir))\n",
+        "do\n",
+        "\techo $chaine\n",
+        "\tread chaine\n",
+        "done\n"
+      ]
+    }
   ],
   "commands": [
     {

@@ -2,174 +2,58 @@
   "name": "ext_Tom.Philippe",
   "session": 5,
   "scripts": [
-    [
-      "#! /bin/bash\n",
-      "if test -e $1 -a -e $2\n",
-      "then\n",
-      "echo Voulez vous concatener les fichier ?\n",
-      "read rep\n",
-      "elif rep $test = oui\n",
-      "then\n",
-      "cat $1 $2 >> F1\n",
-      "cat F1\n",
-      "else\n",
-      "echo daccord\n",
-      "fi\n"
-    ],
-    [
-      "#! /bin/bash\n",
-      "if test -e $1 -a -e $2\n",
-      "then\n",
-      "echo Voulez vous concatener les fichier ?\n",
-      "read rep\n",
-      "elif test $rep = oui\n",
-      "then\n",
-      "cat $1 $2 >> F1\n",
-      "cat F1\n",
-      "else\n",
-      "echo daccord\n",
-      "fi\n"
-    ],
-    [
-      "#! /bin/bash\n",
-      "if test -e $1 -a -e $2\n",
-      "then\n",
-      "echo Voulez vous concatener les fichier ?\n",
-      "read rep\n",
-      "if test $rep = OUI\n",
-      "then\n",
-      "cat $1 $2 >> F1\n",
-      "cat F1\n",
-      "else\n",
-      "echo daccord\n",
-      "fi\n"
-    ],
-    [
-      "#! /bin/bash\n",
-      "if test -e $1 -a -e $2\n",
-      "then\n",
-      "echo Voulez vous concatener les fichier ?\n",
-      "read reponse\n",
-      "\n",
-      "\tif test $reponse = OUI\n",
-      "\tthen\n",
-      "\t\tcat $1 $2 >> F1\n",
-      "\t\tcat F1\n",
-      "\tfi\n",
-      "else\n",
-      "echo Le fichier existe pas\n",
-      "fi\n"
-    ],
-    [
-      "#! /bin /bash\n",
-      "for liste_commande in date who pwd ls\n",
-      "do\n",
-      "\t$liste_commande\n",
-      "done\n"
-    ],
-    [
-      "#! /bin/bash\n",
-      "for liste_commande in date who pwd ls\n",
-      "do\n",
-      "\t$liste_commande\n",
-      "done\n"
-    ],
-    [
-      "#! /bin/bash\n",
-      "for i in 1 2 .. $0\n",
-      "do \n",
-      "\techo $0\n",
-      "done\n"
-    ],
-    [
-      "#! /bin/bash\n",
-      "for i in 1 2 .. $0\n",
-      "do \n",
-      "\techo $#\n",
-      "done\n"
-    ],
-    [
-      "#! /bin/bash\n",
-      "i=1\n",
-      "for x in toto tata tutu \n",
-      "do \n",
-      "\techo $i = $x\n",
-      "\ti=$(( i+1 ))\n",
-      "done\n",
-      "echo Il y a $# arguments\n"
-    ],
-    [
-      "#! /bin/bash\n",
-      "i=1\n",
-      "for x in toto tata tutu \n",
-      "do \n",
-      "\techo $i = $x\n",
-      "\ti=$(( i+1 ))\n",
-      "done\n",
-      "echo Il y' a $# arguments\n"
-    ],
-    [
-      "#! /bin/bash\n",
-      "i=1\n",
-      "for x in toto tata tutu \n",
-      "do \n",
-      "\techo $i = $x\n",
-      "\ti=$(( i+1 ))\n",
-      "done\n",
-      "echo Il y a $# arguments\n"
-    ],
-    [
-      "#! /bin/bash\n",
-      "for i in 1 ... $1 do\n",
-      "\techo $i\n",
-      "done\n"
-    ],
-    [
-      "#! /bin/bash\n",
-      "for i in 1 ... $1 do\n",
-      "\techo $1\n",
-      "done\n"
-    ],
-    [
-      "#! /bin/bash\n",
-      "for i in 1 ... $1 do\n",
-      "echo $1\n",
-      "done\n"
-    ],
-    [
-      "#! /bin/bash\n",
-      "for i in 1 ... $1 do\n",
-      "echo abc\n",
-      "done\n"
-    ],
-    [
-      "#! /bin/bash\n",
-      "for i in 1 ... $1\n",
-      "do\n",
-      "echo abc\n",
-      "done\n"
-    ],
-    [
-      "#! /bin/bash\n",
-      "for i in 1 2 3 ... $1\n",
-      "do\n",
-      "echo abc\n",
-      "done\n"
-    ],
-    [
-      "#! /bin/bash\n",
-      "for (( i=0; i<=$1; i++ ))\n",
-      "do\n",
-      "echo abc\n",
-      "done\n"
-    ],
-    [
-      "#! /bin/bash\n",
-      "for (( i=0; i<$1; i++ ))\n",
-      "do\n",
-      "echo abc\n",
-      "done\n"
-    ]
+    {
+      "name": "tp6_exo3.sh",
+      "lines": [
+        "#! /bin/bash\n",
+        "if test -e $1 -a -e $2\n",
+        "then\n",
+        "echo Voulez vous concatener les fichier ?\n",
+        "read reponse\n",
+        "\n",
+        "\tif test $reponse = OUI\n",
+        "\tthen\n",
+        "\t\tcat $1 $2 >> F1\n",
+        "\t\tcat F1\n",
+        "\tfi\n",
+        "else\n",
+        "echo Le fichier existe pas\n",
+        "fi\n"
+      ]
+    },
+    {
+      "name": "tp6_exo4.sh",
+      "lines": [
+        "#! /bin/bash\n",
+        "for liste_commande in date who pwd ls\n",
+        "do\n",
+        "\t$liste_commande\n",
+        "done\n"
+      ]
+    },
+    {
+      "name": "tp6_exo5.sh",
+      "lines": [
+        "#! /bin/bash\n",
+        "i=1\n",
+        "for x in toto tata tutu \n",
+        "do \n",
+        "\techo $i = $x\n",
+        "\ti=$(( i+1 ))\n",
+        "done\n",
+        "echo Il y a $# arguments\n"
+      ]
+    },
+    {
+      "name": "tp6_exo6.sh",
+      "lines": [
+        "#! /bin/bash\n",
+        "for (( i=0; i<$1; i++ ))\n",
+        "do\n",
+        "echo abc\n",
+        "done\n"
+      ]
+    }
   ],
   "commands": [
     {

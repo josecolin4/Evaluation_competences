@@ -2,268 +2,56 @@
   "name": "ext_Paul-Alexandre.Baudrand",
   "session": 3,
   "scripts": [
-    [
-      "expr $1 / 2\n",
-      "echo $(( $1  / 2 ))\n"
-    ],
-    [
-      "#bin/bash\n",
-      "\n",
-      "expr $1 / 2\n",
-      "echo $(( $1  / 2 ))\n"
-    ],
-    [
-      "#bin/bash\n",
-      "n=$1\n",
-      "expr $n \\/ 2\n",
-      "\n",
-      "echo $(( $n  \\/ 2 ))\n"
-    ],
-    [
-      "#bin/bash\n",
-      "n=$1\n",
-      "expr $n \\/ 2\n",
-      "\n",
-      "echo $(( $n  \\/ 2 ))\n"
-    ],
-    [
-      "#bin/bash\n",
-      "n=$1\n",
-      "expr $n \\/ 2\n",
-      "div=2\n",
-      "echo $(( $n  \\/ $div ))\n"
-    ],
-    [
-      "#bin/bash\n",
-      "n=$1\n",
-      "expr $n \\/ 2\n",
-      "div=2\n",
-      "echo $(( $n  / $div ))\n"
-    ],
-    [
-      "#bin/bash\n",
-      "n=$1\n",
-      "expr $n \\/ $div\n",
-      "div=2\n",
-      "echo $(( $n  / $div ))\n"
-    ],
-    [
-      "#bin/bash\n",
-      "n=$1\n",
-      "expr $n \\/ $div\n",
-      "div=2\n",
-      "echo $(( $n  / 2 ))\n"
-    ],
-    [
-      "#bin/bash\n",
-      "n=$1\n",
-      "expr $n \\/ $div\n",
-      "div=2\n",
-      "echo $(( $n /2 ))\n"
-    ],
-    [
-      "#bin/bash\n",
-      "n=$1\n",
-      "expr $n \\/ $div\n",
-      "div=2\n",
-      "echo $(( $n / 2 ))\n"
-    ],
-    [
-      "#bin/bash\n",
-      "n=$1\n",
-      "div=2\n",
-      "expr $n \\/ $div\n",
-      "\n",
-      "echo $(( $n / 2 ))\n"
-    ],
-    [
-      "#bin/bash\n",
-      "n=$1\n",
-      "div=2\n",
-      "expr $n \\/ $div\n",
-      "\n",
-      "echo $(( $n / 2 ))\n"
-    ],
-    [
-      "#bin/bash\n",
-      "n=$1\n",
-      "mul=2\n",
-      "echo expr n * mul\n"
-    ],
-    [
-      "#bin/bash\n",
-      "n=$1\n",
-      "mul=2\n",
-      "expr n \\* mul\n"
-    ],
-    [
-      "#bin/bash\n",
-      "n=$1\n",
-      "mul=2\n",
-      "expr $n \\* $mul\n"
-    ],
-    [
-      "#bin/bash\n",
-      "n=$1\n",
-      "mul=2\n",
-      "expr $n \\* $mul\n",
-      "echo $((n\\*mul))\n"
-    ],
-    [
-      "#bin/bash\n",
-      "n=$1\n",
-      "mul=2\n",
-      "expr $n \\* $mul\n",
-      "echo $(($n\\*mul))\n"
-    ],
-    [
-      "#bin/bash\n",
-      "n=$1\n",
-      "mul=2\n",
-      "expr $n \\* $mul\n",
-      "echo $(($n\\*2))\n"
-    ],
-    [
-      "#bin/bash\n",
-      "n=$1\n",
-      "div=2\n",
-      "expr $n \\/ $div\n",
-      "\n",
-      "echo $(( $n / 2 ))\n"
-    ],
-    [
-      "#bin/bash\n",
-      "n=$1\n",
-      "mul=2\n",
-      "expr $n \\* $mul\n",
-      "echo $(($n \\* 2))\n"
-    ],
-    [
-      "#bin/bash\n",
-      "n=$1\n",
-      "div=2\n",
-      "expr $n \\/ $div\n",
-      "\n",
-      "echo $(( n / 2 ))\n"
-    ],
-    [
-      "#bin/bash\n",
-      "n=$1\n",
-      "mul=2\n",
-      "expr $n \\* $mul\n",
-      "echo $(( n \\* 2 ))\n"
-    ],
-    [
-      "#bin/bash\n",
-      "n=$1\n",
-      "mul=2\n",
-      "expr $n \\* $mul\n",
-      "echo $(( n * 2 ))\n"
-    ],
-    [
-      "#!bin/bash\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "n=$1\n",
-      "div=2\n",
-      "expr $n \\/ $div\n",
-      "\n",
-      "echo $(( n / 2 ))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "n=$1\n",
-      "mul=2\n",
-      "expr $n \\* $mul\n",
-      "echo $(( n * 2 ))\n"
-    ],
-    [
-      "#!bin/bash\n",
-      "echo Quel est votre ann\u00c3\u00a9e de naissance ? \n"
-    ],
-    [
-      "#!bin/bash\n",
-      "echo Quel est votre ann\u00c3\u00a9e de naissance \\?\n",
-      "read ann\u00c3\u00a9e\n"
-    ],
-    [
-      "#!bin/bash\n",
-      "echo Quel est votre ann\u00c3\u00a9e de naissance \\?\n",
-      "read annee\n",
-      "echo age=$((2020 - annee)) \n",
-      "echo tu es donc n\u00c3\u00a9 en $annee et vous avez donc $age\n"
-    ],
-    [
-      "#!bin/bash\n",
-      "echo Quel est votre ann\u00c3\u00a9e de naissance \\?\n",
-      "read annee\n",
-      "echo age=$((2020 - annee))\n",
-      "echo tu es donc n\u00c3\u00a9 en $annee et vous avez donc $age\n"
-    ],
-    [
-      "#!/bin/bash\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo 'il y a'\n",
-      "echo $(who -)`\n",
-      "echo 'personnes connect\u00c3\u00a9s sur'\n",
-      "echo $(hostname)\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo 'il y a'\n",
-      "echo $(who -q)\n",
-      "echo 'personnes connect\u00c3\u00a9s sur'\n",
-      "echo $(hostname)\n"
-    ],
-    [
-      "#!bin/bash\n",
-      "echo Quel est votre ann\u00c3\u00a9e de naissance \\?\n",
-      "read annee\n",
-      "date=$(date + %Y)\n",
-      "age=$((date - annee))\n",
-      "echo tu es donc n\u00c3\u00a9 en $annee et vous avez donc $age\n"
-    ],
-    [
-      "\n",
-      "echo Quel est votre ann\u00c3\u00a9e de naissance \\?\n",
-      "read annee\n",
-      "date=$(date + %Y)\n",
-      "age=$((date - annee))\n",
-      "echo tu es donc n\u00c3\u00a9 en $annee et vous avez donc $age\n"
-    ],
-    [
-      "\n",
-      "echo Quel est votre ann\u00c3\u00a9e de naissance \\?\n",
-      "read annee\n",
-      "date=$(date + %Y)\n",
-      "age=$((annee - date))\n",
-      "echo tu es donc n\u00c3\u00a9 en $annee et vous avez donc $age\n"
-    ],
-    [
-      "\n",
-      "echo Quel est votre ann\u00c3\u00a9e de naissance \\?\n",
-      "read annee\n",
-      "b=$(date + %Y)\n",
-      "age=$((annee - b))\n",
-      "echo tu es donc n\u00c3\u00a9 en $annee et vous avez donc $age\n"
-    ],
-    [
-      "\n",
-      "echo Quel est votre ann\u00c3\u00a9e de naissance \\?\n",
-      "read annee\n",
-      "b=$(date +%Y)\n",
-      "age=$((b - annee))\n",
-      "echo tu es donc n\u00c3\u00a9 en $annee et vous avez donc $age\n"
-    ],
-    [
-      "set -- $(ls -l $1)\n",
-      "echo $5\n"
-    ]
+    {
+      "name": "tp5bis_exo1.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "n=$1\n",
+        "div=2\n",
+        "expr $n \\/ $div\n",
+        "\n",
+        "echo $(( n / 2 ))\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo2.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "n=$1\n",
+        "mul=2\n",
+        "expr $n \\* $mul\n",
+        "echo $(( n * 2 ))\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo3.sh",
+      "lines": [
+        "\n",
+        "echo Quel est votre ann\u00c3\u00a9e de naissance \\?\n",
+        "read annee\n",
+        "b=$(date +%Y)\n",
+        "age=$((b - annee))\n",
+        "echo tu es donc n\u00c3\u00a9 en $annee et vous avez donc $age\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo4.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "\n",
+        "echo 'il y a'\n",
+        "echo $(who -q)\n",
+        "echo 'personnes connect\u00c3\u00a9s sur'\n",
+        "echo $(hostname)\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo5.sh",
+      "lines": [
+        "set -- $(ls -l $1)\n",
+        "echo $5\n"
+      ]
+    }
   ],
   "profile": [
     {

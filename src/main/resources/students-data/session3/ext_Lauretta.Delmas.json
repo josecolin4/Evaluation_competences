@@ -2,218 +2,59 @@
   "name": "ext_Lauretta.Delmas",
   "session": 3,
   "scripts": [
-    [
-      "if test $1 -gt 5 and test $1 -lt 10\n",
-      "then \n",
-      "\techo $1 est compris entre 5 et 10\n",
-      "else \n",
-      "\techo $1 n'est pas compris entre 5 et 10\n",
-      "fi\t\n"
-    ],
-    [
-      "if test $1 -gt /5 and test $1 -lt /10\n",
-      "then \n",
-      "\techo $1 est compris entre /5 et /10\n",
-      "else \n",
-      "\techo $1 n'est pas compris entre /5 et /10\n",
-      "fi\t\n"
-    ],
-    [
-      "if test $1 -gt /5 and test $1 -lt /10\n",
-      "then \n",
-      "\techo $1 est compris entre /5 et /10\n",
-      "else \n",
-      "\techo $1 n'est pas compris entre /5 et /10\n",
-      "fi\n",
-      "\n"
-    ],
-    [
-      "if test $1 -gt 5 and test $1 -lt 10\n",
-      "then \n",
-      "\techo $1 est compris entre 5 et /10\n",
-      "else \n",
-      "\techo $1 n'est pas compris entre 5 et 10\n",
-      "fi\n",
-      "\n"
-    ],
-    [
-      "if test $1 -gt 5 and test $1 -lt 10\n",
-      "then \n",
-      "\techo $1 est compris entre 5 et /10\n",
-      "else \n",
-      "\techo $1 n\\'est pas compris entre 5 et 10\n",
-      "fi\n",
-      "\n"
-    ],
-    [
-      "if test $1 -gt 5 -a test $1 -lt 10\n",
-      "then \n",
-      "\techo $1 est compris entre 5 et /10\n",
-      "else \n",
-      "\techo $1 n\\'est pas compris entre 5 et 10\n",
-      "fi\n",
-      "\n"
-    ],
-    [
-      "n1=test $1 -gt 5\n",
-      "n2=test $1 -lt 10\n",
-      "if test n1 -a n2\n",
-      "then \n",
-      "\techo $1 est compris entre 5 et /10\n",
-      "else \n",
-      "\techo $1 n\\'est pas compris entre 5 et 10\n",
-      "fi\n",
-      "\n"
-    ],
-    [
-      "if test $1 -gt 5 and test $1 -lt 10\n",
-      "then \n",
-      "\techo $1 est compris entre 5 et /10\n",
-      "else \n",
-      "\techo $1 n\\'est pas compris entre 5 et 10\n",
-      "fi\n",
-      "\n"
-    ],
-    [
-      "if test $1 -gt 5 -a test $1 -lt 10\n",
-      "then \n",
-      "\techo $1 est compris entre 5 et /10\n",
-      "else \n",
-      "\techo $1 n\\'est pas compris entre 5 et 10\n",
-      "fi\n",
-      "\n"
-    ],
-    [
-      "if test $1 -gt 5 -a $1 -lt 10\n",
-      "then \n",
-      "\techo $1 est compris entre 5 et /10\n",
-      "else \n",
-      "\techo $1 n\\'est pas compris entre 5 et 10\n",
-      "fi\n",
-      "\n"
-    ],
-    [
-      "if test $1 -gt 5 -a $1 -lt 10\n",
-      "then \n",
-      "\techo $1 est compris entre 5 et 10\n",
-      "else \n",
-      "\techo $1 n\\'est pas compris entre 5 et 10\n",
-      "fi\n",
-      "\n"
-    ],
-    [
-      "if [ $1 -gt 5 -a $1 -lt 10]\n",
-      "then\n",
-      "echo $1 est compris entre 5 et 10\n",
-      "else\n",
-      "echo $1 n\\'est pas compris entre 5 et 10\n",
-      "fi\n"
-    ],
-    [
-      "if [ $1 -gt 5 -a $1 -lt 10 ]\n",
-      "then\n",
-      "echo $1 est compris entre 5 et 10\n",
-      "else\n",
-      "echo $1 n\\'est pas compris entre 5 et 10\n",
-      "fi\n"
-    ],
-    [
-      "if test $0 -r -a $0 -w\n",
-      "then \n",
-      "echo le fichier $0 existe et est accessible en lecture et ecriture\n",
-      "else\n",
-      "echo le fichier $0 n\\'existe pas , ou n\\'est pas accessible en lecture, ou pas accessible en ecriture\n",
-      "fi\n"
-    ],
-    [
-      "if test -r $0 -a -w $0\n",
-      "then \n",
-      "echo le fichier $0 existe et est accessible en lecture et ecriture\n",
-      "else\n",
-      "echo le fichier $0 n\\'existe pas , ou n\\'est pas accessible en lecture, ou pas accessible en ecriture\n",
-      "fi\n"
-    ],
-    [
-      "if test -r $1 -a -w $1\n",
-      "then \n",
-      "echo le fichier $1 existe et est accessible en lecture et ecriture\n",
-      "else\n",
-      "echo le fichier $1 n\\'existe pas , ou n\\'est pas accessible en lecture, ou pas accessible en ecriture\n",
-      "fi\n"
-    ],
-    [
-      "if test -e $1 -a -e $2\n",
-      "then \n",
-      "\techo souhaitez vous concat\u00c3\u00a9ner les fichiers\\?\n",
-      "\tread reponse\n",
-      "\tif reponse = OUI \n",
-      "\tthen \n",
-      "\tcat $1\n",
-      "\tcat $2\n",
-      "else \n",
-      "echo il y a un fichier inexistant \n"
-    ],
-    [
-      "if test -e $1 -a -e $2\n",
-      "then \n",
-      "\techo souhaitez vous concat\u00c3\u00a9ner les fichiers\\?\n",
-      "\tread reponse\n",
-      "\tif reponse = OUI \n",
-      "\tthen \n",
-      "\tcat $1\n",
-      "\tcat $2\n",
-      "else \n",
-      "echo il y a un fichier inexistant \n",
-      "fi\n"
-    ],
-    [
-      "if test -e $1 -a -e $2\n",
-      "then \n",
-      "\techo souhaitez vous concat\u00c3\u00a9ner les fichiers\\?\n",
-      "\tread reponse\n",
-      "\tif reponse = OUI \n",
-      "\t\tthen \n",
-      "\t\tcat $1\n",
-      "\t\tcat $2\n",
-      "\telse \n",
-      "\t\techo erreur\n",
-      "\tfi\n",
-      "else \n",
-      "\techo il y a un fichier inexistant \n",
-      "fi\n"
-    ],
-    [
-      "if test -e $1 -a -e $2\n",
-      "then \n",
-      "\techo souhaitez vous concat\u00c3\u00a9ner les fichiers\\?\n",
-      "\tread reponse\n",
-      "\tif $reponse = OUI \n",
-      "\t\tthen \n",
-      "\t\tcat $1\n",
-      "\t\tcat $2\n",
-      "\telse \n",
-      "\t\techo erreur\n",
-      "\tfi\n",
-      "else \n",
-      "\techo il y a un fichier inexistant \n",
-      "fi\n"
-    ],
-    [
-      "if test -e $1 -a -e $2\n",
-      "then \n",
-      "\techo souhaitez vous concat\u00c3\u00a9ner les fichiers\\?\n",
-      "\tread reponse\n",
-      "\tif test $reponse = OUI \n",
-      "\t\tthen \n",
-      "\t\tcat $1\n",
-      "\t\tcat $2\n",
-      "\telse \n",
-      "\t\techo erreur\n",
-      "\tfi\n",
-      "else \n",
-      "\techo il y a un fichier inexistant \n",
-      "fi\n"
-    ]
+    {
+      "name": "tp6_exo1.sh",
+      "lines": [
+        "if test $1 -gt 5 -a $1 -lt 10\n",
+        "then \n",
+        "\techo $1 est compris entre 5 et 10\n",
+        "else \n",
+        "\techo $1 n\\'est pas compris entre 5 et 10\n",
+        "fi\n",
+        "\n"
+      ]
+    },
+    {
+      "name": "tp6_exo1bis.sh",
+      "lines": [
+        "if [ $1 -gt 5 -a $1 -lt 10 ]\n",
+        "then\n",
+        "echo $1 est compris entre 5 et 10\n",
+        "else\n",
+        "echo $1 n\\'est pas compris entre 5 et 10\n",
+        "fi\n"
+      ]
+    },
+    {
+      "name": "tp6_exo2.sh",
+      "lines": [
+        "if test -r $1 -a -w $1\n",
+        "then \n",
+        "echo le fichier $1 existe et est accessible en lecture et ecriture\n",
+        "else\n",
+        "echo le fichier $1 n\\'existe pas , ou n\\'est pas accessible en lecture, ou pas accessible en ecriture\n",
+        "fi\n"
+      ]
+    },
+    {
+      "name": "tp6_exo3.sh",
+      "lines": [
+        "if test -e $1 -a -e $2\n",
+        "then \n",
+        "\techo souhaitez vous concat\u00c3\u00a9ner les fichiers\\?\n",
+        "\tread reponse\n",
+        "\tif test $reponse = OUI \n",
+        "\t\tthen \n",
+        "\t\tcat $1\n",
+        "\t\tcat $2\n",
+        "\telse \n",
+        "\t\techo erreur\n",
+        "\tfi\n",
+        "else \n",
+        "\techo il y a un fichier inexistant \n",
+        "fi\n"
+      ]
+    }
   ],
   "profile": [
     {

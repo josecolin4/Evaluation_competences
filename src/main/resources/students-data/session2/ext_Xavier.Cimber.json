@@ -2,61 +2,53 @@
   "name": "ext_Xavier.Cimber",
   "session": 2,
   "scripts": [
-    [
-      "#!/bin/bash\n",
-      "echo Je suis le script Shell $0\n",
-      "echo Mes arguments sont $*\n",
-      "echo Le premier argument est $1\n",
-      "echo Le deuxi\u00c3\u00a8me argument est $2\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Le script $0 poss\u00c3\u00a8de $1 param\u00c3\u00a8tre(s), que voici: $2\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Le script $0 poss\u00c3\u00a8de $1 param\u00c3\u00a8tre s, que voici: $2\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "cat F1 F2 << F3\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "cat F1 F2 < F3\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "cat F1 F2 > F3\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Nous sommes le 'date'\n",
-      "echo sommes le Mon Nov 16 15:20:46 CET 2020\n",
-      "echo Ceci est\n",
-      "echo une tr\u00c3\u00a8s\n",
-      "echo longue phrase...\n",
-      "echo Voici une \u00c3\u00a9toile : *\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Nous sommes le `date`\n",
-      "echo sommes le Mon Nov 16 15:20:46 CET 2020\n",
-      "echo Ceci est\n",
-      "echo une tr\u00c3\u00a8s\n",
-      "echo longue phrase...\n",
-      "echo Voici une \u00c3\u00a9toile : '*'\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "result=$(($1+1))\n",
-      "echo $result \n"
-    ]
+    {
+      "name": "tp5_exo4.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo Je suis le script Shell $0\n",
+        "echo Mes arguments sont $*\n",
+        "echo Le premier argument est $1\n",
+        "echo Le deuxi\u00c3\u00a8me argument est $2\n",
+        "\n"
+      ]
+    },
+    {
+      "name": "tp5_exo5.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo Le script $0 poss\u00c3\u00a8de $1 param\u00c3\u00a8tre s, que voici: $2\n",
+        "\n"
+      ]
+    },
+    {
+      "name": "tp5_exo6.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "cat F1 F2 > F3\n"
+      ]
+    },
+    {
+      "name": "tp5_exo7.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo Nous sommes le `date`\n",
+        "echo sommes le Mon Nov 16 15:20:46 CET 2020\n",
+        "echo Ceci est\n",
+        "echo une tr\u00c3\u00a8s\n",
+        "echo longue phrase...\n",
+        "echo Voici une \u00c3\u00a9toile : '*'\n",
+        "\n"
+      ]
+    },
+    {
+      "name": "tp5_exo8.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "result=$(($1+1))\n",
+        "echo $result \n"
+      ]
+    }
   ],
   "profile": [
     {

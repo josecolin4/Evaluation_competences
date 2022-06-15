@@ -2,293 +2,67 @@
   "name": "ext_Kevin.Rochis",
   "session": 5,
   "scripts": [
-    [
-      "if test -e $1 -a -e $2\n",
-      "then\n",
-      "\n",
-      "\techo voulez vous concat\u00c3\u00a9ner les fichier  ?\n",
-      "\tread i\n",
-      "\n",
-      "else\n",
-      "\n",
-      "\techo Erreur un des fichiers est inexistant\n",
-      "\n",
-      "fi\n",
-      "\n",
-      "if $i = 'oui'\n",
-      "then\n",
-      "\n",
-      "\tcat $1\n",
-      "\tcat $2\n",
-      "\n",
-      "else\n",
-      "\n",
-      "\techo processus terminer\n",
-      "fi\n"
-    ],
-    [
-      "if test -e $1 -a -e $2\n",
-      "then\n",
-      "\n",
-      "\techo voulez vous concat\u00c3\u00a9ner les fichier  ?\n",
-      "\tread i\n",
-      "\n",
-      "else\n",
-      "\n",
-      "\techo Erreur un des fichiers est inexistant\n",
-      "\n",
-      "fi\n",
-      "\n",
-      "if $i = oui\n",
-      "then\n",
-      "\n",
-      "\tcat $1\n",
-      "\tcat $2\n",
-      "\n",
-      "else\n",
-      "\n",
-      "\techo processus terminer\n",
-      "fi\n"
-    ],
-    [
-      "if test -e $1 -a -e $2\n",
-      "then\n",
-      "\n",
-      "\techo voulez vous concat\u00c3\u00a9ner les fichier  ?\n",
-      "\tread i\n",
-      "\n",
-      "else\n",
-      "\n",
-      "\techo Erreur un des fichiers est inexistant\n",
-      "\n",
-      "fi\n",
-      "\n",
-      "if test $i = oui\n",
-      "then\n",
-      "\n",
-      "\tcat $1\n",
-      "\tcat $2\n",
-      "\n",
-      "else\n",
-      "\n",
-      "\techo processus terminer\n",
-      "fi\n"
-    ],
-    [
-      "\n",
-      "for a in 1 2 3\n",
-      "do\n",
-      "echo argument a = $1\n",
-      "echo argument a = $2\n",
-      "echo argument a = $3\n",
-      "done\n",
-      "\n"
-    ],
-    [
-      "\n",
-      "for a in 1 2 3\n",
-      "do\n",
-      "echo argument $a = $1\n",
-      "done\n",
-      "\n"
-    ],
-    [
-      "\n",
-      "for a in 1 2 3\n",
-      "do\n",
-      "b = $0 +1\n",
-      "echo argument $a = $b\n",
-      "done\n",
-      "\n"
-    ],
-    [
-      "\n",
-      "for a in 1 2 3 -a b in $1 $2 $3\n",
-      "do\n",
-      "echo argument $a = $b\n",
-      "done\n",
-      "\n"
-    ],
-    [
-      "\n",
-      "for a in 1 2 3\n",
-      "do\n",
-      "echo argument $a = $b\n",
-      "done\n",
-      "\n"
-    ],
-    [
-      "for liste_commandes in  date who pwd ls\n",
-      "do\n",
-      "$liste_commande\n",
-      "done\n"
-    ],
-    [
-      "\n",
-      "for a in 1 2 3\n",
-      "do\n",
-      "echo argument $a = $*\n",
-      "done\n",
-      "\n"
-    ],
-    [
-      "n=1\n",
-      "for a in 1 2 3\n",
-      "do\n",
-      "\n",
-      "echo argument $a = $(( n + 1 ))\n",
-      "done\n",
-      "\n"
-    ],
-    [
-      "n=1\n",
-      "for a in 1 2 3\n",
-      "do\n",
-      "\n",
-      "echo argument $a = $$(( n + 1 ))\n",
-      "done\n",
-      "\n"
-    ],
-    [
-      "n=1\n",
-      "for a in 1 2 3\n",
-      "do\n",
-      "\n",
-      "echo argument $a = $($(( n + 1 )))\n",
-      "done\n",
-      "\n"
-    ],
-    [
-      "n= $1\n",
-      "for a in 1 2 3\n",
-      "do\n",
-      "\n",
-      "echo argument $a = $(( n + 1 ))\n",
-      "done\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "for liste_commandes in  date who pwd ls\n",
-      "do\n",
-      "$liste_commande\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "for liste_commandes in  date who pwd ls\n",
-      "do\n",
-      "\t$liste_commandes\n",
-      "done\n"
-    ],
-    [
-      "for a in $(seq 10)\n",
-      "do\n",
-      "echo $1 * a\n",
-      "done\n"
-    ],
-    [
-      "for a in $(seq 10)\n",
-      "do\n",
-      "echo $1 \\* a\n",
-      "done\n"
-    ],
-    [
-      "n = $1\n",
-      "for a in $(seq 10)\n",
-      "do\n",
-      "echo  $(( n + a))\n",
-      "done\n"
-    ],
-    [
-      "n = $1\n",
-      "for a in $(seq 10)\n",
-      "do\n",
-      "echo  $(( n * a))\n",
-      "done\n"
-    ],
-    [
-      "n=1\n",
-      "for a in toto titi tutu\n",
-      "do\n",
-      "\n",
-      "echo argument = $n = $a \n",
-      "i=$(( n + 1 ))\n",
-      "done\n",
-      "\n"
-    ],
-    [
-      "n = $1\n",
-      "for a in $(seq 10)\n",
-      "do\n",
-      "echo $(( n * a))\n",
-      "done\n"
-    ],
-    [
-      "n = $0\n",
-      "for a in $(seq 10)\n",
-      "do\n",
-      "echo $(( n * a))\n",
-      "done\n"
-    ],
-    [
-      "\n",
-      "for a in $(seq 10)\n",
-      "do\n",
-      "echo $(( $1 * a))\n",
-      "done\n"
-    ],
-    [
-      "b = $(($1))\n",
-      "for a in $(seq 10)\n",
-      "do\n",
-      "b = $(( b * a))\n",
-      "done\n"
-    ],
-    [
-      "b = $(($1))\n",
-      "for a in $(seq 10)\n",
-      "do\n",
-      "b = $((b * a))\n",
-      "done\n"
-    ],
-    [
-      "b = $(($1 + 0))\n",
-      "for a in $(seq 10)\n",
-      "do\n",
-      "b = $((b * a))\n",
-      "done\n"
-    ],
-    [
-      "b = $(($1 + 0))\n",
-      "for a in $(seq 10)\n",
-      "do\n",
-      "echo $((b * a))\n",
-      "done\n"
-    ],
-    [
-      "b == $1\n",
-      "for a in $(seq 10)\n",
-      "do\n",
-      "echo $((b * a))\n",
-      "done\n"
-    ],
-    [
-      "for a in $(seq 10)\n",
-      "do\n",
-      "c = 1\n",
-      "echo b = $(($1 * a))\n",
-      "\n",
-      "done\n"
-    ],
-    [
-      "for a in $(seq 10)\n",
-      "do\n",
-      "c = 1\n",
-      "echo b = $(($1 * a))\n",
-      "\n",
-      "done\n"
-    ]
+    {
+      "name": "tp6_exo3.sh",
+      "lines": [
+        "if test -e $1 -a -e $2\n",
+        "then\n",
+        "\n",
+        "\techo voulez vous concat\u00c3\u00a9ner les fichier  ?\n",
+        "\tread i\n",
+        "\n",
+        "else\n",
+        "\n",
+        "\techo Erreur un des fichiers est inexistant\n",
+        "\n",
+        "fi\n",
+        "\n",
+        "if test $i = oui\n",
+        "then\n",
+        "\n",
+        "\tcat $1\n",
+        "\tcat $2\n",
+        "\n",
+        "else\n",
+        "\n",
+        "\techo processus terminer\n",
+        "fi\n"
+      ]
+    },
+    {
+      "name": "tp6_exo5.sh",
+      "lines": [
+        "n=1\n",
+        "for a in toto titi tutu\n",
+        "do\n",
+        "\n",
+        "echo argument = $n = $a \n",
+        "i=$(( n + 1 ))\n",
+        "done\n",
+        "\n"
+      ]
+    },
+    {
+      "name": "tp6_exo4.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "for liste_commandes in  date who pwd ls\n",
+        "do\n",
+        "\t$liste_commandes\n",
+        "done\n"
+      ]
+    },
+    {
+      "name": "tp6_exo6.sh",
+      "lines": [
+        "for a in $(seq 10)\n",
+        "do\n",
+        "c = 1\n",
+        "echo b = $(($1 * a))\n",
+        "\n",
+        "done\n"
+      ]
+    }
   ],
   "commands": [
     {

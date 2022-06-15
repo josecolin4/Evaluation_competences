@@ -2,18 +2,15 @@
   "name": "ext_Leonard.Cussey",
   "session": 2,
   "scripts": [
-    [
-      "#!/bin/bash\n",
-      "set a\n",
-      "expr a / 2\n",
-      "echo $(( a / 2 ))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "set a\n",
-      "expr a / 2\n",
-      "echo $(( a / 2 ))\n"
-    ]
+    {
+      "name": "tp5bis_exo1.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "set a\n",
+        "expr a / 2\n",
+        "echo $(( a / 2 ))\n"
+      ]
+    }
   ],
   "profile": [
     {

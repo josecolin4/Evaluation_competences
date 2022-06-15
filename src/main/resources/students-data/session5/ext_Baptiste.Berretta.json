@@ -2,436 +2,532 @@
   "name": "ext_Baptiste.Berretta",
   "session": 5,
   "scripts": [
-    [
-      "#!/bin/bash\n",
-      "if test -e $1 -a -r $1 -a -w $1\n",
-      "\tthen \n",
-      "\t\techo Le fichier $1 existe et est accesible en lecture et \u00c3\u00a9criture\n",
-      "\telse \n",
-      "\t\techo Le fichier $1 n\\' existe pas et n\\'est pas accessible en lecture ou \u00c3\u00a9criture\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test -e $1 $2 -a -r $1 $2 -a -w $1 $2\n",
-      "\n",
-      "        then \n",
-      "\n",
-      "                echo Souhaitez-vous que concat\u00c3\u00a9ner les fichiers \\?\n",
-      "\t\techo r\u00c3\u00a9pondre par \\\"OUI\\\" ou \\\"NON\\\" :\n",
-      "\t\tread reponse\n",
-      "\t\tif $reponse='OUI'\n",
-      "\t\t\tthen\n",
-      "\t\t\t\techo $1 $2\n",
-      "\t\tfi\n",
-      "\n",
-      "        else \n",
-      "\n",
-      "                echo Le fichier $1 n\\' existe pas et n\\'est pas accessible en lecture ou \u00c3\u00a9criture\n",
-      "\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test -e $1 -a -r $1 -a -w $1\n",
-      "\n",
-      "        then \n",
-      "\n",
-      "                echo Souhaitez-vous que concat\u00c3\u00a9ner les fichiers \\?\n",
-      "\t\techo r\u00c3\u00a9pondre par \\\"OUI\\\" ou \\\"NON\\\" :\n",
-      "\t\tread reponse\n",
-      "\t\tif $reponse='OUI'\n",
-      "\t\t\tthen\n",
-      "\t\t\t\techo $1 $2\n",
-      "\t\tfi\n",
-      "\n",
-      "        else \n",
-      "\n",
-      "                echo Le fichier $1 n\\' existe pas et n\\'est pas accessible en lecture ou \u00c3\u00a9criture\n",
-      "\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test -e $1 -a -r $1 -a -w $1\n",
-      "\n",
-      "        then \n",
-      "\n",
-      "                echo Souhaitez-vous que concat\u00c3\u00a9ner les fichiers \\?\n",
-      "\t\techo r\u00c3\u00a9pondre par \\\"OUI\\\" ou \\\"NON\\\" :\n",
-      "\t\tread reponse\n",
-      "\t\tif $reponse='OUI'\n",
-      "\t\t\tthen\n",
-      "\t\t\t\techo $1 $2\n",
-      "\t\tfi\n",
-      "\n",
-      "        else \n",
-      "\n",
-      "                echo Le fichier $1 n\\' existe pas et n\\'est pas accessible en lecture ou \u00c3\u00a9criture\n",
-      "\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test -e $1 -a -r $1 -a -w $1\n",
-      "\n",
-      "        then \n",
-      "\n",
-      "                echo Souhaitez-vous que concat\u00c3\u00a9ner les fichiers \\?\n",
-      "\t\techo r\u00c3\u00a9pondre par \\\"OUI\\\" ou \\\"NON\\\" :\n",
-      "\t\tread reponse\n",
-      "\t\tif $reponse=\"OUI\"\n",
-      "\t\t\tthen\n",
-      "\t\t\t\techo $1 $2\n",
-      "\t\tfi\n",
-      "\n",
-      "        else \n",
-      "\n",
-      "                echo Le fichier $1 n\\' existe pas et n\\'est pas accessible en lecture ou \u00c3\u00a9criture\n",
-      "\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test -e $1 -a -r $1 -a -w $1\n",
-      "\tthen\n",
-      "\tif test -e $2 -a -r $2 -a -w $2\n",
-      "\t        then \n",
-      "\n",
-      "       \t        echo Souhaitez-vous que concat\u00c3\u00a9ner les fichiers \\?\n",
-      "\t\techo r\u00c3\u00a9pondre par \\\"OUI\\\" ou \\\"NON\\\" :\n",
-      "\t\tread reponse\n",
-      "\t\tif $reponse=\"OUI\"\n",
-      "\t\t\tthen\n",
-      "\t\t\techo $1 $2\n",
-      "\t\tfi\n",
-      "\n",
-      "       \t else \n",
-      "\n",
-      "        \t        echo Le fichier $1 n\\' existe pas et n\\'est pas accessible en lecture ou \u00c3\u00a9criture\n",
-      "\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test -e $1 -a -r $1 -a -w $1\n",
-      "\tthen\n",
-      "\tif test -e $2 -a -r $2 -a -w $2\n",
-      "\t        then \n",
-      "\n",
-      "       \t        echo Souhaitez-vous que concat\u00c3\u00a9ner les fichiers \\?\n",
-      "\t\techo r\u00c3\u00a9pondre par \\\"OUI\\\" ou \\\"NON\\\" :\n",
-      "\t\tread reponse\n",
-      "\t\tif $reponse=\"OUI\"\n",
-      "\t\t\tthen\n",
-      "\t\t\techo $1 $2\n",
-      "\t\tfi\n",
-      "\n",
-      "       \telse \n",
-      "\n",
-      "        echo Le fichier $2 n\\' existe pas et n\\'est pas accessible en lecture ou \u00c3\u00a9criture\n",
-      "\tfi\n",
-      "else\n",
-      "echo Le fichier $1 n\\' existe pas et n\\'est pas accessible en lecture ou \u00c3\u00a9criture\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test -e $1 -a -r $1 -a -w $1\n",
-      "\tthen\n",
-      "\tif test -e $2 -a -r $2 -a -w $2\n",
-      "\t        then \n",
-      "\n",
-      "       \t        echo Souhaitez-vous que concat\u00c3\u00a9ner les fichiers \\?\n",
-      "\t\techo r\u00c3\u00a9pondre par \\\"OUI\\\" ou \\\"NON\\\" :\n",
-      "\t\tread reponse\n",
-      "\t\tif test $reponse=\"OUI\"\n",
-      "\t\t\tthen\n",
-      "\t\t\techo $1 $2\n",
-      "\t\tfi\n",
-      "\n",
-      "       \telse \n",
-      "\n",
-      "        echo Le fichier $2 n\\' existe pas et n\\'est pas accessible en lecture ou \u00c3\u00a9criture\n",
-      "\tfi\n",
-      "else\n",
-      "echo Le fichier $1 n\\' existe pas et n\\'est pas accessible en lecture ou \u00c3\u00a9criture\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "for i in 9 8 7 6 5 4 3 2 1\n",
-      "\n",
-      "do\n",
-      "\n",
-      "echo $i\n",
-      "\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "for i in liste_commandes\n",
-      "\n",
-      "do\n",
-      "\n",
-      "echo $date\n",
-      "echo $who\n",
-      "echo $pwd\n",
-      "echo $ls\n",
-      "\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "for liste_commandes in date who pwd ls\n",
-      "\n",
-      "do\n",
-      "\n",
-      "echo $i\n",
-      "\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "for liste_commandes in `date` `who` `pwd` `ls`\n",
-      "\n",
-      "do\n",
-      "\n",
-      "echo $i\n",
-      "\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "for liste_commandes in `date` `who` `pwd` `ls`\n",
-      "\n",
-      "do\n",
-      "\n",
-      "echo $1\n",
-      "\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "for liste_commandes in `date` `who` `pwd` `ls`\n",
-      "\n",
-      "do\n",
-      "\n",
-      "echo $i\n",
-      "\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "for exo5 in $1 $2 $3\n",
-      "do\n",
-      "\n",
-      "echo Argument 1 = $1\n",
-      "echo Argument 2 = $2\n",
-      "echo Argument 3 = $3\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "for exo5 in $1 $2 $3\n",
-      "do\n",
-      "\n",
-      "echo Argument 1 = $1\n",
-      "echo Argument 2 = $2\n",
-      "echo Argument 3 = $3\n",
-      "\n",
-      "echo Il y a 3 arguments\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "for exo5 in $1 $2 $3\n",
-      "do\n",
-      "\n",
-      "echo Argument 1 = $1\n",
-      "echo Argument 2 = $2\n",
-      "echo Argument 3 = $3\n",
-      "\n",
-      "echo Il y a 3 arguments\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "for exo5 in $1 $2 \n",
-      "do\n",
-      "\n",
-      "echo Argument 1 = $1\n",
-      "echo Argument 2 = $2\n",
-      "echo Argument 3 = $3\n",
-      "\n",
-      "echo Il y a 3 arguments\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "for exo5\n",
-      "do\n",
-      "\n",
-      "echo Argument 1 = $1\n",
-      "echo Argument 2 = $2\n",
-      "echo Argument 3 = $3\n",
-      "\n",
-      "echo Il y a 3 arguments\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "for exo5 in $1\n",
-      "do\n",
-      "\n",
-      "echo Argument 1 = $1\n",
-      "echo Argument 2 = $2\n",
-      "echo Argument 3 = $3\n",
-      "\n",
-      "echo Il y a 3 arguments\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "for exo5 in $1 $2 $3\n",
-      "do\n",
-      "\n",
-      "echo Argument 1 = $1\n",
-      "echo Argument 2 = $2\n",
-      "echo Argument 3 = $3\n",
-      "\n",
-      "echo Il y a 3 arguments\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "for exo5 in 2\n",
-      "do\n",
-      "\n",
-      "echo Argument 1 = $1\n",
-      "echo Argument 2 = $2\n",
-      "echo Argument 3 = $3\n",
-      "\n",
-      "echo Il y a 3 arguments\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "for exo5 in $i\n",
-      "do\n",
-      "\n",
-      "echo Argument 1 = $1\n",
-      "echo Argument 2 = $2\n",
-      "echo Argument 3 = $3\n",
-      "\n",
-      "echo Il y a 3 arguments\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "for exo5 in $*\n",
-      "do\n",
-      "\n",
-      "echo Argument 1 = $1\n",
-      "echo Argument 2 = $2\n",
-      "echo Argument 3 = $3\n",
-      "\n",
-      "echo Il y a 3 arguments\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "for i in $*\n",
-      "\n",
-      "echo $i\n",
-      "\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "for i in $*\n",
-      "do\n",
-      "echo $i\n",
-      "\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "for i in $(seq 10)\n",
-      "\n",
-      "do\n",
-      "\n",
-      "echo $i\n",
-      "\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "for i in $(seq $1)\n",
-      "\n",
-      "do\n",
-      "\n",
-      "\n",
-      "\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "for i in $(seq $1)\n",
-      "\n",
-      "do\n",
-      "\n",
-      "\n",
-      "\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "for i in $(seq $1)\n",
-      "\n",
-      "do\n",
-      "\n",
-      "$i\n",
-      "\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "for i in seq $1\n",
-      "\n",
-      "do\n",
-      "\n",
-      "$i\n",
-      "\n",
-      "done\n"
-    ]
+    {
+      "name": "_1607955835__root_TP6__tp6_exo2.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "if test -e $1 -a -r $1 -a -w $1\n",
+        "\tthen \n",
+        "\t\techo Le fichier $1 existe et est accesible en lecture et \u00c3\u00a9criture\n",
+        "\telse \n",
+        "\t\techo Le fichier $1 n\\' existe pas et n\\'est pas accessible en lecture ou \u00c3\u00a9criture\n",
+        "fi\n"
+      ]
+    },
+    {
+      "name": "_1607956007__root_TP6__tp6_exo3.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "\n"
+      ]
+    },
+    {
+      "name": "_1607956561__root_TP6__tp6_exo3.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "if test -e $1 $2 -a -r $1 $2 -a -w $1 $2\n",
+        "\n",
+        "        then \n",
+        "\n",
+        "                echo Souhaitez-vous que concat\u00c3\u00a9ner les fichiers \\?\n",
+        "\t\techo r\u00c3\u00a9pondre par \\\"OUI\\\" ou \\\"NON\\\" :\n",
+        "\t\tread reponse\n",
+        "\t\tif $reponse='OUI'\n",
+        "\t\t\tthen\n",
+        "\t\t\t\techo $1 $2\n",
+        "\t\tfi\n",
+        "\n",
+        "        else \n",
+        "\n",
+        "                echo Le fichier $1 n\\' existe pas et n\\'est pas accessible en lecture ou \u00c3\u00a9criture\n",
+        "\n",
+        "fi\n"
+      ]
+    },
+    {
+      "name": "_1607956731__root_TP6__tp6_exo3.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "if test -e $1 -a -r $1 -a -w $1\n",
+        "\n",
+        "        then \n",
+        "\n",
+        "                echo Souhaitez-vous que concat\u00c3\u00a9ner les fichiers \\?\n",
+        "\t\techo r\u00c3\u00a9pondre par \\\"OUI\\\" ou \\\"NON\\\" :\n",
+        "\t\tread reponse\n",
+        "\t\tif $reponse='OUI'\n",
+        "\t\t\tthen\n",
+        "\t\t\t\techo $1 $2\n",
+        "\t\tfi\n",
+        "\n",
+        "        else \n",
+        "\n",
+        "                echo Le fichier $1 n\\' existe pas et n\\'est pas accessible en lecture ou \u00c3\u00a9criture\n",
+        "\n",
+        "fi\n"
+      ]
+    },
+    {
+      "name": "_1607956767__root_TP6__tp6_exo3.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "if test -e $1 -a -r $1 -a -w $1\n",
+        "\n",
+        "        then \n",
+        "\n",
+        "                echo Souhaitez-vous que concat\u00c3\u00a9ner les fichiers \\?\n",
+        "\t\techo r\u00c3\u00a9pondre par \\\"OUI\\\" ou \\\"NON\\\" :\n",
+        "\t\tread reponse\n",
+        "\t\tif $reponse='OUI'\n",
+        "\t\t\tthen\n",
+        "\t\t\t\techo $1 $2\n",
+        "\t\tfi\n",
+        "\n",
+        "        else \n",
+        "\n",
+        "                echo Le fichier $1 n\\' existe pas et n\\'est pas accessible en lecture ou \u00c3\u00a9criture\n",
+        "\n",
+        "fi\n"
+      ]
+    },
+    {
+      "name": "_1607956835__root_TP6__tp6_exo3.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "if test -e $1 -a -r $1 -a -w $1\n",
+        "\n",
+        "        then \n",
+        "\n",
+        "                echo Souhaitez-vous que concat\u00c3\u00a9ner les fichiers \\?\n",
+        "\t\techo r\u00c3\u00a9pondre par \\\"OUI\\\" ou \\\"NON\\\" :\n",
+        "\t\tread reponse\n",
+        "\t\tif $reponse=\"OUI\"\n",
+        "\t\t\tthen\n",
+        "\t\t\t\techo $1 $2\n",
+        "\t\tfi\n",
+        "\n",
+        "        else \n",
+        "\n",
+        "                echo Le fichier $1 n\\' existe pas et n\\'est pas accessible en lecture ou \u00c3\u00a9criture\n",
+        "\n",
+        "fi\n"
+      ]
+    },
+    {
+      "name": "_1607957053__root_TP6__tp6_exo3.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "if test -e $1 -a -r $1 -a -w $1\n",
+        "\tthen\n",
+        "\tif test -e $2 -a -r $2 -a -w $2\n",
+        "\t        then \n",
+        "\n",
+        "       \t        echo Souhaitez-vous que concat\u00c3\u00a9ner les fichiers \\?\n",
+        "\t\techo r\u00c3\u00a9pondre par \\\"OUI\\\" ou \\\"NON\\\" :\n",
+        "\t\tread reponse\n",
+        "\t\tif $reponse=\"OUI\"\n",
+        "\t\t\tthen\n",
+        "\t\t\techo $1 $2\n",
+        "\t\tfi\n",
+        "\n",
+        "       \t else \n",
+        "\n",
+        "        \t        echo Le fichier $1 n\\' existe pas et n\\'est pas accessible en lecture ou \u00c3\u00a9criture\n",
+        "\n",
+        "fi\n"
+      ]
+    },
+    {
+      "name": "_1607957135__root_TP6__tp6_exo3.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "if test -e $1 -a -r $1 -a -w $1\n",
+        "\tthen\n",
+        "\tif test -e $2 -a -r $2 -a -w $2\n",
+        "\t        then \n",
+        "\n",
+        "       \t        echo Souhaitez-vous que concat\u00c3\u00a9ner les fichiers \\?\n",
+        "\t\techo r\u00c3\u00a9pondre par \\\"OUI\\\" ou \\\"NON\\\" :\n",
+        "\t\tread reponse\n",
+        "\t\tif $reponse=\"OUI\"\n",
+        "\t\t\tthen\n",
+        "\t\t\techo $1 $2\n",
+        "\t\tfi\n",
+        "\n",
+        "       \telse \n",
+        "\n",
+        "        echo Le fichier $2 n\\' existe pas et n\\'est pas accessible en lecture ou \u00c3\u00a9criture\n",
+        "\tfi\n",
+        "else\n",
+        "echo Le fichier $1 n\\' existe pas et n\\'est pas accessible en lecture ou \u00c3\u00a9criture\n",
+        "fi\n"
+      ]
+    },
+    {
+      "name": "_1607957298__root_TP6__tp6_exo3.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "if test -e $1 -a -r $1 -a -w $1\n",
+        "\tthen\n",
+        "\tif test -e $2 -a -r $2 -a -w $2\n",
+        "\t        then \n",
+        "\n",
+        "       \t        echo Souhaitez-vous que concat\u00c3\u00a9ner les fichiers \\?\n",
+        "\t\techo r\u00c3\u00a9pondre par \\\"OUI\\\" ou \\\"NON\\\" :\n",
+        "\t\tread reponse\n",
+        "\t\tif test $reponse=\"OUI\"\n",
+        "\t\t\tthen\n",
+        "\t\t\techo $1 $2\n",
+        "\t\tfi\n",
+        "\n",
+        "       \telse \n",
+        "\n",
+        "        echo Le fichier $2 n\\' existe pas et n\\'est pas accessible en lecture ou \u00c3\u00a9criture\n",
+        "\tfi\n",
+        "else\n",
+        "echo Le fichier $1 n\\' existe pas et n\\'est pas accessible en lecture ou \u00c3\u00a9criture\n",
+        "fi\n"
+      ]
+    },
+    {
+      "name": "_1607957575__root_TP6__tp6_exo4.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "\n",
+        "for i in 9 8 7 6 5 4 3 2 1\n",
+        "\n",
+        "do\n",
+        "\n",
+        "echo $i\n",
+        "\n",
+        "done\n"
+      ]
+    },
+    {
+      "name": "_1607957881__root_TP6__tp6_exo4.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "\n",
+        "for i in liste_commandes\n",
+        "\n",
+        "do\n",
+        "\n",
+        "echo $date\n",
+        "echo $who\n",
+        "echo $pwd\n",
+        "echo $ls\n",
+        "\n",
+        "done\n"
+      ]
+    },
+    {
+      "name": "_1607958049__root_TP6__tp6_exo4.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "\n",
+        "for liste_commandes in date who pwd ls\n",
+        "\n",
+        "do\n",
+        "\n",
+        "echo $i\n",
+        "\n",
+        "done\n"
+      ]
+    },
+    {
+      "name": "_1607958180__root_TP6__tp6_exo4.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "\n",
+        "for liste_commandes in `date` `who` `pwd` `ls`\n",
+        "\n",
+        "do\n",
+        "\n",
+        "echo $i\n",
+        "\n",
+        "done\n"
+      ]
+    },
+    {
+      "name": "_1607958297__root_TP6__tp6_exo4.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "\n",
+        "for liste_commandes in `date` `who` `pwd` `ls`\n",
+        "\n",
+        "do\n",
+        "\n",
+        "echo $1\n",
+        "\n",
+        "done\n"
+      ]
+    },
+    {
+      "name": "_1607958330__root_TP6__tp6_exo4.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "\n",
+        "for liste_commandes in `date` `who` `pwd` `ls`\n",
+        "\n",
+        "do\n",
+        "\n",
+        "echo $i\n",
+        "\n",
+        "done\n"
+      ]
+    },
+    {
+      "name": "_1607958815__root_TP6__tp6_exo5.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "\n",
+        "for exo5 in $1 $2 $3\n",
+        "do\n",
+        "\n",
+        "echo Argument 1 = $1\n",
+        "echo Argument 2 = $2\n",
+        "echo Argument 3 = $3\n",
+        "\n"
+      ]
+    },
+    {
+      "name": "_1607959021__root_TP6__tp6_exo5.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "\n",
+        "for exo5 in $1 $2 $3\n",
+        "do\n",
+        "\n",
+        "echo Argument 1 = $1\n",
+        "echo Argument 2 = $2\n",
+        "echo Argument 3 = $3\n",
+        "\n",
+        "echo Il y a 3 arguments\n",
+        "done\n"
+      ]
+    },
+    {
+      "name": "_1607959113__root_TP6__tp6_exo5.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "\n",
+        "for exo5 in $1 $2 $3\n",
+        "do\n",
+        "\n",
+        "echo Argument 1 = $1\n",
+        "echo Argument 2 = $2\n",
+        "echo Argument 3 = $3\n",
+        "\n",
+        "echo Il y a 3 arguments\n",
+        "done\n"
+      ]
+    },
+    {
+      "name": "_1607959126__root_TP6__tp6_exo5.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "\n",
+        "for exo5 in $1 $2 \n",
+        "do\n",
+        "\n",
+        "echo Argument 1 = $1\n",
+        "echo Argument 2 = $2\n",
+        "echo Argument 3 = $3\n",
+        "\n",
+        "echo Il y a 3 arguments\n",
+        "done\n"
+      ]
+    },
+    {
+      "name": "_1607959165__root_TP6__tp6_exo5.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "\n",
+        "for exo5\n",
+        "do\n",
+        "\n",
+        "echo Argument 1 = $1\n",
+        "echo Argument 2 = $2\n",
+        "echo Argument 3 = $3\n",
+        "\n",
+        "echo Il y a 3 arguments\n",
+        "done\n"
+      ]
+    },
+    {
+      "name": "_1607959182__root_TP6__tp6_exo5.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "\n",
+        "for exo5 in $1\n",
+        "do\n",
+        "\n",
+        "echo Argument 1 = $1\n",
+        "echo Argument 2 = $2\n",
+        "echo Argument 3 = $3\n",
+        "\n",
+        "echo Il y a 3 arguments\n",
+        "done\n"
+      ]
+    },
+    {
+      "name": "_1607959303__root_TP6__tp6_exo5.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "\n",
+        "for exo5 in $1 $2 $3\n",
+        "do\n",
+        "\n",
+        "echo Argument 1 = $1\n",
+        "echo Argument 2 = $2\n",
+        "echo Argument 3 = $3\n",
+        "\n",
+        "echo Il y a 3 arguments\n",
+        "done\n"
+      ]
+    },
+    {
+      "name": "_1607959436__root_TP6__tp6_exo5.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "\n",
+        "for exo5 in 2\n",
+        "do\n",
+        "\n",
+        "echo Argument 1 = $1\n",
+        "echo Argument 2 = $2\n",
+        "echo Argument 3 = $3\n",
+        "\n",
+        "echo Il y a 3 arguments\n",
+        "done\n"
+      ]
+    },
+    {
+      "name": "_1607959658__root_TP6__tp6_exo5.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "\n",
+        "for exo5 in $i\n",
+        "do\n",
+        "\n",
+        "echo Argument 1 = $1\n",
+        "echo Argument 2 = $2\n",
+        "echo Argument 3 = $3\n",
+        "\n",
+        "echo Il y a 3 arguments\n",
+        "done\n"
+      ]
+    },
+    {
+      "name": "_1607959713__root_TP6__tp6_exo5.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "\n",
+        "for exo5 in $*\n",
+        "do\n",
+        "\n",
+        "echo Argument 1 = $1\n",
+        "echo Argument 2 = $2\n",
+        "echo Argument 3 = $3\n",
+        "\n",
+        "echo Il y a 3 arguments\n",
+        "done\n"
+      ]
+    },
+    {
+      "name": "_1607959768__root_TP6__tp6_exo5.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "\n",
+        "for i in $*\n",
+        "\n",
+        "echo $i\n",
+        "\n",
+        "done\n"
+      ]
+    },
+    {
+      "name": "_1607959786__root_TP6__tp6_exo5.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "\n",
+        "for i in $*\n",
+        "do\n",
+        "echo $i\n",
+        "\n",
+        "done\n"
+      ]
+    },
+    {
+      "name": "_1607960046__root_TP6__tp6_exo6.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "\n",
+        "for i in $(seq 10)\n",
+        "\n",
+        "do\n",
+        "\n",
+        "echo $i\n",
+        "\n",
+        "done\n"
+      ]
+    },
+    {
+      "name": "_1607960229__root_TP6__tp6_exo6.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "\n",
+        "for i in $(seq $1)\n",
+        "\n",
+        "do\n",
+        "\n",
+        "\n",
+        "\n",
+        "done\n"
+      ]
+    },
+    {
+      "name": "_1607960309__root_TP6__tp6_exo6.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "\n",
+        "for i in $(seq $1)\n",
+        "\n",
+        "do\n",
+        "\n",
+        "\n",
+        "\n",
+        "done\n"
+      ]
+    },
+    {
+      "name": "_1607960651__root_TP6__tp6_exo6.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "\n",
+        "for i in $(seq $1)\n",
+        "\n",
+        "do\n",
+        "\n",
+        "$i\n",
+        "\n",
+        "done\n"
+      ]
+    },
+    {
+      "name": "_1607960692__root_TP6__tp6_exo6.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "\n",
+        "for i in seq $1\n",
+        "\n",
+        "do\n",
+        "\n",
+        "$i\n",
+        "\n",
+        "done\n"
+      ]
+    }
   ],
   "commands": [
     {

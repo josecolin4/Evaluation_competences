@@ -2,120 +2,52 @@
   "name": "ext_Alexandre.Savalle",
   "session": 3,
   "scripts": [
-    [
-      "expr\n"
-    ],
-    [
-      "expr\n",
-      "\n",
-      "\n",
-      "\n",
-      "\n"
-    ],
-    [
-      "expr\n",
-      "\n",
-      "\n",
-      "\n",
-      "\n",
-      "\n",
-      "\n"
-    ],
-    [
-      "expr $1 / 2\n",
-      "echo $(( $1 / 2 ))\n",
-      "\n"
-    ],
-    [
-      "expr $1 / 2\n",
-      "echo $(($1 / 2))\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "expr $1 / 2\n",
-      "echo $(($1 / 2))\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "expr $1 * 2\n",
-      "echo $(($1 * 2))\n",
-      "\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "expr $1 \\* 2\n",
-      "echo $(($1 * 2))\n",
-      "\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Quelle est votre annee de naissance ?\n",
-      "read naiss\n",
-      "echo Vous etes ne en $naiss, vous avez donc\n",
-      "expr DATE() - $naiss\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Quelle est votre annee de naissance ?\n",
-      "read naiss\n",
-      "echo Vous etes ne en $naiss, vous avez donc\n",
-      "expr date - $naiss\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Quelle est votre annee de naissance ?\n",
-      "read naiss\n",
-      "echo Vous etes ne en $naiss, vous avez donc\n",
-      "expr 'date+%y' - $naiss\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Quelle est votre annee de naissance ?\n",
-      "read naiss\n",
-      "echo Vous etes ne en $naiss, vous avez donc\n",
-      "expr `date +%y7` - $naiss\n",
-      "echo $((`date +%y` - $naiss))\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Quelle est votre annee de naissance ?\n",
-      "read naiss\n",
-      "echo Vous etes ne en $naiss, vous avez donc\n",
-      "expr `date +%y` - $naiss\n",
-      "echo $((`date +%y` - $naiss))\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Quelle est votre annee de naissance ?\n",
-      "read naiss\n",
-      "echo Vous etes ne en $naiss, vous avez donc\n",
-      "expr `date +%Y` - $naiss\n",
-      "echo $((`date +%Y` - $naiss))\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Il y a `who|wc -l` utilisateurs connectes sur $(hostname)\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "set(ls -l $1)\n",
-      "echo $5\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "set -- $(ls -l $1)\n",
-      "echo $5\n"
-    ]
+    {
+      "name": "tp5bis_exo1.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "expr $1 / 2\n",
+        "echo $(($1 / 2))\n",
+        "\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo2.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "expr $1 \\* 2\n",
+        "echo $(($1 * 2))\n",
+        "\n",
+        "\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo3.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo Quelle est votre annee de naissance ?\n",
+        "read naiss\n",
+        "echo Vous etes ne en $naiss, vous avez donc\n",
+        "expr `date +%Y` - $naiss\n",
+        "echo $((`date +%Y` - $naiss))\n",
+        "\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo4.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo Il y a `who|wc -l` utilisateurs connectes sur $(hostname)\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo5.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "set -- $(ls -l $1)\n",
+        "echo $5\n"
+      ]
+    }
   ],
   "profile": [
     {

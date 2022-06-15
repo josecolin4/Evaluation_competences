@@ -2,71 +2,21 @@
   "name": "ext_Jason.Bessier",
   "session": 2,
   "scripts": [
-    [
-      "#!/bin/bash\n",
-      "expr $1 + 1\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo PATH\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo $PATH\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo $vPATH\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo $pwd\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo $PWD\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo $PATH\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "$PATH = $PWD\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "set $PATH = $PWD\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "PATH= $PATH:$PWD\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "export PATH= $PATH:$PWD\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "export PATH= $PATH:$PWD\n",
-      "echo \"export PATH=$PATH:$PWD\" >> ~/.bashrc\n"
-    ],
-    [],
-    [
-      "#!/bin/bash\n",
-      "export PATH=$PATH:$PWD\n",
-      "echo \"export PATH=$PATH:$PWD\">>~/.bashrc\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "export PATH=$PATH:`PWD`\n",
-      "echo \"export PATH=$PATH:`PWD`\">>~/.bashrc\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "export PATH=$PATH:/root\n",
-      "echo \"export PATH=$PATH:/root\">>~/.bashrc\n"
-    ]
+    {
+      "name": "tp5_exo8.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "expr $1 + 1\n"
+      ]
+    },
+    {
+      "name": "tp5_exo9.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "export PATH=$PATH:/root\n",
+        "echo \"export PATH=$PATH:/root\">>~/.bashrc\n"
+      ]
+    }
   ],
   "profile": [
     {

@@ -2,176 +2,52 @@
   "name": "ext_Martial.Geslin",
   "session": 3,
   "scripts": [
-    [
-      "expr $1 / 2\n"
-    ],
-    [
-      "echo $(($1 / 2))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "expr $1 / 2\n",
-      "echo $(($1 / 2))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "expr $1 * 2\n",
-      "echo $(($1 * 2))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "expr ($1 * 2)\n",
-      "echo $(($1 * 2))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "expr \"$1 * 2\"\n",
-      "echo $(($1 * 2))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "expr \"$1*2\"\n",
-      "echo $(($1 * 2))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "expr $1 * 2\n",
-      "echo $(($1 * 2))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "expr $1 * 2\n",
-      "echo $(($1 * 2))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "expr $1 \\* 2\n",
-      "echo $(($1 * 2))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
-      "read age\n",
-      "echo \"Vous avez $(expr age - date)\"\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
-      "read age\n",
-      "echo \"Vous avez $(expr age - date) ans\"\n",
-      "echo date\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
-      "read age\n",
-      "echo \"Vous avez $(expr $age - $date) ans\"\n",
-      "echo $date\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
-      "read age\n",
-      "echo \"Vous avez $(expr $age - $date +%Y) ans\"\n",
-      "echo $date +%Y\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
-      "read age\n",
-      "echo \"Vous avez $(expr $1 - `date +%Y`) ans\"\n",
-      "echo $date +%Y\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
-      "read age\n",
-      "echo \"Vous avez $(expr $1 - `date +%Y`) ans\"\n",
-      "echo 'date +%Y'\n",
-      "echo $1\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
-      "read age\n",
-      "echo \"Vous avez $(expr $1 - `date +%Y`) ans\"\n",
-      "echo $'date +%Y'\n",
-      "echo $1\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
-      "read age\n",
-      "echo \"Vous avez $(expr $1 - `date +\"%Y\"`) ans\"\n",
-      "echo 'date +\"%Y\"'\n",
-      "echo $1\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
-      "read age\n",
-      "echo Vous avez\n",
-      "expr $age - `date +\"%Y\"`\n",
-      "echo ans\n",
-      "echo 'date +\"%Y\"'\n",
-      "echo $age\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
-      "read age\n",
-      "echo Vous avez\n",
-      "expr `date +\"%Y\"` - $age\n",
-      "echo ans\n",
-      "echo ou\n",
-      "echo $((`date +\"%Y\"` - $age)) ans\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
-      "read age\n",
-      "echo Vous avez $(expr `date +\"%Y\"` - $age) ans\n",
-      "echo ou\n",
-      "echo $((`date +\"%Y\"` - $age)) ans\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo il y a `who | wc -l ` utilisateurs connect\u00c3\u00a9s sur `hostname` \n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo il y a `who | wc -l ` utilisateurs connect\u00c3\u00a9s sur `hostname` \n",
-      "echo ou\n",
-      "echo il y a $(who | wc -l) utilisateurs connect\u00c3\u00a9s sur $(hostname)\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Nom du fichier:\n",
-      "read file\n",
-      "set -- ls -l file\n",
-      "echo $5\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Nom du fichier:\n",
-      "read file\n",
-      "set -- $(ls -l file)\n",
-      "echo $5\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Nom du fichier:\n",
-      "read file\n",
-      "set -- $(ls -l `$file`)\n",
-      "echo $5\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Nom du fichier:\n",
-      "read file\n",
-      "set -- $(ls -l $file)\n",
-      "echo $5\n"
-    ]
+    {
+      "name": "tp5bis_exo1.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "expr $1 / 2\n",
+        "echo $(($1 / 2))\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo2.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "expr $1 \\* 2\n",
+        "echo $(($1 * 2))\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo3.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
+        "read age\n",
+        "echo Vous avez $(expr `date +\"%Y\"` - $age) ans\n",
+        "echo ou\n",
+        "echo $((`date +\"%Y\"` - $age)) ans\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo4.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo il y a `who | wc -l ` utilisateurs connect\u00c3\u00a9s sur `hostname` \n",
+        "echo ou\n",
+        "echo il y a $(who | wc -l) utilisateurs connect\u00c3\u00a9s sur $(hostname)\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo5.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo Nom du fichier:\n",
+        "read file\n",
+        "set -- $(ls -l $file)\n",
+        "echo $5\n"
+      ]
+    }
   ],
   "profile": [
     {

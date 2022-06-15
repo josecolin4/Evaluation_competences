@@ -2,81 +2,47 @@
   "name": "ext_Julien.Devienne-Ousmer",
   "session": 1,
   "scripts": [
-    [
-      "#!/bin/bash\n",
-      "echo cours\n",
-      "cours=unix\n",
-      "echo $cours\n",
-      "echo je suis au cours $cours\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Mon nom de login est $logname\n",
-      "echo Mon shell est $shell\n",
-      "echo Les variables du Shell sont :\n",
-      "set\n",
-      "Celles d'environnement sont : \n",
-      "env\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Mon nom de login est $LOGNAME\n",
-      "echo Mon shell est $SHELL\n",
-      "echo Les variables du Shell sont :\n",
-      "set\n",
-      "Celles d'environnement sont :\n",
-      "env\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Mon nom de login est $LOGNAME\n",
-      "echo Mon shell est $SHELL\n",
-      "echo Les variables du Shell sont :\n",
-      "set\n",
-      "echo \"Celles d'environnement sont :\"\n",
-      "env\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Cher utilisateur quel est ton pr\u00c3\u00a9nom \\?\n",
-      "read prenom\n",
-      "echo Ravi de te connaitre, $prenom\n",
-      "echo Quel est ton nom et ton age \\?\n",
-      "read nom age\n",
-      "echo Tu es $prenom $nom et tu as $age ans, n\\'est-ce pas \\?\n",
-      "read reponse\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Je suis le script Shell $0\n",
-      "echo mes arguments sont $*\n",
-      "echo Le premier argument est $1\n",
-      "echo Le deuxi\u00c3\u00a8me argument es $2\n"
-    ],
-    [
-      "Le script $script poss\u00c3\u00a8de $# param\u00c3\u00a8tres, que voici :\n",
-      "$*\n"
-    ],
-    [
-      "echo \"Le script\" $script echo\"poss\u00c3\u00a8de\" $* echo\"param\u00c3\u00a8tres, que voici :\"\n",
-      "$*\n"
-    ],
-    [
-      "echo \"Le script\" $script poss\u00c3\u00a8de $* param\u00c3\u00a8tres, que voici :\n",
-      "$*\n"
-    ],
-    [
-      "echo \"Le script\" $0 poss\u00c3\u00a8de $* param\u00c3\u00a8tres, que voici :\n",
-      "$*\n"
-    ],
-    [
-      "echo \"Le script\" $0 poss\u00c3\u00a8de $# param\u00c3\u00a8tres, que voici :\n",
-      "$*\n"
-    ]
+    {
+      "name": "tp5_exo1.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo cours\n",
+        "cours=unix\n",
+        "echo $cours\n",
+        "echo je suis au cours $cours\n",
+        "\n"
+      ]
+    },
+    {
+      "name": "tp5_exo2.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo Mon nom de login est $LOGNAME\n",
+        "echo Mon shell est $SHELL\n",
+        "echo Les variables du Shell sont :\n",
+        "set\n",
+        "echo \"Celles d'environnement sont :\"\n",
+        "env\n",
+        "\n"
+      ]
+    },
+    {
+      "name": "tp5_exo5.sh",
+      "lines": [
+        "echo \"Le script\" $0 poss\u00c3\u00a8de $# param\u00c3\u00a8tres, que voici :\n",
+        "$*\n"
+      ]
+    },
+    {
+      "name": "tp5_exo6.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo Je suis le script Shell $0\n",
+        "echo mes arguments sont $*\n",
+        "echo Le premier argument est $1\n",
+        "echo Le deuxi\u00c3\u00a8me argument es $2\n"
+      ]
+    }
   ],
   "profile": [
     {

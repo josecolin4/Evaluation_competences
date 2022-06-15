@@ -2,43 +2,19 @@
   "name": "ext_Robbe.Leushuis",
   "session": 3,
   "scripts": [
-    [
-      "if test $1 -le 10 -a $1 -ge 5\n",
-      "\tthen\n",
-      "\techo \"la valeur\" $1 \"est comprise entre 5 et 10\"\n"
-    ],
-    [
-      "if test $1 -le 10 -a $1 -ge 5\n",
-      "\tthen\n",
-      "\techo \"la valeur\" $1 \"est comprise entre 5 et 10\"\n",
-      "fi\n"
-    ],
-    [
-      "if test $1 -le 10 -a $1 -ge 5\n",
-      "\tthen\n",
-      "\t\techo \"la valeur\" $1 \"est comprise entre 5 et 10\"\n",
-      "\telse\n",
-      "fi\n"
-    ],
-    [
-      "a=5\n",
-      "b=10\n",
-      "if test $1 -le $b -a $1 -ge $a\n",
-      "\tthen\n",
-      "\t\techo \"la valeur\" $1 \"est comprise entre 5 et 10\"\n",
-      "\telse\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "a=5\n",
-      "b=10\n",
-      "if test $1 -le $b -a $1 -ge $a\n",
-      "\tthen\n",
-      "\t\techo \"la valeur\" $1 \"est comprise entre 5 et 10\"\n",
-      "\telse\n",
-      "fi\n"
-    ]
+    {
+      "name": "tp6_exo1.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "a=5\n",
+        "b=10\n",
+        "if test $1 -le $b -a $1 -ge $a\n",
+        "\tthen\n",
+        "\t\techo \"la valeur\" $1 \"est comprise entre 5 et 10\"\n",
+        "\telse\n",
+        "fi\n"
+      ]
+    }
   ],
   "profile": [
     {

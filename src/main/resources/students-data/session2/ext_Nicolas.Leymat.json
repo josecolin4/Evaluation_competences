@@ -2,65 +2,14 @@
   "name": "ext_Nicolas.Leymat",
   "session": 2,
   "scripts": [
-    [
-      "echo entrer votre valeur\n",
-      "read valeur\n",
-      "MaValeur = valeur\n",
-      "$MaValeur / 2\n",
-      "echo $MaValeur\n"
-    ],
-    [
-      "echo entrer votre valeur\n",
-      "read valeur\n",
-      "$Valeur / 2\n",
-      "echo $MaValeur\n"
-    ],
-    [
-      "echo entrer votre valeur\n",
-      "read valeur\n",
-      "expr $Valeur / 2\n",
-      "echo $Valeur\n"
-    ],
-    [
-      "echo entrer votre valeur\n",
-      "read valeur\n",
-      "echo$(($Valeur / 2))\n",
-      "echo $Valeur\n"
-    ],
-    [
-      "echo entrer votre valeur\n",
-      "read valeur\n",
-      "echo $(($Valeur / 2))\n",
-      "echo $Valeur\n"
-    ],
-    [
-      "echo entrer votre valeur\n",
-      "read valeur\n",
-      "echo $(($Valeur /  2))\n",
-      "echo $Valeur\n"
-    ],
-    [
-      "echo entrer votre valeur\n",
-      "read valeur\n",
-      "echo $(($Valeur  *  2))\n",
-      "echo $Valeur\n"
-    ],
-    [
-      "echo entrer votre valeur\n",
-      "read valeur\n",
-      "echo $(($Valeur  /  2))\n",
-      "echo $Valeur\n"
-    ],
-    [
-      "Valeur = 6\n",
-      "echo expr $Valeur  /  2\n",
-      "\n"
-    ],
-    [
-      "$Valeur = 6\n",
-      "echo expr $Valeur  /  2\n",
-      "\n"
-    ]
+    {
+      "name": "tp5bis_exo3.sh",
+      "lines": [
+        "$Valeur = 6\n",
+        "echo expr $Valeur  /  2\n",
+        "\n"
+      ]
+    }
   ],
   "profile": [
     {

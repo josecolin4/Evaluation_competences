@@ -2,202 +2,68 @@
   "name": "ext_Adrien.Delmote",
   "session": 1,
   "scripts": [
-    [
-      "#!/bin/bash\n",
-      "echo cours\n",
-      "cours=unix\n",
-      "echo $cours\n",
-      "echo je suis en cours\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo cours\n",
-      "cours=unix\n",
-      "echo $cours\n",
-      "echo je suis en cours $cours\n",
-      "\n"
-    ],
-    [
-      "login=adrien.delmote\n",
-      "echo mon nom de login est : $login \n",
-      "\n"
-    ],
-    [
-      "\n",
-      "echo mon nom de login est : $login \n",
-      "\n"
-    ],
-    [
-      "login=adrien.delmtoe\n",
-      "echo mon nom de login est : $login\n",
-      "echo mon shell est: $shell\n",
-      "echo les variable du shell sont :\n",
-      "$* \n",
-      "\n"
-    ],
-    [
-      "login=adrien.delmtoe\n",
-      "echo mon nom de login est : $login\n",
-      "echo mon shell est: $shell\n",
-      "echo les variable du shell sont :\n",
-      "echo $* \n",
-      "\n"
-    ],
-    [
-      "login=adrien.delmtoe\n",
-      "echo mon nom de login est : $login\n",
-      "echo mon shell est: $shell\n",
-      "echo les variable du shell sont :\n",
-      "echo set\n",
-      "echo env \n",
-      "\n"
-    ],
-    [
-      "login=adrien.delmtoe\n",
-      "echo mon nom de login est : $login\n",
-      "echo mon shell est: $shell\n",
-      "echo les variable du shell sont :\n",
-      " set env \n",
-      "\n"
-    ],
-    [
-      "login=adrien.delmtoe\n",
-      "echo mon nom de login est : $login\n",
-      "echo mon shell est: $SHELL\n",
-      "echo les variable du shell sont :\n",
-      " set env \n",
-      "\n"
-    ],
-    [
-      "\n",
-      "echo mon nom de login est : $LOGIN\n",
-      "echo mon shell est: $SHELL\n",
-      "echo les variable du shell sont :\n",
-      " set env \n",
-      "\n"
-    ],
-    [
-      "\n",
-      "echo mon nom de login est : $LOGIN\n",
-      "echo mon shell est: $SHELL\n",
-      "echo les variable du shell sont :\n",
-      " set env \n",
-      "\n"
-    ],
-    [
-      "\n",
-      "echo mon nom de login est : $LOGIN\n",
-      "echo mon shell est: $SHELL\n",
-      "echo les variable du shell sont :\n",
-      " set\n",
-      "echo les variable de l'environnement sont:\n",
-      " env \n",
-      "\n"
-    ],
-    [
-      "login=adrien.delmote\n",
-      "echo mon nom de login est : $login\n",
-      "echo mon shell est: $SHELL\n",
-      "echo les variable du shell sont :\n",
-      "set\n",
-      "echo les variable de l'environnement sont:\n",
-      "env\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo cher utilisateur quel est le prenom \\?\n",
-      "read prenom \n",
-      "echo ravie de te connaitre $prenom\n",
-      "echo tu as quelle age \\?\n",
-      "read age\n",
-      "echo tu as $age ans n\\ n'est ce pas \\?\n",
-      "read reponse \n",
-      "\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo cher utilisateur quel est le prenom \\?\n",
-      "read prenom \n",
-      "echo ravie de te connaitre $prenom\n",
-      "echo tu as quelle age \\?\n",
-      "read age\n",
-      "echo tu as $age ans, n\\ n'est ce pas \\?\n",
-      "read reponse\n",
-      "\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo cher utilisateur quel est le prenom \\?\n",
-      "read prenom\n",
-      "echo ravie de te connaitre $prenom\n",
-      "echo tu as quelle age \\?\n",
-      "read age \n",
-      "echo tu as $age ans, n\\'est ce pas \\?\n",
-      "read reponse\n",
-      "\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo cher utilisateur quel est le prenom \\?\n",
-      "read prenom\n",
-      "echo ravie de te connaitre $prenom\n",
-      "echo tu as quelle age \\?\n",
-      "read age \n",
-      "echo tu as $age ans, n'est ce pas \\?\n",
-      "read reponse\n",
-      "\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo cher utilisateur quel est le prenom \\?\n",
-      "read prenom\n",
-      "echo ravie de te connaitre $prenom\n",
-      "echo tu as quelle age \\?\n",
-      "read age \n",
-      "echo tu as $age ans, n\\'est ce pas \\?\n",
-      "read reponse\n",
-      "\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo je suis el script shell $0\n",
-      "mes argument sont $*\n",
-      "echo le premier argument est $1\n",
-      "echo le deuxi\u00c3\u00a8me argment est $2\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo je suis el script shell $0\n",
-      "mes argument sont $*\n",
-      "echo le premier argument est $1\n",
-      "echo le deuxi\u00c3\u00a8me argment est $2\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo je suis el script shell $0\n",
-      "echo mes argument sont $*\n",
-      "echo le premier argument est $1\n",
-      "echo le deuxi\u00c3\u00a8me argment est $2\n",
-      "\n"
-    ],
-    [
-      "le scipt $0 poss\u00c3\u00a9de $# parametre que voici $*\n"
-    ],
-    [
-      "echo le scipt $0 poss\u00c3\u00a9de $# parametre que voici $*\n"
-    ],
-    [
-      "dkdzq\n"
-    ]
+    {
+      "name": "tp5_exo1.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo cours\n",
+        "cours=unix\n",
+        "echo $cours\n",
+        "echo je suis en cours $cours\n",
+        "\n"
+      ]
+    },
+    {
+      "name": "tp5_exo2.sh",
+      "lines": [
+        "login=adrien.delmote\n",
+        "echo mon nom de login est : $login\n",
+        "echo mon shell est: $SHELL\n",
+        "echo les variable du shell sont :\n",
+        "set\n",
+        "echo les variable de l'environnement sont:\n",
+        "env\n",
+        "\n"
+      ]
+    },
+    {
+      "name": "tp5_ex3.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo cher utilisateur quel est le prenom \\?\n",
+        "read prenom\n",
+        "echo ravie de te connaitre $prenom\n",
+        "echo tu as quelle age \\?\n",
+        "read age \n",
+        "echo tu as $age ans, n\\'est ce pas \\?\n",
+        "read reponse\n",
+        "\n",
+        "\n"
+      ]
+    },
+    {
+      "name": "tp5_ex4.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo je suis el script shell $0\n",
+        "echo mes argument sont $*\n",
+        "echo le premier argument est $1\n",
+        "echo le deuxi\u00c3\u00a8me argment est $2\n",
+        "\n"
+      ]
+    },
+    {
+      "name": "tp5_ex5.sh",
+      "lines": [
+        "echo le scipt $0 poss\u00c3\u00a9de $# parametre que voici $*\n"
+      ]
+    },
+    {
+      "name": "tp4_exo7_2.sh",
+      "lines": [
+        "dkdzq\n"
+      ]
+    }
   ],
   "profile": [
     {

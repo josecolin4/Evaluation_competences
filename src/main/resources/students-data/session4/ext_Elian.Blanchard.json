@@ -2,136 +2,76 @@
   "name": "ext_Elian.Blanchard",
   "session": 4,
   "scripts": [
-    [
-      "if test -e $1 -A test -e $2\n",
-      "then\n",
-      "echo les fichiers existent, souhaitez-vous les concat\u00c3\u00a9ner \\?\n",
-      "read n\n",
-      "\tif test $n = \"OUI\"\n",
-      "\tthen\n",
-      "\t\techo $1 et $2\n",
-      "\telse\n",
-      "\t\techo ERREUR\n",
-      "\tfi\n",
-      "else\n",
-      "\techo les fichiers n existent pas\n",
-      "fi\n"
-    ],
-    [
-      "for liste_commande \n"
-    ],
-    [
-      "for liste_commande in date\n",
-      "do \n",
-      "\n",
-      "done\n",
-      "\n"
-    ],
-    [
-      "for liste_commande in date\n",
-      "do \n",
-      "\t$liste_commande\n",
-      "done\n",
-      "\n"
-    ],
-    [
-      "if test -e $1 -A test -e $2\n",
-      "then\n",
-      "echo les fichiers existent, souhaitez-vous les concat\u00c3\u00a9ner \\?\n",
-      "read n\n",
-      "\tif test $n = \"OUI\"\n",
-      "\tthen\n",
-      "\t\techo $1 et $2\n",
-      "\telse\n",
-      "\t\techo ERREUR\n",
-      "\tfi\n",
-      "else\n",
-      "\techo les fichiers n existent pas\n",
-      "fi\n"
-    ],
-    [
-      "if test -e $1 & test -e $2\n",
-      "then\n",
-      "echo les fichiers existent, souhaitez-vous les concat\u00c3\u00a9ner \\?\n",
-      "read n\n",
-      "\tif test $n = \"OUI\"\n",
-      "\tthen\n",
-      "\t\techo $1 et $2\n",
-      "\telse\n",
-      "\t\techo ERREUR\n",
-      "\tfi\n",
-      "else\n",
-      "\techo les fichiers n existent pas\n",
-      "fi\n"
-    ],
-    [
-      "if test -e $1 & test -e $2\n",
-      "then\n",
-      "echo les fichiers existent, souhaitez-vous les concat\u00c3\u00a9ner \\?\n",
-      "read n\n",
-      "\tif test $n = \"OUI\"\n",
-      "\tthen\n",
-      "\t\techo $1 et $2\n",
-      "\telse\n",
-      "\t\techo ERREUR\n",
-      "\tfi\n",
-      "else\n",
-      "\techo les fichiers n existent pas\n",
-      "fi\n"
-    ],
-    [
-      "for liste_commande in date\n",
-      "do \n",
-      "\t$liste_commande\n",
-      "done\n",
-      "\n"
-    ],
-    [
-      "echo il y a `who`\n",
-      "echo le nom de la machine est `hostname`\n"
-    ],
-    [
-      "set `who`\n",
-      "echo il y a $# utilisateur\n",
-      "echo le nom de la machine est `hostname`\n"
-    ],
-    [
-      "set `who`\n",
-      "echo il y a $# utilisateurs\n",
-      "echo le nom de la machine est `hostname`\n"
-    ],
-    [
-      "set -- $(ls -l ./tp5bis_exo4.sh)\n",
-      "echo $5\n"
-    ],
-    [
-      "for liste_commande in date\n",
-      "do \n",
-      "\t$liste_commande\n",
-      "done\n",
-      "\n"
-    ],
-    [
-      "nb=1\n",
-      "num=1\n",
-      "for nb in $*\n",
-      "do\n",
-      "\techo argument $num : $nb\n",
-      "\tnum=$((num+1))\n",
-      "done\n",
-      "echo Il y a $# arguments.\n"
-    ],
-    [
-      "nb=$1\n",
-      "mult=1\n",
-      "fact=1\n",
-      "for nb in $(seq $1)\n",
-      "do\n",
-      "\tfact=$((fact*mult))\n",
-      "\tmult=$((mult+1))\n",
-      "\techo $fact\n",
-      "done\n"
-    ]
+    {
+      "name": "tp6_exo3.sh",
+      "lines": [
+        "if test -e $1 & test -e $2\n",
+        "then\n",
+        "echo les fichiers existent, souhaitez-vous les concat\u00c3\u00a9ner \\?\n",
+        "read n\n",
+        "\tif test $n = \"OUI\"\n",
+        "\tthen\n",
+        "\t\techo $1 et $2\n",
+        "\telse\n",
+        "\t\techo ERREUR\n",
+        "\tfi\n",
+        "else\n",
+        "\techo les fichiers n existent pas\n",
+        "fi\n"
+      ]
+    },
+    {
+      "name": "tp6_exo4.sh",
+      "lines": [
+        "for liste_commande in date\n",
+        "do \n",
+        "\t$liste_commande\n",
+        "done\n",
+        "\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo4.sh",
+      "lines": [
+        "set `who`\n",
+        "echo il y a $# utilisateurs\n",
+        "echo le nom de la machine est `hostname`\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo5.sh",
+      "lines": [
+        "set -- $(ls -l ./tp5bis_exo4.sh)\n",
+        "echo $5\n"
+      ]
+    },
+    {
+      "name": "tp6_exo5.sh",
+      "lines": [
+        "nb=1\n",
+        "num=1\n",
+        "for nb in $*\n",
+        "do\n",
+        "\techo argument $num : $nb\n",
+        "\tnum=$((num+1))\n",
+        "done\n",
+        "echo Il y a $# arguments.\n"
+      ]
+    },
+    {
+      "name": "tp6_exo6.sh",
+      "lines": [
+        "nb=$1\n",
+        "mult=1\n",
+        "fact=1\n",
+        "for nb in $(seq $1)\n",
+        "do\n",
+        "\tfact=$((fact*mult))\n",
+        "\tmult=$((mult+1))\n",
+        "\techo $fact\n",
+        "done\n"
+      ]
+    }
   ],
   "profile": [
     {

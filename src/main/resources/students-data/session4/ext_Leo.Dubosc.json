@@ -2,109 +2,37 @@
   "name": "ext_Leo.Dubosc",
   "session": 4,
   "scripts": [
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
-      "read $anaissance\n",
-      "let $age=$((`date + \"%Y\"` \\- $anaissance))\n",
-      "echo Vous \u00c3\u00aates n\u00c3\u00a9 en $anaissance, vous avez donc $age ans.\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
-      "read $anaissance\n",
-      "let $age=$((`date + \"%Y\"` - $anaissance))\n",
-      "echo Vous \u00c3\u00aates n\u00c3\u00a9 en $anaissance, vous avez donc $age ans.\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
-      "read $anaissance\n",
-      "let $age=$((`date +\"%Y\"` - $anaissance))\n",
-      "echo Vous \u00c3\u00aates n\u00c3\u00a9 en $anaissance, vous avez donc $age ans.\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
-      "read $anaissance\n",
-      "$age=$((`date +\"%Y\"` - $anaissance))\n",
-      "echo Vous \u00c3\u00aates n\u00c3\u00a9 en $anaissance, vous avez donc $age ans.\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
-      "read $anaissance\n",
-      "echo vous etes n\u00c3\u00a9 en $anaissance, vous avez donc $((`date +\"%Y\"` - $anaissance))ans\n",
-      "echo ou \n",
-      "echo $(expr`date +\"%Y\"` - $anaissance) ans\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
-      "read $anaissance\n",
-      "echo vous etes n\u00c3\u00a9 en $anaissance, vous avez donc $((`date +\"%Y\"` - $anaissance)) ans\n",
-      "echo ou \n",
-      "echo $(expr`date +\"%Y\"` - $anaissance) ans\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
-      "read anaissance\n",
-      "echo vous etes n\u00c3\u00a9 en $anaissance, vous avez donc $((`date +\"%Y\"` - $anaissance)) ans\n",
-      "echo ou \n",
-      "echo $(expr`date +\"%Y\"` - $anaissance) ans\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
-      "read anaissance\n",
-      "echo vous etes n\u00c3\u00a9 en $anaissance, vous avez donc $((`date +\"%Y\"` - $anaissance)) ans\n",
-      "echo ou \n",
-      "echo (expr`date +\"%Y\"` - $anaissance) ans\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "name=$(hostname)\n",
-      "echo les utilisateurs connect\u00c3\u00a9es a la machine $name sont : `who` \n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "name=$(hostname)\n",
-      "echo les utilisateurs connect\u00c3\u00a9es a la machine $name sont : `who` \n",
-      "set who \n",
-      "set hostname\n",
-      "echo $1 $2\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "name=$(hostname)\n",
-      "echo les utilisateurs connect\u00c3\u00a9es a la machine $name sont : `who` \n",
-      "\n"
-    ]
+    {
+      "name": "tp5bis_exo5.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "\n",
+        "\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo3.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "\n",
+        "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
+        "read anaissance\n",
+        "echo vous etes n\u00c3\u00a9 en $anaissance, vous avez donc $((`date +\"%Y\"` - $anaissance)) ans\n",
+        "echo ou \n",
+        "echo (expr`date +\"%Y\"` - $anaissance) ans\n",
+        "\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo4.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "\n",
+        "name=$(hostname)\n",
+        "echo les utilisateurs connect\u00c3\u00a9es a la machine $name sont : `who` \n",
+        "\n"
+      ]
+    }
   ],
   "profile": [
     {

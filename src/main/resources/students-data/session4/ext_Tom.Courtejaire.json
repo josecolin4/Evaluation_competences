@@ -2,65 +2,26 @@
   "name": "ext_Tom.Courtejaire",
   "session": 4,
   "scripts": [
-    [
-      "n= expr $(($a/2))\n",
-      "echo $n\n",
-      "\n"
-    ],
-    [
-      "echo $(expr $a / 2)\n"
-    ],
-    [
-      "echo $(expr $1 / 2)\n"
-    ],
-    [
-      "echo $(( $1 / 2))\n"
-    ],
-    [
-      "echo $(expr $1 * 2)\n"
-    ],
-    [
-      "echo $(expr $1 \\* 2)\n"
-    ],
-    [
-      "echo vous \u00c3\u00aates n\u00c3\u00a9 en $annee vous avez donc `expr $(date +%Y) - $annee` ans\n"
-    ],
-    [
-      "\n",
-      "echo vous \u00c3\u00aates n\u00c3\u00a9 en read $(annee) vous avez donc `expr $(date +%Y) - $annee` ans\n"
-    ],
-    [
-      "\n",
-      "echo vous \u00c3\u00aates n\u00c3\u00a9 en read($annee) vous avez donc `expr $(date +%Y) - $annee` ans\n"
-    ],
-    [
-      "echo vous \u00c3\u00aates n\u00c3\u00a9 en read(annee) vous avez donc `expr $(date +%Y) - $annee` ans\n"
-    ],
-    [
-      "echo En quelle ann\u00c3\u00a9e \u00c3\u00aates vous n\u00c3\u00a9?\n",
-      "read(annee)\n",
-      "echo vous \u00c3\u00aates n\u00c3\u00a9 en $annee vous avez donc `expr $(date +%Y) - $annee` ans\n"
-    ],
-    [
-      "echo En quelle ann\u00c3\u00a9e \u00c3\u00aates vous n\u00c3\u00a9?\n",
-      "read $annee\n",
-      "echo vous \u00c3\u00aates n\u00c3\u00a9 en $annee vous avez donc `expr $(date +%Y) - $annee` ans\n"
-    ],
-    [
-      "echo En quelle ann\u00c3\u00a9e \u00c3\u00aates vous n\u00c3\u00a9?\n",
-      "read $annee\n",
-      "echo vous \u00c3\u00aates n\u00c3\u00a9 en $annee vous avez donc `expr 2020 - $annee` ans\n"
-    ],
-    [
-      "echo En quelle ann\u00c3\u00a9e \u00c3\u00aates vous n\u00c3\u00a9?\n",
-      "read annee\n",
-      "echo vous \u00c3\u00aates n\u00c3\u00a9 en $annee vous avez donc `expr 2020 - $annee` ans\n"
-    ],
-    [
-      "echo En quelle ann\u00c3\u00a9e \u00c3\u00aates vous n\u00c3\u00a9?\n",
-      "read annee\n",
-      "echo vous \u00c3\u00aates n\u00c3\u00a9 en $annee vous avez donc `expr $(date +%Y) - $annee` ans\n"
-    ]
+    {
+      "name": "tp5bis_exo1.sh",
+      "lines": [
+        "echo $(( $1 / 2))\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo2.sh",
+      "lines": [
+        "echo $(expr $1 \\* 2)\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo3.sh",
+      "lines": [
+        "echo En quelle ann\u00c3\u00a9e \u00c3\u00aates vous n\u00c3\u00a9?\n",
+        "read annee\n",
+        "echo vous \u00c3\u00aates n\u00c3\u00a9 en $annee vous avez donc `expr $(date +%Y) - $annee` ans\n"
+      ]
+    }
   ],
   "profile": [
     {

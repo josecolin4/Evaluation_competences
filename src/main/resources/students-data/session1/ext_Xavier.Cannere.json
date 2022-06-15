@@ -2,156 +2,49 @@
   "name": "ext_Xavier.Cannere",
   "session": 1,
   "scripts": [
-    [
-      "#!/bin/bash\n",
-      "echo cours\n",
-      "cours=unix\n",
-      "echo $cours\n",
-      "echo je suis au cours $cours\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "Mon nom de login est : $login\n",
-      "Mon shell est : $shell\n",
-      "Les variables du shell sont : $set\n",
-      "Les variables d'envrionnement sont : $env\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "Mon nom de login est : $login\n",
-      "Mon shell est : $shell\n",
-      "Les variables du shell sont : `set`\n",
-      "Les variables d'envrionnement sont : `env`\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "Mon nom de login est : \n",
-      "Mon shell est : \n",
-      "Les variables du shell sont : `set`\n",
-      "Les variables d'envrionnement sont : `env`\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "Mon nom de login est : echo $login\n",
-      "Mon shell est : echo $shell\n",
-      "Les variables du shell sont : echo `$set`\n",
-      "Les variables d'envrionnement sont :echo  `$env`\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "Mon nom de login est : echo $login\n",
-      "Mon shell est : echo $shell\n",
-      "Les variables du shell sont : echo `set`\n",
-      "Les variables d'envrionnement sont :echo  `env`\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "Mon nom de login est : echo $login\n",
-      "Mon shell est : echo $shell\n",
-      "Les variables du shell sont : echo `set\n",
-      "Les variables d'envrionnement sont :echo  `env\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "Mon nom de login est : echo $login\n",
-      "Mon shell est : echo $shell\n",
-      "Les variables du shell sont : set\n",
-      "Les variables d'envrionnement sont : env\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "Mon nom de login est : echo $login\n",
-      "Mon shell est : echo $shell\n",
-      "Les variables du shell sont : echo $set\n",
-      "Les variables d'envrionnement sont : echo $env\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "Mon nom de login est : echo $login\n",
-      "Mon shell est : echo $shell\n",
-      "Les variables du shell sont : echo $set\n",
-      "Les variables d'envrionnement sont : echo $env\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "Mon nom de login est : echo $login\n",
-      "Mon shell est : echo $shell\n",
-      "Les variables du shell sont : `set`\n",
-      "Les variables d'envrionnement sont : echo $env\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "Mon nom de login est : echo $login\n",
-      "Mon shell est : echo $shell\n",
-      "Les variables du shell sont : `set`\n",
-      "Les variables d'envrionnement sont : `env`\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "Mon nom de login est : echo $login\n",
-      "Mon shell est : echo $shell\n",
-      "Les variables du shell sont : set\n",
-      "Les variables d'envrionnement sont : env\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "Mon nom de login est : LOGNAME\n",
-      "Mon shell est : SHELL\n",
-      "Les variables du shell sont : set\n",
-      "Les variables d'envrionnement sont : env\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Mon nom de login est : $login\n",
-      "echo Mon shell est : $shell\n",
-      "echo Les variables shell sont : `set`\n",
-      "echo Celles d'environnements : `env`\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Mon nom de login est : $LOGNAME\n",
-      "echo Mon shell est : $SHELL\n",
-      "echo Les variables shell sont : `set`\n",
-      "echo Celles d'environnements : `env`\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Mon nom de login est : $LOGNAME\n",
-      "echo Mon shell est : $SHELL\n",
-      "echo Les variables shell sont : set\n",
-      "echo Celles d'environnements : env\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Mon nom de login est : $LOGNAME\n",
-      "echo Mon shell est : $SHELL\n",
-      "echo Les variables shell sont : set\n",
-      "echo Celles d\\'environnements : env\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Mon nom de login est : $LOGNAME\n",
-      "echo Mon shell est : $SHELL\n",
-      "echo Les variables shell sont : `set`\n",
-      "echo Celles d\\'environnements : `env`\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Cher utilisateur quel est ton pr\u00c3\u00a9nom \\?\n",
-      "read prenom\n",
-      "echo Ravi de te connaitre $prenom\n",
-      "echo Quel est ton nom et ton age \\?\n",
-      "read nom age\n",
-      "echo Tu es $prenom $nom et tu as $age ans n\\'est ce pas \\?\n",
-      "read reponse\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Je suis le script shell $0\n",
-      "echo Mes arguments sont $*\n",
-      "echo Le premier argument est $1\n",
-      "echo Le deuxi\u00c3\u00a8me argument est $2\n"
-    ]
+    {
+      "name": "tp5_exo1.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo cours\n",
+        "cours=unix\n",
+        "echo $cours\n",
+        "echo je suis au cours $cours\n"
+      ]
+    },
+    {
+      "name": "tp5_exo2.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo Mon nom de login est : $LOGNAME\n",
+        "echo Mon shell est : $SHELL\n",
+        "echo Les variables shell sont : `set`\n",
+        "echo Celles d\\'environnements : `env`\n"
+      ]
+    },
+    {
+      "name": "tp5_exo3.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo Cher utilisateur quel est ton pr\u00c3\u00a9nom \\?\n",
+        "read prenom\n",
+        "echo Ravi de te connaitre $prenom\n",
+        "echo Quel est ton nom et ton age \\?\n",
+        "read nom age\n",
+        "echo Tu es $prenom $nom et tu as $age ans n\\'est ce pas \\?\n",
+        "read reponse\n"
+      ]
+    },
+    {
+      "name": "tp5_exo4.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo Je suis le script shell $0\n",
+        "echo Mes arguments sont $*\n",
+        "echo Le premier argument est $1\n",
+        "echo Le deuxi\u00c3\u00a8me argument est $2\n"
+      ]
+    }
   ],
   "profile": [
     {

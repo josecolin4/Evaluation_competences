@@ -2,233 +2,52 @@
   "name": "ext_Driss.Habi",
   "session": 3,
   "scripts": [
-    [
-      "#!/bin/bash\n",
-      "n=8\n",
-      "echo methode 1\n",
-      "expr $n / 2\n",
-      "echo methode 2\n",
-      "$(($n / 2))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "n=8\n",
-      "echo methode 1\n",
-      "expr $n / 2\n",
-      "echo methode 2\n",
-      "$((n / 2))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "n=8\n",
-      "echo methode 1\n",
-      "expr $n / 2\n",
-      "echo methode 2\n",
-      "echo $((n / 2))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo methode 1\n",
-      "expr $1 * 2\n",
-      "echo methode 2\n",
-      "echo $(($1 * 2))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo methode 1\n",
-      "expr $1 / 2\n",
-      "echo methode 2\n",
-      "echo $(($1 / 2))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo methode 1\n",
-      "expr `$1 * 2`\n",
-      "echo methode 2\n",
-      "echo $(($1 * 2))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo methode 1\n",
-      "expr $1 \\ 2\n",
-      "echo methode 2\n",
-      "echo $(($1 * 2))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo methode 1\n",
-      "expr $1\\2\n",
-      "echo methode 2\n",
-      "echo $(($1 * 2))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Quel est votre ann\u00c3\u00a9e de naissance ?\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Quel est votre ann\u00c3\u00a9e de naissance ?\n",
-      "read annee\n",
-      "echo vous \u00c3\u00aates n\u00c3\u00a9 en $annee, vous avez donc `expr $date - $annee` ans\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Quel est votre ann\u00c3\u00a9e de naissance ?\n",
-      "read annee\n",
-      "echo vous \u00c3\u00aates n\u00c3\u00a9 en $annee, vous avez donc `expr $date - $annee` ans\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo il y a `$who` utilisateurs sur `$hostname`\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo il y a $who utilisateurs sur $hostname\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo il y a `who` utilisateurs sur `hostname`\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo il y a `who -q` utilisateurs sur `hostname`\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo il y a `who -q` utilisateurs sur `hostname`\n",
-      "echo il y a $(who -q) utilisateurs sur $(hostname)\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "set \n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Quel est votre ann\u00c3\u00a9e de naissance ?\n",
-      "read annee\n",
-      "echo vous \u00c3\u00aates n\u00c3\u00a9 en $annee, vous avez donc `expr `date +%Y` - $annee` ans\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Quel est votre ann\u00c3\u00a9e de naissance ?\n",
-      "read annee\n",
-      "echo vous \u00c3\u00aates n\u00c3\u00a9 en $annee, vous avez donc expr `date +%Y - $annee` ans\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Quel est votre ann\u00c3\u00a9e de naissance ?\n",
-      "read annee\n",
-      "echo vous \u00c3\u00aates n\u00c3\u00a9 en $annee, vous avez donc expr ``date +%Y` - $annee` ans\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Quel est votre ann\u00c3\u00a9e de naissance ?\n",
-      "read annee\n",
-      "echo vous \u00c3\u00aates n\u00c3\u00a9 en $annee, vous avez donc `expr `date` - $annee` ans\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Quel est votre ann\u00c3\u00a9e de naissance ?\n",
-      "read annee\n",
-      "echo vous \u00c3\u00aates n\u00c3\u00a9 en $annee, vous avez donc `expr date - $annee` ans\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Quel est votre ann\u00c3\u00a9e de naissance ?\n",
-      "read annee\n",
-      "echo vous \u00c3\u00aates n\u00c3\u00a9 en $annee, vous avez donc expr `date - $annee` ans\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Quel est votre ann\u00c3\u00a9e de naissance ?\n",
-      "read annee\n",
-      "echo vous \u00c3\u00aates n\u00c3\u00a9 en $annee, vous avez donc expr `date+%Y - $annee` ans\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "an= `date +%Y`\n",
-      "echo Quel est votre ann\u00c3\u00a9e de naissance ?\n",
-      "read annee\n",
-      "echo vous \u00c3\u00aates n\u00c3\u00a9 en $annee, vous avez donc expr `an - $annee` ans\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "an= `date +%Y`\n",
-      "echo Quel est votre ann\u00c3\u00a9e de naissance ?\n",
-      "read annee\n",
-      "echo vous \u00c3\u00aates n\u00c3\u00a9 en $annee, vous avez donc expr `$an - $annee` ans\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "an= `date '+%Y'`\n",
-      "echo Quel est votre ann\u00c3\u00a9e de naissance ?\n",
-      "read annee\n",
-      "echo vous \u00c3\u00aates n\u00c3\u00a9 en $annee, vous avez donc expr `$an - $annee` ans\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "an= `date '+%Y'`\n",
-      "echo Quel est votre ann\u00c3\u00a9e de naissance ?\n",
-      "read annee\n",
-      "echo vous \u00c3\u00aates n\u00c3\u00a9 en $annee, vous avez donc `expr $an - $annee` ans\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "an= `date +%Y`\n",
-      "echo Quel est votre ann\u00c3\u00a9e de naissance ?\n",
-      "read annee\n",
-      "echo vous \u00c3\u00aates n\u00c3\u00a9 en $annee, vous avez donc `expr $an - $annee` ans\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "an= `date +'%Y'`\n",
-      "echo Quel est votre ann\u00c3\u00a9e de naissance ?\n",
-      "read annee\n",
-      "echo vous \u00c3\u00aates n\u00c3\u00a9 en $annee, vous avez donc `expr $an - $annee` ans\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "an=`date +'%Y'`\n",
-      "echo Quel est votre ann\u00c3\u00a9e de naissance ?\n",
-      "read annee\n",
-      "echo vous \u00c3\u00aates n\u00c3\u00a9 en $annee, vous avez donc `expr $an - $annee` ans\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "set -- $(ls -l file)\n",
-      "echo taille : $5\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "set -- $(ls -l tp5_exo1.sh)\n",
-      "echo taille : $5\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo il y a `who -q` utilisateurs sur `hostname`\n",
-      "echo il y a $(who | wc) utilisateurs sur $(hostname)\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo il y a `who -q` utilisateurs sur `hostname`\n",
-      "echo il y a $(who | wc -l) utilisateurs sur $(hostname)\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo il y a `who | wc -l` utilisateurs sur `hostname`\n",
-      "echo il y a $(who | wc -l) utilisateurs sur $(hostname)\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo il y a `who | wc -l` utilisateurs sur `hostname`\n",
-      "echo il y a $(who | wc -l) utilisateurs sur $(hostname)\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "set -- $(ls -l tp5_exo1.sh)\n",
-      "echo taille : $5\n"
-    ]
+    {
+      "name": "tp5bis_exo1.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo methode 1\n",
+        "expr $1 / 2\n",
+        "echo methode 2\n",
+        "echo $(($1 / 2))\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo2.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo methode 1\n",
+        "expr $1\\2\n",
+        "echo methode 2\n",
+        "echo $(($1 * 2))\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo3.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "an=`date +'%Y'`\n",
+        "echo Quel est votre ann\u00c3\u00a9e de naissance ?\n",
+        "read annee\n",
+        "echo vous \u00c3\u00aates n\u00c3\u00a9 en $annee, vous avez donc `expr $an - $annee` ans\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo4.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo il y a `who | wc -l` utilisateurs sur `hostname`\n",
+        "echo il y a $(who | wc -l) utilisateurs sur $(hostname)\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo5.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "set -- $(ls -l tp5_exo1.sh)\n",
+        "echo taille : $5\n"
+      ]
+    }
   ],
   "profile": [
     {

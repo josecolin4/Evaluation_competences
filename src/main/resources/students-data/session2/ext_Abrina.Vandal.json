@@ -2,61 +2,39 @@
   "name": "ext_Abrina.Vandal",
   "session": 2,
   "scripts": [
-    [
-      "#!/bin/bash\n",
-      "echo $PATH\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo $PATH\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "PATH=${PATH}:.\n",
-      "echo $PATH\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo expr $1/2\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo expr $1/2\n",
-      "n=$1\n",
-      "echo $((n/2))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo expr $1*2\n",
-      "n=$1\n",
-      "echo ((n*2))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo expr $1*2\n",
-      "n=$1\n",
-      "echo $((n*2))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo 'expr $1+1'\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo expr $1+1\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo expr $1\\*2\n",
-      "n=$1\n",
-      "echo $((n\\*2))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo expr $1\\*2\n",
-      "n=$1\n",
-      "echo $((n*2))\n"
-    ]
+    {
+      "name": "tp5_exo9.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "PATH=${PATH}:.\n",
+        "echo $PATH\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo1.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo expr $1/2\n",
+        "n=$1\n",
+        "echo $((n/2))\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo2.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo expr $1\\*2\n",
+        "n=$1\n",
+        "echo $((n*2))\n"
+      ]
+    },
+    {
+      "name": "tp5_exo8.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo expr $1+1\n"
+      ]
+    }
   ],
   "profile": [
     {

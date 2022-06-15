@@ -2,232 +2,49 @@
   "name": "ext_Driss.Habi",
   "session": 4,
   "scripts": [
-    [
-      "#!/bin/bash\n",
-      "if 5 <= $1 <= 10\n",
-      "then \n",
-      "echo C'est bon\n",
-      "else\n",
-      "echo c'est pas bon\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if 5 <= $1 -a $1 <= 10\n",
-      "then \n",
-      "echo C'est bon\n",
-      "else\n",
-      "echo c'est pas bon\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if 4 < $1 -a $1 < 11\n",
-      "then \n",
-      "echo C'est bon\n",
-      "else\n",
-      "echo c'est pas bon\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if `4 < $1 -a $1 < 11`\n",
-      "then \n",
-      "echo C'est bon\n",
-      "else\n",
-      "echo c'est pas bon\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if `4 -le $1 -a $1 -le 11`\n",
-      "then \n",
-      "echo C'est bon\n",
-      "else\n",
-      "echo c'est pas bon\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test 5 -ge $1 -a test  $1 -le 10\n",
-      "then \n",
-      "echo C'est bon\n",
-      "else\n",
-      "echo c'est pas bon\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test 5 -ge $1 -a -le 10\n",
-      "then \n",
-      "echo C'est bon\n",
-      "else\n",
-      "echo c'est pas bon\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test `5 -ge $1 -a -le 10`\n",
-      "then \n",
-      "echo C'est bon\n",
-      "else\n",
-      "echo c'est pas bon\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test 5 -gt $1 -a -lt 10\n",
-      "then \n",
-      "echo C'est bon\n",
-      "else\n",
-      "echo c'est pas bon\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test `5 -gt $1 -a -lt 10`\n",
-      "then \n",
-      "echo C'est bon\n",
-      "else\n",
-      "echo c'est pas bon\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if  5 -gt $1 -a -lt 10\n",
-      "then \n",
-      "echo C'est bon\n",
-      "else\n",
-      "echo c'est pas bon\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if  5 -gt $1 -a $1 -lt 10\n",
-      "then \n",
-      "echo C'est bon\n",
-      "else\n",
-      "echo c'est pas bon\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if  $1 -gt 5 -a $1 -lt 10\n",
-      "then \n",
-      "echo C'est bon\n",
-      "else\n",
-      "echo c'est pas bon\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if  $1 -gt 5 -a $1 -lt 10\n",
-      "then \n",
-      "echo C'est bon\n",
-      "else\n",
-      "echo c'est pas bon\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if $1 -gt 5 -a $1 -lt 10\n",
-      "then \n",
-      "echo C'est bon\n",
-      "else\n",
-      "echo c'est pas bon\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test $1 -gt 5 -a $1 -lt 10\n",
-      "then \n",
-      "echo C'est bon\n",
-      "else\n",
-      "echo c'est pas bon\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test $1 -gt 5 -a $1 -lt 10\n",
-      "then\n",
-      "echo C'est bon\n",
-      "else\n",
-      "echo c'est pas bon\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test $1 -gt 5 -a $1 -lt 10\n",
-      "then\n",
-      "echo La valeur est comprise entre 5 et 10\n",
-      "else\n",
-      "echo La valeur n\\'est pas comprise entre 5 et 10\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test -r -w $1\n",
-      "then \n",
-      "echo Le fichier $1 existe et est disponible en lecture et \u00c3\u00a9criture\n",
-      "else\n",
-      "echo le fichier $1 n\\'existe pas ou n\\'est pas disponible en lecture et \u00c3\u00a9criture\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test -r $1 -a -w $1\n",
-      "then \n",
-      "echo Le fichier $1 existe et est disponible en lecture et \u00c3\u00a9criture\n",
-      "else\n",
-      "echo le fichier $1 n\\'existe pas ou n\\'est pas disponible en lecture et \u00c3\u00a9criture\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test -e $1 -a -e $2\n",
-      "then\n",
-      "echo Souhaitez vous concat\u00c3\u00a9ner les fichiers ?\n",
-      "read rep\n",
-      "if $rep = oui\n",
-      "then\n",
-      "echo \n",
-      "\n",
-      "\n",
-      "else \n",
-      "echo au moins 1 des deux fichiers n'existe pas\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test -e $1 -a -e $2\n",
-      "then\n",
-      "echo Souhaitez vous concat\u00c3\u00a9ner les fichiers ?\n",
-      "read rep\n",
-      "if $rep = oui\n",
-      "then\n",
-      "cat $1 $2\n",
-      "else\n",
-      "echo erreur\n",
-      "fi\n",
-      "else \n",
-      "echo au moins 1 des deux fichiers n'existe pas\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test -e $1 -a -e $2\n",
-      "then\n",
-      "\techo Souhaitez vous concat\u00c3\u00a9ner les fichiers ?\n",
-      "read rep\n",
-      "\tif $rep = oui\n",
-      "\tthen\n",
-      "\t\tcat $1 $2\n",
-      "\telse\n",
-      "\t\techo erreur\n",
-      "\tfi\n",
-      "else\n",
-      "\techo au moins 1 des deux fichiers n'existe pas\n",
-      "fi\n"
-    ]
+    {
+      "name": "tp6_exo1.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "if test $1 -gt 5 -a $1 -lt 10\n",
+        "then\n",
+        "echo La valeur est comprise entre 5 et 10\n",
+        "else\n",
+        "echo La valeur n\\'est pas comprise entre 5 et 10\n",
+        "fi\n"
+      ]
+    },
+    {
+      "name": "tp6_exo2.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "if test -r $1 -a -w $1\n",
+        "then \n",
+        "echo Le fichier $1 existe et est disponible en lecture et \u00c3\u00a9criture\n",
+        "else\n",
+        "echo le fichier $1 n\\'existe pas ou n\\'est pas disponible en lecture et \u00c3\u00a9criture\n",
+        "fi\n"
+      ]
+    },
+    {
+      "name": "tp6_exo3.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "if test -e $1 -a -e $2\n",
+        "then\n",
+        "\techo Souhaitez vous concat\u00c3\u00a9ner les fichiers ?\n",
+        "read rep\n",
+        "\tif $rep = oui\n",
+        "\tthen\n",
+        "\t\tcat $1 $2\n",
+        "\telse\n",
+        "\t\techo erreur\n",
+        "\tfi\n",
+        "else\n",
+        "\techo au moins 1 des deux fichiers n'existe pas\n",
+        "fi\n"
+      ]
+    }
   ],
   "profile": [
     {

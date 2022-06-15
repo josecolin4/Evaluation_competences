@@ -2,91 +2,50 @@
   "name": "ext_Killian.Falguiere",
   "session": 3,
   "scripts": [
-    [
-      "#!/bin/bash/\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "expr $1 / 2\n",
-      "echo $(($1 / 2))\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "expr $1 / 2\n",
-      "echo $(($1 / 2))\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "expr $1 * 2\n",
-      "echo $(($1 * 2))\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "expr $1 x 2\n",
-      "echo $(($1 * 2))\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "expr $1 * 2\n",
-      "echo $(($1 * 2))\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "expr $1 \\* 2\n",
-      "echo $(($1 * 2))\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Quel est votre age?\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Quel est votre ann\u00c3\u00a9e de naissance?\n",
-      "read age\n",
-      "echo Ok, on est le $(date +%Y) donc vous avez\n",
-      "expr $(date +%Y) - $age\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Quel est votre ann\u00c3\u00a9e de naissance?\n",
-      "read age\n",
-      "echo Ok, on est le $(date +%Y) donc vous avez\n",
-      "expr $(date +%Y) - $age\n",
-      "echo $(( $(date +%Y) - $age )) ans\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Il y a $(who) utilisateurs connect\u00c3\u00a9s sur $(hostname)\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Il y a `who` utilisateurs connect\u00c3\u00a9s sur $(hostname)\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Il y a `who | wc -l` utilisateurs connect\u00c3\u00a9s sur $(hostname)\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Il y a `who | wc -l` utilisateurs connect\u00c3\u00a9s sur $(hostname)\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "set -- $(ls -l $1)\n",
-      "echo $1\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "set -- $(wc -m $1)\n",
-      "echo $1\n"
-    ]
+    {
+      "name": "tp5bis_exo1.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "expr $1 / 2\n",
+        "echo $(($1 / 2))\n",
+        "\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo2.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "expr $1 \\* 2\n",
+        "echo $(($1 * 2))\n",
+        "\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo3.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo Quel est votre ann\u00c3\u00a9e de naissance?\n",
+        "read age\n",
+        "echo Ok, on est le $(date +%Y) donc vous avez\n",
+        "expr $(date +%Y) - $age\n",
+        "echo $(( $(date +%Y) - $age )) ans\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo4.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo Il y a `who | wc -l` utilisateurs connect\u00c3\u00a9s sur $(hostname)\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo5.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "set -- $(wc -m $1)\n",
+        "echo $1\n"
+      ]
+    }
   ],
   "profile": [
     {

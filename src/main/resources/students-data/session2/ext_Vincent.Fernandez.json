@@ -2,22 +2,28 @@
   "name": "ext_Vincent.Fernandez",
   "session": 2,
   "scripts": [
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo Nous sommes la 'date'\n",
-      "echo Nous sommes le Mon Nov 16 15:20:46 CET 2020\n",
-      "echo Ceci est\n",
-      "echo une tres\n",
-      "echo longue phrase ...\n",
-      "echo Voici une etoile :*\n"
-    ],
-    [
-      "#!/bin/bash \n",
-      "\n",
-      "echo somme = $(($1+1))\n",
-      "echo $somme\n"
-    ]
+    {
+      "name": "tp5_exo7.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "\n",
+        "echo Nous sommes la 'date'\n",
+        "echo Nous sommes le Mon Nov 16 15:20:46 CET 2020\n",
+        "echo Ceci est\n",
+        "echo une tres\n",
+        "echo longue phrase ...\n",
+        "echo Voici une etoile :*\n"
+      ]
+    },
+    {
+      "name": "tp5_exo8.sh",
+      "lines": [
+        "#!/bin/bash \n",
+        "\n",
+        "echo somme = $(($1+1))\n",
+        "echo $somme\n"
+      ]
+    }
   ],
   "profile": [
     {

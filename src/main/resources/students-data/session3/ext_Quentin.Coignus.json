@@ -2,336 +2,81 @@
   "name": "ext_Quentin.Coignus",
   "session": 3,
   "scripts": [
-    [
-      "#!/bin/bash\n",
-      "if $1 in 5 6 7 8 9 10\n",
-      "\tthen\n",
-      "\t\techo La valeur $1 est comprise entre 5 et 10\n",
-      "\telse\n",
-      "\t\techo La valeur $1 n'est pas comprise entre 5 et 10\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test $1 -ge 5 -a test $1 -le 10\n",
-      "\tthen\n",
-      "\t\techo La valeur $1 est comprise entre 5 et 10\n",
-      "\telse\n",
-      "\t\techo La valeur $1 n'est pas comprise entre 5 et 10\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test $1 -ge 5 -a test $1 -le 10\n",
-      "\tthen\n",
-      "\t\techo La valeur $1 est comprise entre 5 et 10\n",
-      "\telse\n",
-      "\t\techo La valeur $1 n\\'est pas comprise entre 5 et 10\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test $1 -ge 5 -a $1 -le 10\n",
-      "\tthen\n",
-      "\t\techo La valeur $1 est comprise entre 5 et 10\n",
-      "\telse\n",
-      "\t\techo La valeur $1 n\\'est pas comprise entre 5 et 10\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if [ $1 -ge 5 -a $1 -le 10 ]\n",
-      "\tthen\n",
-      "\t\techo La valeur $1 est comprise entre 5 et 10\n",
-      "\telse\n",
-      "\t\techo La valeur $1 n\\'est pas comprise entre 5 et 10\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test -e $1 -a -r $1 -a -w $1\n",
-      "\tthen\n",
-      "\t\techo Le fichier $1 existe et est accessible en lecture et en ecriture\n",
-      "\telse\n",
-      "\t\techo Le fichier $1 n\\'existe pas\\, ou n\\'est pas accessible en lecture\\, ou n\\'est pas accessible en ecriture\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test -e $1 -a -e $2\n",
-      "\tthen\n",
-      "\t\techo Souhaitez vous concatener les fichiers\\?\n",
-      "\t\tread concatener\n",
-      "\t\tcase $concatener in\n",
-      "\t\t\tOUI ) cat $1>>$2\n",
-      "\t\t\tNON ) echo Les fichiers ne seront pas concatener\n",
-      "\t\tesac\n",
-      "\telse\n",
-      "\t\techo Au moins un des deux fichiers n\\'\\\u00c3\u00a9xiste pas\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test -e $1 -a -e $2\n",
-      "\tthen\n",
-      "\t\techo Souhaitez vous concatener les fichiers\\?\n",
-      "\t\tread concatener\n",
-      "\t\tcase $concatener in\n",
-      "\t\t\tOUI ) cat $1>>$2 ;;\n",
-      "\t\t\tNON ) echo Les fichiers ne seront pas concatener ;;\n",
-      "\t\tesac\n",
-      "\telse\n",
-      "\t\techo Au moins un des deux fichiers n\\'\\\u00c3\u00a9xiste pas\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test -e $1 -a -e $2\n",
-      "\tthen\n",
-      "\t\techo Souhaitez vous concatener les fichiers\\?\n",
-      "\t\tread concatener\n",
-      "\t\tcase $concatener in\n",
-      "\t\t\tOUI ) cat$((cat $1>>$2)) ;;\n",
-      "\t\t\tNON ) echo Les fichiers ne seront pas concaten\\\u00c3\u00a9s ;;\n",
-      "\t\tesac\n",
-      "\telse\n",
-      "\t\techo Au moins un des deux fichiers n\\'\\\u00c3\u00a9xiste pas\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test -e $1 -a -e $2\n",
-      "\tthen\n",
-      "\t\techo Souhaitez vous concatener les fichiers\\?\n",
-      "\t\tread concatener\n",
-      "\t\tcase $concatener in\n",
-      "\t\t\tOUI ) cat $1>>$2|cat ;;\n",
-      "\t\t\tNON ) echo Les fichiers ne seront pas concaten\\\u00c3\u00a9s ;;\n",
-      "\t\tesac\n",
-      "\telse\n",
-      "\t\techo Au moins un des deux fichiers n\\'\\\u00c3\u00a9xiste pas\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test -e $1 -a -e $2\n",
-      "\tthen\n",
-      "\t\techo Souhaitez vous concatener les fichiers\\?\n",
-      "\t\tread concatener\n",
-      "\t\tcase $concatener in\n",
-      "\t\t\tOUI ) cat $1 $2 ;;\n",
-      "\t\t\tNON ) echo Les fichiers ne seront pas concaten\\\u00c3\u00a9s ;;\n",
-      "\t\tesac\n",
-      "\telse\n",
-      "\t\techo Au moins un des deux fichiers n\\'\\\u00c3\u00a9xiste pas\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "liste_commandes=date who pwd ls\n",
-      "for i in lise_commandes\n",
-      "do\n",
-      "\techo i\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "liste_commandes=date who pwd ls\n",
-      "for i in liste_commandes\n",
-      "do\n",
-      "\techo i\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "liste_commandes=date who pwd ls\n",
-      "for i in liste_commandes\n",
-      "do\n",
-      "\techo $i\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "liste_commandes=\"date who pwd ls\"\n",
-      "for i in liste_commandes\n",
-      "do\n",
-      "\techo $i\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "liste_commandes= \"date who pwd ls\"\n",
-      "for i in liste_commandes\n",
-      "do\n",
-      "\techo $i\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "liste_commandes=\"date who pwd ls\"\n",
-      "for i in liste_commandes\n",
-      "do\n",
-      "\techo $i\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "liste_commandes=\"date who pwd ls\"\n",
-      "for i in $liste_commandes\n",
-      "do\n",
-      "\techo $i\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "liste_commandes=\"date who pwd ls\"\n",
-      "for i in $liste_commandes\n",
-      "do\n",
-      "\t$i\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "for i in $#\n",
-      "do\n",
-      "\techo argument $i \\= $i\n",
-      "done\n",
-      "echo il y a $# arguments\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "for i in $#\n",
-      "do\n",
-      "\techo $i\n",
-      "done\n",
-      "echo il y a $# arguments\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "for i in $seq( $#)\n",
-      "do\n",
-      "\techo $i\n",
-      "done\n",
-      "echo il y a $# arguments\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "for i in $*\n",
-      "do\n",
-      "\techo $i\n",
-      "done\n",
-      "echo il y a $# arguments\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "for i in $*\n",
-      "do\n",
-      "\techo argument $i \\= $i\n",
-      "done\n",
-      "echo il y a $# arguments\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "j=0\n",
-      "for i in $seq( $1)\n",
-      "do\n",
-      "\tj=j+($i\\*$(i+1))\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "j=0\n",
-      "for i in $((seq( $1)))\n",
-      "do\n",
-      "\tj=j+$i*\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "for i in $* -a j in $((seq( $#))\n",
-      "do\n",
-      "\techo argument $j \\= $i\n",
-      "done\n",
-      "echo il y a $# arguments\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "for i in $* -a j in $((seq( $#)))\n",
-      "do\n",
-      "\techo argument $j \\= $i\n",
-      "done\n",
-      "echo il y a $# arguments\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "for i in $* -a j in $((seq( $#)))\n",
-      "do\n",
-      "\techo argument $j \\= $i\n",
-      "done\n",
-      "echo il y a $# arguments\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "for i in $* -a j in $seq( 3)\n",
-      "do\n",
-      "\techo argument $j \\= $i\n",
-      "done\n",
-      "echo il y a $# arguments\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "for i in $* -a j in $seq( 3)\n",
-      "do\n",
-      "\techo argument $j \\= $i\n",
-      "done\n",
-      "echo il y a $# arguments\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "for i in $*\n",
-      "do\n",
-      "\techo argument $$ \\= $i\n",
-      "done\n",
-      "echo il y a $# arguments\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "for i in $*\n",
-      "do\n",
-      "\techo argument $i \\= $i\n",
-      "done\n",
-      "echo il y a $# arguments\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "j=0\n",
-      "1=1\n",
-      "for i in $((seq( $1)))\n",
-      "do\n",
-      "\tj=j+$?*$i\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "j=0\n",
-      "1=1\n",
-      "for i in $((seq( $1)))\n",
-      "do\n",
-      "\tj=j+$?*$i\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "j=0\n",
-      "1=1\n",
-      "for i in $((seq $1))\n",
-      "do\n",
-      "\tj=j+$?*$i\n",
-      "done\n"
-    ]
+    {
+      "name": "tp6_exo1.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "if [ $1 -ge 5 -a $1 -le 10 ]\n",
+        "\tthen\n",
+        "\t\techo La valeur $1 est comprise entre 5 et 10\n",
+        "\telse\n",
+        "\t\techo La valeur $1 n\\'est pas comprise entre 5 et 10\n",
+        "fi\n"
+      ]
+    },
+    {
+      "name": "tp6_exo2.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "if test -e $1 -a -r $1 -a -w $1\n",
+        "\tthen\n",
+        "\t\techo Le fichier $1 existe et est accessible en lecture et en ecriture\n",
+        "\telse\n",
+        "\t\techo Le fichier $1 n\\'existe pas\\, ou n\\'est pas accessible en lecture\\, ou n\\'est pas accessible en ecriture\n",
+        "fi\n"
+      ]
+    },
+    {
+      "name": "tp6_exo3.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "if test -e $1 -a -e $2\n",
+        "\tthen\n",
+        "\t\techo Souhaitez vous concatener les fichiers\\?\n",
+        "\t\tread concatener\n",
+        "\t\tcase $concatener in\n",
+        "\t\t\tOUI ) cat $1 $2 ;;\n",
+        "\t\t\tNON ) echo Les fichiers ne seront pas concaten\\\u00c3\u00a9s ;;\n",
+        "\t\tesac\n",
+        "\telse\n",
+        "\t\techo Au moins un des deux fichiers n\\'\\\u00c3\u00a9xiste pas\n",
+        "fi\n"
+      ]
+    },
+    {
+      "name": "tp6_exo4.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "liste_commandes=\"date who pwd ls\"\n",
+        "for i in $liste_commandes\n",
+        "do\n",
+        "\t$i\n",
+        "done\n"
+      ]
+    },
+    {
+      "name": "tp6_exo5.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "for i in $*\n",
+        "do\n",
+        "\techo argument $i \\= $i\n",
+        "done\n",
+        "echo il y a $# arguments\n"
+      ]
+    },
+    {
+      "name": "tp6_exo6.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "j=0\n",
+        "1=1\n",
+        "for i in $((seq $1))\n",
+        "do\n",
+        "\tj=j+$?*$i\n",
+        "done\n"
+      ]
+    }
   ],
   "profile": [
     {

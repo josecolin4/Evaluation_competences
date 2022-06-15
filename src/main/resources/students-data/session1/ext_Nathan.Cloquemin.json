@@ -2,28 +2,21 @@
   "name": "ext_Nathan.Cloquemin",
   "session": 1,
   "scripts": [
-    [
-      "#!/bin/bash\n",
-      "a=($1 + 1)\n",
-      "echo devra afficher $a\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "a=$(($1 + 1))\n",
-      "echo devra afficher $a\n"
-    ],
-    [
-      "#!/bin/bash\n"
-    ],
-    [],
-    [
-      "#!/bin/bash\n",
-      "export PATH=/root\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "export PATH=/root:$PATH\n"
-    ]
+    {
+      "name": "tp5_exo8.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "a=$(($1 + 1))\n",
+        "echo devra afficher $a\n"
+      ]
+    },
+    {
+      "name": "tp5_exo9.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "export PATH=/root:$PATH\n"
+      ]
+    }
   ],
   "profile": [
     {

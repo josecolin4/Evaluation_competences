@@ -2,15 +2,12 @@
   "name": "ext_Guillaume.Pomies",
   "session": 2,
   "scripts": [
-    [
-      "le script poss\u00c3\u00a8de  parm\u00c3\u00a8tres, que voici: param\u00c3\u00a8tres\n"
-    ],
-    [
-      "le script$script poss\u00c3\u00a8de  parm\u00c3\u00a8tres, que voici: param\u00c3\u00a8tres\n"
-    ],
-    [
-      "le script $script poss\u00c3\u00a8de  parm\u00c3\u00a8tres, que voici: param\u00c3\u00a8tres\n"
-    ]
+    {
+      "name": "tp5_exo5.sh",
+      "lines": [
+        "le script $script poss\u00c3\u00a8de  parm\u00c3\u00a8tres, que voici: param\u00c3\u00a8tres\n"
+      ]
+    }
   ],
   "profile": [
     {

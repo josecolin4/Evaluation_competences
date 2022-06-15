@@ -2,15 +2,21 @@
   "name": "ext_Leo.Dubosc",
   "session": 2,
   "scripts": [
-    [
-      "#! /bin/bash\n",
-      "echo Le script $$ poss\u00c3\u00a8de $# param\u00c3\u00a8tres que voici : $*\n"
-    ],
-    [
-      "#! /bin/bash\n",
-      "    cat F1>F3\n",
-      "    cat F2>>F3\n"
-    ]
+    {
+      "name": "tp5_exo5.sh",
+      "lines": [
+        "#! /bin/bash\n",
+        "echo Le script $$ poss\u00c3\u00a8de $# param\u00c3\u00a8tres que voici : $*\n"
+      ]
+    },
+    {
+      "name": "tp5_exo6.sh",
+      "lines": [
+        "#! /bin/bash\n",
+        "    cat F1>F3\n",
+        "    cat F2>>F3\n"
+      ]
+    }
   ],
   "profile": [
     {

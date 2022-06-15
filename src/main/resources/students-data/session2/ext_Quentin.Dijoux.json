@@ -2,313 +2,58 @@
   "name": "ext_Quentin.Dijoux",
   "session": 2,
   "scripts": [
-    [
-      " \n",
-      "Mon nom de login est : $LOGNAME\n",
-      "Mon shell est : $SHELL\n",
-      "Les variables du shell sont :\n",
-      "$set\n",
-      "Celles d'envirronement sont :\n",
-      "$env\n"
-    ],
-    [
-      " \n",
-      "Mon nom de login est : LOGNAME\n",
-      "Mon shell est : SHELL\n",
-      "Les variables du shell sont :\n",
-      "echo set\n",
-      "Celles d'envirronement sont :\n",
-      "echo env\n"
-    ],
-    [
-      " \n",
-      "Mon nom de login est : LOGNAME\n",
-      "Mon shell est : SHELL\n",
-      "Les variables du shell sont :\n",
-      " set\n",
-      "Celles d'envirronement sont :\n",
-      " env\n"
-    ],
-    [
-      " \n",
-      "Mon nom de login est : LOGNAME\n",
-      "Mon shell est : SHELL\n",
-      "Les variables du shell sont :\n",
-      " set\n",
-      "Celles d'envirronement sont :\n",
-      " env\n"
-    ],
-    [
-      " \n",
-      "Mon nom de login est : <LOGNAME>\n",
-      "Mon shell est : <SHELL>\n",
-      "Les variables du shell sont :\n",
-      " set\n",
-      "Celles d'envirronement sont :\n",
-      " env\n"
-    ],
-    [
-      "Mon nom de login est : <LOGNAME>\n",
-      "Mon shell est : <SHELL>\n",
-      "Les variables du shell sont :\n",
-      " set\n",
-      "Celles d'envirronement sont :\n",
-      " env\n"
-    ],
-    [
-      "Mon nom de login est : LOGNAME\n",
-      "Mon shell est : SHELl\n",
-      "Les variables du shell sont :\n",
-      " set\n",
-      "Celles d'envirronement sont :\n",
-      " env\n"
-    ],
-    [
-      "x\n"
-    ],
-    [
-      "a = 10\n",
-      "expr $a / 2\n"
-    ],
-    [
-      "Mon nom de login est : @LOGNAME\n",
-      "Mon shell est : @SHELl\n",
-      "Les variables du shell sont :\n",
-      "set\n",
-      "Celles d'envirronement sont :\n",
-      "env\n"
-    ],
-    [
-      "Mon nom de login est : @LOGNAME\n",
-      "Mon shell est : @SHELL\n",
-      "echo Les variables du shell sont : \n",
-      "set\n",
-      "echo Celles d'environnement sont :\n",
-      "env\n"
-    ],
-    [
-      "Mon nom de login est : @LOGNAME\n",
-      "Mon shell est : @SHELL\n",
-      "Les variables du shell sont : \n",
-      "set\n",
-      "Celles d'environnement sont :\n",
-      "env\n"
-    ],
-    [
-      "Mon nom de login est : $LOGNAME\n",
-      "Mon shell est : $SHELL\n",
-      "Les variables du shell sont : \n",
-      "set\n",
-      "Celles d'environnement sont :\n",
-      "env\n"
-    ],
-    [
-      "echo Mon nom de login est : $LOGNAME\n",
-      "echo Mon shell est : $SHELL\n",
-      "echo Les variables du shell sont : \n",
-      "set\n",
-      "echo Celles d'environnement sont :\n",
-      "env\n"
-    ],
-    [
-      "a = 10\n",
-      "expr $a / 2\n"
-    ],
-    [
-      "echo entrez un chiffre :\n",
-      "read nombre\n",
-      "expr `$nombre7` = `$nombre + 1`\n",
-      "echo voici le resultat : $nombre\n"
-    ],
-    [
-      "echo entrez un chiffre :\n",
-      "read nombre\n",
-      "expr `$nombre` = `$nombre + 1`\n",
-      "echo voici le resultat : $nombre\n"
-    ],
-    [
-      "echo entrez un chiffre :\n",
-      "read nombre\n",
-      "expr `$nombre + 1`\n",
-      "echo voici le resultat : $nombre\n"
-    ],
-    [
-      "echo entrez un chiffre :\n",
-      "read nombre\n",
-      "echo voici le resultat :\n",
-      "expr $nombre + 1\n"
-    ],
-    [
-      "echo voici le resultat :\n",
-      "expr $1 + 1\n"
-    ],
-    [
-      "echo $PATH\n"
-    ],
-    [
-      "echo expr $1 / 2\n"
-    ],
-    [
-      "echo expr $1 / 2\n"
-    ],
-    [
-      "expr $1 / 2\n"
-    ],
-    [
-      "expr $1 * 2\n"
-    ],
-    [
-      "1 #!/bin/bash\n",
-      " 1 export PATH=$PATH:$PWD\n"
-    ],
-    [
-      "expr $1 \\* 2\n"
-    ],
-    [
-      "echo quelle est votre annee de naissance ?\n",
-      "read date\n",
-      "echo vous \u00c3\u00aates ne en $date donc vous avez :\n",
-      "expr 2020 - $date \n"
-    ],
-    [
-      "echo quelle est votre annee de naissance ?\n",
-      "read date\n",
-      "echo vous \u00c3\u00aates ne en $date donc vous avez :\n",
-      "expr `date` - $date \n"
-    ],
-    [
-      "echo quelle est votre annee de naissance ?\n",
-      "read date\n",
-      "echo vous \u00c3\u00aates ne en $date donc vous avez :\n",
-      "expr %a - $date \n"
-    ],
-    [
-      "echo quelle est votre annee de naissance ?\n",
-      "read annee\n",
-      "echo vous \u00c3\u00aates ne en $annee donc vous avez :\n",
-      "expr $date - $annee \n"
-    ],
-    [
-      "echo quelle est votre annee de naissance ?\n",
-      "read annee\n",
-      "date =$(date `+%y`)\n",
-      "echo vous \u00c3\u00aates ne en $annee donc vous avez :\n",
-      "expr $date - $annee \n"
-    ],
-    [
-      "echo quelle est votre annee de naissance ?\n",
-      "read annee\n",
-      "date =$(date `+%y`)\n",
-      "echo vous avez $(( 2000 + annee - n )ans\n"
-    ],
-    [
-      "echo quelle est votre annee de naissance ?\n",
-      "read annee\n",
-      "date =$(date `+%y`)\n",
-      "echo vous avez $(( 2000 + annee - n ))ans\n"
-    ],
-    [
-      "echo quelle est votre annee de naissance ?\n",
-      "read annee\n",
-      "date =$(date `+%y`)\n",
-      "echo vous avez $(( 2000 + date - annee ))ans\n"
-    ],
-    [
-      "echo quelle est votre annee de naissance ?\n",
-      "read annee\n",
-      "date =$(date `+%y`)\n",
-      "echo vous avez $(( 2000 + date - annee ))ans\n"
-    ],
-    [
-      "echo quelle est votre annee de naissance ?\n",
-      "read n\n",
-      "annee =$(date `+%y`)\n",
-      "echo vous avez $(( 2000 + annee - n ))ans\n"
-    ],
-    [
-      "echo quelle est votre annee de naissance ?\n",
-      "read n\n",
-      "annee =$(date `+%y`)\n",
-      "echo vous avez $(( 2000 + annee - n )) ans\n"
-    ],
-    [
-      "echo quelle est votre annee de naissance ?\n",
-      "read n\n",
-      "annee=$(date `+%y`)\n",
-      "echo vous avez $(( 2000 + annee - n ))ans\n"
-    ],
-    [
-      "echo quelle est votre annee de naissance ?\n",
-      "read annee\n",
-      "echo vous \u00c3\u00aates ne en $annee donc vous avec expr 2020 - annee\n"
-    ],
-    [
-      "echo quelle est votre annee de naissance ?\n",
-      "read annee\n",
-      "echo vous \u00c3\u00aates ne en $annee donc vous avec\n",
-      "expr 2020 - annee\n"
-    ],
-    [
-      "echo quelle est votre annee de naissance ?\n",
-      "read annee\n",
-      "echo vous \u00c3\u00aates ne en $annee donc vous avez :\n",
-      "expr 2020 - annee\n"
-    ],
-    [
-      "echo quelle est votre annee de naissance ?\n",
-      "read annee\n",
-      "echo vous \u00c3\u00aates ne en $annee donc vous avez :\n",
-      "expr 2020 - $annee\n"
-    ],
-    [
-      "echo quelle est votre annee de naissance ?\n",
-      "read annee\n",
-      "echo vous \u00c3\u00aates ne en $annee donc vous en avez :\n",
-      "expr 2020 - $annee\n"
-    ],
-    [
-      "echo quelle est votre annee de naissance ?\n",
-      "read n\n",
-      "annee = $(date '%y')\n",
-      "echo vous avez $(( 2000 + annee - n )) ans\n"
-    ],
-    [
-      "echo quelle est votre annee de naissance ?\n",
-      "read n\n",
-      "annee=$(date `%y`)\n",
-      "echo vous avez $(( 2000 + annee - n )) ans\n"
-    ],
-    [
-      "echo quelle est votre annee de naissance ?\n",
-      "read n\n",
-      "annee=$(date '%y')\n",
-      "echo vous avez $(( 2000 + annee - n )) ans\n"
-    ],
-    [
-      "echo quelle est votre annee de naissance ?\n",
-      "read n\n",
-      "annee=$(date '+%y')\n",
-      "echo vous avez $(( 2000 + annee - n )) ans\n"
-    ],
-    [
-      "Voici le nombre d'utilisateur connectes :\n",
-      "echo $hostname\n"
-    ],
-    [
-      "echo Voici le nombre d'utilisateur connectes :\n",
-      "echo $hostname\n"
-    ],
-    [
-      "echo Voici le nombre d'utilisateur connectes: $hostname\n",
-      "$who\n"
-    ],
-    [
-      "echo Voici le nombre d'utilisateur connectes: hostname\n",
-      "who\n"
-    ],
-    [
-      "echo $hostname\n"
-    ]
+    {
+      "name": "tp5_exo2.sh",
+      "lines": [
+        "echo Mon nom de login est : $LOGNAME\n",
+        "echo Mon shell est : $SHELL\n",
+        "echo Les variables du shell sont : \n",
+        "set\n",
+        "echo Celles d'environnement sont :\n",
+        "env\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo1.sh",
+      "lines": [
+        "expr $1 / 2\n"
+      ]
+    },
+    {
+      "name": "tp5_exo8.sh",
+      "lines": [
+        "echo voici le resultat :\n",
+        "expr $1 + 1\n"
+      ]
+    },
+    {
+      "name": "tp5_exo9.sh",
+      "lines": [
+        "1 #!/bin/bash\n",
+        " 1 export PATH=$PATH:$PWD\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo2.sh",
+      "lines": [
+        "expr $1 \\* 2\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo3.sh",
+      "lines": [
+        "echo quelle est votre annee de naissance ?\n",
+        "read n\n",
+        "annee=$(date '+%y')\n",
+        "echo vous avez $(( 2000 + annee - n )) ans\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo4.sh",
+      "lines": [
+        "echo $hostname\n"
+      ]
+    }
   ],
   "profile": [
     {

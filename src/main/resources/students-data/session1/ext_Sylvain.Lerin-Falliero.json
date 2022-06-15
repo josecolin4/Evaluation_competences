@@ -2,81 +2,17 @@
   "name": "ext_Sylvain.Lerin-Falliero",
   "session": 1,
   "scripts": [
-    [
-      "echo Mon nom de login est : $USER\n"
-    ],
-    [
-      "echo Mon nom de login est : $USER\n",
-      "echo Mon shell est : $SHELL\n"
-    ],
-    [
-      "echo Mon nom de login est : $USER\n",
-      "echo Mon shell est : $SHELL\n",
-      "echo Les variables shell sont :\n"
-    ],
-    [
-      "echo Mon nom de login est : $USER\n",
-      "echo Mon shell est : $SHELL\n",
-      "echo Les variables shell sont :\n",
-      "set | wc -l\n"
-    ],
-    [
-      "echo Mon nom de login est : $USER\n",
-      "echo Mon shell est : $SHELL\n",
-      "echo Les variables shell sont :\n",
-      "set | wc -l\n",
-      "echo Celles d'environnement sont :\n"
-    ],
-    [
-      "echo Mon nom de login est : $USER\n",
-      "echo Mon shell est : $SHELL\n",
-      "echo Les variables shell sont :\n",
-      "set | wc -l\n",
-      "echo Celles d'environnement sont :\n",
-      "env | wc -l\n"
-    ],
-    [],
-    [
-      "echo Mon nom de login est : $USER\n"
-    ],
-    [
-      "echo Mon nom de login est : $USER\n",
-      "echo Mon shell est : $SHELL\n"
-    ],
-    [
-      "echo Mon nom de login est : $USER\n",
-      "echo Mon shell est : $SHELL\n",
-      "echo Les variables shell sont :\n"
-    ],
-    [
-      "echo Mon nom de login est : $USER\n",
-      "echo Mon shell est : $SHELL\n",
-      "echo Les variables shell sont :\n",
-      "set | wc -l\n"
-    ],
-    [
-      "echo Mon nom de login est : $USER\n",
-      "echo Mon shell est : $SHELL\n",
-      "echo Les variables shell sont :\n",
-      "set | wc -l\n",
-      "echo Celles de environnement sont :\n"
-    ],
-    [
-      "echo Mon nom de login est : $USER\n",
-      "echo Mon shell est : $SHELL\n",
-      "echo Les variables shell sont :\n",
-      "set | wc -l\n",
-      "echo Celles de environnement sont :\n",
-      "env | wc -l\n"
-    ],
-    [
-      "echo Mon nom de login est : $USER\n",
-      "echo Mon shell est : $SHELL\n",
-      "echo Les variables shell sont :\n",
-      "set | wc -l\n",
-      "echo Celles d\\'environnement sont :\n",
-      "env | wc -l\n"
-    ]
+    {
+      "name": "tp5_exo2.sh",
+      "lines": [
+        "echo Mon nom de login est : $USER\n",
+        "echo Mon shell est : $SHELL\n",
+        "echo Les variables shell sont :\n",
+        "set | wc -l\n",
+        "echo Celles d\\'environnement sont :\n",
+        "env | wc -l\n"
+      ]
+    }
   ],
   "profile": [
     {

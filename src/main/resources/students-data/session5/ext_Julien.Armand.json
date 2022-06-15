@@ -2,58 +2,22 @@
   "name": "ext_Julien.Armand",
   "session": 5,
   "scripts": [
-    [
-      "if $1 exists AND $2 exists then\n",
-      "echo \"Souhaitez vous concatener les fichiers ?\"\n",
-      "else \n",
-      "echo \"erreur, un fichier n'existe pas\"\n",
-      "fi\n",
-      "read reponse\n",
-      "if reponse == \"OUI\" then\n",
-      "echo $1 $2\n",
-      "else\n",
-      "echo \"erreur dans l'execution du script\"\n",
-      "fi\n"
-    ],
-    [
-      "if $1 exists AND $2 exists then\n",
-      "echo \"Souhaitez vous concatener les fichiers ?\"\n",
-      "else\n",
-      "echo \"erreur, un fichier n'existe pas\"\n",
-      "fi\n",
-      "read reponse\n",
-      "if reponse == \"OUI\" then\n",
-      "echo $1 $2\n",
-      "else\n",
-      "echo \"erreur dans l'execution du script\"\n",
-      "fi\n"
-    ],
-    [
-      "if $1 exists AND $2 exists then\n",
-      "echo Souhaitez vous concatener les fichiers \\?\n",
-      "else\n",
-      "echo erreur, un fichier n'existe pas\n",
-      "fi\n",
-      "read reponse\n",
-      "if reponse == \"OUI\" then\n",
-      "echo $1 $2\n",
-      "else\n",
-      "echo erreur dans l\\'execution du script\n",
-      "fi\n"
-    ],
-    [
-      "if $1 exists AND $2 exists then\n",
-      "echo Souhaitez vous concatener les fichiers \\?\n",
-      "else\n",
-      "echo erreur, un fichier n'existe pas\n",
-      "fi\n",
-      "read reponse\n",
-      "if reponse == \"OUI\" then\n",
-      "echo $1 $2\n",
-      "else\n",
-      "echo erreur dans l\\'execution du script\n",
-      "fi\n"
-    ]
+    {
+      "name": "tp6_exo3.sh",
+      "lines": [
+        "if $1 exists AND $2 exists then\n",
+        "echo Souhaitez vous concatener les fichiers \\?\n",
+        "else\n",
+        "echo erreur, un fichier n'existe pas\n",
+        "fi\n",
+        "read reponse\n",
+        "if reponse == \"OUI\" then\n",
+        "echo $1 $2\n",
+        "else\n",
+        "echo erreur dans l\\'execution du script\n",
+        "fi\n"
+      ]
+    }
   ],
   "commands": [
     {

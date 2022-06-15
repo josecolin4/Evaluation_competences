@@ -2,91 +2,38 @@
   "name": "ext_Cristian.GarciaPonce",
   "session": 2,
   "scripts": [
-    [
-      "#!/bin/bash\n",
-      "cat $1 $2 > $3\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "v=$1\n",
-      "v=v+1\n",
-      "echo v\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "v='v+1'\n",
-      "echo v\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "v=$(($1+1))\n",
-      "echo $v\n"
-    ],
-    [
-      "echo 'Nous sommes le'\n",
-      "DATE\n",
-      "echo ceci est\n",
-      "echo une tr\u00c3\u00a8s\n",
-      "echo 'longue phrase...'\n",
-      "echo 'Voici une \u00c3\u00a9toile :*'\n",
-      "\n"
-    ],
-    [
-      "echo 'Nous sommes le'\n",
-      "echo $DATE\n",
-      "echo ceci est\n",
-      "echo une tr\u00c3\u00a8s\n",
-      "echo 'longue phrase...'\n",
-      "echo 'Voici une \u00c3\u00a9toile :*'\n",
-      "\n"
-    ],
-    [
-      "echo 'Nous sommes le'\n",
-      "echo $date\n",
-      "echo ceci est\n",
-      "echo une tr\u00c3\u00a8s\n",
-      "echo 'longue phrase...'\n",
-      "echo 'Voici une \u00c3\u00a9toile :*'\n",
-      "\n"
-    ],
-    [
-      "echo 'Nous sommes le'\n",
-      "echo date\n",
-      "echo ceci est\n",
-      "echo une tr\u00c3\u00a8s\n",
-      "echo 'longue phrase...'\n",
-      "echo 'Voici une \u00c3\u00a9toile :*'\n",
-      "\n"
-    ],
-    [
-      "echo 'Nous sommes le'\n",
-      "date\n",
-      "echo ceci est\n",
-      "echo une tr\u00c3\u00a8s\n",
-      "echo 'longue phrase...'\n",
-      "echo 'Voici une \u00c3\u00a9toile :*'\n",
-      "\n"
-    ],
-    [
-      "echo 'Nous sommes le''date'\n",
-      "echo ceci est\n",
-      "echo une tr\u00c3\u00a8s\n",
-      "echo 'longue phrase...'\n",
-      "echo 'Voici une \u00c3\u00a9toile :*'\n",
-      "\n"
-    ],
-    [
-      "echo 'Nous sommes le' `date`\n",
-      "echo ceci est\n",
-      "echo une tr\u00c3\u00a8s\n",
-      "echo 'longue phrase...'\n",
-      "echo 'Voici une \u00c3\u00a9toile :*'\n",
-      "\n"
-    ],
-    [],
-    [
-      "cat $PATH `pwd` > $PATH\n"
-    ]
+    {
+      "name": "tp5_exo6.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "cat $1 $2 > $3\n"
+      ]
+    },
+    {
+      "name": "tp5_exo8.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "v=$(($1+1))\n",
+        "echo $v\n"
+      ]
+    },
+    {
+      "name": "tp5_exo9.sh",
+      "lines": [
+        "cat $PATH `pwd` > $PATH\n"
+      ]
+    },
+    {
+      "name": "tp5_exo7.sh",
+      "lines": [
+        "echo 'Nous sommes le' `date`\n",
+        "echo ceci est\n",
+        "echo une tr\u00c3\u00a8s\n",
+        "echo 'longue phrase...'\n",
+        "echo 'Voici une \u00c3\u00a9toile :*'\n",
+        "\n"
+      ]
+    }
   ],
   "profile": [
     {

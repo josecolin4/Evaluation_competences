@@ -2,22 +2,13 @@
   "name": "ext_Kylan.Slamnia",
   "session": 2,
   "scripts": [
-    [
-      "#!/bin/bash\n",
-      "echo Le script \n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Le script /bin/bash possede $# parametre\\(s\\), que voici : $*\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Le script SHELL possede $# parametre\\(s\\), que voici : $*\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Le script $SHELL possede $# parametre\\(s\\), que voici : $*\n"
-    ]
+    {
+      "name": "tp5_exo5.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo Le script $SHELL possede $# parametre\\(s\\), que voici : $*\n"
+      ]
+    }
   ],
   "profile": [
     {

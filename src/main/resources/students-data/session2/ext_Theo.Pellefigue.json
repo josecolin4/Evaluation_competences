@@ -2,90 +2,82 @@
   "name": "ext_Theo.Pellefigue",
   "session": 2,
   "scripts": [
-    [
-      "#!/bin/bash echo cours cours=unix echo $cours echo je suis au cours $cours\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "login=theo\n",
-      "shell=monshell\n",
-      "echo mon nom de login est : $login \n",
-      "echo mon shell est : $shell\n",
-      "echo la liste des variables du shell sont : $*\n",
-      "echo celles d'environnement sont : $0\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      " echo Cher utilisateur quel est ton pr\u00c3\u00a9nom \\?\n",
-      " read prenom\n",
-      " echo Ravi de te connaitre, $prenom\n",
-      " echo Quel est ton nom et ton age \\?\n",
-      " read nom age\n",
-      " echo Tu es $prenom $nom et tu as $age ans, n\\'est-ce pas \\?\n",
-      " read reponse\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      " echo Je suis le script Shell $0\n",
-      " echo Mes arguments sont $*\n",
-      " echo Le premier argument est $1\n",
-      " echo Le deuxi\u00c3\u00a8me argument est $2\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo le script $0 possede $# parametres que voici: $*\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "cat f3>$*\n",
-      "cat f3\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "cat>f3 $*\n",
-      "cat f3\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo nous somme le `date`\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo nous somme le '`date`'\n",
-      "echo nous somme le `date`\n",
-      "echo ceci est\n",
-      "echo une tres\n",
-      "echo longue phrase\n",
-      "echo voici une etoile:*\n"
-    ],
-    [
-      "#!/bin\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "total=$1+1\n",
-      "echo $total\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "total=`$1+1`\n",
-      "echo $total\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "total=`expr$*+1`\n",
-      "echo $total\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "let\"total=$1+1\"\n",
-      "echo $total\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "let \"total=$1+1\"\n",
-      "echo $total\n"
-    ]
+    {
+      "name": "tp5_exo1.sh",
+      "lines": [
+        "#!/bin/bash echo cours cours=unix echo $cours echo je suis au cours $cours\n"
+      ]
+    },
+    {
+      "name": "tp5_exo2.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "login=theo\n",
+        "shell=monshell\n",
+        "echo mon nom de login est : $login \n",
+        "echo mon shell est : $shell\n",
+        "echo la liste des variables du shell sont : $*\n",
+        "echo celles d'environnement sont : $0\n"
+      ]
+    },
+    {
+      "name": "tp5_exo3.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        " echo Cher utilisateur quel est ton pr\u00c3\u00a9nom \\?\n",
+        " read prenom\n",
+        " echo Ravi de te connaitre, $prenom\n",
+        " echo Quel est ton nom et ton age \\?\n",
+        " read nom age\n",
+        " echo Tu es $prenom $nom et tu as $age ans, n\\'est-ce pas \\?\n",
+        " read reponse\n"
+      ]
+    },
+    {
+      "name": "tp5_exo6.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        " echo Je suis le script Shell $0\n",
+        " echo Mes arguments sont $*\n",
+        " echo Le premier argument est $1\n",
+        " echo Le deuxi\u00c3\u00a8me argument est $2\n"
+      ]
+    },
+    {
+      "name": "tp5_exo5.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo le script $0 possede $# parametres que voici: $*\n"
+      ]
+    },
+    {
+      "name": "tp5_exo7_2.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "cat>f3 $*\n",
+        "cat f3\n"
+      ]
+    },
+    {
+      "name": "tp5_exo7.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo nous somme le '`date`'\n",
+        "echo nous somme le `date`\n",
+        "echo ceci est\n",
+        "echo une tres\n",
+        "echo longue phrase\n",
+        "echo voici une etoile:*\n"
+      ]
+    },
+    {
+      "name": "tp5_exo8.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "let \"total=$1+1\"\n",
+        "echo $total\n"
+      ]
+    }
   ],
   "profile": [
     {

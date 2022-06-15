@@ -2,27 +2,14 @@
   "name": "ext_Louis.Guillou",
   "session": 2,
   "scripts": [
-    [
-      "#!/bin/bash\n",
-      "EXPORT PATH=//TP:$PATH\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "EXPORT PATH=/root$/TP:$PATH\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "EXPORT PATH=/root@host/TP:$PATH\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "PATH=/root@host/TP:$PATH\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "export=$PATH:/home/user/mes_prog\n",
-      "export PATH=/home/user/mes_prog/:$PATH\n"
-    ]
+    {
+      "name": "tp5_exo12.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "export=$PATH:/home/user/mes_prog\n",
+        "export PATH=/home/user/mes_prog/:$PATH\n"
+      ]
+    }
   ],
   "profile": [
     {

@@ -2,247 +2,86 @@
   "name": "ext_Hippolyte.Durand",
   "session": 1,
   "scripts": [
-    [
-      "#!/bin/bash\n",
-      "echo cours\n",
-      "cours=unix\n",
-      "echo $cours\n",
-      "echo je suis au cours $cours\n"
-    ],
-    [
-      "echo mon nom de login est : $USER\n",
-      "echo mon shell est : $SHELL\n",
-      "echo les variables du shell sont : set\n",
-      "echo celles d'environnement sont : env\n",
-      "\n"
-    ],
-    [
-      "echo mon nom de login est : $USER\n",
-      "echo mon shell est : $SHELL\n",
-      "echo les variables du shell sont :\n",
-      "set\n",
-      "echo celles d'environnement sont :\n",
-      "env\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo mon nom de login est : $USER\n",
-      "echo mon shell est : $SHELL\n",
-      "echo les variables du shell sont :\n",
-      "set\n",
-      "echo celles d'environnement sont :\n",
-      "env\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Cher utilisateur quel est ton prenom \\?\n",
-      "read prenom\n",
-      "echo Ravi de te connaitre, $prenom\n",
-      "echo Quel est ton nom et ton age \\?\n",
-      "read nom age\n",
-      "echo Tu es $prenom $nom et tu as $age ans, n\\'est-ce pas \\?\n",
-      "read reponse\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo je suis le script shell $0\n",
-      "echo mes arguments sont $*\n",
-      "echo le premier argument est $1\n",
-      "echo le deuxieme argument est $2\n",
-      "\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo je suis le script shell $0\n",
-      "echo mes arguments sont $*\n",
-      "echo le premier argument est $1\n",
-      "echo le deuxieme argument est $2\n",
-      "\n",
-      "\n"
-    ],
-    [
-      "Le script $0 poss\u00c3\u00a8de $# param\u00c3\u00a8tres, que voici: $*\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "Le script $0 poss\u00c3\u00a8de $# param\u00c3\u00a8tres, que voici: $*\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Le script $0 poss\u00c3\u00a8de $# param\u00c3\u00a8tres, que voici: $*\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo voici la concat\u00c3\u00a9nation de F1 et F2 : $*\n",
-      "\n",
-      "\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo voici la concat\u00c3\u00a9nation de F1 et F2 : $*\n",
-      "echo cat F1\n",
-      "echo cat F2\n",
-      "\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo voici la concat\u00c3\u00a9nation de F1 et F2 :\n",
-      "\n",
-      "cat F1\n",
-      "\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo voici la concat\u00c3\u00a9nation de F1 et F2 :\n",
-      "\n",
-      "cat F1 F2 >F3\n",
-      "\n",
-      "\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo voici la concat\u00c3\u00a9nation de F1 et F2 :\n",
-      "\n",
-      "cat -n F1 F2 > F3\n",
-      "\n",
-      "\n",
-      "\n"
-    ],
-    [
-      "\n",
-      "#!/bin/bash\n",
-      "echo voici la concat\u00c3\u00a9nation de F1 et F2 :\n",
-      "\n",
-      "echo $1\n",
-      "\n",
-      "\n",
-      "\n"
-    ],
-    [
-      "\n",
-      "#!/bin/bash\n",
-      "echo voici la concat\u00c3\u00a9nation de F1 et F2 :\n",
-      "cat $1\n",
-      "\n",
-      "\n",
-      "\n"
-    ],
-    [
-      "\n",
-      "#!/bin/bash\n",
-      "echo voici la concat\u00c3\u00a9nation de F1 et F2 :\n",
-      "cat $1 $2 > $3\n",
-      "\n",
-      "\n",
-      "\n"
-    ],
-    [
-      "\n",
-      "#!/bin/bash\n",
-      "echo voici la concat\u00c3\u00a9nation de F1 et F2 :\n",
-      "cat $1 $2 > $3\n",
-      "echo $3\n",
-      "\n",
-      "\n"
-    ],
-    [
-      "\n",
-      "#!/bin/bash\n",
-      "echo voici la concat\u00c3\u00a9nation de F1 et F2 :\n",
-      "cat $1 $2 > $3\n",
-      "echo cat $3\n",
-      "\n",
-      "\n"
-    ],
-    [
-      "\n",
-      "#!/bin/bash\n",
-      "echo voici la concat\u00c3\u00a9nation de F1 et F2 :\n",
-      "cat $1 $2 > $3\n",
-      "cat $3\n",
-      "\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Nous sommes le 'date'\n",
-      "echo Nous sommmes le Mon Nov 16 15:20:46 CET 2020\n",
-      "echo Ceci est\n",
-      "echo une tr\u00c3\u00a8s\n",
-      "echo longue phrase...\n",
-      "echo Voici une \u00c3\u00a9toiles: *\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Nous sommes la 'date'\n",
-      "echo Nous sommmes le Mon Nov 16 15:20:46 CET 2020\n",
-      "echo Ceci est\n",
-      "echo une tr\u00c3\u00a8s\n",
-      "echo longue phrase...\n",
-      "echo Voici une \u00c3\u00a9toiles: '*'\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Nous sommes la date\n",
-      "echo Nous sommmes le Mon Nov 16 15:20:46 CET 2020\n",
-      "echo Ceci est\n",
-      "echo une tr\u00c3\u00a8s\n",
-      "echo longue phrase...\n",
-      "echo Voici une \u00c3\u00a9toiles: '*'\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Nous sommes la 'date'\n",
-      "echo Nous sommmes le: date\n",
-      "echo Ceci est\n",
-      "echo une tr\u00c3\u00a8s\n",
-      "echo longue phrase...\n",
-      "echo Voici une \u00c3\u00a9toiles: '*'\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Nous sommes la 'date'\n",
-      "echo Nous sommmes le: 'date'\n",
-      "echo Ceci est\n",
-      "echo une tr\u00c3\u00a8s\n",
-      "echo longue phrase...\n",
-      "echo Voici une \u00c3\u00a9toiles: '*'\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Nous sommes la `date`\n",
-      "echo Nous sommmes le: \n",
-      "echo Ceci est\n",
-      "echo une tr\u00c3\u00a8s\n",
-      "echo longue phrase...\n",
-      "echo Voici une \u00c3\u00a9toiles: '*'\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Nous sommes la `date`\n",
-      "echo Nous sommmes le:\n",
-      "echo Ceci est\n",
-      "echo une tr\u00c3\u00a8s\n",
-      "echo longue phrase...\n",
-      "echo Voici une \u00c3\u00a9toiles: `*`\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Nous sommes la date\n",
-      "echo Nous sommmes le: \n",
-      "echo Ceci est\n",
-      "echo une tr\u00c3\u00a8s\n",
-      "echo longue phrase...\n",
-      "echo Voici une \u00c3\u00a9toiles: '*'\n"
-    ]
+    {
+      "name": "tp5_exo1.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo cours\n",
+        "cours=unix\n",
+        "echo $cours\n",
+        "echo je suis au cours $cours\n"
+      ]
+    },
+    {
+      "name": "tp5_exo2.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo mon nom de login est : $USER\n",
+        "echo mon shell est : $SHELL\n",
+        "echo les variables du shell sont :\n",
+        "set\n",
+        "echo celles d'environnement sont :\n",
+        "env\n",
+        "\n"
+      ]
+    },
+    {
+      "name": "tp5_exo5.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo Cher utilisateur quel est ton prenom \\?\n",
+        "read prenom\n",
+        "echo Ravi de te connaitre, $prenom\n",
+        "echo Quel est ton nom et ton age \\?\n",
+        "read nom age\n",
+        "echo Tu es $prenom $nom et tu as $age ans, n\\'est-ce pas \\?\n",
+        "read reponse\n",
+        "\n"
+      ]
+    },
+    {
+      "name": "tp5_exo6.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo je suis le script shell $0\n",
+        "echo mes arguments sont $*\n",
+        "echo le premier argument est $1\n",
+        "echo le deuxieme argument est $2\n",
+        "\n",
+        "\n"
+      ]
+    },
+    {
+      "name": "tp5_exo5_1.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo Le script $0 poss\u00c3\u00a8de $# param\u00c3\u00a8tres, que voici: $*\n"
+      ]
+    },
+    {
+      "name": "tp5_exo7_2.sh",
+      "lines": [
+        "\n",
+        "#!/bin/bash\n",
+        "echo voici la concat\u00c3\u00a9nation de F1 et F2 :\n",
+        "cat $1 $2 > $3\n",
+        "cat $3\n",
+        "\n",
+        "\n"
+      ]
+    },
+    {
+      "name": "tp5_exo7.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo Nous sommes la date\n",
+        "echo Nous sommmes le: \n",
+        "echo Ceci est\n",
+        "echo une tr\u00c3\u00a8s\n",
+        "echo longue phrase...\n",
+        "echo Voici une \u00c3\u00a9toiles: '*'\n"
+      ]
+    }
   ],
   "profile": [
     {

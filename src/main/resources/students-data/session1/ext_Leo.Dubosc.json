@@ -2,118 +2,51 @@
   "name": "ext_Leo.Dubosc",
   "session": 1,
   "scripts": [
-    [
-      "#!/bin/bash\n",
-      "echo cours\n",
-      "cours=unix\n",
-      "echo $cours\n",
-      "echo je suis au cours $cours \n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo cours\n",
-      "cours=unix\n",
-      "echo $cours\n",
-      "echo je suis au cours $cours\n"
-    ],
-    [
-      "mon nom de login est \n",
-      "mon shell est \n",
-      "les variables du shell son : \n"
-    ],
-    [
-      "mon nom de login est: $USER=root\n",
-      "mon shell est : $\n",
-      "les variables du shell son : \n",
-      "\n"
-    ],
-    [
-      "mon nom de login est: $USER=root\n",
-      "echo $USER\n",
-      "mon shell est : $SHELL\n",
-      "echo $SHELL\n",
-      "les variables du shell son : set\n",
-      "celle d'environnement sont : env\n",
-      "\n"
-    ],
-    [
-      "echo mon nom de login est: $USER=root\n",
-      "echo $USER\n",
-      "echo mon shell est : $SHELL\n",
-      "echo $SHELL\n",
-      "echo les variables du shell son : set\n",
-      "echo celle d'environnement sont : env\n",
-      "\n"
-    ],
-    [
-      "echo mon nom de login est: $USER=root\n",
-      "echo mon shell est : $SHELL\n",
-      "echo les variables du shell son :\n",
-      "set\n",
-      "echo celle d'environnement sont : \n",
-      "env\n",
-      "\n"
-    ],
-    [
-      "echo mon nom de login est: $USER=root\n",
-      "echo mon shell est : $SHELL\n",
-      "echo les variables du shell son :\n",
-      "set\n",
-      "echo celle d'environnement sont :\n",
-      "env\n",
-      "\n"
-    ],
-    [
-      "echo mon nom de login est: $USER=root\n",
-      "echo mon shell est : $SHELL\n",
-      "echo les variables du shell son :\n",
-      "set\n",
-      "echo celle d\\'environnement sont :\n",
-      "env\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Je suis le script Shell $0\n",
-      "echo Mes arguments sont $*\n",
-      "echo Le premier argument est $1\n",
-      "echo mon deuxieme argument est $2\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Je suis le script Shell\n",
-      "echo $0\n",
-      "echo Mes arguments sont\n",
-      "echo $*\n",
-      "echo Le premier argument est\n",
-      "echo $1\n",
-      "echo mon deuxieme argument est\n",
-      "echo $2\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Je suis le script Shell $0\n",
-      "echo Mes arguments sont $*\n",
-      "echo Le premier argument est $1\n",
-      "echo mon deuxieme argument est $2\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Je suis le script Shell $0\n",
-      "echo Mes arguments sont $*\n",
-      "echo Le premier argument est $1\n",
-      "echo mon deuxieme argument est $2\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Cher utilisateur quel est ton pr\u00c3\u00a9nom \\?\n",
-      "read prenom\n",
-      "echo ravi de te connaitre, $prenom\n",
-      "echo quel est ton nom et ton age \\?\n",
-      "read nom age \n",
-      "echo tu est $prenom $nom et tu as $age ans, n\\'est-ce pas \\?\n",
-      "read reponse\n"
-    ]
+    {
+      "name": "tp5_exo1.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo cours\n",
+        "cours=unix\n",
+        "echo $cours\n",
+        "echo je suis au cours $cours\n"
+      ]
+    },
+    {
+      "name": "tp5_exo2.sh",
+      "lines": [
+        "echo mon nom de login est: $USER=root\n",
+        "echo mon shell est : $SHELL\n",
+        "echo les variables du shell son :\n",
+        "set\n",
+        "echo celle d\\'environnement sont :\n",
+        "env\n",
+        "\n"
+      ]
+    },
+    {
+      "name": "tp5_exo3.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo Cher utilisateur quel est ton pr\u00c3\u00a9nom \\?\n",
+        "read prenom\n",
+        "echo ravi de te connaitre, $prenom\n",
+        "echo quel est ton nom et ton age \\?\n",
+        "read nom age \n",
+        "echo tu est $prenom $nom et tu as $age ans, n\\'est-ce pas \\?\n",
+        "read reponse\n"
+      ]
+    },
+    {
+      "name": "tp5_exo4.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo Je suis le script Shell $0\n",
+        "echo Mes arguments sont $*\n",
+        "echo Le premier argument est $1\n",
+        "echo mon deuxieme argument est $2\n"
+      ]
+    }
   ],
   "profile": [
     {

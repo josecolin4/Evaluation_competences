@@ -2,38 +2,47 @@
   "name": "ext_Jean.Santoni",
   "session": 5,
   "scripts": [
-    [
-      "if test -e $1 -a -e $2\n",
-      "\n",
-      "then\n",
-      "\techo les fichiers existe\n",
-      "\techo Voulez \\-vous contact\\\u00c3\u00a9ner les fichiers \\? OUI pour valider\n",
-      "\tread reponse\n",
-      "\n",
-      "\tif test $reponse = OUI\n",
-      "\tthen\n",
-      "\t\tcat $1 $2 > Fic\n",
-      "\t\tcat Fic\n",
-      "\tfi\n",
-      "else\n",
-      "\techo le fichier existe pas\n",
-      "fi\n"
-    ],
-    [
-      "for liste_commande in date who pwd ls\n",
-      "do\n",
-      "\t$liste_commande\n",
-      "done\n"
-    ],
-    [
-      "i=1\n",
-      "\n",
-      "for x in toto titi tutu\n",
-      "do\n",
-      "\techo argument $i = $x\n",
-      "\ti=$(( i+1))\n",
-      "done\n"
-    ]
+    {
+      "name": "tp6_exo3.sh",
+      "lines": [
+        "if test -e $1 -a -e $2\n",
+        "\n",
+        "then\n",
+        "\techo les fichiers existe\n",
+        "\techo Voulez \\-vous contact\\\u00c3\u00a9ner les fichiers \\? OUI pour valider\n",
+        "\tread reponse\n",
+        "\n",
+        "\tif test $reponse = OUI\n",
+        "\tthen\n",
+        "\t\tcat $1 $2 > Fic\n",
+        "\t\tcat Fic\n",
+        "\tfi\n",
+        "else\n",
+        "\techo le fichier existe pas\n",
+        "fi\n"
+      ]
+    },
+    {
+      "name": "tp6_exo4.sh",
+      "lines": [
+        "for liste_commande in date who pwd ls\n",
+        "do\n",
+        "\t$liste_commande\n",
+        "done\n"
+      ]
+    },
+    {
+      "name": "tp6_exo5.sh",
+      "lines": [
+        "i=1\n",
+        "\n",
+        "for x in toto titi tutu\n",
+        "do\n",
+        "\techo argument $i = $x\n",
+        "\ti=$(( i+1))\n",
+        "done\n"
+      ]
+    }
   ],
   "commands": [
     {

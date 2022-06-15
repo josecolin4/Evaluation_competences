@@ -2,176 +2,92 @@
   "name": "ext_Paul-Alexandre.Baudrand",
   "session": 5,
   "scripts": [
-    [
-      "if test -r $1 -a -w $2\n",
-      "then\n",
-      "\techo le fichier $1 existe et est accessible en lecture et en ecriture\n",
-      "then\n",
-      "\techo le fichier $1 existe mais n\\' pas accessible en lecture et en ecriture\n"
-    ],
-    [
-      "if test -r $1 -a -w $2\n",
-      "then\n",
-      "\techo le fichier $1 existe et est accessible en lecture et en ecriture\n",
-      "then\n",
-      "\techo le fichier $1 existe mais n\\' pas accessible en lecture et en ecriture\n",
-      "fi\n"
-    ],
-    [
-      "if test -r $1 -a -w $2\n",
-      "then\n",
-      "\techo le fichier $1 existe et est accessible en lecture et en ecriture\n",
-      "else\n",
-      "\techo le fichier $1 existe mais n\\' pas accessible en lecture et en ecriture\n",
-      "fi\n"
-    ],
-    [
-      "if test -e $1 -a -e $2\n",
-      "then\n",
-      "\techo le fichier existe\n",
-      "\techo Voulez vous concat\\\u00c3\u00a9ner les fichier \\? OUI pour valider\n",
-      "\tread reponse\n",
-      "\tif test $reponse = OUI \n",
-      "\tthen \n",
-      "\t\tcat $1 $2 > FIC\n",
-      "\t\tcat FIC\n",
-      "\tfi\n",
-      "else\n",
-      "\techo le fichier existe pas\n",
-      "fi\n"
-    ],
-    [
-      "if test -e $1 -a -e $2\n",
-      "then\n",
-      "\techo le fichier existe\n",
-      "\techo Voulez vous concat\\\u00c3\u00a9ner les fichier \\? OUI pour valider\n",
-      "\tread reponse\n",
-      "\tif test $reponse = OUI \n",
-      "\tthen \n",
-      "\t\tcat $1 $2 > FIC\n",
-      "\t\tcat FIC\n",
-      "\tfi\n",
-      "else\n",
-      "\techo le fichier existe pas\n",
-      "fi\n"
-    ],
-    [
-      "if test -e $1 -a -e $2\n",
-      "then\n",
-      "\techo le fichier existe\n",
-      "\techo Voulez vous concat\\\u00c3\u00a9ner les fichier \\? OUI pour valider\n",
-      "\tread reponse\n",
-      "\tif test $reponse = OUI \n",
-      "\tthen \n",
-      "\t\tcat $1 $2 > FIC\n",
-      "\t\tcat FIC\n",
-      "\tfi\n",
-      "else\n",
-      "\techo le fichier existe pas\n",
-      "fi\n"
-    ],
-    [
-      "if test -e $1 -a -e $2\n",
-      "then\n",
-      "\techo les fichier existe\n",
-      "\techo Voulez vous concat\\\u00c3\u00a9ner les fichiers\\? OUI pour valider\n",
-      "\tread validation \n",
-      "\tif test $validation = OUI\n",
-      "\tthen \n",
-      "\t\tcat $1 $2 > Fic\n",
-      "\t\tcat Fic\n",
-      "\tfi\n",
-      "else\n",
-      "\techo le fichier existe pas\n",
-      "fi\n"
-    ],
-    [
-      "for liste_commande in date who pwd ls\n",
-      "do\n",
-      "\t$lidte_commandes\n",
-      "done\n"
-    ],
-    [
-      "for liste_commande in date who pwd ls\n",
-      "do\n",
-      "\t$lidte_commandes\n",
-      "done\n"
-    ],
-    [
-      "for liste_commandes in date who pwd ls\n",
-      "do\n",
-      "\t$lidte_commandes\n",
-      "done\n"
-    ],
-    [
-      "for liste_commandes in date who pwd ls\n",
-      "do\n",
-      "\t$liste_commandes\n",
-      "done\n"
-    ],
-    [
-      "incr :1\n",
-      "for x in toto titi tutu\n",
-      "do\n",
-      "\techo armument $incr = $x\n",
-      "\tincr = $(( incr+1 ))\n",
-      "done\n",
-      "echo il y a $# d'arguments\n"
-    ],
-    [
-      "incr :1\n",
-      "for x in toto titi tutu\n",
-      "do\n",
-      "\techo argument $incr = $x\n",
-      "\tincr = $(( incr+1 ))\n",
-      "done\n",
-      "echo il y a $# d\\'arguments\n"
-    ],
-    [
-      "incr=1\n",
-      "for x in toto titi tutu\n",
-      "do\n",
-      "\techo argument $incr = $x\n",
-      "\tincr = $(( incr+1 ))\n",
-      "done\n",
-      "echo il y a $# d\\'arguments\n"
-    ],
-    [
-      "incr=1\n",
-      "for x in toto titi tutu\n",
-      "do\n",
-      "\techo argument $incr = $x\n",
-      "\tincr=$(( incr+1 ))\n",
-      "done\n",
-      "echo il y a $# d\\'arguments\n"
-    ],
-    [
-      "incr=1\n",
-      "for x in toto titi tutu\n",
-      "do\n",
-      "\techo argument $incr = $x\n",
-      "\tincr=$(( incr+1 ))\n",
-      "done\n",
-      "echo il y a $# d\\'arguments\n"
-    ],
-    [
-      "incr=1\n",
-      "for arg in $1 $2 $3\n",
-      "do\n",
-      "\techo argument $incr = $arg\n",
-      "\tincr=$(( incr+1 ))\n",
-      "done\n",
-      "echo il y a $# d\\'arguments\n"
-    ],
-    [
-      "incr=1\n",
-      "for arg in $1 $2 $3\n",
-      "do\n",
-      "\techo argument $incr = $arg\n",
-      "\tincr=$(( incr+1 ))\n",
-      "done\n",
-      "echo il y a $# d\\'arguments\n"
-    ]
+    {
+      "name": "tp6_exo2.sh",
+      "lines": [
+        "if test -r $1 -a -w $2\n",
+        "then\n",
+        "\techo le fichier $1 existe et est accessible en lecture et en ecriture\n",
+        "else\n",
+        "\techo le fichier $1 existe mais n\\' pas accessible en lecture et en ecriture\n",
+        "fi\n"
+      ]
+    },
+    {
+      "name": "tp6_eco3.sh",
+      "lines": [
+        "if test -e $1 -a -e $2\n",
+        "then\n",
+        "\techo le fichier existe\n",
+        "\techo Voulez vous concat\\\u00c3\u00a9ner les fichier \\? OUI pour valider\n",
+        "\tread reponse\n",
+        "\tif test $reponse = OUI \n",
+        "\tthen \n",
+        "\t\tcat $1 $2 > FIC\n",
+        "\t\tcat FIC\n",
+        "\tfi\n",
+        "else\n",
+        "\techo le fichier existe pas\n",
+        "fi\n"
+      ]
+    },
+    {
+      "name": "tp6_exo.sh",
+      "lines": [
+        "if test -e $1 -a -e $2\n",
+        "then\n",
+        "\techo le fichier existe\n",
+        "\techo Voulez vous concat\\\u00c3\u00a9ner les fichier \\? OUI pour valider\n",
+        "\tread reponse\n",
+        "\tif test $reponse = OUI \n",
+        "\tthen \n",
+        "\t\tcat $1 $2 > FIC\n",
+        "\t\tcat FIC\n",
+        "\tfi\n",
+        "else\n",
+        "\techo le fichier existe pas\n",
+        "fi\n"
+      ]
+    },
+    {
+      "name": "tp6_exo3.sh",
+      "lines": [
+        "if test -e $1 -a -e $2\n",
+        "then\n",
+        "\techo les fichier existe\n",
+        "\techo Voulez vous concat\\\u00c3\u00a9ner les fichiers\\? OUI pour valider\n",
+        "\tread validation \n",
+        "\tif test $validation = OUI\n",
+        "\tthen \n",
+        "\t\tcat $1 $2 > Fic\n",
+        "\t\tcat Fic\n",
+        "\tfi\n",
+        "else\n",
+        "\techo le fichier existe pas\n",
+        "fi\n"
+      ]
+    },
+    {
+      "name": "tp6_exo4.sh",
+      "lines": [
+        "for liste_commandes in date who pwd ls\n",
+        "do\n",
+        "\t$liste_commandes\n",
+        "done\n"
+      ]
+    },
+    {
+      "name": "tp6_exo5.sh",
+      "lines": [
+        "incr=1\n",
+        "for arg in $1 $2 $3\n",
+        "do\n",
+        "\techo argument $incr = $arg\n",
+        "\tincr=$(( incr+1 ))\n",
+        "done\n",
+        "echo il y a $# d\\'arguments\n"
+      ]
+    }
   ],
   "commands": [
     {

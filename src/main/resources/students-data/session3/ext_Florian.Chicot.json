@@ -2,106 +2,28 @@
   "name": "ext_Florian.Chicot",
   "session": 3,
   "scripts": [
-    [
-      "expr $1 \\/ 2\n",
-      "echo $(($1 / 2))\n"
-    ],
-    [
-      "expr $1 / 2\n",
-      "echo $(($1 / 2))\n"
-    ],
-    [
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
-      "\n"
-    ],
-    [
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance \\?\n",
-      "read anneenaissance\n",
-      "echo Vous \u00c3\u00aates n\u00c3\u00a9(e) en $anneenaissance, vous avez donc $((2020-$anneenaissance))\n",
-      "\n"
-    ],
-    [
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance \\?\n",
-      "read anneenaissance\n",
-      "echo Vous \u00c3\u00aates n\u00c3\u00a9\"(\"e\")\" en $anneenaissance, vous avez donc $((2020-$anneenaissance))\n",
-      "\n"
-    ],
-    [
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance \\?\n",
-      "read anneenaissance\n",
-      "echo Vous \u00c3\u00aates n\u00c3\u00a9\"(\"e\")\" en $anneenaissance, vous avez donc $((2020-$anneenaissance))\n",
-      "\n"
-    ],
-    [
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance \\?\n",
-      "read anneenaissance\n",
-      "echo Vous \u00c3\u00aates n\u00c3\u00a9\"(\"e\")\" en $anneenaissance, vous avez donc $((2020-$anneenaissance)) ans.\n",
-      "\n"
-    ],
-    [
-      "echo `who`\n"
-    ],
-    [
-      "echo `who`\n",
-      "echo `hostname`\n"
-    ],
-    [
-      "echo Il y a `who` utilisateurs connect\u00c3\u00a9s sur `hostname`\n"
-    ],
-    [
-      "echo Il y a `who|wc-l` utilisateurs connect\u00c3\u00a9s sur `hostname`.\n"
-    ],
-    [
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance \\?\n",
-      "read anneenaissance\n",
-      "echo Vous \u00c3\u00aates n\u00c3\u00a9\"(\"e\")\" en $anneenaissance, vous avez donc $((date\"+%Y\"-$anneenaissance)) ans.\n",
-      "\n"
-    ],
-    [
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance \\?\n",
-      "read anneenaissance\n",
-      "echo Vous \u00c3\u00aates n\u00c3\u00a9\"(\"e\")\" en $anneenaissance, vous avez donc $((`date\"+%Y\"`-$anneenaissance)) ans.\n",
-      "\n"
-    ],
-    [
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance \\?\n",
-      "read anneenaissance\n",
-      "echo Vous \u00c3\u00aates n\u00c3\u00a9\"(\"e\")\" en $anneenaissance, vous avez donc $((`date`\"+%Y\"-$anneenaissance)) ans.\n",
-      "\n"
-    ],
-    [
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance \\?\n",
-      "read anneenaissance\n",
-      "echo Vous \u00c3\u00aates n\u00c3\u00a9\"(\"e\")\" en $anneenaissance, vous avez donc $((date\"+%Y\"-$anneenaissance)) ans.\n",
-      "\n"
-    ],
-    [
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance \\?\n",
-      "read anneenaissance\n",
-      "echo Vous \u00c3\u00aates n\u00c3\u00a9\"(\"e\")\" en $anneenaissance, vous avez donc $((date\"+%Y\"-$anneenaissance)) ans.\n",
-      "\n"
-    ],
-    [
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance \\?\n",
-      "read anneenaissance\n",
-      "echo Vous \u00c3\u00aates n\u00c3\u00a9\"(\"e\")\" en $anneenaissance, vous avez donc $((date+%Y-$anneenaissance)) ans.\n",
-      "\n"
-    ],
-    [
-      "echo Il y a `who|wc-l` utilisateurs connect\u00c3\u00a9s sur `hostname`.\n"
-    ],
-    [
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance \\?\n",
-      "read anneenaissance\n",
-      "echo Vous \u00c3\u00aates n\u00c3\u00a9\"(\"e\")\" en $anneenaissance, vous avez donc $(($date\"+%Y\"-$anneenaissance)) ans.\n",
-      "\n"
-    ],
-    [
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance \\?\n",
-      "read anneenaissance\n",
-      "echo Vous \u00c3\u00aates n\u00c3\u00a9\"(\"e\")\" en $anneenaissance, vous avez donc $(($date\"+%Y\"-$anneenaissance)) ans.\n",
-      "\n"
-    ]
+    {
+      "name": "tp5bis_exo1.sh",
+      "lines": [
+        "expr $1 / 2\n",
+        "echo $(($1 / 2))\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo3.sh",
+      "lines": [
+        "echo Quelle est votre ann\u00c3\u00a9e de naissance \\?\n",
+        "read anneenaissance\n",
+        "echo Vous \u00c3\u00aates n\u00c3\u00a9\"(\"e\")\" en $anneenaissance, vous avez donc $(($date\"+%Y\"-$anneenaissance)) ans.\n",
+        "\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo4.sh",
+      "lines": [
+        "echo Il y a `who|wc-l` utilisateurs connect\u00c3\u00a9s sur `hostname`.\n"
+      ]
+    }
   ],
   "profile": [
     {

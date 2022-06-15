@@ -2,103 +2,51 @@
   "name": "ext_Florian.Chicot",
   "session": 2,
   "scripts": [
-    [
-      "more $1\n"
-    ],
-    [
-      "cat $1 $2 > $3\n",
-      "more $3\n"
-    ],
-    [
-      "echo Nous sommes le date\n",
-      "echo Nous sommes le `date`\n",
-      "echo Ceci est\n",
-      "echo une tr\u00c3\u00a8s\n",
-      "echo longue phrase...\n",
-      "echo Voici une \u00c3\u00a9toile \\: \"*\"\n"
-    ],
-    [
-      "echo Nous sommes le \"`\"date\"`\"\n",
-      "echo Nous sommes le `date`\n",
-      "echo Ceci est\n",
-      "echo une tr\u00c3\u00a8s\n",
-      "echo longue phrase...\n",
-      "echo Voici une \u00c3\u00a9toile \\: \"*\"\n"
-    ],
-    [
-      "echo Nous sommes le \\`date\\`\n",
-      "echo Nous sommes le `date`\n",
-      "echo Ceci est\n",
-      "echo une tr\u00c3\u00a8s\n",
-      "echo longue phrase...\n",
-      "echo Voici une \u00c3\u00a9toile \\: \"*\"\n"
-    ],
-    [
-      "echo $($1+1)\n"
-    ],
-    [
-      "echo $(($1+1))\n"
-    ],
-    [
-      "$toto=$PATH\n"
-    ],
-    [
-      "$toto=tata\n"
-    ],
-    [
-      "toto=tata\n"
-    ],
-    [
-      "toto=tata\n",
-      "echo $toto\n"
-    ],
-    [
-      "toto=tata\n",
-      "echo $toto\n",
-      "export $toto\n"
-    ],
-    [
-      "toto=$PATH\n",
-      "echo $toto\n",
-      "export $toto\n"
-    ],
-    [
-      "export toto=$PATH\n",
-      "echo $toto\n"
-    ],
-    [
-      "export toto=$PATH\n",
-      "echo $toto\n",
-      "export -p\n"
-    ],
-    [
-      "export TOTO=$PATH\n",
-      "echo $TOTO\n",
-      "export -p\n"
-    ],
-    [
-      "export TOTO=$PATH:$PWD\n",
-      "echo $TOTO\n"
-    ],
-    [
-      "export PATH=$PATH:$PWD\n",
-      "echo $PATH\n"
-    ],
-    [
-      "expr $1 / 2\n"
-    ],
-    [
-      "expr $1 / 2\n",
-      "echo $(($1 / 2))\n"
-    ],
-    [
-      "expr $1 * 2\n",
-      "echo $(($1 * 2))\n"
-    ],
-    [
-      "expr $1 \\* 2\n",
-      "echo $(($1 * 2))\n"
-    ]
+    {
+      "name": "tp5_exo6.sh",
+      "lines": [
+        "cat $1 $2 > $3\n",
+        "more $3\n"
+      ]
+    },
+    {
+      "name": "tp5_exo7.sh",
+      "lines": [
+        "echo Nous sommes le \\`date\\`\n",
+        "echo Nous sommes le `date`\n",
+        "echo Ceci est\n",
+        "echo une tr\u00c3\u00a8s\n",
+        "echo longue phrase...\n",
+        "echo Voici une \u00c3\u00a9toile \\: \"*\"\n"
+      ]
+    },
+    {
+      "name": "tp5_exo8.sh",
+      "lines": [
+        "echo $(($1+1))\n"
+      ]
+    },
+    {
+      "name": "tp5_exo9.sh",
+      "lines": [
+        "export PATH=$PATH:$PWD\n",
+        "echo $PATH\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo1.sh",
+      "lines": [
+        "expr $1 / 2\n",
+        "echo $(($1 / 2))\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo2.sh",
+      "lines": [
+        "expr $1 \\* 2\n",
+        "echo $(($1 * 2))\n"
+      ]
+    }
   ],
   "profile": [
     {

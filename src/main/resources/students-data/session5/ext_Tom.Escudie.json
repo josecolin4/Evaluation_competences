@@ -2,56 +2,29 @@
   "name": "ext_Tom.Escudie",
   "session": 5,
   "scripts": [
-    [
-      "liste_commandes = date who pwd ls\n",
-      "wc -w liste_commandes\n"
-    ],
-    [
-      "liste_commandes = date who pwd ls\n",
-      "wc -w $liste_commandes\n"
-    ],
-    [
-      "liste_commandes=date who pwd ls\n",
-      "wc -w $liste_commandes\n"
-    ],
-    [
-      "factorielle=1\n",
-      "\n",
-      "for i in $(seq $1)\n",
-      "do\n",
-      "$factorielle=$factorielle*$i\n",
-      "done\n",
-      "echo $factorielle\n"
-    ],
-    [
-      "factorielle=1\n",
-      "for i in $(seq $1)\n",
-      "do\n",
-      "factorielle=factorielle*$i\n",
-      "done\n",
-      "echo $factorielle\n"
-    ],
-    [
-      "factorielle=1\n",
-      "for i in $(seq $1)\n",
-      "do\n",
-      "factorielle=factorielle*i\n",
-      "done\n",
-      "echo $factorielle\n"
-    ],
-    [
-      "factorielle=1\n",
-      "\n",
-      "for i in `seq $1`\n",
-      "\n",
-      "do\n",
-      "\n",
-      "factorielle=`expr $factorielle \\* $i`\n",
-      "\n",
-      "done\n",
-      "\n",
-      "echo $factorielle\n"
-    ]
+    {
+      "name": "tp6_exo4.sh",
+      "lines": [
+        "liste_commandes=date who pwd ls\n",
+        "wc -w $liste_commandes\n"
+      ]
+    },
+    {
+      "name": "tp6_exo5.sh",
+      "lines": [
+        "factorielle=1\n",
+        "\n",
+        "for i in `seq $1`\n",
+        "\n",
+        "do\n",
+        "\n",
+        "factorielle=`expr $factorielle \\* $i`\n",
+        "\n",
+        "done\n",
+        "\n",
+        "echo $factorielle\n"
+      ]
+    }
   ],
   "commands": [
     {

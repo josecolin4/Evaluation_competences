@@ -10,9 +10,10 @@ import java.util.HashMap;
  */
 public class ResultAnalyser {
 
-    public static double mesureError(HashMap<String, Double> generatedProfile, HashMap<String, Double> correctProfile,
+    public static HashMap<String, Double> mesureError(HashMap<String, Double> generatedProfile, HashMap<String, Double> correctProfile,
                                      boolean printResult) {
 
+        HashMap<String, Double> errorPerCompetency = new HashMap<>();
         if (generatedProfile.size() != correctProfile.size()) {
             throw new IllegalStateException("generated is of the wrong size : " + generatedProfile.size()
                                             + "    expected : " + correctProfile.size());
@@ -21,6 +22,7 @@ public class ResultAnalyser {
         double totalError = 0;
         for (String competencyName : correctProfile.keySet()) {
             double error = Math.abs(generatedProfile.get(competencyName) - correctProfile.get(competencyName));
+            errorPerCompetency.put(competencyName, error);
             totalError += error;
 
             if (printResult) {
@@ -31,6 +33,6 @@ public class ResultAnalyser {
         if (printResult) {
             System.out.println("total error is : " + totalError + "\naverage error is : " + (totalError / correctProfile.size()) + "\n");
         }
-        return totalError;
+        return errorPerCompetency;
     }
 }

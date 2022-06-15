@@ -2,80 +2,33 @@
   "name": "ext_Eliott.Milcent",
   "session": 2,
   "scripts": [
-    [
-      "echo Nous sommes le 'date'\n",
-      "echo Ceco est\n",
-      "echo une tr\u00c3\u00a8s\n",
-      "echo longue phrase...\n",
-      "echo Voici une \u00c3\u00a9toile:*\n"
-    ],
-    [
-      "read expr$1\n",
-      "$1=$1+1\n",
-      "echo $1\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "read expr$1\n",
-      "$1=$1+1\n",
-      "echo $1\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "$x1=$1\n",
-      "$x1='expr $x1+1'\n",
-      "echo $x1\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "$x1=$1\n",
-      "$x1='expr' $x1+1\n",
-      "echo $x1\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "x1=$1\n",
-      "x1='expr x1+1'\n",
-      "echo $x1\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "x1=$1\n",
-      "$x1='expr x1+1'\n",
-      "echo $x1\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "x1=$1\n",
-      "$x1='expr $x1+1'\n",
-      "echo $x1\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "$x1=$1\n",
-      "$x1='expr $x1+1'\n",
-      "echo $x1\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "$x1=$*\n",
-      "$x1='expr$*+1'\n",
-      "echo $x1\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "export PATH=$PATH:/root\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "export PATH=.:$PATH\n",
-      "\n"
-    ]
+    {
+      "name": "tp5_exo7.sh",
+      "lines": [
+        "echo Nous sommes le 'date'\n",
+        "echo Ceco est\n",
+        "echo une tr\u00c3\u00a8s\n",
+        "echo longue phrase...\n",
+        "echo Voici une \u00c3\u00a9toile:*\n"
+      ]
+    },
+    {
+      "name": "tp5_exo8.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "$x1=$*\n",
+        "$x1='expr$*+1'\n",
+        "echo $x1\n"
+      ]
+    },
+    {
+      "name": "tp5_exo9.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "export PATH=.:$PATH\n",
+        "\n"
+      ]
+    }
   ],
   "profile": [
     {

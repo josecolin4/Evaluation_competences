@@ -2,58 +2,26 @@
   "name": "ext_Elian.Blanchard",
   "session": 2,
   "scripts": [
-    [
-      "echo qu'elle est votre valeur \\?\n",
-      "read n\n",
-      "expr $n / 2\n"
-    ],
-    [
-      "expr $1 / 2\n"
-    ],
-    [
-      "expr $1 / 2\n"
-    ],
-    [
-      "expr $1 * 2\n"
-    ],
-    [
-      "expr $1 * 2\n"
-    ],
-    [
-      "expr $* * 2\n"
-    ],
-    [
-      "expr $1 \\* 2\n"
-    ],
-    [
-      "!bin\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance \\?\n",
-      "j=2020\n",
-      "echo vous avez $((j-n)) ans \n"
-    ],
-    [
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance \\?\n",
-      "read n\n",
-      "echo vous avez $(( `date + %Y` - $n))_\n",
-      "\n"
-    ],
-    [
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance \\?\n",
-      "read n\n",
-      "echo vous avez $(( `date +%Y` - $n)) ans\n",
-      "\n"
-    ],
-    [
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance \\?\n",
-      "read n\n",
-      "echo Vous \\^\u00c3\u00aates n\u00c3\u00a9 en $1, vous avez donc $(( `date +%Y` - $n)) ans\n",
-      "\n"
-    ],
-    [
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance \\?\n",
-      "read n\n",
-      "echo Vous \\\u00c3\u00aates n\u00c3\u00a9 en $n, vous avez donc $(( `date +%Y` - $n)) ans\n"
-    ]
+    {
+      "name": "tp5bis_exo1.sh",
+      "lines": [
+        "expr $1 / 2\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo2.sh",
+      "lines": [
+        "expr $1 \\* 2\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo3.sh",
+      "lines": [
+        "echo Quelle est votre ann\u00c3\u00a9e de naissance \\?\n",
+        "read n\n",
+        "echo Vous \\\u00c3\u00aates n\u00c3\u00a9 en $n, vous avez donc $(( `date +%Y` - $n)) ans\n"
+      ]
+    }
   ],
   "profile": [
     {

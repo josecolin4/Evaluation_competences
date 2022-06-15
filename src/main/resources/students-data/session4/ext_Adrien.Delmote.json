@@ -2,311 +2,57 @@
   "name": "ext_Adrien.Delmote",
   "session": 4,
   "scripts": [
-    [
-      "for i in $(seq 4)\n",
-      "do \n",
-      "\techo $i\n",
-      "done\n",
-      "\n"
-    ],
-    [
-      "\n",
-      "for i in $(seq 4)\n",
-      "do \n",
-      "\techo $i\n",
-      "done\n",
-      "\n"
-    ],
-    [
-      "\n",
-      "for liste_commande in $(seq 4)\n",
-      "do \n",
-      "\techo $liste_commande\n",
-      "done\n",
-      "\n"
-    ],
-    [
-      "\n",
-      "for liste_commande in $(seq 4)\n",
-      "do \n",
-      "\t$liste_commande\n",
-      "done\n",
-      "\n"
-    ],
-    [
-      "\n",
-      "for liste_commande in 1\n",
-      "do \n",
-      "\t$liste_commande\n",
-      "done\n",
-      "\n"
-    ],
-    [
-      "\n",
-      "for liste_commande in date\n",
-      "do \n",
-      "\t$liste_commande\n",
-      "done\n",
-      "\n"
-    ],
-    [
-      "\n",
-      "for liste_commande in 1,2,3,4\n",
-      "do \n",
-      "\t$liste_commande\n",
-      "done\n",
-      "\n"
-    ],
-    [
-      "\n",
-      "for liste_commande in 1 2 3 4\n",
-      "do \n",
-      "\t$liste_commande\n",
-      "done\n",
-      "\n"
-    ],
-    [
-      "\n",
-      "for liste_commande in 4 3 2 1\n",
-      "do \n",
-      "\t$liste_commande\n",
-      "done\n",
-      "\n"
-    ],
-    [
-      "\n",
-      "for i in 4 3 2 1\n",
-      "do \n",
-      "\t$liste_commande\n",
-      "done\n",
-      "\n"
-    ],
-    [
-      "\n",
-      "for i in $liste_commande\n",
-      "do \n",
-      "\t$i\n",
-      "done\n",
-      "\n"
-    ],
-    [
-      "\n",
-      "for i in $liste_commande\n",
-      "do \n",
-      "\techo $i\n",
-      "done\n",
-      "\n"
-    ],
-    [
-      "\n"
-    ],
-    [
-      "\n",
-      "for i in $(liste_commande)\n",
-      "do \n",
-      "\techo $i\n",
-      "done\n",
-      "\n"
-    ],
-    [
-      "\n",
-      "for i in $(liste_commande)\n",
-      "do \n",
-      "\techo $i\n",
-      "done\n",
-      "\n"
-    ],
-    [
-      "echo il y a count(`who`)\n",
-      "echo le nom de la machine est `hostname` \n"
-    ],
-    [
-      "\n",
-      "(set `who`)=i\n",
-      "echo il y a `who`\n",
-      "\n",
-      "echo le nom de la machine est `hostname` \n"
-    ],
-    [
-      "\n",
-      "(set `who`)=i\n",
-      "echo il y a `i`\n",
-      "\n",
-      "echo le nom de la machine est `hostname` \n"
-    ],
-    [
-      "\n",
-      "set `who`\n",
-      "echo il y a $*\n",
-      "\n",
-      "echo le nom de la machine est `hostname` \n"
-    ],
-    [
-      "\n",
-      "set `who`\n",
-      "echo il y a $#\n",
-      "\n",
-      "echo le nom de la machine est `hostname` \n"
-    ],
-    [
-      "\n",
-      "set `who`\n",
-      "echo il y a $# utilisateur\n",
-      "echo le nom de la machine est `hostname` \n"
-    ],
-    [
-      "\n",
-      "set `who`\n",
-      "echo il y a $# utilisateur\n",
-      "echo le nom de la machine est `hostname` \n"
-    ],
-    [
-      "\n",
-      "echo $(ls-l)\n"
-    ],
-    [
-      "set -- $(ls -l $1)\n",
-      "echo $1 $2 $3 $4\n",
-      "echo $#\n"
-    ],
-    [
-      "set -- $(ls -l $1)\n",
-      "echo $1 $2 $3 $4\n",
-      "echo $5\n"
-    ],
-    [
-      "\n",
-      "for i in $($1)\n",
-      "do \n",
-      "\techo $i\n",
-      "done\n",
-      "\n"
-    ],
-    [
-      "\n",
-      "for i in $liste_commande\n",
-      "do \n",
-      "\t$i\n",
-      "done\n",
-      "\n"
-    ],
-    [
-      "liste_commande=\n",
-      "for i in $liste_commande\n",
-      "do \n",
-      "\t$i\n",
-      "done\n",
-      "\n"
-    ],
-    [
-      "liste_commande=date who pwd ls\n",
-      "for i in $liste_commande\n",
-      "do \n",
-      "\t$i\n",
-      "done\n",
-      "\n"
-    ],
-    [
-      "liste_commande=date who pwd ls\n",
-      "for i in $liste_commande\n",
-      "do \n",
-      "\t$1\n",
-      "done\n",
-      "\n"
-    ],
-    [
-      "liste_commande=date who pwd ls\n",
-      "for i in $liste_commande\n",
-      "do \n",
-      "\t$i\n",
-      "done\n",
-      "\n"
-    ],
-    [
-      "num=1\n",
-      "for nb in $*\n",
-      "do\n",
-      "\techo argument num=$nb\n",
-      "\tnum=$((num+1))\n",
-      "done\n",
-      "\n"
-    ],
-    [
-      "num=1\n",
-      "for nb in $*\n",
-      "do\n",
-      "\techo argument num=$nb\n",
-      "\tnum=$((num+1))\n",
-      "done\n",
-      "echo $#\n"
-    ],
-    [
-      "for i in $(seq $1)\n",
-      "do \n",
-      "\tres=res*$i\n",
-      "done\n",
-      "$res\n"
-    ],
-    [
-      "for i in $(seq $1)\n",
-      "do \n",
-      "\tres=res\\$i\n",
-      "done\n",
-      "$res\n"
-    ],
-    [
-      "for i in $(seq $1)\n",
-      "do \n",
-      "\tres=res\\$i\n",
-      "done\n",
-      "$res\n"
-    ],
-    [
-      "for i in $(seq $1)\n",
-      "do \n",
-      "\tres=res \\ $i\n",
-      "done\n",
-      "$res\n"
-    ],
-    [
-      "for i in $(seq $1)\n",
-      "do \n",
-      "\tres=$(res * $i)\n",
-      "done\n",
-      "$res\n"
-    ],
-    [
-      "res=1\n",
-      "for i in $(seq $1)\n",
-      "do \n",
-      "\tres=$(res * $i)\n",
-      "done\n",
-      "$res\n"
-    ],
-    [
-      "res=1\n",
-      "for i in $(seq $1)\n",
-      "do \n",
-      "\tres=$($res * $i)\n",
-      "done\n",
-      "$res\n"
-    ],
-    [
-      "res=1\n",
-      "for i in $(seq $1)\n",
-      "do \n",
-      "\tres=$(($res * $i))\n",
-      "done\n",
-      "$res\n"
-    ],
-    [
-      "res=1\n",
-      "for i in $(seq $1)\n",
-      "do \n",
-      "\tres=$(($res * $i))\n",
-      "done\n",
-      "echo $res\n"
-    ]
+    {
+      "name": "tp6_exo4.sh",
+      "lines": [
+        "liste_commande=date who pwd ls\n",
+        "for i in $liste_commande\n",
+        "do \n",
+        "\t$i\n",
+        "done\n",
+        "\n"
+      ]
+    },
+    {
+      "name": "tp6_exo5.sh",
+      "lines": [
+        "num=1\n",
+        "for nb in $*\n",
+        "do\n",
+        "\techo argument num=$nb\n",
+        "\tnum=$((num+1))\n",
+        "done\n",
+        "echo $#\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo4.sh",
+      "lines": [
+        "\n",
+        "set `who`\n",
+        "echo il y a $# utilisateur\n",
+        "echo le nom de la machine est `hostname` \n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo5.sh",
+      "lines": [
+        "set -- $(ls -l $1)\n",
+        "echo $1 $2 $3 $4\n",
+        "echo $5\n"
+      ]
+    },
+    {
+      "name": "tp6_exo6.sh",
+      "lines": [
+        "res=1\n",
+        "for i in $(seq $1)\n",
+        "do \n",
+        "\tres=$(($res * $i))\n",
+        "done\n",
+        "echo $res\n"
+      ]
+    }
   ],
   "profile": [
     {

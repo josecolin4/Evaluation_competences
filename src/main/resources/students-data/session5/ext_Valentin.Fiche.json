@@ -2,211 +2,49 @@
   "name": "ext_Valentin.Fiche",
   "session": 5,
   "scripts": [
-    [
-      "if test  -e $1 -a -e $2\n",
-      "then\n",
-      "echo \"Mon fichier existe\"\n",
-      "echo vouler vous contatener les fichier\\? oui pour valider\n",
-      "read reponse\n",
-      "if test $reponse = oui\n",
-      "then\n",
-      "cat $1 $2> fic\n",
-      "cat fic\n",
-      "fi\n",
-      "else\n",
-      "echo \"Mon fichier n'existe pas\"\n",
-      "fi\n"
-    ],
-    [
-      "for liste_commandes in date who pwd ls\n",
-      "do\n",
-      "$liste_commandes\n",
-      "done\n"
-    ],
-    [
-      "for \n",
-      "do i in toto titi tutu\n",
-      "echo $1\n",
-      "i=$((i+1))\n",
-      "\n",
-      "done\n"
-    ],
-    [
-      "for i in toto titi tutu\n",
-      "do\n",
-      "echo $1\n",
-      "i=$((i+1))\n",
-      "\n",
-      "done\n"
-    ],
-    [
-      "for i in toto titi tutu\n",
-      "do\n",
-      "echo argument $i\n",
-      "i=$((i+1))\n",
-      "\n",
-      "done\n"
-    ],
-    [
-      "for i in toto titi tutu\n",
-      "do\n",
-      "echo argument $i\n",
-      "i=$((i+1))\n",
-      "\n",
-      "done\n"
-    ],
-    [
-      "for i in toto titi tutu\n",
-      "do\n",
-      "o=1\n",
-      "echo argument $o =$i\n",
-      "i=$((i+1))\n",
-      "o=$((o+1))\n",
-      "done\n"
-    ],
-    [
-      "for i in toto titi tutu\n",
-      "do\n",
-      "\n",
-      "echo argument $o =$i\n",
-      "i=$((i+1))\n",
-      "o=$((o+1))\n",
-      "done\n"
-    ],
-    [
-      "for i in toto titi tutu\n",
-      "do\n",
-      "o:1\n",
-      "echo argument $o =$i\n",
-      "i=$((i+1))\n",
-      "o=$((o+1))\n",
-      "done\n"
-    ],
-    [
-      "for i in toto titi tutu\n",
-      "do\n",
-      "o=1\n",
-      "echo argument $o =$i\n",
-      "i=$((i+1))\n",
-      "o=$((o+1))\n",
-      "done\n"
-    ],
-    [
-      "o=1\n",
-      "for i in toto titi tutu\n",
-      "do\n",
-      "\n",
-      "echo argument $o =$i\n",
-      "i=$((i+1))\n",
-      "o=$((o+1))\n",
-      "done\n"
-    ],
-    [
-      "o=1\n",
-      "for i in toto titi tutu\n",
-      "do\n",
-      "\n",
-      "echo argument $o =$i\n",
-      "i=$((i+1))\n",
-      "o=$((o+1))\n",
-      "done\n",
-      "echo il y a $i\n"
-    ],
-    [
-      "o=1\n",
-      "for i in toto titi tutu\n",
-      "do\n",
-      "\n",
-      "echo argument $o =$i\n",
-      "i=$((i+1))\n",
-      "o=$((o+1))\n",
-      "done\n",
-      "echo il y a $o\n"
-    ],
-    [
-      "o=1\n",
-      "for i in toto titi tutu\n",
-      "do\n",
-      "\n",
-      "echo argument $o =$i\n",
-      "i=$((i+1))\n",
-      "o=$((o+1))\n",
-      "done\n",
-      "echo il y a $o-1\n"
-    ],
-    [
-      "o=1\n",
-      "for i in toto titi tutu\n",
-      "do\n",
-      "\n",
-      "echo argument $o =$i\n",
-      "i=$((i+1))\n",
-      "o=$((o+1))\n",
-      "done\n",
-      "$o-1\n",
-      "echo il y a $o\n"
-    ],
-    [
-      "o=1\n",
-      "for i in toto titi tutu\n",
-      "do\n",
-      "\n",
-      "echo argument $o =$i\n",
-      "i=$((i+1))\n",
-      "o=$((o+1))\n",
-      "done\n",
-      "$o=o-1\n",
-      "echo il y a $o\n"
-    ],
-    [
-      "o=1\n",
-      "for i in toto titi tutu\n",
-      "do\n",
-      "\n",
-      "echo argument $o =$i\n",
-      "i=$((i+1))\n",
-      "o=$((o+1))\n",
-      "done\n",
-      "o=o-1\n",
-      "echo il y a $o\n"
-    ],
-    [
-      "o=1\n",
-      "for i in toto titi tutu\n",
-      "do\n",
-      "\n",
-      "echo argument $o =$i\n",
-      "i=$((i+1))\n",
-      "o=$((o+1))\n",
-      "done\n",
-      "\n",
-      "echo il y a $o\n"
-    ],
-    [
-      "o=1\n",
-      "for i in toto titi tutu\n",
-      "do\n",
-      "\n",
-      "echo argument $o =$i\n",
-      "i=$((i+1))\n",
-      "o=$((o+1))\n",
-      "done\n",
-      "o=$((o-1))\n",
-      "echo il y a $o\n"
-    ],
-    [
-      "o=1\n",
-      "for i in toto titi tutu\n",
-      "do\n",
-      "\n",
-      "echo argument $o =$i\n",
-      "i=$((i+1))\n",
-      "o=$((o+1))\n",
-      "done\n",
-      "o=$((o-1))\n",
-      "echo il y a $o arguments\n",
-      "\n"
-    ]
+    {
+      "name": "tp6_ex3.sh",
+      "lines": [
+        "if test  -e $1 -a -e $2\n",
+        "then\n",
+        "echo \"Mon fichier existe\"\n",
+        "echo vouler vous contatener les fichier\\? oui pour valider\n",
+        "read reponse\n",
+        "if test $reponse = oui\n",
+        "then\n",
+        "cat $1 $2> fic\n",
+        "cat fic\n",
+        "fi\n",
+        "else\n",
+        "echo \"Mon fichier n'existe pas\"\n",
+        "fi\n"
+      ]
+    },
+    {
+      "name": "tp6_ex4.sh",
+      "lines": [
+        "for liste_commandes in date who pwd ls\n",
+        "do\n",
+        "$liste_commandes\n",
+        "done\n"
+      ]
+    },
+    {
+      "name": "tp6_ex5.sh",
+      "lines": [
+        "o=1\n",
+        "for i in toto titi tutu\n",
+        "do\n",
+        "\n",
+        "echo argument $o =$i\n",
+        "i=$((i+1))\n",
+        "o=$((o+1))\n",
+        "done\n",
+        "o=$((o-1))\n",
+        "echo il y a $o arguments\n",
+        "\n"
+      ]
+    }
   ],
   "commands": [
     {

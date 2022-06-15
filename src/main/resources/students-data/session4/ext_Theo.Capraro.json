@@ -2,41 +2,27 @@
   "name": "ext_Theo.Capraro",
   "session": 4,
   "scripts": [
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "who | wc-l\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "who | wc-l\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "read who | wc-l\n"
-    ],
-    [
-      "#!/bin/bash\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "$ set ls -l \n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "$ read set ls -l \n"
-    ],
-    [
-      "#!\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n"
-    ]
+    {
+      "name": "tp5bis_EXO4.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "read who | wc-l\n"
+      ]
+    },
+    {
+      "name": "tp5bis_EXO5.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "$ read set ls -l \n"
+      ]
+    },
+    {
+      "name": "tp6_EXO1.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "\n"
+      ]
+    }
   ],
   "profile": [
     {

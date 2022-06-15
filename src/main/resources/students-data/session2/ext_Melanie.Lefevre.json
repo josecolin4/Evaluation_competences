@@ -2,124 +2,37 @@
   "name": "ext_Melanie.Lefevre",
   "session": 2,
   "scripts": [
-    [
-      "expr 6 / 2 #affiche3\n",
-      "\n"
-    ],
-    [
-      "expr 6 / 2 #affiche3\n",
-      "a=8\n",
-      "expr $a / 2 #affiche8\n"
-    ],
-    [
-      "expr 6 / 2 #affiche3\n",
-      "a=9\n",
-      "expr $a / 2 #affiche4.5\n"
-    ],
-    [
-      "expr 6 / 2 #affiche3\n",
-      "a=9\n",
-      "expr $a / 2 #affiche4.5\n",
-      "n=13\n",
-      "echo $((13/2)) #affiche6.5\n"
-    ],
-    [
-      "expr 6 / 2 #affiche3\n",
-      "a=9\n",
-      "expr $a / 2 #affiche4.5\n",
-      "n=12\n",
-      "echo $((n/2)) #affiche6.5\n"
-    ],
-    [
-      "expr 5 * 2 #affiche5\n"
-    ],
-    [
-      "expr 5 * 2 #affiche 10\n",
-      "a=5\n",
-      "expr $a * 2 #affiche 10\n",
-      "\n"
-    ],
-    [
-      "expr 5 * 2 #affiche 10\n",
-      "a=5\n",
-      "expr $a * 2 #affiche 10\n",
-      "n=5\n",
-      "echo $((n * 2)) #affiche 10\n"
-    ],
-    [
-      "expr 5 back/* 2 #affiche 10\n",
-      "a=5\n",
-      "expr $a * 2 #affiche 10\n",
-      "n=5\n",
-      "echo $((n * 2)) #affiche 10\n"
-    ],
-    [
-      "expr 5 bach/* 2 #affiche 10\n",
-      "a=5\n",
-      "expr $a * 2 #affiche 10\n",
-      "n=5\n",
-      "echo $((n * 2)) #affiche 10\n"
-    ],
-    [
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
-      "\n"
-    ],
-    [
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
-      "read age \n",
-      "\n"
-    ],
-    [
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
-      "read age\n",
-      "expr  2020 - $age #affiche 30 \n",
-      "\n"
-    ],
-    [
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
-      "read age\n",
-      "echo vous etes n\u00c3\u00a9e en 1990 vous avez donc expr  2020 - $age #affiche 30 ans \n",
-      "\n"
-    ],
-    [
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
-      "read age\n",
-      "echo vous etes n\u00c3\u00a9e en 1990 vous avez donc\n",
-      "expr  2020 - $age #affiche 30\n",
-      "echo ans \n",
-      "\n"
-    ],
-    [
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
-      "read age\n",
-      "echo vous etes n\u00c3\u00a9e en 1990 vous avez donc\n",
-      "expr  2020 - $age\n",
-      "echo  $((age - 2020)) #affiche 30\n",
-      "\n"
-    ],
-    [
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
-      "read age\n",
-      "echo vous etes n\u00c3\u00a9e en 1990 vous avez donc\n",
-      "expr  2020 - $age\n",
-      "echo  $((2020 - age)) #affiche 30\n"
-    ],
-    [
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
-      "read age\n",
-      "echo vous etes n\u00c3\u00a9e en 1990 vous avez donc\n",
-      "expr  2020 - $age\n",
-      "echo  $((2020 - age)) #affiche \n",
-      "echo ans \n"
-    ],
-    [
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
-      "read age\n",
-      "echo vous etes n\u00c3\u00a9e en 1990 vous avez donc\n",
-      "expr  2020 - $age\n",
-      "echo  $((2020 - age)) #affiche \n",
-      "echo ans \n"
-    ]
+    {
+      "name": "tp5bis_exo1.sh",
+      "lines": [
+        "expr 6 / 2 #affiche3\n",
+        "a=9\n",
+        "expr $a / 2 #affiche4.5\n",
+        "n=12\n",
+        "echo $((n/2)) #affiche6.5\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo2.sh",
+      "lines": [
+        "expr 5 bach/* 2 #affiche 10\n",
+        "a=5\n",
+        "expr $a * 2 #affiche 10\n",
+        "n=5\n",
+        "echo $((n * 2)) #affiche 10\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo3.sh",
+      "lines": [
+        "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
+        "read age\n",
+        "echo vous etes n\u00c3\u00a9e en 1990 vous avez donc\n",
+        "expr  2020 - $age\n",
+        "echo  $((2020 - age)) #affiche \n",
+        "echo ans \n"
+      ]
+    }
   ],
   "profile": [
     {

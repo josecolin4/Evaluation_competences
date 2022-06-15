@@ -2,56 +2,38 @@
   "name": "ext_Ambre.Rouillon",
   "session": 2,
   "scripts": [
-    [
-      "#!/bin/bash\n",
-      "echo Cher utilisateur quel est ton pr\u00c3\u00a9nom \\?\n",
-      "read prenom\n",
-      "echo Ravi de te connaitre, $prenom\n",
-      "echo Quel est ton nom et ton age \\?\n",
-      "read nom age\n",
-      "echo Tu es $prenom $nom et tu as $age ans, n\\'est-ce \u00c3\u00a2s \\?\n",
-      "read reponse\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Cher utilisateur quel est ton pr\u00c3\u00a9nom \\?\n",
-      "read prenom\n",
-      "echo Ravi de te connaitre, $prenom\n",
-      "echo Quel est ton nom et ton age \\?\n",
-      "read nom age\n",
-      "echo Tu es $prenom $nom et tu as $age ans, n\\'est-ce pas \\? \n",
-      "read reponse\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Je suis le script Shell $0\n",
-      "echo Mes arguments sont $*\n",
-      "echo Le premier argument est $1\n",
-      "echo Le deuxi\u00c3\u00a8me argument est $2\n",
-      "\n"
-    ],
-    [
-      "Le script echo $0 poss\u00c3\u00a8de echo $# param\u00c3\u00a8tre, que voici :echo $*\n"
-    ],
-    [
-      "Le script  echo $((0)) poss\u00c3\u00a8de echo $((#)) param\u00c3\u00a8tre, que voici : echo $((*))\n"
-    ],
-    [
-      "Le script  echo $((0)) poss\u00c3\u00a8de echo $(#) param\u00c3\u00a8tre, que voici : echo $((*))\n"
-    ],
-    [
-      "Le script  echo $((0)) poss\u00c3\u00a8de echo $((#)) param\u00c3\u00a8tre, que voici : echo $((*))\n"
-    ],
-    [
-      "Le script  echo $0\n",
-      "poss\u00c3\u00a8de echo $#\n",
-      "param\u00c3\u00a8tre, que voici : echo $*\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Le script $0 poss\u00c3\u00a8de $# param\u00c3\u00a8tre, que voici : $*\n"
-    ]
+    {
+      "name": "tp5_exo5.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo Le script $0 poss\u00c3\u00a8de $# param\u00c3\u00a8tre, que voici : $*\n"
+      ]
+    },
+    {
+      "name": "tp5_exo3.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo Cher utilisateur quel est ton pr\u00c3\u00a9nom \\?\n",
+        "read prenom\n",
+        "echo Ravi de te connaitre, $prenom\n",
+        "echo Quel est ton nom et ton age \\?\n",
+        "read nom age\n",
+        "echo Tu es $prenom $nom et tu as $age ans, n\\'est-ce pas \\? \n",
+        "read reponse\n",
+        "\n"
+      ]
+    },
+    {
+      "name": "tp5_exo4.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo Je suis le script Shell $0\n",
+        "echo Mes arguments sont $*\n",
+        "echo Le premier argument est $1\n",
+        "echo Le deuxi\u00c3\u00a8me argument est $2\n",
+        "\n"
+      ]
+    }
   ],
   "profile": [
     {

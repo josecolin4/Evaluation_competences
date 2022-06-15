@@ -2,96 +2,31 @@
   "name": "ext_Alexandre.Savalle",
   "session": 2,
   "scripts": [
-    [
-      "Nous sommes le 'date'\n"
-    ],
-    [
-      "Nous sommes le 'date'\n",
-      "Ceci est\n"
-    ],
-    [
-      "Nous sommes le 'date'\n",
-      "Ceci est\n",
-      "une tr\u00c3\u00a8s\n"
-    ],
-    [
-      "Nous sommes le 'date'\n",
-      "Ceci est\n",
-      "une tr\u00c3\u00a8s\n",
-      "longue phrase\n"
-    ],
-    [
-      "Nous sommes le 'date'\n",
-      "Ceci est\n",
-      "une tr\u00c3\u00a8s\n",
-      "longue phrase\n",
-      "Voici une \u00c3\u00a9toile : *\n"
-    ],
-    [
-      "echo Nous sommes le 'date'\n",
-      "echo Ceci est\n",
-      "echo une tr\u00c3\u00a8s\n",
-      "echo longue phrase\n",
-      "echo Voici une \u00c3\u00a9toile : *\n"
-    ],
-    [
-      "echo Nous sommes le `date`\n",
-      "echo Ceci est\n",
-      "echo une tr\u00c3\u00a8s\n",
-      "echo longue phrase\n",
-      "echo Voici une \u00c3\u00a9toile : \"*\"\n"
-    ],
-    [
-      "echo expr $\n"
-    ],
-    [
-      "expr $\n"
-    ],
-    [
-      "expr $ + 1\n"
-    ],
-    [
-      "expr $1 + 1\n"
-    ],
-    [
-      "echo path\n"
-    ],
-    [
-      "echo $path\n"
-    ],
-    [
-      "echo $PATH\n"
-    ],
-    [
-      "echo $PATH + /root\n"
-    ],
-    [
-      "echo $PATH = /root\n"
-    ],
-    [
-      "export PATH=$PATH:/root\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "export PATH=$PATH:$PWD\n",
-      "echo \"export PATH=$PATH:$PWD\">>~/.bashrc\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "export PATH=$PATH:$PWD\n",
-      "echo \"export PATH=$PATH:$PWD\">>~/.bashrc\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "export PATH=$PATH:$PWD\n",
-      "echo \"export PATH=$PATH:$PWD\">>~/.bashrc\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "export PATH=$PATH:$PWD\n",
-      "echo \"export PATH=$PATH:$PWD\">>~/.bashrc\n",
-      "echo $PATH\n"
-    ]
+    {
+      "name": "tp5_exo7.sh",
+      "lines": [
+        "echo Nous sommes le `date`\n",
+        "echo Ceci est\n",
+        "echo une tr\u00c3\u00a8s\n",
+        "echo longue phrase\n",
+        "echo Voici une \u00c3\u00a9toile : \"*\"\n"
+      ]
+    },
+    {
+      "name": "tp5_exo8.sh",
+      "lines": [
+        "expr $1 + 1\n"
+      ]
+    },
+    {
+      "name": "tp5_exo9.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "export PATH=$PATH:$PWD\n",
+        "echo \"export PATH=$PATH:$PWD\">>~/.bashrc\n",
+        "echo $PATH\n"
+      ]
+    }
   ],
   "profile": [
     {

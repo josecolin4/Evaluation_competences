@@ -2,14 +2,13 @@
   "name": "ext_Benjamin.Wattre",
   "session": 4,
   "scripts": [
-    [
-      "echo Vous \u00c3\u00aates sur la machine :  `hostname`\n",
-      "echo Il y a : `wc -l who` utilisateurs connect\u00c3\u00a9s.\n"
-    ],
-    [
-      "echo Vous \u00c3\u00aates sur la machine :  `hostname`\n",
-      "echo Il y a : `who | wc -l` utilisateurs connect\u00c3\u00a9s.\n"
-    ]
+    {
+      "name": "tp5bis_exo4.sh",
+      "lines": [
+        "echo Vous \u00c3\u00aates sur la machine :  `hostname`\n",
+        "echo Il y a : `who | wc -l` utilisateurs connect\u00c3\u00a9s.\n"
+      ]
+    }
   ],
   "profile": [
     {

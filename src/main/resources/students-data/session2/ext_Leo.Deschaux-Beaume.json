@@ -2,88 +2,48 @@
   "name": "ext_Leo.Deschaux-Beaume",
   "session": 2,
   "scripts": [
-    [
-      "Le script $0 poss\u00c3\u00a8de param\u00c3\u00a8tre(s), que voici : \n",
-      "$*\n"
-    ],
-    [
-      "echo Le script $0 poss\u00c3\u00a8de param\u00c3\u00a8tre(s), que voici : \n",
-      "echo $*\n"
-    ],
-    [
-      "echo Le script $0 poss\u00c3\u00a8de param\u00c3\u00a8tres, que voici : \n",
-      "echo $*\n"
-    ],
-    [
-      "F1+F2 >> F3\n"
-    ],
-    [
-      "$1$2 >> F3\n"
-    ],
-    [
-      "$1+$2 >> F3\n"
-    ],
-    [
-      "$1 $2 >> F3\n"
-    ],
-    [
-      "$1 $2 > F3\n"
-    ],
-    [
-      "echo cat $1 $2 >> F3\n"
-    ],
-    [
-      "cat $1 $2 >> F3\n"
-    ],
-    [
-      "echo cat $1 $2 >> F3\n"
-    ],
-    [
-      "echo cat $1 $2 >> $3\n"
-    ],
-    [
-      "cat $1 $2 >> $3\n"
-    ],
-    [
-      "cat $1 $2 >> $3\n"
-    ],
-    [
-      "echo Nous sommes le \\`date\\`\n",
-      "echo Nous sommes le `date`\n",
-      "echo Ceci est\n",
-      "echo une tr\u00c3\u00a8s \n",
-      "echo longue phrase...\n",
-      "echo Voici une \u00c3\u00a9toile : * \n"
-    ],
-    [
-      "echo Nous sommes le \\`date\\`\n",
-      "echo Nous sommes le `date`\n",
-      "echo Ceci est\n",
-      "echo une tr\u00c3\u00a8s \n",
-      "echo longue phrase...\n",
-      "echo Voici une \u00c3\u00a9toile : \\* \n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "\n",
-      "somme=$(($1+1))\n",
-      "\n",
-      "\n",
-      "echo $somme\n"
-    ],
-    [
-      "PATH\n"
-    ],
-    [
-      "$PATH\n"
-    ],
-    [
-      "$PATH\n"
-    ],
-    [
-      "echo 'export PATH=$PATH:/home/user/mes_prog' >> /home/user/.bashrc\n"
-    ]
+    {
+      "name": "tp5_exo5.sh",
+      "lines": [
+        "echo Le script $0 poss\u00c3\u00a8de param\u00c3\u00a8tres, que voici : \n",
+        "echo $*\n"
+      ]
+    },
+    {
+      "name": "tp5_exo7.sh",
+      "lines": [
+        "echo Nous sommes le \\`date\\`\n",
+        "echo Nous sommes le `date`\n",
+        "echo Ceci est\n",
+        "echo une tr\u00c3\u00a8s \n",
+        "echo longue phrase...\n",
+        "echo Voici une \u00c3\u00a9toile : \\* \n"
+      ]
+    },
+    {
+      "name": "tp5_exo6.sh",
+      "lines": [
+        "cat $1 $2 >> $3\n"
+      ]
+    },
+    {
+      "name": "tp5_exo8.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "\n",
+        "\n",
+        "somme=$(($1+1))\n",
+        "\n",
+        "\n",
+        "echo $somme\n"
+      ]
+    },
+    {
+      "name": "tp5_exo9.sh",
+      "lines": [
+        "echo 'export PATH=$PATH:/home/user/mes_prog' >> /home/user/.bashrc\n"
+      ]
+    }
   ],
   "profile": [
     {

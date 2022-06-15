@@ -2,363 +2,48 @@
   "name": "ext_Leo.Dubosc",
   "session": 3,
   "scripts": [
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "expr $1\n",
-      "expr 2\n",
-      "echo $($1/2)\n",
-      "\n",
-      "\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "expr $1\n",
-      "expr 2\n",
-      "echo $(($1/2))\n",
-      "\n",
-      "\n",
-      "\n"
-    ],
-    [
-      "#!bin/bash\n",
-      "expr $1 * 2\n",
-      "echo $(($1 * 2))\n"
-    ],
-    [
-      "#!bin/bash\n",
-      "expr $1 * 2\n",
-      "echo $(($1 * 2))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "expr $1 * 2\n",
-      "echo $(($1 * 2))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "expr $1 *2\n",
-      "echo $(($1 * 2))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "expr $1/*2\n",
-      "echo $(($1 * 2))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "expr $1 /* 2\n",
-      "echo $(($1 * 2))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "expr $1 \\* 2\n",
-      "echo $(($1 * 2))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
-      "read $anaissance\n",
-      "$age=expr date-$anaissance\n",
-      "echo Vous \u00c3\u00aates n\u00c3\u00a9 en $anaissance, vous avez donc $age ans.\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
-      "read $anaissance\n",
-      "$age= expr date-$anaissance\n",
-      "echo Vous \u00c3\u00aates n\u00c3\u00a9 en $anaissance, vous avez donc $age ans.\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
-      "read $anaissance\n",
-      "$age= expr date\\-$anaissance\n",
-      "echo Vous \u00c3\u00aates n\u00c3\u00a9 en $anaissance, vous avez donc $age ans.\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
-      "read $anaissance\n",
-      "$age=expr date\\-$anaissance\n",
-      "echo Vous \u00c3\u00aates n\u00c3\u00a9 en $anaissance, vous avez donc $age ans.\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
-      "read $anaissance\n",
-      "$age=$((date-$anaissance))\n",
-      "echo Vous \u00c3\u00aates n\u00c3\u00a9 en $anaissance, vous avez donc $age ans.\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
-      "read $anaissance\n",
-      "$age=$((date-$anaissance))\n",
-      "echo Vous \u00c3\u00aates n\u00c3\u00a9 en $anaissance, vous avez donc $age ans.\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
-      "read $anaissance\n",
-      "$age=$((date - $anaissance))\n",
-      "echo Vous \u00c3\u00aates n\u00c3\u00a9 en $anaissance, vous avez donc $age ans.\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
-      "read $anaissance\n",
-      "$age=$((date\\-$anaissance))\n",
-      "echo Vous \u00c3\u00aates n\u00c3\u00a9 en $anaissance, vous avez donc $age ans.\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
-      "read $anaissance\n",
-      "$age=$((date -%y \\-$anaissance))\n",
-      "echo Vous \u00c3\u00aates n\u00c3\u00a9 en $anaissance, vous avez donc $age ans.\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
-      "read $anaissance\n",
-      "$age=$((date -%y -$anaissance))\n",
-      "echo Vous \u00c3\u00aates n\u00c3\u00a9 en $anaissance, vous avez donc $age ans.\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
-      "read $anaissance\n",
-      "date=$(date +%y)\n",
-      "$age=$((date - $anaissance))\n",
-      "echo Vous \u00c3\u00aates n\u00c3\u00a9 en $anaissance, vous avez donc $age ans.\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
-      "read $anaissance\n",
-      "date=$(date +%y)\n",
-      "$age=$((date +%Y - $anaissance))\n",
-      "echo Vous \u00c3\u00aates n\u00c3\u00a9 en $anaissance, vous avez donc $age ans.\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
-      "read $anaissance\n",
-      "date=$(date +%y)\n",
-      "$age=$((`date +%Y`-anaissance))\n",
-      "echo Vous \u00c3\u00aates n\u00c3\u00a9 en $anaissance, vous avez donc $age ans.\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
-      "read $anaissance\n",
-      "date=$(date +%y)\n",
-      "$age=$((`date +%Y`- $anaissance))\n",
-      "echo Vous \u00c3\u00aates n\u00c3\u00a9 en $anaissance, vous avez donc $age ans.\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
-      "read $anaissance\n",
-      "date=$(date +%y)\n",
-      "$age=$((`date +%Y` - $anaissance))\n",
-      "echo Vous \u00c3\u00aates n\u00c3\u00a9 en $anaissance, vous avez donc $age ans.\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
-      "read $anaissance\n",
-      "date=$(date +%y)\n",
-      "$age=$((`date +%Y`-$anaissance))\n",
-      "echo Vous \u00c3\u00aates n\u00c3\u00a9 en $anaissance, vous avez donc $age ans.\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
-      "read $anaissance\n",
-      "date=$(date +%y)\n",
-      "$age=$((`date +%Y`-$anaissance))\n",
-      "echo Vous \u00c3\u00aates n\u00c3\u00a9 en $anaissance, vous avez donc $age ans.\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
-      "read $anaissance\n",
-      "date=$(date +%y)\n",
-      "$age=$((`date +%Y` - $anaissance))\n",
-      "echo Vous \u00c3\u00aates n\u00c3\u00a9 en $anaissance, vous avez donc $age ans.\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
-      "read $anaissance\n",
-      "$age=$((`date +%Y` - $anaissance))\n",
-      "echo Vous \u00c3\u00aates n\u00c3\u00a9 en $anaissance, vous avez donc $age ans.\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
-      "read $anaissance\n",
-      "$age=$((`date+%Y`-$anaissance))\n",
-      "echo Vous \u00c3\u00aates n\u00c3\u00a9 en $anaissance, vous avez donc $age ans.\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
-      "read $anaissance\n",
-      "$date=(date+%Y)\n",
-      "$age=$(($date - $anaissance))\n",
-      "echo Vous \u00c3\u00aates n\u00c3\u00a9 en $anaissance, vous avez donc $age ans.\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
-      "read $anaissance\n",
-      "$date=$(date+%Y)\n",
-      "$age=$(($date - $anaissance))\n",
-      "echo Vous \u00c3\u00aates n\u00c3\u00a9 en $anaissance, vous avez donc $age ans.\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
-      "read $anaissance\n",
-      "$date=$(date %Y)\n",
-      "$age=$(($date - $anaissance))\n",
-      "echo Vous \u00c3\u00aates n\u00c3\u00a9 en $anaissance, vous avez donc $age ans.\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
-      "read $anaissance\n",
-      "$date=$(date%Y)\n",
-      "$age=$(($date - $anaissance))\n",
-      "echo Vous \u00c3\u00aates n\u00c3\u00a9 en $anaissance, vous avez donc $age ans.\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
-      "read $anaissance\n",
-      "$date=$(date-%Y)\n",
-      "$age=$(($date - $anaissance))\n",
-      "echo Vous \u00c3\u00aates n\u00c3\u00a9 en $anaissance, vous avez donc $age ans.\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
-      "read $anaissance\n",
-      "$date=$(date +%Y)\n",
-      "$age=$(($date - $anaissance))\n",
-      "echo Vous \u00c3\u00aates n\u00c3\u00a9 en $anaissance, vous avez donc $age ans.\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
-      "read $anaissance\n",
-      "$age=$((`date +%Y` - $anaissance))\n",
-      "echo Vous \u00c3\u00aates n\u00c3\u00a9 en $anaissance, vous avez donc $age ans.\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
-      "read $anaissance\n",
-      "$age=$((`date +%Y` + $anaissance))\n",
-      "echo Vous \u00c3\u00aates n\u00c3\u00a9 en $anaissance, vous avez donc $age ans.\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
-      "read $anaissance\n",
-      "$age=$((`date +%Y`+$anaissance))\n",
-      "echo Vous \u00c3\u00aates n\u00c3\u00a9 en $anaissance, vous avez donc $age ans.\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
-      "read $anaissance\n",
-      "let $age=$((`date +%Y`+$anaissance))\n",
-      "echo Vous \u00c3\u00aates n\u00c3\u00a9 en $anaissance, vous avez donc $age ans.\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
-      "read $anaissance\n",
-      "let $age=$((`date +%Y` + $anaissance))\n",
-      "echo Vous \u00c3\u00aates n\u00c3\u00a9 en $anaissance, vous avez donc $age ans.\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
-      "read $anaissance\n",
-      "let $age=$((`date +%Y` - $anaissance))\n",
-      "echo Vous \u00c3\u00aates n\u00c3\u00a9 en $anaissance, vous avez donc $age ans.\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
-      "read $anaissance\n",
-      "let $age=$((`date +%Y` - $anaissance))\n",
-      "echo Vous \u00c3\u00aates n\u00c3\u00a9 en $anaissance, vous avez donc $age ans.\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
-      "read $anaissance\n",
-      "let $age=$((`date +%Y` \\- $anaissance))\n",
-      "echo Vous \u00c3\u00aates n\u00c3\u00a9 en $anaissance, vous avez donc $age ans.\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "$qui=(`who`)\n",
-      "$name=$(hostname)\n",
-      "echo les utilisateurs connect\u00c3\u00a9es a la machine $name sont : $qui \n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "$name=$(hostname)\n",
-      "echo les utilisateurs connect\u00c3\u00a9es a la machine $name sont : `who` \n"
-    ]
+    {
+      "name": "tp5bis_exo1.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "\n",
+        "expr $1\n",
+        "expr 2\n",
+        "echo $(($1/2))\n",
+        "\n",
+        "\n",
+        "\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo2.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "expr $1 \\* 2\n",
+        "echo $(($1 * 2))\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo3.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "\n",
+        "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
+        "read $anaissance\n",
+        "let $age=$((`date +%Y` \\- $anaissance))\n",
+        "echo Vous \u00c3\u00aates n\u00c3\u00a9 en $anaissance, vous avez donc $age ans.\n",
+        "\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo4.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "\n",
+        "$name=$(hostname)\n",
+        "echo les utilisateurs connect\u00c3\u00a9es a la machine $name sont : `who` \n"
+      ]
+    }
   ],
   "profile": [
     {

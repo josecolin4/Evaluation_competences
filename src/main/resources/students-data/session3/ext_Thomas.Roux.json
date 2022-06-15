@@ -2,218 +2,67 @@
   "name": "ext_Thomas.Roux",
   "session": 3,
   "scripts": [
-    [
-      "echo \"Entrez votre ann\u00c3\u00a9e de naissance format yyyy\"\n",
-      "read year\n",
-      "echo \"Vous avez : \";\n",
-      "expr(date -s +\"%Y\" - $year)\n"
-    ],
-    [
-      "echo \"Entrez votre ann\u00c3\u00a9e de naissance format yyyy\"\n",
-      "read year\n",
-      "echo \"Vous avez : \";\n",
-      "expr(date +\"%Y\" - $year)\n"
-    ],
-    [
-      "echo \"Entrez votre ann\u00c3\u00a9e de naissance format yyyy\"\n",
-      "read year\n",
-      "echo \"Vous avez : \";\n",
-      "\n",
-      "expr date +\"%Y\" - $year\n"
-    ],
-    [
-      "echo \"Entrez votre ann\u00c3\u00a9e de naissance format yyyy\"\n",
-      "read year\n",
-      "echo \"Vous avez : \";\n",
-      "\n",
-      "expr `date +\"%Y\"` - $year\n",
-      "$(( `date +\"%Y` - $year ))\n"
-    ],
-    [
-      "echo \"Entrez votre ann\u00c3\u00a9e de naissance format yyyy\"\n",
-      "read year\n",
-      "echo \"Vous avez : \";\n",
-      "\n",
-      "expr `date +\"%Y\"` - $year\n",
-      "$(( `date +\"%Y\"` - $year ))\n"
-    ],
-    [
-      "echo \"Entrez votre ann\u00c3\u00a9e de naissance format yyyy\"\n",
-      "read year\n",
-      "$date=`date +\"%Y\"`\n",
-      "echo \"Vous avez : \";\n",
-      "\n",
-      "expr `date +\"%Y\"` - $year\n",
-      "$(( $date - $year ))\n"
-    ],
-    [
-      "echo \"Entrez votre ann\u00c3\u00a9e de naissance format yyyy\"\n",
-      "read year\n",
-      "$date=\"`date +\"%Y\"`\"\n",
-      "\n",
-      "echo \"Vous avez : \";\n",
-      "\n",
-      "expr `date +\"%Y\"` - $year\n",
-      "$(( $date - $year ))\n"
-    ],
-    [
-      "echo \"Entrez votre ann\u00c3\u00a9e de naissance format yyyy\"\n",
-      "read year\n",
-      "$date=`date +\"%Y\"`\n",
-      "\n",
-      "echo \"Vous avez : \";\n",
-      "expr `date +\"%Y\"` - $year\n",
-      "$(( $date - $year ))\n"
-    ],
-    [
-      "echo \"Entrez votre ann\u00c3\u00a9e de naissance format yyyy\"\n",
-      "read year\n",
-      "date=`date +\"%Y\"`\n",
-      "\n",
-      "echo \"Vous avez : \";\n",
-      "expr `date +\"%Y\"` - $year\n",
-      "$(( $date - $year ))\n"
-    ],
-    [
-      "echo \"Entrez votre ann\u00c3\u00a9e de naissance format yyyy\"\n",
-      "read year\n",
-      "date=`date +\"%Y\"`\n",
-      "\n",
-      "echo \"Vous avez : \";\n",
-      "expr `date +\"%Y\"` - $year\n",
-      "echo $(( $date - $year ))\n"
-    ],
-    [
-      "echo \"Entrez votre ann\u00c3\u00a9e de naissance format yyyy\"\n",
-      "read year\n",
-      "date=`date +\"%Y\"`\n",
-      "\n",
-      "echo \"Vous avez : \";\n",
-      "expr `date +\"%Y\"` - $year\n",
-      "echo $(( $date - $year ))\n"
-    ],
-    [
-      "whoBack=`who | wc -l`\n",
-      "hostnameBack=`hostname`\n",
-      "\n",
-      "echo \"Il y a $whoBack utilisateurs sur la machine $hostnameBack\"\n"
-    ],
-    [
-      "whoBack=`who | wc -l`\n",
-      "hostnameBack=`hostname`\n",
-      "\n",
-      "whoSub=$(who | wc -l)\n",
-      "hostnameSub=$(hostname)\n",
-      "\n",
-      "echo \"Il y a $whoBack utilisateurs sur la machine $hostnameBack.\"\n",
-      "echo \"Il y a $whoSub utilisateurs sur la machine $hostnameSub.\"\n"
-    ],
-    [
-      "whoBack=`who | wc -l`\n",
-      "hostnameBack=`hostname`\n",
-      "\n",
-      "whoSub=$(who | wc -l)\n",
-      "hostnameSub=$(hostname)\n",
-      "\n",
-      "echo \"Il y a $whoBack utilisateurs sur la machine $hostnameBack.\"\n",
-      "echo \"Il y a $whoSub utilisateurs sur la machine $hostnameSub.\"\n"
-    ],
-    [
-      "sizeSub=$(du -h $1)\n",
-      "echo \"Le fichier $1 p\u00c3\u00a8se $sizeSub.\"\n"
-    ],
-    [
-      "sizeSub=$(du -h $1)\n",
-      "echo \"Le fichier $1 p\u00c3\u00a8se $sizeSub.\"\n"
-    ],
-    [
-      "set -- $(ls -l $1)\n",
-      "echo \"Le fichier $1 p\u00c3\u00a8se $sizeSub.\"\n"
-    ],
-    [
-      "set -- $(ls -l $1)\n",
-      "echo \"Le fichier p\u00c3\u00a8se $5\"\n"
-    ],
-    [
-      "set -- $(ls -l $1)\n",
-      "echo \"Le fichier p\u00c3\u00a8se $5.\"\n"
-    ],
-    [
-      "if test -e $1 = True\n",
-      "\techo \"Le fichier $1 existe.\"\n",
-      "then\n",
-      "\techo \"Le fichier $1 n'existe pas.\"\n",
-      "fi\n",
-      "\n"
-    ],
-    [
-      "if $(test -e $1) = True\n",
-      "\techo \"Le fichier $1 existe.\"\n",
-      "then\n",
-      "\techo \"Le fichier $1 n'existe pas.\"\n",
-      "fi\n",
-      "\n"
-    ],
-    [
-      "if $1 => 5 && $1 =< 10\n",
-      "\techo \"OK\"\n",
-      "then\n",
-      "\techo \"PAS OK\"\n",
-      "fi\n",
-      "\n"
-    ],
-    [
-      "if $1 > 4 && $1 < 11\n",
-      "\techo \"OK\"\n",
-      "then\n",
-      "\techo \"PAS OK\"\n",
-      "fi\n",
-      "\n"
-    ],
-    [
-      "if ($1 > 4 && $1 < 11)\n",
-      "\techo \"OK\"\n",
-      "then\n",
-      "\techo \"PAS OK\"\n",
-      "fi\n",
-      "\n"
-    ],
-    [
-      "expr $1 / 2\n"
-    ],
-    [
-      "expr $1 / 2\n",
-      "echo $(( $1 + 1 ))\n"
-    ],
-    [
-      "expr $1 / 2\n",
-      "echo $(( $1 / 2 ))\n"
-    ],
-    [
-      "expr $1 / 2\n",
-      "echo $(( $1 / 2 ))\n",
-      "\n",
-      "# AFFICHE UN RESULTAT PAIR DANS TOUS LES CAS.\n"
-    ],
-    [
-      "ecbo $(( $1 * 2)\n"
-    ],
-    [
-      "expr $1 * 2\n",
-      "echo $(( $1 * 2)\n"
-    ],
-    [
-      "expr $1 * 2\n",
-      "echo $(( $1 * 2))\n"
-    ],
-    [
-      "expr $1 \\* 2\n",
-      "echo $(( $1 * 2))\n"
-    ],
-    [
-      "echo \"Entrez votre date de naissance format jj/mm/yyyy\"\n",
-      "\n"
-    ]
+    {
+      "name": "tp5bis_exo3.sh",
+      "lines": [
+        "echo \"Entrez votre date de naissance format jj/mm/yyyy\"\n",
+        "\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo4.sh",
+      "lines": [
+        "whoBack=`who | wc -l`\n",
+        "hostnameBack=`hostname`\n",
+        "\n",
+        "whoSub=$(who | wc -l)\n",
+        "hostnameSub=$(hostname)\n",
+        "\n",
+        "echo \"Il y a $whoBack utilisateurs sur la machine $hostnameBack.\"\n",
+        "echo \"Il y a $whoSub utilisateurs sur la machine $hostnameSub.\"\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo5.sh",
+      "lines": [
+        "set -- $(ls -l $1)\n",
+        "echo \"Le fichier p\u00c3\u00a8se $5.\"\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo5-V2.sh",
+      "lines": [
+        "sizeSub=$(du -h $1)\n",
+        "echo \"Le fichier $1 p\u00c3\u00a8se $sizeSub.\"\n"
+      ]
+    },
+    {
+      "name": "tp6_exo1.sh",
+      "lines": [
+        "if ($1 > 4 && $1 < 11)\n",
+        "\techo \"OK\"\n",
+        "then\n",
+        "\techo \"PAS OK\"\n",
+        "fi\n",
+        "\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo1.sh",
+      "lines": [
+        "expr $1 / 2\n",
+        "echo $(( $1 / 2 ))\n",
+        "\n",
+        "# AFFICHE UN RESULTAT PAIR DANS TOUS LES CAS.\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo2.sh",
+      "lines": [
+        "expr $1 \\* 2\n",
+        "echo $(( $1 * 2))\n"
+      ]
+    }
   ],
   "profile": [
     {

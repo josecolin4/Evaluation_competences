@@ -2,104 +2,45 @@
   "name": "ext_Guillaume.Bertrand",
   "session": 2,
   "scripts": [
-    [
-      "#!bin/bash\n"
-    ],
-    [
-      "#!bin/bash\n",
-      "echo Je suis le script shell $0\n"
-    ],
-    [
-      "#!bin/bash\n",
-      "echo Je suis le script shell $0\n",
-      "echo Mes arguments sont $*\n"
-    ],
-    [
-      "#!bin/bash\n",
-      "echo Je suis le script shell $0\n",
-      "echo Mes arguments sont $*\n",
-      "echo Le premier argument est $1\n"
-    ],
-    [
-      "#!bin/bash\n",
-      "echo Cher utilisateur quel est ton prenom \\?\n",
-      "read prenom\n",
-      "echo Ravi de te connaitre, $prenom\n",
-      "echo Quel est ton nom et ton age \\?\n",
-      "read nom age\n",
-      "echo Tu es $prenom $nom et tu as $age ans, n\\'est-ce pas \\?\n",
-      "read reponse\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Cher utilisateur quel est ton prenom \\?\n",
-      "read prenom\n",
-      "echo Ravi de te connaitre, $prenom\n",
-      "echo Quel est ton nom et ton age \\?\n",
-      "read nom age\n",
-      "echo Tu es $prenom $nom et tu as $age ans, n\\'est-ce pas \\?\n",
-      "read reponse\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Je suis le script shell $0\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Je suis le script shell $0\n",
-      "echo Mes arguments sont $*\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Je suis le script shell $0\n",
-      "echo Mes arguments sont $*\n",
-      "echo Le premier argument est $1\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Je suis le script shell $0\n",
-      "echo Mes arguments sont $*\n",
-      "echo Le premier argument est $1\n",
-      "echo Le deuxieme argument est $2\n"
-    ],
-    [
-      "#!/bin/bash\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Le script $0 possede $3 parametre, que voici:\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Le script $0 possede $3 parametre, que voici:\n",
-      "$1 $2 $3\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Le script $0 possede $3 parametre, que voici:\n",
-      "echo $1 $2 $3\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Le script $0 possede $* parametre, que voici:\n",
-      "echo $1 $2 $3\n"
-    ],
-    [
-      "#!/bin/bash\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo $F1 $F2\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo $1 $2\n"
-    ]
+    {
+      "name": "tp5_exo3.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo Cher utilisateur quel est ton prenom \\?\n",
+        "read prenom\n",
+        "echo Ravi de te connaitre, $prenom\n",
+        "echo Quel est ton nom et ton age \\?\n",
+        "read nom age\n",
+        "echo Tu es $prenom $nom et tu as $age ans, n\\'est-ce pas \\?\n",
+        "read reponse\n",
+        "\n"
+      ]
+    },
+    {
+      "name": "tp5_exo4.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo Je suis le script shell $0\n",
+        "echo Mes arguments sont $*\n",
+        "echo Le premier argument est $1\n",
+        "echo Le deuxieme argument est $2\n"
+      ]
+    },
+    {
+      "name": "tp5_exo5.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo Le script $0 possede $* parametre, que voici:\n",
+        "echo $1 $2 $3\n"
+      ]
+    },
+    {
+      "name": "tp5_exo6.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo $1 $2\n"
+      ]
+    }
   ],
   "profile": [
     {

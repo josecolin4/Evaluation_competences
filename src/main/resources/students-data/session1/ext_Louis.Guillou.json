@@ -2,155 +2,78 @@
   "name": "ext_Louis.Guillou",
   "session": 1,
   "scripts": [
-    [
-      "#!/bin/bash\n",
-      "echo cours\n",
-      "cours=unix\n",
-      "echo=unix\n",
-      "echo $cours\n",
-      "echo je suis au cours $cours\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "Mon nom de login est : $USER\n",
-      "Mon shell est : $shell\n",
-      "Les variables du Shell sont :\n",
-      "set\n",
-      "celles d'environnement sont :\n",
-      "printenv\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "Mon nom de login est : $USER\n",
-      "Mon shell est : $shell\n",
-      "Les variables du Shell sont :\n",
-      "set\n",
-      "celles d'environnement sont :\n",
-      "env\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "Mon nom de login est : $USER\n",
-      "Mon shell est : $shell\n",
-      "Les variables du Shell sont :\n",
-      "set\n",
-      "Celles d'environnement sont :\n",
-      "env\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "Mon nom de login est : $USER\n",
-      "Mon shell est : $shell\n",
-      "Les variables du Shell sont :\n",
-      "set\n",
-      "Celles d environnement sont :\n",
-      "env\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Mon nom de login est : $USER\n",
-      "echo Mon shell est : $shell\n",
-      "echo Les variables du Shell sont :\n",
-      "set\n",
-      "echo Celles d environnement sont :\n",
-      "env\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Cher utilisateur quel est ton prenom \\?\n",
-      "read prenom\n",
-      "echo Ravi de te connaitre, $prenom\n",
-      "echo quel est ton nom et ton age \\?\n",
-      "read nom age\n",
-      "echo Tu est $prenom $nom et tu as $age ans, n \\'estce pas \\?\n",
-      "read reponse\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Je sui le script Shell $0\n",
-      "echo Mes arguments sont $*\n",
-      "echo Le premier argument est $1\n",
-      "echo le dexieme argument est $2\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Le script possede parametres, que voici : \n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Le script $0 possede $# parametres, que voici :$*\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "cat F1.txt F2.txt >> F3.txt\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "cat F1 F2 >> F3\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Nous sommes me 'date'\n",
-      "echo Nous sommes me Mon Nov 16 15:20:46 CET 2020\n",
-      "echo Ceci est\n",
-      "echo une tres\n",
-      "echo longue phrase...\n",
-      "echo \"Voici une etoile: *\"\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Nous sommes le 'date'\n",
-      "echo Nous sommes le Mon Nov 16 15:20:46 CET 2020\n",
-      "echo Ceci est\n",
-      "echo une tres\n",
-      "echo longue phrase...\n",
-      "echo \"Voici une etoile: *\"\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Nous sommes le $(date)\n",
-      "echo Nous sommes le Mon Nov 16 15:20:46 CET 2020\n",
-      "echo Ceci est\n",
-      "echo une tres\n",
-      "echo longue phrase...\n",
-      "echo \"Voici une etoile: *\"\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo \"Nous sommes le $(date)\"\n",
-      "echo Nous sommes le Mon Nov 16 15:20:46 CET 2020\n",
-      "echo Ceci est\n",
-      "echo une tres\n",
-      "echo longue phrase...\n",
-      "echo \"Voici une etoile: *\"\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Nous sommes le \\$(date)\\\n",
-      "echo Nous sommes le Mon Nov 16 15:20:46 CET 2020\n",
-      "echo Ceci est\n",
-      "echo une tres\n",
-      "echo longue phrase...\n",
-      "echo \"Voici une etoile: *\"\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Nous sommes le \\$(date)\n",
-      "echo Nous sommes le Mon Nov 16 15:20:46 CET 2020\n",
-      "echo Ceci est\n",
-      "echo une tres\n",
-      "echo longue phrase...\n",
-      "echo \"Voici une etoile: *\"\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Nous sommes le \\$\\(date\\)\n",
-      "echo Nous sommes le Mon Nov 16 15:20:46 CET 2020\n",
-      "echo Ceci est\n",
-      "echo une tres\n",
-      "echo longue phrase...\n",
-      "echo \"Voici une etoile: *\"\n"
-    ]
+    {
+      "name": "tp5_exo1.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo cours\n",
+        "cours=unix\n",
+        "echo=unix\n",
+        "echo $cours\n",
+        "echo je suis au cours $cours\n"
+      ]
+    },
+    {
+      "name": "tp5_exo2.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo Mon nom de login est : $USER\n",
+        "echo Mon shell est : $shell\n",
+        "echo Les variables du Shell sont :\n",
+        "set\n",
+        "echo Celles d environnement sont :\n",
+        "env\n"
+      ]
+    },
+    {
+      "name": "tp5_exo5.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo Cher utilisateur quel est ton prenom \\?\n",
+        "read prenom\n",
+        "echo Ravi de te connaitre, $prenom\n",
+        "echo quel est ton nom et ton age \\?\n",
+        "read nom age\n",
+        "echo Tu est $prenom $nom et tu as $age ans, n \\'estce pas \\?\n",
+        "read reponse\n"
+      ]
+    },
+    {
+      "name": "tp5_exo6.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo Je sui le script Shell $0\n",
+        "echo Mes arguments sont $*\n",
+        "echo Le premier argument est $1\n",
+        "echo le dexieme argument est $2\n"
+      ]
+    },
+    {
+      "name": "tp5_exo7.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo Le script $0 possede $# parametres, que voici :$*\n"
+      ]
+    },
+    {
+      "name": "tp5_exo8.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "cat F1 F2 >> F3\n"
+      ]
+    },
+    {
+      "name": "tp6_exo9.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo Nous sommes le \\$\\(date\\)\n",
+        "echo Nous sommes le Mon Nov 16 15:20:46 CET 2020\n",
+        "echo Ceci est\n",
+        "echo une tres\n",
+        "echo longue phrase...\n",
+        "echo \"Voici une etoile: *\"\n"
+      ]
+    }
   ],
   "profile": [
     {

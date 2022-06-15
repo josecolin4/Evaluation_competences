@@ -2,106 +2,39 @@
   "name": "ext_Enzo.Slamnia",
   "session": 2,
   "scripts": [
-    [
-      "#!/bin/bash\n",
-      "echo \n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "cat F1 F2>F3\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo \"Nous sommes le `date`\"\n",
-      "echo Nous sommes le `date`\n",
-      "echo Ceci est\n",
-      "echo une tr\u00c3\u00a8s\n",
-      "echo longue phrase...\n",
-      "echo Voici une \u00c3\u00a9toile : *\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Nous sommes le \"`\"date\"`\"\n",
-      "echo Nous sommes le `date`\n",
-      "echo Ceci est\n",
-      "echo une tr\u00c3\u00a8s\n",
-      "echo longue phrase...\n",
-      "echo Voici une \u00c3\u00a9toile : \"*\"\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Nous sommes le \\`date\\`\n",
-      "echo Nous sommes le `date`\n",
-      "echo Ceci est\n",
-      "echo une tr\u00c3\u00a8s\n",
-      "echo longue phrase...\n",
-      "echo Voici une \u00c3\u00a9toile : \"*\"\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo $*+1\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "$*+1\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "resultat=$*+1\n",
-      "echo resultat\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "resultat=$*+1\n",
-      "echo $resultat\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "resultat=expr $*+1\n",
-      "echo $resultat\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "expr resultat=$*+1\n",
-      "echo $resultat\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "expr $* + 1\n",
-      "echo $*\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "expr $* + 1\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo /root >> PATH\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo :/root >>PATH\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo \":/root\">>PATH\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo \":/root\">>$PATH\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo \":/root\">>PATH\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "PATH=$PATH:/root\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "PATH=.:$PATH\n"
-    ]
+    {
+      "name": "tp5_exo6.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "cat F1 F2>F3\n"
+      ]
+    },
+    {
+      "name": "tp5_exo7.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo Nous sommes le \\`date\\`\n",
+        "echo Nous sommes le `date`\n",
+        "echo Ceci est\n",
+        "echo une tr\u00c3\u00a8s\n",
+        "echo longue phrase...\n",
+        "echo Voici une \u00c3\u00a9toile : \"*\"\n"
+      ]
+    },
+    {
+      "name": "tp5_exo8.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "expr $* + 1\n"
+      ]
+    },
+    {
+      "name": "tp5_exo9.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "PATH=.:$PATH\n"
+      ]
+    }
   ],
   "profile": [
     {

@@ -2,108 +2,70 @@
   "name": "ext_Naim.Etouati",
   "session": 3,
   "scripts": [
-    [
-      "echo 'export PATH=$PATH:/home/user/mes_prog' >> /home/user/\n"
-    ],
-    [
-      "echo 'export PATH=$PATH:/home/user/' >> /home/user/\n"
-    ],
-    [
-      "echo 'export PATH=$PATH:/' >> /home/user/\n"
-    ],
-    [
-      "echo 'export PATH=$PATH:/home/user/' >> /home/user/\n"
-    ],
-    [
-      "if [ $1 -gt  5 ] && [ $1 -lt 10 ]\n",
-      "\tthen\n",
-      "echo \"La valeur est comprise dedans\";\n",
-      "\telse\n",
-      "echo \"La valeur n'est pas comprise dedans\";\n"
-    ],
-    [
-      "if [ $1 -gt  5 ] && [ $1 -lt 10 ]\n",
-      "\tthen\n",
-      "echo \"La valeur est comprise dedans\";\n",
-      "\telse\n",
-      "echo \"La valeur n'est pas comprise dedans\";\n",
-      "fi\n"
-    ],
-    [
-      "if test -r $1 && test -w $1 then\n",
-      "echo \"Oui bg il existe et on a l'acces en lecture et ecriture\";\n",
-      "else\n",
-      "echo \"Non decale tu peux pas\";\n",
-      "fi \n"
-    ],
-    [
-      "if test -r $1 && test -w $1 then\n",
-      "\techo \"Oui bg il existe et on a l'acces en lecture et ecriture\";\t\n",
-      "else\n",
-      "\techo \"Non decale tu peux pas\";\n",
-      "fi\n"
-    ],
-    [
-      "if test -r $1 && test -w $1\n",
-      "then\n",
-      "\techo \"Oui bg il existe et on a l'acces en lecture et ecriture\";\t\n",
-      "else\n",
-      "\techo \"Non decale tu peux pas\";\n",
-      "fi\n"
-    ],
-    [
-      "rm Fact.txt\n",
-      "if [ $# -eq 0 ]\n",
-      "then\n",
-      "\techo \"Aucun parametre\"\n",
-      "elif [ $# -eq 1 ]\n",
-      "then \n",
-      "\techo \"Un seul parametre donc pas de concatenation\"\n",
-      "else\n",
-      "\techo \"Souhaitez-vous concatener ces fichiers?\"\n",
-      "\tread reponse\n",
-      "\tif [\"$reponse\" = \"oui\" ]\n",
-      "\tthen\n",
-      "\t\techo \"concatenation\"\n",
-      "\t\tfor file in $*\n",
-      "\t\tdo\n",
-      "\t\t\tcat $file >> Fcat.txt\n",
-      "\t\tdone\n",
-      "\telse\n",
-      "\t\techo\"Bye Bye\"\n",
-      "\tfi\n",
-      "fi \n"
-    ],
-    [
-      "rm Fact.txt\n",
-      "if [ $# -eq 0 ]\n",
-      "then\n",
-      "\techo \"Aucun parametre\"\n",
-      "elif [ $# -eq 1 ]\n",
-      "then \n",
-      "\techo \"Un seul parametre donc pas de concatenation\"\n",
-      "else\n",
-      "\techo \"Souhaitez-vous concatener ces fichiers?\"\n",
-      "\tread reponse\n",
-      "\tif [ \"$reponse\" = \"oui\" ]\n",
-      "\tthen\n",
-      "\t\techo \"concatenation\"\n",
-      "\t\tfor file in $*\n",
-      "\t\tdo\n",
-      "\t\t\tcat $file >> Fcat.txt\n",
-      "\t\tdone\n",
-      "\telse\n",
-      "\t\techo \"Bye Bye\"\n",
-      "\tfi\n",
-      "fi \n"
-    ],
-    [
-      "liste_commandes=\"dte who pwd ls\"\n",
-      "for cmd in $liste_commandes\n",
-      "do\n",
-      "\techo `$cmd`\n",
-      "done\n"
-    ]
+    {
+      "name": "tp5_exo9.sh",
+      "lines": [
+        "echo 'export PATH=$PATH:/home/user/' >> /home/user/\n"
+      ]
+    },
+    {
+      "name": "tp6_exo1.sh",
+      "lines": [
+        "if [ $1 -gt  5 ] && [ $1 -lt 10 ]\n",
+        "\tthen\n",
+        "echo \"La valeur est comprise dedans\";\n",
+        "\telse\n",
+        "echo \"La valeur n'est pas comprise dedans\";\n",
+        "fi\n"
+      ]
+    },
+    {
+      "name": "tp6_exo2.sh",
+      "lines": [
+        "if test -r $1 && test -w $1\n",
+        "then\n",
+        "\techo \"Oui bg il existe et on a l'acces en lecture et ecriture\";\t\n",
+        "else\n",
+        "\techo \"Non decale tu peux pas\";\n",
+        "fi\n"
+      ]
+    },
+    {
+      "name": "tp6_exo3.sh",
+      "lines": [
+        "rm Fact.txt\n",
+        "if [ $# -eq 0 ]\n",
+        "then\n",
+        "\techo \"Aucun parametre\"\n",
+        "elif [ $# -eq 1 ]\n",
+        "then \n",
+        "\techo \"Un seul parametre donc pas de concatenation\"\n",
+        "else\n",
+        "\techo \"Souhaitez-vous concatener ces fichiers?\"\n",
+        "\tread reponse\n",
+        "\tif [ \"$reponse\" = \"oui\" ]\n",
+        "\tthen\n",
+        "\t\techo \"concatenation\"\n",
+        "\t\tfor file in $*\n",
+        "\t\tdo\n",
+        "\t\t\tcat $file >> Fcat.txt\n",
+        "\t\tdone\n",
+        "\telse\n",
+        "\t\techo \"Bye Bye\"\n",
+        "\tfi\n",
+        "fi \n"
+      ]
+    },
+    {
+      "name": "tp6exo4.sh",
+      "lines": [
+        "liste_commandes=\"dte who pwd ls\"\n",
+        "for cmd in $liste_commandes\n",
+        "do\n",
+        "\techo `$cmd`\n",
+        "done\n"
+      ]
+    }
   ],
   "profile": [
     {

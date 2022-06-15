@@ -2,78 +2,68 @@
   "name": "ext_Najla.Delhem",
   "session": 5,
   "scripts": [
-    [
-      "#!/bin/bash\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "for a in 1 2  3\n",
-      "do\n",
-      "echo argument $a = $b\n",
-      "done\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "if test $1 -eq 5 -& test $1 -lt 10 then\n",
-      "\n",
-      "echo 'la valeur est comprise entre 5 et 10'\n",
-      "\n",
-      "else\n",
-      "\n",
-      "echo 'la valeur n est pas comprise entre 5 et 10\n",
-      "\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "for a in 1 2  3\n",
-      "do\n",
-      "echo argument 1 = $arg, argument 2 = $arg, argument 3 = $arg, il y a $# argume$\n",
-      "done\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "for a in $1 $2  $3\n",
-      "do\n",
-      "echo argument 1 = $arg, argument 2 = $arg, argument 3 = $arg, il y a $# argume$\n",
-      "done\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "for liste_commande in  date who pwd ls\n",
-      "do \n",
-      "\t$liste_commande\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "if test -e $1 -a -e $2\n",
-      "\n",
-      "then\n",
-      "\n",
-      "\techo les fichiers existe\n",
-      "\techo Voulez\\-vous concat\\\u00c3\u00a9ner les fichiers \\? OUI pour valider read reponse\n",
-      "\n",
-      "\tif test $reponse = OUI\n",
-      "\tthen\n",
-      "\t\tcat $1 $2 > Fic\n",
-      "\t\tcat Fic\n",
-      "\tfi\n",
-      "\n",
-      "else\n",
-      "\n",
-      "\techo le fichier existe pas\n",
-      "fi\n"
-    ]
+    {
+      "name": "tp6-exo1.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "\n",
+        "if test $1 -eq 5 -& test $1 -lt 10 then\n",
+        "\n",
+        "echo 'la valeur est comprise entre 5 et 10'\n",
+        "\n",
+        "else\n",
+        "\n",
+        "echo 'la valeur n est pas comprise entre 5 et 10\n",
+        "\n",
+        "fi\n"
+      ]
+    },
+    {
+      "name": "tp6_exo5.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "\n",
+        "for a in $1 $2  $3\n",
+        "do\n",
+        "echo argument 1 = $arg, argument 2 = $arg, argument 3 = $arg, il y a $# argume$\n",
+        "done\n",
+        "\n"
+      ]
+    },
+    {
+      "name": "tp6_exo4.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "for liste_commande in  date who pwd ls\n",
+        "do \n",
+        "\t$liste_commande\n",
+        "done\n"
+      ]
+    },
+    {
+      "name": "tp6_exo3.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "\n",
+        "if test -e $1 -a -e $2\n",
+        "\n",
+        "then\n",
+        "\n",
+        "\techo les fichiers existe\n",
+        "\techo Voulez\\-vous concat\\\u00c3\u00a9ner les fichiers \\? OUI pour valider read reponse\n",
+        "\n",
+        "\tif test $reponse = OUI\n",
+        "\tthen\n",
+        "\t\tcat $1 $2 > Fic\n",
+        "\t\tcat Fic\n",
+        "\tfi\n",
+        "\n",
+        "else\n",
+        "\n",
+        "\techo le fichier existe pas\n",
+        "fi\n"
+      ]
+    }
   ],
   "commands": [
     {

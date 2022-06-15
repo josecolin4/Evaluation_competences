@@ -2,76 +2,26 @@
   "name": "ext_Guillaume.Bertrand",
   "session": 1,
   "scripts": [
-    [
-      "#!/bin/bash\n",
-      "echo cours\n",
-      "cours=unix\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo cours\n",
-      "cours=unix\n",
-      "echo $cours\n",
-      "echo je suis au cours $cours\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo login=SHELL\n",
-      "echo $login\n",
-      "echo Mon nom de login est : $login \n",
-      "echo Mon shell est :\n",
-      "echo : Les variables du shell sont :\n",
-      "Celles d'environnement sont : \n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Mon nom de login est : $login \n",
-      "echo Mon shell est :\n",
-      "echo : Les variables du shell sont :\n",
-      "Celles d'environnement sont : \n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Mon nom de login est : $LOGNAME\n",
-      "echo Mon shell est :\n",
-      "echo : Les variables du shell sont :\n",
-      "Celles d'environnement sont : \n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Mon nom de login est : $LOGNAME\n",
-      "echo Mon shell est : $SHELL\n",
-      "echo Les variables du shell sont :\n",
-      "echo Celles d\\'environnement sont :\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Mon nom de login est : $LOGNAME\n",
-      "echo Mon shell est : $SHELL\n",
-      "echo Les variables du shell sont : $set\n",
-      "echo Celles d\\'environnement sont :$env\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Mon nom de login est : $LOGNAME\n",
-      "echo Mon shell est : $SHELL\n",
-      "echo Les variables du shell sont : set\n",
-      "echo Celles d\\'environnement sont : env\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Mon nom de login est : LOGNAME\n",
-      "echo Mon shell est : SHELL\n",
-      "echo Les variables du shell sont : set\n",
-      "echo Celles d\\'environnement sont : env\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Mon nom de login est : $LOGNAME\n",
-      "echo Mon shell est : $SHELL\n",
-      "echo Les variables du shell sont : set\n",
-      "echo Celles d\\'environnement sont : env\n"
-    ]
+    {
+      "name": "tp5_exo1.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo cours\n",
+        "cours=unix\n",
+        "echo $cours\n",
+        "echo je suis au cours $cours\n"
+      ]
+    },
+    {
+      "name": "tp5_exo2.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo Mon nom de login est : $LOGNAME\n",
+        "echo Mon shell est : $SHELL\n",
+        "echo Les variables du shell sont : set\n",
+        "echo Celles d\\'environnement sont : env\n"
+      ]
+    }
   ],
   "profile": [
     {

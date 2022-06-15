@@ -2,44 +2,32 @@
   "name": "ext_Theo.Vidal",
   "session": 4,
   "scripts": [
-    [
-      "liste_commande=1\n"
-    ],
-    [
-      "liste_commande=1\n",
-      "for liste_commande in 1\n"
-    ],
-    [
-      "liste_commande=1\n",
-      "for liste_commande in 1\n",
-      "do\n"
-    ],
-    [
-      "liste_commande=1\n",
-      "for liste_commande in 1\n",
-      "do\n",
-      "\techo `\u00c3date`\n"
-    ],
-    [
-      "liste_commande=date who pwd ls\n",
-      "for liste_commande in date\n",
-      "do \n",
-      "\techo `date`\n",
-      "\techo `who`\n",
-      "\techo `pwd`\n",
-      "\techo `ls`\n",
-      "done\n"
-    ],
-    [
-      "argument=$#\n",
-      "for argument in $#\n",
-      "do\n",
-      "\techo argument 1 :$1\n",
-      "\techo argument 2 :$2\n",
-      "\techo argument 3 :$3\n",
-      "\techo il y a $# argument\n",
-      "done\n"
-    ]
+    {
+      "name": "tp6_exo4.sh",
+      "lines": [
+        "liste_commande=date who pwd ls\n",
+        "for liste_commande in date\n",
+        "do \n",
+        "\techo `date`\n",
+        "\techo `who`\n",
+        "\techo `pwd`\n",
+        "\techo `ls`\n",
+        "done\n"
+      ]
+    },
+    {
+      "name": "tp6_exo5.sh",
+      "lines": [
+        "argument=$#\n",
+        "for argument in $#\n",
+        "do\n",
+        "\techo argument 1 :$1\n",
+        "\techo argument 2 :$2\n",
+        "\techo argument 3 :$3\n",
+        "\techo il y a $# argument\n",
+        "done\n"
+      ]
+    }
   ],
   "profile": [
     {

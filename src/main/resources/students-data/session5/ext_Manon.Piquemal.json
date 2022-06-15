@@ -2,54 +2,17 @@
   "name": "ext_Manon.Piquemal",
   "session": 5,
   "scripts": [
-    [
-      "#!/bin/bash\n",
-      "date who pwd ls\n",
-      "for c in liste_commande\n",
-      "do\n",
-      "c\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "date who pwd ls\n",
-      "for c in liste_commande\n",
-      "do\n",
-      "\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "date who pwd ls\n",
-      "for c in liste_commande\n",
-      "do\n",
-      "echo $c\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "date who pwd ls\n",
-      "for c in liste_commandes\n",
-      "do\n",
-      "echo $c\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "date who -pwd ls\n",
-      "for c in liste_commandes\n",
-      "do\n",
-      "echo $c\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "liste_commandes=date who -pwd ls\n",
-      "for c in liste_commandes\n",
-      "do\n",
-      "echo $c\n",
-      "done\n"
-    ]
+    {
+      "name": "tp6_exo4.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "liste_commandes=date who -pwd ls\n",
+        "for c in liste_commandes\n",
+        "do\n",
+        "echo $c\n",
+        "done\n"
+      ]
+    }
   ],
   "commands": [
     {

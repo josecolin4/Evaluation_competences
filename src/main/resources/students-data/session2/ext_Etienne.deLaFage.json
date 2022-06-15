@@ -2,49 +2,40 @@
   "name": "ext_Etienne.deLaFage",
   "session": 2,
   "scripts": [
-    [
-      "#! /bin/bash\n",
-      "echo extr $1 + 1\n"
-    ],
-    [
-      "#! /bin/bash\n",
-      "v=$1\n",
-      "v=`expr $v + 1`\n"
-    ],
-    [
-      "#! /bin/bash\n",
-      "v=$1\n",
-      "echo v=`expr $v + 1`\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "F1 F2 > F3\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "cat> $F1 $F2 > $F3\n"
-    ],
-    [
-      "echo Nous sommes le `date`\n",
-      "echo Nous sommes le Mon Nov16 15:20:46 CET 2020\n",
-      "echo ceci est \n",
-      "echo une tr\u00c3\u00a8s\n",
-      "echo  longue date ...\n",
-      "echo Voici un \u00c3\u00a9toile :\\*\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Nous sommes le `date`\n",
-      "echo Nous sommes le Mon Nov16 15:20:46 CET 2020\n",
-      "echo ceci est \n",
-      "echo une tr\u00c3\u00a8s\n",
-      "echo  longue date ...\n",
-      "echo Voici un \u00c3\u00a9toile :\\*\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "PATH=.:$PATH\n"
-    ]
+    {
+      "name": "tp5_exo8.sh",
+      "lines": [
+        "#! /bin/bash\n",
+        "v=$1\n",
+        "echo v=`expr $v + 1`\n"
+      ]
+    },
+    {
+      "name": "tp5_exo4.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "cat> $F1 $F2 > $F3\n"
+      ]
+    },
+    {
+      "name": "tp5_exo7.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo Nous sommes le `date`\n",
+        "echo Nous sommes le Mon Nov16 15:20:46 CET 2020\n",
+        "echo ceci est \n",
+        "echo une tr\u00c3\u00a8s\n",
+        "echo  longue date ...\n",
+        "echo Voici un \u00c3\u00a9toile :\\*\n"
+      ]
+    },
+    {
+      "name": "tp5_exo9.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "PATH=.:$PATH\n"
+      ]
+    }
   ],
   "profile": [
     {

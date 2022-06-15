@@ -2,380 +2,64 @@
   "name": "ext_Romain.Testu",
   "session": 4,
   "scripts": [
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo Votre ann\u00c3\u00a9e de naissance ? \n",
-      "read dateN\n",
-      "$age = expr `date +%Y` - $dateN\n",
-      "echo vous avez $age ans\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo Votre ann\u00c3\u00a9e de naissance ? \n",
-      "read dateN\n",
-      "expr `date +%Y` - $dateN\n",
-      "echo vous avez $age ans\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo Votre ann\u00c3\u00a9e de naissance ? \n",
-      "read dateN\n",
-      "expr `date +%Y` - $dateN\n",
-      "echo vous avez $((expr `date +%Y` - $dateN)) ans\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo Votre ann\u00c3\u00a9e de naissance ? \n",
-      "read dateN\n",
-      "expr `date +%Y` - $dateN\n",
-      "echo vous avez $(( expr `date +%Y` - $dateN )) ans\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo Votre ann\u00c3\u00a9e de naissance ? \n",
-      "read dateN\n",
-      "expr `date +%Y` - $dateN\n",
-      "echo vous avez \n",
-      "$(( expr `date +%Y` - $dateN )) \n",
-      "echo ans\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo Votre ann\u00c3\u00a9e de naissance ? \n",
-      "read dateN\n",
-      "expr `date +%Y` - $dateN\n",
-      "echo vous avez \n",
-      "$(( `date +%Y` - $dateN )) \n",
-      "echo ans\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo Votre ann\u00c3\u00a9e de naissance ? \n",
-      "read dateN\n",
-      "expr `date +%Y` - $dateN\n",
-      "echo vous avez $(( `date +%Y` - $dateN )) ans\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo il y a `who` utilisateur connect\u00c3\u00a9s sur `hostname`\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo il y a `wc -l who` utilisateur connect\u00c3\u00a9s sur `hostname`\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo il y a `wc -l who | fic4` utilisateur connect\u00c3\u00a9s sur `hostname`\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo il y a `wc -l who > fic4` utilisateur connect\u00c3\u00a9s sur `hostname`\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "$(who > fic4)\n",
-      "echo il y a `wc -l fic4` utilisateur connect\u00c3\u00a9s sur `hostname`\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "set $(stat -c %s)\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "set $(stat -c)\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "set -- $(stat -c %s)\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "set -- $(stat -c %s \"^$1\")\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "set -- $(stat -c %s \"$1\")\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo set -- $(stat -c %s \"$1\")\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "set -- $(stat -c %s \"$1\")\n",
-      "echo $1\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "$i = 1\n",
-      "\n",
-      "for u in $#\n",
-      "do\n",
-      "echo argument $i = $i\n",
-      "$i = $i + 1\n",
-      "done\n",
-      "\n",
-      "echo il y a $? arguments\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "$i = 1\n",
-      "\n",
-      "for u in $#\n",
-      "do\n",
-      "echo argument $i = $i\n",
-      "$i = $i + 1\n",
-      "done\n",
-      "\n",
-      "echo il y a $i arguments\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "i = 1\n",
-      "\n",
-      "for u in $#\n",
-      "do\n",
-      "echo argument $i = $i\n",
-      "i = $i + 1\n",
-      "done\n",
-      "\n",
-      "echo il y a $i arguments\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "i = 1\n",
-      "\n",
-      "for u in $#\n",
-      "do\n",
-      "echo argument $i = $i\n",
-      "i = $i + 1\n",
-      "done\n",
-      "\n",
-      "echo il y a $i arguments\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "i = 1\n",
-      "\n",
-      "for u in $#\n",
-      "do\n",
-      "echo argument $i = $u\n",
-      "i = $i + 1\n",
-      "done\n",
-      "\n",
-      "echo il y a $i arguments\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "i = 1\n",
-      "\n",
-      "for u in $*\n",
-      "do\n",
-      "echo argument $i = $u\n",
-      "i = $i + 1\n",
-      "done\n",
-      "\n",
-      "echo il y a $i arguments\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "i=1\n",
-      "\n",
-      "for u in $*\n",
-      "do\n",
-      "echo argument $i = $u\n",
-      "i=$i + 1\n",
-      "done\n",
-      "\n",
-      "echo il y a $i arguments\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "i=1\n",
-      "\n",
-      "for u in $*\n",
-      "do\n",
-      "echo argument $i = $u\n",
-      "i=expr $i + 1\n",
-      "done\n",
-      "\n",
-      "echo il y a $i arguments\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "i=1\n",
-      "\n",
-      "for u in $*\n",
-      "do\n",
-      "echo argument $i = $u\n",
-      "let \"i = $i + 1\"\n",
-      "done\n",
-      "\n",
-      "echo il y a $i arguments\n"
-    ],
-    [
-      "#!/bin/bash \n",
-      "\n",
-      "for i in $(seq $1)\n",
-      "do\n",
-      "let \" i * i \"\n",
-      "done\n",
-      "echo $i\n"
-    ],
-    [
-      "#!/bin/bash \n",
-      "\n",
-      "i=1\n",
-      "for i in $(seq $1)\n",
-      "do\n",
-      "let \" i * i \"\n",
-      "done\n",
-      "echo $i\n"
-    ],
-    [
-      "#!/bin/bash \n",
-      "\n",
-      "i=1\n",
-      "for i in $(seq $1)\n",
-      "do\n",
-      "let \" i '*' i \"\n",
-      "done\n",
-      "echo $i\n"
-    ],
-    [
-      "#!/bin/bash \n",
-      "\n",
-      "u=1\n",
-      "for i in $(seq $1)\n",
-      "do\n",
-      "let \" u * i \"\n",
-      "done\n",
-      "echo $u\n"
-    ],
-    [
-      "#!/bin/bash \n",
-      "\n",
-      "u=1\n",
-      "for i in $(seq $1)\n",
-      "do\n",
-      "let \" u = u * i \"\n",
-      "done\n",
-      "echo $u\n"
-    ],
-    [
-      "#!/bin/bash \n",
-      "\n",
-      "i=1\n",
-      "for i in $(seq $1)\n",
-      "do\n",
-      "let \" i = i * i \"\n",
-      "done\n",
-      "echo $i\n"
-    ],
-    [
-      "#!/bin/bash \n",
-      "\n",
-      "i=1\n",
-      "for i in $(seq $1)\n",
-      "do\n",
-      "let \" i = i * i + 1 \"\n",
-      "done\n",
-      "echo $i\n"
-    ],
-    [
-      "#!/bin/bash \n",
-      "\n",
-      "u=1\n",
-      "for i in $(seq $1)\n",
-      "do\n",
-      "let \" u = u * i\"\n",
-      "done\n",
-      "echo $u\n"
-    ],
-    [
-      "#!/bin/bash \n",
-      "\n",
-      "u=1\n",
-      "for i in $(seq $1)\n",
-      "do\n",
-      "expr $u * $i\n",
-      "done\n",
-      "echo $u\n"
-    ],
-    [
-      "#!/bin/bash \n",
-      "\n",
-      "u=1\n",
-      "for i in $(seq $1)\n",
-      "do\n",
-      "expr $u '*' $i\n",
-      "done\n",
-      "echo $u\n"
-    ],
-    [
-      "#!/bin/bash \n",
-      "\n",
-      "u=1\n",
-      "for i in $(seq $1)\n",
-      "do\n",
-      "u=expr $u '*' $i\n",
-      "done\n",
-      "echo $u\n"
-    ],
-    [
-      "#!/bin/bash \n",
-      "\n",
-      "u=1\n",
-      "for i in $(seq $1)\n",
-      "do\n",
-      "u=$(( $u '*' $i ))\n",
-      "done\n",
-      "echo $u\n"
-    ],
-    [
-      "#!/bin/bash \n",
-      "\n",
-      "u=1\n",
-      "for i in $(seq $1)\n",
-      "do\n",
-      "u=$(( $u * $i ))\n",
-      "done\n",
-      "echo $u\n"
-    ]
+    {
+      "name": "TP5bis_exo3.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "\n",
+        "echo Votre ann\u00c3\u00a9e de naissance ? \n",
+        "read dateN\n",
+        "expr `date +%Y` - $dateN\n",
+        "echo vous avez $(( `date +%Y` - $dateN )) ans\n",
+        "\n"
+      ]
+    },
+    {
+      "name": "TP5bis_exo4.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "$(who > fic4)\n",
+        "echo il y a `wc -l fic4` utilisateur connect\u00c3\u00a9s sur `hostname`\n"
+      ]
+    },
+    {
+      "name": "TP5bis_exo5.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "\n",
+        "set -- $(stat -c %s \"$1\")\n",
+        "echo $1\n"
+      ]
+    },
+    {
+      "name": "Tp6_exo5.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "\n",
+        "i=1\n",
+        "\n",
+        "for u in $*\n",
+        "do\n",
+        "echo argument $i = $u\n",
+        "let \"i = $i + 1\"\n",
+        "done\n",
+        "\n",
+        "echo il y a $i arguments\n"
+      ]
+    },
+    {
+      "name": "Tp6_exo6.sh",
+      "lines": [
+        "#!/bin/bash \n",
+        "\n",
+        "u=1\n",
+        "for i in $(seq $1)\n",
+        "do\n",
+        "u=$(( $u * $i ))\n",
+        "done\n",
+        "echo $u\n"
+      ]
+    }
   ],
   "profile": [
     {

@@ -2,160 +2,66 @@
   "name": "ext_Lucas.Truquet",
   "session": 1,
   "scripts": [
-    [],
-    [
-      "#!/bin/bash\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo cours\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo cours\n",
-      "cours=unix\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo cours\n",
-      "cours=unix\n",
-      "echo \u00c2$cours\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo cours\n",
-      "cours=unix\n",
-      "echo \u00c2$cours\n",
-      "echo je suis au cours $cours"
-    ],
-    [],
-    [
-      "#!/bin/bash\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo cours\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo cours\n",
-      "cours=unix\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo cours\n",
-      "cours=unix\n",
-      "echo $cours\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo cours\n",
-      "cours=unix\n",
-      "echo $cours\n",
-      "echo je suis au cours $cours"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo cours\n",
-      "cours=unix\n",
-      "echo $cours\n",
-      "echo je suis au cours $cours\u001b[C"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo cours\n",
-      "cours=unix\n",
-      "echo $cours\n",
-      "echo je suis au cours $cours\u001b[C\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo cours\n",
-      "cours=unix\n",
-      "echo $cours\n",
-      "echo je suis au cours $cours\n"
-    ],
-    [
-      "echo Mon nom de login est : \n",
-      "echo mon shell est : \n",
-      "echo les var du Shell sont : \n",
-      "set\n",
-      "echo Celles d'environement sont :\n",
-      "env\n"
-    ],
-    [
-      "echo Mon nom de login est :$user \n",
-      "echo mon shell est :shell \n",
-      "echo les var du Shell sont : \n",
-      "set\n",
-      "echo Celles d'environement sont :\n",
-      "env\n"
-    ],
-    [
-      "echo Mon nom de login est :$user \n",
-      "echo mon shell est :shell \n",
-      "echo les var du Shell sont : \n",
-      "set\n",
-      "echo Celles d\\'environement sont :\n",
-      "env\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Cher utilisateur quel est ton prenom\\?\n",
-      "read prenom\n",
-      "echo ravi de te connaitre, $prenom\n",
-      "echo nom age \\?\n",
-      "read nom age\n",
-      "echo $prenom $nom $age ans\n",
-      "read reponce\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo $0\n",
-      "echo $*\n",
-      "echo $1\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo sript $0 possede $# parametres, que voici : $*\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "$3=$1+$2\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "$cc=$1+$2\n",
-      "$cc>$3\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "$r=$2\n",
-      "$e=$1\n",
-      "$cc=$e+$r\n",
-      "$cc>$3\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "$r<$2\n",
-      "$e<$1\n",
-      "$cc=$e&$r\n",
-      "$cc>$3\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "$r<$2\n",
-      "$e<$1\n",
-      "$cc<$e&$r\n",
-      "$cc>$3\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "$2>$r\n",
-      "$1>$e\n",
-      "$e&$r>$ee\n",
-      "$cc>$3\n"
-    ]
+    {
+      "name": "tp5_exo1.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo cours\n",
+        "cours=unix\n",
+        "echo $cours\n",
+        "echo je suis au cours $cours\n"
+      ]
+    },
+    {
+      "name": "tp5_exo2.sh",
+      "lines": [
+        "echo Mon nom de login est :$user \n",
+        "echo mon shell est :shell \n",
+        "echo les var du Shell sont : \n",
+        "set\n",
+        "echo Celles d\\'environement sont :\n",
+        "env\n"
+      ]
+    },
+    {
+      "name": "tp5_exo3.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo Cher utilisateur quel est ton prenom\\?\n",
+        "read prenom\n",
+        "echo ravi de te connaitre, $prenom\n",
+        "echo nom age \\?\n",
+        "read nom age\n",
+        "echo $prenom $nom $age ans\n",
+        "read reponce\n"
+      ]
+    },
+    {
+      "name": "tp5_exo4.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo $0\n",
+        "echo $*\n",
+        "echo $1\n"
+      ]
+    },
+    {
+      "name": "tp5_exo5.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo sript $0 possede $# parametres, que voici : $*\n"
+      ]
+    },
+    {
+      "name": "tp5_exo6.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "$2>$r\n",
+        "$1>$e\n",
+        "$e&$r>$ee\n",
+        "$cc>$3\n"
+      ]
+    }
   ],
   "profile": [
     {

@@ -2,218 +2,48 @@
   "name": "ext_Mathis.AupetitGautier",
   "session": 2,
   "scripts": [
-    [
-      "#!/bin/bash\n",
-      "expr $1 / 2\n",
-      "$(( $1 / 2 ))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "expr $1/2\n",
-      "$(( $1/2 ))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "expr $1 / 2\n",
-      "$(( $1/2 ))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "expr $1 / 2\n",
-      "$(( $1 / 2 ))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "expr $1 / 2\n",
-      "echo $(( $1 / 2 ))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "expr 2 * $1\n",
-      "echo $(( 2 * $1 ))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "expr $1 * 2\n",
-      "echo $(( 2 * $1 ))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Ann\u00c3\u00a9e de naissance :\n",
-      "read $nai\n",
-      "expr $(date +%Y) - $nai\n",
-      "echo $(( $(date +%Y) - $nai ))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Ann\u00c3\u00a9e de naissance :\n",
-      "read $nai\n",
-      "expr $(date +%Y) - $nai\n",
-      "echo $(( $(( date +%Y )) - $nai ))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Ann\u00c3\u00a9e de naissance :\n",
-      "read $nai\n",
-      "expr $(date +%Y) - $nai\n",
-      "echo $( `date +%Y` - $nai ))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Ann\u00c3\u00a9e de naissance :\n",
-      "read $nai\n",
-      "expr $(date +%Y) - $nai\n",
-      "echo $(( `date +%Y` - $nai ))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "expr $1 \\* 2\n",
-      "echo $(( 2 * $1 ))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Ann\u00c3\u00a9e de naissance :\n",
-      "read $nai\n",
-      "expr $(date +%Y) - $nai\n",
-      "echo $(( 5 - $nai ))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Ann\u00c3\u00a9e de naissance :\n",
-      "read $nai\n",
-      "expr $(date +%Y) - $nai\n",
-      "echo $(( 5 \\- $nai ))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Ann\u00c3\u00a9e de naissance :\n",
-      "read $nai\n",
-      "expr $(date +%Y) - $nai\n",
-      "echo $(( `date +%Y` - $nai ))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Ann\u00c3\u00a9e de naissance :\n",
-      "read $nai\n",
-      "expr $(date +%Y) \\- $nai\n",
-      "echo $(( `date +%Y` - $nai ))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "expr $1 \\* 2\n",
-      "echo $(( 2 \\* $1 ))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "expr $1 /* 2\n",
-      "echo $(( 2 /* $1 ))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "expr $1 \\* 2\n",
-      "echo $(( 2 \\* $1 ))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "expr $1 * 2\n",
-      "echo $(( 2 \\* $1 ))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "expr $1 * 2\n",
-      "echo $(( 2 * $1 ))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "expr $1 \\* 2\n",
-      "echo $(( 2 * $1 ))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Ann\u00c3\u00a9e de naissance :\n",
-      "read nai\n",
-      "expr $(date +%Y) \\- $nai\n",
-      "echo $(( `date +%Y` - $nai ))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo `who | wc -l` user(s) logged\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo `who | wc -l` user\\(s\\) logged\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo `who | wc -l` user\\(s\\) logged on `hostname`\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo `who | wc -l` user\\(s\\) logged on `hostname`\n",
-      "echo $(who | wc -l) user\\(s\\) logged on $(hostname)\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n"
-    ],
-    [
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "set size=$(du $1)\n",
-      "echo $size\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "set size $(du $1)\n",
-      "echo $size\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "set size=$(du $1)\n",
-      "echo $size\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "set size=$(du -b $1)\n",
-      "echo $size\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "set -a size=$(du -b $1)\n",
-      "echo $size\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "set -a size $(du -b $1)\n",
-      "echo $size\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "set $(du -b $1)\n",
-      "echo $1\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "set $(ls -l $1)\n",
-      "echo $5\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "set $(ls -l $1)\n",
-      "echo $6\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "set $(ls -l $1)\n",
-      "echo $7\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "set -- $(ls -l $1)\n",
-      "echo $7\n"
-    ]
+    {
+      "name": "tp5bis_exo1.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "expr $1 / 2\n",
+        "echo $(( $1 / 2 ))\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo2.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "expr $1 \\* 2\n",
+        "echo $(( 2 * $1 ))\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo3.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo Ann\u00c3\u00a9e de naissance :\n",
+        "read nai\n",
+        "expr $(date +%Y) \\- $nai\n",
+        "echo $(( `date +%Y` - $nai ))\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo4.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo `who | wc -l` user\\(s\\) logged on `hostname`\n",
+        "echo $(who | wc -l) user\\(s\\) logged on $(hostname)\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo5.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "set -- $(ls -l $1)\n",
+        "echo $7\n"
+      ]
+    }
   ],
   "profile": [
     {

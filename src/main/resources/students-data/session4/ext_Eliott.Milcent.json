@@ -2,134 +2,49 @@
   "name": "ext_Eliott.Milcent",
   "session": 4,
   "scripts": [
-    [
-      "#!/bin/bash\n",
-      "read calcul\n",
-      "expr $calcul / 2\n",
-      "echo $calcul\n",
-      "echo $(( calcul / 2 ))\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "read calcul\n",
-      "expr $calcul * 2\n",
-      "echo $calcul\n",
-      "echo $(( calcul * 2 ))\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance/?\n",
-      "read naissance\n",
-      "echo Vous \u00c3\u00aates n\u00c3\u00a9 en $naissance , vous avez donc $(( naissance - date ))\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance/?\n",
-      "read naissance\n",
-      "echo Vous \u00c3\u00aates n\u00c3\u00a9 en $naissance , vous avez donc $(( naissance - 'date' ))\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance/?\n",
-      "read naissance\n",
-      "echo Vous \u00c3\u00aates n\u00c3\u00a9 en $naissance , vous avez donc $(( naissance - %Y ))\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance/?\n",
-      "read naissance\n",
-      "echo Vous \u00c3\u00aates n\u00c3\u00a9 en $naissance , vous avez donc $(( naissance - 'date%Y' ))\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance/?\n",
-      "read naissance\n",
-      "echo Vous \u00c3\u00aates n\u00c3\u00a9 en $naissance , vous avez donc $(( 'date%Y' - naissance ))\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance/?\n",
-      "echo 'date%Y'\n",
-      "read naissance\n",
-      "echo Vous \u00c3\u00aates n\u00c3\u00a9 en $naissance , vous avez donc $(( 'date%Y' - naissance ))\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance/?\n",
-      "echo 'date+%Y'\n",
-      "read naissance\n",
-      "echo Vous \u00c3\u00aates n\u00c3\u00a9 en $naissance , vous avez donc $(( 'date%Y' - naissance ))\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance/?\n",
-      "echo 'date'\n",
-      "read naissance\n",
-      "echo Vous \u00c3\u00aates n\u00c3\u00a9 en $naissance , vous avez donc $(( 'date%Y' - naissance ))\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance/?\n",
-      "echo 'date'\n",
-      "read naissance\n",
-      "echo Vous \u00c3\u00aates n\u00c3\u00a9 en $naissance , vous avez donc $(( 'date + \"%Y\"' - $naissance ))\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance/?\n",
-      "echo `date`\n",
-      "read naissance\n",
-      "echo Vous \u00c3\u00aates n\u00c3\u00a9 en $naissance , vous avez donc $(( `date + \"%Y\"` - $naissance ))\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance/?\n",
-      "echo `date`\n",
-      "read naissance\n",
-      "echo Vous \u00c3\u00aates n\u00c3\u00a9 en $naissance , vous avez donc $(( `date +\"%Y\"` - $naissance ))ans\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo `who` `hostname`\n",
-      "\n",
-      "set `who` `hostame`\n",
-      "echo $1 $2\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo `who` `hostname`\n",
-      "\n",
-      "set `who` `hostame`\n",
-      "echo $1 $2\n"
-    ]
+    {
+      "name": "tp5bis_exo1.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "read calcul\n",
+        "expr $calcul * 2\n",
+        "echo $calcul\n",
+        "echo $(( calcul * 2 ))\n",
+        "\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo3.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "\n",
+        "echo Quelle est votre ann\u00c3\u00a9e de naissance/?\n",
+        "echo `date`\n",
+        "read naissance\n",
+        "echo Vous \u00c3\u00aates n\u00c3\u00a9 en $naissance , vous avez donc $(( `date +\"%Y\"` - $naissance ))ans\n",
+        "\n"
+      ]
+    },
+    {
+      "name": "tp8bis_exo4.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo `who` `hostname`\n",
+        "\n",
+        "set `who` `hostame`\n",
+        "echo $1 $2\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo4.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo `who` `hostname`\n",
+        "\n",
+        "set `who` `hostame`\n",
+        "echo $1 $2\n"
+      ]
+    }
   ],
   "profile": [
     {

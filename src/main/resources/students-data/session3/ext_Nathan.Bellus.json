@@ -2,326 +2,63 @@
   "name": "ext_Nathan.Bellus",
   "session": 3,
   "scripts": [
-    [
-      "set var1\n",
-      "echo 'expr var1/2'\n",
-      "echo \"et\"\n",
-      "echo (($var1/2))\n"
-    ],
-    [
-      "set var1\n",
-      "echo `expr var1/2`\n",
-      "echo \"et\"\n",
-      "echo ($var1/2)\n"
-    ],
-    [
-      "set var1\n",
-      "read var1\n",
-      "echo -e `expr var1/2`\n",
-      "echo \"et\"\n",
-      "echo ($var1/2)\n"
-    ],
-    [
-      "set var1\n",
-      "echo -e `expr var1/2`\n",
-      "echo \"et\"\n",
-      "echo ($var1/2)\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "read d\n",
-      "echo -e `expr d/2`\n",
-      "echo \"et\"\n",
-      "echo $(($d/2))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "read d\n",
-      "expr $d / 2\n",
-      "echo \"et\"\n",
-      "echo $(( $d / 2 ))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "d=6\n",
-      "echo `expr $d / 2`\n",
-      "echo \"et\"\n",
-      "echo $(( $d / 2 ))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "d=3\n",
-      "echo `expr $d / 2`\n",
-      "echo \"et\"\n",
-      "echo $(( $d / 2 ))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "d=3\n",
-      "\n",
-      "echo `expr $d * 2`\n",
-      "\n",
-      "echo \"et\"\n",
-      "\n",
-      "echo $(( $d * 2 )\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "d=3\n",
-      "echo `expr $d * 2`\n",
-      "echo \"et\"\n",
-      "echo $(( $d * 2 )\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "d=3\n",
-      "echo `expr $d * 2`\n",
-      "echo \"et\"\n",
-      "echo $(( $d * 2 ))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "d=3\n",
-      "echo `expr $d + 2`\n",
-      "echo \"et\"\n",
-      "echo $(( $d * 2 ))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "d=3\n",
-      "echo `expr $d * 2`\n",
-      "echo \"et\"\n",
-      "echo $(( $d * 2 ))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "d=3\n",
-      "echo `expr $d \\ 2`\n",
-      "echo \"et\"\n",
-      "echo $(( $d * 2 ))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "d=3\n",
-      "echo `expr $d \\* 2`\n",
-      "echo \"et\"\n",
-      "echo $(( $d * 2 ))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo \"En quelle ann\u00c3\u00a9e etes-vous n\u00c3\u00a9(e) ?\"\n",
-      "read a\n",
-      "echo \"vous avez \"\n",
-      "echo `expr date+\"%Y\" - $a`\n",
-      "echo \"et\"\n",
-      "echo $((date+\"%Y\" - $a))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo \"En quelle ann\u00c3\u00a9e etes-vous n\u00c3\u00a9(e) ?\"\n",
-      "read a\n",
-      "d = date+\"%Y\"\n",
-      "echo $d\n",
-      "echo \"vous avez \"\n",
-      "echo `expr date+\"%Y\" - $a`\n",
-      "echo \"et\"\n",
-      "echo $((date+\"%Y\" - $a))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo \"En quelle ann\u00c3\u00a9e etes-vous n\u00c3\u00a9(e) ?\"\n",
-      "read a\n",
-      "echo date+\"%Y\"\n",
-      "echo \"vous avez \"\n",
-      "echo `expr date+\"%Y\" - $a`\n",
-      "echo \"et\"\n",
-      "echo $((date+\"%Y\" - $a))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo \"En quelle ann\u00c3\u00a9e etes-vous n\u00c3\u00a9(e) ?\"\n",
-      "read a\n",
-      "date+\"%Y\"\n",
-      "echo \"vous avez \"\n",
-      "echo `expr date+\"%Y\" - $a`\n",
-      "echo \"et\"\n",
-      "echo $((date+\"%Y\" - $a))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo \"En quelle ann\u00c3\u00a9e etes-vous n\u00c3\u00a9(e) ?\"\n",
-      "read a\n",
-      "echo `date +\"%Y\"`\n",
-      "echo \"vous avez \"\n",
-      "echo `expr date+\"%Y\" - $a`\n",
-      "echo \"et\"\n",
-      "echo $((date+\"%Y\" - $a))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo \"En quelle ann\u00c3\u00a9e etes-vous n\u00c3\u00a9(e) ?\"\n",
-      "read a\n",
-      "d = `date +\"%Y\"`\n",
-      "echo $s\n",
-      "echo \"vous avez \"\n",
-      "echo `expr date+\"%Y\" - $a`\n",
-      "echo \"et\"\n",
-      "echo $((date+\"%Y\" - $a))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo \"En quelle ann\u00c3\u00a9e etes-vous n\u00c3\u00a9(e) ?\"\n",
-      "read a\n",
-      "echo \"vous avez \"\n",
-      "echo `expr `date+\"%Y\"` - $a`\n",
-      "echo \"et\"\n",
-      "echo $((`date+\"%Y\"` - $a))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo \"En quelle ann\u00c3\u00a9e etes-vous n\u00c3\u00a9(e) ?\"\n",
-      "a=1990\n",
-      "echo \"vous avez \"\n",
-      "echo `expr `date+\"%Y\"` - $a`\n",
-      "echo \"et\"\n",
-      "echo $((`date+\"%Y\"` - $a))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo \"En quelle ann\u00c3\u00a9e etes-vous n\u00c3\u00a9(e) ?\"\n",
-      "a=1990\n",
-      "echo \"vous avez \"\n",
-      "echo `expr `date +\"%Y\"` - $a`\n",
-      "echo \"et\"\n",
-      "echo $((`date +\"%Y\"` - $a))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo \"En quelle ann\u00c3\u00a9e etes-vous n\u00c3\u00a9(e) ?\"\n",
-      "a=1990\n",
-      "d=date +\"%Y\"\n",
-      "echo \"vous avez \"\n",
-      "echo `expr $d - $a`\n",
-      "echo \"et\"\n",
-      "echo $((`date +\"%Y\"` - $a))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo $who\n",
-      "echo echo $hostname\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo `who`\n",
-      "echo $hostname\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo `who`\n",
-      "echo `hostname`\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo \"Il y a\"\n",
-      "echo `who`\n",
-      "echo \"utilisateurs sur \"\n",
-      "echo `hostname`\n"
-    ],
-    [
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo `ls-l fic1`\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo `ls -l fic1`\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo `ls -l fic1`\n",
-      "set \n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo `ls -l fic1`\n",
-      "set \n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo \"Il y a\"\n",
-      "echo `wc -l who`\n",
-      "echo \"utilisateurs sur \"\n",
-      "echo `hostname`\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo \"Il y a\"\n",
-      "echo `wc-l who`\n",
-      "echo \"utilisateurs sur \"\n",
-      "echo `hostname`\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo \"Il y a\"\n",
-      "echo `wc -l who`\n",
-      "echo \"utilisateurs sur \"\n",
-      "echo `hostname`\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo `ls -l fic1`\n",
-      "set $(ls - l fic1)\n",
-      "echo $7\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo `ls -l fic1`\n",
-      "set --$(ls -l fic1)\n",
-      "echo $7\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo `ls -l fic1`\n",
-      "set --$(`ls -l fic1`)\n",
-      "echo $7\n"
-    ]
+    {
+      "name": "tp5bis_exo1.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "\n",
+        "d=3\n",
+        "echo `expr $d / 2`\n",
+        "echo \"et\"\n",
+        "echo $(( $d / 2 ))\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo2.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "\n",
+        "d=3\n",
+        "echo `expr $d \\* 2`\n",
+        "echo \"et\"\n",
+        "echo $(( $d * 2 ))\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo3.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "\n",
+        "echo \"En quelle ann\u00c3\u00a9e etes-vous n\u00c3\u00a9(e) ?\"\n",
+        "a=1990\n",
+        "d=date +\"%Y\"\n",
+        "echo \"vous avez \"\n",
+        "echo `expr $d - $a`\n",
+        "echo \"et\"\n",
+        "echo $((`date +\"%Y\"` - $a))\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo4.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "\n",
+        "echo \"Il y a\"\n",
+        "echo `wc -l who`\n",
+        "echo \"utilisateurs sur \"\n",
+        "echo `hostname`\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo5.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "\n",
+        "echo `ls -l fic1`\n",
+        "set --$(`ls -l fic1`)\n",
+        "echo $7\n"
+      ]
+    }
   ],
   "profile": [
     {

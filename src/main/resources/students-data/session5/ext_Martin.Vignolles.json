@@ -2,429 +2,86 @@
   "name": "ext_Martin.Vignolles",
   "session": 5,
   "scripts": [
-    [
-      "liste_commandes = date who pwd ls\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "for i in $*\n",
-      "do\n",
-      "\techo argument $i = $$i\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "for i in $*\n",
-      "do\n",
-      "\techo argument i = $i\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "for i in $*\n",
-      "do\n",
-      "\techo argument $$i = $i\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "nb = 1\n",
-      "for i in $*\n",
-      "do\n",
-      "\techo argument $nb = $i\n",
-      "\tnb = nb + 1\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "for i in $*\n",
-      "do\n",
-      "\techo argument 1 = $i\n",
-      "done\n"
-    ],
-    [
-      "#!/bash/bin\n",
-      "resultat=1\n",
-      "for i in $seq($1)\n",
-      "do\n",
-      "\tresultat=resultat*$i\n",
-      "done\n",
-      "echo $resultat\n"
-    ],
-    [
-      "resultat=1\n",
-      "for i in $seq($1)\n",
-      "do\n",
-      "\tresultat=resultat*$i\n",
-      "done\n",
-      "echo $resultat\n"
-    ],
-    [
-      "resultat=1\n",
-      "for i in $seq(5)\n",
-      "do\n",
-      "\tresultat=resultat*$i\n",
-      "done\n",
-      "echo $resultat\n"
-    ],
-    [
-      "resultat=1\n",
-      "for i in $(seq $1)\n",
-      "do\n",
-      "\tresultat=resultat*$i\n",
-      "done\n",
-      "echo $resultat\n"
-    ],
-    [
-      "resultat=1\n",
-      "for i in $(seq $1)\n",
-      "do\n",
-      "\tresultat=$resultat*$i\n",
-      "done\n",
-      "echo $resultat\n"
-    ],
-    [
-      "resultat=1\n",
-      "for i in $(seq $1)\n",
-      "do\n",
-      "\tresultat=expr $resultat*$i\n",
-      "done\n",
-      "echo $resultat\n"
-    ],
-    [
-      "resultat=1\n",
-      "for i in $(seq $1)\n",
-      "do\n",
-      "\tresultat = $(($resultat*$i))\n",
-      "done\n",
-      "echo $resultat\n"
-    ],
-    [
-      "resultat=1\n",
-      "for i in $(seq $1)\n",
-      "do\n",
-      "\tresultat = expr $resultat * $i\n",
-      "done\n",
-      "echo $resultat\n"
-    ],
-    [
-      "resultat=1\n",
-      "for i in $(seq $1)\n",
-      "do\n",
-      "\tresultat = $(($resultat * $i))\n",
-      "done\n",
-      "echo $resultat\n"
-    ],
-    [
-      "resultat=1\n",
-      "for i in $(seq $1)\n",
-      "do\n",
-      "\t$resultat = $(($resultat * $i))\n",
-      "done\n",
-      "echo $resultat\n"
-    ],
-    [
-      "#!/bash/bin\n",
-      "let \"resultat=1\"\n",
-      "for i in $(seq $1)\n",
-      "do\n",
-      "\tlet \"resultat = resultat * $i\"\t\n",
-      "done\n",
-      "echo $resultat\n"
-    ],
-    [
-      "let \"resultat=1\"\n",
-      "for i in $(seq $1)\n",
-      "do\n",
-      "\tlet \"resultat = resultat * $i\"\t\n",
-      "done\n",
-      "echo $resultat\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo 1-Date du jour\n",
-      "echo 2-Liste des personnes connecter a la machine\n",
-      "echo 3-Liste des fichiers du repertoire courant\n",
-      "echo 4-Nom du repertoire courant\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo 1-Date du jour\n",
-      "echo 2-Liste des personnes connecter a la machine\n",
-      "echo 3-Liste des fichiers du repertoire courant\n",
-      "echo 4-Nom du repertoire courant\n",
-      "read var\n",
-      "case var in\n",
-      "\t1 ) echo $date\n",
-      "\t2 ) echo $(who) \n",
-      "\t3 ) echo $(ls)\n",
-      "\t4 ) echo $(pwd)\n",
-      "esac\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo 1-Date du jour\n",
-      "echo 2-Liste des personnes connecter a la machine\n",
-      "echo 3-Liste des fichiers du repertoire courant\n",
-      "echo 4-Nom du repertoire courant\n",
-      "echo Votre choix:\n",
-      "read var\n",
-      "case var in\n",
-      "\t1 ) echo $date\n",
-      "\t2 ) echo $(who) \n",
-      "\t3 ) echo $(ls)\n",
-      "\t4 ) echo $(pwd)\n",
-      "esac\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo 1-Date du jour\n",
-      "echo 2-Liste des personnes connecter a la machine\n",
-      "echo 3-Liste des fichiers du repertoire courant\n",
-      "echo 4-Nom du repertoire courant\n",
-      "echo Votre choix:\n",
-      "read var\n",
-      "case var in\n",
-      "\t1 ) echo $date;;\n",
-      "\t2 ) echo $(who);;\n",
-      "\t3 ) echo $(ls);;\n",
-      "\t4 ) echo $(pwd);;\n",
-      "esac\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo 1-Date du jour\n",
-      "echo 2-Liste des personnes connecter a la machine\n",
-      "echo 3-Liste des fichiers du repertoire courant\n",
-      "echo 4-Nom du repertoire courant\n",
-      "echo Votre choix:\n",
-      "read var\n",
-      "case var in\n",
-      "\t1) echo $date;;\n",
-      "\t2) echo $(who);;\n",
-      "\t3) echo $(ls);;\n",
-      "\t4) echo $(pwd);;\n",
-      "esac\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo 1-Date du jour\n",
-      "echo 2-Liste des personnes connecter a la machine\n",
-      "echo 3-Liste des fichiers du repertoire courant\n",
-      "echo 4-Nom du repertoire courant\n",
-      "echo Votre choix:\n",
-      "read var\n",
-      "case $var in\n",
-      "\t1) echo $date;;\n",
-      "\t2) echo $(who);;\n",
-      "\t3) echo $(ls);;\n",
-      "\t4) echo $(pwd);;\n",
-      "esac\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo 1-Date du jour\n",
-      "echo 2-Liste des personnes connecter a la machine\n",
-      "echo 3-Liste des fichiers du repertoire courant\n",
-      "echo 4-Nom du repertoire courant\n",
-      "echo Votre choix:\n",
-      "read var\n",
-      "case $var in\n",
-      "\t1) echo $date +\"%d-%m-%Y\";;\n",
-      "\t2) echo $(who);;\n",
-      "\t3) echo $(ls);;\n",
-      "\t4) echo $(pwd);;\n",
-      "esac\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo 1-Date du jour\n",
-      "echo 2-Liste des personnes connecter a la machine\n",
-      "echo 3-Liste des fichiers du repertoire courant\n",
-      "echo 4-Nom du repertoire courant\n",
-      "echo Votre choix:\n",
-      "read var\n",
-      "case $var in\n",
-      "\t1) $date +\"%d-%m-%Y\";;\n",
-      "\t2) echo $(who);;\n",
-      "\t3) echo $(ls);;\n",
-      "\t4) echo $(pwd);;\n",
-      "esac\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo 1-Date du jour\n",
-      "echo 2-Liste des personnes connecter a la machine\n",
-      "echo 3-Liste des fichiers du repertoire courant\n",
-      "echo 4-Nom du repertoire courant\n",
-      "echo Votre choix:\n",
-      "read var\n",
-      "case $var in\n",
-      "\t1) echo $(date +\"%d-%m-%Y\");;\n",
-      "\t2) echo $(who);;\n",
-      "\t3) echo $(ls);;\n",
-      "\t4) echo $(pwd);;\n",
-      "esac\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "read mot\n",
-      "while ((mot!=sortir)\n",
-      "do\n",
-      "\tread mot\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "read mot\n",
-      "while ((mot!=sortir)\n",
-      "do\n",
-      "\techo lire mot\n",
-      "\tread mot\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "read mot\n",
-      "while ((mot!=sortir)\n",
-      "do\n",
-      "\techo lire mot\n",
-      "\tread mot\n",
-      "done\n",
-      "exit 0\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "read mot\n",
-      "while ((mot!=sortir)\n",
-      "do\n",
-      "\techo lire mot\n",
-      "\tread mot\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "read mot\n",
-      "while ((mot!=sortir)\n",
-      "do\n",
-      "\techo lire mot\n",
-      "\tread mot\n",
-      "end\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "read mot\n",
-      "while ((mot!=sortir)\n",
-      "do\n",
-      "\techo lire mot\n",
-      "\tread mot\n",
-      "end\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "read mot\n",
-      "while ((mot!=sortir)\n",
-      "\techo lire mot\n",
-      "\tread mot\n",
-      "\n",
-      "end\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "read mot\n",
-      "while ((mot!=sortir)\n",
-      "do\n",
-      "\techo lire mot\n",
-      "\tread mot\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Liste de commandes disponibles:\n",
-      "echo \n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo 1-Date du jour\n",
-      "echo 2-Liste des personnes connecter a la machine\n",
-      "echo 3-Liste des fichiers du repertoire courant\n",
-      "echo 4-Nom du repertoire courant\n",
-      "echo Votre choix:\n",
-      "read var\n",
-      "case $var in\n",
-      "\t1) echo $(date +\"%d-%m-%Y\");;\n",
-      "\t2) echo $(who);;\n",
-      "\t3) echo $(ls);;\n",
-      "\t4) echo $(pwd);;\n",
-      "esac\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Liste de commandes\n",
-      "echo 1-Date du jour\n",
-      "echo 2-Liste des personnes connecter a la machine\n",
-      "echo 3-Liste des fichiers du repertoire courant\n",
-      "echo 4-Nom du repertoire courant\n",
-      "echo Votre choix:\n",
-      "read var\n",
-      "while [$var>4]\n",
-      "do\n",
-      "\tcase $var in\n",
-      "\t\t1) echo $(date +\"%d-%m-%Y\");;\n",
-      "\t\t2) echo $(who);;\n",
-      "\t\t3) echo $(ls);;\n",
-      "\t\t4) echo $(pwd);;\n",
-      "\tesac\n",
-      "\tread var\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Liste de commandes\n",
-      "echo 1-Date du jour\n",
-      "echo 2-Liste des personnes connecter a la machine\n",
-      "echo 3-Liste des fichiers du repertoire courant\n",
-      "echo 4-Nom du repertoire courant\n",
-      "echo Votre choix:\n",
-      "read var\n",
-      "while [$var le 5]\n",
-      "do\n",
-      "\tcase $var in\n",
-      "\t\t1) echo $(date +\"%d-%m-%Y\");;\n",
-      "\t\t2) echo $(who);;\n",
-      "\t\t3) echo $(ls);;\n",
-      "\t\t4) echo $(pwd);;\n",
-      "\tesac\n",
-      "\tread var\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "read mot\n",
-      "while [mot!=sortir]\n",
-      "do\n",
-      "\techo lire mot\n",
-      "\tread mot\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "read mot\n",
-      "while [ $mot -ne \"sortir\"]\n",
-      "do\n",
-      "\techo lire mot\n",
-      "\tread mot\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "read mot\n",
-      "while [ \"$mot\" -ne \"sortir\"]\n",
-      "do\n",
-      "\techo lire mot\n",
-      "\tread mot\n",
-      "done\n"
-    ]
+    {
+      "name": "tp6_exo4.sh",
+      "lines": [
+        "liste_commandes = date who pwd ls\n"
+      ]
+    },
+    {
+      "name": "tp6_exo5.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "for i in $*\n",
+        "do\n",
+        "\techo argument 1 = $i\n",
+        "done\n"
+      ]
+    },
+    {
+      "name": "tp6_exo6.sh",
+      "lines": [
+        "let \"resultat=1\"\n",
+        "for i in $(seq $1)\n",
+        "do\n",
+        "\tlet \"resultat = resultat * $i\"\t\n",
+        "done\n",
+        "echo $resultat\n"
+      ]
+    },
+    {
+      "name": "tp6_exo7.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo 1-Date du jour\n",
+        "echo 2-Liste des personnes connecter a la machine\n",
+        "echo 3-Liste des fichiers du repertoire courant\n",
+        "echo 4-Nom du repertoire courant\n",
+        "echo Votre choix:\n",
+        "read var\n",
+        "case $var in\n",
+        "\t1) echo $(date +\"%d-%m-%Y\");;\n",
+        "\t2) echo $(who);;\n",
+        "\t3) echo $(ls);;\n",
+        "\t4) echo $(pwd);;\n",
+        "esac\n"
+      ]
+    },
+    {
+      "name": "tp6_exo8.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "read mot\n",
+        "while [ \"$mot\" -ne \"sortir\"]\n",
+        "do\n",
+        "\techo lire mot\n",
+        "\tread mot\n",
+        "done\n"
+      ]
+    },
+    {
+      "name": "tp6_exo9.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo Liste de commandes\n",
+        "echo 1-Date du jour\n",
+        "echo 2-Liste des personnes connecter a la machine\n",
+        "echo 3-Liste des fichiers du repertoire courant\n",
+        "echo 4-Nom du repertoire courant\n",
+        "echo Votre choix:\n",
+        "read var\n",
+        "while [$var le 5]\n",
+        "do\n",
+        "\tcase $var in\n",
+        "\t\t1) echo $(date +\"%d-%m-%Y\");;\n",
+        "\t\t2) echo $(who);;\n",
+        "\t\t3) echo $(ls);;\n",
+        "\t\t4) echo $(pwd);;\n",
+        "\tesac\n",
+        "\tread var\n",
+        "done\n"
+      ]
+    }
   ],
   "commands": [
     {

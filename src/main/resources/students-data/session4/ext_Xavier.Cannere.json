@@ -2,95 +2,39 @@
   "name": "ext_Xavier.Cannere",
   "session": 4,
   "scripts": [
-    [
-      "#!/bin/bash\n",
-      "expr $1 * 2\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "expr $1 \\* 2\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo \"Quelle est votre ann\u00c3\u00a9e de naissance ?\"\n",
-      "read $age\n",
-      "expr 2020 - $age\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo \"Quelle est votre ann\u00c3\u00a9e de naissance ?\"\n",
-      "read age\n",
-      "expr 2020 - $age\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo \"Quelle est votre ann\u00c3\u00a9e de naissance ?\"\n",
-      "read age\n",
-      "echo \"Vous \u00c3\u00aates n\u00c3\u00a9 en $age donc vous avez (expr 2020 - $age) ans\"\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo \"Quelle est votre ann\u00c3\u00a9e de naissance ?\"\n",
-      "read age\n",
-      "echo \"Vous \u00c3\u00aates n\u00c3\u00a9 en $age donc vous avez\"\n",
-      "expr 2020 - $age \n",
-      "echo \"ans\"\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo \"Quelle est votre ann\u00c3\u00a9e de naissance ?\"\n",
-      "read age\n",
-      "ans=`expr 2020 - $age`\n",
-      "echo \"Vous \u00c3\u00aates n\u00c3\u00a9 en $age donc vous avez donc $ans ans\"\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "who\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "nbuser=`who`\n",
-      "echo \"$nbuser\"\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "nbuser=`who | wc -l`\n",
-      "echo \"$nbuser\"\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "nbuser=`who | wc -l`\n",
-      "echo \"il y a $nbuser connect\u00c3\u00a9s sur la machine\"\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "nbuser=`who | wc -l`\n",
-      "echo \"il y a $nbuser utilisateurs connect\u00c3\u00a9s sur la machine\"\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "taille=du -sh\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "taille=`du -sh $1`\n",
-      "echo \"Le fichier fait $taille\"\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "taille=`du -sh $1`\n",
-      "echo \"Le fichier $1 fait $taille\"\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "taille=`du $1`\n",
-      "echo \"Le fichier $1 fait $taille\"\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "taille=`du -sh $1`\n",
-      "echo \"Le fichier $1 fait $taille\"\n"
-    ]
+    {
+      "name": "tp5bis_exo2.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "expr $1 \\* 2\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo3.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo \"Quelle est votre ann\u00c3\u00a9e de naissance ?\"\n",
+        "read age\n",
+        "ans=`expr 2020 - $age`\n",
+        "echo \"Vous \u00c3\u00aates n\u00c3\u00a9 en $age donc vous avez donc $ans ans\"\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo4.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "nbuser=`who | wc -l`\n",
+        "echo \"il y a $nbuser utilisateurs connect\u00c3\u00a9s sur la machine\"\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo5.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "taille=`du -sh $1`\n",
+        "echo \"Le fichier $1 fait $taille\"\n"
+      ]
+    }
   ],
   "profile": [
     {

@@ -2,57 +2,47 @@
   "name": "ext_Asala.LakhdarBarka",
   "session": 2,
   "scripts": [
-    [
-      "#!/bin/bash\n",
-      "cat $1>>$3\n",
-      "cat $2>>$3\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Nous sommes le 'date' \n",
-      "read date \n",
-      "echo Nous sommes le Mon 16 15:20:46 CET 2020\n",
-      "echo Ceci est \n",
-      "echo une tr\u00c3\u00a8s\n",
-      "echo longue phrase...\n",
-      "echo voici une \u00c3\u00a9toile : \\*\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Nous sommes le 'date' \n",
-      "read date \n",
-      "echo Nous sommes le Mon 16 15:20:46 CET 2020\n",
-      "echo Ceci est \n",
-      "echo une tr\u00c3\u00a8s\n",
-      "echo longue phrase...\n",
-      "echo voici une \u00c3\u00a9toile : \\*\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Nous sommes le `date` \n",
-      "read date \n",
-      "echo Nous sommes le Mon 16 15:20:46 CET 2020\n",
-      "echo Ceci est \n",
-      "echo une tr\u00c3\u00a8s\n",
-      "echo longue phrase...\n",
-      "echo voici une \u00c3\u00a9toile : \\*\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "arg=1\n",
-      "resultat=$(($1+$arg))\n",
-      "echo $resultat\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo old $PATH\n",
-      "export PATH=$PATH:$BASH \n",
-      "echo  new $PATH\n"
-    ]
+    {
+      "name": "tp5_exo6.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "cat $1>>$3\n",
+        "cat $2>>$3\n"
+      ]
+    },
+    {
+      "name": "tp5_exo7.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo Nous sommes le `date` \n",
+        "read date \n",
+        "echo Nous sommes le Mon 16 15:20:46 CET 2020\n",
+        "echo Ceci est \n",
+        "echo une tr\u00c3\u00a8s\n",
+        "echo longue phrase...\n",
+        "echo voici une \u00c3\u00a9toile : \\*\n",
+        "\n"
+      ]
+    },
+    {
+      "name": "tp5_exo8.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "arg=1\n",
+        "resultat=$(($1+$arg))\n",
+        "echo $resultat\n",
+        "\n"
+      ]
+    },
+    {
+      "name": "tp5_exo9.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo old $PATH\n",
+        "export PATH=$PATH:$BASH \n",
+        "echo  new $PATH\n"
+      ]
+    }
   ],
   "profile": [
     {

@@ -2,140 +2,38 @@
   "name": "ext_Jim.Stad",
   "session": 4,
   "scripts": [
-    [
-      "#!/bin/bash\n",
-      "echo expr $1 / 2\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "a = expr $1/2\n",
-      "echo $a\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "$a = expr $1/2\n",
-      "echo $a\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "a = expr $1 / 2\n",
-      "echo $a\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "$a=expr $1 / 2\n",
-      "echo $a\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "$a= expr $1 / 2\n",
-      "echo $a\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "expr $1 / 2\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo $(( $1 / 2 ))\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "expr $1 * 2\n",
-      "echo $(( $1 * 2 ))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "expr$1 * 2\n",
-      "echo $(( $1 * 2 ))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "expr $1 * 2\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "expr $1 * 2\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "expr $1 \\* 2\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo $(( $1 \\* 2))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo $(( $1 * 2))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Entrez votre annee de naissance\n",
-      "read n\n",
-      "a = date %Y\n",
-      "echo $(($a - $n ))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Entrez votre annee de naissance\n",
-      "read n\n",
-      "$a = date %Y\n",
-      "echo $(($a - $n ))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Entrez votre annee de naissance\n",
-      "read n\n",
-      "echo $((date %Y - $n ))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Entrez votre annee de naissance\n",
-      "read n\n",
-      "echo $((date '+%Y' - $n ))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Entrez votre annee de naissance\n",
-      "read n\n",
-      "echo $(((date '+%Y') - $n ))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Entrez votre annee de naissance\n",
-      "read n\n",
-      "echo $(( $(date '+%Y') - $n ))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Entrez votre annee de naissance\n",
-      "read n\n",
-      "echo vous etes ne en $n vous aves donc expr $(date '+%Y') - $n ans\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Entrez votre annee de naissance\n",
-      "read n\n",
-      "echo vous etes ne en $n vous aves donc $(expr $(date '+%Y') - $n) ans\n"
-    ],
-    [
-      "#!bin/bash\n",
-      "echo Il y a $(wc -l $(who)) utilisateurs connectes sur $(hostname)\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Il y a $(wc -l $(who)) utilisateurs connectes sur $(hostname)\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Il y a $(wc -l \"$(who)\") utilisateurs connectes sur $(hostname)\n",
-      "\n"
-    ]
+    {
+      "name": "tp5bis_exo1.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo $(( $1 / 2 ))\n",
+        "\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo2.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo $(( $1 * 2))\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo3.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo Entrez votre annee de naissance\n",
+        "read n\n",
+        "echo vous etes ne en $n vous aves donc $(expr $(date '+%Y') - $n) ans\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo4.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo Il y a $(wc -l \"$(who)\") utilisateurs connectes sur $(hostname)\n",
+        "\n"
+      ]
+    }
   ],
   "profile": [
     {

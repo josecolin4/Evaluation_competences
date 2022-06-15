@@ -2,40 +2,49 @@
   "name": "ext_Bader.Bouchfar",
   "session": 4,
   "scripts": [
-    [
-      "i= $2\n",
-      "\n",
-      "if i>5 and i<10 \n",
-      "\tthen\n",
-      "\t\techo \"yeet tas eu juste\"\n",
-      "\telse \n",
-      "\t\techo \"haha cest faux\"\n",
-      "fi\n",
-      "\n"
-    ],
-    [
-      "i= $2\n",
-      "\n",
-      "if $i>5 and $i<10 \n",
-      "\tthen\n",
-      "\t\techo \"yeet tas eu juste\"\n",
-      "\telse \n",
-      "\t\techo \"haha cest faux\"\n",
-      "fi\n",
-      "\n"
-    ],
-    [
-      "i= $2\n",
-      "j= 10\n",
-      "k= 5\n",
-      "if $i>$k and $i<$j \n",
-      "\tthen\n",
-      "\t\techo \"yeet tas eu juste\"\n",
-      "\telse \n",
-      "\t\techo \"haha cest faux\"\n",
-      "fi\n",
-      "\n"
-    ]
+    {
+      "name": "_1607337254__root_tp6__exo1.sh",
+      "lines": [
+        "i= $2\n",
+        "\n",
+        "if i>5 and i<10 \n",
+        "\tthen\n",
+        "\t\techo \"yeet tas eu juste\"\n",
+        "\telse \n",
+        "\t\techo \"haha cest faux\"\n",
+        "fi\n",
+        "\n"
+      ]
+    },
+    {
+      "name": "_1607337284__root_tp6__exo1.sh",
+      "lines": [
+        "i= $2\n",
+        "\n",
+        "if $i>5 and $i<10 \n",
+        "\tthen\n",
+        "\t\techo \"yeet tas eu juste\"\n",
+        "\telse \n",
+        "\t\techo \"haha cest faux\"\n",
+        "fi\n",
+        "\n"
+      ]
+    },
+    {
+      "name": "_1607337349__root_tp6__exo1.sh",
+      "lines": [
+        "i= $2\n",
+        "j= 10\n",
+        "k= 5\n",
+        "if $i>$k and $i<$j \n",
+        "\tthen\n",
+        "\t\techo \"yeet tas eu juste\"\n",
+        "\telse \n",
+        "\t\techo \"haha cest faux\"\n",
+        "fi\n",
+        "\n"
+      ]
+    }
   ],
   "profile": [
     {

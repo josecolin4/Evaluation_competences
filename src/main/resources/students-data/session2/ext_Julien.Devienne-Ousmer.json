@@ -2,73 +2,36 @@
   "name": "ext_Julien.Devienne-Ousmer",
   "session": 2,
   "scripts": [
-    [
-      "cat F1 F2 > F3\n"
-    ],
-    [
-      "echo Nous sommes le 'date'\n",
-      "echo Nous sommes le date\n",
-      "echo Ceci est\n",
-      "echo une tr\u00c3\u00a8s\n",
-      "echo longue phrase...\n",
-      "echo \"Voici une \u00c3\u00a9toile : *\"\n"
-    ],
-    [
-      "date=\"Mon Nov 16 15:20:46 CET 2020\"\n",
-      "echo Nous sommes le date\n",
-      "echo Nous sommes le 'date'\n",
-      "echo Ceci est\n",
-      "echo une tr\u00c3\u00a8s\n",
-      "echo longue phrase...\n",
-      "echo \"Voici une \u00c3\u00a9toile : *\"\n"
-    ],
-    [
-      "echo \"Nous sommes le date\"\n",
-      "echo Nous sommes le `date`\n",
-      "echo Ceci est\n",
-      "echo une tr\u00c3\u00a8s\n",
-      "echo longue phrase...\n",
-      "echo \"Voici une \u00c3\u00a9toile : *\"\n"
-    ],
-    [
-      "$1+1\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "shift\n",
-      "$1\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "shift\n",
-      "echo $1\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "shift\n",
-      "echo \"$1\"\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "nb=expr $1+1\n",
-      "echo $nb\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "nb=`expr $1+1`\n",
-      "echo $nb\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "expr $*+1\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "expr $* + 1\n"
-    ],
-    [
-      "echo $PATH\n"
-    ]
+    {
+      "name": "tp5_exo6.sh",
+      "lines": [
+        "cat F1 F2 > F3\n"
+      ]
+    },
+    {
+      "name": "tp5_exo7.sh",
+      "lines": [
+        "echo \"Nous sommes le date\"\n",
+        "echo Nous sommes le `date`\n",
+        "echo Ceci est\n",
+        "echo une tr\u00c3\u00a8s\n",
+        "echo longue phrase...\n",
+        "echo \"Voici une \u00c3\u00a9toile : *\"\n"
+      ]
+    },
+    {
+      "name": "tp5_exo8.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "expr $* + 1\n"
+      ]
+    },
+    {
+      "name": "tp5_exo9.sh",
+      "lines": [
+        "echo $PATH\n"
+      ]
+    }
   ],
   "profile": [
     {

@@ -2,66 +2,22 @@
   "name": "ext_Guillaume.Pomies",
   "session": 4,
   "scripts": [
-    [
-      "#!/bin/bash\n",
-      "echo quelle est votre ann\u00c3\u00a9e de naissance\\ ?\n",
-      "read dn\n",
-      "echo vous \u00c3\u00aates n\u00c3\u00a9 en $dn, vous avez donc `expr date \"+%Y\"` - $dn ans.\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo quelle est votre ann\u00c3\u00a9e de naissance\\ ?\n",
-      "read dn\n",
-      "echo vous \u00c3\u00aates n\u00c3\u00a9 en $dn, vous avez donc `expr date \"+%Y\"` - $dn ans.\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo quelle est votre ann\u00c3\u00a9e de naissance\\ ?\n",
-      "read dn\n",
-      "echo vous \u00c3\u00aates n\u00c3\u00a9 en $dn, vous avez donc `expr$(date \"+%Y\"`) - $dn ans.\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo quelle est votre ann\u00c3\u00a9e de naissance\\ ?\n",
-      "read dn\n",
-      "echo vous \u00c3\u00aates n\u00c3\u00a9 en $dn, vous avez donc `expr$(date \"+%Y\"`)- $dn ans.\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo quelle est votre ann\u00c3\u00a9e de naissance\\ ?\n",
-      "read dn\n",
-      "echo vous \u00c3\u00aates n\u00c3\u00a9 en $dn, vous avez donc `expr$(date \"+%Y\")- $dn` ans.\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo quelle est votre ann\u00c3\u00a9e de naissance\\?\n",
-      "read dn\n",
-      "echo vous \u00c3\u00aates n\u00c3\u00a9 en $dn, vous avez donc `expr$(date \"+%Y\")- $dn` ans.\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo quelle est votre ann\u00c3\u00a9e de naissance\\?\n",
-      "read dn\n",
-      "echo vous \u00c3\u00aates n\u00c3\u00a9 en $dn, vous avez donc `expr $(date \"+%Y\")- $dn` ans.\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo quelle est votre ann\u00c3\u00a9e de naissance\\?\n",
-      "read dn\n",
-      "echo vous \u00c3\u00aates n\u00c3\u00a9 en $dn, vous avez donc `expr $(date \"+%Y\") - $dn` ans.\n"
-    ],
-    [
-      "#/!bin/bash\n",
-      "`who | wc -l`\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "`who | wc -l`\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "who | wc -l\n"
-    ]
+    {
+      "name": "tp5bis_exo3.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo quelle est votre ann\u00c3\u00a9e de naissance\\?\n",
+        "read dn\n",
+        "echo vous \u00c3\u00aates n\u00c3\u00a9 en $dn, vous avez donc `expr $(date \"+%Y\") - $dn` ans.\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo4.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "who | wc -l\n"
+      ]
+    }
   ],
   "profile": [
     {

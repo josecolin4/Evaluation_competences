@@ -2,21 +2,22 @@
   "name": "ext_Hicham.Lotfi",
   "session": 3,
   "scripts": [
-    [
-      "a=6 ; b=2\n",
-      "expr $a / $b #affiche 3\n",
-      "\n"
-    ],
-    [
-      "a=6 ; b=2\n",
-      "expr $a * $b #affiche 12\n",
-      "\n"
-    ],
-    [
-      "a=6 ; b=2\n",
-      "expr $a * $b \n",
-      "\n"
-    ]
+    {
+      "name": "tp5bis_exo1.sh",
+      "lines": [
+        "a=6 ; b=2\n",
+        "expr $a / $b #affiche 3\n",
+        "\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo2.sh",
+      "lines": [
+        "a=6 ; b=2\n",
+        "expr $a * $b \n",
+        "\n"
+      ]
+    }
   ],
   "profile": [
     {

@@ -2,185 +2,61 @@
   "name": "ext_Anthony.Sageloly",
   "session": 5,
   "scripts": [
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "if $1 > 5 or $1 < 10\n",
-      "\tthen \n",
-      "\t\techo La valeur $1 est comprise entre 5 et 10.\n",
-      " \telse \n",
-      "\t\techo La valeur $1 n'est pas comprise entre 5 et 10.\n",
-      "fi \n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "if test $1 > 5 or test $1 < 10\n",
-      "\tthen \n",
-      "\t\techo La valeur $1 est comprise entre 5 et 10.\n",
-      " \telse \n",
-      "\t\techo La valeur $1 n'est pas comprise entre 5 et 10.\n",
-      "fi \n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "if $1 > 5 or $1 < 10\n",
-      "\tthen \n",
-      "\t\techo La valeur $1 est comprise entre 5 et 10.\n",
-      " \telse \n",
-      "\t\techo La valeur $1 n'est pas comprise entre 5 et 10.\n",
-      "fi \n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "if test $1 > 5 or $1 < 10\n",
-      "\tthen \n",
-      "\t\techo La valeur $1 est comprise entre 5 et 10.\n",
-      " \telse \n",
-      "\t\techo La valeur $1 n'est pas comprise entre 5 et 10.\n",
-      "fi \n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "if test $1 -gt 5 -o $1 -lt 10\n",
-      "\tthen \n",
-      "\t\techo La valeur $1 est comprise entre 5 et 10.\n",
-      " \telse \n",
-      "\t\techo La valeur $1 n'est pas comprise entre 5 et 10.\n",
-      "fi \n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "if test $1 -gt 5 -o test $1 -lt 10\n",
-      "\tthen \n",
-      "\t\techo La valeur $1 est comprise entre 5 et 10.\n",
-      " \telse \n",
-      "\t\techo La valeur $1 n'est pas comprise entre 5 et 10.\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "if test $1 -gt 5 -a test $1 -lt 10\n",
-      "\tthen \n",
-      "\t\techo La valeur $1 est comprise entre 5 et 10.\n",
-      " \telse \n",
-      "\t\techo La valeur $1 n'est pas comprise entre 5 et 10.\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "if test $1 -gt 5 -a $1 -lt 10\n",
-      "\tthen \n",
-      "\t\techo La valeur $1 est comprise entre 5 et 10.\n",
-      " \telse \n",
-      "\t\techo La valeur $1 n'est pas comprise entre 5 et 10.\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "if test $1 -gt 5 -a $1 -lt 10\n",
-      "\tthen \n",
-      "\t\techo La valeur $1 est comprise entre 5 et 10.\n",
-      " \telse \n",
-      "\t\techo La valeur $1 n/'est pas comprise entre 5 et 10.\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "if test $1 -gt 5 -a $1 -lt 10\n",
-      "\tthen \n",
-      "\t\techo La valeur $1 est comprise entre 5 et 10.\n",
-      " \telse \n",
-      "\t\techo La valeur $1 n\\'est pas comprise entre 5 et 10.\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "if test -w -a -r $1\n",
-      "\tthen \n",
-      "\t\techo Le fichier $1 existe et est accessible en lecture et en \u00c3\u00a9criture.\n",
-      "\telse \n",
-      "\t\techo Le fichier $1 n\\'existe pas, ou n\\'est pas accessible en lecture, ou n\\'est pas accessible en \u00c3\u00a9criture.\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "if test -w $1 -a -r $1\n",
-      "\tthen \n",
-      "\t\techo Le fichier $1 existe et est accessible en lecture et en \u00c3\u00a9criture.\n",
-      "\telse \n",
-      "\t\techo Le fichier $1 n\\'existe pas, ou n\\'est pas accessible en lecture, ou n\\'est pas accessible en \u00c3\u00a9criture.\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "if test -e $1 -a -e $2\n",
-      "\tthen\n",
-      "\t\techo Souhaitez-vous concat\u00c3\u00a9ner les fichiers ? (oui ou non)\n",
-      "\t\tread reponse\n",
-      "\t\tcase $reponse in \n",
-      "\t\t\toui ) echo $* ;;\n",
-      "\t\t\tnon ) echo \"KO\" ;; \n",
-      "\telse \n",
-      "\t\techo KO\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "if test -e $1 -a -e $2\n",
-      "\tthen\n",
-      "\t\techo Souhaitez-vous concat\u00c3\u00a9ner les fichiers ? oui ou non\n",
-      "\t\tread reponse\n",
-      "\t\tcase $reponse in \n",
-      "\t\t\toui ) echo $* ;;\n",
-      "\t\t\tnon ) echo \"KO\" ;; \n",
-      "\telse \n",
-      "\t\techo KO\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "if test -e $1 -a -e $2\n",
-      "\tthen\n",
-      "\t\techo Souhaitez-vous concat\u00c3\u00a9ner les fichiers ? oui ou non\n",
-      "\t\tread reponse\n",
-      "\t\tcase $reponse in \n",
-      "\t\t\toui ) echo $* ;;\n",
-      "\t\t\tnon ) echo \"KO\" ;;\n",
-      "\t\tesac \n",
-      "\telse \n",
-      "\t\techo KO\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "liste_commandes=\"date who pwd ls\"\n",
-      "for i in liste_commandes\n",
-      "do \n",
-      "\t$i\n",
-      "done \n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "liste_commandes=\"date who pwd ls\"\n",
-      "for i in $liste_commandes\n",
-      "do \n",
-      "\t$i\n",
-      "done \n"
-    ]
+    {
+      "name": "tp6_exo1.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "\n",
+        "if test $1 -gt 5 -a $1 -lt 10\n",
+        "\tthen \n",
+        "\t\techo La valeur $1 est comprise entre 5 et 10.\n",
+        " \telse \n",
+        "\t\techo La valeur $1 n\\'est pas comprise entre 5 et 10.\n",
+        "fi\n"
+      ]
+    },
+    {
+      "name": "tp6_exo2.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "\n",
+        "if test -w $1 -a -r $1\n",
+        "\tthen \n",
+        "\t\techo Le fichier $1 existe et est accessible en lecture et en \u00c3\u00a9criture.\n",
+        "\telse \n",
+        "\t\techo Le fichier $1 n\\'existe pas, ou n\\'est pas accessible en lecture, ou n\\'est pas accessible en \u00c3\u00a9criture.\n",
+        "fi\n"
+      ]
+    },
+    {
+      "name": "tp6_exo3.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "\n",
+        "if test -e $1 -a -e $2\n",
+        "\tthen\n",
+        "\t\techo Souhaitez-vous concat\u00c3\u00a9ner les fichiers ? oui ou non\n",
+        "\t\tread reponse\n",
+        "\t\tcase $reponse in \n",
+        "\t\t\toui ) echo $* ;;\n",
+        "\t\t\tnon ) echo \"KO\" ;;\n",
+        "\t\tesac \n",
+        "\telse \n",
+        "\t\techo KO\n",
+        "fi\n"
+      ]
+    },
+    {
+      "name": "tp6_exo4.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "liste_commandes=\"date who pwd ls\"\n",
+        "for i in $liste_commandes\n",
+        "do \n",
+        "\t$i\n",
+        "done \n"
+      ]
+    }
   ],
   "commands": [
     {

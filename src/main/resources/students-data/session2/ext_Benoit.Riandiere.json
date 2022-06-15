@@ -2,55 +2,26 @@
   "name": "ext_Benoit.Riandiere",
   "session": 2,
   "scripts": [
-    [
-      "echo $(( 6 / 2 ))\n"
-    ],
-    [
-      "echo $(( 5 / 2 ))\n"
-    ],
-    [
-      "expr 8 * 2\n"
-    ],
-    [
-      "echo $((8*2))\n"
-    ],
-    [
-      "quelle est votre ann\u00c3\u00a9e de naissance ?\n"
-    ],
-    [
-      "quelle est votre ann\u00c3\u00a9e de naissance ?\n",
-      "1990\n"
-    ],
-    [
-      "quelle est votre ann\u00c3\u00a9e de naissance ?\n",
-      "1990\n",
-      "echo $((date-1990))\n"
-    ],
-    [
-      "echo quelle est votre ann\u00c3\u00a9e de naissance ?\n",
-      "echo 1990\n",
-      "echo $((date-1990))\n"
-    ],
-    [
-      "echo quelle est votre ann\u00c3\u00a9e de naissance ?\n",
-      "echo 1990\n",
-      "echo $(('date'-1990))\n"
-    ],
-    [
-      "echo quelle est votre ann\u00c3\u00a9e de naissance\n",
-      "n=`date +%Y`\n",
-      "echo $n\n"
-    ],
-    [
-      "echo quelle est votre ann\u00c3\u00a9e de naissance\n",
-      "n=`date +%Y`\n",
-      "echo $n - 1990\n"
-    ],
-    [
-      "echo quelle est votre ann\u00c3\u00a9e de naissance\n",
-      "n=`date +%Y`\n",
-      "echo $((n - 1990))\n"
-    ]
+    {
+      "name": "tp5bis_exo1.sh",
+      "lines": [
+        "echo $(( 5 / 2 ))\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo2.sh",
+      "lines": [
+        "echo $((8*2))\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo3.sh",
+      "lines": [
+        "echo quelle est votre ann\u00c3\u00a9e de naissance\n",
+        "n=`date +%Y`\n",
+        "echo $((n - 1990))\n"
+      ]
+    }
   ],
   "profile": [
     {

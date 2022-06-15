@@ -2,223 +2,62 @@
   "name": "ext_Charles.AkameEdgarJubert",
   "session": 4,
   "scripts": [
-    [
-      "#!/bin/bash\n",
-      "echo il y \n",
-      "$who\n",
-      "echo connect\u00c3\u00a9 sur \n",
-      "$hotname\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo il y \n",
-      "who\n",
-      "echo connect\u00c3\u00a9 sur \n",
-      "hotname\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "set --`ls-l $1 `\n",
-      "echo $5\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "set $(ls-l $1 )\n",
-      "echo $5\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "`set -- $(ls-l $1 )`\n",
-      "echo $5\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "`set -- $(ls -l $1 )`\n",
-      "echo $5\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "`set -- $(ls -l $1 )`\n",
-      "echo $1\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "`set -- $(ls -l $1 )`\n",
-      "echo $1\n",
-      "echo $5\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "set --` $(ls -l $1 )`\n",
-      "echo $1\n",
-      "echo $5\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "set` -- $(ls -l $1 )`\n",
-      "echo $1\n",
-      "echo $5\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "set-- `$(ls -l $1)`\n",
-      "echo $1\n",
-      "echo $5\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "set -- $(`ls -l $1`)\n",
-      "echo $1\n",
-      "echo $5\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "set -- `ls -l $1`\n",
-      "echo $1\n",
-      "echo $5\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "set -- `ls -l $1`\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "set -- `ls -l $1`\n",
-      "echo $1\n",
-      "echo$5\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "set -- `ls -l $1`\n",
-      "echo $1\n",
-      "echo $5\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "n1=5\n",
-      "n2=10\n",
-      "if [ $1 -gt $n1 -a $1 -lt $n2]\n",
-      "then\n",
-      "\techo \"la valeur $1 est comprise entre 5 et 10\"\n",
-      "else\n",
-      "\techo \"La valeur $1 n'est pas comprise entre 5 et 10\"\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "n1=5\n",
-      "n2=10\n",
-      "if [ $1 -gt $n1 ]\n",
-      "then\n",
-      "\techo \"la valeur $1 est comprise entre 5 et 10\"\n",
-      "else\n",
-      "\techo \"La valeur $1 n'est pas comprise entre 5 et 10\"\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      " if [ $1 -e  ] then\n",
-      "\t-r$1\n",
-      "\t-w$1\n",
-      "\t-f$1\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if [ $1 -e = 1 ] then\n",
-      "        echo \"le fichier existe\"\n",
-      " else\n",
-      "        echo \"Le fichier existe pas\"\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if [ $1 -e = 1 ] then\n",
-      "        echo \"le fichier existe\"\n",
-      "else\n",
-      "        echo \"Le fichier existe pas\"\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if [ $1 -e = 1 ] then\n",
-      "        echo \"le fichier existe\"\n",
-      "`else`\n",
-      "        echo \"Le fichier existe pas\"\n",
-      "fi\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if [ $1 -e = 1 ] then\n",
-      "        echo \"le fichier existe\"\n",
-      "`else`\n",
-      "        echo \"Le fichier existe pas\"\n",
-      "`fi`\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test -r $1 && test -w $1 && test -e $1\n",
-      "then\n",
-      "\techo \"Le fichier $1 existe et est accessible en lecture et en ecriture \"\n",
-      "else echo\"Le fichier $1 n'est pas accessible en lecture ou en ecriture\"\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test -e $1 $2 $2\n",
-      "then \n",
-      "\techo \"Les fichiers existe\"\n",
-      "else\n",
-      "\techo\"error\"\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test -e $1 $2 \n",
-      "then \n",
-      "\techo \"Les fichiers existe\"\n",
-      "else\n",
-      "\techo\"error\"\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test -e $1 && $2 \n",
-      "then \n",
-      "\techo \"Les fichiers existe\"\n",
-      "else\n",
-      "\techo\"error\"\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test -e $1 && $2 \n",
-      "then \n",
-      "\techo \"Les fichiers existe\"\n",
-      "else\n",
-      "\techo \"error\"\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test -e $1 && $2 \n",
-      "then \n",
-      "\techo \"Les fichiers $1 et $2  existe\"\n",
-      "else\n",
-      "\techo \"error\"\n",
-      "fi\n"
-    ]
+    {
+      "name": "tp5bis_exo4.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo il y \n",
+        "who\n",
+        "echo connect\u00c3\u00a9 sur \n",
+        "hotname\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo5.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "set -- `ls -l $1`\n",
+        "echo $1\n",
+        "echo $5\n"
+      ]
+    },
+    {
+      "name": "tp6_exo1.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "n1=5\n",
+        "n2=10\n",
+        "if [ $1 -gt $n1 ]\n",
+        "then\n",
+        "\techo \"la valeur $1 est comprise entre 5 et 10\"\n",
+        "else\n",
+        "\techo \"La valeur $1 n'est pas comprise entre 5 et 10\"\n",
+        "fi\n"
+      ]
+    },
+    {
+      "name": "tp6_exo2.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "if test -r $1 && test -w $1 && test -e $1\n",
+        "then\n",
+        "\techo \"Le fichier $1 existe et est accessible en lecture et en ecriture \"\n",
+        "else echo\"Le fichier $1 n'est pas accessible en lecture ou en ecriture\"\n",
+        "fi\n"
+      ]
+    },
+    {
+      "name": "tp6_exo3.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "if test -e $1 && $2 \n",
+        "then \n",
+        "\techo \"Les fichiers $1 et $2  existe\"\n",
+        "else\n",
+        "\techo \"error\"\n",
+        "fi\n"
+      ]
+    }
   ],
   "profile": [
     {

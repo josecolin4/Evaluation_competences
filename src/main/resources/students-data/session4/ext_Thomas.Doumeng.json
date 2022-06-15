@@ -2,29 +2,38 @@
   "name": "ext_Thomas.Doumeng",
   "session": 4,
   "scripts": [
-    [
-      "#!/bin/bash\n",
-      "utilisateur=`who | wc -l`\n",
-      "machine=``hostname`\n",
-      "echo Il y a $utilisateur connect\u00c3\u00a9s sur $machine.\n",
-      "u=$(who | wc -l)\n",
-      "m=$(hostname)\n",
-      "echo Il y a $u utilisateur connect\u00c3\u00a9s sur la machine $m\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "utilisateur=`who | wc -l`\n",
-      "machine=`hostname`\n",
-      "echo Il y a $utilisateur connect\u00c3\u00a9s sur $machine.\n",
-      "u=$(who | wc -l)\n",
-      "m=$(hostname)\n",
-      "echo Il y a $u utilisateur connect\u00c3\u00a9s sur la machine $m\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "set $(du -sh $1 | cut -f1 -dK)\n",
-      "echo $1\n"
-    ]
+    {
+      "name": "tp5_exo4.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "utilisateur=`who | wc -l`\n",
+        "machine=``hostname`\n",
+        "echo Il y a $utilisateur connect\u00c3\u00a9s sur $machine.\n",
+        "u=$(who | wc -l)\n",
+        "m=$(hostname)\n",
+        "echo Il y a $u utilisateur connect\u00c3\u00a9s sur la machine $m\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo4.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "utilisateur=`who | wc -l`\n",
+        "machine=`hostname`\n",
+        "echo Il y a $utilisateur connect\u00c3\u00a9s sur $machine.\n",
+        "u=$(who | wc -l)\n",
+        "m=$(hostname)\n",
+        "echo Il y a $u utilisateur connect\u00c3\u00a9s sur la machine $m\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo5.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "set $(du -sh $1 | cut -f1 -dK)\n",
+        "echo $1\n"
+      ]
+    }
   ],
   "profile": [
     {

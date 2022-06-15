@@ -2,39 +2,48 @@
   "name": "ext_Nathan.Bellus",
   "session": 1,
   "scripts": [
-    [
-      "#!/bin/bash\n",
-      "echo Mon nom de login est : $USERS\n",
-      "echo Mon shell est :\n",
-      "$0\n",
-      "echo Les variables du shell sont :\n",
-      "set\n",
-      "echo Celles d'environnement sont :\n",
-      "env\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo \"Le script\"\n",
-      "$0\n",
-      "echo \"poss\u00c3\u00a8de\"\n",
-      "$#\n",
-      "echo \"param\u00c3\u00a8tre(s), que voici :\"\n",
-      "$*\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Nous sommes le `date`\n",
-      "\n",
-      "echo Nous sommes le Mon Nov 16 15:20:46 CET 2020\n",
-      "\n",
-      "Ceci est\n",
-      "\n",
-      "une tr\u00c3\u00a8s\n",
-      "\n",
-      "longue phrase...\n",
-      "\n",
-      "Voici une \u00c3\u00a9toile : *\n"
-    ]
+    {
+      "name": "tp5_exo2.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo Mon nom de login est : $USERS\n",
+        "echo Mon shell est :\n",
+        "$0\n",
+        "echo Les variables du shell sont :\n",
+        "set\n",
+        "echo Celles d'environnement sont :\n",
+        "env\n"
+      ]
+    },
+    {
+      "name": "tp5_exo5.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo \"Le script\"\n",
+        "$0\n",
+        "echo \"poss\u00c3\u00a8de\"\n",
+        "$#\n",
+        "echo \"param\u00c3\u00a8tre(s), que voici :\"\n",
+        "$*\n"
+      ]
+    },
+    {
+      "name": "tp5_exo6.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo Nous sommes le `date`\n",
+        "\n",
+        "echo Nous sommes le Mon Nov 16 15:20:46 CET 2020\n",
+        "\n",
+        "Ceci est\n",
+        "\n",
+        "une tr\u00c3\u00a8s\n",
+        "\n",
+        "longue phrase...\n",
+        "\n",
+        "Voici une \u00c3\u00a9toile : *\n"
+      ]
+    }
   ],
   "profile": [
     {

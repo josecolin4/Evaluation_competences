@@ -2,61 +2,49 @@
   "name": "ext_Nathan.Ruiz",
   "session": 3,
   "scripts": [
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "div=$(($1 / 2))\n",
-      "echo $div\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "x=$1\n",
-      "expr $x * 2\n",
-      "\n",
-      "mult=$(($1 * 2))\n",
-      "echo $mult\n",
-      " \n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Quel est votre ann\u00c3\u00a9e de naissance ?\n",
-      "read annee\n",
-      "anneeActu=$(date '+%Y')\n",
-      "age=anneeActu - annee\n",
-      "echo vous avez $age ans\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Quel est votre ann\u00c3\u00a9e de naissance ?\n",
-      "read annee\n",
-      "anneeActu=$(date '+%Y')\n",
-      "age=$anneeActu - $annee\n",
-      "echo vous avez $age ans\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Quel est votre ann\u00c3\u00a9e de naissance ?\n",
-      "read annee\n",
-      "anneeActu=$((date '+%Y'))\n",
-      "age=$anneeActu - $((annee))\n",
-      "echo vous avez $age ans\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Quel est votre ann\u00c3\u00a9e de naissance ?\n",
-      "read annee\n",
-      "anneeActu=$(date '+%Y')\n",
-      "age=$(($anneeActu - $annee))\n",
-      "echo vous avez $age ans\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "host=$(hostname)\n",
-      "user=$(who)\n",
-      "echo $host $user\n",
-      "\n"
-    ]
+    {
+      "name": "TP5bis_ex1.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "\n",
+        "div=$(($1 / 2))\n",
+        "echo $div\n",
+        "\n"
+      ]
+    },
+    {
+      "name": "TP5bis_ex2.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "x=$1\n",
+        "expr $x * 2\n",
+        "\n",
+        "mult=$(($1 * 2))\n",
+        "echo $mult\n",
+        " \n"
+      ]
+    },
+    {
+      "name": "TP5bis_ex3.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo Quel est votre ann\u00c3\u00a9e de naissance ?\n",
+        "read annee\n",
+        "anneeActu=$(date '+%Y')\n",
+        "age=$(($anneeActu - $annee))\n",
+        "echo vous avez $age ans\n"
+      ]
+    },
+    {
+      "name": "TP5bis_ex4.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "host=$(hostname)\n",
+        "user=$(who)\n",
+        "echo $host $user\n",
+        "\n"
+      ]
+    }
   ],
   "profile": [
     {

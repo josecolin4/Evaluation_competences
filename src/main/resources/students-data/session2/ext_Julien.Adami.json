@@ -2,40 +2,22 @@
   "name": "ext_Julien.Adami",
   "session": 2,
   "scripts": [
-    [
-      "#!/bin/bash\n",
-      "echo Les textes sont 'F'\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Les textes sont  $1 $2\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "cat F1 F2 >F\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "cat $1 $2 >$3\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "var=1\n",
-      "read vad\n",
-      "echo $var + env $vad\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "var=1\n",
-      "read vad\n",
-      "echo $var +' envr $vad'\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "var=1\n",
-      "var = $var + 1\n",
-      "echo $var\n"
-    ]
+    {
+      "name": "tp5_exo6.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "cat $1 $2 >$3\n"
+      ]
+    },
+    {
+      "name": "tp5_exo8.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "var=1\n",
+        "var = $var + 1\n",
+        "echo $var\n"
+      ]
+    }
   ],
   "profile": [
     {

@@ -2,95 +2,44 @@
   "name": "ext_Valentin.Fiche",
   "session": 4,
   "scripts": [
-    [
-      "if (test $1 -le 10 -a test $1 -ge 5) then\n",
-      "echo la valeure est bien comprise entre 5 et 10\n",
-      "else \n",
-      "echo la valeur nest pas comprise entre 5 et 10\n",
-      "fi\n"
-    ],
-    [
-      "if test $1 -le 10 -a $1 -ge 5 then\n",
-      "echo la valeure est bien comprise entre 5 et 10\n",
-      "else \n",
-      "echo la valeur nest pas comprise entre 5 et 10\n",
-      "fi\n"
-    ],
-    [
-      "if test $1 -le 10 -a $1 -ge 5 then\n",
-      "echo la valeure est bien comprise entre 5 et 10\n",
-      "else\n",
-      "echo la valeur nest pas comprise entre 5 et 10\n",
-      "fi\n"
-    ],
-    [
-      "if $(test $1 -le 10 -a $1 -ge 5) then\n",
-      "echo la valeure est bien comprise entre 5 et 10\n",
-      "else\n",
-      "echo la valeur nest pas comprise entre 5 et 10\n",
-      "fi\n"
-    ],
-    [
-      "if test $1 -le 10 -a $1 -ge 5 \n",
-      "then\n",
-      "echo la valeure est bien comprise entre 5 et 10\n",
-      "else\n",
-      "echo la valeur nest pas comprise entre 5 et 10\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash \n",
-      "if test $1 -e -a $1 -r -a $1 -w  \n",
-      "then     echo \"Mon fichier existe\" \n",
-      "else     echo \"Mon fichier n'existe pas\" \n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash \n",
-      "if test $1 -e -a $1 -r   \n",
-      "then     echo \"Mon fichier existe\" \n",
-      "else     echo \"Mon fichier n'existe pas\" \n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test $1 -e -a $1 -r\n",
-      "then\n",
-      "echo \"Mon fichier existe\"\n",
-      "else\n",
-      "echo \"Mon fichier n'existe pas\"\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test $1 -e -a $1 -r\n",
-      "then\n",
-      "echo \"Mon fichier existe\"\n",
-      "else\n",
-      "echo \"Mon fichier n'existe pas\"\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test  -e $1 -a -r $1 -a -w $1\n",
-      "then\n",
-      "echo \"Mon fichier existe\"\n",
-      "else\n",
-      "echo \"Mon fichier n'existe pas\"\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test  -e $1 -a -e $2\n",
-      "then\n",
-      "echo \"Mon fichier existe\"\n",
-      "else\n",
-      "echo \"Mon fichier n'existe pas\"\n",
-      "fi\n",
-      "\n",
-      "less $1\n",
-      "less $2\n"
-    ]
+    {
+      "name": "tp6_ex1.sh",
+      "lines": [
+        "if test $1 -le 10 -a $1 -ge 5 \n",
+        "then\n",
+        "echo la valeure est bien comprise entre 5 et 10\n",
+        "else\n",
+        "echo la valeur nest pas comprise entre 5 et 10\n",
+        "fi\n"
+      ]
+    },
+    {
+      "name": "tp6_ex2.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "if test  -e $1 -a -r $1 -a -w $1\n",
+        "then\n",
+        "echo \"Mon fichier existe\"\n",
+        "else\n",
+        "echo \"Mon fichier n'existe pas\"\n",
+        "fi\n"
+      ]
+    },
+    {
+      "name": "tp6_ex3.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "if test  -e $1 -a -e $2\n",
+        "then\n",
+        "echo \"Mon fichier existe\"\n",
+        "else\n",
+        "echo \"Mon fichier n'existe pas\"\n",
+        "fi\n",
+        "\n",
+        "less $1\n",
+        "less $2\n"
+      ]
+    }
   ],
   "profile": [
     {

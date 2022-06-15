@@ -2,212 +2,48 @@
   "name": "ext_Melanie.Lefevre",
   "session": 4,
   "scripts": [
-    [
-      "if $F1 >5 then\n",
-      "\tif $F1<10 then\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "who=`who`\n",
-      "echo $who\n",
-      "hostname=`hostname`\n",
-      "echo $hostname\n",
-      "\n",
-      "rep= $(who)\n",
-      "echo $rep\n",
-      "name= $(hostname)\n",
-      "echo name\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "who=`who`\n",
-      "echo $who\n",
-      "hostname=`hostname`\n",
-      "echo $hostname\n",
-      "\n",
-      "rep= $(who)\n",
-      "echo $rep\n",
-      "name= $(hostname)\n",
-      "echo name\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "who=`who`\n",
-      "echo $who\n",
-      "hostname=`hostname`\n",
-      "echo $hostname\n",
-      "\n",
-      "rep= $(who)\n",
-      "echo $rep\n",
-      "name= $(hostname)\n",
-      "echo $name\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "who=`who`\n",
-      "echo $who\n",
-      "hostname=`hostname`\n",
-      "echo $hostname\n",
-      "\n",
-      "rep=$(who)\n",
-      "echo $rep\n",
-      "n=$(hostname)\n",
-      "echo $n\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "who=`who`\n",
-      "echo $who\n",
-      "hostname=`hostname`\n",
-      "echo $hostname\n",
-      "\n",
-      "rep=$(who)\n",
-      "echo $rep\n",
-      "n=$(hostname)\n",
-      "echo $n\n",
-      "echo  il y'a `who` utilisateur connecter sur `hostname`\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo  il y'a $(who|ls-l) utilisateur connecter sur $(hostname)\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo  il y'a $(who|wc-l) utilisateur connecter sur $(hostname)\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo  il y a $(who|wc-l) utilisateur connecter sur $(hostname)\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo  il y a $(who|wc -l) utilisateur connecter sur $(hostname)\n"
-    ],
-    [
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
-      "read age\n",
-      "echo vous etes n\u00c3\u00a9e en 1990 vous avez donc\n",
-      "expr  `$(date +%Y) - $age`\n",
-      "\n"
-    ],
-    [
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
-      "read age\n",
-      "echo vous etes n\u00c3\u00a9e en 1990 vous avez donc`expr $(date +%Y) - $age`\n",
-      "\n"
-    ],
-    [
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
-      "read age\n",
-      "echo vous etes n\u00c3\u00a9e en 1990 vous avez donc `expr $(date +%Y) - $age`\n",
-      "\n"
-    ],
-    [
-      "set  --$(ls -l tp5bis_exo5.sh)\n",
-      "echo $5\n"
-    ],
-    [
-      "set -- $(ls -l tp5bis_exo5.sh)\n",
-      "echo $5\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "set -- $(ls -l tp5bis_exo5.sh)\n",
-      "echo $5\n"
-    ],
-    [
-      "if $F1 >5\n",
-      "\t then\n",
-      "\t\tif $F1<10 \t\n",
-      "\t\t\tthen\n",
-      "\t\t\t\techo le nombre $F1 compris entre 5 et 10\n",
-      "\t\tfi\n",
-      "\n",
-      "\telse\n",
-      "\t\techo le nombre $F1 n'est pas compris entre 5 et 10\n",
-      "fi\n"
-    ],
-    [
-      "echo donne une valeur a F1\n",
-      "read $F1\n",
-      "if $F1 >5\n",
-      "\t then\n",
-      "\t\tif $F1<10 \t\n",
-      "\t\t\tthen\n",
-      "\t\t\t\techo le nombre $F1 compris entre 5 et 10\n",
-      "\t\tfi\n",
-      "\n",
-      "\telse\n",
-      "\t\techo le nombre $F1 n'est pas compris entre 5 et 10\n",
-      "fi\n"
-    ],
-    [
-      "echo donne une valeur a F1\n",
-      "read $F1\n",
-      "if $F1 -ge 5\n",
-      "\t then\n",
-      "\t\tif $F1 -lt 10 \t\n",
-      "\t\t\tthen\n",
-      "\t\t\t\techo le nombre $F1 compris entre 5 et 10\n",
-      "\t\tfi\n",
-      "\n",
-      "\telse\n",
-      "\t\techo le nombre $F1 n'est pas compris entre 5 et 10\n",
-      "fi\n"
-    ],
-    [
-      "echo donne une valeur a F1\n",
-      "read $F1\n",
-      "if [$F1 -ge] 5\n",
-      "\t then\n",
-      "\t\tif [$F1 -lt] 10 \t\n",
-      "\t\t\tthen\n",
-      "\t\t\t\techo le nombre $F1 compris entre 5 et 10\n",
-      "\t\tfi\n",
-      "\n",
-      "\telse\n",
-      "\t\techo le nombre $F1 n'est pas compris entre 5 et 10\n",
-      "fi\n"
-    ],
-    [
-      "echo donne une valeur a F1\n",
-      "read $F1\n",
-      "if [$F1 -ge 5]\n",
-      "\t then\n",
-      "\t\tif [$F1 -lt 10] \t\n",
-      "\t\t\tthen\n",
-      "\t\t\t\techo le nombre $F1 compris entre 5 et 10\n",
-      "\t\tfi\n",
-      "\n",
-      "\telse\n",
-      "\t\techo le nombre $F1 n'est pas compris entre 5 et 10\n",
-      "fi\n"
-    ],
-    [
-      "echo donne une valeur a F1\n",
-      "read $F1\n",
-      "if [ $F1 -ge 5 ]\n",
-      "\t then\n",
-      "\t\tif [ $F1 -lt 10 ] \t\n",
-      "\t\t\tthen\n",
-      "\t\t\t\techo le nombre $F1 compris entre 5 et 10\n",
-      "\t\tfi\n",
-      "\n",
-      "\telse\n",
-      "\t\techo le nombre $F1 n'est pas compris entre 5 et 10\n",
-      "fi\n"
-    ]
+    {
+      "name": "tp6_exo1.sh",
+      "lines": [
+        "echo donne une valeur a F1\n",
+        "read $F1\n",
+        "if [ $F1 -ge 5 ]\n",
+        "\t then\n",
+        "\t\tif [ $F1 -lt 10 ] \t\n",
+        "\t\t\tthen\n",
+        "\t\t\t\techo le nombre $F1 compris entre 5 et 10\n",
+        "\t\tfi\n",
+        "\n",
+        "\telse\n",
+        "\t\techo le nombre $F1 n'est pas compris entre 5 et 10\n",
+        "fi\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo4.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "\n",
+        "echo  il y a $(who|wc -l) utilisateur connecter sur $(hostname)\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo3.sh",
+      "lines": [
+        "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
+        "read age\n",
+        "echo vous etes n\u00c3\u00a9e en 1990 vous avez donc `expr $(date +%Y) - $age`\n",
+        "\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo5.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "set -- $(ls -l tp5bis_exo5.sh)\n",
+        "echo $5\n"
+      ]
+    }
   ],
   "profile": [
     {

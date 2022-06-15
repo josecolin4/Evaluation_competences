@@ -2,210 +2,78 @@
   "name": "ext_Gwenael.Guillaume",
   "session": 3,
   "scripts": [
-    [
-      "#!/bin/bash\n",
-      "expr $1 / 2\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "expr $1 / 2\n",
-      "echo $(($1/2))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "expr $1 / 2\n",
-      "echo $(($1 / 2))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "expr $1 / 2\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "expr $1 / 2\n",
-      "echo $(($1)/(2))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "expr $1 / 2\n",
-      "echo $(($1 / 2))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "expr $1 * 2\n",
-      "echo $(($1 * 2))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "expr $1 \\* 2\n",
-      "echo $(($1 * 2))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo date\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo `date`\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Quel est votre annee de naissance\n",
-      "read date_naissance\n",
-      "expr $date_naissance - $date\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Quel est votre annee de naissance\n",
-      "read date_naissance\n",
-      "expr $date_naissance - `date %y`\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Quel est votre annee de naissance\n",
-      "read date_naissance\n",
-      "expr $date_naissance - `date %Y`\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Quel est votre annee de naissance\n",
-      "read date_naissance\n",
-      "expr $date_naissance - `date +%Y`\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Quel est votre annee de naissance\n",
-      "read date_naissance\n",
-      "expr `date +%Y` - $date_naissance\n",
-      "echo $((`date +%Y` - $date_naissance))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Quel est votre annee de naissance\n",
-      "read date_naissance\n",
-      "expr `date +%Y` - $date_naissance\n",
-      "echo Vous etes ne en $date_naissance, donc vous avez $((`date +%Y` - $date_naissance)) ans.\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "x = who|wc -l\n",
-      "echo Il y a $x utilisateurs connectes sur $(hostname)\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "x = `who|wc -l`\n",
-      "echo Il y a $x utilisateurs connectes sur $(hostname)\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Il y a $(who|wc -l) utilisateurs connectes sur $(hostname)\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "set -- $(ls -l $1)\n",
-      "echo $1 $2 $3\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "set -- $(ls -l $1)\n",
-      "echo Il y a $5 octet dans le fichier\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo `test $1 -ge 5 -a $1 -le 10`\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo $(test $1 -ge 5 -a $1 -le 10)\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "test $1 -ge 5 -a $1 -le 10\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test $1 -ge 5 -a $1 -le 10\n",
-      "\tthen\n",
-      "\t\techo True\n",
-      "\telse\n",
-      "\t\techo False\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if [$1 -ge 5 -a $1 -le 10]\n",
-      "\tthen\n",
-      "\t\techo True\n",
-      "\telse\n",
-      "\t\techo False\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if [test $1 -ge 5 -a $1 -le 10]\n",
-      "\tthen\n",
-      "\t\techo True\n",
-      "\telse\n",
-      "\t\techo False\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if [ $1 -ge 5 -a $1 -le 10 ]\n",
-      "\tthen\n",
-      "\t\techo True\n",
-      "\telse\n",
-      "\t\techo False\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if [ -e $1 ]\n",
-      "\tthen\n",
-      "\t\techo Le fichier existe\n",
-      "\telse\n",
-      "\t\techo Le fichier n'existe pas\n",
-      "fi\n",
-      "\n",
-      "if [ -r $1 -a -w $1 ]\n",
-      "\tthen\n",
-      "\t\techo Le fichier as les droits d ecriture et de lecture\n",
-      "\telse\n",
-      "\t\techo Le fichier n as pas les droits d ecriture ou de lecture\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if [ -e $1 ]\n",
-      "\tthen\n",
-      "\t\techo Le fichier existe\n",
-      "\telse\n",
-      "\t\techo Le fichier n existe pas\n",
-      "fi\n",
-      "\n",
-      "if [ -r $1 -a -w $1 ]\n",
-      "\tthen\n",
-      "\t\techo Le fichier as les droits d ecriture et de lecture\n",
-      "\telse\n",
-      "\t\techo Le fichier n as pas les droits d ecriture ou de lecture\n",
-      "fi\n"
-    ]
+    {
+      "name": "tp5bis_exo1.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "expr $1 / 2\n",
+        "echo $(($1 / 2))\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo2.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "expr $1 \\* 2\n",
+        "echo $(($1 * 2))\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo3.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo Quel est votre annee de naissance\n",
+        "read date_naissance\n",
+        "expr `date +%Y` - $date_naissance\n",
+        "echo Vous etes ne en $date_naissance, donc vous avez $((`date +%Y` - $date_naissance)) ans.\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo4.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo Il y a $(who|wc -l) utilisateurs connectes sur $(hostname)\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo5.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "set -- $(ls -l $1)\n",
+        "echo Il y a $5 octet dans le fichier\n"
+      ]
+    },
+    {
+      "name": "tp6_exo1.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "if [ $1 -ge 5 -a $1 -le 10 ]\n",
+        "\tthen\n",
+        "\t\techo True\n",
+        "\telse\n",
+        "\t\techo False\n",
+        "fi\n"
+      ]
+    },
+    {
+      "name": "tp6_exo2.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "if [ -e $1 ]\n",
+        "\tthen\n",
+        "\t\techo Le fichier existe\n",
+        "\telse\n",
+        "\t\techo Le fichier n existe pas\n",
+        "fi\n",
+        "\n",
+        "if [ -r $1 -a -w $1 ]\n",
+        "\tthen\n",
+        "\t\techo Le fichier as les droits d ecriture et de lecture\n",
+        "\telse\n",
+        "\t\techo Le fichier n as pas les droits d ecriture ou de lecture\n",
+        "fi\n"
+      ]
+    }
   ],
   "profile": [
     {

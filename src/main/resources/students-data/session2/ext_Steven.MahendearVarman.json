@@ -2,85 +2,43 @@
   "name": "ext_Steven.MahendearVarman",
   "session": 2,
   "scripts": [
-    [
-      "#!/bin/bash\n",
-      "echo Le script $0 poss\u00c3\u00a8de $# param\u00c3\u00a8tre\\(s\\), que voici:\n",
-      "echo $*\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "cat $1 $2 > $3\n"
-    ],
-    [
-      "Nous sommes le \\`date\\`\n",
-      "Nous sommes le `date` \n",
-      "Ceci est \n",
-      "une tr\u00c3\u00a8s\n",
-      "longue phrase...\n",
-      "Voici une \u00c3\u00a9toile: \\*\n"
-    ],
-    [
-      "echo Nous sommes le \\`date\\`\n",
-      "echo Nous sommes le `date` \n",
-      "echo Ceci est \n",
-      "echo une tr\u00c3\u00a8s\n",
-      "echo longue phrase...\n",
-      "echo Voici une \u00c3\u00a9toile: \\*\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "$1=$1 + 1\n",
-      "echo $1\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo Nous sommes le \\`date\\`\n",
-      "echo Nous sommes le `date` \n",
-      "echo Ceci est \n",
-      "echo une tr\u00c3\u00a8s\n",
-      "echo longue phrase...\n",
-      "echo Voici une \u00c3\u00a9toile: \\*\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "$1=$1+1\n",
-      "echo $1\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo $1=$1+1\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "$1=$1+1\n",
-      "echo $1\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "$1+1\n",
-      "echo $1\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "\n",
-      "$1=$(($1+1))\n",
-      "echo $1\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "\n",
-      "echo $(($1+1))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "\n",
-      "echo $(($1+1))\n"
-    ]
+    {
+      "name": "tp5_exo5.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo Le script $0 poss\u00c3\u00a8de $# param\u00c3\u00a8tre\\(s\\), que voici:\n",
+        "echo $*\n"
+      ]
+    },
+    {
+      "name": "tp5_exo6.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "cat $1 $2 > $3\n"
+      ]
+    },
+    {
+      "name": "tp5_exo7.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "\n",
+        "echo Nous sommes le \\`date\\`\n",
+        "echo Nous sommes le `date` \n",
+        "echo Ceci est \n",
+        "echo une tr\u00c3\u00a8s\n",
+        "echo longue phrase...\n",
+        "echo Voici une \u00c3\u00a9toile: \\*\n"
+      ]
+    },
+    {
+      "name": "tp5_exo8.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "\n",
+        "\n",
+        "echo $(($1+1))\n"
+      ]
+    }
   ],
   "profile": [
     {

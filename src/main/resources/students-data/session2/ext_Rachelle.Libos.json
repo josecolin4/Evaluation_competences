@@ -2,66 +2,42 @@
   "name": "ext_Rachelle.Libos",
   "session": 2,
   "scripts": [
-    [
-      "#!/bin/bash\n",
-      "echo Cher utilisateur quel est ton pr\u00c3\u00a9nom \\?\n",
-      "read prenom\n",
-      "echo Ravi de te connaitre , $prenom\n",
-      "echo Quel est ton nom et ton age \\?\n",
-      "read nom age\n",
-      "echo Tu es $prenom $nom et tu as $age ans , n\\'est-ce-pas \\?\n",
-      "read reponse\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Je suis le script Shell $0\n",
-      "echo Mes arguments sont $*\n",
-      "echo Le premier argument est $1\n",
-      "echo Le deuxieme argument est $2\n"
-    ],
-    [
-      "echo le script <tp5_exo3.sh> poss\u00c3\u00a8de <$#> param\u00c3\u00a8tres , que voici <$*>\n"
-    ],
-    [
-      "echo le script <tp5_exo3.sh> poss\u00c3\u00a8de <$#> param\u00c3\u00a8tres , que voici <*>\n"
-    ],
-    [
-      "echo le script <tp5_exo3.sh> poss\u00c3\u00a8de <$#> param\u00c3\u00a8tres , que voici <$*>\n"
-    ],
-    [
-      "echo le script tp5_exo3.sh poss\u00c3\u00a8de $# param\u00c3\u00a8tres , que voici $*\n"
-    ],
-    [
-      "echo le script tp5_exo5.sh poss\u00c3\u00a8de $# param\u00c3\u00a8tres , que voici $*\n"
-    ],
-    [
-      " \n"
-    ],
-    [
-      "echo cat F1 F2 > F3\n"
-    ],
-    [
-      "echo cat  $F1 $F2 > $F3\n"
-    ],
-    [
-      "echo cat F1 F2 > $F3\n"
-    ],
-    [
-      " cat F1 F2 > $F3\n"
-    ],
-    [
-      " cat $F1 $F2 > $F3\n"
-    ],
-    [
-      "echo cat $F1 $F2 > F3\n"
-    ],
-    [
-      "echo $F1 $F2 > F3\n"
-    ],
-    [
-      "echo cat $F1 $F2 > F3\n"
-    ]
+    {
+      "name": "tp5_exo5.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo Cher utilisateur quel est ton pr\u00c3\u00a9nom \\?\n",
+        "read prenom\n",
+        "echo Ravi de te connaitre , $prenom\n",
+        "echo Quel est ton nom et ton age \\?\n",
+        "read nom age\n",
+        "echo Tu es $prenom $nom et tu as $age ans , n\\'est-ce-pas \\?\n",
+        "read reponse\n",
+        "\n"
+      ]
+    },
+    {
+      "name": "tp5_exo6.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo Je suis le script Shell $0\n",
+        "echo Mes arguments sont $*\n",
+        "echo Le premier argument est $1\n",
+        "echo Le deuxieme argument est $2\n"
+      ]
+    },
+    {
+      "name": "tp5_exo5.5.sh",
+      "lines": [
+        "echo le script tp5_exo5.sh poss\u00c3\u00a8de $# param\u00c3\u00a8tres , que voici $*\n"
+      ]
+    },
+    {
+      "name": "tp5_exo6.6.sh",
+      "lines": [
+        "echo cat $F1 $F2 > F3\n"
+      ]
+    }
   ],
   "profile": [
     {

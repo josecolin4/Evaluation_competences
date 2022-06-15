@@ -2,16 +2,22 @@
   "name": "ext_Manon.Piquemal",
   "session": 2,
   "scripts": [
-    [
-      "#!/bin/bash\n",
-      "cat F1 F2 >> F3\n",
-      "echo F3\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "cat F1 F2 >> F3\n",
-      "echo F3\n"
-    ]
+    {
+      "name": "tp5_exo7.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "cat F1 F2 >> F3\n",
+        "echo F3\n"
+      ]
+    },
+    {
+      "name": "tp5_exo6.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "cat F1 F2 >> F3\n",
+        "echo F3\n"
+      ]
+    }
   ],
   "profile": [
     {

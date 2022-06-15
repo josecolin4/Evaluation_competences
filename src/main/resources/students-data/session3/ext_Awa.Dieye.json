@@ -2,168 +2,76 @@
   "name": "ext_Awa.Dieye",
   "session": 3,
   "scripts": [
-    [],
-    [
-      ",\n"
-    ],
-    [
-      ",\n",
-      "\u0003\n"
-    ],
-    [
-      "\n"
-    ],
-    [
-      "echo Le script $0  possede $#  que voici : $*\n"
-    ],
-    [
-      "cat F1 F1|F3\n"
-    ],
-    [
-      "cat F1 F1>F3\n",
-      "\n"
-    ],
-    [
-      "echo nous sommes le 'date'\n",
-      "\n"
-    ],
-    [
-      "echo nous sommes le 'date'\n",
-      "echo Ceci est une tr\u00c3\u00a8s\n",
-      "\n"
-    ],
-    [
-      "echo nous sommes le 'date'\n",
-      "echo Ceci est une tr'\u00c3\u00a8's\n",
-      "\n"
-    ],
-    [
-      "echo nous sommes le 12\n",
-      "echo Ceci est une tr'\u00c3\u00a8's\n",
-      "\n"
-    ],
-    [
-      "cat F1 F2>F3\n",
-      "\n"
-    ],
-    [
-      "echo nous sommes \n",
-      "echo Ceci est une tr'\u00c3\u00a8's\n",
-      "\n"
-    ],
-    [
-      "if test $1 -gt 5 -a test $1 -lt 10\n",
-      "then echo La valeur $1 est comprise entre 5 et 10\n",
-      "else echo la valeur $1 n/'est pas comprise entre 5 et 10\n",
-      "fi\n"
-    ],
-    [
-      "if test $1 -gt 5 and  test $1 -lt 10\n",
-      "then echo La valeur $1 est comprise entre 5 et 10\n",
-      "else echo la valeur $1 n/'est pas comprise entre 5 et 10\n",
-      "fi\n"
-    ],
-    [
-      "if test $1 -gt 5 and test $1 -lt 10\n",
-      "then echo La valeur $1 est comprise entre 5 et 10\n",
-      "else echo la valeur $1 n/'est pas comprise entre 5 et 10\n",
-      "fi\n"
-    ],
-    [
-      "if test $1 -gt 5 and test $1 -lt 10\n",
-      "then echo La valeur $1 est comprise entre 5 et 10\n",
-      "else echo la valeur $1 n\\'est pas comprise entre 5 et 10\n",
-      "fi\n"
-    ],
-    [
-      "if test $1 -gt 5 and test $1 -lt 10\n",
-      "then echo La valeur $1 est comprise entre 5 et 10\n",
-      "else echo la valeur $1 n\\'est pas comprise entre 5 et 10\n",
-      "fi\n"
-    ],
-    [
-      "if test $1 -gt 5 -a test $1 -lt 10\n",
-      "then echo La valeur $1 est comprise entre 5 et 10\n",
-      "else echo la valeur $1 n\\'est pas comprise entre 5 et 10\n",
-      "fi\n"
-    ],
-    [
-      "if test $1 -gt 5 -a $1 -lt 10\n",
-      "then echo La valeur $1 est comprise entre 5 et 10\n",
-      "else echo la valeur $1 n\\'est pas comprise entre 5 et 10\n",
-      "fi\n"
-    ],
-    [
-      "if [$1 -gt 5 -a $1 -lt 10] \n",
-      "then\n",
-      "echo La valeur $1 est comprise entre 5 et 10\n",
-      "else\n",
-      "echo La valeur $1 n\\'est pas comprise entre 5 et 10\n",
-      "fi\n"
-    ],
-    [
-      "if [$1 -gt 5] -a [$1 -lt 10] \n",
-      "then\n",
-      "echo La valeur $1 est comprise entre 5 et 10\n",
-      "else\n",
-      "echo La valeur $1 n\\'est pas comprise entre 5 et 10\n",
-      "fi\n"
-    ],
-    [
-      "if [$1 -gt 5 -a $1 -lt 10] \n",
-      "then\n",
-      "echo La valeur $1 est comprise entre 5 et 10\n",
-      "else\n",
-      "echo La valeur $1 n\\'est pas comprise entre 5 et 10\n",
-      "fi\n"
-    ],
-    [
-      "if [$1 -gt 5 -a $1 -lt 10] \n",
-      "then\n",
-      "echo La valeur $1 est comprise entre 5 et 10\n",
-      "else\n",
-      "echo La valeur $1 n\\'est pas comprise entre 5 et 10\n",
-      "fi\n"
-    ],
-    [
-      "if [$1 -gt 5 -a $1 -lt 10] \n",
-      "then\n",
-      "echo La valeur $1 est comprise entre 5 et 10\n",
-      "else\n",
-      "echo La valeur $1 n\\'est pas comprise entre 5 et 10\n",
-      "fi\n"
-    ],
-    [
-      "if  [$1 -gt 5 -a $1 -lt 10] \n",
-      "then\n",
-      "echo La valeur $1 est comprise entre 5 et 10\n",
-      "else\n",
-      "echo La valeur $1 n\\'est pas comprise entre 5 et 10\n",
-      "fi\n"
-    ],
-    [
-      "if test -w $1 -a -r $1\n",
-      "then \n",
-      "echo Le fichier $1 existe et est  accessible en lecture et \\\u00c3\u00a9criture\n",
-      "else\n",
-      "echo Le fichier $1 n\\'existe pas ou n\\'est pas accessible en lecture et \\\u00c3\u00a9criture\n",
-      "fi\n"
-    ],
-    [
-      "if test -e $1 -a -e $2\n",
-      "then\n",
-      "echo souhaitez vous concatener les fichiers \\?(veuillez r\\\u00c3\u00a9pondre OUI ou NON)\n",
-      "read r\\\u00c3\u00a9ponse\n",
-      "if r\\\u00c3\u00a9ponse=OUI\n",
-      "then \n",
-      "cat $1\n",
-      "cat $2\n",
-      "else\n",
-      "echo ERREUR\n",
-      "fi\n",
-      "else\n",
-      "echo l\\'un des fichiers n\\'existe pas\n"
-    ]
+    {
+      "name": "tp5_exo5.sh",
+      "lines": [
+        "echo Le script $0  possede $#  que voici : $*\n"
+      ]
+    },
+    {
+      "name": "tp5_exo6.sh",
+      "lines": [
+        "cat F1 F2>F3\n",
+        "\n"
+      ]
+    },
+    {
+      "name": "tp5_exo7.sh",
+      "lines": [
+        "echo nous sommes \n",
+        "echo Ceci est une tr'\u00c3\u00a8's\n",
+        "\n"
+      ]
+    },
+    {
+      "name": "tp6_exo1.sh",
+      "lines": [
+        "if test $1 -gt 5 -a $1 -lt 10\n",
+        "then echo La valeur $1 est comprise entre 5 et 10\n",
+        "else echo la valeur $1 n\\'est pas comprise entre 5 et 10\n",
+        "fi\n"
+      ]
+    },
+    {
+      "name": "tp6_exo1version2.sh",
+      "lines": [
+        "if  [$1 -gt 5 -a $1 -lt 10] \n",
+        "then\n",
+        "echo La valeur $1 est comprise entre 5 et 10\n",
+        "else\n",
+        "echo La valeur $1 n\\'est pas comprise entre 5 et 10\n",
+        "fi\n"
+      ]
+    },
+    {
+      "name": "tp6_exo2.sh",
+      "lines": [
+        "if test -w $1 -a -r $1\n",
+        "then \n",
+        "echo Le fichier $1 existe et est  accessible en lecture et \\\u00c3\u00a9criture\n",
+        "else\n",
+        "echo Le fichier $1 n\\'existe pas ou n\\'est pas accessible en lecture et \\\u00c3\u00a9criture\n",
+        "fi\n"
+      ]
+    },
+    {
+      "name": "tp-_exo3.sh",
+      "lines": [
+        "if test -e $1 -a -e $2\n",
+        "then\n",
+        "echo souhaitez vous concatener les fichiers \\?(veuillez r\\\u00c3\u00a9pondre OUI ou NON)\n",
+        "read r\\\u00c3\u00a9ponse\n",
+        "if r\\\u00c3\u00a9ponse=OUI\n",
+        "then \n",
+        "cat $1\n",
+        "cat $2\n",
+        "else\n",
+        "echo ERREUR\n",
+        "fi\n",
+        "else\n",
+        "echo l\\'un des fichiers n\\'existe pas\n"
+      ]
+    }
   ],
   "profile": [
     {

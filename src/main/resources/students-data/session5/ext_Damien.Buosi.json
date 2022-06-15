@@ -2,145 +2,27 @@
   "name": "ext_Damien.Buosi",
   "session": 5,
   "scripts": [
-    [
-      "#!/bin/bash\n",
-      "if  test -e $1\n",
-      "\tthen\t\n",
-      "\t\techo Le fichier existe\n",
-      "\t\tif test -r $1 -a and test -w $1\n",
-      "\t\t\tthen\t\n",
-      "\t\t\t\techo Vous avez les droit d'\u00c3\u00a9criture et de lecture \n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if  test -e $1\n",
-      "\tthen\n",
-      "\techo Le fichier existe\n",
-      "\tif test -r $1 -a and test -w $1\n",
-      "\t\tthen\n",
-      "\t\techo Vous avez les droit d'\u00c3\u00a9criture et de lecture \n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if  test -e $1\n",
-      "\tthen\n",
-      "\techo Le fichier existe\n",
-      "\tif 'test -r $1 -a and test -w' $1\n",
-      "\t\tthen\n",
-      "\t\techo Vous avez les droit d'\u00c3\u00a9criture et de lecture \n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if  test -e $1\n",
-      "\tthen\n",
-      "\techo Le fichier existe\n",
-      "\tif `test -r $1 -a and test -w` $1\n",
-      "\t\tthen\n",
-      "\t\techo Vous avez les droit d'\u00c3\u00a9criture et de lecture \n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if  test -e $1\n",
-      "\tthen\n",
-      "\techo Le fichier existe\n",
-      "\telse\n",
-      "\techo fichier inexistant\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if  test -e $1 -a test -w $1 -a test-r $1\n",
-      "\tthen\n",
-      "\techo Le fichier existe et vous avez les droits d'\u00c3\u00a9criture et det lecture\n",
-      "\telse\n",
-      "\techo fichier inexistant\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if [ test -e $1 -a test -w $1 -a test-r $1]\n",
-      "\tthen\n",
-      "\techo Le fichier existe et vous avez les droits d'\u00c3\u00a9criture et det lecture\n",
-      "\telse\n",
-      "\techo fichier inexistant\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if [ test -e $1 -a test -w $1 -a test-r $1 ]\n",
-      "\tthen\n",
-      "\techo Le fichier existe et vous avez les droits d'\u00c3\u00a9criture et det lecture.\n",
-      "\telse\n",
-      "\techo fichier inexistant ou ne poss\u00c3\u00a9dant pas les droits suffisants.\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if [ -e $1 -a -w $1 -a -r $1 ]\n",
-      "\tthen\n",
-      "\techo Le fichier existe et vous avez les droits d'\u00c3\u00a9criture et det lecture.\n",
-      "\telse\n",
-      "\techo fichier inexistant ou ne poss\u00c3\u00a9dant pas les droits suffisants.\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Quel fichier voulez vous tester \\? \n",
-      "read fic\n",
-      "if test -e $fic\n",
-      "then\n",
-      "echo Le fichier existe\n",
-      "if test -r $fic\n",
-      "then\n",
-      "echo Vous possedez les droits de lecture\n",
-      "else\n",
-      "echo Vous ne possedez pas les droits de lecture\n",
-      "fi\n",
-      "if test -w $fic then\n",
-      "echo Vous possedez les droits d'\u00c3\u00a9criture\n",
-      "else \n",
-      "echo Vous ne possedez pas les droits d'\u00c3\u00a9criture\n",
-      "fi \n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test -e $1\n",
-      "then\n",
-      "echo Le fichier existe\n",
-      "if test -r $1\n",
-      "then\n",
-      "echo Vous possedez les droits de lecture\n",
-      "else\n",
-      "echo Vous ne possedez pas les droits de lecture\n",
-      "fi\n",
-      "if test -w $1 then\n",
-      "echo Vous possedez les droits d'\u00c3\u00a9criture\n",
-      "else \n",
-      "echo Vous ne possedez pas les droits d'\u00c3\u00a9criture\n",
-      "fi \n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test -e $1\n",
-      "then\n",
-      "echo Le fichier existe\n",
-      "if test -r $1\n",
-      "then\n",
-      "echo Vous possedez les droits de lecture\n",
-      "else\n",
-      "echo Vous ne possedez pas les droits de lecture\n",
-      "fi\n",
-      "if test -w $1 \n",
-      "then\n",
-      "echo Vous possedez les droits d'\u00c3\u00a9criture\n",
-      "else \n",
-      "echo Vous ne possedez pas les droits d'\u00c3\u00a9criture\n",
-      "fi \n"
-    ]
+    {
+      "name": "tp6_exo2.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "if test -e $1\n",
+        "then\n",
+        "echo Le fichier existe\n",
+        "if test -r $1\n",
+        "then\n",
+        "echo Vous possedez les droits de lecture\n",
+        "else\n",
+        "echo Vous ne possedez pas les droits de lecture\n",
+        "fi\n",
+        "if test -w $1 \n",
+        "then\n",
+        "echo Vous possedez les droits d'\u00c3\u00a9criture\n",
+        "else \n",
+        "echo Vous ne possedez pas les droits d'\u00c3\u00a9criture\n",
+        "fi \n"
+      ]
+    }
   ],
   "commands": [
     {

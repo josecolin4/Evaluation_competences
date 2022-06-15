@@ -2,276 +2,99 @@
   "name": "ext_Maxence.Berthaux",
   "session": 3,
   "scripts": [
-    [
-      "echo test -e F1\n"
-    ],
-    [
-      "bin bash\n",
-      "echo test -e F1\n"
-    ],
-    [
-      "bin/bash\n",
-      "echo test -e F1\n"
-    ],
-    [
-      "/bin/bash\n",
-      "echo test -e F1\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo test -e F1\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "result=test -e F1\n",
-      "echo result\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "result=test -e F1\n",
-      "echo $result\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "result=test -e F1\n",
-      "echo $result\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Rentre un charact\u00c3\u00a8re \\?\n",
-      "read charactere\n",
-      "if charactere>5 and charactere<10\n",
-      "\tthen\n",
-      "\t\techo Le charactere est bien compris entre 5 et 10\n",
-      "\telse\n",
-      "\t\techo Le charactere n'est pas compris entre 5 et 10\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Rentre un charactere \\?\n",
-      "read charactere\n",
-      "if [$charactere>5]  and [$charactere<10]\n",
-      "\tthen\n",
-      "\t\techo Le charactere est bien compris entre 5 et 10\n",
-      "\telse\n",
-      "\t\techo Le charactere n'est pas compris entre 5 et 10\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Rentre un charactere \\?\n",
-      "read charactere\n",
-      "if [$charactere>5]  and [$charactere<10]\n",
-      "\tthen\n",
-      "\t\techo Le charactere est bien compris entre 5 et 10\n",
-      "\telse\n",
-      "\t\techo Le charactere n'est pas compris entre 5 et 10\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Rentre un charactere \\?\n",
-      "read charactere\n",
-      "if [ $charactere>5 ]  and [ $charactere<10 ]\n",
-      "\tthen\n",
-      "\t\techo Le charactere est bien compris entre 5 et 10\n",
-      "\telse\n",
-      "\t\techo Le charactere n'est pas compris entre 5 et 10\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Rentre un charactere \\?\n",
-      "read charactere\n",
-      "if [ $charactere>5 ]  and [ $charactere<10 ]\n",
-      "\tthen\n",
-      "\t\techo Le charactere est bien compris entre 5 et 10\n",
-      "\telse\n",
-      "\t\techo Le charactere n'est pas compris entre 5 et 10\n",
-      "fi\n",
-      "echo Rentre un charactere \\?\n",
-      "read charact\u00c3\u00a8re\n",
-      "if [ $charactere -gt 5] and [ $charactere -lt 10]\n",
-      "\tthen\n",
-      "\t\techo valeur comprise entre 5 et 10\n",
-      "\telse\n",
-      "\t\techo valeur non comprise \n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Rentre un charactere \\?\n",
-      "read charact\u00c3\u00a8re\n",
-      "if [ $charactere -gt 5] and [ $charactere -lt 10]\n",
-      "\tthen\n",
-      "\t\techo valeur comprise entre 5 et 10\n",
-      "\telse\n",
-      "\t\techo valeur non comprise \n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Rentre un charactere \\?\n",
-      "read charactere\n",
-      "if [ $charactere -gt 5] and [ $charactere -lt 10]\n",
-      "\tthen\n",
-      "\t\techo valeur comprise entre 5 et 10\n",
-      "\telse\n",
-      "\t\techo valeur non comprise \n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Rentre un charactere \\?\n",
-      "read charactere\n",
-      "if [ $charactere -gt 5 ] and [ $charactere -lt 10 ]\n",
-      "\tthen\n",
-      "\t\techo valeur comprise entre 5 et 10\n",
-      "\telse\n",
-      "\t\techo valeur non comprise \n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Rentre un charactere \\?\n",
-      "read charactere\n",
-      "if [ $charactere -gt 5 ] -a [ $charactere -lt 10 ]\n",
-      "\tthen\n",
-      "\t\techo valeur comprise entre 5 et 10\n",
-      "\telse\n",
-      "\t\techo valeur non comprise \n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Rentre un charactere \\?\n",
-      "read charactere\n",
-      "if [ $charactere -gt 5 -a $charactere -lt 10 ]\n",
-      "\tthen\n",
-      "\t\techo valeur comprise entre 5 et 10\n",
-      "\telse\n",
-      "\t\techo valeur non comprise \n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Rentre un charactere \\?\n",
-      "read charactere\n",
-      "if [ $charactere -gt 5 -a $charactere -lt 10 ]\n",
-      "\tthen\n",
-      "\t\techo valeur comprise entre 5 et 10\n",
-      "\telse\n",
-      "\t\techo valeur non comprise \n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Rentre un charactere \\?\n",
-      "read charactere\n",
-      "if test $charactere -gt -a $charactere -lt 10\n",
-      "\tthen\n",
-      "\t\techo valeur comprise entre 5 et 10\n",
-      "\telse \n",
-      "\t\techo valeur non comprise\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Rentre un charactere \\?\n",
-      "read charactere\n",
-      "if test $charactere 5 -gt -a $charactere -lt 10\n",
-      "\tthen\n",
-      "\t\techo valeur comprise entre 5 et 10\n",
-      "\telse \n",
-      "\t\techo valeur non comprise\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Rentre un charactere \\?\n",
-      "read charactere\n",
-      "if test $charactere -gt 5 -a $charactere -lt 10\n",
-      "\tthen\n",
-      "\t\techo valeur comprise entre 5 et 10\n",
-      "\telse \n",
-      "\t\techo valeur non comprise\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Quel fichier voulez-vous tester \\?\n",
-      "read fichier\n",
-      "if test -e $fichier\n",
-      "\tthen\n",
-      "\t\techo Le fichier existe\n",
-      "\telif test -r $charactere\n",
-      "\t\techo droit de lecture accord\u00c3\u00a9\n",
-      "\telif test -w $charactere\n",
-      "\t\techo droit d ecriture accord\u00c3\u00a9\n",
-      "\telse \n",
-      "\t\techo fichier inexistant\n",
-      "\t\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Quel fichier voulez-vous tester \\?\n",
-      "read fichier\n",
-      "if test -e $fichier\n",
-      "\tthen\n",
-      "\t\techo Le fichier existe\n",
-      "\t\tif test -r $charactere then\n",
-      "\t\t\techo droit de lecture accorde\n",
-      "\t\telse\n",
-      "\t\t\techo droit de lecture non accorde\n",
-      "\t\tfi\n",
-      "\t\tif test -w $charactere then\n",
-      "\t\t\techo droit d ecriture accorde\n",
-      "\t\telse\n",
-      "\t\t\techo droit d ecriture non accorde\n",
-      "\t\tfi\n",
-      "else \n",
-      "\techo fichier inexistant\t\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Quel fichier voulez-vous tester \\?\n",
-      "read fichier\n",
-      "if test -e $fichier\n",
-      "\tthen\n",
-      "\t\techo Le fichier existe\n",
-      "\t\tif test -r $charactere \n",
-      "\t\tthen\n",
-      "\t\t\techo droit de lecture accorde\n",
-      "\t\telse\n",
-      "\t\t\techo droit de lecture non accorde\n",
-      "\t\tfi\n",
-      "\t\tif test -w $charactere \n",
-      "\t\tthen\n",
-      "\t\t\techo droit d ecriture accorde\n",
-      "\t\telse\n",
-      "\t\t\techo droit d ecriture non accorde\n",
-      "\t\tfi\n",
-      "else \n",
-      "\techo fichier inexistant\t\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Merci de rentr\u00c3\u00a9 le nom du 1er fichier\n",
-      "read fi1\n",
-      "echo Merci de rentr\u00c3\u00a9 le nom du 2eme fichier\n",
-      "read fi2\n",
-      "\n",
-      "if test -e $fi1\n",
-      "\tthen \n",
-      "\techo Le fichier existe\n",
-      "else \n",
-      "\t\n"
-    ]
+    {
+      "name": "test.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "result=test -e F1\n",
+        "echo $result\n",
+        "\n"
+      ]
+    },
+    {
+      "name": "tp6_exo1.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo Rentre un charactere \\?\n",
+        "read charactere\n",
+        "if [ $charactere -gt 5 -a $charactere -lt 10 ]\n",
+        "\tthen\n",
+        "\t\techo valeur comprise entre 5 et 10\n",
+        "\telse\n",
+        "\t\techo valeur non comprise \n",
+        "fi\n"
+      ]
+    },
+    {
+      "name": "tp6_exo1_[].sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo Rentre un charactere \\?\n",
+        "read charactere\n",
+        "if [ $charactere -gt 5 -a $charactere -lt 10 ]\n",
+        "\tthen\n",
+        "\t\techo valeur comprise entre 5 et 10\n",
+        "\telse\n",
+        "\t\techo valeur non comprise \n",
+        "fi\n"
+      ]
+    },
+    {
+      "name": "tp6_exo1_test.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo Rentre un charactere \\?\n",
+        "read charactere\n",
+        "if test $charactere -gt 5 -a $charactere -lt 10\n",
+        "\tthen\n",
+        "\t\techo valeur comprise entre 5 et 10\n",
+        "\telse \n",
+        "\t\techo valeur non comprise\n",
+        "fi\n"
+      ]
+    },
+    {
+      "name": "tp6_exo2.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo Quel fichier voulez-vous tester \\?\n",
+        "read fichier\n",
+        "if test -e $fichier\n",
+        "\tthen\n",
+        "\t\techo Le fichier existe\n",
+        "\t\tif test -r $charactere \n",
+        "\t\tthen\n",
+        "\t\t\techo droit de lecture accorde\n",
+        "\t\telse\n",
+        "\t\t\techo droit de lecture non accorde\n",
+        "\t\tfi\n",
+        "\t\tif test -w $charactere \n",
+        "\t\tthen\n",
+        "\t\t\techo droit d ecriture accorde\n",
+        "\t\telse\n",
+        "\t\t\techo droit d ecriture non accorde\n",
+        "\t\tfi\n",
+        "else \n",
+        "\techo fichier inexistant\t\n",
+        "fi\n"
+      ]
+    },
+    {
+      "name": "tp6_exo3.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo Merci de rentr\u00c3\u00a9 le nom du 1er fichier\n",
+        "read fi1\n",
+        "echo Merci de rentr\u00c3\u00a9 le nom du 2eme fichier\n",
+        "read fi2\n",
+        "\n",
+        "if test -e $fi1\n",
+        "\tthen \n",
+        "\techo Le fichier existe\n",
+        "else \n",
+        "\t\n"
+      ]
+    }
   ],
   "profile": [
     {

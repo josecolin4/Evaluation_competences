@@ -2,93 +2,47 @@
   "name": "ext_Robin.Mounie",
   "session": 3,
   "scripts": [
-    [
-      "#!/bin/bash\n",
-      "expr $1/2\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "expr $1 / 2\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "expr $1 / 2\n",
-      "echo $(( $1 / 2))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "expr $1 * 2\n",
-      "echo $(( $1 * 2))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance?\n",
-      "read annee\n",
-      "echo vous etes n\u00c3\u00a9 en 'annee'et vous av\u00c3\u00a9z: $((date - $annee)) \n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance?\n",
-      "read annee\n",
-      "echo vous etes n\u00c3\u00a9 en 'annee'et vous av\u00c3\u00a9z: $(($date - $annee)) \n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance?\n",
-      "read annee\n",
-      "echo vous etes n\u00c3\u00a9 en 'annee'et vous av\u00c3\u00a9z: $((`date` - $annee)) \n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance?\n",
-      "read annee\n",
-      "echo vous etes n\u00c3\u00a9 en 'annee'et vous av\u00c3\u00a9z: $((`date +%a` - $annee)) \n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance?\n",
-      "read annee\n",
-      "echo vous etes n\u00c3\u00a9 en 'annee' et vous avez: $((`date +%Y` - $annee)) \n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo il y a '' utilisateurs conn\u00c3\u00a9ct\u00c3\u00a9 sur $hostname \n",
-      "echo $who \n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo il y a '' utilisateurs conn\u00c3\u00a9ct\u00c3\u00a9 sur 'hostname' \n",
-      "echo $who \n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo il y a '' utilisateurs conn\u00c3\u00a9ct\u00c3\u00a9 sur $hostname\n",
-      "echo $who \n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo il y a '' utilisateurs conn\u00c3\u00a9ct\u00c3\u00a9 sur $(hostname -b)\n",
-      "echo $who \n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo il y a $(who -q) utilisateurs conn\u00c3\u00a9ct\u00c3\u00a9 sur $(hostname -b)\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo $(\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo $(ls -h $1)\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo $(ls -s $1)\n",
-      "\n"
-    ]
+    {
+      "name": "tp5bis_Ex1.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "expr $1 / 2\n",
+        "echo $(( $1 / 2))\n"
+      ]
+    },
+    {
+      "name": "tp5bis_Ex2.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "expr $1 * 2\n",
+        "echo $(( $1 * 2))\n"
+      ]
+    },
+    {
+      "name": "tp5bis_Ex3.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo Quelle est votre ann\u00c3\u00a9e de naissance?\n",
+        "read annee\n",
+        "echo vous etes n\u00c3\u00a9 en 'annee' et vous avez: $((`date +%Y` - $annee)) \n"
+      ]
+    },
+    {
+      "name": "tp5bis_Ex4.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo il y a $(who -q) utilisateurs conn\u00c3\u00a9ct\u00c3\u00a9 sur $(hostname -b)\n",
+        "\n"
+      ]
+    },
+    {
+      "name": "tp5bis_Ex5.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo $(ls -s $1)\n",
+        "\n"
+      ]
+    }
   ],
   "profile": [
     {

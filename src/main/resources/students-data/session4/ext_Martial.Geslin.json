@@ -2,129 +2,78 @@
   "name": "ext_Martial.Geslin",
   "session": 4,
   "scripts": [
-    [
-      "#!/bin/bash\n",
-      "if $* -ge 4 -a $* -le 10\n",
-      "\tthen\n",
-      "\t\techo \"la valeur $* est comprise entre 5 et 10\"\n",
-      "\telse\n",
-      "\t\techo \"La valeur $* n'est pas comprise entre 5 et 10\"\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test $* -ge 4 -a $* -le 10\n",
-      "\tthen\n",
-      "\t\techo \"la valeur $* est comprise entre 5 et 10\"\n",
-      "\telse\n",
-      "\t\techo \"La valeur $* n'est pas comprise entre 5 et 10\"\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if [ $* -ge 4 -a $* -le 10 ]\n",
-      "\tthen\n",
-      "\t\techo \"la valeur $* est comprise entre 5 et 10\"\n",
-      "\telse\n",
-      "\t\techo \"La valeur $* n'est pas comprise entre 5 et 10\"\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if [ -r $* -a -w $* ]\n",
-      "\tthen\n",
-      "\t\techo \"Le fichier $* existe et est accessible en lecture et ecriture.\"\n",
-      "\telse\n",
-      "\t\techo \"Le fichier $* n'existe pas, ou n'est pas accessible en lecture,\n",
-      "ou n'est pas accessible en ecriture\"\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo $*\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if [ -e $1 -a -e $2 ]\n",
-      "\tthen\n",
-      "\t\techo \"Souhaitez-vous concat\u00c3\u00a9ner les fichiers ?\"\n",
-      "\t\tread $rep\n",
-      "\t\tcase $rep in\n",
-      "\t\t\tOUI ) \n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if [ -e $1 -a -e $2 ]\n",
-      "\tthen\n",
-      "\t\techo \"Souhaitez-vous concat\u00c3\u00a9ner les fichiers ?\"\n",
-      "\t\tread rep\n",
-      "\t\tcase $rep in\n",
-      "\t\t\tOUI ) \n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if [ -e $1 -a -e $2 ]\n",
-      "\tthen\n",
-      "\t\techo \"Souhaitez-vous concat\u00c3\u00a9ner les fichiers ?\"\n",
-      "\t\tread rep\n",
-      "\t\tcase $rep in\n",
-      "\t\t\tOUI ) cat $1 $2\n",
-      "\t\tesac\n",
-      "\telse\n",
-      "\t\techo \"Erreur\"\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if [ -e $1 -a -e $2 ]\n",
-      "\tthen\n",
-      "\t\techo \"Souhaitez-vous concat\u00c3\u00a9ner les fichiers ?\"\n",
-      "\t\tread rep\n",
-      "\t\tcase $rep in\n",
-      "\t\t\tOUI ) cat $1 $2\n",
-      "\t\tesac\n",
-      "\telse\n",
-      "\t\techo \"Erreur\"\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if [ -e $1 -a -e $2 ]\n",
-      "\tthen\n",
-      "\t\techo \"Souhaitez-vous concat\u00c3\u00a9ner les fichiers ?\"\n",
-      "\t\tread rep\n",
-      "\t\tcase $rep in\n",
-      "\t\t\tOUI ) cat $1 $2\n",
-      "\t\tesac\n",
-      "\telse\n",
-      "\t\techo \"Erreur\"\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "liste_commande=date who pwd ls\n",
-      "for i in $liste_commande\n",
-      "do\n",
-      "\techo\n",
-      "\t$$i\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "liste_commande=date who pwd ls\n",
-      "for i in $liste_commande\n",
-      "do\n",
-      "\techo\n",
-      "\t$i\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "liste_commande=\"date who pwd ls\"\n",
-      "for i in $liste_commande\n",
-      "do\n",
-      "\techo\n",
-      "\t$i\n",
-      "done\n"
-    ]
+    {
+      "name": "tp6_exo1.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "if test $* -ge 4 -a $* -le 10\n",
+        "\tthen\n",
+        "\t\techo \"la valeur $* est comprise entre 5 et 10\"\n",
+        "\telse\n",
+        "\t\techo \"La valeur $* n'est pas comprise entre 5 et 10\"\n",
+        "fi\n"
+      ]
+    },
+    {
+      "name": "tp6_exo1V2.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "if [ $* -ge 4 -a $* -le 10 ]\n",
+        "\tthen\n",
+        "\t\techo \"la valeur $* est comprise entre 5 et 10\"\n",
+        "\telse\n",
+        "\t\techo \"La valeur $* n'est pas comprise entre 5 et 10\"\n",
+        "fi\n"
+      ]
+    },
+    {
+      "name": "tp6_exo2.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "if [ -r $* -a -w $* ]\n",
+        "\tthen\n",
+        "\t\techo \"Le fichier $* existe et est accessible en lecture et ecriture.\"\n",
+        "\telse\n",
+        "\t\techo \"Le fichier $* n'existe pas, ou n'est pas accessible en lecture,\n",
+        "ou n'est pas accessible en ecriture\"\n",
+        "fi\n"
+      ]
+    },
+    {
+      "name": "test.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo $*\n"
+      ]
+    },
+    {
+      "name": "tp6_exo3.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "if [ -e $1 -a -e $2 ]\n",
+        "\tthen\n",
+        "\t\techo \"Souhaitez-vous concat\u00c3\u00a9ner les fichiers ?\"\n",
+        "\t\tread rep\n",
+        "\t\tcase $rep in\n",
+        "\t\t\tOUI ) cat $1 $2\n",
+        "\t\tesac\n",
+        "\telse\n",
+        "\t\techo \"Erreur\"\n",
+        "fi\n"
+      ]
+    },
+    {
+      "name": "tp6_exo4.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "liste_commande=\"date who pwd ls\"\n",
+        "for i in $liste_commande\n",
+        "do\n",
+        "\techo\n",
+        "\t$i\n",
+        "done\n"
+      ]
+    }
   ],
   "profile": [
     {

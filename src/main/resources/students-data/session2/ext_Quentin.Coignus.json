@@ -2,122 +2,53 @@
   "name": "ext_Quentin.Coignus",
   "session": 2,
   "scripts": [
-    [
-      "#!/bin/bash\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "cat :/root>>PATH\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "cat :/>>PATH\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "cat F4>>PATH\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "cat F4>>$PATH\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "PATH=${PATH}:.\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "expr $1 / 2\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "expr $1 / 2\n",
-      "echo $(($1 / 2))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "expr $1_ \\* 2\n",
-      "echo $(($1 * 2))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "expr $1 \\* 2\n",
-      "echo $(($1 * 2))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance \\?\n",
-      "read ann\u00c3\u00a9e\n",
-      "echo Vous \u00c3\u00aates n\u00c3\u00a9\\(e\\) en $ann\u00c3\u00a9e, vous avez donc expr $date\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance \\?\n",
-      "read ann\u00c3\u00a9e\n",
-      "echo Vous \u00c3\u00aates n\u00c3\u00a9\\(e\\) en $ann\u00c3\u00a9e, vous avez donc expr $date\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance \\?\n",
-      "read ann\u00c3\u00a9e\n",
-      "echo Vous \u00c3\u00aates n\u00c3\u00a9\\(e\\) en $ann\u00c3\u00a9e, vous avez donc expr $(date +%Y) - $ann\u00c3\u00a9e ans\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Quelle est votre annee de naissance \\?\n",
-      "read annee\n",
-      "echo Vous \u00c3\u00aates ne\\(e\\) en $annee, vous avez donc expr $(date +%Y) - $annee ans\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Quelle est votre annee de naissance \\?\n",
-      "read annee\n",
-      "echo Vous \u00c3\u00aates ne\\(e\\) en $annee, vous avez donc `expr $(date +%Y) - $annee` ans\n"
-    ],
-    [
-      "#!/bin/bash\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Quelle est votre annee de naissance \\?\n",
-      "read annee\n",
-      "echo Vous \u00c3\u00aates ne\\(e\\) en $annee, vous avez donc $((`date %Y` - $annee)) ans\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Quelle est votre annee de naissance \\?\n",
-      "read annee\n",
-      "echo Vous \u00c3\u00aates ne\\(e\\) en $annee, vous avez donc $((`date +%Y` - $annee)) ans\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Il y a \n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Il y a `wc -l>who` utilisateurs connectes sur `hostname`\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Il y a `who|wc -l` utilisateurs connectes sur `hostname`\n"
-    ],
-    [
-      "#!/bin/bash\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Il y a $(who|wc -l) utilisateurs connectes sur $(hostname)\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "set -- $(ls -l $1)\n",
-      "echo set $5\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "set -- $(ls -l $1)\n",
-      "echo $5\n"
-    ]
+    {
+      "name": "tp5_exo9.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "PATH=${PATH}:.\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo1.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "expr $1 / 2\n",
+        "echo $(($1 / 2))\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo2.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "expr $1 \\* 2\n",
+        "echo $(($1 * 2))\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo3.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo Quelle est votre annee de naissance \\?\n",
+        "read annee\n",
+        "echo Vous \u00c3\u00aates ne\\(e\\) en $annee, vous avez donc $((`date +%Y` - $annee)) ans\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo4.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo Il y a $(who|wc -l) utilisateurs connectes sur $(hostname)\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo5.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "set -- $(ls -l $1)\n",
+        "echo $5\n"
+      ]
+    }
   ],
   "profile": [
     {

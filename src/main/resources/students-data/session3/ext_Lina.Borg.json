@@ -2,219 +2,45 @@
   "name": "ext_Lina.Borg",
   "session": 3,
   "scripts": [
-    [
-      "#!/bin/bash\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
-      "read dateN\n",
-      "annee=`date + '%Y'`\n",
-      "echo Vous \u00c3\u00aates n\u00c3\u00a9e en $dateN, vous avez donc $((annee - expr dateN))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
-      "read dateN\n",
-      "annee=`date + \"%Y\"`\n",
-      "echo Vous \u00c3\u00aates n\u00c3\u00a9e en $dateN, vous avez donc $((annee - dateN))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
-      "read dateN\n",
-      "annee=``date` + \"%Y\"`\n",
-      "echo Vous \u00c3\u00aates n\u00c3\u00a9e en $dateN, vous avez donc $((annee - dateN))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
-      "read dateN\n",
-      "annee=``date` + \"%Y\"`\n",
-      "echo Vous \u00c3\u00aates n\u00c3\u00a9e en $dateN, vous avez donc $((annee - dateN))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
-      "read dateN\n",
-      "annee=$(date+'$Y')\n",
-      "echo annee\n",
-      "echo Vous \u00c3\u00aates n\u00c3\u00a9e en $dateN, vous avez donc $((annee - dateN))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
-      "read dateN\n",
-      "annee=date\n",
-      "echo Vous \u00c3\u00aates n\u00c3\u00a9e en $dateN, vous avez donc $((annee - dateN))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
-      "read dateN\n",
-      "annee=`date`\n",
-      "echo Vous \u00c3\u00aates n\u00c3\u00a9e en $dateN, vous avez donc $((annee - dateN))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
-      "read dateN\n",
-      "annee=date +%Y\n",
-      "echo Vous \u00c3\u00aates n\u00c3\u00a9e en $dateN, vous avez donc $((annee - dateN))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
-      "read dateN\n",
-      "annee=$(date +\"%Y-%m-%d\")\n",
-      "echo Vous \u00c3\u00aates n\u00c3\u00a9e en $dateN, vous avez donc $((annee - dateN))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
-      "read dateN\n",
-      "annee=$(date +\"%Y-%m-%d\")\n",
-      "echo annee\n",
-      "echo Vous \u00c3\u00aates n\u00c3\u00a9e en $dateN, vous avez donc $((annee - dateN))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
-      "read dateN\n",
-      "annee=$(date +\"%Y-%m-%d\")\n",
-      "echo $annee\n",
-      "echo Vous \u00c3\u00aates n\u00c3\u00a9e en $dateN, vous avez donc $((annee - dateN))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
-      "read dateN\n",
-      "annee=$(date +\"%Y\")\n",
-      "echo $annee\n",
-      "echo Vous \u00c3\u00aates n\u00c3\u00a9e en $dateN, vous avez donc $((annee - dateN))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
-      "read dateN\n",
-      "annee=$(date +\"%Y\")\n",
-      "echo Vous \u00c3\u00aates n\u00c3\u00a9e en $dateN, vous avez donc $((annee - dateN)) ans\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo nom de la machine: hostname\n",
-      "echo Nombre d'utilisateurs connect\u00c3\u00a9s : `who|wc -l`\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "nom = `hostname`\n",
-      "echo nom de la machine: nom\n",
-      "nb = `who|wc -l`\n",
-      "echo Nombre d'utilisateurs connect\u00c3\u00a9s : $nb\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo nom de la machine: `hostname`\n",
-      "echo Nombre d'utilisateurs connect\u00c3\u00a9s : `who | wc -l`\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Il y a `who | wc -l` utilisateurs connect\u00c3\u00a9s sur `hostname`\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "read nomF\n",
-      "set -- $(ls -l nomF)\n",
-      "echo $1\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "read nomF\n",
-      "set -- $(ls -l $nomF)\n",
-      "echo $1\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "read nomF\n",
-      "set $(ls -l $nomF)\n",
-      "echo $1\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "read nomF\n",
-      "set -- $(ls -l $nomF)\n",
-      "echo $1\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "read nomF\n",
-      "set -- $(ls -l $nomF)\n",
-      "echo $1\n",
-      "echo\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "read nomF\n",
-      "set -- $(stat -c%s nomF)\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "read nomF\n",
-      "set -- $(stat -c%s nomF)\n",
-      "echo $1\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "read nomF\n",
-      "set -- $(stat -c%s $nomF)\n",
-      "echo $1\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "read nomF\n",
-      "set -- $(stat -c%s $nomF)\n",
-      "echo Le fichier $nomF fait $1 octets\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "read nb\n",
-      "if $nb>5 and $nb<10\n",
-      "\tthen\n",
-      "\t\techo La valeut $nb est comprise entre 5 et 10.\n",
-      "\telse\n",
-      "\t\techo La valeur $nb n'est pas comprise entre 5 et 10.\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "read nb\n",
-      "if $nb>5 and $nb<10\n",
-      "\tthen\n",
-      "\t\techo La valeut $nb est comprise entre 5 et 10.\n",
-      "\telse\n",
-      "\t\techo La valeur $nb n'est pas comprise entre 5 et 10.\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "read nb\n",
-      "if $nb>5 and $nb<10\n",
-      "\tthen\n",
-      "\t\techo La valeur $nb est comprise entre 5 et 10\n",
-      "\telse\n",
-      "\t\techo La valeur $nb n'est pas comprise entre 5 et 10\n",
-      "fi\n"
-    ]
+    {
+      "name": "tp5bis_exo3.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
+        "read dateN\n",
+        "annee=$(date +\"%Y\")\n",
+        "echo Vous \u00c3\u00aates n\u00c3\u00a9e en $dateN, vous avez donc $((annee - dateN)) ans\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo4.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo Il y a `who | wc -l` utilisateurs connect\u00c3\u00a9s sur `hostname`\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo5.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "read nomF\n",
+        "set -- $(stat -c%s $nomF)\n",
+        "echo Le fichier $nomF fait $1 octets\n"
+      ]
+    },
+    {
+      "name": "tp6_exo1.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "read nb\n",
+        "if $nb>5 and $nb<10\n",
+        "\tthen\n",
+        "\t\techo La valeur $nb est comprise entre 5 et 10\n",
+        "\telse\n",
+        "\t\techo La valeur $nb n'est pas comprise entre 5 et 10\n",
+        "fi\n"
+      ]
+    }
   ],
   "profile": [
     {

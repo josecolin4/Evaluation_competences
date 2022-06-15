@@ -2,91 +2,60 @@
   "name": "ext_Philemon.Hinfray-Cacheux",
   "session": 1,
   "scripts": [
-    [
-      "#!/bin/bash\n",
-      "echo cours\n",
-      "cours=unix\n",
-      "echo $cours\n",
-      "echo je suis au cours $cours\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Mon nom de login est : $LOGNAME\n",
-      "echo Mon shell est : \n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Mon nom de login est : $LOGNAME\n",
-      "echo Mon shell est : \n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Mon nom de login est : $LOGNAME\n",
-      "echo Mon shell est : $SHELL\n",
-      "echo Les varibles du  Shell sont : \n",
-      "echo \n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Mon nom de login est : $LOGNAME\n",
-      "echo Mon shell est : $SHELL\n",
-      "echo Les varibles du  Shell sont : \n",
-      "set\n",
-      "echo celles d'environnement sont :\n",
-      "env\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Mon nom de login est : $LOGNAME\n",
-      "echo Mon shell est : $SHELL\n",
-      "echo Les varibles du  Shell sont : \n",
-      "set\n",
-      "echo celles d\\'environnement sont :\n",
-      "env\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Cher utilisateur quel est ton pr\u00c3\u00a9nom \\?\n",
-      "read prenom\n",
-      "echo Ravi de te connaitre, $prenom\n",
-      "echo quel est ton nom et ton age \\?\n",
-      "read nom age\n",
-      "echo Tu es $prenom $nom et tu as $age, n\\'est-ce pas \\?\n",
-      "read response\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Cher utilisateur quel est ton pr\u00c3\u00a9nom \\?\n",
-      "read prenom\n",
-      "echo Ravi de te connaitre, $prenom\n",
-      "echo quel est ton nom et ton age \\?\n",
-      "read nom age\n",
-      "echo Tu es $prenom $nom et tu as $age ans, n\\'est-ce pas \\?\n",
-      "read response\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Je suis le script Shell $0\n",
-      "echo Mes arguments sont $*\n",
-      "echo Le premier est $1\n",
-      "echo Le deuxi\u00c3\u00a8me argument est $2\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "Le script $$ poss\u00c3\u00a8de $# param\u00c3\u00a8tre(s), que voici : $*\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "Le script $$ poss\u00c3\u00a8de $# param\u00c3\u00a8tre\\(s\\), que voici : $*\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Le script $$ poss\u00c3\u00a8de $# param\u00c3\u00a8tre\\(s\\), que voici : $*\n",
-      "\n"
-    ]
+    {
+      "name": "tp5_exo1.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo cours\n",
+        "cours=unix\n",
+        "echo $cours\n",
+        "echo je suis au cours $cours\n"
+      ]
+    },
+    {
+      "name": "tp5_exo2.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo Mon nom de login est : $LOGNAME\n",
+        "echo Mon shell est : $SHELL\n",
+        "echo Les varibles du  Shell sont : \n",
+        "set\n",
+        "echo celles d\\'environnement sont :\n",
+        "env\n"
+      ]
+    },
+    {
+      "name": "tp5_exo3.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo Cher utilisateur quel est ton pr\u00c3\u00a9nom \\?\n",
+        "read prenom\n",
+        "echo Ravi de te connaitre, $prenom\n",
+        "echo quel est ton nom et ton age \\?\n",
+        "read nom age\n",
+        "echo Tu es $prenom $nom et tu as $age ans, n\\'est-ce pas \\?\n",
+        "read response\n"
+      ]
+    },
+    {
+      "name": "tp5_exo4.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo Je suis le script Shell $0\n",
+        "echo Mes arguments sont $*\n",
+        "echo Le premier est $1\n",
+        "echo Le deuxi\u00c3\u00a8me argument est $2\n",
+        "\n"
+      ]
+    },
+    {
+      "name": "tp5_exo5.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo Le script $$ poss\u00c3\u00a8de $# param\u00c3\u00a8tre\\(s\\), que voici : $*\n",
+        "\n"
+      ]
+    }
   ],
   "profile": [
     {

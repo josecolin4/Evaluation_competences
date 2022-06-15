@@ -2,156 +2,54 @@
   "name": "ext_Benoit.Riandiere",
   "session": 1,
   "scripts": [
-    [
-      "#!/bin/bash\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo cours\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo cours\n",
-      "cours=unix\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo cours\n",
-      "cours=unix\n",
-      "echo $cours\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo cours\n",
-      "cours=unix\n",
-      "echo $cours\n",
-      "echo je suis au cours $cours\n"
-    ],
-    [
-      "mon nom de login est : <Ext_Benoit_Riandiere>\n"
-    ],
-    [
-      "mon nom de login est : <Ext_Benoit_Riandiere>\n",
-      "Mon shell est : <shulker>\n"
-    ],
-    [
-      "mon nom de login est : <Ext_Benoit_Riandiere>\n",
-      "Mon shell est : <shulker>\n",
-      "Les variables du shell sont : <mes variables>\n"
-    ],
-    [
-      "mon nom de login est : <Ext_Benoit_Riandiere>\n",
-      "Mon shell est : <shulker>\n",
-      "Les variables du shell sont : <mes variables>\n",
-      "Celles du shell sont : <variable d'environement>\n"
-    ],
-    [
-      "mon nom de login est : <root>\n",
-      "Mon shell est : <shell>\n",
-      "Les variables du shell sont : <>\n",
-      "Celles du shell sont : <variable d'environement>\n"
-    ],
-    [
-      "mon nom de login est : <root>\n",
-      "Mon shell est : <shell>\n",
-      "Les variables du shell sont : <$variables>\n",
-      "Celles du d'environnement sont <set>\n"
-    ],
-    [
-      "mon nom de login est : <root>\n",
-      "Mon shell est : <shell>\n",
-      "Les variables du shell sont : <noir>\n",
-      "Celles du d'environnement sont <set>\n"
-    ],
-    [
-      "mon nom de login est : <root>\n",
-      "Mon shell est : <shell>\n",
-      "Les variables du shell sont :\n",
-      "<noir>\n",
-      "Celles du d'environnement sont :\n",
-      "<set>\n"
-    ],
-    [
-      "mon nom de login est : <root>\n",
-      "Mon shell est : <shell>\n",
-      "Les variables du shell sont :\n",
-      "<set>\n",
-      "Celles du d'environnement sont :\n",
-      "<env>\n"
-    ],
-    [
-      "mon nom de login est : root\n",
-      "Mon shell est : shell\n",
-      "Les variables du shell sont :\n",
-      "set\n",
-      "Celles du d'environnement sont :\n",
-      "env\n"
-    ],
-    [
-      "echo mon nom de login est : root\n",
-      "echo Mon shell est : shell\n",
-      "echo Les variables du shell sont :\n",
-      "set\n",
-      "echo Celles du d'environnement sont :\n",
-      "env\n"
-    ],
-    [
-      "#!/bin/bash\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Je suis le script Shell $0\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Je suis le script Shell $0\n",
-      "echo Mes arguments sont $*\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Je suis le script Shell $0\n",
-      "echo Mes arguments sont $*\n",
-      "echo Le premier argument est $1\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Je suis le script Shell $0\n",
-      "echo Mes arguments sont $*\n",
-      "echo Le premier argument est $1\n",
-      "echo Le deuxieme argument est $2\n"
-    ],
-    [
-      "#!/bin/bash\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo je suis le script Shell $0\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo je suis le script Shell $0\n",
-      "echo Mes arguments sont $*\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo je suis le script Shell $0\n",
-      "echo Mes arguments sont $*\n",
-      "echo Le premier argument est $1\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo je suis le script Shell $0\n",
-      "echo Mes arguments sont $*\n",
-      "echo Le premier argument est $1\n",
-      "echo Le deuxi\u00c3\u00a8me argument est $2\n"
-    ],
-    [
-      "Le script tp5_exo5.2.sh poss\u00c3\u00a8de 0 parametre, que voici :\n"
-    ],
-    [
-      "echo Le script tp5_exo5.2.sh poss\u00c3\u00a8de 0 parametre, que voici :\n",
-      "blblbl\n"
-    ]
+    {
+      "name": "tp5_exo1.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo cours\n",
+        "cours=unix\n",
+        "echo $cours\n",
+        "echo je suis au cours $cours\n"
+      ]
+    },
+    {
+      "name": "tp5_exo2.sh",
+      "lines": [
+        "echo mon nom de login est : root\n",
+        "echo Mon shell est : shell\n",
+        "echo Les variables du shell sont :\n",
+        "set\n",
+        "echo Celles du d'environnement sont :\n",
+        "env\n"
+      ]
+    },
+    {
+      "name": "tp5_exo5.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo Je suis le script Shell $0\n",
+        "echo Mes arguments sont $*\n",
+        "echo Le premier argument est $1\n",
+        "echo Le deuxieme argument est $2\n"
+      ]
+    },
+    {
+      "name": "tp5_exo6.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo je suis le script Shell $0\n",
+        "echo Mes arguments sont $*\n",
+        "echo Le premier argument est $1\n",
+        "echo Le deuxi\u00c3\u00a8me argument est $2\n"
+      ]
+    },
+    {
+      "name": "tp5_exo5.2.sh",
+      "lines": [
+        "echo Le script tp5_exo5.2.sh poss\u00c3\u00a8de 0 parametre, que voici :\n",
+        "blblbl\n"
+      ]
+    }
   ],
   "profile": [
     {

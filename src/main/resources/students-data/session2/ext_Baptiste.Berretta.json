@@ -2,139 +2,41 @@
   "name": "ext_Baptiste.Berretta",
   "session": 2,
   "scripts": [
-    [
-      "#!/bin/bash\n",
-      "echo Le script $0 poss\u00c3\u00a8de $# param\u00c3\u00a8tre\\(s\\)\\, que voici \\:$1\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Le script $0 poss\u00c3\u00a8de $# param\u00c3\u00a8tre\\(s\\)\\, que voici \\:$1 $2 $3 $5 \n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "$3=$1 AND $2\n",
-      "echo $3\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "$F3=$F1 AND $F2\n",
-      "echo $3\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "$F3=$F1 AND $F2\n",
-      "echo $F3\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo $F1\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "F1=$1\n",
-      "F2=$2\n",
-      "\n",
-      "F3=$F1 AND $F2\n",
-      "\n",
-      "echo $F3\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "F1=$1\n",
-      "F2=$2\n",
-      "\n",
-      "F3=$F1+$F2\n",
-      "\n",
-      "echo $F3\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "F11=$F1\n",
-      "F22=$F2\n",
-      "\n",
-      "F3=$F11+$F22\n",
-      "\n",
-      "echo $F3\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "F11=echo$F1\n",
-      "F22=echo$F2\n",
-      "\n",
-      "F3=$F11+$F22\n",
-      "\n",
-      "echo $F3\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo $F1\n",
-      "echo $F2\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "cat $F1\n",
-      "cat $F2\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo $F1\n",
-      "echo $F2\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo /root/$F1\n",
-      "echo /root/$F2\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "cat $1 $2 > $3\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "cat $1 $2 > $3.txt\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "cat $1 $2 > $3\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Nous sommes la `date`\n",
-      "echo Ceci est\n",
-      "echo une tr\u00c3\u00a8s\n",
-      "echo longue phrasse...\n",
-      "echo Voici une \u00c3\u00a9toile : *\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Nous sommes la `date`\n",
-      "echo Ceci est\n",
-      "echo une tr\u00c3\u00a8s\n",
-      "echo longue phrasse...\n",
-      "echo Voici une \u00c3\u00a9toile : *\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Nous sommes la `date`\n",
-      "echo Ceci est\n",
-      "echo une tr\u00c3\u00a8s\n",
-      "echo longue phrasse...\n",
-      "echo Voici une \u00c3\u00a9toile : \\*\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "nombre=$1\n",
-      "nombre=nombre+1\n",
-      "\n",
-      "echo $nombre\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "nombre=$1\n",
-      "nombre=$(($nombre + 1))\n",
-      "\n",
-      "echo $nombre\n"
-    ]
+    {
+      "name": "tp5_exo5.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo Le script $0 poss\u00c3\u00a8de $# param\u00c3\u00a8tre\\(s\\)\\, que voici \\:$1 $2 $3 $5 \n"
+      ]
+    },
+    {
+      "name": "tp5_exo6.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "cat $1 $2 > $3\n"
+      ]
+    },
+    {
+      "name": "tp5_exo7.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo Nous sommes la `date`\n",
+        "echo Ceci est\n",
+        "echo une tr\u00c3\u00a8s\n",
+        "echo longue phrasse...\n",
+        "echo Voici une \u00c3\u00a9toile : \\*\n"
+      ]
+    },
+    {
+      "name": "tp5_exo8.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "nombre=$1\n",
+        "nombre=$(($nombre + 1))\n",
+        "\n",
+        "echo $nombre\n"
+      ]
+    }
   ],
   "profile": [
     {

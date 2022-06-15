@@ -2,44 +2,28 @@
   "name": "ext_Amaury.Joudiou",
   "session": 5,
   "scripts": [
-    [
-      "if test -e $1 -a -e $2\n",
-      "\n",
-      "then\n",
-      "\techo les fichiers existe\n",
-      "\techo Voulez\\-vous concat\\\u00c3\u00a9ner les fichiers \\? Oui pour valider\n",
-      "\tread reponse\n",
-      "\n",
-      "\tif test $reponse = Oui\n",
-      "\tthen\n",
-      "\t\tcat $1 $2 > Fic\n",
-      "\t\tcat Fic\n",
-      "\tfi\n",
-      "\n",
-      "else\n",
-      "\techo le fichier n'existe pas\n",
-      "\n",
-      "fi\n"
-    ],
-    [
-      "if test -e $1 -a -e $2\n",
-      "\n",
-      "then\n",
-      "\techo les fichiers existe\n",
-      "\techo Voulez\\-vous concat\\\u00c3\u00a9ner les fichiers \\? Oui pour valider\n",
-      "\tread reponse\n",
-      "\n",
-      "\tif test $reponse = Oui\n",
-      "\tthen\n",
-      "\t\tcat $1 $2 > Fic\n",
-      "\t\tcat Fic\n",
-      "\tfi\n",
-      "\n",
-      "else\n",
-      "\techo le fichier n existe pas\n",
-      "\n",
-      "fi\n"
-    ]
+    {
+      "name": "tp6_exo3.sh",
+      "lines": [
+        "if test -e $1 -a -e $2\n",
+        "\n",
+        "then\n",
+        "\techo les fichiers existe\n",
+        "\techo Voulez\\-vous concat\\\u00c3\u00a9ner les fichiers \\? Oui pour valider\n",
+        "\tread reponse\n",
+        "\n",
+        "\tif test $reponse = Oui\n",
+        "\tthen\n",
+        "\t\tcat $1 $2 > Fic\n",
+        "\t\tcat Fic\n",
+        "\tfi\n",
+        "\n",
+        "else\n",
+        "\techo le fichier n existe pas\n",
+        "\n",
+        "fi\n"
+      ]
+    }
   ],
   "commands": [
     {

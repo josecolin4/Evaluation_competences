@@ -2,13 +2,16 @@
   "name": "ext_Robin.Mounie",
   "session": 2,
   "scripts": [
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "#export PATH=\"/root:$PATH\"\n",
-      "\n",
-      "echo $PATH\n"
-    ]
+    {
+      "name": "tp5_exo9.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "\n",
+        "#export PATH=\"/root:$PATH\"\n",
+        "\n",
+        "echo $PATH\n"
+      ]
+    }
   ],
   "profile": [
     {

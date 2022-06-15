@@ -2,160 +2,58 @@
   "name": "ext_Louis.Richards",
   "session": 4,
   "scripts": [
-    [
-      "liste_commandes=date who pwd ls\n",
-      "for liste_commandes in date\n",
-      "do\n",
-      "\techo`date`\n",
-      "\techo `who`\n",
-      "\techo `pwd`\n",
-      "\techo `ls`\n",
-      "done\n"
-    ],
-    [
-      "liste_commandes=date who pwd ls\n",
-      "for liste_commandes in date\n",
-      "do\n",
-      "\techo `date`\n",
-      "\techo `who`\n",
-      "\techo `pwd`\n",
-      "\techo `ls`\n",
-      "done\n"
-    ],
-    [
-      "nb=1\n",
-      "for nb in $*\n",
-      "do\n",
-      "\techo Argument `nb` : $nb\n",
-      "\tnb = nb + 1\n",
-      "done\n",
-      "echo il y a $# arguments.\n"
-    ],
-    [
-      "nb=1\n",
-      "for nb in $*\n",
-      "do\n",
-      "\techo Argument $nb : $nb\n",
-      "\tnb = nb + 1\n",
-      "done\n",
-      "echo il y a $# arguments.\n"
-    ],
-    [
-      "nb=1\n",
-      "for nb in $*\n",
-      "do\n",
-      "\techo Argument `nb` : $nb\n",
-      "\tnb=nb+1\n",
-      "done\n",
-      "echo il y a $# arguments.\n"
-    ],
-    [
-      "nb=1\n",
-      "for nb in $*\n",
-      "do\n",
-      "\techo Argument $nb : $nb\n",
-      "\tnb=nb+1\n",
-      "done\n",
-      "echo il y a $# arguments.\n"
-    ],
-    [
-      "nb=1\n",
-      "for nb in $*\n",
-      "do\n",
-      "\targ=nb\n",
-      "\techo Argument $arg : $nb\n",
-      "\tnb=nb+1\n",
-      "done\n",
-      "echo il y a $# arguments.\n"
-    ],
-    [
-      "arg=1\n",
-      "nb=1\n",
-      "for nb in $*\n",
-      "do\n",
-      "\techo Argument $arg : $nb\n",
-      "\tnb=nb+1\n",
-      "\targ=arg+1\n",
-      "done\n",
-      "echo il y a $# arguments.\n"
-    ],
-    [
-      "arg=1\n",
-      "nb=1\n",
-      "for nb in $*\n",
-      "do\n",
-      "\techo Argument $arg : $nb\n",
-      "\tnb=nb+1\n",
-      "\targ=$arg+1\n",
-      "done\n",
-      "echo il y a $# arguments.\n"
-    ],
-    [
-      "arg=1\n",
-      "nb=1\n",
-      "for nb in $*\n",
-      "do\n",
-      "\techo Argument $arg : $nb\n",
-      "\tnb=nb+1\n",
-      "\targ=$((arg+1))\n",
-      "done\n",
-      "echo il y a $# arguments.\n"
-    ],
-    [
-      "arg=1\n",
-      "nb=1\n",
-      "for nb in $*\n",
-      "do\n",
-      "\techo Argument $(nb) : $nb\n",
-      "\tnb=nb+1\n",
-      "\targ=$((arg+1))\n",
-      "done\n",
-      "echo il y a $# arguments.\n"
-    ],
-    [
-      "arg=1\n",
-      "nb=1\n",
-      "for nb in $*\n",
-      "do\n",
-      "\techo Argument $((nb)) : $nb\n",
-      "\tnb=nb+1\n",
-      "\targ=$((arg+1))\n",
-      "done\n",
-      "echo il y a $# arguments.\n"
-    ],
-    [
-      "arg=1\n",
-      "nb=1\n",
-      "for nb in $*\n",
-      "do\n",
-      "\techo Argument $arg : $nb\n",
-      "\tnb=nb+1\n",
-      "\targ=$((arg+1))\n",
-      "done\n",
-      "echo il y a $# arguments.\n"
-    ],
-    [
-      "echo \"Enter a number\"\n",
-      "\n",
-      "read num\n",
-      "\n",
-      "\n",
-      "fact=1\n",
-      "\n",
-      "\n",
-      "while [ $num -gt 1 ]\n",
-      "\n",
-      "do\n",
-      "\n",
-      "  fact=$((fact * num))  #fact = fact * num\n",
-      "\n",
-      "  num=$((num - 1))      #num = num - 1\n",
-      "\n",
-      "done\n",
-      "\n",
-      "\n",
-      "echo $fact\n"
-    ]
+    {
+      "name": "tp6_exo4.sh",
+      "lines": [
+        "liste_commandes=date who pwd ls\n",
+        "for liste_commandes in date\n",
+        "do\n",
+        "\techo `date`\n",
+        "\techo `who`\n",
+        "\techo `pwd`\n",
+        "\techo `ls`\n",
+        "done\n"
+      ]
+    },
+    {
+      "name": "tp6_exo5.sh",
+      "lines": [
+        "arg=1\n",
+        "nb=1\n",
+        "for nb in $*\n",
+        "do\n",
+        "\techo Argument $arg : $nb\n",
+        "\tnb=nb+1\n",
+        "\targ=$((arg+1))\n",
+        "done\n",
+        "echo il y a $# arguments.\n"
+      ]
+    },
+    {
+      "name": "tp6_exo6.sh",
+      "lines": [
+        "echo \"Enter a number\"\n",
+        "\n",
+        "read num\n",
+        "\n",
+        "\n",
+        "fact=1\n",
+        "\n",
+        "\n",
+        "while [ $num -gt 1 ]\n",
+        "\n",
+        "do\n",
+        "\n",
+        "  fact=$((fact * num))  #fact = fact * num\n",
+        "\n",
+        "  num=$((num - 1))      #num = num - 1\n",
+        "\n",
+        "done\n",
+        "\n",
+        "\n",
+        "echo $fact\n"
+      ]
+    }
   ],
   "profile": [
     {

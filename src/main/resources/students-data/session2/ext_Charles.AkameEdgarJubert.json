@@ -2,116 +2,49 @@
   "name": "ext_Charles.AkameEdgarJubert",
   "session": 2,
   "scripts": [
-    [
-      "teste\n"
-    ],
-    [
-      "$0\n",
-      "$*\n",
-      "$1\n",
-      "$2\n"
-    ],
-    [
-      "echo le script $0 poss\u00c3\u00a9de $* param\u00c3\u00a8tre que voici $n\n"
-    ],
-    [
-      "echo le script $0\n",
-      " poss\u00c3\u00a9de $*\n",
-      " param\u00c3\u00a8tre que voici $1\n"
-    ],
-    [
-      "echo le script $0\n",
-      "echo poss\u00c3\u00a9de $*\n",
-      "echo param\u00c3\u00a8tre que voici $1\n"
-    ],
-    [
-      "echo le script $0\n",
-      "echo poss\u00c3\u00a9de $*\n",
-      "echo param\u00c3\u00a8tre que voici $n\n"
-    ],
-    [
-      "\n"
-    ],
-    [
-      "cat F3 > F1 F2 \n"
-    ],
-    [
-      "cat F1 F2 > F3\n"
-    ],
-    [
-      "echo' Nous sommes le' 'date'\n",
-      "echo'Nous somme le Mon Nov 16 15:20:46 CET 2020\n",
-      "echo'Cesi est '\n",
-      "echo'une tr\u00c3\u00a8s '\n",
-      "echo'longue phrase...'\n",
-      "echo'Voici une \u00c3\u00a9toile : *'\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo' Nous sommes le' 'date'\n",
-      "echo'Nous somme le Mon Nov 16 15:20:46 CET 2020\n",
-      "echo'Cesi est '\n",
-      "echo'une tr\u00c3\u00a8s '\n",
-      "echo'longue phrase...'\n",
-      "echo'Voici une \u00c3\u00a9toile : *'\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo' Nous sommes le' 'date'\n",
-      "echo'Nous somme le Mon Nov 16 15:20:46 CET 2020'\n",
-      "echo'Cesi est '\n",
-      "echo'une tr\u00c3\u00a8s '\n",
-      "echo'longue phrase...'\n",
-      "echo'Voici une \u00c3\u00a9toile : *'\n"
-    ],
-    [
-      "$1 =$1 + 1\n"
-    ],
-    [
-      "$0 =$0 + 1\n"
-    ],
-    [
-      "$1 =$1 + 1\n"
-    ],
-    [
-      "$2 =$2 + 1\n"
-    ],
-    [
-      "\n"
-    ],
-    [
-      "\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "$1x1=$1\n",
-      "$x1= 'expr $x1+1'\n",
-      "echo $x1\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "'=expr$*+1'\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "=expr$*+1\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "=expr$* + 1\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "v=$1\n",
-      "echo v='expr $v + 1'\n"
-    ],
-    [
-      "#! /bin/bash\n",
-      "v=$1\n",
-      "echo v=expr $v + 1\n"
-    ]
+    {
+      "name": "TP5_exo7_2.sh",
+      "lines": [
+        "$0\n",
+        "$*\n",
+        "$1\n",
+        "$2\n"
+      ]
+    },
+    {
+      "name": "tp5_exo5.sh",
+      "lines": [
+        "echo le script $0\n",
+        "echo poss\u00c3\u00a9de $*\n",
+        "echo param\u00c3\u00a8tre que voici $n\n"
+      ]
+    },
+    {
+      "name": "tp5_exo7_2.sh",
+      "lines": [
+        "cat F1 F2 > F3\n"
+      ]
+    },
+    {
+      "name": "tp5_exo7.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo' Nous sommes le' 'date'\n",
+        "echo'Nous somme le Mon Nov 16 15:20:46 CET 2020'\n",
+        "echo'Cesi est '\n",
+        "echo'une tr\u00c3\u00a8s '\n",
+        "echo'longue phrase...'\n",
+        "echo'Voici une \u00c3\u00a9toile : *'\n"
+      ]
+    },
+    {
+      "name": "tp5_exo8.sh",
+      "lines": [
+        "#! /bin/bash\n",
+        "v=$1\n",
+        "echo v=expr $v + 1\n"
+      ]
+    }
   ],
   "profile": [
     {

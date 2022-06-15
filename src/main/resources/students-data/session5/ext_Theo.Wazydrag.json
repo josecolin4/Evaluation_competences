@@ -2,72 +2,60 @@
   "name": "ext_Theo.Wazydrag",
   "session": 5,
   "scripts": [
-    [
-      "#!/bin/bash\n",
-      "echo  `ls -l $* `\n",
-      "set -- $(ls -l $*)\n",
-      "echo $7\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo \n"
-    ],
-    [
-      "#!/bin/bash\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if [ -e $1 -a -e $2 ]\n",
-      "then\n",
-      "echo les fiches $1 et $2\n",
-      "existent voulez vous les concatener \\?\n",
-      "read reponse\n",
-      "if test $reponse = 'oui'\n",
-      "then\n",
-      "echo \"${1${2\"\n",
-      "else\n",
-      "echo un des fichiers n\\'existe pas \n",
-      "fi\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if [ -e $1 -a -e $2 ]\n",
-      "then\n",
-      "echo les fiches $1 et $2\n",
-      "existent voulez vous les concatener \\?\n",
-      "read reponse\n",
-      "if test $reponse = 'oui'\n",
-      "then\n",
-      "echo \"${1${2\"\n",
-      "else\n",
-      "echo un des fichiers n\\'existe pas \n",
-      "fi\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if [ -e $1 -a -e $2 ]\n",
-      "then\n",
-      "echo les fiches $1 et $2\n",
-      "existent voulez vous les concatener \\?\n",
-      "read reponse\n",
-      "if test $reponse = 'oui'\n",
-      "then\n",
-      "echo \"${1}${2}\"\n",
-      "else\n",
-      "echo un des fichiers n\\'existe pas \n",
-      "fi\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "for exo5 in \n"
-    ]
+    {
+      "name": "tp5bis_exo5.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo  `ls -l $* `\n",
+        "set -- $(ls -l $*)\n",
+        "echo $7\n"
+      ]
+    },
+    {
+      "name": "tp6_exo1.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo \n"
+      ]
+    },
+    {
+      "name": "tp6_exo2.sh",
+      "lines": [
+        "#!/bin/bash\n"
+      ]
+    },
+    {
+      "name": "tp6_exo3.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "if [ -e $1 -a -e $2 ]\n",
+        "then\n",
+        "echo les fiches $1 et $2\n",
+        "existent voulez vous les concatener \\?\n",
+        "read reponse\n",
+        "if test $reponse = 'oui'\n",
+        "then\n",
+        "echo \"${1}${2}\"\n",
+        "else\n",
+        "echo un des fichiers n\\'existe pas \n",
+        "fi\n",
+        "fi\n"
+      ]
+    },
+    {
+      "name": "tp6_exo4.sh",
+      "lines": [
+        "#!/bin/bash\n"
+      ]
+    },
+    {
+      "name": "tp6_exo5.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "\n",
+        "for exo5 in \n"
+      ]
+    }
   ],
   "commands": [
     {

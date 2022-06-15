@@ -2,307 +2,39 @@
   "name": "ext_Alexis.Duval",
   "session": 2,
   "scripts": [
-    [
-      "#!/bin/bash\n",
-      "echo expr($1 / 2)\n",
-      "echo $(( $1 / 2 ))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo expr $1 / 2\n",
-      "echo $(( $1 / 2 ))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "som = `expr $1 / 2`\n",
-      "echo som\n",
-      "som1 = $(( $1 / 2 ))\n",
-      "echo som1\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "som=`expr $1 / 2`\n",
-      "echo som\n",
-      "som1=$(( $1 / 2 ))\n",
-      "echo som1\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "som=`expr $1 / 2`\n",
-      "echo $som\n",
-      "som1=$(( $1 / 2 ))\n",
-      "echo $som1\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "som=`expr $1 / 2`\n",
-      "echo $som\n",
-      "som1=$(( $1/2 ))\n",
-      "echo $som1\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "som=`expr $1 / 2`\n",
-      "echo $som\n",
-      "som1=$(($1/2))\n",
-      "echo $som1\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "som=`expr $1 / 2`\n",
-      "echo $som\n",
-      "val=$1\n",
-      "echo $((val/2))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "som=`expr $1 / 2`\n",
-      "echo $som\n",
-      "val=$1\n",
-      "echo $((val/2))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "som=`expr $1 / 2`\n",
-      "echo $som\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "som=`expr $1 / 2`\n",
-      "echo $som\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "som=`expr $1 / 2`\n",
-      "echo $som\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "som=`expr $1 / 2`\n",
-      "echo $som\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "valeur=`expr $1 / 2`\n",
-      "echo $valeur\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "valeur=`expr $1 / 2`\n",
-      "echo $valeur\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "valeur=`expr $1 / 2`\n",
-      "echo $valeur\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "valeur=$(($1/2))\n",
-      "echo $valeur\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "valeur=expr($1 / 2)\n",
-      "echo $valeur\n",
-      "valeur=$(($1/2))\n",
-      "echo $valeur\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "valeur=expr `$1 / 2`\n",
-      "echo $valeur\n",
-      "valeur=$(($1/2))\n",
-      "echo $valeur\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "valeur = expr `$1 / 2`\n",
-      "echo $valeur\n",
-      "valeur=$(($1/2))\n",
-      "echo $valeur\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "valeur = `expr $1 / 2`\n",
-      "echo $valeur\n",
-      "valeur=$(($1/2))\n",
-      "echo $valeur\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "valeur=`expr $1 / 2`\n",
-      "echo $valeur\n",
-      "valeur=$(($1/2))\n",
-      "echo $valeur\n"
-    ],
-    [
-      "#!/bin/bash\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "resultat=`expr $1*2`\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "resultat=`expr $1 * 2`\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "resultat=`expr $1 * 2`\n",
-      "echo resultat\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "resultat=`expr $1 * 2`\n",
-      "echo $resultat\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "resultat=`expr $1 \\* 2`\n",
-      "echo $resultat\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance \\?\n",
-      "\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance \\?\n",
-      "nais=\n",
-      "dte=`date +%Y`\n",
-      "age=`expr $dte - $nais`\n",
-      "echo $age\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "read -p \"Quelle est votre ann\u00c3\u00a9e de naissance ?\" nais\n",
-      "dte=`date +%Y`\n",
-      "age=`expr $dte - $nais`\n",
-      "echo $age\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "read -p \"Quelle est votre ann\u00c3\u00a9e de naissance ?\" nais\n",
-      "dte=`date +%Y`\n",
-      "age=`expr $dte - $nais`\n",
-      "echo $age\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "read -p \"Quelle est votre ann\u00c3\u00a9e de naissance ?\" nais\n",
-      "dte=`date +%Y`\n",
-      "age=`expr $dte - $nais`\n",
-      "echo $age\n",
-      "\n",
-      "age=$(($dte-$nais))\n",
-      "echo $age\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "resultat=`expr $1 \\* 2`\n",
-      "echo $resultat\n",
-      "resultat=$(($1\\*2))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "resultat=`expr $1 \\* 2`\n",
-      "echo $resultat\n",
-      "resultat=$(($1\\*2))\n",
-      "echo $resultat\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "resultat=`expr $1 \\* 2`\n",
-      "echo $resultat\n",
-      "resultat=$(($1*2))\n",
-      "echo $resultat\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "resultat=`expr $1 \\* 2`\n",
-      "echo $resultat\n",
-      "resultat=$(($1\\*2))\n",
-      "echo $resultat\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "resultat=`expr $1 \\* 2`\n",
-      "echo $resultat\n",
-      "resultat=$(($1*2))\n",
-      "echo $resultat\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "resultat=`expr $1 \\* 2`\n",
-      "echo $resultat\n",
-      "resultat=$(($1*2))\n",
-      "echo $resultat\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "read -p \"Quelle est votre ann\u00c3\u00a9e de naissance ?\" nais\n",
-      "dte=`date +%Y`\n",
-      "age=`expr $dte - $nais`\n",
-      "echo $age\n",
-      "echo \"vous \u00c3\u00aates n\u00c3\u00a9\\(e\\) en 1990, vous avez donc 30 ans\\.\n",
-      "\n",
-      "age=$(($dte-$nais))\n",
-      "echo $age\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "read -p \"Quelle est votre ann\u00c3\u00a9e de naissance ?\" nais\n",
-      "dte=`date +%Y`\n",
-      "age=`expr $dte - $nais`\n",
-      "echo $age\n",
-      "echo \"vous \u00c3\u00aates n\u00c3\u00a9\\(e\\) en\"   \", vous avez donc\"  \" ans\\.\"\n",
-      "\n",
-      "age=$(($dte-$nais))\n",
-      "echo $age\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "read -p \"Quelle est votre ann\u00c3\u00a9e de naissance ?\" nais\n",
-      "dte=`date +%Y`\n",
-      "age=`expr $dte - $nais`\n",
-      "echo vous \u00c3\u00aates n\u00c3\u00a9\\(e\\) en $nais , vous avez donc $age  ans\\.\"\n",
-      "\n",
-      "age=$(($dte-$nais))\n",
-      "echo\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "read -p \"Quelle est votre ann\u00c3\u00a9e de naissance ?\" nais\n",
-      "dte=`date +%Y`\n",
-      "age=`expr $dte - $nais`\n",
-      "echo vous \u00c3\u00aates n\u00c3\u00a9\\(e\\) en $nais , vous avez donc $age  ans\\.\"\n",
-      "\n",
-      "age=$(($dte-$nais))\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "read -p \"Quelle est votre ann\u00c3\u00a9e de naissance ?\" nais\n",
-      "dte=`date +%Y`\n",
-      "age=`expr $dte - $nais`\n",
-      "echo vous \u00c3\u00aates n\u00c3\u00a9\\(e\\) en $nais , vous avez donc $age ans\\.\"\n",
-      "\n",
-      "age=$(($dte-$nais))\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "read -p \"Quelle est votre ann\u00c3\u00a9e de naissance ?\" nais\n",
-      "dte=`date +%Y`\n",
-      "age=`expr $dte - $nais`\n",
-      "echo vous \u00c3\u00aates n\u00c3\u00a9\\(e\\) en $nais , vous avez donc $age ans\\.\"\n",
-      "\n",
-      "age=$(($dte-$nais))\n",
-      "\n"
-    ]
+    {
+      "name": "tp5bis_exo1.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "valeur=`expr $1 / 2`\n",
+        "echo $valeur\n",
+        "valeur=$(($1/2))\n",
+        "echo $valeur\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo2.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "resultat=`expr $1 \\* 2`\n",
+        "echo $resultat\n",
+        "resultat=$(($1*2))\n",
+        "echo $resultat\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo3.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "read -p \"Quelle est votre ann\u00c3\u00a9e de naissance ?\" nais\n",
+        "dte=`date +%Y`\n",
+        "age=`expr $dte - $nais`\n",
+        "echo vous \u00c3\u00aates n\u00c3\u00a9\\(e\\) en $nais , vous avez donc $age ans\\.\"\n",
+        "\n",
+        "age=$(($dte-$nais))\n",
+        "\n"
+      ]
+    }
   ],
   "profile": [
     {

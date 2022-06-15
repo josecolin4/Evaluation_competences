@@ -2,53 +2,44 @@
   "name": "ext_Jim.Stad",
   "session": 2,
   "scripts": [
-    [
-      "#!/bin/bash\n",
-      "echo Le script $0 poss\u00c3\u00a8de $# param\u00c3\u00a8tre(s), que voici : $*\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Le script $0 poss\u00c3\u00a8de $# param\u00c3\u00a8tre(s), que voici :\n",
-      "echo $*\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Le script $0 poss\u00c3\u00a8de $# param\u00c3\u00a8tre\\(s\\), que voici :\n",
-      "echo $*\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "read F1\n",
-      "read F2\n",
-      "cat F1 F2 > F3\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "read F1\n",
-      "read F2\n",
-      "cat F1 F2 > F3\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Nous sommes le \" `date`\"\n",
-      "echo Nous sommes le `date`\n",
-      "echo Ceci est\n",
-      "echo une tr\u00c3\u00a8s\n",
-      "echo ongue phrase...\n",
-      "echo Voici une \u00c3\u00a9toile : \\*\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "cat $F1 $F2 > F3\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "cat $F1 $F2 > $F3\n",
-      "\n"
-    ]
+    {
+      "name": "tp5_exo5.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo Le script $0 poss\u00c3\u00a8de $# param\u00c3\u00a8tre\\(s\\), que voici :\n",
+        "echo $*\n"
+      ]
+    },
+    {
+      "name": "tp5_ex6.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "read F1\n",
+        "read F2\n",
+        "cat F1 F2 > F3\n",
+        "\n"
+      ]
+    },
+    {
+      "name": "tp5_exo6.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "cat $F1 $F2 > $F3\n",
+        "\n"
+      ]
+    },
+    {
+      "name": "tp5_exo7.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo Nous sommes le \" `date`\"\n",
+        "echo Nous sommes le `date`\n",
+        "echo Ceci est\n",
+        "echo une tr\u00c3\u00a8s\n",
+        "echo ongue phrase...\n",
+        "echo Voici une \u00c3\u00a9toile : \\*\n"
+      ]
+    }
   ],
   "profile": [
     {

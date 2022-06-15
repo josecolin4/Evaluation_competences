@@ -2,204 +2,53 @@
   "name": "ext_Baptiste.Berretta",
   "session": 3,
   "scripts": [
-    [
-      "#!/bin/bash\n",
-      "n=$1\n",
-      "expr $((n / 2)) #affiche\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "n=$1\n",
-      "echo expr $((n / 2)) \n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "n=$1\n",
-      "echo expr $((n / 2)) \n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "n=$1\n",
-      "expr $((n / 2)) #affiche\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "n=$1\n",
-      "\n",
-      "expr $((n * 2)) #affiche\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance \\?\n",
-      "read date\n",
-      "\n",
-      "expr $((2020 - date)) #affiche\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance \\?\n",
-      "read date\n",
-      "\n",
-      "echo Vous \u00c3\u00aates n\u00c3\u00a9\\(e\\) en $date , vous avez donc \n",
-      "expr $((2020 - date)) #affiche\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance \\?\n",
-      "read date\n",
-      "\n",
-      "echo Vous \u00c3\u00aates n\u00c3\u00a9\\(e\\) en $date , vous avez donc expr $((2020 - date)) #affiche\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance \\?\n",
-      "read date\n",
-      "\n",
-      "echo Vous \u00c3\u00aates n\u00c3\u00a9\\(e\\) en $date , vous avez donc $((2020 - date)) ans.\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance \\?\n",
-      "\n",
-      "read date\n",
-      "\n",
-      "echo Vous \u00c3\u00aates n\u00c3\u00a9\\(e\\) en $date , vous avez donc $((2020 - date)) ans.\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo Il y a `who` connect\u00c3\u00a9s sur `hostname`\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo `who | wc -l`\n",
-      "echo `hostname`\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo Il y a  `who | wc -l` utilisateur connect\u00c3\u00a9s sur `hostname`\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo Il y a  `who | wc -l` utilisateur connect\u00c3\u00a9s sur `hostname`\n"
-    ],
-    [
-      "#!/bin/basho\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "set -- $ (ls -l file)\n",
-      "echo $1\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "set - $ (ls -l file)\n",
-      "echo $1\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "set -- $(ls -l file)\n",
-      "echo $1\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "set -- $(ls -l file)\n",
-      "echo $1\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "set -- $(ls -l file)\n",
-      "bash: set : -r : option non valable\n",
-      "echo $1\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "set --r $(ls -l file)\n",
-      "\n",
-      "echo $1\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "set -- $(ls -l tp5bis_exo4.sh)\n",
-      "\n",
-      "echo $1\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "set --r $(ls -l tp5bis_exo4.sh)\n",
-      "\n",
-      "echo $1\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "set -r $(ls -l tp5bis_exo4.sh)\n",
-      "\n",
-      "echo $1\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "set $(ls -l tp5bis_exo4.sh)\n",
-      "\n",
-      "echo $1\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "set -- $(ls -lr tp5bis_exo4.sh)\n",
-      "\n",
-      "echo $1\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "set -- $(ls -r tp5bis_exo4.sh)\n",
-      "\n",
-      "echo $1\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "set -- $(ls -l tp5bis_exo4.sh)\n",
-      "\n",
-      "echo $3 $5\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "set -- $(ls -l tp5bis_exo4.sh)\n",
-      "\n",
-      "echo $4 $5\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "set -- $(ls -l tp5bis_exo4.sh)\n",
-      "\n",
-      "echo $2 $5\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "set -- $(ls -l tp5bis_exo4.sh)\n",
-      "\n",
-      "echo $9 $5\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "oui=`date \"+%Y\"`\n",
-      "\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance \\?\n",
-      "read date\n",
-      "\n",
-      "echo Vous \u00c3\u00aates n\u00c3\u00a9\\(e\\) en $date , vous avez donc $((oui - date)) ans.\n"
-    ]
+    {
+      "name": "tp5bis_exo1.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "n=$1\n",
+        "expr $((n / 2)) #affiche\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo2.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "\n",
+        "n=$1\n",
+        "\n",
+        "expr $((n * 2)) #affiche\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo3.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "oui=`date \"+%Y\"`\n",
+        "\n",
+        "echo Quelle est votre ann\u00c3\u00a9e de naissance \\?\n",
+        "read date\n",
+        "\n",
+        "echo Vous \u00c3\u00aates n\u00c3\u00a9\\(e\\) en $date , vous avez donc $((oui - date)) ans.\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo4.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "\n",
+        "echo Il y a  `who | wc -l` utilisateur connect\u00c3\u00a9s sur `hostname`\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo5.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "set -- $(ls -l tp5bis_exo4.sh)\n",
+        "\n",
+        "echo $9 $5\n"
+      ]
+    }
   ],
   "profile": [
     {

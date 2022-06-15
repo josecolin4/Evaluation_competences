@@ -2,96 +2,26 @@
   "name": "ext_Gwenael.Guillaume",
   "session": 2,
   "scripts": [
-    [
-      "#!/bin/bash\n",
-      "echo (expr $1) + 1\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "i = expr $1\n",
-      "let i++\n",
-      "echo i\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "i = expr $1\n",
-      "let i++\n",
-      "echo $i\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "i = $1\n",
-      "let i++\n",
-      "echo $i\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "i=$1\n",
-      "let i++\n",
-      "echo $i\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "i=expr$1\n",
-      "let i++\n",
-      "echo $i\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "expr$1+1\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "expr $1+1\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "i=$1\n",
-      "let i++\n",
-      "echo $i\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo $PATH\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo $PATH\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "export PATH=$PATH:$PWD\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "export PATH=$PATH:$PWD\n",
-      "echo PATH\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "export PATH=$PATH:$PWD\n",
-      "echo $PATH\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "export PATH=$PATH:$PWD\n",
-      "cat \n",
-      "echo $PATH\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "export PATH=$PATH:$PWD\n",
-      "echo \"export PATH=$PATH:$PWD\">>~/.bashrc \n",
-      "echo $PATH\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "export PATH=$PATH:$PWD\n",
-      "echo \"export PATH=$PATH:$PWD\">>~/.bashrc \n",
-      "echo $PATH\n",
-      "source ~/.bashrc\n"
-    ]
+    {
+      "name": "tp5_exo8.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "i=$1\n",
+        "let i++\n",
+        "echo $i\n",
+        "\n"
+      ]
+    },
+    {
+      "name": "tp5_exo9.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "export PATH=$PATH:$PWD\n",
+        "echo \"export PATH=$PATH:$PWD\">>~/.bashrc \n",
+        "echo $PATH\n",
+        "source ~/.bashrc\n"
+      ]
+    }
   ],
   "profile": [
     {

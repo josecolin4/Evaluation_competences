@@ -2,78 +2,33 @@
   "name": "ext_Driss.Habi",
   "session": 2,
   "scripts": [
-    [
-      "#1/bin/bash\n",
-      "echo Nous sommes le 'date'\n",
-      "echo Nous sommes le Mon Nov 16 15:20:46 CEST 2020\n",
-      "echo Ceci est\n",
-      "echo une tr\u00c3\u00a8s\n",
-      "echo longue phrase...\n",
-      "echo Voici une \u00c3\u00a9toile : *\n"
-    ],
-    [
-      "#1/bin/bash\n",
-      "echo Nous sommes le `date`\n",
-      "echo Nous sommes le Mon Nov 16 15:20:46 CEST 2020\n",
-      "echo Ceci est\n",
-      "echo une tr\u00c3\u00a8s\n",
-      "echo longue phrase...\n",
-      "echo Voici une \u00c3\u00a9toile : '*'\n"
-    ],
-    [
-      "#1/bin/bash\n",
-      "echo $1 + 1\n",
-      "\n"
-    ],
-    [
-      "#1/bin/bash\n",
-      "echo `$1 + 1`\n",
-      "\n"
-    ],
-    [
-      "#1/bin/bash\n",
-      "v = $1 + 1\n",
-      "echo `v`\n",
-      "\n"
-    ],
-    [
-      "#1/bin/bash\n",
-      "echo `$1+1`\n"
-    ],
-    [
-      "#1/bin/bash\n",
-      "$1= $1 +1\n",
-      "echo $1\n"
-    ],
-    [
-      "#1/bin/bash\n",
-      "v= `expr $1 +1`\n",
-      "echo `v`\n"
-    ],
-    [
-      "#1/bin/bash\n",
-      "v= $(($1 +1))\n",
-      "echo $v\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "v= $(($1 +1))\n",
-      "echo $v\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "v= $(($1+1))\n",
-      "echo $v\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "v=$(($1+1))\n",
-      "echo $v\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "export PATH=$PATH:/home/user/mes_prog\n"
-    ]
+    {
+      "name": "tp5_exo7.sh",
+      "lines": [
+        "#1/bin/bash\n",
+        "echo Nous sommes le `date`\n",
+        "echo Nous sommes le Mon Nov 16 15:20:46 CEST 2020\n",
+        "echo Ceci est\n",
+        "echo une tr\u00c3\u00a8s\n",
+        "echo longue phrase...\n",
+        "echo Voici une \u00c3\u00a9toile : '*'\n"
+      ]
+    },
+    {
+      "name": "tp5_exo8.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "v=$(($1+1))\n",
+        "echo $v\n"
+      ]
+    },
+    {
+      "name": "tp5_exo9.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "export PATH=$PATH:/home/user/mes_prog\n"
+      ]
+    }
   ],
   "profile": [
     {

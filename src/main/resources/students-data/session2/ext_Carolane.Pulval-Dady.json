@@ -2,130 +2,47 @@
   "name": "ext_Carolane.Pulval-Dady",
   "session": 2,
   "scripts": [
-    [
-      "#! /bin/bash\n",
-      "\n",
-      "cat $1>$3 \n",
-      "cat $2>>$3\n",
-      "\n"
-    ],
-    [
-      "#! /bin/bash\n",
-      "\n",
-      "echo Nous sommes le `date`\n",
-      "echo Nous sommes le date\n",
-      "echo Ceci est\n",
-      "echo une tr\u00c3\u00a8s\n",
-      "echo longue prase...\n",
-      "echo Voici une \u00c3\u00a9toile :'*'\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "x=$1+1\n",
-      "echo x\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "x=$1+1\n",
-      "echo $x\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "x=($1+1)\n",
-      "echo $x\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "x=`$1+1`\n",
-      "echo $x\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "x=\"$1+1\"\n",
-      "echo $x\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "x=`$1+1`\n",
-      "echo $x\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "x=$(($1+1))\n",
-      "echo $x\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "$PATH ~\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "x=expr $1+1\n",
-      "echo $x\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "x=expr $1 + 1\n",
-      "echo $x\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "x= `expr $1 + 1`\n",
-      "echo $x\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "x= expr `$1 + 1`\n",
-      "echo $x\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "x= $(($1 + 1))\n",
-      "echo $x\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "x= $(($1+1))\n",
-      "echo $x\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "x=$(($1+1))\n",
-      "echo $x\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "\n",
-      "echi `export PATH=$PATH:/user/mes_prog`>>/home/user/.bashrc\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "\n",
-      "echo `export PATH=$PATH:/user/mes_prog`>>/home/user/.bashrc\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "\n",
-      "echo `export PATH=$PATH:/USER/mes_prog`>>/home/USER/.bashrc\n"
-    ]
+    {
+      "name": "tp5_exo6.sh",
+      "lines": [
+        "#! /bin/bash\n",
+        "\n",
+        "cat $1>$3 \n",
+        "cat $2>>$3\n",
+        "\n"
+      ]
+    },
+    {
+      "name": "tp5_exo7.sh",
+      "lines": [
+        "#! /bin/bash\n",
+        "\n",
+        "echo Nous sommes le `date`\n",
+        "echo Nous sommes le date\n",
+        "echo Ceci est\n",
+        "echo une tr\u00c3\u00a8s\n",
+        "echo longue prase...\n",
+        "echo Voici une \u00c3\u00a9toile :'*'\n"
+      ]
+    },
+    {
+      "name": "tp5_exo8.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "\n",
+        "x=$(($1+1))\n",
+        "echo $x\n"
+      ]
+    },
+    {
+      "name": "tp5_exo9.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "\n",
+        "\n",
+        "echo `export PATH=$PATH:/USER/mes_prog`>>/home/USER/.bashrc\n"
+      ]
+    }
   ],
   "profile": [
     {

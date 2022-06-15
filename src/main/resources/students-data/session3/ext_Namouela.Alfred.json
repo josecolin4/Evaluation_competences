@@ -2,55 +2,53 @@
   "name": "ext_Namouela.Alfred",
   "session": 3,
   "scripts": [
-    [
-      "#!/bin/bash\n",
-      "echo Cher utilisateur quel est ton prenom \\?\n",
-      "read prenom\n",
-      "echo Ravi de te connaitre, $prenom\n",
-      "echo Ravi de te connaitre, $prenom\n",
-      "echo Quel est ton nom et ton age \\?\n",
-      "read nom age \n",
-      "echo Tu es $prenom $nom et tu as $age ans, n\\'est-ce pas \\?\n",
-      "read reponse\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Je suis le script Shell $0\n",
-      "echo Mes arguments sont $*\n",
-      "echo Le premier argument est $1\n",
-      "echo Le deuxieme argument est $2\n"
-    ],
-    [
-      "Le script<\n"
-    ],
-    [
-      "Le script<tp5_exo5.sh> poss\u00c3\u00a8de<1> pparam\u00c3\u00a8tre, que voici:\n",
-      "<yo>\n"
-    ],
-    [
-      "Le script<tp5_exo5.sh> poss\u00c3\u00a8de<plusieurs>param\u00c3\u00a8tres, que voici:\n",
-      "<yo>\n"
-    ],
-    [
-      "sed's/$/'cat  F1`'/' F2>F3\n",
-      "\n"
-    ],
-    [
-      "sed 's/$/'`cat fich1`' /' fich2 > fich3\n"
-    ],
-    [
-      "sed 's/$/'`cat F1`' /' F2 > F3\n"
-    ],
-    [
-      "paste F1 F2 > fic3\n"
-    ],
-    [
-      "Nous sommes le `date`\n",
-      "Ceci est\n",
-      "une tr\u00c3\u00a8s\n",
-      "longue phrase...\n",
-      "Voici une \u00c3\u00a9toile :*\n"
-    ]
+    {
+      "name": "tp5_exo1.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo Cher utilisateur quel est ton prenom \\?\n",
+        "read prenom\n",
+        "echo Ravi de te connaitre, $prenom\n",
+        "echo Ravi de te connaitre, $prenom\n",
+        "echo Quel est ton nom et ton age \\?\n",
+        "read nom age \n",
+        "echo Tu es $prenom $nom et tu as $age ans, n\\'est-ce pas \\?\n",
+        "read reponse\n"
+      ]
+    },
+    {
+      "name": "tp5_exo6.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo Je suis le script Shell $0\n",
+        "echo Mes arguments sont $*\n",
+        "echo Le premier argument est $1\n",
+        "echo Le deuxieme argument est $2\n"
+      ]
+    },
+    {
+      "name": "tp5_exo5.sh",
+      "lines": [
+        "Le script<tp5_exo5.sh> poss\u00c3\u00a8de<plusieurs>param\u00c3\u00a8tres, que voici:\n",
+        "<yo>\n"
+      ]
+    },
+    {
+      "name": "tp5_exo7.sh",
+      "lines": [
+        "paste F1 F2 > fic3\n"
+      ]
+    },
+    {
+      "name": "tp5_exo8.sh",
+      "lines": [
+        "Nous sommes le `date`\n",
+        "Ceci est\n",
+        "une tr\u00c3\u00a8s\n",
+        "longue phrase...\n",
+        "Voici une \u00c3\u00a9toile :*\n"
+      ]
+    }
   ],
   "profile": [
     {

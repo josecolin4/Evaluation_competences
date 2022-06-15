@@ -2,476 +2,71 @@
   "name": "ext_Alexandre.Savalle",
   "session": 4,
   "scripts": [
-    [
-      "#!/bin/bash\n",
-      "if test $1 -gt 4 -a test $1 -lt 11 then\n",
-      "echo \"La valeur \"\n",
-      "echo $1\n",
-      "echo \" est comprise entre 5 et 10\"\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test $1 -gt 4 -a test $1 -lt 11 then\n",
-      "echo \"La valeur \"\n",
-      "echo $1\n",
-      "echo \" est comprise entre 5 et 10\"\n",
-      "else\n",
-      "echo \"Pas entre 5 et 6\"\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if $1 -gt 4 -a $1 -lt 11 then\n",
-      "echo \"La valeur \"\n",
-      "echo $1\n",
-      "echo \" est comprise entre 5 et 10\"\n",
-      "else\n",
-      "echo \"Pas entre 5 et 6\"\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if $1 -gt 4 -a $1 -lt 11\n",
-      "\tthen\n",
-      "\t\techo \"La valeur \"\n",
-      "\t\techo $1\n",
-      "\t\techo \" est comprise entre 5 et 10\"\n",
-      "\telse\n",
-      "\t\techo \"Pas entre 5 et 6\"\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test $1 -gt 4 -a test $1 -lt 11\n",
-      "\tthen\n",
-      "\t\techo \"La valeur \"\n",
-      "\t\techo $1\n",
-      "\t\techo \" est comprise entre 5 et 10\"\n",
-      "\telse\n",
-      "\t\techo \"Pas entre 5 et 6\"\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test $1 -gt 4 -a $1 -lt 11\n",
-      "\tthen\n",
-      "\t\techo \"La valeur \"\n",
-      "\t\techo $1\n",
-      "\t\techo \" est comprise entre 5 et 10\"\n",
-      "\telse\n",
-      "\t\techo \"Pas entre 5 et 6\"\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test $1 -gt 4 -a $1 -lt 11\n",
-      "\tthen\n",
-      "\t\techo \"La valeur \" $1 \" est comprise entre 5 et 10\"\n",
-      "\telse\n",
-      "\t\techo \"Pas entre 5 et 10\"\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test -e $1 -a -r $1 -a -w $1\n",
-      "\tthen\n",
-      "\t\techo \"VRAI\"\n",
-      "\telse\n",
-      "\t\techo \"FAUX\"\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test -r $1 -a -w $1\n",
-      "\tthen\n",
-      "\t\techo \"VRAI\"\n",
-      "\telse\n",
-      "\t\techo \"FAUX\"\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test -e $1 -o -e $2\n",
-      "\telif\n",
-      "\t\techo cat $1 cat $2\n",
-      "\telse\n",
-      "\t\techo \"ERREUR\"\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test -e $1 -o -e $2\n",
-      "\tthen\n",
-      "\telif\n",
-      "\t\techo cat $1 cat $2\n",
-      "\telse\n",
-      "\t\techo \"ERREUR\"\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test -e $1 -o -e $2\n",
-      "\tthen\n",
-      "\t\techo \"Voulez vous concatener les fichiers ?\"\n",
-      "\t\tread rep\n",
-      "\telif test rep = OUI \n",
-      "\t\techo cat $1 cat $2\n",
-      "\telse\n",
-      "\t\techo \"ERREUR\"\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test -e $1 -o -e $2\n",
-      "\tthen\n",
-      "\t\techo \"Voulez vous concatener les fichiers ?\"\n",
-      "\t\tread rep\n",
-      "\telif test rep = OUI\n",
-      "\tthen\n",
-      "\t\techo cat $1 cat $2\n",
-      "\telse\n",
-      "\t\techo \"ERREUR\"\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test -e $1 -a -e $2\n",
-      "\tthen\n",
-      "\t\techo \"Voulez vous concatener les fichiers ?\"\n",
-      "\t\tread rep\n",
-      "\telif test rep = OUI\n",
-      "\tthen\n",
-      "\t\techo cat $1 cat $2\n",
-      "\telse\n",
-      "\t\techo \"ERREUR\"\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test -e $1 -a -e $2\n",
-      "\tthen\n",
-      "\t\techo \"Voulez vous concatener les fichiers ?\"\n",
-      "\t\tread rep\n",
-      "\telif test rep = OUI\n",
-      "\tthen\n",
-      "\t\tcat $1 cat $2\n",
-      "\telse\n",
-      "\t\techo \"ERREUR\"\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test -e $1 -a -e $2\n",
-      "\tthen\n",
-      "\t\techo \"Voulez vous concatener les fichiers ?\"\n",
-      "\t\tread rep\n",
-      "\telse\n",
-      "\t\techo \"ERREUR\"\n",
-      "fi\n",
-      "\n",
-      "if test rep = OUI\n",
-      "\tthen\n",
-      "\t\tcat $1 cat $2\n",
-      "\telse\n",
-      "\t\techo \"ERREUR\"\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test -e $1 -a -e $2\n",
-      "\tthen\n",
-      "\t\techo \"Voulez vous concatener les fichiers ?\"\n",
-      "\t\tread rep\n",
-      "\telse\n",
-      "\t\techo \"ERREUR 1\"\n",
-      "fi\n",
-      "\n",
-      "if test rep = OUI\n",
-      "\tthen\n",
-      "\t\tcat $1 cat $2\n",
-      "\telse\n",
-      "\t\techo \"ERREUR 2\"\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test -e $1 -a -e $2\n",
-      "\tthen\n",
-      "\t\techo \"Voulez vous concatener les fichiers ?\"\n",
-      "\t\tread rep\n",
-      "\telse\n",
-      "\t\techo \"ERREUR 1\"\n",
-      "fi\n",
-      "\n",
-      "if test rep = 'OUI'\n",
-      "\tthen\n",
-      "\t\tcat $1 cat $2\n",
-      "\telse\n",
-      "\t\techo \"ERREUR 2\"\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test -e $1 -a -e $2\n",
-      "\tthen\n",
-      "\t\techo \"Voulez vous concatener les fichiers ?\"\n",
-      "\t\tread rep\n",
-      "\telse\n",
-      "\t\techo \"ERREUR 1\"\n",
-      "fi\n",
-      "\n",
-      "if test rep = \"OUI\"\n",
-      "\tthen\n",
-      "\t\tcat $1 cat $2\n",
-      "\telse\n",
-      "\t\techo \"ERREUR 2\"\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test -e $1 -a -e $2\n",
-      "\tthen\n",
-      "\t\techo \"Voulez vous concatener les fichiers ?\"\n",
-      "\t\tread rep\n",
-      "\tif test rep = \"OUI\"\n",
-      "\t\tthen\n",
-      "\t\t\tcat $1 cat $2\n",
-      "\t\telse\n",
-      "\t\t\techo \"ERREUR 2\"\n",
-      "fi\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test -e $1 -a -e $2\n",
-      "\tthen\n",
-      "\t\techo \"Voulez vous concatener les fichiers ?\"\n",
-      "\t\tread rep\n",
-      "\tif test rep = \"OUI\"\n",
-      "\t\tthen\n",
-      "\t\t\tcat $1 cat $2\n",
-      "\t\telse\n",
-      "\t\t\techo \"ERREUR\"\n",
-      "fi\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test -e $1 -a -e $2\n",
-      "\tthen\n",
-      "\t\techo \"Voulez vous concatener les fichiers ?\"\n",
-      "\t\tread rep\n",
-      "\tif test $rep = \"OUI\"\n",
-      "\t\tthen\n",
-      "\t\t\tcat $1 cat $2\n",
-      "\t\telse\n",
-      "\t\t\techo \"ERREUR\"\n",
-      "fi\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "for i in liste_commandes \n",
-      "do\n",
-      "\t$*\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "liste_commandes = \"date who pwd ls\"\n",
-      "for i in liste_commandes\n",
-      "do\n",
-      "\t$*\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "liste_commandes = \"date who pwd ls\"\n",
-      "for i in $liste_commandes\n",
-      "do\n",
-      "\t$*\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "liste_commandes = \"date who pwd ls\"\n",
-      "for i in $liste_commandes\n",
-      "do\n",
-      "\t$*\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "liste_commandes=\"date who pwd ls\"\n",
-      "for i in $liste_commandes\n",
-      "do\n",
-      "\t$*\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "liste_commandes=\"date who pwd ls\"\n",
-      "for i in $liste_commandes\n",
-      "do\n",
-      "\t$ (i)\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "liste_commandes=\"date who pwd ls\"\n",
-      "for i in $liste_commandes\n",
-      "do\n",
-      "\t$ ($i)\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "liste_commandes=\"date who pwd ls\"\n",
-      "for i in $liste_commandes\n",
-      "do\n",
-      "\t$($i)\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "for i $*\n",
-      "do\n",
-      "\techo \"argument \" i \" = \" $i\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "for i in $*\n",
-      "do\n",
-      "\techo \"argument \" i \" = \" $i\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "for i in $*\n",
-      "do\n",
-      "\techo \"argument \" expr $i \" = \" $i\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "count=0\n",
-      "for i in $*\n",
-      "do\n",
-      "\texpr count + 1\n",
-      "\techo \"argument \" count \" = \" $i\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "count=0\n",
-      "for i in $*\n",
-      "do\n",
-      "\texpr count + 1\n",
-      "\techo \"argument \" $count \" = \" $i\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "count=1\n",
-      "for i in $*\n",
-      "do\n",
-      "\texpr count + 1\n",
-      "\techo \"argument \" $count \" = \" $i\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "count=1\n",
-      "for i in $*\n",
-      "do\n",
-      "\t$count + 1\n",
-      "\techo \"argument \" $count \" = \" $i\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "count=1\n",
-      "for i in $*\n",
-      "do\n",
-      "\t$((count + 1))\n",
-      "\techo \"argument \" $count \" = \" $i\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "count=1\n",
-      "for i in $*\n",
-      "do\n",
-      "\tcount = expr count + 1\n",
-      "\techo \"argument \" $count \" = \" $i\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "count=1\n",
-      "for i in $*\n",
-      "do\n",
-      "\tcount = expr $count + 1\n",
-      "\techo \"argument \" $count \" = \" $i\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "count=1\n",
-      "for i in $*\n",
-      "do\n",
-      "\t$count = expr $count + 1\n",
-      "\techo \"argument \" $count \" = \" $i\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "count=1\n",
-      "for i in $*\n",
-      "do\n",
-      "\t$count=expr $count + 1\n",
-      "\techo \"argument \" $count \" = \" $i\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "count=1\n",
-      "for i in $*\n",
-      "do\n",
-      "\tcount=expr $count + 1\n",
-      "\techo \"argument \" $count \" = \" $i\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "count=1\n",
-      "for i in $*\n",
-      "do\n",
-      "\tcount=$(($count + 1))\n",
-      "\techo \"argument \" $count \" = \" $i\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "count=0\n",
-      "for i in $*\n",
-      "do\n",
-      "\tcount=$(($count + 1))\n",
-      "\techo \"argument \" $count \" = \" $i\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "count=0\n",
-      "for i in $*\n",
-      "do\n",
-      "\tcount=$(($count + 1))\n",
-      "\techo \"argument \" $count \" = \" $i\n",
-      "done\n",
-      "echo \"Il y a \" $count \" arguments\"\n"
-    ]
+    {
+      "name": "tp6_exo1.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "if test $1 -gt 4 -a $1 -lt 11\n",
+        "\tthen\n",
+        "\t\techo \"La valeur \" $1 \" est comprise entre 5 et 10\"\n",
+        "\telse\n",
+        "\t\techo \"Pas entre 5 et 10\"\n",
+        "fi\n"
+      ]
+    },
+    {
+      "name": "tp6_exo2.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "if test -r $1 -a -w $1\n",
+        "\tthen\n",
+        "\t\techo \"VRAI\"\n",
+        "\telse\n",
+        "\t\techo \"FAUX\"\n",
+        "fi\n"
+      ]
+    },
+    {
+      "name": "tp6_exo3.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "if test -e $1 -a -e $2\n",
+        "\tthen\n",
+        "\t\techo \"Voulez vous concatener les fichiers ?\"\n",
+        "\t\tread rep\n",
+        "\tif test $rep = \"OUI\"\n",
+        "\t\tthen\n",
+        "\t\t\tcat $1 cat $2\n",
+        "\t\telse\n",
+        "\t\t\techo \"ERREUR\"\n",
+        "fi\n",
+        "fi\n"
+      ]
+    },
+    {
+      "name": "tp6_exo4.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "liste_commandes=\"date who pwd ls\"\n",
+        "for i in $liste_commandes\n",
+        "do\n",
+        "\t$($i)\n",
+        "done\n"
+      ]
+    },
+    {
+      "name": "tp6_exo5.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "count=0\n",
+        "for i in $*\n",
+        "do\n",
+        "\tcount=$(($count + 1))\n",
+        "\techo \"argument \" $count \" = \" $i\n",
+        "done\n",
+        "echo \"Il y a \" $count \" arguments\"\n"
+      ]
+    }
   ],
   "profile": [
     {

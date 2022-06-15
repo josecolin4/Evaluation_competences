@@ -2,205 +2,59 @@
   "name": "ext_Maxime.Miquel",
   "session": 5,
   "scripts": [
-    [
-      "#!/bin/bash\n",
-      "if test $1 -ge 5 -a $1 -le 10\n",
-      "   then\n",
-      "       echo La valeur $1 est comprise entre 5 et 10.\n",
-      "   else\n",
-      "       echo La valeur $1 n\u00e2\u20ac\u2122est pas comprise entre 5 et 10.\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test -e $1 -a -r $1 -a -w $1\n",
-      "   then\n",
-      "       echo Le fichier $1 existe et est accessible en lecture et \u00c3\u00a9criture.\n",
-      "   else\n",
-      "       echo Le fichier $1 n\u00e2\u20ac\u2122existe pas, ou n\u00e2\u20ac\u2122est pas accessible en lecture,\n",
-      "\n",
-      "ou n\u00e2\u20ac\u2122est pas accessible en \u00c3\u00a9criture.\n",
-      "\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test -e $1 -a -r $1 -a -w $1\n",
-      "   then\n",
-      "       echo Le fichier $1 existe et est accessible en lecture et \u00c3\u00a9criture.\n",
-      "   else\n",
-      "       echo Le fichier $1 n\u00e2\u20ac\u2122existe pas, ou n\u00e2\u20ac\u2122est pas accessible en lecture, ou n\u00e2\u20ac\u2122est pas accessible en \u00c3\u00a9criture.\n",
-      "\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test -e $1 -a -r $1 -a -w $1\n",
-      "   then\n",
-      "       echo Le fichier $1 existe et est accessible en lecture et \u00c3\u00a9criture.\n",
-      "   else\n",
-      "       echo Le fichier $1 n\u00e2\u20ac\u2122existe pas, ou n\u00e2\u20ac\u2122est pas accessible en \u00c3\u00a9criture.\n",
-      "\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if [-e $1 -a -r $1 -a -w $1] \n",
-      "   then\n",
-      "       echo Le fichier $1 existe et est accessible en lecture et \u00c3\u00a9criture.\n",
-      "   else\n",
-      "       echo Le fichier $1 n\u00e2\u20ac\u2122existe pas, ou n\u00e2\u20ac\u2122est pas accessible en \u00c3\u00a9criture.\n",
-      "\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if [-e $1 -a -e $2]\n",
-      "   then\n",
-      "       echo Souhaitez vous concat\u00c3\u00a9ner ces fichiers ?\n",
-      "       read reponse\n",
-      "       if [$reponse=OUI]\n",
-      "          then\n",
-      "              cat $1 $2\n",
-      "          else\n",
-      "              echo ERREUR.\n",
-      "       fi\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if [-e $1 -a -e $2]\n",
-      "   then\n",
-      "       echo Souhaitez vous concat\u00c3\u00a9ner ces fichiers ?\n",
-      "       read reponse\n",
-      "       if [$reponse=OUI]\n",
-      "          then\n",
-      "              cat $1 $2\n",
-      "          else\n",
-      "              echo ERREUR2.\n",
-      "       fi\n",
-      "   else\n",
-      "       echo ERREUR1.\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test -e $1 -a -e $2\n",
-      "   then\n",
-      "       echo Souhaitez vous concat\u00c3\u00a9ner ces fichiers ?\n",
-      "       read reponse\n",
-      "       if [$reponse=OUI]\n",
-      "          then\n",
-      "              cat $1 $2\n",
-      "          else\n",
-      "              echo ERREUR2.\n",
-      "       fi\n",
-      "   else\n",
-      "       echo ERREUR1.\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test -e $1 -a -e $2\n",
-      "   then\n",
-      "       echo Souhaitez vous concat\u00c3\u00a9ner ces fichiers ?\n",
-      "       read reponse\n",
-      "       if [$reponse=\"OUI\"]\n",
-      "          then\n",
-      "              cat $1 $2\n",
-      "          else\n",
-      "              echo ERREUR2.\n",
-      "       fi\n",
-      "   else\n",
-      "       echo ERREUR1.\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test -e $1 -a -e $2\n",
-      "   then\n",
-      "       echo Souhaitez vous concat\u00c3\u00a9ner ces fichiers ?\n",
-      "       read reponse\n",
-      "       if test $reponse=\"OUI\"\n",
-      "          then\n",
-      "              cat $1 $2\n",
-      "          else\n",
-      "              echo ERREUR2.\n",
-      "       fi\n",
-      "   else\n",
-      "       echo ERREUR1.\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test -e $1 -a -e $2\n",
-      "   then\n",
-      "       echo Souhaitez vous concat\u00c3\u00a9ner ces fichiers ?\n",
-      "       read reponse\n",
-      "       if test $reponse=OUI\n",
-      "          then\n",
-      "              cat $1 $2\n",
-      "          else\n",
-      "              echo ERREUR2.\n",
-      "       fi\n",
-      "   else\n",
-      "       echo ERREUR1.\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test -e $1 -a -e $2\n",
-      "   then\n",
-      "       echo Souhaitez vous concat\u00c3\u00a9ner ces fichiers ?\n",
-      "       read reponse\n",
-      "       if test reponse=OUI\n",
-      "          then\n",
-      "              cat $1 $2\n",
-      "          else\n",
-      "              echo ERREUR2.\n",
-      "       fi\n",
-      "   else\n",
-      "       echo ERREUR1.\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test -e $1 -a -e $2\n",
-      "   then\n",
-      "       echo Souhaitez vous concat\u00c3\u00a9ner ces fichiers ?\n",
-      "       read reponse\n",
-      "       if test $reponse='OUI'\n",
-      "          then\n",
-      "              cat $1 $2\n",
-      "          else\n",
-      "              echo ERREUR2.\n",
-      "       fi\n",
-      "   else\n",
-      "       echo ERREUR1.\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test -e $1 -a -e $2\n",
-      "   then\n",
-      "       echo Souhaitez vous concat\u00c3\u00a9ner ces fichiers ?\n",
-      "       read reponse\n",
-      "       case $reponse in\n",
-      "            OUI ) cat $1 $2;;\n",
-      "            NON ) echo ERREUR2.\n",
-      "       esac\n",
-      "   else\n",
-      "       echo ERREUR1.\n",
-      "fi\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "liste_commandes=date who pwd ls\n",
-      "for i in liste_commandes\n",
-      "do\n",
-      "   \n"
-    ]
+    {
+      "name": "tp6_exo1.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "if test $1 -ge 5 -a $1 -le 10\n",
+        "   then\n",
+        "       echo La valeur $1 est comprise entre 5 et 10.\n",
+        "   else\n",
+        "       echo La valeur $1 n\u00e2\u20ac\u2122est pas comprise entre 5 et 10.\n",
+        "fi\n"
+      ]
+    },
+    {
+      "name": "tp6_exo2.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "if [-e $1 -a -r $1 -a -w $1] \n",
+        "   then\n",
+        "       echo Le fichier $1 existe et est accessible en lecture et \u00c3\u00a9criture.\n",
+        "   else\n",
+        "       echo Le fichier $1 n\u00e2\u20ac\u2122existe pas, ou n\u00e2\u20ac\u2122est pas accessible en \u00c3\u00a9criture.\n",
+        "\n",
+        "fi\n"
+      ]
+    },
+    {
+      "name": "tp6_exo3.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "if test -e $1 -a -e $2\n",
+        "   then\n",
+        "       echo Souhaitez vous concat\u00c3\u00a9ner ces fichiers ?\n",
+        "       read reponse\n",
+        "       case $reponse in\n",
+        "            OUI ) cat $1 $2;;\n",
+        "            NON ) echo ERREUR2.\n",
+        "       esac\n",
+        "   else\n",
+        "       echo ERREUR1.\n",
+        "fi\n",
+        "\n"
+      ]
+    },
+    {
+      "name": "tp6_exo4.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "liste_commandes=date who pwd ls\n",
+        "for i in liste_commandes\n",
+        "do\n",
+        "   \n"
+      ]
+    }
   ],
   "commands": [
     {

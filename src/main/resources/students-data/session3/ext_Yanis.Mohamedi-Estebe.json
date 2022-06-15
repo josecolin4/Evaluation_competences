@@ -2,144 +2,67 @@
   "name": "ext_Yanis.Mohamedi-Estebe",
   "session": 3,
   "scripts": [
-    [
-      "#!/bin/bash\n",
-      "if test $1 -ge 5 -a $1 -le 10\n",
-      "\tthen\n",
-      "\t\techo Bien vu\n",
-      "\telse\n",
-      "\t\techo Le chiffre est en dehors de l'intervalle\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test $1 -ge 5 -a $1 -le 10\n",
-      "\tthen\n",
-      "\t\techo Bien vu\n",
-      "\telse\n",
-      "\t\techo Le chiffre est en dehors de l\\'intervalle\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if [ -r $# -a -w $# ]\n",
-      "\tthen\n",
-      "\t\techo Le fichier $# existe est est accessible en lecture et ecriture\n",
-      "\telse\n",
-      "\t\techo Le fichier $# n\\existe pas\\, ou n\\'est pas accessible en lecture ou en \u00c3\u00a9criture\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if [ -r $# -a -w $# ]\n",
-      "\tthen\n",
-      "\t\techo Le fichier $# existe est est accessible en lecture et ecriture\n",
-      "\telse\n",
-      "\t\techo Le fichier $# n\\existe pas\\, ou n\\'est pas accessible en lecture ou en \u00c3\u00a9criture\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if [ -r $1 -a -w $1 ]\n",
-      "\tthen\n",
-      "\t\techo Le fichier $# existe est est accessible en lecture et ecriture\n",
-      "\telse\n",
-      "\t\techo Le fichier $# n\\existe pas\\, ou n\\'est pas accessible en lecture ou en \u00c3\u00a9criture\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if [ -r $1 -a -w $1 ]\n",
-      "\tthen\n",
-      "\t\techo Le fichier $1 existe et est accessible en lecture et ecriture\n",
-      "\telse\n",
-      "\t\techo Le fichier $1 n\\existe pas\\, ou n\\'est pas accessible en lecture ou en \u00c3\u00a9criture\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if [ -e $1 -a -e $2 ]\n",
-      "\tthen\n",
-      "\t\techo Souhaitez-vous concatenez les fichiers \\(o ou n\\) \\?\n",
-      "\t\tread reponse\n",
-      "\t\tif [ reponse = \"o\" ]\n",
-      "\t\t\tthen\n",
-      "\t\t\t\tcat $1 $2\n",
-      "\t\t\telse\n",
-      "\t\t\t\techo Erreur\n",
-      "\t\tfi\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if [ -e $1 -a -e $2 ]\n",
-      "\tthen\n",
-      "\t\techo Souhaitez-vous concatener les fichiers \\(o ou n\\) \\?\n",
-      "\t\tread reponse\n",
-      "\t\tif [ reponse = o ]\n",
-      "\t\t\tthen\n",
-      "\t\t\t\tcat $1 $2\n",
-      "\t\t\telse\n",
-      "\t\t\t\techo Erreur\n",
-      "\t\tfi\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if [ -e $1 -a -e $2 ]\n",
-      "\tthen\n",
-      "\t\techo Souhaitez-vous concatener les fichiers \\(o ou n\\) \\?\n",
-      "\t\tread reponse\n",
-      "\t\tif [ reponse = 'o' ]\n",
-      "\t\t\tthen\n",
-      "\t\t\t\tcat $1 $2\n",
-      "\t\t\telse\n",
-      "\t\t\t\techo Erreur\n",
-      "\t\tfi\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if [ -e $1 -a -e $2 ]\n",
-      "\tthen\n",
-      "\t\techo Souhaitez-vous concatener les fichiers \\(o ou n\\) \\?\n",
-      "\t\tread reponse\n",
-      "\t\tif [ $reponse = \"o\" ]\n",
-      "\t\t\tthen\n",
-      "\t\t\t\tcat $1 $2\n",
-      "\t\t\telse\n",
-      "\t\t\t\techo Erreur\n",
-      "\t\tfi\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "$liste_commande = `date` `who` `pwd` `ls`\n",
-      "for i in liste_commande\n",
-      "do $liste_commande\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "fir liste_commande in `date` `who` `pwd` `ls`\n",
-      "do $liste_commande\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "for i in $*\n",
-      "do\n",
-      "\techo argument  \\= $i\n",
-      "done \n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "for i in $*\n",
-      "do\n",
-      "\techo argument  \\= $i\n",
-      "done \n",
-      "echo Il y a $# arguments.\n"
-    ]
+    {
+      "name": "tp6_exo1.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "if test $1 -ge 5 -a $1 -le 10\n",
+        "\tthen\n",
+        "\t\techo Bien vu\n",
+        "\telse\n",
+        "\t\techo Le chiffre est en dehors de l\\'intervalle\n",
+        "fi\n"
+      ]
+    },
+    {
+      "name": "tp6_exo2.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "if [ -r $1 -a -w $1 ]\n",
+        "\tthen\n",
+        "\t\techo Le fichier $1 existe et est accessible en lecture et ecriture\n",
+        "\telse\n",
+        "\t\techo Le fichier $1 n\\existe pas\\, ou n\\'est pas accessible en lecture ou en \u00c3\u00a9criture\n",
+        "fi\n"
+      ]
+    },
+    {
+      "name": "tp6_exo3.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "if [ -e $1 -a -e $2 ]\n",
+        "\tthen\n",
+        "\t\techo Souhaitez-vous concatener les fichiers \\(o ou n\\) \\?\n",
+        "\t\tread reponse\n",
+        "\t\tif [ $reponse = \"o\" ]\n",
+        "\t\t\tthen\n",
+        "\t\t\t\tcat $1 $2\n",
+        "\t\t\telse\n",
+        "\t\t\t\techo Erreur\n",
+        "\t\tfi\n",
+        "fi\n"
+      ]
+    },
+    {
+      "name": "tp6_exo4.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "fir liste_commande in `date` `who` `pwd` `ls`\n",
+        "do $liste_commande\n",
+        "done\n"
+      ]
+    },
+    {
+      "name": "tp6_exo5.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "for i in $*\n",
+        "do\n",
+        "\techo argument  \\= $i\n",
+        "done \n",
+        "echo Il y a $# arguments.\n"
+      ]
+    }
   ],
   "profile": [
     {

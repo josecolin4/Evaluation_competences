@@ -2,171 +2,43 @@
   "name": "ext_Lauretta.Delmas",
   "session": 4,
   "scripts": [
-    [
-      "echo `expr $1/2`\n",
-      "echo $(($1+1))\n"
-    ],
-    [
-      "echo `expr $1/2`\n",
-      "echo $(($1/2))\n"
-    ],
-    [
-      "echo `expr $1 /2`\n",
-      "echo $(($1/2))\n"
-    ],
-    [
-      "echo `expr $1 / 2`\n",
-      "echo $(($1/2))\n"
-    ],
-    [
-      "echo `expr $1 \\* 2`\n",
-      "echo $(($1 \\*2))\n"
-    ],
-    [
-      "echo `expr $1 \\* 2`\n",
-      "echo $(($1 \\* 2))\n"
-    ],
-    [
-      "echo `expr $1 \\* 2`\n",
-      "echo $(($1\\*2))\n"
-    ],
-    [
-      "echo `expr $1 \\* 2`\n",
-      "echo $(($1*2))\n"
-    ],
-    [
-      "echo `expr $1 \\* 2`\n",
-      "echo $(($1*2))\n"
-    ],
-    [
-      "echo quel est ton ann\u00c3\u00a9e de naissance\\?\n",
-      "read annee\n",
-      "echo vous \u00c3\u00aates n\u00c3\u00a9(e) en $annee vous avez donc $((date-$annee)) ans \n"
-    ],
-    [
-      "echo quel est ton ann\u00c3\u00a9e de naissance\\?\n",
-      "read annee\n",
-      "echo vous \u00c3\u00aates n\u00c3\u00a9 en $annee vous avez donc $((date-$annee)) ans \n"
-    ],
-    [
-      "echo quel est ton ann\u00c3\u00a9e de naissance\\?\n",
-      "read annee\n",
-      "echo vous \u00c3\u00aates n\u00c3\u00a9 en $annee vous avez donc $((`date`-$annee)) ans \n"
-    ],
-    [
-      "echo quel est ton ann\u00c3\u00a9e de naissance\\?\n",
-      "read annee\n",
-      "echo vous \u00c3\u00aates n\u00c3\u00a9 en $annee vous avez donc `expr %Y-$annee` ans\n",
-      "\n",
-      "echo vous \u00c3\u00aates n\u00c3\u00a9 en $annee vous avez donc $((\u00c3\u00b9Y-$annee)) ans \n"
-    ],
-    [
-      "echo quel est ton ann\u00c3\u00a9e de naissance\\?\n",
-      "read annee\n",
-      "echo vous \u00c3\u00aates n\u00c3\u00a9 en $annee vous avez donc `expr date`%Y`-$annee` ans\n",
-      "\n",
-      "echo vous \u00c3\u00aates n\u00c3\u00a9 en $annee vous avez donc $((date`%Y`-$annee)) ans \n"
-    ],
-    [
-      "echo quel est ton ann\u00c3\u00a9e de naissance\\?\n",
-      "read annee\n",
-      "echo vous \u00c3\u00aates n\u00c3\u00a9 en $annee vous avez donc `expr date`%Y`- $annee` ans\n",
-      "\n",
-      "echo vous \u00c3\u00aates n\u00c3\u00a9 en $annee vous avez donc $((date`%Y`- $annee)) ans \n"
-    ],
-    [
-      "echo quel est ton ann\u00c3\u00a9e de naissance\\?\n",
-      "read annee\n",
-      "echo vous \u00c3\u00aates n\u00c3\u00a9 en $annee vous avez donc `expr date `%Y`- $annee` ans\n",
-      "\n",
-      "echo vous \u00c3\u00aates n\u00c3\u00a9 en $annee vous avez donc $((date `%Y`- $annee)) ans \n"
-    ],
-    [
-      "echo quel est ton ann\u00c3\u00a9e de naissance\\?\n",
-      "read annee\n",
-      "echo vous \u00c3\u00aates n\u00c3\u00a9 en $annee vous avez donc `expr date +%Y - $annee` ans\n",
-      "\n",
-      "echo vous \u00c3\u00aates n\u00c3\u00a9 en $annee vous avez donc $((date +%Y-$annee)) ans \n"
-    ],
-    [
-      "echo quel est ton ann\u00c3\u00a9e de naissance\\?\n",
-      "read annee\n",
-      "echo vous \u00c3\u00aates n\u00c3\u00a9 en $annee vous avez donc `expr date+%Y - $annee` ans\n",
-      "\n",
-      "echo vous \u00c3\u00aates n\u00c3\u00a9 en $annee vous avez donc $((date+%Y-$annee)) ans \n"
-    ],
-    [
-      "echo quel est ton ann\u00c3\u00a9e de naissance\\?\n",
-      "read annee\n",
-      "echo vous \u00c3\u00aates n\u00c3\u00a9 en $annee vous avez donc `expr $(date +%Y) - $annee` ans\n",
-      "\n",
-      "echo vous \u00c3\u00aates n\u00c3\u00a9 en $annee vous avez donc $(($(date +%Y)-$annee)) ans \n"
-    ],
-    [
-      "echo \n"
-    ],
-    [
-      "echo \n"
-    ],
-    [
-      "echo il y a $who utilisateurs connect\u00c3\u00a9s sur $hostname\n"
-    ],
-    [
-      "echo il y a $(who) utilisateurs connect\u00c3\u00a9s sur $(hostname)\n"
-    ],
-    [
-      "echo il y a $(who)|$(wc-l) utilisateurs connect\u00c3\u00a9s sur $(hostname)\n"
-    ],
-    [
-      "echo il y a $(who)|$(wc -l) utilisateurs connect\u00c3\u00a9s sur $(hostname)\n"
-    ],
-    [
-      "echo il y a $(who) | $(wc -l) utilisateurs connect\u00c3\u00a9s sur $(hostname)\n"
-    ],
-    [
-      "echo il y a $(wc -l) | $(who) utilisateurs connect\u00c3\u00a9s sur $(hostname)\n"
-    ],
-    [
-      "echo il y a $(who)|wc -l utilisateurs connect\u00c3\u00a9s sur $(hostname)\n"
-    ],
-    [
-      "echo il y a $(who)|$(wc -l) utilisateurs connect\u00c3\u00a9s sur $(hostname)\n"
-    ],
-    [
-      "echo il y a $(who|wc -l) utilisateurs connect\u00c3\u00a9s sur $(hostname)\n"
-    ],
-    [
-      "set -- $(ls -l $1)\n",
-      "echo $1\n"
-    ],
-    [
-      "set -- $(ls -s $1)\n",
-      "echo $1\n"
-    ],
-    [
-      "set -- $(ls -l $1)\n",
-      "echo $1\n"
-    ],
-    [
-      "set -- $(ls -al $1)\n",
-      "echo $1\n"
-    ],
-    [
-      "set -- $(ls -l $1)\n",
-      "echo $1\n"
-    ],
-    [
-      "set -- $(ls -l $5)\n",
-      "echo $5\n"
-    ],
-    [
-      "set -- $(ls -l $6)\n",
-      "echo $6\n"
-    ],
-    [
-      "set -- $(ls -l $7)\n",
-      "echo $7\n"
-    ]
+    {
+      "name": "tp5bis_exo1.sh",
+      "lines": [
+        "echo `expr $1 / 2`\n",
+        "echo $(($1/2))\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo2.sh",
+      "lines": [
+        "echo `expr $1 \\* 2`\n",
+        "echo $(($1*2))\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo3.sh",
+      "lines": [
+        "echo quel est ton ann\u00c3\u00a9e de naissance\\?\n",
+        "read annee\n",
+        "echo vous \u00c3\u00aates n\u00c3\u00a9 en $annee vous avez donc `expr $(date +%Y) - $annee` ans\n",
+        "\n",
+        "echo vous \u00c3\u00aates n\u00c3\u00a9 en $annee vous avez donc $(($(date +%Y)-$annee)) ans \n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo4.sh",
+      "lines": [
+        "echo il y a $(who|wc -l) utilisateurs connect\u00c3\u00a9s sur $(hostname)\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo5.sh",
+      "lines": [
+        "set -- $(ls -l $7)\n",
+        "echo $7\n"
+      ]
+    }
   ],
   "profile": [
     {

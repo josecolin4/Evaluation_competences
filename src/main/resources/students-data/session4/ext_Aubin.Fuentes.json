@@ -2,215 +2,35 @@
   "name": "ext_Aubin.Fuentes",
   "session": 4,
   "scripts": [
-    [
-      "#!/bin/bash\n",
-      "echo Il y a $(who) sur `hostname`.\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Il y a $((who)) sur `hostname`.\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "valeur=$((who))\n",
-      "echo Il y a $(valeur) connect\u00c3\u00a9s sur `hostname`.\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "valeur=$(who)\n",
-      "echo Il y a $(valeur) connect\u00c3\u00a9s sur `hostname`.\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "valeur=$((who))\n",
-      "echo Il y a $valeur connect\u00c3\u00a9s sur `hostname`.\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "valeur=`expr who`\n",
-      "echo Il y a $valeur connect\u00c3\u00a9s sur `hostname`.\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "valeur=`expr `who``\n",
-      "echo Il y a $valeur connect\u00c3\u00a9s sur `hostname`.\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "valeur=$((who))\n",
-      "echo Il y a $valeur connect\u00c3\u00a9s sur `hostname`.\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "valeur=`who | wc -l`\n",
-      "echo Il y a $valeur connect\u00c3\u00a9s sur `hostname`.\n"
-    ],
-    [
-      "#!/bin/bash\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "set $(-- ls -l) $1\n",
-      "echo $5\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo $(set -- ls -l $1)\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo $(set -- ls -l $1) $5\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo $(ls -l $1)\n",
-      "echo $(set -- ls -l $1)\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo $(ls -l $1)\n",
-      "echo $(set -- ls -l $1) $5\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo $(ls -l $1)\n",
-      "set -- ls -l $1)\n",
-      "echo $5\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo $(ls -l $1)\n",
-      "set -- ls -l $1\n",
-      "echo $5\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "set -- ls -l $1\n",
-      "echo $5\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "set -- $(ls -l $1)\n",
-      "echo $5\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo $(ls -l $1)\n",
-      "set -- $(ls -l $1)\n",
-      "echo $5\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if [$1<5 -a $1>10]\n",
-      "\tthen\n",
-      "\t\techo La valeur $1 est comprise entre 5 et 10.\n",
-      "else\n",
-      "\techo La valeur $1 n'est pas comprise entre 5 et 10.\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if [$1<5 -a $1>10]\n",
-      "\tthen\n",
-      "\t\techo La valeur $1 est comprise entre 5 et 10\n",
-      "else\n",
-      "\techo La valeur $1 n'est pas comprise entre 5 et 10\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if $1<5 -a $1>10\n",
-      "\tthen\n",
-      "\t\techo La valeur $1 est comprise entre 5 et 10\n",
-      "else\n",
-      "\techo La valeur $1 n'est pas comprise entre 5 et 10\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if [$1<5 -a $1>10]\n",
-      "\tthen\n",
-      "\t\techo La valeur $(($1)) est comprise entre 5 et 10\n",
-      "else\n",
-      "\techo La valeur $(($1)) n'est pas comprise entre 5 et 10\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if [ $1<5 -a $1>10 ]\n",
-      "\tthen\n",
-      "\t\techo La valeur $1 est comprise entre 5 et 10\n",
-      "else\n",
-      "\techo La valeur $1 n'est pas comprise entre 5 et 10\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if [ $1<5 -o $1>10 ]\n",
-      "\tthen\n",
-      "\t\techo La valeur $1 est comprise entre 5 et 10\n",
-      "else\n",
-      "\techo La valeur $1 n'est pas comprise entre 5 et 10\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if [ $1<5 -o $1>10 ]\n",
-      "then\n",
-      "\t\techo La valeur $1 n'est pas comprise entre 5 et 10\n",
-      "else\n",
-      "\techo La valeur $1 est comprise entre 5 et 10\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if [ $1 -lt 5 -o $1 -gt 10 ]\n",
-      "\tthen\n",
-      "\t\techo La valeur $1 n'est pas comprise entre 5 et 10\n",
-      "else\n",
-      "\techo La valeur $1 est comprise entre 5 et 10\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if [ $1 -lt $((5)) -o $1 -gt $((10)) ]\n",
-      "\tthen\n",
-      "\t\techo La valeur $1 n'est pas comprise entre 5 et 10\n",
-      "else\n",
-      "\techo La valeur $1 est comprise entre 5 et 10\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if [ $(($1)) -lt $((5)) -o $(($1)) -gt $((10)) ]\n",
-      "\tthen\n",
-      "\t\techo La valeur $1 n'est pas comprise entre 5 et 10\n",
-      "else\n",
-      "\techo La valeur $1 est comprise entre 5 et 10\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if [ $1 -lt 5 ] -o [ $1 -gt 10 ]\n",
-      "\tthen\n",
-      "\t\techo La valeur $1 n'est pas comprise entre 5 et 10\n",
-      "else\n",
-      "\techo La valeur $1 est comprise entre 5 et 10\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if [ $1 -lt 5 `-o` $1 -gt 10 ]\n",
-      "\tthen\n",
-      "\t\techo La valeur $1 n'est pas comprise entre 5 et 10\n",
-      "else\n",
-      "\techo La valeur $1 est comprise entre 5 et 10\n",
-      "fi\n"
-    ]
+    {
+      "name": "tp5bis_exo4.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "valeur=`who | wc -l`\n",
+        "echo Il y a $valeur connect\u00c3\u00a9s sur `hostname`.\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo5.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo $(ls -l $1)\n",
+        "set -- $(ls -l $1)\n",
+        "echo $5\n"
+      ]
+    },
+    {
+      "name": "tp6_exo1.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "if [ $1 -lt 5 `-o` $1 -gt 10 ]\n",
+        "\tthen\n",
+        "\t\techo La valeur $1 n'est pas comprise entre 5 et 10\n",
+        "else\n",
+        "\techo La valeur $1 est comprise entre 5 et 10\n",
+        "fi\n"
+      ]
+    }
   ],
   "profile": [
     {

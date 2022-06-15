@@ -2,329 +2,61 @@
   "name": "ext_Charles.AkameEdgarJubert",
   "session": 3,
   "scripts": [
-    [
-      "6 #affiche 12\n"
-    ],
-    [
-      "nb=2\n",
-      "expr $nb *2\n",
-      "nb2='expr $nb * 2'\n",
-      "echo $nb2\n"
-    ],
-    [
-      "\n",
-      "nb=2\n",
-      "nb2='expr $nb / 2'\n",
-      "echo $nb2\n"
-    ],
-    [
-      "\n",
-      "nb=6\n",
-      "nb2='expr $nb / 2'\n",
-      "echo $nb2\n"
-    ],
-    [
-      "\n",
-      "nb=6\n",
-      "nb2= expr $nb / 2\n",
-      "echo $nb2\n"
-    ],
-    [
-      "nb =4\n",
-      "nb2= expr $nb * 2\n",
-      "echo $nb2\n"
-    ],
-    [
-      "aa\n"
-    ],
-    [
-      "nb=2\n",
-      "nb2= expr $nb *2\n",
-      "echo $nb2\n",
-      "\n"
-    ],
-    [
-      "nb=2\n",
-      "nb2=' expr $nb *2'\n",
-      "echo $nb2\n",
-      "\n"
-    ],
-    [
-      "nb=2\n",
-      "nb2= expr $nb *2\n",
-      "echo $nb2\n",
-      "\n"
-    ],
-    [
-      "\n",
-      "nb=2\n",
-      "nb2= expr $nb *2\n",
-      "echo $nb2\n",
-      "\n"
-    ],
-    [
-      "nb=2 \n",
-      "nb2= expr $nb *2\n",
-      "echo $nb2\n"
-    ],
-    [
-      "put(\"quelle est votre ann\u00c3\u00a9e de naissance ?\")\n",
-      "get(annee)\n",
-      "put(\"vous etes n\u00c3\u00a9 en \")\n",
-      "put(annee)\n",
-      "put(\"vous avez\u00c3\u00a9)\n",
-      "nb2 = expr $date - $annee\n",
-      "echo nb2\n"
-    ],
-    [
-      "put(\"quelle est votre ann\u00c3\u00a9e de naissance ?\")\n",
-      "get(annee)\n",
-      "put(\"vous etes n\u00c3\u00a9 en \")\n",
-      "put(annee)\n",
-      "put(\"vous avez\u00c3\u00a9)\n",
-      "expr $date - $annee\n",
-      "echo $(($date - $annee))\n"
-    ],
-    [
-      "put(\"quelle est votre ann\u00c3\u00a9e de naissance ?\")\n",
-      "annee=1990\n",
-      "put(\"vous etes n\u00c3\u00a9 en \")\n",
-      "echo $annee\n",
-      "put(\"vous avez\u00c3\u00a9)\n",
-      "expr $date - $annee\n",
-      "echo $(($date - $annee))\n"
-    ],
-    [
-      "put(\"quelle est votre ann\u00c3\u00a9e de naissance ?\")\n",
-      "annee=1990\n",
-      "put(\"vous etes n\u00c3\u00a9 en \")\n",
-      "echo $annee\n",
-      "put(\"vous avez)\n",
-      "echo $(($date - $annee))\n"
-    ],
-    [
-      "put(\"quelle est votre ann\u00c3\u00a9e de naissance ?\")\n",
-      "annee=1990\n",
-      "put(\"1990\")\n",
-      "put(\"vous etes n\u00c3\u00a9 en \")\n",
-      "echo $annee\n",
-      "put(\"vous avez\")\n",
-      "echo $(($date - $annee))\n"
-    ],
-    [
-      "put(quelle est votre ann\u00c3\u00a9e de naissance ?)\n",
-      "annee=1990\n",
-      "put(\"1990\")\n",
-      "put(\"vous etes n\u00c3\u00a9 en \")\n",
-      "echo $annee\n",
-      "put(\"vous avez\")\n",
-      "echo $(($date - $annee))\n"
-    ],
-    [
-      "put('quelle est votre ann\u00c3\u00a9e de naissance ?')\n",
-      "annee=1990\n",
-      "put('1990')\n",
-      "put('vous etes n\u00c3\u00a9 en ')\n",
-      "echo $annee\n",
-      "put('vous avez')\n",
-      "echo $(($date - $annee))\n"
-    ],
-    [
-      "put('quelle est votre ann\u00c3\u00a9e de naissance ?')\n",
-      "annee=1990\n",
-      "put('1990')\n",
-      "put('vous etes n\u00c3\u00a9 en ')\n",
-      "echo $annee\n",
-      "put('vous avez')\n",
-      "'date'\n",
-      "echo $(($date - $annee))\n"
-    ],
-    [
-      "put('quelle est votre ann\u00c3\u00a9e de naissance ?')\n",
-      "annee=1990\n",
-      "put('1990')\n",
-      "put('vous etes n\u00c3\u00a9 en ')\n",
-      "echo annee\n",
-      "put('vous avez')\n",
-      "'date'\n",
-      "echo $((date - annee))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo quelle est votre ann\u00c3\u00a9e de naissance\n",
-      "annee=1990\n",
-      "echo $annee\n",
-      "echo vous etes n\u00c3\u00a9 en \n",
-      "echo $annee\n",
-      "echo vous avez\n",
-      "'date'\n",
-      "echo $(($date - $annee))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo quelle est votre ann\u00c3\u00a9e de naissance\n",
-      "annee=1990\n",
-      "echo $annee\n",
-      "echo vous etes n\u00c3\u00a9 en \n",
-      "echo $annee\n",
-      "echo vous avez\n",
-      "man date\n",
-      "echo $(($date - $annee))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo quelle est votre ann\u00c3\u00a9e de naissance\n",
-      "annee=1990\n",
-      "echo $annee\n",
-      "echo vous etes n\u00c3\u00a9 en \n",
-      "echo $annee\n",
-      "echo vous avez\n",
-      "annee2= 2020\n",
-      "echo $(($annee2 - $annee))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo quelle est votre ann\u00c3\u00a9e de naissance\n",
-      "annee=1990\n",
-      "echo $annee\n",
-      "echo vous etes n\u00c3\u00a9 en \n",
-      "echo $annee\n",
-      "echo vous avez\n",
-      "annee2= 2020\n",
-      "nb2= expr $annee2 - $annee\n",
-      "echo $nb2\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo quelle est votre ann\u00c3\u00a9e de naissance\n",
-      "annee=1990\n",
-      "echo $annee\n",
-      "echo vous etes n\u00c3\u00a9 en \n",
-      "echo $annee\n",
-      "echo vous avez\n",
-      "annee2= 2020\n",
-      "nb2= 'expr $annee2 - 1990'\n",
-      "echo $nb2\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo quelle est votre ann\u00c3\u00a9e de naissance\n",
-      "annee=1990\n",
-      "echo $annee\n",
-      "echo vous etes n\u00c3\u00a9 en \n",
-      "echo $annee\n",
-      "echo vous avez\n",
-      "annee2= 2020\n",
-      "nb2= expr $annee2 - 1990\n",
-      "echo $nb2\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo quelle est votre ann\u00c3\u00a9e de naissance\n",
-      "read annee\n",
-      "anneeacc= 'date +%Y'\n",
-      "let resultat=$anneeacc-$annee\n",
-      "echo $resultat\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo quelle est votre ann\u00c3\u00a9e de naissance\n",
-      "read annee\n",
-      "anneeacc=`date +%Y`\n",
-      "let resultat=$anneeacc-$annee\n",
-      "echo $resultat\n"
-    ],
-    [
-      "echo $who\n",
-      "echo $hostname\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo $who\n",
-      "echo $hostname\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo $who\n",
-      "echo $hostname\n",
-      "echo il y a $who utilisateur connect\"s sur $hostname\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo $who\n",
-      "e1= $who\n",
-      "echo $hostname\n",
-      "e2= $hostname\n",
-      "echo il y a \n",
-      "echo $e1\n",
-      "\n",
-      "echo utilisateur connect\u00c3\u00a9s sur \n",
-      "echo $hostname\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo `$who`\n",
-      "echo `$hostname`\n",
-      "e2= $hostname\n",
-      "echo il y a \n",
-      "echo $e1\n",
-      "\n",
-      "echo utilisateur connect\u00c3\u00a9s sur \n",
-      "echo $hostname\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "`$who`\n",
-      "`$hostname`\n",
-      "echo il y a \n",
-      "echo $who\n",
-      "\n",
-      "echo utilisateur connect\u00c3\u00a9s sur \n",
-      "echo $hostname\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "`who`\n",
-      "`hostname`\n",
-      "echo il y a \n",
-      "echo $who\n",
-      "\n",
-      "echo utilisateur connect\u00c3\u00a9s sur \n",
-      "echo $hostname\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\"`who`\"\n",
-      "\"`hostname`\"\n",
-      "echo il y a \n",
-      "echo $who\n",
-      "\n",
-      "echo utilisateur connect\u00c3\u00a9s sur \n",
-      "echo $hostname\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\"`who`\"\n",
-      "\"`hostname`\"\n",
-      "echo il y a \n",
-      "\"`who`\"\n",
-      "\n",
-      "echo utilisateur connect\u00c3\u00a9s sur \n",
-      "\"`hostname`\"\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo il y a \n",
-      "\"`who`\"\n",
-      "\n",
-      "echo utilisateur connect\u00c3\u00a9s sur \n",
-      "\"`hostname`\"\n"
-    ],
-    [
-      "#!/bash\n",
-      "man set\n",
-      "\n"
-    ]
+    {
+      "name": "tp5bis_exo1.sh",
+      "lines": [
+        "\n",
+        "nb=6\n",
+        "nb2= expr $nb / 2\n",
+        "echo $nb2\n"
+      ]
+    },
+    {
+      "name": "tp5_bis_exo2.sh",
+      "lines": [
+        "nb =4\n",
+        "nb2= expr $nb * 2\n",
+        "echo $nb2\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo2.sh",
+      "lines": [
+        "nb=2 \n",
+        "nb2= expr $nb *2\n",
+        "echo $nb2\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo3.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo quelle est votre ann\u00c3\u00a9e de naissance\n",
+        "read annee\n",
+        "anneeacc=`date +%Y`\n",
+        "let resultat=$anneeacc-$annee\n",
+        "echo $resultat\n"
+      ]
+    },
+    {
+      "name": "tp5bus_exo4.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo il y a \n",
+        "\"`who`\"\n",
+        "\n",
+        "echo utilisateur connect\u00c3\u00a9s sur \n",
+        "\"`hostname`\"\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo5.sh",
+      "lines": [
+        "#!/bash\n",
+        "man set\n",
+        "\n"
+      ]
+    }
   ],
   "profile": [
     {

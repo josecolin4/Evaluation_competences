@@ -2,374 +2,44 @@
   "name": "ext_Quentin.Dijoux",
   "session": 4,
   "scripts": [
-    [
-      "echo \"Il y a $who utilisateurs connect\u00c3\u00a9s sur $hostname\"\n"
-    ],
-    [
-      "echo \"Il y a $1 utilisateurs connect\u00c3\u00a9s sur $2\"\n"
-    ],
-    [
-      "echo \"Il y a `who` utilisateurs connect\u00c3\u00a9s sur `hostname`\"\n"
-    ],
-    [
-      "echo \"Il y a `who -l` utilisateurs connect\u00c3\u00a9s sur `hostname`\"\n"
-    ],
-    [
-      "echo \"Il y a `who -q` utilisateurs connect\u00c3\u00a9s sur `hostname`\"\n"
-    ],
-    [
-      "echo \"Il y a $(expr who -q) utilisateurs connect\u00c3\u00a9s sur `hostname`\"\n"
-    ],
-    [
-      "echo \"Il y a expr \"$( who -q)\" utilisateurs connect\u00c3\u00a9s sur `hostname`\"\n"
-    ],
-    [
-      "echo \"Il y a \"$( who -q)\" utilisateurs connect\u00c3\u00a9s sur `hostname`\"\n"
-    ],
-    [
-      "nb=$( who -q)\n",
-      "echo \"il y a $nb utilisateurs connect\u00c3\u00a9s sur `hostname`\"\n"
-    ],
-    [
-      "nb=$( who -q)\n",
-      "echo \"$nb utilisateurs connect\u00c3\u00a9s sur \"$(hostname)\"\"\n"
-    ],
-    [
-      "nb=$( who )\n",
-      "echo \"$nb utilisateurs connect\u00c3\u00a9s sur \"$(hostname)\"\"\n"
-    ],
-    [
-      "nb=expr $( who )\n",
-      "echo \"$nb utilisateurs connect\u00c3\u00a9s sur \"$(hostname)\"\"\n"
-    ],
-    [
-      "nb=expr$( who )\n",
-      "echo \"$nb utilisateurs connect\u00c3\u00a9s sur \"$(hostname)\"\"\n"
-    ],
-    [
-      "nb=expr$( who -q )\n",
-      "echo \"$nb utilisateurs connect\u00c3\u00a9s sur \"$(hostname)\"\"\n"
-    ],
-    [
-      "\n",
-      "echo \"\"$(who)\" utilisateurs connect\u00c3\u00a9s sur \"$(hostname)\"\"\n"
-    ],
-    [
-      "\n",
-      "echo \"\"$(who -q)\" utilisateurs connect\u00c3\u00a9s sur \"$(hostname)\"\"\n"
-    ],
-    [
-      "\n",
-      "echo \"$(who -q)\" utilisateurs connect\u00c3\u00a9s sur \"$(hostname)\"\n"
-    ],
-    [
-      "\n",
-      "echo Il y a \"$(who -wc)\" utilisateurs connect\u00c3\u00a9s sur \"$(hostname)\"\n"
-    ],
-    [
-      "echo Il y a \"$(wc -who )\" utilisateurs connect\u00c3\u00a9s sur \"$(hostname)\"\n"
-    ],
-    [
-      "nb=( who -q)\n",
-      "echo Il y a \"$(wc -l nb )\" utilisateurs connect\u00c3\u00a9s sur \"$(hostname)\"\n"
-    ],
-    [
-      "nb=( who -q)\n",
-      "echo Il y a \"$(wc -w nb )\" utilisateurs connect\u00c3\u00a9s sur \"$(hostname)\"\n"
-    ],
-    [
-      "nb=( who -q)\n",
-      "echo Il y a \"$(wc -w $nb )\" utilisateurs connect\u00c3\u00a9s sur \"$(hostname)\"\n"
-    ],
-    [
-      "\n",
-      "echo Il y a \"$wc -w( who -q )\" utilisateurs connect\u00c3\u00a9s sur \"$(hostname)\"\n"
-    ],
-    [
-      "\n",
-      "echo Il y a \"$wc ( who -q )\" utilisateurs connect\u00c3\u00a9s sur \"$(hostname)\"\n"
-    ],
-    [
-      "\n",
-      "echo Il y a \"$wc -w $( who -q )\" utilisateurs connect\u00c3\u00a9s sur \"$(hostname)\"\n"
-    ],
-    [
-      "\n",
-      "echo Il y a \"$wc $( who -q )\" utilisateurs connect\u00c3\u00a9s sur \"$(hostname)\"\n"
-    ],
-    [
-      "nb = \n",
-      "echo Il y a $nb utilisateurs connect\u00c3\u00a9s sur $(hostname)\n"
-    ],
-    [
-      "nb=wc$(who) \n",
-      "echo Il y a $nb utilisateurs connect\u00c3\u00a9s sur $(hostname)\n"
-    ],
-    [
-      "nb=wc -w who \n",
-      "echo Il y a $nb utilisateurs connect\u00c3\u00a9s sur $(hostname)\n"
-    ],
-    [
-      "nb=wc-w who \n",
-      "echo Il y a $nb utilisateurs connect\u00c3\u00a9s sur $(hostname)\n"
-    ],
-    [
-      "nb=wc-w ($who) \n",
-      "echo Il y a $nb utilisateurs connect\u00c3\u00a9s sur $(hostname)\n"
-    ],
-    [
-      "echo Il y a wc -w  utilisateurs connect\u00c3\u00a9s sur $(hostname)\n"
-    ],
-    [
-      "who\n"
-    ],
-    [
-      "nb=`who | wc -l`\n",
-      "echo il y a $nb utilisateur connect\u00c3\u00a9s sur $hostname\n",
-      "\n"
-    ],
-    [
-      "nb=`who | wc -l`\n",
-      "nom=`hostname`\n",
-      "echo il y a $nb utilisateur connect\u00c3\u00a9s sur $nom\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "Taille=$( stat -c%s \"#1#\")\n",
-      "echo la taille du fichier est :\n",
-      "$Taille\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "Taille=$( stat -c%s \"#1#\")\n",
-      "echo la taille du fichier est :\n",
-      "$Taille\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "Taille=$( stat -c%s \"#1\")\n",
-      "echo la taille du fichier est :\n",
-      "$Taille\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "Taille=$( stat -c%s \"$1\")\n",
-      "echo la taille du fichier est :\n",
-      "$Taille\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "Taille=$( stat -c%s $1)\n",
-      "set --$( ls -l $1)\n",
-      "echo $Taille\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "Taille=$( stat -c%s $1)\n",
-      "set -- $( ls -l $1)\n",
-      "echo $Taille\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "Taille=$( stat -c%s $1)\n",
-      "set -- $( ls -l $1)\n",
-      "echo $1\n",
-      "echo $Taille\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "Taille=$( stat -c%s $1)\n",
-      "n=set -- $( ls -l $1)\n",
-      "echo $n\n",
-      "echo $Taille\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "Taille=$( stat -c%s $1)\n",
-      "set -- $( ls -l $1)\n",
-      "echo $1 $2\n",
-      "echo $Taille\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "Taille=$( stat -c%s $1)\n",
-      "set -- $( ls -l $1)\n",
-      "echo $6\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "set -- $( ls --l $1)\n",
-      "echo $6\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "set -- $( ls -l $1)\n",
-      "echo $5\n"
-    ],
-    [
-      "n=1;\n",
-      "for i in $*\n",
-      "do\n",
-      " echo \"Argument $n =\" $i\n",
-      " n=expr(n + 1)\n",
-      "done\n",
-      "echo \"Il y a $# arguments\"\n"
-    ],
-    [
-      "n=1;\n",
-      "for i in $*\n",
-      "do\n",
-      " echo Argument $n = $i\n",
-      " n=expr(n + 1)\n",
-      "done\n",
-      "echo Il y a $# arguments\n"
-    ],
-    [
-      "\n",
-      "for i in $*\n",
-      "do\n",
-      " echo Argument i = $i\n",
-      "\n",
-      "done\n",
-      "echo Il y a $# arguments\n"
-    ],
-    [
-      "n=i\n",
-      "for i in $*\n",
-      "do\n",
-      " echo Argument $n = $i\n",
-      "\n",
-      "done\n",
-      "echo Il y a $# arguments\n"
-    ],
-    [
-      "\n",
-      "for i in $*\n",
-      "do\n",
-      " n=i\n",
-      " echo Argument $n = $i\n",
-      "\n",
-      "done\n",
-      "echo Il y a $# arguments\n"
-    ],
-    [
-      "n=1\n",
-      "for i in $*\n",
-      "do\n",
-      " echo Argument $n = $i\n",
-      " \n",
-      "done\n",
-      "echo Il y a $# arguments\n"
-    ],
-    [
-      "n=1\n",
-      "for i in $*\n",
-      "do\n",
-      " echo Argument $n = $i\n",
-      " n=n + 1 \n",
-      "done\n",
-      "echo Il y a $# arguments\n"
-    ],
-    [
-      "n=1\n",
-      "for i in $*\n",
-      "do\n",
-      " echo Argument $n = $i\n",
-      " n=(n + 1) \n",
-      "done\n",
-      "echo Il y a $# arguments\n"
-    ],
-    [
-      "n=1\n",
-      "for i in $*\n",
-      "do\n",
-      " echo Argument $n = $i\n",
-      "$n=(n + 1) \n",
-      "done\n",
-      "echo Il y a $# arguments\n"
-    ],
-    [
-      "n=1\n",
-      "for i in $*\n",
-      "do\n",
-      " echo Argument $n = $i\n",
-      "$n=$n + 1 \n",
-      "done\n",
-      "echo Il y a $# arguments\n"
-    ],
-    [
-      "n=1\n",
-      "for i in $*\n",
-      "do\n",
-      " echo Argument $n = $i\n",
-      "$n=expr($n + 1) \n",
-      "done\n",
-      "echo Il y a $# arguments\n"
-    ],
-    [
-      "n=1\n",
-      "for i in $*\n",
-      "do\n",
-      " echo Argument $n = $i\n",
-      " `$n=expr($n + 1)` \n",
-      "done\n",
-      "echo Il y a $# arguments\n"
-    ],
-    [
-      "n=1\n",
-      "for i in $*\n",
-      "do\n",
-      " echo Argument $n = $i\n",
-      " $n= $(($n + 1) \n",
-      "done\n",
-      "echo Il y a $# arguments\n"
-    ],
-    [
-      "n=1\n",
-      "for i in $*\n",
-      "do\n",
-      " echo Argument $n = $i\n",
-      " $n= $(($n + 1)) \n",
-      "done\n",
-      "echo Il y a $# arguments\n"
-    ],
-    [
-      "n=1\n",
-      "for i in $*\n",
-      "do\n",
-      " echo Argument $n = $i\n",
-      " n= $((n + 1)) \n",
-      "done\n",
-      "echo Il y a $# arguments\n"
-    ],
-    [
-      "n=1\n",
-      "for i in $*\n",
-      "do\n",
-      " echo Argument $n = $i\n",
-      " n=$((n + 1)) \n",
-      "done\n",
-      "echo Il y a $# arguments\n"
-    ],
-    [
-      "for i in $(seq $1)\n",
-      "do\n",
-      " echo i\n",
-      "done\n"
-    ],
-    [
-      "for i in $(seq $1)\n",
-      "do\n",
-      " echo $1\n",
-      "done\n"
-    ],
-    [
-      "for i in $1\n",
-      "do\n",
-      " echo expr $1 * $(seq $1)\n",
-      "done\n"
-    ]
+    {
+      "name": "tp5bis_exo4.sh",
+      "lines": [
+        "nb=`who | wc -l`\n",
+        "nom=`hostname`\n",
+        "echo il y a $nb utilisateur connect\u00c3\u00a9s sur $nom\n",
+        "\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo5.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "set -- $( ls -l $1)\n",
+        "echo $5\n"
+      ]
+    },
+    {
+      "name": "tp6_exo5.sh",
+      "lines": [
+        "n=1\n",
+        "for i in $*\n",
+        "do\n",
+        " echo Argument $n = $i\n",
+        " n=$((n + 1)) \n",
+        "done\n",
+        "echo Il y a $# arguments\n"
+      ]
+    },
+    {
+      "name": "tp6_exo6.sh",
+      "lines": [
+        "for i in $1\n",
+        "do\n",
+        " echo expr $1 * $(seq $1)\n",
+        "done\n"
+      ]
+    }
   ],
   "profile": [
     {

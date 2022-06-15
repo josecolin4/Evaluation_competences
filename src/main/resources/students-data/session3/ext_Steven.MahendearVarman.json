@@ -2,274 +2,42 @@
   "name": "ext_Steven.MahendearVarman",
   "session": 3,
   "scripts": [
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "set 12\n",
-      "echo expr $1 / 2\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "set 12\n",
-      "echo expr $1 / 2\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "set 12\n",
-      "expr $1 / 2\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "set 12\n",
-      "expr $1 / 2\n",
-      "\n",
-      "echo $ (( $1 / 2 ))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "set 12\n",
-      "expr $1 / 2\n",
-      "\n",
-      "echo $ (1( / 2 ))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "set 12\n",
-      "expr $1 / 2\n",
-      "\n",
-      "echo $  (( $1 / 2 ))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "set 12\n",
-      "expr $1 / 2\n",
-      "\n",
-      "n=12\n",
-      "echo $  (( n  / 2 ))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "set 12\n",
-      "expr $1 / 2\n",
-      "\n",
-      "n=12\n",
-      "echo $(( n  / 2 ))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "set 12\n",
-      "expr $1 / 2\n",
-      "\n",
-      "\n",
-      "echo $(( $1 / 2 ))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "\n",
-      "expr $1 / 2\n",
-      "\n",
-      "\n",
-      "echo $(( $1 / 2 ))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "\n",
-      "expr $1 / 2\n",
-      "\n",
-      "\n",
-      "echo $(( $1 / 2 ))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "                                                                                       \n",
-      "                                                                                       \n",
-      "expr $1 * 2\n",
-      "                                                                                       \n",
-      "                                                                                       \n",
-      "echo $(( $1 * 2 ))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "expr $1 * 2\n",
-      "\n",
-      "echo $(( $1 * 2 ))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "expr $1 \\* 2\n",
-      "\n",
-      "echo $(( $1 * 2 ))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
-      "\n",
-      "read $1\n",
-      "\n",
-      "expr $date - $1\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
-      "\n",
-      "read $1\n",
-      "\n",
-      "echo $date\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
-      "\n",
-      "read $1\n",
-      "\n",
-      "echo date\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
-      "\n",
-      "read $1\n",
-      "\n",
-      "echo date\"+%Y\"\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
-      "\n",
-      "read $1\n",
-      "\n",
-      "date\"+%Y\"\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
-      "\n",
-      "read $1\n",
-      "\n",
-      "date \"+%Y\"\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
-      "\n",
-      "read $1\n",
-      "\n",
-      "expr date \"+%Y\" - $1\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
-      "\n",
-      "read $1\n",
-      "\n",
-      "Ann\u00c3\u00a9e=date \"+%Y\" \n",
-      "\n",
-      "expr $ann\u00c3\u00a9e - $1\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
-      "\n",
-      "read $1\n",
-      "\n",
-      "a=date \"+%Y\" \n",
-      "\n",
-      "expr $1 - $1\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
-      "\n",
-      "read $1\n",
-      "\n",
-      "a=date \"+%Y\" \n",
-      "\n",
-      "expr $a - $1\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
-      "\n",
-      "read $1\n",
-      "\n",
-      "a=date\"+%Y\" \n",
-      "\n",
-      "expr $a - $1\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
-      "\n",
-      "read $1\n",
-      "\n",
-      "date\"+%Y\">a \n",
-      "\n",
-      "expr $a - $1\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
-      "\n",
-      "read $1\n",
-      "\n",
-      "date \"+%Y\">a \n",
-      "\n",
-      "expr $a - $1\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
-      "\n",
-      "read $1\n",
-      "\n",
-      "a=$(date \"+%Y\")\n",
-      "\n",
-      "expr $a - $1\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
-      "\n",
-      "read $1\n",
-      "\n",
-      "a=$(date +%Y)\n",
-      "\n",
-      "expr $a - $1\n"
-    ]
+    {
+      "name": "tp5bis_exo1.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "\n",
+        "\n",
+        "expr $1 / 2\n",
+        "\n",
+        "\n",
+        "echo $(( $1 / 2 ))\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo2.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "\n",
+        "expr $1 \\* 2\n",
+        "\n",
+        "echo $(( $1 * 2 ))\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo3.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "\n",
+        "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
+        "\n",
+        "read $1\n",
+        "\n",
+        "a=$(date +%Y)\n",
+        "\n",
+        "expr $a - $1\n"
+      ]
+    }
   ],
   "profile": [
     {

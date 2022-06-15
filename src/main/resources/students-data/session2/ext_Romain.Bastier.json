@@ -2,30 +2,20 @@
   "name": "ext_Romain.Bastier",
   "session": 2,
   "scripts": [
-    [
-      "expr 6 / 2 #affiche 3\n"
-    ],
-    [
-      "set 6 / 2 $\n",
-      "echo $\n"
-    ],
-    [
-      "n=6\n",
-      "echo $(( n / 2 )) #affiche 3\n"
-    ],
-    [
-      "expr 6 * 2 #affiche 12\n"
-    ],
-    [
-      "expr 6 x 2 #affiche 12\n"
-    ],
-    [
-      "expr 6 * 2 #affiche 12\n"
-    ],
-    [
-      "n=6\n",
-      "echo $(( n * 2)) #affiche 12\n"
-    ]
+    {
+      "name": "tp5bis_exo1.sh",
+      "lines": [
+        "n=6\n",
+        "echo $(( n / 2 )) #affiche 3\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo2.sh",
+      "lines": [
+        "n=6\n",
+        "echo $(( n * 2)) #affiche 12\n"
+      ]
+    }
   ],
   "profile": [
     {

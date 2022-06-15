@@ -2,14 +2,17 @@
   "name": "ext_Najla.Delhem",
   "session": 1,
   "scripts": [
-    [
-      "#!/bin/bash\n",
-      "echo cours \n",
-      "cours=unix\n",
-      "echo $cours\n",
-      "echo je suis en cours $cours\n",
-      "\n"
-    ]
+    {
+      "name": ".tp5_exo1.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo cours \n",
+        "cours=unix\n",
+        "echo $cours\n",
+        "echo je suis en cours $cours\n",
+        "\n"
+      ]
+    }
   ],
   "profile": [
     {

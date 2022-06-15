@@ -2,39 +2,20 @@
   "name": "ext_Nicolas.Leymat",
   "session": 3,
   "scripts": [
-    [
-      "$Valeur = 6\n",
-      "echo expr = $Valeur  /  2\n",
-      "\n"
-    ],
-    [
-      "echo expr = 6  /  2\n",
-      "\n"
-    ],
-    [
-      "expr = 6  /  2\n",
-      "echo expr\n"
-    ],
-    [
-      "expr 6  /  2\n",
-      "echo expr\n"
-    ],
-    [
-      "read para\n",
-      "echo $(( para * 2))\n"
-    ],
-    [
-      "A=date -Y\n",
-      "echo $A\n"
-    ],
-    [
-      "A=date +\"Year: %Y\"\n",
-      "echo $A\n"
-    ],
-    [
-      "A=date + \"Year: %Y\"\n",
-      "echo $A\n"
-    ]
+    {
+      "name": "tp5bis_exo3.sh",
+      "lines": [
+        "A=date + \"Year: %Y\"\n",
+        "echo $A\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo2.sh",
+      "lines": [
+        "read para\n",
+        "echo $(( para * 2))\n"
+      ]
+    }
   ],
   "profile": [
     {

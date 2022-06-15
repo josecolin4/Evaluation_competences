@@ -2,151 +2,48 @@
   "name": "ext_Aubin.Fuentes",
   "session": 2,
   "scripts": [
-    [
-      "#!/bin/bash\n",
-      "echo Le script $0 poss\u00c3\u00a8de $# param\u00c3\u00a8tres, que voici :\n",
-      "echo $*\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "cat F1 F2 > F3\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "cat F1 F2 >> F3\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "cat F1 F2 > F3\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Nous sommes le \\'date'\n",
-      "echo Nous sommes le 'date'\n",
-      "echo Ceci est \n",
-      "echo une tr\u00c3\u00a8s\n",
-      "echo longue phrase...\n",
-      "echo Voici une \u00c3\u00a9toile : *\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Nous sommes le \\'date'\n",
-      "echo Nous sommes le 'date'\n",
-      "echo Ceci est\n",
-      "echo une tr\u00c3\u00a8s\n",
-      "echo longue phrase...\n",
-      "echo Voici une \u00c3\u00a9toile : *\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Nous sommes le 'date'\n",
-      "echo Nous sommes le 'date'\n",
-      "echo Ceci est\n",
-      "echo une tr\u00c3\u00a8s\n",
-      "echo longue phrase...\n",
-      "echo Voici une \u00c3\u00a9toile : *\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Nous sommes le 'date'\n",
-      "echo Nous sommes le \\'date'\n",
-      "echo Ceci est\n",
-      "echo une tr\u00c3\u00a8s\n",
-      "echo longue phrase...\n",
-      "echo Voici une \u00c3\u00a9toile : *\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "cat $1 $2 > $3\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Nous sommes le \\`date`\n",
-      "echo Nous sommes le `date`\n",
-      "echo Ceci est\n",
-      "echo une tr\u00c3\u00a8s\n",
-      "echo longue phrase...\n",
-      "echo Voici une \u00c3\u00a9toile : *\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Nous sommes le \\`date`\n",
-      "echo Nous sommes le `date`\n",
-      "echo Ceci est\n",
-      "echo une tr\u00c3\u00a8s\n",
-      "echo longue phrase...\n",
-      "echo Voici une \u00c3\u00a9toile : *\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Nous sommes le `date`\n",
-      "echo Nous sommes le `date`\n",
-      "echo Ceci est\n",
-      "echo une tr\u00c3\u00a8s\n",
-      "echo longue phrase...\n",
-      "echo Voici une \u00c3\u00a9toile : *\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Nous sommes le \\`date\\`\n",
-      "echo Nous sommes le `date`\n",
-      "echo Ceci est\n",
-      "echo une tr\u00c3\u00a8s\n",
-      "echo longue phrase...\n",
-      "echo Voici une \u00c3\u00a9toile : *\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo `expr$1+1`\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo expr$1+1\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "somme = `expr$1 + 1`\n",
-      "echo somme\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "somme=`expr$1 + 1`\n",
-      "echo somme\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "somme=`expr $1 + 1`\n",
-      "echo somme\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "somme=`expr $1 + 1`\n",
-      "echo $somme\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "export $PATH\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "export $PATH=:\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "export $PATH=:/root\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "export $PATH:/root\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "export PATH=$PATH:/root\n"
-    ]
+    {
+      "name": "tp5_exo5.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo Le script $0 poss\u00c3\u00a8de $# param\u00c3\u00a8tres, que voici :\n",
+        "echo $*\n"
+      ]
+    },
+    {
+      "name": "tp5_exo6.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "cat $1 $2 > $3\n"
+      ]
+    },
+    {
+      "name": "tp5_exo7.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo Nous sommes le \\`date\\`\n",
+        "echo Nous sommes le `date`\n",
+        "echo Ceci est\n",
+        "echo une tr\u00c3\u00a8s\n",
+        "echo longue phrase...\n",
+        "echo Voici une \u00c3\u00a9toile : *\n"
+      ]
+    },
+    {
+      "name": "tp5_exo8.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "somme=`expr $1 + 1`\n",
+        "echo $somme\n"
+      ]
+    },
+    {
+      "name": "tp5_exo9.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "export PATH=$PATH:/root\n"
+      ]
+    }
   ],
   "profile": [
     {

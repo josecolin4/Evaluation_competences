@@ -2,171 +2,77 @@
   "name": "ext_Lina.Borg",
   "session": 2,
   "scripts": [
-    [
-      "#!/bin/bash\n",
-      "echo Le script $0 poss\u00c3\u00a8de $# , que voici:\n",
-      "$*\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Le script $0 poss\u00c3\u00a8de $# param\u00c3\u00a8tres, que voici:\n",
-      "$*\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "cat $1 $2 > $3\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Nous sommes le \\`date`\n",
-      "echo Nous sommes le `date`\n",
-      "echo -e \"Ceci est\\nune tr\u00c3\u00a8s\\nlongue phrase...\\nVoici une \u00c3\u00a9toile: \\*\"\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Nous sommes le ``date``\n",
-      "echo Nous sommes le `date`\n",
-      "echo -e \"Ceci est\\nune tr\u00c3\u00a8s\\nlongue phrase...\\nVoici une \u00c3\u00a9toile: \\*\"\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Nous sommes le ``date``\n",
-      "echo Nous sommes le `date`\n",
-      "echo -e \"Ceci est\\nune tr\u00c3\u00a8s\\nlongue phrase...\\nVoici une \u00c3\u00a9toile: \"*\"\"\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "read param\n",
-      "param=$((param+1))\n",
-      "echo $param\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "export PATH=$PATH:/\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "export PATH=$PATH:/root\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "export PATH=$PATH:/root\n",
-      "tp5_ex7.sh\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "export PATH=$PATH:/root\n",
-      "tp5_exo7.sh\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Entrez le nbre \u00c3\u00a0 diviser\n",
-      "read nb\n",
-      "echo `expr $nb / 2`\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Quel est le nombbre \u00c3\u00a0 multiplier par 2 ?\n",
-      "read nb\n",
-      "echo `expr $nb \\* 2`\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Entrez le nbre \u00c3\u00a0 diviser\n",
-      "read nb\n",
-      "echo `expr $nb / 2`\n",
-      "echo $((nb / 2))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Quel est le nombbre \u00c3\u00a0 multiplier par 2 ?\n",
-      "read nb\n",
-      "echo `expr $nb \\* 2`\n",
-      "echo $((nb \\* 2))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Quel est le nombbre \u00c3\u00a0 multiplier par 2 ?\n",
-      "read nb\n",
-      "echo `expr $nb \\* 2`\n",
-      "echo $((nb * 2))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
-      "read dateN\n",
-      "echo Vous \u00c3\u00aates n\u00c3\u00a9(e) en 1990, vous avez donc $((`date` - dateN))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
-      "read dateN\n",
-      "echo Vous \u00c3\u00aates n\u00c3\u00a9(e) en 1990, vous avez donc $((date - dateN))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
-      "read dateN\n",
-      "annee=$(date)\n",
-      "echo Vous \u00c3\u00aates n\u00c3\u00a9(e) en 1990, vous avez donc $((annee - dateN))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
-      "read dateN\n",
-      "annee=$(date)\n",
-      "echo Vous \u00c3\u00aates n\u00c3\u00a9(e) en $dateN, vous avez donc $((annee - dateN))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
-      "read dateN\n",
-      "annee=$(date)\n",
-      "echo Vous \u00c3\u00aates n\u00c3\u00a9(e) en $dateN, vous avez donc `expr $annee - $dateN`\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
-      "read dateN\n",
-      "annee=$(date)\n",
-      "echo Vous \u00c3\u00aates n\u00c3\u00a9e en $dateN, vous avez donc `expr $annee - $dateN`\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
-      "read dateN\n",
-      "annee=$(`date`)\n",
-      "echo Vous \u00c3\u00aates n\u00c3\u00a9e en $dateN, vous avez donc `expr $annee - $dateN`\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
-      "read dateN\n",
-      "annee=$(date)\n",
-      "echo Vous \u00c3\u00aates n\u00c3\u00a9e en $dateN, vous avez donc `expr $annee - $dateN`\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
-      "read dateN\n",
-      "annee=$(date)\n",
-      "echo Vous \u00c3\u00aates n\u00c3\u00a9e en $dateN, vous avez donc $((annee - dateN))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
-      "read dateN\n",
-      "annee=`date + \"%Y\"`\n",
-      "echo Vous \u00c3\u00aates n\u00c3\u00a9e en $dateN, vous avez donc $((annee - dateN))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
-      "read dateN\n",
-      "annee=`date + '%Y'`\n",
-      "echo Vous \u00c3\u00aates n\u00c3\u00a9e en $dateN, vous avez donc $((annee - dateN))\n"
-    ]
+    {
+      "name": "tp5_exo5.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo Le script $0 poss\u00c3\u00a8de $# param\u00c3\u00a8tres, que voici:\n",
+        "$*\n"
+      ]
+    },
+    {
+      "name": "tp5_exo6.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "cat $1 $2 > $3\n"
+      ]
+    },
+    {
+      "name": "tp5_exo7.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo Nous sommes le ``date``\n",
+        "echo Nous sommes le `date`\n",
+        "echo -e \"Ceci est\\nune tr\u00c3\u00a8s\\nlongue phrase...\\nVoici une \u00c3\u00a9toile: \"*\"\"\n"
+      ]
+    },
+    {
+      "name": "tp5_exo8.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "read param\n",
+        "param=$((param+1))\n",
+        "echo $param\n"
+      ]
+    },
+    {
+      "name": "tp5_exo9.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "export PATH=$PATH:/root\n",
+        "tp5_exo7.sh\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo1.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo Entrez le nbre \u00c3\u00a0 diviser\n",
+        "read nb\n",
+        "echo `expr $nb / 2`\n",
+        "echo $((nb / 2))\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo2.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo Quel est le nombbre \u00c3\u00a0 multiplier par 2 ?\n",
+        "read nb\n",
+        "echo `expr $nb \\* 2`\n",
+        "echo $((nb * 2))\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo3.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
+        "read dateN\n",
+        "annee=`date + '%Y'`\n",
+        "echo Vous \u00c3\u00aates n\u00c3\u00a9e en $dateN, vous avez donc $((annee - dateN))\n"
+      ]
+    }
   ],
   "profile": [
     {

@@ -2,123 +2,41 @@
   "name": "ext_Benjamin.Wattre",
   "session": 2,
   "scripts": [
-    [
-      "echo Quel nombre ?\n",
-      "read n\n",
-      "echo $(( n / 2 ))\n"
-    ],
-    [
-      "echo Quel nombre ?\n",
-      "read n\n",
-      "expr n * 2\n",
-      "echo $(( n * 2 ))\n"
-    ],
-    [
-      "echo Quel nombre ?\n",
-      "read n\n",
-      "expr n * 2 #affiche n * 2\n",
-      "echo $(( n * 2 ))\n"
-    ],
-    [
-      "echo Quel nombre ?\n",
-      "read n\n",
-      "expr n * 2 #affiche n * 2\n",
-      "echo $(( n * 2 ))\n"
-    ],
-    [
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
-      "read n\n",
-      "echo Vous avez $(( %y - n ))\n",
-      "\n"
-    ],
-    [
-      "echo Quel nombre ?\n",
-      "read n\n",
-      "expr n * 2 #affiche n * 2\n",
-      "echo $(( n * 2 ))\n"
-    ],
-    [
-      "echo Quel nombre ?\n",
-      "read n\n",
-      "expr n \\* 2 #affiche n * 2\n",
-      "echo $(( n * 2 ))\n"
-    ],
-    [
-      "echo Quel nombre ?\n",
-      "read n\n",
-      "expr n \\*\\ 2 #affiche n * 2\n",
-      "echo $(( n * 2 ))\n"
-    ],
-    [
-      "echo Quel nombre ?\n",
-      "read n\n",
-      "expr $n \\* 2 #affiche n * 2\n",
-      "echo $(( n * 2 ))\n"
-    ],
-    [
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
-      "read n\n",
-      "annee=$(date '+%y')\n",
-      "echo Vous avez $(( annee - n )) ans !\n",
-      "\n"
-    ],
-    [
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
-      "read n\n",
-      "annee=$(date '+%y')\n",
-      "echo Vous avez $(( annee - n )) ans\n",
-      "\n"
-    ],
-    [
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
-      "read n\n",
-      "annee=$(date '+%y')\n",
-      "echo $annee\n",
-      "echo Vous avez $(( annee - n )) ans\n",
-      "\n"
-    ],
-    [
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
-      "read n\n",
-      "annee=$(date '+%y')\n",
-      "echo $annee\n",
-      "#echo Vous avez $(( annee - n )) ans\n",
-      "\n"
-    ],
-    [
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
-      "read n\n",
-      "annee=$(date '+%y')\n",
-      "\n",
-      "echo Vous avez $(( 1000 + annee - n )) ans\n",
-      "\n"
-    ],
-    [
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
-      "read n\n",
-      "annee=$(date '+%y')\n",
-      "\n",
-      "echo Vous avez $(( 2000 + annee - n )) ans\n",
-      "\n"
-    ],
-    [
-      "echo $hostname\n"
-    ],
-    [
-      "echo `hostname`\n"
-    ],
-    [
-      "echo Vous \u00c3\u00aates sur la machine :  `hostname`\n",
-      "echo Les utilisateurs connect\u00c3\u00a9s sont les suivants : `who`\n"
-    ],
-    [
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
-      "read n\n",
-      "annee=$(date '+%y')\n",
-      "\n",
-      "echo Vous avez $(( 2000 + annee - n )) ans\n",
-      "\n"
-    ]
+    {
+      "name": "tp5bis_exo1.sh",
+      "lines": [
+        "echo Quel nombre ?\n",
+        "read n\n",
+        "echo $(( n / 2 ))\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo2.sh",
+      "lines": [
+        "echo Quel nombre ?\n",
+        "read n\n",
+        "expr $n \\* 2 #affiche n * 2\n",
+        "echo $(( n * 2 ))\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo3.sh",
+      "lines": [
+        "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
+        "read n\n",
+        "annee=$(date '+%y')\n",
+        "\n",
+        "echo Vous avez $(( 2000 + annee - n )) ans\n",
+        "\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo4.sh",
+      "lines": [
+        "echo Vous \u00c3\u00aates sur la machine :  `hostname`\n",
+        "echo Les utilisateurs connect\u00c3\u00a9s sont les suivants : `who`\n"
+      ]
+    }
   ],
   "profile": [
     {

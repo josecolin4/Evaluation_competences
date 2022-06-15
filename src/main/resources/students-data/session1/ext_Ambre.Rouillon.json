@@ -2,113 +2,50 @@
   "name": "ext_Ambre.Rouillon",
   "session": 1,
   "scripts": [
-    [
-      "#!/bin/bash\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo cours\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo cours\n",
-      "cours=unix=echo $cours\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo cours\n",
-      "cours=unix=echo $cours\n",
-      "echo je suis au cours $cours\n"
-    ],
-    [
-      "Mon nom de login est : echo $USER\n",
-      "Mon shell est : echo $SHELL\n",
-      "Les variables du shell sont :\n",
-      "echo set\n",
-      "Celles d'environnement sont :\n",
-      "echo env\n"
-    ],
-    [
-      "Mon nom de login est : echo set $USER\n",
-      "Mon shell est : echo set $SHELL\n",
-      "Les variables du shell sont :\n",
-      "echo set | more\n",
-      "Celles d'environnement sont :\n",
-      "echo env | more\n"
-    ],
-    [
-      "login : $USER\n",
-      "shell : $SHELL\n",
-      "variables shell :\n",
-      "set | more\n",
-      "variables environnement :\n",
-      "env | more\n"
-    ],
-    [
-      "login : echo $USER\n",
-      "shell :echo $SHELL\n",
-      "variables shell :\n",
-      "echo set | more\n",
-      "variables environnement :\n",
-      "echo env | more\n"
-    ],
-    [
-      "echo login : $USER\n",
-      "echo shell : $SHELL\n",
-      "echo variables shell :\n",
-      "set | more\n",
-      "echo variables environnement :\n",
-      "env | more\n"
-    ],
-    [
-      "echo login : $USER\n",
-      "echo shell : $SHELL\n",
-      "echo variables shell :\n",
-      "echo set | more\n",
-      "echo variables environnement :\n",
-      "echo env | more\n"
-    ],
-    [
-      "#!bin/bash\n",
-      "echo Cher utilisateur quel est ton pr\u00c3\u00a9nom \\?\n",
-      "read prenom\n",
-      "echo Ravi de te connaitre, $prenom\n",
-      "echo Quel est ton nom et ton age \\?\n",
-      "read non age\n",
-      "echo Tu es $prenom $nom et tu as $age ans, n\\'est-ce\n",
-      "pas \\?\n",
-      "read reponse\n"
-    ],
-    [
-      "#!bin/bash\n",
-      "echo Cher utilisateur quel est ton pr\u00c3\u00a9nom \\?\n",
-      "read prenom\n",
-      "echo Ravi de te connaitre, $prenom\n",
-      "echo Quel est ton nom et ton age \\?\n",
-      "read non age\n",
-      "echo Tu es $prenom $nom et tu as $age ans, n\\'est-ce pas \\?\n",
-      "read reponse\n"
-    ],
-    [
-      "#! bin/bash\n",
-      "echo Cher utilisateur quel est ton pr\u00c3\u00a9nom \\?\n",
-      "read prenom\n",
-      "echo Ravi de te connaitre, $prenom\n",
-      "echo Quel est ton nom et ton age \\?\n",
-      "read non age\n",
-      "echo Tu es $prenom $nom et tu as $age ans, n\\'est-ce pas \\?\n",
-      "read reponse\n"
-    ],
-    [
-      "#!bin/bash\n",
-      "echo Cher utilisateur quel est ton prenom \\?\n",
-      "read prenom\n",
-      "echo Ravi de te connaitre, $prenom\n",
-      "echo Quel est ton nom et ton age \\?\n",
-      "read nom age\n",
-      "echo Tu es $prenom $nom et tu as $age ans, n\\'est-ce pas \\?\n",
-      "read reponse\n"
-    ]
+    {
+      "name": "tp5_exo1.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo cours\n",
+        "cours=unix=echo $cours\n",
+        "echo je suis au cours $cours\n"
+      ]
+    },
+    {
+      "name": "tp5_ex2.sh",
+      "lines": [
+        "Mon nom de login est : echo set $USER\n",
+        "Mon shell est : echo set $SHELL\n",
+        "Les variables du shell sont :\n",
+        "echo set | more\n",
+        "Celles d'environnement sont :\n",
+        "echo env | more\n"
+      ]
+    },
+    {
+      "name": "tp5_exo2.sh",
+      "lines": [
+        "echo login : $USER\n",
+        "echo shell : $SHELL\n",
+        "echo variables shell :\n",
+        "echo set | more\n",
+        "echo variables environnement :\n",
+        "echo env | more\n"
+      ]
+    },
+    {
+      "name": "tp5_exo3.sh",
+      "lines": [
+        "#!bin/bash\n",
+        "echo Cher utilisateur quel est ton prenom \\?\n",
+        "read prenom\n",
+        "echo Ravi de te connaitre, $prenom\n",
+        "echo Quel est ton nom et ton age \\?\n",
+        "read nom age\n",
+        "echo Tu es $prenom $nom et tu as $age ans, n\\'est-ce pas \\?\n",
+        "read reponse\n"
+      ]
+    }
   ],
   "profile": [
     {

@@ -2,127 +2,42 @@
   "name": "ext_Kevin.Rochis",
   "session": 3,
   "scripts": [
-    [
-      "expr 10 / 2"
-    ],
-    [
-      "expr 10 / 2\n",
-      "echo divise=$(($1/2))\n"
-    ],
-    [
-      "expr 10 / 2\n",
-      "echo $(($1/2))\n"
-    ],
-    [
-      "expr $1 * 2\n"
-    ],
-    [
-      "expr $1 * 2\n",
-      "echo $(($1*2))\n"
-    ],
-    [
-      "expr ($1 * 2)\n",
-      "echo $(($1*2))\n"
-    ],
-    [
-      "expr $1 \\ 2\n",
-      "echo $(($1*2))\n"
-    ],
-    [
-      "expr $1 \\* 2\n",
-      "echo $(($1*2))\n"
-    ],
-    [
-      "echo quelle est votre &nn\u00c3\u00a9e de naissance \\?\n"
-    ],
-    [
-      "echo quelle est votre &nn\u00c3\u00a9e de naissance \\?\n",
-      "read date \n"
-    ],
-    [
-      "echo quelle est votre &nn\u00c3\u00a9e de naissance \\?\n",
-      "read date \n",
-      "echo vous etes n\u00c3\u00a9 en $date , vous avez donc $((date-$age))\n"
-    ],
-    [
-      "echo quelle est votre ann\u00c3\u00a9e de naissance \\?\n",
-      "read age\n",
-      "echo vous etes n\u00c3\u00a9 en $date , vous avez donc $((date-$age))\n"
-    ],
-    [
-      "echo quelle est votre ann\u00c3\u00a9e de naissance \\?\n",
-      "read age\n",
-      "expr age=date \\- $age\n",
-      "echo vous etes n\u00c3\u00a9 en age , vous avez donc $age\n"
-    ],
-    [
-      "echo quelle est votre ann\u00c3\u00a9e de naissance \\?\n",
-      "read age\n",
-      "expr date \\- $age\n",
-      "echo vous etes n\u00c3\u00a9 en $age , vous avez donc $age\n"
-    ],
-    [
-      "echo quelle est votre ann\u00c3\u00a9e de naissance \\?\n",
-      "read age\n",
-      "expr 2020 \\- $age\n",
-      "echo vous etes n\u00c3\u00a9 en $age , vous avez donc $((2020-$age))\n"
-    ],
-    [
-      "echo il y a $(who) personne connect\u00c3\u00a9s sur $(cmd)\n"
-    ],
-    [
-      "echo il y a $(who -q) personne connect\u00c3\u00a9s sur $(cmd)\n"
-    ],
-    [
-      "echo il y a $(who -q) personne connect\u00c3\u00a9s sur $(hostname)\n"
-    ],
-    [
-      "set $(ls -l $1)\n"
-    ],
-    [
-      "set $(ls -sh)\n",
-      "echo $1\n"
-    ],
-    [
-      "set $(ls -s)\n",
-      "echo $1\n"
-    ],
-    [
-      "set $(ls -s)\n",
-      "echo $1 $2\n"
-    ],
-    [
-      "set $(wc -m)\n",
-      "echo $1 $2\n"
-    ],
-    [
-      "set $(wc -m)\n",
-      "echo $1\n"
-    ],
-    [
-      "set $(ls -s)\n",
-      "echo $1 $2\n"
-    ],
-    [
-      "set $(ls -l)\n",
-      "echo $1 $2\n"
-    ],
-    [
-      "set $(ls -l)\n",
-      "echo $2 $1\n"
-    ],
-    [
-      "set $(ls -l $1)\n",
-      "echo $1\n"
-    ],
-    [
-      "set -- $(ls -l $1)\n",
-      "echo $1\n"
-    ],
-    [
-      "set -- $(ls -l $1)\n",
-      "echo $5\n"
-    ]
+    {
+      "name": "tp5bis_exo1.sh",
+      "lines": [
+        "expr 10 / 2\n",
+        "echo $(($1/2))\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo2.sh",
+      "lines": [
+        "expr $1 \\* 2\n",
+        "echo $(($1*2))\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo3.sh",
+      "lines": [
+        "echo quelle est votre ann\u00c3\u00a9e de naissance \\?\n",
+        "read age\n",
+        "expr 2020 \\- $age\n",
+        "echo vous etes n\u00c3\u00a9 en $age , vous avez donc $((2020-$age))\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo4.sh",
+      "lines": [
+        "echo il y a $(who -q) personne connect\u00c3\u00a9s sur $(hostname)\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo5.sh",
+      "lines": [
+        "set -- $(ls -l $1)\n",
+        "echo $5\n"
+      ]
+    }
   ],
   "profile": [
     {

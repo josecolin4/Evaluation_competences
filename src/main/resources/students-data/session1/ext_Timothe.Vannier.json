@@ -2,208 +2,126 @@
   "name": "ext_Timothe.Vannier",
   "session": 1,
   "scripts": [
-    [
-      "#!/bin/bash\n",
-      "echo cours\n",
-      "cours=unix\n",
-      "echo $cours\n",
-      "echo je suis au cours $cours\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "mon nom de login est : $LOGNAME\n",
-      "mon shell est : $SHELL\n",
-      "les variables du shell sont : $SET\n",
-      "Celles d'environnements sont : $ENV\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "mon nom de login est : $LOGNAME\n",
-      "mon shell est : $SHELL\n",
-      "les variables du shell sont : /SET\n",
-      "Celles d'environnements sont : /ENV\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "mon nom de login est : $LOGNAME\n",
-      "mon shell est : $SHELL\n",
-      "les variables du shell sont : $SET\n",
-      "Celles d environnements sont : $ENV\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "mon nom de login est : $LOGNAME\n",
-      "mon shell est : $SHELL\n",
-      "les variables du shell sont : /SET\n",
-      "Celles d environnements sont : /ENV\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo mon nom de login est : $LOGNAME\n",
-      "echo mon shell est : $SHELL\n",
-      "echo les variables du shell sont :\n",
-      "set\n",
-      "echo Celles d environnements sont :\n",
-      "env\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Cher utilisateur quel est ton pr\u00c3\u00a9nom \\?\n",
-      "read prenom\n",
-      "echo Ravi de te connaitre, $prenom\n",
-      "echo Quel est ton nom et ton age \\?\n",
-      "read nom age\n",
-      "echo Tu es $prenom $nom et tu as $age ans, n\\'est-ce pas \\?\n",
-      "read reponse\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Je suis le script Shell $0\n",
-      "echo Mes arguments sont $*\n",
-      "echo Le premier argument est $1\n",
-      "echo le deuxieme argument est $2\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo mon nom de login est : $LOGNAME\n",
-      "echo mon shell est : $SHELL\n",
-      "echo les variables du shell sont :\n",
-      "set\n",
-      "echo Celles d environnements sont :\n",
-      "env\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Cher utilisateur quel est ton pr\u00c3\u00a9nom \\?\n",
-      "read prenom\n",
-      "echo Ravi de te connaitre, $prenom\n",
-      "echo Quel est ton nom et ton age \\?\n",
-      "read nom age\n",
-      "echo Tu es $prenom $nom et tu as $age ans, n\\'est-ce pas \\?\n",
-      "read reponse\n"
-    ],
-    [
-      "echo Le script $0\n",
-      "echo possede $#\n",
-      "echo param\u00c3\u00a8tre(s), que voici : $*\n"
-    ],
-    [
-      "echo Le script $0\n",
-      "echo possede $#\n",
-      "echo param\u00c3\u00a8tre\\(s\\), que voici : $*\n"
-    ],
-    [
-      "cat $1 $2 > $3\n"
-    ],
-    [
-      "Nous sommes le `date`\n",
-      "Nous sommes le Mon Nov 16 15:20:46 CET 2020\n",
-      "Ceci est une tr\u00c3\u00a8s longue phrase ...\n",
-      "Voici une \u00c3\u00a9toile :*\n"
-    ],
-    [
-      "echo Nous sommes le `date`\n",
-      "echo Nous sommes le Mon Nov 16 15:20:46 CET 2020\n",
-      "echo Ceci est une tr\u00c3\u00a8s longue phrase ...\n",
-      "echo Voici une \u00c3\u00a9toile :*\n"
-    ],
-    [
-      "echo Nous sommes le `date`\n",
-      "echo Nous sommes le Mon Nov 16 15:20:46 CET 2020\n",
-      "echo Ceci est\n",
-      "echo une tr\u00c3\u00a8s\n",
-      "echo longue phrase ...\n",
-      "echo Voici une \u00c3\u00a9toile :*\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "arg=$1+1\n",
-      "echo $arg\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Nous sommes le `date`\n",
-      "echo Nous sommes le Mon Nov 16 15:20:46 CET 2020\n",
-      "echo Ceci est\n",
-      "echo une tr\u00c3\u00a8s\n",
-      "echo longue phrase ...\n",
-      "echo Voici une \u00c3\u00a9toile :*\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "cat $1 $2 > $3\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Le script $0\n",
-      "echo possede $#\n",
-      "echo param\u00c3\u00a8tre\\(s\\), que voici : $*\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "arg=$1\n",
-      "stk=exprarg+1\n",
-      "echo $stk\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "arg=$1\n",
-      "stk=expr $arg+1\n",
-      "echo $stk\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "arg=$1\n",
-      "arg2=1\n",
-      "stk=expr $arg + $arg2\n",
-      "echo $stk\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "arg=$1\n",
-      "stk=`expr $arg + 1`\n",
-      "echo $stk\n",
-      "\n",
-      "\n"
-    ],
-    [
-      "\n"
-    ],
-    [
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "PATH=$PATH:/root\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "PATH=`$PATH:/root`\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "PATH=$PATH:/root\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "PATH=$PATH:$HOME\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "export PATH=$PATH:$HOME\n"
-    ]
+    {
+      "name": "tp5_exo1.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo cours\n",
+        "cours=unix\n",
+        "echo $cours\n",
+        "echo je suis au cours $cours\n",
+        "\n"
+      ]
+    },
+    {
+      "name": "tp5_ex2.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo mon nom de login est : $LOGNAME\n",
+        "echo mon shell est : $SHELL\n",
+        "echo les variables du shell sont :\n",
+        "set\n",
+        "echo Celles d environnements sont :\n",
+        "env\n",
+        "\n"
+      ]
+    },
+    {
+      "name": "tp5_ex3.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo Cher utilisateur quel est ton pr\u00c3\u00a9nom \\?\n",
+        "read prenom\n",
+        "echo Ravi de te connaitre, $prenom\n",
+        "echo Quel est ton nom et ton age \\?\n",
+        "read nom age\n",
+        "echo Tu es $prenom $nom et tu as $age ans, n\\'est-ce pas \\?\n",
+        "read reponse\n"
+      ]
+    },
+    {
+      "name": "tp5_exo4.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo Je suis le script Shell $0\n",
+        "echo Mes arguments sont $*\n",
+        "echo Le premier argument est $1\n",
+        "echo le deuxieme argument est $2\n",
+        "\n"
+      ]
+    },
+    {
+      "name": "tp5_exo2.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo mon nom de login est : $LOGNAME\n",
+        "echo mon shell est : $SHELL\n",
+        "echo les variables du shell sont :\n",
+        "set\n",
+        "echo Celles d environnements sont :\n",
+        "env\n",
+        "\n"
+      ]
+    },
+    {
+      "name": "tp5_exo3.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo Cher utilisateur quel est ton pr\u00c3\u00a9nom \\?\n",
+        "read prenom\n",
+        "echo Ravi de te connaitre, $prenom\n",
+        "echo Quel est ton nom et ton age \\?\n",
+        "read nom age\n",
+        "echo Tu es $prenom $nom et tu as $age ans, n\\'est-ce pas \\?\n",
+        "read reponse\n"
+      ]
+    },
+    {
+      "name": "tp5_exo5.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo Le script $0\n",
+        "echo possede $#\n",
+        "echo param\u00c3\u00a8tre\\(s\\), que voici : $*\n"
+      ]
+    },
+    {
+      "name": "tp5_exo6.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "cat $1 $2 > $3\n"
+      ]
+    },
+    {
+      "name": "tp5_exo7.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo Nous sommes le `date`\n",
+        "echo Nous sommes le Mon Nov 16 15:20:46 CET 2020\n",
+        "echo Ceci est\n",
+        "echo une tr\u00c3\u00a8s\n",
+        "echo longue phrase ...\n",
+        "echo Voici une \u00c3\u00a9toile :*\n"
+      ]
+    },
+    {
+      "name": "tp5_exo8.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "arg=$1\n",
+        "stk=`expr $arg + 1`\n",
+        "echo $stk\n",
+        "\n",
+        "\n"
+      ]
+    },
+    {
+      "name": "tp5_exo9.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "export PATH=$PATH:$HOME\n"
+      ]
+    }
   ],
   "profile": [
     {

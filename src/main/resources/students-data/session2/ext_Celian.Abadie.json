@@ -2,158 +2,34 @@
   "name": "ext_Celian.Abadie",
   "session": 2,
   "scripts": [
-    [
-      "#!/bin/bash\n",
-      "valeur=`$1/2`\n",
-      "echo $valeur\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "valeur=`$1/2`\n",
-      "echo $valeur\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "valeur=`expr $1/2`\n",
-      "echo $valeur\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "valeur=`expr $1\\/2`\n",
-      "echo $valeur\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "valeur=expr ($1/2)\n",
-      "echo $valeur\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "valeur=`expr ($1/2)`\n",
-      "echo $valeur\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "valeur=`expr $1/2`\n",
-      "echo $valeur\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "valeur=`expr $1 / 2`\n",
-      "echo $valeur\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "valeur=`expr $1 / 2`\n",
-      "echo $valeur\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "valeur=$1\n",
-      "echo $((valeur/2))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "valeur=$1\n",
-      "echo $((valeur/2))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "valeur=$1\n",
-      "echo $((valeur*2))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo \"entrer votre ann\u00c3\u00a9e de naissance\"\n",
-      "$ read naissance\n",
-      "age=`expr $DATE - naissance`\n",
-      "echo \"vous etes n\u00c3\u00a9(e) en \" $naissance\" ,vous avez alors \"$age\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo \"entrer votre ann\u00c3\u00a9e de naissance\"\n",
-      "read naissance\n",
-      "age=`expr $DATE - naissance`\n",
-      "echo \"vous etes n\u00c3\u00a9(e) en \" $naissance\" ,vous avez alors \"$age\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo $DATE\n",
-      "echo \"entrer votre ann\u00c3\u00a9e de naissance\"\n",
-      "read naissance\n",
-      "age=`expr $DATE - naissance`\n",
-      "echo \"vous etes n\u00c3\u00a9(e) en \" $naissance\" ,vous avez alors \"$age\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo \"entrer votre ann\u00c3\u00a9e de naissance\"\n",
-      "read naissance\n",
-      "date=`date`\n",
-      "age=`expr $date - naissance`\n",
-      "echo \"vous etes n\u00c3\u00a9(e) en \" $naissance\" ,vous avez alors \"$age\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo \"entrer votre ann\u00c3\u00a9e de naissance\"\n",
-      "read naissance\n",
-      "date=`date +%y`\n",
-      "age=`expr $date - naissance`\n",
-      "echo \"vous etes n\u00c3\u00a9(e) en \" $naissance\" ,vous avez alors \"$age\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo \"entrer votre ann\u00c3\u00a9e de naissance\"\n",
-      "read naissance\n",
-      "date=`date +%y`\n",
-      "echo $date\n",
-      "age=`expr $date - naissance`\n",
-      "echo \"vous etes n\u00c3\u00a9(e) en \" $naissance\" ,vous avez alors \"$age\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo \"entrer votre ann\u00c3\u00a9e de naissance\"\n",
-      "read naissance\n",
-      "anne=`date +%Y`\n",
-      "echo $date\n",
-      "age=`expr $anne - naissance`\n",
-      "echo \"vous etes n\u00c3\u00a9(e) en \" $naissance\" ,vous avez alors \"$age\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo \"entrer votre ann\u00c3\u00a9e de naissance\"\n",
-      "read naissance\n",
-      "anne=`date +%y`\n",
-      "echo $date\n",
-      "age=`expr $anne - naissance`\n",
-      "echo \"vous etes n\u00c3\u00a9(e) en \" $naissance\" ,vous avez alors \"$age\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo \"entrer votre ann\u00c3\u00a9e de naissance\"\n",
-      "read naissance\n",
-      "anne=`date +%Y`\n",
-      "echo $date\n",
-      "age=`expr $anne - naissance`\n",
-      "echo \"vous etes n\u00c3\u00a9(e) en \" $naissance\" ,vous avez alors \"$age\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo \"entrer votre ann\u00c3\u00a9e de naissance\"\n",
-      "read naissance\n",
-      "anne=`date \"+%Y\"`\n",
-      "echo $date\n",
-      "age=`expr $anne - naissance`\n",
-      "echo \"vous etes n\u00c3\u00a9(e) en \" $naissance\" ,vous avez alors \"$age\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo \"entrer votre ann\u00c3\u00a9e de naissance\"\n",
-      "read naissance\n",
-      "anne=`date \"+%Y\"`\n",
-      "echo $date\n",
-      "age=`expr $anne - naissance`\n",
-      "echo \"vous etes n\u00c3\u00a9(e) en \" $naissance\" ,vous avez alors \"$age\n"
-    ]
+    {
+      "name": "tp5bis_exo1.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "valeur=$1\n",
+        "echo $((valeur/2))\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo2.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "valeur=$1\n",
+        "echo $((valeur*2))\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo3.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo \"entrer votre ann\u00c3\u00a9e de naissance\"\n",
+        "read naissance\n",
+        "anne=`date \"+%Y\"`\n",
+        "echo $date\n",
+        "age=`expr $anne - naissance`\n",
+        "echo \"vous etes n\u00c3\u00a9(e) en \" $naissance\" ,vous avez alors \"$age\n"
+      ]
+    }
   ],
   "profile": [
     {

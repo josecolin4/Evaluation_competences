@@ -2,51 +2,22 @@
   "name": "ext_Jessy.Monrocq",
   "session": 2,
   "scripts": [
-    [
-      "echo Nous sommes le `date`\n"
-    ],
-    [],
-    [
-      "echo Nous sommes le '\u00c3`date`'\n"
-    ],
-    [
-      "echo Nous sommes le '\u00c3`date`'\n",
-      "echo Nous sommes le `date +\"%a\" +\"%b\" +\"%d\" +\"%T\" +\"%Z\" +\"%Y\"`\n"
-    ],
-    [
-      "echo Nous sommes le '\u00c3`date`'\n",
-      "echo Nous sommes le `date +\"%a\" +\"%b\" +\"%d\" +\"%T\" +\"%Z\" +\"%Y\"`\n",
-      "echo -e Ceci est \\n une tres \\n longue phrase...\n"
-    ],
-    [
-      "echo Nous sommes le '\u00c3`date`'\n",
-      "echo Nous sommes le `date +\"%a\" +\"%b\" +\"%d\" +\"%T\" +\"%Z\" +\"%Y\"`\n",
-      "echo -e Ceci est \\n une tres \\n longue phrase...\n",
-      "echo Voici une etoile : \"*\"\n"
-    ],
-    [],
-    [
-      "echo Nous sommes le '`date`'\n"
-    ],
-    [
-      "echo Nous sommes le '`date`'\n",
-      "echo Nous sommes le `date +\"%a %b %d %T %Z %Y\"`\n"
-    ],
-    [
-      "echo Nous sommes le '`date`'\n",
-      "echo Nous sommes le `date +\"%a %b %d %T %Z %Y\"`\n",
-      "echo Ceci est$'\\n'une tres$'\\n'longue phrase...\n"
-    ],
-    [
-      "echo Nous sommes le '`date`'\n",
-      "echo Nous sommes le `date +\"%a %b %d %T %Z %Y\"`\n",
-      "echo Ceci est$'\\n'une tres$'\\n'longue phrase...\n",
-      "echo Voici une etoile : \"*\"\n"
-    ],
-    [
-      "resultat=$(($1+1))\n",
-      "echo $resultat\n"
-    ]
+    {
+      "name": "tp5_exo7.sh",
+      "lines": [
+        "echo Nous sommes le '`date`'\n",
+        "echo Nous sommes le `date +\"%a %b %d %T %Z %Y\"`\n",
+        "echo Ceci est$'\\n'une tres$'\\n'longue phrase...\n",
+        "echo Voici une etoile : \"*\"\n"
+      ]
+    },
+    {
+      "name": "tp5_exo8.sh",
+      "lines": [
+        "resultat=$(($1+1))\n",
+        "echo $resultat\n"
+      ]
+    }
   ],
   "profile": [
     {

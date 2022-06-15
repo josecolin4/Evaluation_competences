@@ -2,16 +2,22 @@
   "name": "ext_Thomas.Daure",
   "session": 2,
   "scripts": [
-    [
-      "#!/bin/bash\n",
-      "echo le script $0 poss\u00c3\u00a8de $# param\u00c3\u00a8tre , que voici : $*\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "paste -d ' ' F1 F2 > F3\n",
-      "\n"
-    ]
+    {
+      "name": "tp5_exo5.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo le script $0 poss\u00c3\u00a8de $# param\u00c3\u00a8tre , que voici : $*\n",
+        "\n"
+      ]
+    },
+    {
+      "name": "tp5_exo6.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "paste -d ' ' F1 F2 > F3\n",
+        "\n"
+      ]
+    }
   ],
   "profile": [
     {

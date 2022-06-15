@@ -2,132 +2,207 @@
   "name": "ext_Bader.Bouchfar",
   "session": 3,
   "scripts": [
-    [
-      "expr 1+2\n"
-    ],
-    [
-      "expr 1 + 2\n"
-    ],
-    [
-      "expr $1 + $2\n",
-      "\n",
-      "exho $(($1 + $2))\n"
-    ],
-    [
-      "expr $1 + $2\n",
-      "\n",
-      "echo $(($1 + $2))\n"
-    ],
-    [
-      "expr $1 / $2\n",
-      "\n",
-      "echo $(($1 + $2))\n"
-    ],
-    [
-      "expr $1 / $2\n",
-      "\n",
-      "echo $(($1 / $2))\n"
-    ],
-    [
-      "expr $1 / $2\n",
-      "\n",
-      "echo $(($1/$2))\n"
-    ],
-    [
-      "expr $1 / 2\n",
-      "\n",
-      "echo $(($1/2))\n"
-    ],
-    [
-      "expr $1 * 2\n"
-    ],
-    [
-      "expr $1 *2\n"
-    ],
-    [
-      "expr $1 \\* 2\n"
-    ],
-    [
-      "expr $1 \\* 2\n",
-      "echo $(($1 * 2))\n"
-    ],
-    [
-      "myyear=`date +'%Y'`\n",
-      "\n",
-      "echo $myyear\n"
-    ],
-    [
-      "year=`date +'%Y'`\n",
-      "\n",
-      "echo \"vous etes ne quel annee\"\n",
-      "read naissance\n",
-      "\n",
-      "echo  \"vous avez \"\n",
-      "expr $date - $naissance\n",
-      "echo \"an\"\n"
-    ],
-    [
-      "year=`date +'%Y'`\n",
-      "\n",
-      "echo \"vous etes ne quel annee\"\n",
-      "read naissance\n",
-      "\n",
-      "echo  \"vous avez \"\n",
-      "echo $(($date - $naissance))\n",
-      "echo \"an\"\n"
-    ],
-    [
-      "year=`date +'%Y'`\n",
-      "echo $year\n",
-      "echo \"vous etes ne quel annee\"\n",
-      "read naissance\n",
-      "\n",
-      "echo  \"vous avez \"\n",
-      "echo $(($date - $naissance))\n",
-      "echo \"an\"\n"
-    ],
-    [
-      "year=`date +'%Y'`\n",
-      "echo $year\n",
-      "echo \"vous etes ne quel annee\"\n",
-      "read naissance\n",
-      "\n",
-      "echo  \"vous avez \"\n",
-      "echo $(($year - $naissance))\n",
-      "echo \"an\"\n"
-    ],
-    [
-      "year=`date +'%Y'`\n",
-      "echo $year\n",
-      "echo \"vous etes ne quel annee\"\n",
-      "read naissance\n",
-      "\n",
-      "echo  \"vous avez \"\n",
-      "expr $year - $naissance\n",
-      "echo $(($year - $naissance))\n",
-      "echo \"an\"\n"
-    ],
-    [
-      "`who`\n"
-    ],
-    [
-      "echo `who`\n"
-    ],
-    [
-      "`who`| wc -l\n"
-    ],
-    [
-      "`hostname`\n"
-    ],
-    [
-      "$(hostname)\n"
-    ],
-    [
-      "echo `who | wc -l`\n"
-    ],
-    [
-      "echo \"il y a`who | wc -l` utilisateurs dans la machine `hostname` \"\n"
-    ]
+    {
+      "name": "_1606731750__root_tp5bis__exo1.sh",
+      "lines": [
+        "expr 1+2\n"
+      ]
+    },
+    {
+      "name": "_1606731782__root_tp5bis__exo1.sh",
+      "lines": [
+        "expr 1 + 2\n"
+      ]
+    },
+    {
+      "name": "_1606731837__root_tp5bis__exo1.sh",
+      "lines": [
+        "expr $1 + $2\n",
+        "\n",
+        "exho $(($1 + $2))\n"
+      ]
+    },
+    {
+      "name": "_1606731852__root_tp5bis__exo1.sh",
+      "lines": [
+        "expr $1 + $2\n",
+        "\n",
+        "echo $(($1 + $2))\n"
+      ]
+    },
+    {
+      "name": "_1606732314__root_tp5bis__exo1.sh",
+      "lines": [
+        "expr $1 / $2\n",
+        "\n",
+        "echo $(($1 + $2))\n"
+      ]
+    },
+    {
+      "name": "_1606732331__root_tp5bis__exo1.sh",
+      "lines": [
+        "expr $1 / $2\n",
+        "\n",
+        "echo $(($1 / $2))\n"
+      ]
+    },
+    {
+      "name": "_1606732426__root_tp5bis__exo1.sh",
+      "lines": [
+        "expr $1 / $2\n",
+        "\n",
+        "echo $(($1/$2))\n"
+      ]
+    },
+    {
+      "name": "_1606732460__root_tp5bis__exo1.sh",
+      "lines": [
+        "expr $1 / 2\n",
+        "\n",
+        "echo $(($1/2))\n"
+      ]
+    },
+    {
+      "name": "_1606732605__root_tp5bis__exo2.sh",
+      "lines": [
+        "expr $1 * 2\n"
+      ]
+    },
+    {
+      "name": "_1606732652__root_tp5bis__exo2.sh",
+      "lines": [
+        "expr $1 *2\n"
+      ]
+    },
+    {
+      "name": "_1606732711__root_tp5bis__exo2.sh",
+      "lines": [
+        "expr $1 \\* 2\n"
+      ]
+    },
+    {
+      "name": "_1606732741__root_tp5bis__exo2.sh",
+      "lines": [
+        "expr $1 \\* 2\n",
+        "echo $(($1 * 2))\n"
+      ]
+    },
+    {
+      "name": "_1606732899__root_tp5bis__exo3.sh",
+      "lines": [
+        "myyear=`date +'%Y'`\n",
+        "\n",
+        "echo $myyear\n"
+      ]
+    },
+    {
+      "name": "_1606733048__root_tp5bis__exo3.sh",
+      "lines": [
+        "year=`date +'%Y'`\n",
+        "\n",
+        "echo \"vous etes ne quel annee\"\n",
+        "read naissance\n",
+        "\n",
+        "echo  \"vous avez \"\n",
+        "expr $date - $naissance\n",
+        "echo \"an\"\n"
+      ]
+    },
+    {
+      "name": "_1606733117__root_tp5bis__exo3.sh",
+      "lines": [
+        "year=`date +'%Y'`\n",
+        "\n",
+        "echo \"vous etes ne quel annee\"\n",
+        "read naissance\n",
+        "\n",
+        "echo  \"vous avez \"\n",
+        "echo $(($date - $naissance))\n",
+        "echo \"an\"\n"
+      ]
+    },
+    {
+      "name": "_1606733155__root_tp5bis__exo3.sh",
+      "lines": [
+        "year=`date +'%Y'`\n",
+        "echo $year\n",
+        "echo \"vous etes ne quel annee\"\n",
+        "read naissance\n",
+        "\n",
+        "echo  \"vous avez \"\n",
+        "echo $(($date - $naissance))\n",
+        "echo \"an\"\n"
+      ]
+    },
+    {
+      "name": "_1606733189__root_tp5bis__exo3.sh",
+      "lines": [
+        "year=`date +'%Y'`\n",
+        "echo $year\n",
+        "echo \"vous etes ne quel annee\"\n",
+        "read naissance\n",
+        "\n",
+        "echo  \"vous avez \"\n",
+        "echo $(($year - $naissance))\n",
+        "echo \"an\"\n"
+      ]
+    },
+    {
+      "name": "_1606733218__root_tp5bis__exo3.sh",
+      "lines": [
+        "year=`date +'%Y'`\n",
+        "echo $year\n",
+        "echo \"vous etes ne quel annee\"\n",
+        "read naissance\n",
+        "\n",
+        "echo  \"vous avez \"\n",
+        "expr $year - $naissance\n",
+        "echo $(($year - $naissance))\n",
+        "echo \"an\"\n"
+      ]
+    },
+    {
+      "name": "_1606733421__root_tp5bis__exo4.sh",
+      "lines": [
+        "`who`\n"
+      ]
+    },
+    {
+      "name": "_1606733470__root_tp5bis__exo4.sh",
+      "lines": [
+        "echo `who`\n"
+      ]
+    },
+    {
+      "name": "_1606733549__root_tp5bis__exo4.sh",
+      "lines": [
+        "`who`| wc -l\n"
+      ]
+    },
+    {
+      "name": "_1606733588__root_tp5bis__exo4.sh",
+      "lines": [
+        "`hostname`\n"
+      ]
+    },
+    {
+      "name": "_1606733891__root_tp5bis__exo4.sh",
+      "lines": [
+        "$(hostname)\n"
+      ]
+    },
+    {
+      "name": "_1606734075__root_tp5bis__exo4.sh",
+      "lines": [
+        "echo `who | wc -l`\n"
+      ]
+    },
+    {
+      "name": "_1606734159__root_tp5bis__exo4.sh",
+      "lines": [
+        "echo \"il y a`who | wc -l` utilisateurs dans la machine `hostname` \"\n"
+      ]
+    }
   ],
   "profile": [
     {

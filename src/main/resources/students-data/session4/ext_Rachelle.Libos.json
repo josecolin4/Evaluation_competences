@@ -2,123 +2,39 @@
   "name": "ext_Rachelle.Libos",
   "session": 4,
   "scripts": [
-    [
-      "\n",
-      "echo expr  $1 / $2\n"
-    ],
-    [
-      "\n",
-      "echo expr  $1 / 2\n"
-    ],
-    [
-      "\n",
-      "echo expr  $1 / 2 #affiche \n"
-    ],
-    [
-      "\n",
-      "echo expr \\ $1  /  2 \\ \n"
-    ],
-    [
-      "\n",
-      "echo expr \\$1  /  2\\ \n"
-    ],
-    [
-      "\n",
-      "echo ` expr $1  / 2` \n"
-    ],
-    [
-      "\n",
-      "\\echo ` expr $1  / 2` \n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo $(expr $1  /  2)\n",
-      "\n",
-      "#echo ` expr $1  / 2` \n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo $(expr $1  /  2)\n",
-      "\n",
-      "/#echo ` expr $1  / 2` \n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo $(expr $1  /  2)\n",
-      "echo ` expr $1  / 2` \n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo $(expr $1  *  2)\n",
-      "\n",
-      "echo ` expr $1  *  2`\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo $(expr $1  /*  2)\n",
-      "\n",
-      "echo ` expr $1  /*  2`\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo $(expr $1  \\*  2)\n",
-      "\n",
-      "echo ` expr $1  \\*  2`\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      " echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
-      " read  annee\n",
-      " echo Vous etes ne(e) en $annee vous avez donc $(expr `date +%Y` - $annee)\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      " echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
-      " read  annee\n",
-      " echo Vous etes ne(e) en $annee vous avez donc $(expr `date +%Y`  -  $annee)\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      " echo Quelle est votre annee de naissance ?\n",
-      " read  annee \n",
-      " echo Vous etes ne(e) en $annee vous avez donc $(expr `date +%Y`  -  $annee)\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      " echo Quelle est votre annee de naissance ?\n",
-      " read  annee \n",
-      " echo Vous etes ne(e) en $annee vous avez donc `expr $(date +%Y`)  -  $annee` ans\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      " echo Quelle est votre annee de naissance ?\n",
-      " read  annee \n",
-      " echo Vous etes ne(e) en $annee vous avez donc $(expr `date +%Y`  -  $annee` ans\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      " echo Quelle est votre annee de naissance ?\n",
-      " read  annee \n",
-      " echo Vous etes ne(e) en $annee vous avez donc $(expr `date +%Y`  -  $annee) ans\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      " echo Quelle est votre annee de naissance ?\n",
-      " read  annee \n",
-      " echo Vous etes ne(e) en $annee vous avez donc `(expr `date +%Y`  -  $annee`) ans\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      " echo Quelle est votre annee de naissance ?\n",
-      " read  annee \n",
-      " echo Vous etes nee en $annee vous avez donc $(expr `date +%Y`  -  $annee) ans\n"
-    ],
-    [
-      "\n"
-    ]
+    {
+      "name": "tp5bis_exo1.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo $(expr $1  /  2)\n",
+        "echo ` expr $1  / 2` \n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo2.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "\n",
+        "echo $(expr $1  \\*  2)\n",
+        "\n",
+        "echo ` expr $1  \\*  2`\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo3.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        " echo Quelle est votre annee de naissance ?\n",
+        " read  annee \n",
+        " echo Vous etes nee en $annee vous avez donc $(expr `date +%Y`  -  $annee) ans\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo4.sh",
+      "lines": [
+        "\n"
+      ]
+    }
   ],
   "profile": [
     {

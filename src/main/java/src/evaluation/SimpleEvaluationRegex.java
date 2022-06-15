@@ -27,28 +27,26 @@ public class SimpleEvaluationRegex extends Evaluation {
 
         for (String competency : competenciesToEvaluate) {
             if (regexList.containsKey(competency)) {
+                // TODO implement a better strategy
+                int occurence = 0;
                 for (String regex : regexList.get(competency)) {
 
-                    // TODO implement a better strategy
-                    int occurence = 0;
                     for (List<String> script : data.getScripts()) {
-
+                        String code = "";
                         for (String line : script) {
-
-                            occurence += search(regex, line, printWhenFound) ? 1 : 0;
+                            code += line;
                         }
+                        occurence += search(regex, code, printWhenFound) ? 1 : 0;
                     }
 
                     for (Command command : data.getCommands()) {
                         occurence += search(regex, command.getCommand(), printWhenFound) && command.getScore() ? 1 : 0;
                     }
+                }
 
-                    // TODO find better measurement
-                    if (occurence == 1) {
-                        profile.put("Conna\u00c3\u00aetre_la_syntaxe_de_instruction_set", 0.5);
-                    } else if (occurence > 1) {
-                        profile.put("Conna\u00c3\u00aetre_la_syntaxe_de_instruction_set", 1.0);
-                    }
+                // TODO find better measurement
+                if (occurence >= 1) {
+                    profile.put(competency, 1.0);
                 }
             }
         }
@@ -63,19 +61,18 @@ public class SimpleEvaluationRegex extends Evaluation {
 
     public boolean search(String regex, String codeLine, boolean printWhenFound) {
         // remove \n to avoid problems with matcher
-        codeLine = codeLine.replace("\n", "");
+        codeLine = codeLine.replace("\n", ";");
 
         Pattern pattern = Pattern.compile(regex);
         Matcher matcher = pattern.matcher(codeLine);
 
         if (matcher.matches()) {
             if (printWhenFound) {
-                System.out.println(codeLine);
+                System.out.println(regex + "matched with command : " + codeLine);
             }
             return true;
         } else {
             return false;
         }
-        //return matcher.matches() ? 1 : 0;  // we count only one occurrence per lign of code
     }
 }

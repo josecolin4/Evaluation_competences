@@ -2,275 +2,47 @@
   "name": "ext_Adrien.Delmote",
   "session": 3,
   "scripts": [
-    [
-      "echo donner un nombre /?\n",
-      "read n\n",
-      "if test n -gt 4 and test 11 -lt n\n",
-      "\tthen\n",
-      "\t\techo ok\n",
-      "else\n",
-      "\techo ko\n",
-      "\n"
-    ],
-    [
-      "echo donner un nombre /?\n",
-      "read n\n",
-      "if test n -gt 4 and test 11 -lt n\n",
-      "\tthen\n",
-      "\t\techo ok\n",
-      "else\n",
-      "\techo ko\n",
-      "fi\n"
-    ],
-    [
-      "\n",
-      "if test $* -gt 4 and test 11 -lt $*\n",
-      "\tthen\n",
-      "\t\techo ok\n",
-      "else\n",
-      "\techo ko\n",
-      "fi\n"
-    ],
-    [
-      "\n",
-      "if test $* -gt 4 and test 11 -lt $*\n",
-      "\tthen\n",
-      "\t\techo ok\n",
-      "\telse\n",
-      "\t\techo ko\n",
-      "fi\n"
-    ],
-    [
-      "\n",
-      "if test $* -gt 4 and test 11 -lt $*\n",
-      "\tthen\n",
-      "\t\techo ok\n",
-      "\telse\t\t\n",
-      "\t\techo ko\n",
-      "fi\n"
-    ],
-    [
-      "\n",
-      "if test $1 -gt 4 and test 11 -lt $1\n",
-      "\tthen\n",
-      "\t\techo ok\n",
-      "\telse\t\t\n",
-      "\t\techo ko\n",
-      "fi\n"
-    ],
-    [
-      "\n",
-      "if( test $1 -gt 4) and (test 11 -lt $1)\n",
-      "\tthen\n",
-      "\t\techo ok\n",
-      "\telse\t\t\n",
-      "\t\techo ko\n",
-      "fi\n"
-    ],
-    [
-      "\n",
-      "if test $1 -gt 4 and test 11 -lt $1\n",
-      "\tthen\n",
-      "\t\tif test 11 -lt $1\n",
-      "\t\t\tthen\n",
-      "\t\t\t\techo ok\n",
-      "\t\tfi\n",
-      "\telse\t\t\n",
-      "\t\techo ko\n",
-      "fi\n"
-    ],
-    [
-      "\n",
-      "if test $1 -gt 4 and test 11 -lt $1\n",
-      "\tthen\n",
-      "\t\techo ok \n",
-      "\telse\t\t\n",
-      "\t\techo ko\n",
-      "fi\n"
-    ],
-    [
-      "\n",
-      "if test $1 -gt 4 \n",
-      "\tthen\n",
-      "\t\techo ok \n",
-      "\telse\t\t\n",
-      "\t\techo ko\n",
-      "fi\n"
-    ],
-    [
-      "\n",
-      "if test $1 -gt 4 & test 11 -lt $1\n",
-      "\tthen\n",
-      "\t\techo ok \n",
-      "\telse\t\t\n",
-      "\t\techo ko\n",
-      "fi\n"
-    ],
-    [
-      "\n",
-      "if test $1 -gt 4 & test 11 -lt $1\n",
-      "\tthen\n",
-      "\t\techo ok $1 \n",
-      "\telse\t\t\n",
-      "\t\techo ko\n",
-      "fi\n"
-    ],
-    [
-      "\n",
-      "if test $* -gt 4 & test 11 -lt $*\n",
-      "\tthen\n",
-      "\t\techo ok $* \n",
-      "\telse\t\t\n",
-      "\t\techo ko\n",
-      "fi\n"
-    ],
-    [
-      "\n",
-      "if test $* -gt 4 test -a test 11 -lt $*\n",
-      "\tthen\n",
-      "\t\techo ok $* \n",
-      "\telse\t\t\n",
-      "\t\techo ko\n",
-      "fi\n"
-    ],
-    [
-      "\n",
-      "if test((test $* -gt 4) -a (test 11 -lt $*))\n",
-      "\tthen\n",
-      "\t\techo ok $* \n",
-      "\telse\t\t\n",
-      "\t\techo ko\n",
-      "fi\n"
-    ],
-    [
-      "\n",
-      "if test $* -gt 4 and 11 -lt $*\n",
-      "\tthen\n",
-      "\t\techo ok $* \n",
-      "\telse\t\t\n",
-      "\t\techo ko\n",
-      "fi\n"
-    ],
-    [
-      "\n",
-      "if test $* -gt 4 -a 11 -lt $*\n",
-      "\tthen\n",
-      "\t\techo ok $* \n",
-      "\telse\t\t\n",
-      "\t\techo ko\n",
-      "fi\n"
-    ],
-    [
-      "\n",
-      "if test $* -gt 4 -a $* -le 11\n",
-      "\tthen\n",
-      "\t\techo ok $* \n",
-      "\telse\t\t\n",
-      "\t\techo ko\n",
-      "fi\n"
-    ],
-    [
-      "\n",
-      "if [$* -gt 4 -a $* -le 11]\n",
-      "\tthen\n",
-      "\t\techo ok $* \n",
-      "\telse\t\t\n",
-      "\t\techo ko\n",
-      "fi\n"
-    ],
-    [
-      "\n",
-      "if [ $* -gt 4 -a $* -le 11 ]\n",
-      "\tthen\n",
-      "\t\techo ok $* \n",
-      "\telse\t\t\n",
-      "\t\techo ko\n",
-      "fi\n"
-    ],
-    [
-      "\n",
-      "if [ $* -gt 4 -a $* -le 10 ]\n",
-      "\tthen\n",
-      "\t\techo ok $* \n",
-      "\telse\t\t\n",
-      "\t\techo ko\n",
-      "fi\n"
-    ],
-    [
-      "if test -e $*\n",
-      "\tthen\n",
-      "\t\techo existe\n",
-      "\telse \n",
-      "\t\techo existe pas\n"
-    ],
-    [
-      "if test -e $* -a -r $* -a -w $*\n",
-      "\tthen\n",
-      "\t\techo existe\n",
-      "\telse \n",
-      "\t\techo existe pas\n",
-      "fi\n"
-    ],
-    [
-      "if test -e $1 -a -e $2 \n",
-      "\tthen\n",
-      "\t\techo concat\u00c3\u00a9ner ?\n",
-      "\t\tread n\n",
-      "\t\tif test n = \"oui\"\n",
-      "\t\t\tthen \n",
-      "\t\t\t\techo $1 $2\n",
-      "\t\t\telse\n",
-      "\t\t\t\techo erreur\n",
-      "\t\t\tif\n",
-      "\t\telse \n",
-      "\t\t\techo existe pas \n",
-      "fi\n"
-    ],
-    [
-      "if test -e $1 -a -e $2 \n",
-      "\tthen\n",
-      "\t\techo concat\u00c3\u00a9ner ?\n",
-      "\t\tread n\n",
-      "\t\tif test n = \"oui\"\n",
-      "\t\t\tthen \n",
-      "\t\t\t\techo $1 $2\n",
-      "\t\t\telse\n",
-      "\t\t\t\techo erreur\n",
-      "\t\t\tfi\n",
-      "\t\telse \n",
-      "\t\t\techo existe pas \n",
-      "fi\n"
-    ],
-    [
-      "if test -e $1 -a -e $2 \n",
-      "\tthen\n",
-      "\t\techo concat\u00c3\u00a9ner ?\n",
-      "\t\tread n\n",
-      "\t\tif test $n = \"oui\"\n",
-      "\t\t\tthen \n",
-      "\t\t\t\techo $1 $2\n",
-      "\t\t\telse\n",
-      "\t\t\t\techo erreur\n",
-      "\t\t\tfi\n",
-      "\t\telse \n",
-      "\t\t\techo existe pas \n",
-      "fi\n"
-    ],
-    [
-      "if test -e $1 -a -e $2 \n",
-      "\tthen\n",
-      "\t\techo concat\u00c3\u00a9ner ?\n",
-      "\t\tread n\n",
-      "\t\tif test $n = \"oui\"\n",
-      "\t\t\tthen\n",
-      "\t\t\t\techo $1 $2\n",
-      "\t\t\telse\n",
-      "\t\t\t\techo erreur\n",
-      "\t\t\tfi\n",
-      "\t\telse \n",
-      "\t\t\techo existe pas \n",
-      "fi\n"
-    ]
+    {
+      "name": "tp6_exo1.sh",
+      "lines": [
+        "\n",
+        "if [ $* -gt 4 -a $* -le 10 ]\n",
+        "\tthen\n",
+        "\t\techo ok $* \n",
+        "\telse\t\t\n",
+        "\t\techo ko\n",
+        "fi\n"
+      ]
+    },
+    {
+      "name": "tp6_exo2.sh",
+      "lines": [
+        "if test -e $* -a -r $* -a -w $*\n",
+        "\tthen\n",
+        "\t\techo existe\n",
+        "\telse \n",
+        "\t\techo existe pas\n",
+        "fi\n"
+      ]
+    },
+    {
+      "name": "tp6_exo3.sh",
+      "lines": [
+        "if test -e $1 -a -e $2 \n",
+        "\tthen\n",
+        "\t\techo concat\u00c3\u00a9ner ?\n",
+        "\t\tread n\n",
+        "\t\tif test $n = \"oui\"\n",
+        "\t\t\tthen\n",
+        "\t\t\t\techo $1 $2\n",
+        "\t\t\telse\n",
+        "\t\t\t\techo erreur\n",
+        "\t\t\tfi\n",
+        "\t\telse \n",
+        "\t\t\techo existe pas \n",
+        "fi\n"
+      ]
+    }
   ],
   "profile": [
     {

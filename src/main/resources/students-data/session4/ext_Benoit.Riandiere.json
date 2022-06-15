@@ -2,105 +2,41 @@
   "name": "ext_Benoit.Riandiere",
   "session": 4,
   "scripts": [
-    [],
-    [],
-    [
-      "nano tp5bis_exo5.sh\n"
-    ],
-    [
-      "nano tp5bis_exo5.sh\n",
-      "set -- $(stat -c %s \"$1\") \n"
-    ],
-    [
-      "nano tp5bis_exo5.sh\n",
-      "set -- $(stat -c %s \"$1\") \n",
-      "echo $1\n"
-    ],
-    [
-      "set -- $(stat -c %s \"$1\")\n",
-      "echo $1\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "set -- `ls -l $1` \n",
-      "echo $5\n"
-    ],
-    [],
-    [
-      "[ -e $1 -a -e $2 ] && echo \"$1 et $2 existent\" || echo\"c'est fichiers n'existe pas\"]\n"
-    ],
-    [
-      "[ -e $1 -a -e $2 ] && echo \"$1 et $2 existent\" || echo\"c'est fichiers n'existe pas\"]\n",
-      "echo concatener les fichiers \\?\n"
-    ],
-    [
-      "[ -e $1 -a -e $2 ] && echo \"$1 et $2 existent\" || echo\"c'est fichiers n'existe pas\"]\n",
-      "echo concatener les fichiers \\?\n",
-      "read 0\n"
-    ],
-    [
-      "[ -e $1 -a -e $2 ] && echo \"$1 et $2 existent\" || echo\"c'est fichiers n'existe pas\"]\n",
-      "echo concatener les fichiers \\?\n",
-      "read 0\n",
-      "if [ $0=\"oui\" ]\n"
-    ],
-    [
-      "[ -e $1 -a -e $2 ] && echo \"$1 et $2 existent\" || echo\"c'est fichiers n'existe pas\"]\n",
-      "echo concatener les fichiers \\?\n",
-      "read 0\n",
-      "if [ $0=\"oui\" ]\n",
-      "then\n"
-    ],
-    [
-      "[ -e $1 -a -e $2 ] && echo \"$1 et $2 existent\" || echo\"c'est fichiers n'existe pas\"]\n",
-      "echo concatener les fichiers \\?\n",
-      "read 0\n",
-      "if [ $0=\"oui\" ]\n",
-      "then\n",
-      "cat fichier 1 fichier2>fichier3\n"
-    ],
-    [
-      "[ -e $1 -a -e $2 ] && echo \"$1 et $2 existent\" || echo\"c'est fichiers n'existe pas\"]\n",
-      "echo concatener les fichiers \\?\n",
-      "read 0\n",
-      "if [ $0=\"oui\" ]\n",
-      "then\n",
-      "cat fichier 1 fichier2>fichier3\n",
-      "cat fichier3\n"
-    ],
-    [
-      "[ -e $1 -a -e $2 ] && echo \"$1 et $2 existent\" || echo\"c'est fichiers n'existe pas\"]\n",
-      "echo concatener les fichiers \\?\n",
-      "read 0\n",
-      "if [ $0=\"oui\" ]\n",
-      "then\n",
-      "cat fichier 1 fichier2>fichier3\n",
-      "cat fichier3\n",
-      "if [ $0 !=\"oui\" ]\n"
-    ],
-    [
-      "[ -e $1 -a -e $2 ] && echo \"$1 et $2 existent\" || echo\"c'est fichiers n'existe pas\"]\n",
-      "echo concatener les fichiers \\?\n",
-      "read 0\n",
-      "if [ $0=\"oui\" ]\n",
-      "then\n",
-      "cat fichier 1 fichier2>fichier3\n",
-      "cat fichier3\n",
-      "if [ $0 !=\"oui\" ]\n",
-      "echo ERREUR\n"
-    ],
-    [
-      "[ -e $1 -a -e $2 ] && echo \"$1 et $2 existent\" || echo\"c'est fichiers n'existe pas\"]\n",
-      "echo concatener les fichiers \\?\n",
-      "read 0\n",
-      "if [ $0=\"oui\" ]\n",
-      "then\n",
-      "cat fichier 1 fichier2>fichier3\n",
-      "cat fichier3\n",
-      "if [ $0 !=\"oui\" ]\n",
-      "echo ERREUR\n",
-      "fi\n"
-    ]
+    {
+      "name": "tp5_exo5.sh",
+      "lines": []
+    },
+    {
+      "name": "tp6_exo1.sh",
+      "lines": [
+        "nano tp5bis_exo5.sh\n",
+        "set -- $(stat -c %s \"$1\") \n",
+        "echo $1\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo5.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "set -- `ls -l $1` \n",
+        "echo $5\n"
+      ]
+    },
+    {
+      "name": "tp6_exo3.sh",
+      "lines": [
+        "[ -e $1 -a -e $2 ] && echo \"$1 et $2 existent\" || echo\"c'est fichiers n'existe pas\"]\n",
+        "echo concatener les fichiers \\?\n",
+        "read 0\n",
+        "if [ $0=\"oui\" ]\n",
+        "then\n",
+        "cat fichier 1 fichier2>fichier3\n",
+        "cat fichier3\n",
+        "if [ $0 !=\"oui\" ]\n",
+        "echo ERREUR\n",
+        "fi\n"
+      ]
+    }
   ],
   "profile": [
     {

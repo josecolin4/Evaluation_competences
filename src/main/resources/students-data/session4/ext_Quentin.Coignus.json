@@ -2,184 +2,94 @@
   "name": "ext_Quentin.Coignus",
   "session": 4,
   "scripts": [
-    [
-      "#!/bin/bash\n",
-      "for i in s((seq $*))\n",
-      "do\n",
-      "\techo argument $i \\= $i\n",
-      "done\n",
-      "echo il y a $# arguments\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "for i in $((seq $*))\n",
-      "do\n",
-      "\techo argument $i \\= $i\n",
-      "done\n",
-      "echo il y a $# arguments\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "for i in $*\n",
-      "do\n",
-      "\techo argument $i \\= $i\n",
-      "done\n",
-      "echo il y a $# arguments\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "j=1\n",
-      "for i in $*\n",
-      "do\n",
-      "\techo argument $j = $i\n",
-      "\tj=$((expr $j + 1 ))\n",
-      "done\n",
-      "echo il y a $# arguments\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "j=1\n",
-      "for i in $*\n",
-      "do\n",
-      "\techo argument $j \\= $i\n",
-      "\tj=`expr $j + 1` \n",
-      "done\n",
-      "echo il y a $# arguments\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "fact=1\n",
-      "for i in $((seq $1))\n",
-      "do\n",
-      "\tfact=`expr $i \\* $fact`\n",
-      "done\n",
-      "echo $fact\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "fact=1\n",
-      "for i in $(seq $1)\n",
-      "do\n",
-      "\tfact=`expr $i \\* $fact`\n",
-      "done\n",
-      "echo $fact\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if $1=0\n",
-      "\tthen\n",
-      "\t\tfact=0\n",
-      "\telse\n",
-      "\t\tfact=1\n",
-      "\t\tfor i in $(seq $1)\n",
-      "\t\tdo\n",
-      "\t\t\tfact=`expr $i \\* $fact`\n",
-      "\t\tdone\n",
-      "fi\n",
-      "echo $fact\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test $1 -eq 0\n",
-      "\tthen\n",
-      "\t\tfact=0\n",
-      "\telse\n",
-      "\t\tfact=1\n",
-      "\t\tfor i in $(seq $1)\n",
-      "\t\tdo\n",
-      "\t\t\tfact=`expr $i \\* $fact`\n",
-      "\t\tdone\n",
-      "fi\n",
-      "echo $fact\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test $1 -eq 0\n",
-      "\tthen\n",
-      "\t\tfact=1\n",
-      "\telse\n",
-      "\t\tfact=1\n",
-      "\t\tfor i in $(seq $1)\n",
-      "\t\tdo\n",
-      "\t\t\tfact=`expr $i \\* $fact`\n",
-      "\t\tdone\n",
-      "fi\n",
-      "echo $fact\n"
-    ],
-    [
-      "#!/bin/bash\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Liste des commandes disponibles :\n",
-      "echo 1- Date du jour\n",
-      "echo 2- Liste des personnes connect\u00c3\u00a9es sur la machine\n",
-      "echo 3- Liste des fichiers du r\u00c3\u00a9pertoire courant\n",
-      "echo 4- Nom du r\u00c3\u00a9pertoire courant\n",
-      "\n",
-      "echo Faites votre choix\n",
-      "read choix\n",
-      "case $choix in\n",
-      "\t1 ) date ;;\n",
-      "\t2 ) who ;;\n",
-      "\t3 ) ls ;;\n",
-      "\t4 ) pwd ;;\n",
-      "esac\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Entrez une chaine de charactere\n",
-      "read chaine\n",
-      "while test $chaine != sortir\n",
-      "do\n",
-      "\techo Entrez une chaine de charactere\n",
-      "\tread chaine\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Liste des commandes disponibles :\n",
-      "echo 1- Date du jour\n",
-      "echo 2- Liste des personnes connect\u00c3\u00a9es sur la machine\n",
-      "echo 3- Liste des fichiers du r\u00c3\u00a9pertoire courant\n",
-      "echo 4- Nom du r\u00c3\u00a9pertoire courant\n",
-      "\n",
-      "echo Faites votre choix\n",
-      "read choix\n",
-      "while test $choix -ge 1 -a test $choix -le 4\n",
-      "do\n",
-      "\tcase $choix in\n",
-      "        \t 1 ) date ;;\n",
-      "        \t 2 ) who ;;\n",
-      "        \t 3 ) ls ;;\n",
-      "        \t 4 ) pwd ;;\n",
-      "\tesac\n",
-      "\techo Faites un autre choix\n",
-      "\tread choix\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Liste des commandes disponibles :\n",
-      "echo 1- Date du jour\n",
-      "echo 2- Liste des personnes connect\u00c3\u00a9es sur la machine\n",
-      "echo 3- Liste des fichiers du r\u00c3\u00a9pertoire courant\n",
-      "echo 4- Nom du r\u00c3\u00a9pertoire courant\n",
-      "\n",
-      "echo Faites votre choix\n",
-      "read choix\n",
-      "while test $choix -ge 1 -a $choix -le 4\n",
-      "do\n",
-      "\tcase $choix in\n",
-      "        \t 1 ) date ;;\n",
-      "        \t 2 ) who ;;\n",
-      "        \t 3 ) ls ;;\n",
-      "        \t 4 ) pwd ;;\n",
-      "\tesac\n",
-      "\techo Faites un autre choix\n",
-      "\tread choix\n",
-      "done\n"
-    ]
+    {
+      "name": "tp6_exo5.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "j=1\n",
+        "for i in $*\n",
+        "do\n",
+        "\techo argument $j \\= $i\n",
+        "\tj=`expr $j + 1` \n",
+        "done\n",
+        "echo il y a $# arguments\n"
+      ]
+    },
+    {
+      "name": "tp6_exo6.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "if test $1 -eq 0\n",
+        "\tthen\n",
+        "\t\tfact=1\n",
+        "\telse\n",
+        "\t\tfact=1\n",
+        "\t\tfor i in $(seq $1)\n",
+        "\t\tdo\n",
+        "\t\t\tfact=`expr $i \\* $fact`\n",
+        "\t\tdone\n",
+        "fi\n",
+        "echo $fact\n"
+      ]
+    },
+    {
+      "name": "tp6_exo7.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo Liste des commandes disponibles :\n",
+        "echo 1- Date du jour\n",
+        "echo 2- Liste des personnes connect\u00c3\u00a9es sur la machine\n",
+        "echo 3- Liste des fichiers du r\u00c3\u00a9pertoire courant\n",
+        "echo 4- Nom du r\u00c3\u00a9pertoire courant\n",
+        "\n",
+        "echo Faites votre choix\n",
+        "read choix\n",
+        "case $choix in\n",
+        "\t1 ) date ;;\n",
+        "\t2 ) who ;;\n",
+        "\t3 ) ls ;;\n",
+        "\t4 ) pwd ;;\n",
+        "esac\n"
+      ]
+    },
+    {
+      "name": "tp6_exo8.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo Entrez une chaine de charactere\n",
+        "read chaine\n",
+        "while test $chaine != sortir\n",
+        "do\n",
+        "\techo Entrez une chaine de charactere\n",
+        "\tread chaine\n",
+        "done\n"
+      ]
+    },
+    {
+      "name": "tp6_exo9.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo Liste des commandes disponibles :\n",
+        "echo 1- Date du jour\n",
+        "echo 2- Liste des personnes connect\u00c3\u00a9es sur la machine\n",
+        "echo 3- Liste des fichiers du r\u00c3\u00a9pertoire courant\n",
+        "echo 4- Nom du r\u00c3\u00a9pertoire courant\n",
+        "\n",
+        "echo Faites votre choix\n",
+        "read choix\n",
+        "while test $choix -ge 1 -a $choix -le 4\n",
+        "do\n",
+        "\tcase $choix in\n",
+        "        \t 1 ) date ;;\n",
+        "        \t 2 ) who ;;\n",
+        "        \t 3 ) ls ;;\n",
+        "        \t 4 ) pwd ;;\n",
+        "\tesac\n",
+        "\techo Faites un autre choix\n",
+        "\tread choix\n",
+        "done\n"
+      ]
+    }
   ],
   "profile": [
     {

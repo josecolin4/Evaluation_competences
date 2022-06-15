@@ -2,43 +2,19 @@
   "name": "ext_Hugo.Gineste",
   "session": 2,
   "scripts": [
-    [
-      "#! /bin/bash\n",
-      "\n",
-      "echo Le script $Nom possede $n parametres/(s/), que voici :\n",
-      "echo $p\n"
-    ],
-    [
-      "#! /bin/bash\n",
-      "\n",
-      "echo Le script $Nom possede $n parametres, que voici :\n",
-      "echo $p\n"
-    ],
-    [
-      "#! /bin/bash\n",
-      "\n",
-      "echo Le script $0 possede $# parametres, que voici : $*\n"
-    ],
-    [
-      "#! /bin/bash\n",
-      "\n",
-      "nom=$0\n",
-      "liste=$*\n",
-      "nb=$#\n",
-      "\n",
-      "\n",
-      "echo Le script $nom possede $nb parametres, que voici : $nb\n"
-    ],
-    [
-      "#! /bin/bash\n",
-      "\n",
-      "nom=$0\n",
-      "\n",
-      "nb=$#\n",
-      "\n",
-      "\n",
-      "echo Le script $nom possede $nb parametres, que voici : $*\n"
-    ]
+    {
+      "name": "tp5_exo5.sh",
+      "lines": [
+        "#! /bin/bash\n",
+        "\n",
+        "nom=$0\n",
+        "\n",
+        "nb=$#\n",
+        "\n",
+        "\n",
+        "echo Le script $nom possede $nb parametres, que voici : $*\n"
+      ]
+    }
   ],
   "profile": [
     {

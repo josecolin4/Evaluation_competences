@@ -2,44 +2,29 @@
   "name": "ext_Theo.Capraro",
   "session": 2,
   "scripts": [
-    [
-      "Le script\n"
-    ],
-    [
-      "Le script \n"
-    ],
-    [
-      "le script \n",
-      "\n"
-    ],
-    [
-      "!#/bin/bash\n",
-      "le script poss\u00c3\u00a8de des param\u00c3\u00a8tre(s) que voici\n",
-      "echo $*\n",
-      " \n",
-      "\n"
-    ],
-    [
-      "!#/bin/bash\n",
-      "echo le script poss\u00c3\u00a8de $# param\u00c3\u00a8tre(s) que voici\n",
-      "echo $*\n",
-      " \n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo le script poss\u00c3\u00a8de $# param\u00c3\u00a8tre(s) que voici\n",
-      "echo $*\n",
-      " \n",
-      "\n"
-    ],
-    [
-      "#!\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n"
-    ]
+    {
+      "name": "tp5_EX05.sh",
+      "lines": [
+        "Le script \n"
+      ]
+    },
+    {
+      "name": "tp5_EXO5.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo le script poss\u00c3\u00a8de $# param\u00c3\u00a8tre(s) que voici\n",
+        "echo $*\n",
+        " \n",
+        "\n"
+      ]
+    },
+    {
+      "name": "tp5_EX06.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "\n"
+      ]
+    }
   ],
   "profile": [
     {

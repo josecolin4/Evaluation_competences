@@ -2,168 +2,54 @@
   "name": "ext_Enzo.Slamnia",
   "session": 5,
   "scripts": [
-    [
-      "#!/bin/bash\n",
-      "if [ $1 -ge 5 ] -a [ $1 -le 10 ]\n",
-      "\tthen\n",
-      "\t\techo \"La valeur \"\n",
-      "\t\techo $1\n",
-      "\t\techo \"est comprise entre 5 et 10.\"\n",
-      "\telse\n",
-      "\t\techo \"La valeur \"\n",
-      "\t\techo $1\n",
-      "\t\techo \"n'est pas comprise entre 5 et 10.\"\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test $1 -ge 5 -a $1 -le 10\n",
-      "\tthen\n",
-      "\t\techo \"La valeur \"\n",
-      "\t\techo $1\n",
-      "\t\techo \"est comprise entre 5 et 10.\"\n",
-      "\telse\n",
-      "\t\techo \"La valeur \"\n",
-      "\t\techo $1\n",
-      "\t\techo \"n'est pas comprise entre 5 et 10.\"\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if [ $1 -ge 5 -a $1 -le 10 ]\n",
-      "\tthen\n",
-      "\t\techo \"La valeur \"\n",
-      "\t\techo $1\n",
-      "\t\techo \"est comprise entre 5 et 10.\"\n",
-      "\telse\n",
-      "\t\techo \"La valeur \"\n",
-      "\t\techo $1\n",
-      "\t\techo \"n'est pas comprise entre 5 et 10.\"\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if [ -r $1 -a -w $1 ]\n",
-      "\tthen\n",
-      "\t\techo \"Le fichier $1 existe et est accessible en lecture et \u00c3\u00a9criture.\"\n",
-      "\telse\n",
-      "\t\techo \"Le fichier $1 n'existe pas, ou n'est pas accessible en lecture, ou n'est pas accessible en \u00c3\u00a9criture.\"\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if [ -e $1 -a -r $1 -a -w $1 ]\n",
-      "\tthen\n",
-      "\t\techo \"Le fichier $1 existe et est accessible en lecture et \u00c3\u00a9criture.\"\n",
-      "\telse\n",
-      "\t\techo \"Le fichier $1 n'existe pas, ou n'est pas accessible en lecture, ou n'est pas accessible en \u00c3\u00a9criture.\"\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if [ -r $1 -a -w $1 ]\n",
-      "\tthen\n",
-      "\t\techo \"Le fichier $1 existe et est accessible en lecture et \u00c3\u00a9criture.\"\n",
-      "\telse\n",
-      "\t\techo \"Le fichier $1 n'existe pas, ou n'est pas accessible en lecture, ou n'est pas accessible en \u00c3\u00a9criture.\"\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if [ -e $1 -a -e $2]\n",
-      "\tthen\n",
-      "\t\techo \"Souhaitez-vous concat\u00c3\u00a9ner les fichiers ?\"\n",
-      "\t\tread reponse\n",
-      "\t\tif test $reponse = \"OUI\"\n",
-      "\t\t\tthen\n",
-      "\t\t\t\tcat $1\n",
-      "\t\t\t\tcat $2\n",
-      "\t\t\telse\n",
-      "\t\t\t\techo \"Erreur\"\n",
-      "\t\tfi\n",
-      "\telse\n",
-      "\t\techo \"Un fichier ou les deux n'existent pas\"\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if [ -e $1 -a -e $2 ]\n",
-      "\tthen\n",
-      "\t\techo \"Souhaitez-vous concat\u00c3\u00a9ner les fichiers ?\"\n",
-      "\t\tread reponse\n",
-      "\t\tif test $reponse = \"OUI\"\n",
-      "\t\t\tthen\n",
-      "\t\t\t\tcat $1\n",
-      "\t\t\t\tcat $2\n",
-      "\t\t\telse\n",
-      "\t\t\t\techo \"Erreur\"\n",
-      "\t\tfi\n",
-      "\telse\n",
-      "\t\techo \"Un fichier ou les deux n'existent pas\"\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if [ -r $1 ]\n",
-      "\tthen\n",
-      "\t\techo \"Le fichier $1 existe et est accessible en lecture et \u00c3\u00a9criture.\"\n",
-      "\telse\n",
-      "\t\techo \"Le fichier $1 n'existe pas, ou n'est pas accessible en lecture, ou n'est pas accessible en \u00c3\u00a9criture.\"\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo $1\n",
-      "if [ -r $1 ]\n",
-      "\tthen\n",
-      "\t\techo \"Le fichier $1 existe et est accessible en lecture et \u00c3\u00a9criture.\"\n",
-      "\telse\n",
-      "\t\techo \"Le fichier $1 n'existe pas, ou n'est pas accessible en lecture, ou n'est pas accessible en \u00c3\u00a9criture.\"\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo $1\n",
-      "if test -r $1\n",
-      "\tthen\n",
-      "\t\techo \"Le fichier $1 existe et est accessible en lecture et \u00c3\u00a9criture.\"\n",
-      "\telse\n",
-      "\t\techo \"Le fichier $1 n'existe pas, ou n'est pas accessible en lecture, ou n'est pas accessible en \u00c3\u00a9criture.\"\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo $1\n",
-      "if test -d $1\n",
-      "\tthen\n",
-      "\t\techo \"Le fichier $1 existe et est accessible en lecture et \u00c3\u00a9criture.\"\n",
-      "\telse\n",
-      "\t\techo \"Le fichier $1 n'existe pas, ou n'est pas accessible en lecture, ou n'est pas accessible en \u00c3\u00a9criture.\"\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo $1\n",
-      "if test -x $1\n",
-      "\tthen\n",
-      "\t\techo \"Le fichier $1 existe et est accessible en lecture et \u00c3\u00a9criture.\"\n",
-      "\telse\n",
-      "\t\techo \"Le fichier $1 n'existe pas, ou n'est pas accessible en lecture, ou n'est pas accessible en \u00c3\u00a9criture.\"\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if [ -r $1 -a -w $1 ]\n",
-      "\tthen\n",
-      "\t\techo \"Le fichier $1 existe et est accessible en lecture et \u00c3\u00a9criture.\"\n",
-      "\telse\n",
-      "\t\techo \"Le fichier $1 n'existe pas, ou n'est pas accessible en lecture, ou n'est pas accessible en \u00c3\u00a9criture.\"\n",
-      "fi\n"
-    ]
+    {
+      "name": "tp6_exo1.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "if [ $1 -ge 5 -a $1 -le 10 ]\n",
+        "\tthen\n",
+        "\t\techo \"La valeur \"\n",
+        "\t\techo $1\n",
+        "\t\techo \"est comprise entre 5 et 10.\"\n",
+        "\telse\n",
+        "\t\techo \"La valeur \"\n",
+        "\t\techo $1\n",
+        "\t\techo \"n'est pas comprise entre 5 et 10.\"\n",
+        "fi\n"
+      ]
+    },
+    {
+      "name": "tp6_exo2.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "if [ -r $1 -a -w $1 ]\n",
+        "\tthen\n",
+        "\t\techo \"Le fichier $1 existe et est accessible en lecture et \u00c3\u00a9criture.\"\n",
+        "\telse\n",
+        "\t\techo \"Le fichier $1 n'existe pas, ou n'est pas accessible en lecture, ou n'est pas accessible en \u00c3\u00a9criture.\"\n",
+        "fi\n"
+      ]
+    },
+    {
+      "name": "tp6_exo3.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "if [ -e $1 -a -e $2 ]\n",
+        "\tthen\n",
+        "\t\techo \"Souhaitez-vous concat\u00c3\u00a9ner les fichiers ?\"\n",
+        "\t\tread reponse\n",
+        "\t\tif test $reponse = \"OUI\"\n",
+        "\t\t\tthen\n",
+        "\t\t\t\tcat $1\n",
+        "\t\t\t\tcat $2\n",
+        "\t\t\telse\n",
+        "\t\t\t\techo \"Erreur\"\n",
+        "\t\tfi\n",
+        "\telse\n",
+        "\t\techo \"Un fichier ou les deux n'existent pas\"\n",
+        "fi\n"
+      ]
+    }
   ],
   "commands": [
     {

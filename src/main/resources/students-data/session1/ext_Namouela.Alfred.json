@@ -2,34 +2,16 @@
   "name": "ext_Namouela.Alfred",
   "session": 1,
   "scripts": [
-    [
-      "#!/bin/bash\n",
-      "echo Mon nom de login est : $LOGNAME\n",
-      "echo Mon shell est : \n",
-      "echo Les variables du shelle sont :\n",
-      "echo Celles d\\environement sont : \n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Mon nom de login est : $LOGNAME\n",
-      "echo Mon shell est : $SHELL\n",
-      "echo Les variables du Shell sont :\n",
-      "echo Celles d\\environement sont : \n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Mon nom de login est : $LOGNAME\n",
-      "echo Mon shell est : $SHELL\n",
-      "echo Les variables du Shell sont : set\n",
-      "echo Celles d\\environement sont : env\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Mon nom de login est : $LOGNAME\n",
-      "echo Mon shell est : $SHELL\n",
-      "echo Les variables du Shell sont : $set\n",
-      "echo Celles d\\'environement sont : $env\n"
-    ]
+    {
+      "name": "trp5_exo2.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo Mon nom de login est : $LOGNAME\n",
+        "echo Mon shell est : $SHELL\n",
+        "echo Les variables du Shell sont : $set\n",
+        "echo Celles d\\'environement sont : $env\n"
+      ]
+    }
   ],
   "profile": [
     {

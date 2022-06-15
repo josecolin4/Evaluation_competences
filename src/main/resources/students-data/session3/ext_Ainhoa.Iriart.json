@@ -2,135 +2,49 @@
   "name": "ext_Ainhoa.Iriart",
   "session": 3,
   "scripts": [
-    [
-      "#!/bin/bash\n",
-      "variable=$1\n",
-      "division=$variable/2\n",
-      "echo le resultat est $division\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "let c=$1/2\n",
-      "echo le resultat est $c\n"
-    ],
-    [
-      "#!/bin/bash \n",
-      "let c=$1*2 \n",
-      "echo le resultat est $c\n"
-    ],
-    [
-      "#!/bin/bash \n",
-      "let c=\"$1*2 \"\n",
-      "echo le resultat est $c\n"
-    ],
-    [
-      "#!/bin/bash \n",
-      "let \"a = $1 * 3\" \n",
-      "echo le resultat est $c\n"
-    ],
-    [
-      "#!/bin/bash \n",
-      "let \"a = $1 /* 3\" \n",
-      "echo le resultat est $c\n"
-    ],
-    [
-      "#!/bin/bash \n",
-      "echo $(($1*2))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "anne=$(date +%d)\n",
-      "echo anne\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "anne=$(date +%d)\n",
-      "echo $anne\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "anne=$(date +%Y%m%d)\n",
-      "echo $anne\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "anne=$(date +%Y)\n",
-      "echo $anne\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "anne=$(date +%Y)\n",
-      "echo quelle annee etes vous nait ?\n",
-      "read naissance\n",
-      "echo vous etes nait le $naissance et vous avez $($anne-$naissance)\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "anne=$(date +%Y)\n",
-      "echo quelle annee etes vous nait ?\n",
-      "read naissance\n",
-      "echo vous etes nait le $naissance et vous avez $($anne - $naissance)\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "anne=$(date +%Y)\n",
-      "echo quelle annee etes vous nait ?\n",
-      "read naissance\n",
-      "nb2=`expr $anne - $naissance`\n",
-      "echo vous etes nait le $naissance et vous avez $nb2\n"
-    ],
-    [
-      "#!/bin/bash \n",
-      "echo $(('expr $1\\*2'))\n"
-    ],
-    [
-      "#!/bin/bash \n",
-      "echo $((expr $1\\*2))\n"
-    ],
-    [
-      "#!/bin/bash \n",
-      "nb2=`expr $1 \\* 2` $ echo $nb2\n"
-    ],
-    [
-      "#!/bin/bash \n",
-      "nb2=`expr $1 \\* 2` \n",
-      " echo $nb2\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo Il y a $who utilisateurs connect\u00c3\u00a9s sur $hostname .\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo Il y a `$wh7` utilisateurs connect\u00c3\u00a9s sur `$hostname`\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo Il y a `$who` utilisateurs connect\u00c3\u00a9s sur `$hostname`\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo `Il y a $who utilisateurs connect\u00c3\u00a9s sur $hostname`\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo Il y a `$who` utilisateurs connectes sur `$hostname`\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo `$who`\n",
-      "echo Il y a `$who` utilisateurs connectes sur `$hostname`\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo la taille du fichier est  $(wc -m $1)\n"
-    ]
+    {
+      "name": "tp5bis_exo1.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "let c=$1/2\n",
+        "echo le resultat est $c\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo2.sh",
+      "lines": [
+        "#!/bin/bash \n",
+        "nb2=`expr $1 \\* 2` \n",
+        " echo $nb2\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo3.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "anne=$(date +%Y)\n",
+        "echo quelle annee etes vous nait ?\n",
+        "read naissance\n",
+        "nb2=`expr $anne - $naissance`\n",
+        "echo vous etes nait le $naissance et vous avez $nb2\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo4.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo `$who`\n",
+        "echo Il y a `$who` utilisateurs connectes sur `$hostname`\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo5.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "\n",
+        "echo la taille du fichier est  $(wc -m $1)\n"
+      ]
+    }
   ],
   "profile": [
     {

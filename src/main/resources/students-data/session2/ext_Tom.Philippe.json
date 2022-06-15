@@ -2,93 +2,31 @@
   "name": "ext_Tom.Philippe",
   "session": 2,
   "scripts": [
-    [
-      "$x=$1+1\n",
-      "echo $x\n"
-    ],
-    [
-      "$resultat=$1+1\n",
-      "echo $resultat\n"
-    ],
-    [
-      "$resultat=$1 + 1\n",
-      "echo $resultat\n"
-    ],
-    [
-      "$resultat=$(($1+1))\n",
-      "echo $resultat\n"
-    ],
-    [
-      "$resultat=$1\n",
-      "$resultat=$(($resultat+1))\n",
-      "echo $resultat\n"
-    ],
-    [
-      "$resultat=$0\n",
-      "$resultat=$(($resultat+1))\n",
-      "echo $resultat\n"
-    ],
-    [
-      "$resultat=$1\n",
-      "$resultat=$(($resultat++))\n",
-      "echo $resultat\n"
-    ],
-    [
-      "$resultat=$1\n",
-      "resultat=$((resultat++))\n",
-      "echo $resultat\n"
-    ],
-    [
-      "resultat=$1\n",
-      "resultat=$((resultat++))\n",
-      "echo $resultat\n"
-    ],
-    [
-      "resultat=$1\n",
-      "resultat=$((resultat+1))\n",
-      "echo $resultat\n"
-    ],
-    [
-      "#! /bin/bash\n",
-      "resultat=$1\n",
-      "resultat=$((resultat+1))\n",
-      "echo $resultat\n"
-    ],
-    [
-      "#! /bin/bash\n",
-      "\n"
-    ],
-    [
-      "#! /bin/bash\n",
-      "\n"
-    ],
-    [
-      "#! /bin/bash\n",
-      "$PATH=$PATH+$PWD\n",
-      "echo $PATH\n"
-    ],
-    [
-      "#! /bin/bash\n",
-      "$PATH=$PATH+$PWD\n",
-      "echo $PATH\n"
-    ],
-    [
-      "#! /bin/bash\n",
-      "$PATH=$PATH:$PWD\n",
-      "echo $PATH\n"
-    ],
-    [
-      "#! /bin/bash\n",
-      "export PATH=$PATH:$PWD\n",
-      "echo \"export PATH=$PATH:$PWD\">>~/.bashrc\n",
-      "source /.bashrc\n"
-    ],
-    [
-      "#! /bin/bash\n",
-      "export PATH=$PATH:$PWD\n",
-      "echo \"export PATH=$PATH:$PWD\">>~/.bashrc\n",
-      "source/.bashrc\n"
-    ]
+    {
+      "name": "tp5_exo8.sh",
+      "lines": [
+        "#! /bin/bash\n",
+        "resultat=$1\n",
+        "resultat=$((resultat+1))\n",
+        "echo $resultat\n"
+      ]
+    },
+    {
+      "name": "tp5_exo9.sh",
+      "lines": [
+        "#! /bin/bash\n",
+        "\n"
+      ]
+    },
+    {
+      "name": "tp8_exo9.sh",
+      "lines": [
+        "#! /bin/bash\n",
+        "export PATH=$PATH:$PWD\n",
+        "echo \"export PATH=$PATH:$PWD\">>~/.bashrc\n",
+        "source/.bashrc\n"
+      ]
+    }
   ],
   "profile": [
     {

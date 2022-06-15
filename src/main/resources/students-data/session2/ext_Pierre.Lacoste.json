@@ -2,13 +2,19 @@
   "name": "ext_Pierre.Lacoste",
   "session": 2,
   "scripts": [
-    [
-      "cat $1 > $3 \n",
-      "cat $2 >> $3\n"
-    ],
-    [
-      "echo Nous sommes le \"`date`\"\n"
-    ]
+    {
+      "name": "_1606115898__root_TP1__tp5_exo6.sh",
+      "lines": [
+        "cat $1 > $3 \n",
+        "cat $2 >> $3\n"
+      ]
+    },
+    {
+      "name": "_1606116133__root_TP1__tp5_exo7.sh",
+      "lines": [
+        "echo Nous sommes le \"`date`\"\n"
+      ]
+    }
   ],
   "profile": [
     {

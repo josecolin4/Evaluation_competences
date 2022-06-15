@@ -2,186 +2,52 @@
   "name": "ext_Nathan.Bellus",
   "session": 2,
   "scripts": [
-    [
-      "#!/bin/bash\n",
-      "echo'Mon nom de login est :' $USERS\n",
-      "echo 'Mon shell est :'\n",
-      "$0\n",
-      "echo 'Les variables du shell sont :'\n",
-      "set\n",
-      "echo' Celles d environnement sont :'\n",
-      "env\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo'Mon nom de login est :'\n",
-      "$USERS\n",
-      "echo 'Mon shell est :'\n",
-      "$0\n",
-      "echo 'Les variables du shell sont :'\n",
-      "set\n",
-      "echo' Celles d environnement sont :'\n",
-      "env\n"
-    ],
-    [
-      "cat fic1.txt fic2.txt >> fic3.txt\n"
-    ],
-    [
-      "cat fic1 fic2 >> fic3.txt\n"
-    ],
-    [
-      "\n",
-      "#!/bin/bash\n",
-      "echo Nous sommes le `date`\n",
-      "\n",
-      "echo Nous sommes le Mon Nov 16 15:20:46 CET 2020\n",
-      "\n",
-      "Ceci est\n",
-      "\n",
-      "une tr\u00c3\u00a8s\n",
-      "\n",
-      "longue phrase...\n",
-      "\n",
-      "Voici une \u00c3\u00a9toile : *\n"
-    ],
-    [
-      "\n",
-      "#!/bin/bash\n",
-      "echo Nous sommes le `date`\n",
-      "\n",
-      "echo Nous sommes le Mon Nov 16 15:20:46 CET 2020\n",
-      "\n",
-      "echo Ceci est\n",
-      "\n",
-      "echo une tr\u00c3\u00a8s\n",
-      "\n",
-      "echo longue phrase...\n",
-      "\n",
-      "echo Voici une \u00c3\u00a9toile : *\n"
-    ],
-    [
-      "read var1\n",
-      "var1+1\n",
-      "$var1\n"
-    ],
-    [
-      "read var1\n",
-      "echo (var1+1)\n"
-    ],
-    [
-      "read var1\n",
-      "var2 = var1 + 1\n",
-      "echo var2\n"
-    ],
-    [
-      "read var1\n",
-      "var1 = var1 + 1\n",
-      "echo var1\n",
-      "\n"
-    ],
-    [
-      "read var1\n",
-      "\n",
-      "echo $var1\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo \"Mon nom de login est : #users\"\n",
-      "\n",
-      "echo \"Mon shell est : #0 \"\n",
-      "\n",
-      "echo \"Les variables du shell sont : set \"\n",
-      "\n",
-      "echo \"Celles d environnement sont : env \"\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo \"Mon nom de login est : \"\n",
-      "#users\n",
-      "\n",
-      "echo \"Mon shell est : #0 \"\n",
-      "\n",
-      "echo \"Les variables du shell sont : set \"\n",
-      "\n",
-      "echo \"Celles d environnement sont : env \"\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo \"Mon nom de login est : \"\n",
-      "#users\n",
-      "\n",
-      "echo \"Mon shell est : #0 \"\n",
-      "\n",
-      "echo \"Les variables du shell sont : \"\n",
-      "set\n",
-      "echo \"Celles d environnement sont : \"\n",
-      "env\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo \"Mon nom de login est : \"\n",
-      "#users\n",
-      "echo \"Mon shell est : \"\n",
-      "#0\n",
-      "echo \"Les variables du shell sont : \"\n",
-      "set\n",
-      "echo \"Celles d environnement sont : \"\n",
-      "env\n"
-    ],
-    [
-      "read var1\n",
-      "\n",
-      "echo $var1\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "read var1\n",
-      "\n",
-      "echo $var1\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "read a\n",
-      "\n",
-      "echo $a\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo expr $1 + 1\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo expr $1+1\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo expr '$1+1'\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo 'expr $1+1'\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo `expr $1 + 1`\n"
-    ]
+    {
+      "name": "tp5_exo2.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo \"Mon nom de login est : \"\n",
+        "#users\n",
+        "echo \"Mon shell est : \"\n",
+        "#0\n",
+        "echo \"Les variables du shell sont : \"\n",
+        "set\n",
+        "echo \"Celles d environnement sont : \"\n",
+        "env\n"
+      ]
+    },
+    {
+      "name": "tp5_exo7.sh",
+      "lines": [
+        "cat fic1 fic2 >> fic3.txt\n"
+      ]
+    },
+    {
+      "name": "tp5_exo6.sh",
+      "lines": [
+        "\n",
+        "#!/bin/bash\n",
+        "echo Nous sommes le `date`\n",
+        "\n",
+        "echo Nous sommes le Mon Nov 16 15:20:46 CET 2020\n",
+        "\n",
+        "echo Ceci est\n",
+        "\n",
+        "echo une tr\u00c3\u00a8s\n",
+        "\n",
+        "echo longue phrase...\n",
+        "\n",
+        "echo Voici une \u00c3\u00a9toile : *\n"
+      ]
+    },
+    {
+      "name": "tp5_exo8.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "\n",
+        "echo `expr $1 + 1`\n"
+      ]
+    }
   ],
   "profile": [
     {

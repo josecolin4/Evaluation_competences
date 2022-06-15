@@ -2,175 +2,26 @@
   "name": "ext_Eliott.Milcent",
   "session": 5,
   "scripts": [
-    [
-      "$C = 10\n",
-      "$B = 5\n",
-      "read $A\n",
-      "if $A -le $B -a $A -ge $C\n",
-      "then echo \"le chiffre est bien compris entre 5 et 10\"\n",
-      "else \"Le chiffre n'est pas compris entre 5 et 10\"\n",
-      "fi\n"
-    ],
-    [
-      "$C=10\n",
-      "$B=5\n",
-      "read $A\n",
-      "expr if $A -le $B -a $A -ge $C\n",
-      "then echo \"le chiffre est bien compris entre 5 et 10\"\n",
-      "else \"Le chiffre n'est pas compris entre 5 et 10\"\n",
-      "fi\n"
-    ],
-    [
-      "C=10\n",
-      "B=5\n",
-      "read $A\n",
-      "if $A -le $B -a $A -ge $C\n",
-      "then echo \"le chiffre est bien compris entre 5 et 10\"\n",
-      "else \"Le chiffre n'est pas compris entre 5 et 10\"\n",
-      "fi\n"
-    ],
-    [
-      "C=10\n",
-      "B=5\n",
-      "read $A\n",
-      "if test $A -le $B -a test $A -ge $C\n",
-      "then echo \"le chiffre est bien compris entre 5 et 10\"\n",
-      "else \"Le chiffre n'est pas compris entre 5 et 10\"\n",
-      "fi\n"
-    ],
-    [
-      "C=10\n",
-      "B=5\n",
-      "read $A\n",
-      "if test A -le B -a test A -ge C\n",
-      "then echo \"le chiffre est bien compris entre 5 et 10\"\n",
-      "else \"Le chiffre n'est pas compris entre 5 et 10\"\n",
-      "fi\n"
-    ],
-    [
-      "C=10\n",
-      "B=5\n",
-      "read $A\n",
-      "if test $A -le $B -a test $A -ge $C\n",
-      "then echo \"le chiffre est bien compris entre 5 et 10\"\n",
-      "else \"Le chiffre n'est pas compris entre 5 et 10\"\n",
-      "fi\n"
-    ],
-    [
-      "\n",
-      "read $A\n",
-      "if [$A -le 5] -a  [$A -ge 10]\n",
-      "then echo \"le chiffre est bien compris entre 5 et 10\"\n",
-      "else \"Le chiffre n'est pas compris entre 5 et 10\"\n",
-      "fi\n"
-    ],
-    [
-      "\n",
-      "read $A\n",
-      "if [$A -le 5 -a  $A -ge 10]\n",
-      "then echo \"le chiffre est bien compris entre 5 et 10\"\n",
-      "else \"Le chiffre n'est pas compris entre 5 et 10\"\n",
-      "fi\n"
-    ],
-    [
-      "\n",
-      "read $A\n",
-      "if [$A -le 5] -a [ $A -ge 10]\n",
-      "then echo \"le chiffre est bien compris entre 5 et 10\"\n",
-      "else \"Le chiffre n'est pas compris entre 5 et 10\"\n",
-      "fi\n"
-    ],
-    [
-      "\n",
-      "read $A\n",
-      "if [expr$A -le 5] -a [ expr$A -ge 10]\n",
-      "then echo \"le chiffre est bien compris entre 5 et 10\"\n",
-      "else \"Le chiffre n'est pas compris entre 5 et 10\"\n",
-      "fi\n"
-    ],
-    [
-      "\n",
-      "read $A\n",
-      "if [$A -le 5] -a [ $A -ge 10]\n",
-      "then echo \"le chiffre est bien compris entre 5 et 10\"\n",
-      "else echo \"Le chiffre n'est pas compris entre 5 et 10\"\n",
-      "fi\n"
-    ],
-    [
-      "\n",
-      "read $A\n",
-      "if [$A -le 5] \n",
-      "then echo \"le chiffre est bien compris entre 5 et 10\"\n",
-      "else echo \"Le chiffre n'est pas compris entre 5 et 10\"\n",
-      "fi\n"
-    ],
-    [
-      "\n",
-      "read $A\n",
-      "if [ $A -le 5 ] \n",
-      "then echo \"le chiffre est bien compris entre 5 et 10\"\n",
-      "else echo \"Le chiffre n'est pas compris entre 5 et 10\"\n",
-      "fi\n"
-    ],
-    [
-      "\n",
-      "read $A\n",
-      "if [ $A -ge 5 ]\n",
-      "then echo \"le chiffre est bien compris entre 5 et 10\"\n",
-      "else echo \"Le chiffre n'est pas compris entre 5 et 10\"\n",
-      "fi\n"
-    ],
-    [
-      "\n",
-      "read A\n",
-      "if [ $A -ge 5 ]\n",
-      "then echo \"le chiffre est bien compris entre 5 et 10\"\n",
-      "else echo \"Le chiffre n'est pas compris entre 5 et 10\"\n",
-      "fi\n"
-    ],
-    [
-      "\n",
-      "read A\n",
-      "if [ $A -ge 5 ] -a [ $A -le 10 ]\n",
-      "then echo \"le chiffre est bien compris entre 5 et 10\"\n",
-      "else echo \"Le chiffre n'est pas compris entre 5 et 10\"\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "read A\n",
-      "if [ $A -ge 5 -a $A -le 10]\n",
-      "then echo \"le chiffre est bien compris entre 5 et 10\"\n",
-      "else echo \"Le chiffre n'est pas compris entre 5 et 10\"\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "read A\n",
-      "if [ $A -ge 5 -a $A -le 10] \n",
-      "\tthen\n",
-      " \t\techo \"le chiffre est bien compris entre 5 et 10\"\n",
-      "\telse \n",
-      "\t\techo \"Le chiffre n'est pas compris entre 5 et 10\"\n",
-      "fi\n"
-    ],
-    [
-      "                                                                                       \n",
-      "#!/bin/bash\n",
-      "read A\n",
-      "\tthen\n",
-      "if [ $A -ge 5 -a $A -le 10] \n",
-      " \t\techo \"le chiffre est bien compris entre 5 et 10\"\n",
-      "        then\n",
-      "\telse\n",
-      "                echo \"le chiffre est bien compris entre 5 et 10\"\n",
-      "\t\techo \"Le chiffre n'est pas compris entre 5 et 10\" fi\n",
-      "        else \n",
-      "\n",
-      "                echo \"Le chiffre n'est pas compris entre 5 et 10\"\n",
-      "\n",
-      "fi\n"
-    ]
+    {
+      "name": "tp6_exo1.sh",
+      "lines": [
+        "                                                                                       \n",
+        "#!/bin/bash\n",
+        "read A\n",
+        "\tthen\n",
+        "if [ $A -ge 5 -a $A -le 10] \n",
+        " \t\techo \"le chiffre est bien compris entre 5 et 10\"\n",
+        "        then\n",
+        "\telse\n",
+        "                echo \"le chiffre est bien compris entre 5 et 10\"\n",
+        "\t\techo \"Le chiffre n'est pas compris entre 5 et 10\" fi\n",
+        "        else \n",
+        "\n",
+        "                echo \"Le chiffre n'est pas compris entre 5 et 10\"\n",
+        "\n",
+        "fi\n"
+      ]
+    }
   ],
   "commands": [
     {

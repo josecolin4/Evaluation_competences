@@ -2,131 +2,22 @@
   "name": "ext_Bader.Bouchfar",
   "session": 1,
   "scripts": [
-    [
-      "#!/bin/bash\n",
-      "echo cours \n",
-      "cours=unix \n",
-      "echo $cours \n",
-      "echo je suis au cours $cours\n"
-    ],
-    [
-      "login=etudiant\n",
-      "shell=bash\n",
-      "\n"
-    ],
-    [
-      "login=etudiant\n",
-      "shell=bash\n",
-      "\n",
-      "Mon nom de login est : echo $login\n",
-      "Mon shell est : echo $bash\n",
-      "Les variables du Shell sont :\n",
-      "echo set\n",
-      "Celles d\u00e2\u20ac\u2122environnement sont :\n",
-      "echo env\n",
-      "\n"
-    ],
-    [
-      "login=etudiant\n",
-      "shell=bash\n",
-      "\n",
-      "Mon nom de login est : echo $login\n",
-      "Mon shell est : echo $bash\n",
-      "Les variables du Shell sont :\n",
-      "set\n",
-      "Celles d\u00e2\u20ac\u2122environnement sont :\n",
-      "env\n",
-      "\n"
-    ],
-    [
-      "login=etudiant\n",
-      "shell=bash\n",
-      "\n",
-      "echo \"mon login est : \" $login\n",
-      "\n"
-    ],
-    [
-      "login=etudiant\n",
-      "shell=bash\n",
-      "\n",
-      "echo \"mon login est : \" $login\n",
-      "echo \"mon shell est : \" $shell\n",
-      "echo \"les variables du shell sont :\" set\n",
-      "echo \"les variables environement sont :\" env\n",
-      "\n"
-    ],
-    [
-      "login=etudiant\n",
-      "shell=bash\n",
-      "\n",
-      "echo \"mon login est : \" $login\n",
-      "echo \"mon shell est : \" $shell\n",
-      "echo \"les variables du shell sont :\" \n",
-      "set\n",
-      "echo \"les variables environement sont :\" env\n",
-      "\n"
-    ],
-    [
-      "login=etudiant\n",
-      "shell=bash\n",
-      "\n",
-      "echo \"mon login est : \" $login\n",
-      "echo \"mon shell est : \" $shell\n",
-      "echo \"les variables du shell sont :\" \n",
-      "set\n",
-      "echo \"les variables environement sont :\" \n",
-      "env\n",
-      "\n"
-    ],
-    [
-      "login=etudiant\n",
-      "shell=bash\n",
-      "\n",
-      "echo \"mon login est : \" $login\n",
-      "echo \"mon shell est : \" $shell\n",
-      "echo -e \"les variables du shell sont :\\e[42mGreen\" \n",
-      "set\n",
-      "echo \"les variables environement sont :\" \n",
-      "env\n",
-      "\n"
-    ],
-    [
-      "login=etudiant\n",
-      "shell=bash\n",
-      "\n",
-      "echo \"mon login est : \" $login\n",
-      "echo \"mon shell est : \" $shell\n",
-      "echo -e \"les variables du shell sont :\\e[42m\" \n",
-      "set\n",
-      "echo \"les variables environement sont :\" \n",
-      "env\n",
-      "\n"
-    ],
-    [
-      "login=etudiant\n",
-      "shell=bash\n",
-      "\n",
-      "echo \"mon login est : \" $login\n",
-      "echo \"mon shell est : \" $shell\n",
-      "echo -e \"les variables du shell sont :\" \n",
-      "set\n",
-      "echo \"les variables environement sont :\" \n",
-      "env\n",
-      "\n"
-    ],
-    [
-      "login=etudiant\n",
-      "shell=bash\n",
-      "\n",
-      "echo \"mon login est : \" $login\n",
-      "echo \"mon shell est : \" $shell\n",
-      "echo -e \"les variables du shell sont :\\e[49mDefault \" \n",
-      "set\n",
-      "echo \"les variables environement sont :\" \n",
-      "env\n",
-      "\n",
-      "\n"
-    ]
+    {
+      "name": "tp5_exo1.sh",
+      "lines": [
+        "login=etudiant\n",
+        "shell=bash\n",
+        "\n",
+        "echo \"mon login est : \" $login\n",
+        "echo \"mon shell est : \" $shell\n",
+        "echo -e \"les variables du shell sont :\\e[49mDefault \" \n",
+        "set\n",
+        "echo \"les variables environement sont :\" \n",
+        "env\n",
+        "\n",
+        "\n"
+      ]
+    }
   ],
   "profile": [
     {

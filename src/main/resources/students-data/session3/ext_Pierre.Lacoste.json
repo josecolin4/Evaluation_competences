@@ -2,126 +2,210 @@
   "name": "ext_Pierre.Lacoste",
   "session": 3,
   "scripts": [
-    [
-      "EXPORT PATH=/root/TP5:$PATH\n"
-    ],
-    [
-      "export PATH=/root/TP5:$PATH\n"
-    ],
-    [
-      "expr $1 / 2\n",
-      "echo $(( $1 / 2 ))\n"
-    ],
-    [
-      "expr $1 \\* 2\n",
-      "echo $(( $1 * 2 ))\n"
-    ],
-    [
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
-      "read a\n",
-      "c=$(date +%Y)\n",
-      "b=`expr $c - $a`\n",
-      "echo vous etes n\u00c3\u00a9\\(e\\) en $a, vous avez donc $b ans\n"
-    ],
-    [
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
-      "read a\n",
-      "c=$(date +%Y)\n",
-      "b=$(( c - a ))\n",
-      "echo vous etes n\u00c3\u00a9\\(e\\) en $a, vous avez donc $b ans\n"
-    ],
-    [
-      "a = `who | wc -l`\n"
-    ],
-    [
-      "a =`who | wc -l`\n"
-    ],
-    [
-      "a=`who | wc -l`\n"
-    ],
-    [
-      "a=`who | wc -l`\n",
-      "echo Il y a $a utilisateur\\(s\\) connect\u00c3\u00a9\\(s\\)\n"
-    ],
-    [
-      "a=`who | wc -l`\n",
-      "b=`hostname`\n",
-      "echo Il y a $a utilisateur\\(s\\) connect\u00c3\u00a9\\(s\\) sur $b\n"
-    ],
-    [
-      "a=`who | wc -l`\n",
-      "b=`hostname`\n",
-      "echo Il y a $a utilisateur\\(s\\) connect\u00c3\u00a9\\(s\\) sur $b\n"
-    ],
-    [
-      "a=$(who | wc -l)\n",
-      "b=$(hostname)\n",
-      "echo Il y a $a utilisateur\\(s\\) connect\u00c3\u00a9\\(s\\) sur $b\n"
-    ],
-    [
-      "set -- $(ls -l file)\n",
-      "echo $1\n"
-    ],
-    [
-      "set -- $(ls -l )\n",
-      "echo $1\n"
-    ],
-    [
-      "set -- $(ls -l )\n",
-      "echo $3\n"
-    ],
-    [
-      "set -- $(ls -l )\n",
-      "echo $5\n"
-    ],
-    [
-      "set -- $(ls -l )\n",
-      "echo $6\n"
-    ],
-    [
-      "set -- $(ls -l )\n",
-      "echo $4\n"
-    ],
-    [
-      "set -- $(ls -l )\n",
-      "echo $8\n"
-    ],
-    [
-      "set -- $(ls -l )\n",
-      "echo $7\n"
-    ],
-    [
-      "set -- $(ls -l %1)\n",
-      "echo $7\n"
-    ],
-    [
-      "set -- $(ls -l %1)\n",
-      "echo $7\n"
-    ],
-    [
-      "set -- $(ls -l )\n",
-      "echo $7\n"
-    ],
-    [
-      "set -- $(ls -l )\n",
-      "echo $1\n",
-      "echo $7\n"
-    ],
-    [
-      "set -- $(ls -l $1)\n",
-      "\n",
-      "echo $7\n"
-    ],
-    [
-      "set -- $(ls -l $1)\n",
-      "\n",
-      "echo $6\n"
-    ],
-    [
-      "set -- $(ls -l $1)\n",
-      "\n",
-      "echo $5\n"
-    ]
+    {
+      "name": "_1606719492__root_TP5__tp5_exo9.sh",
+      "lines": [
+        "EXPORT PATH=/root/TP5:$PATH\n"
+      ]
+    },
+    {
+      "name": "_1606719527__root_TP5__tp5_exo9.sh",
+      "lines": [
+        "export PATH=/root/TP5:$PATH\n"
+      ]
+    },
+    {
+      "name": "_1606723635__root_TP5bis_TP5bis__tp5_exo1.sh",
+      "lines": [
+        "expr $1 / 2\n",
+        "echo $(( $1 / 2 ))\n"
+      ]
+    },
+    {
+      "name": "_1606723635__root_TP5bis_TP5bis__tp5_exo2.sh",
+      "lines": [
+        "expr $1 \\* 2\n",
+        "echo $(( $1 * 2 ))\n"
+      ]
+    },
+    {
+      "name": "_1606723635__root_TP5bis_TP5bis__tp5_exo3v1.sh",
+      "lines": [
+        "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
+        "read a\n",
+        "c=$(date +%Y)\n",
+        "b=`expr $c - $a`\n",
+        "echo vous etes n\u00c3\u00a9\\(e\\) en $a, vous avez donc $b ans\n"
+      ]
+    },
+    {
+      "name": "_1606723635__root_TP5bis_TP5bis__tp5_exo3v2.sh",
+      "lines": [
+        "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
+        "read a\n",
+        "c=$(date +%Y)\n",
+        "b=$(( c - a ))\n",
+        "echo vous etes n\u00c3\u00a9\\(e\\) en $a, vous avez donc $b ans\n"
+      ]
+    },
+    {
+      "name": "_1606742442__root_TP5bis__tp5bis_exo4.sh",
+      "lines": [
+        "a = `who | wc -l`\n"
+      ]
+    },
+    {
+      "name": "_1606742462__root_TP5bis__tp5bis_exo4.sh",
+      "lines": [
+        "a =`who | wc -l`\n"
+      ]
+    },
+    {
+      "name": "_1606742467__root_TP5bis__tp5bis_exo4.sh",
+      "lines": [
+        "a=`who | wc -l`\n"
+      ]
+    },
+    {
+      "name": "_1606742505__root_TP5bis__tp5bis_exo4.sh",
+      "lines": [
+        "a=`who | wc -l`\n",
+        "echo Il y a $a utilisateur\\(s\\) connect\u00c3\u00a9\\(s\\)\n"
+      ]
+    },
+    {
+      "name": "_1606742558__root_TP5bis__tp5bis_exo4.sh",
+      "lines": [
+        "a=`who | wc -l`\n",
+        "b=`hostname`\n",
+        "echo Il y a $a utilisateur\\(s\\) connect\u00c3\u00a9\\(s\\) sur $b\n"
+      ]
+    },
+    {
+      "name": "_1606742612__root_TP5bis__tp5bis_exo4v2.sh",
+      "lines": [
+        "a=`who | wc -l`\n",
+        "b=`hostname`\n",
+        "echo Il y a $a utilisateur\\(s\\) connect\u00c3\u00a9\\(s\\) sur $b\n"
+      ]
+    },
+    {
+      "name": "_1606742652__root_TP5bis__tp5bis_exo4v2.sh",
+      "lines": [
+        "a=$(who | wc -l)\n",
+        "b=$(hostname)\n",
+        "echo Il y a $a utilisateur\\(s\\) connect\u00c3\u00a9\\(s\\) sur $b\n"
+      ]
+    },
+    {
+      "name": "_1606743337__root_TP5bis__tp5bis_exo5.sh",
+      "lines": [
+        "set -- $(ls -l file)\n",
+        "echo $1\n"
+      ]
+    },
+    {
+      "name": "_1606743378__root_TP5bis__tp5bis_exo5.sh",
+      "lines": [
+        "set -- $(ls -l )\n",
+        "echo $1\n"
+      ]
+    },
+    {
+      "name": "_1606743385__root_TP5bis__tp5bis_exo5.sh",
+      "lines": [
+        "set -- $(ls -l )\n",
+        "echo $3\n"
+      ]
+    },
+    {
+      "name": "_1606743406__root_TP5bis__tp5bis_exo5.sh",
+      "lines": [
+        "set -- $(ls -l )\n",
+        "echo $5\n"
+      ]
+    },
+    {
+      "name": "_1606743415__root_TP5bis__tp5bis_exo5.sh",
+      "lines": [
+        "set -- $(ls -l )\n",
+        "echo $6\n"
+      ]
+    },
+    {
+      "name": "_1606743421__root_TP5bis__tp5bis_exo5.sh",
+      "lines": [
+        "set -- $(ls -l )\n",
+        "echo $4\n"
+      ]
+    },
+    {
+      "name": "_1606743428__root_TP5bis__tp5bis_exo5.sh",
+      "lines": [
+        "set -- $(ls -l )\n",
+        "echo $8\n"
+      ]
+    },
+    {
+      "name": "_1606743434__root_TP5bis__tp5bis_exo5.sh",
+      "lines": [
+        "set -- $(ls -l )\n",
+        "echo $7\n"
+      ]
+    },
+    {
+      "name": "_1606743455__root_TP5bis__tp5bis_exo5.sh",
+      "lines": [
+        "set -- $(ls -l %1)\n",
+        "echo $7\n"
+      ]
+    },
+    {
+      "name": "_1606743456__root_TP5bis__tp5bis_exo5.sh",
+      "lines": [
+        "set -- $(ls -l %1)\n",
+        "echo $7\n"
+      ]
+    },
+    {
+      "name": "_1606743468__root_TP5bis__tp5bis_exo5.sh",
+      "lines": [
+        "set -- $(ls -l )\n",
+        "echo $7\n"
+      ]
+    },
+    {
+      "name": "_1606743568__root_TP5bis__tp5bis_exo5.sh",
+      "lines": [
+        "set -- $(ls -l )\n",
+        "echo $1\n",
+        "echo $7\n"
+      ]
+    },
+    {
+      "name": "_1606743586__root_TP5bis__tp5bis_exo5.sh",
+      "lines": [
+        "set -- $(ls -l $1)\n",
+        "\n",
+        "echo $7\n"
+      ]
+    },
+    {
+      "name": "_1606743629__root_TP5bis__tp5bis_exo5.sh",
+      "lines": [
+        "set -- $(ls -l $1)\n",
+        "\n",
+        "echo $6\n"
+      ]
+    },
+    {
+      "name": "_1606743636__root_TP5bis__tp5bis_exo5.sh",
+      "lines": [
+        "set -- $(ls -l $1)\n",
+        "\n",
+        "echo $5\n"
+      ]
+    }
   ],
   "profile": [
     {

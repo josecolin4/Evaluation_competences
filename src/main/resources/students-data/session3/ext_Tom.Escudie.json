@@ -2,84 +2,47 @@
   "name": "ext_Tom.Escudie",
   "session": 3,
   "scripts": [
-    [
-      "if test $1 -eq 5\n",
-      "\tthen\n",
-      "\t\techo \"test\"\n",
-      "fi\n"
-    ],
-    [
-      "if test $1 -ge 5 and $1 -le 10\n",
-      "\tthen\n",
-      "\t\techo $1 est compris entre 5 et 10\n",
-      "\telse\n",
-      "\t\techo $1 n\\'est pas compris entre 5 et 10\n",
-      "fi\n"
-    ],
-    [
-      "if test $1 -ge 5 and $1 -le 10\n",
-      "\tthen\n",
-      "\t\techo $1 est compris entre 5 et 10\n",
-      "\telse\n",
-      "\t\techo $1 n\\'est pas compris entre 5 et 10\n",
-      "fi\n"
-    ],
-    [
-      "if [ test $1 -ge 5 ] and [ test $1 -le 10 ]\n",
-      "\tthen\n",
-      "\t\techo $1 est compris entre 5 et 10\n",
-      "\telse\n",
-      "\t\techo $1 n\\'est pas compris entre 5 et 10\n",
-      "fi\n"
-    ],
-    [
-      "if [ $1 -ge 5 ] && [ $1 -le 10 ]\n",
-      "\tthen\n",
-      "\t\techo $1 est compris entre 5 et 10\n",
-      "\telse\n",
-      "\t\techo $1 n\\'est pas compris entre 5 et 10\n",
-      "fi\n"
-    ],
-    [
-      "if [ -e $1 ] && [ -r $1 ] && [ -w $1 ]\n",
-      "\tthen\n",
-      "\t\techo Le fichier $1 exist et est accessible en r+w\n",
-      "\telse\n",
-      "\t\techo Le fichier $1 n\\'existe pas ou est pas accessible en r+w\n",
-      "fi\n"
-    ],
-    [
-      "if [ -e $1 ] && [ -e $2 ]\n",
-      "\tthen\n",
-      "\t\techo \"Voulez-vous concat\u00c3\u00a9ner les fichiers ?\"\n",
-      "\t\tread choix\n",
-      "\t\tif [ choix = o ]\n",
-      "\t\t\tthen\n",
-      "\t\t\t\tcat $1\n",
-      "\t\t\t\tcat $2\n",
-      "\t\telse\n",
-      "\t\t\techo \"Op\u00c3\u00a9ration annul\u00c3\u00a9e\"\n",
-      "\t\tfi\n",
-      "\telse\n",
-      "\t\techo \"Un des fichiers n'existe pas ou est pas accessible r+w\"\n",
-      "fi\n"
-    ],
-    [
-      "if [ -e $1 ] && [ -e $2 ]\n",
-      "\tthen\n",
-      "\t\techo \"Voulez-vous concat\u00c3\u00a9ner les fichiers ?\"\n",
-      "\t\tread choix\n",
-      "\t\tif [ $choix = o ]\n",
-      "\t\t\tthen\n",
-      "\t\t\t\tcat $1\n",
-      "\t\t\t\tcat $2\n",
-      "\t\telse\n",
-      "\t\t\techo \"Op\u00c3\u00a9ration annul\u00c3\u00a9e\"\n",
-      "\t\tfi\n",
-      "\telse\n",
-      "\t\techo \"Un des fichiers n'existe pas ou est pas accessible r+w\"\n",
-      "fi\n"
-    ]
+    {
+      "name": "tp6_exo1.sh",
+      "lines": [
+        "if [ $1 -ge 5 ] && [ $1 -le 10 ]\n",
+        "\tthen\n",
+        "\t\techo $1 est compris entre 5 et 10\n",
+        "\telse\n",
+        "\t\techo $1 n\\'est pas compris entre 5 et 10\n",
+        "fi\n"
+      ]
+    },
+    {
+      "name": "tp6_exo2.sh",
+      "lines": [
+        "if [ -e $1 ] && [ -r $1 ] && [ -w $1 ]\n",
+        "\tthen\n",
+        "\t\techo Le fichier $1 exist et est accessible en r+w\n",
+        "\telse\n",
+        "\t\techo Le fichier $1 n\\'existe pas ou est pas accessible en r+w\n",
+        "fi\n"
+      ]
+    },
+    {
+      "name": "tp6_exo3.sh",
+      "lines": [
+        "if [ -e $1 ] && [ -e $2 ]\n",
+        "\tthen\n",
+        "\t\techo \"Voulez-vous concat\u00c3\u00a9ner les fichiers ?\"\n",
+        "\t\tread choix\n",
+        "\t\tif [ $choix = o ]\n",
+        "\t\t\tthen\n",
+        "\t\t\t\tcat $1\n",
+        "\t\t\t\tcat $2\n",
+        "\t\telse\n",
+        "\t\t\techo \"Op\u00c3\u00a9ration annul\u00c3\u00a9e\"\n",
+        "\t\tfi\n",
+        "\telse\n",
+        "\t\techo \"Un des fichiers n'existe pas ou est pas accessible r+w\"\n",
+        "fi\n"
+      ]
+    }
   ],
   "profile": [
     {

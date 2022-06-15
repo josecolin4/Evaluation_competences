@@ -2,107 +2,52 @@
   "name": "ext_Nicolas.Leymat",
   "session": 1,
   "scripts": [
-    [
-      "#!bin/bash\n",
-      "echo cours\n",
-      "cours=unix\n",
-      "echo $cours\n",
-      "echo je suis au cours $cours\n"
-    ],
-    [
-      "#!bin/bash\n",
-      "\n",
-      "echo cours\n",
-      "\n",
-      "cours=unix\n",
-      "\n",
-      "echo $cours\n",
-      "\n",
-      "echo je suis au cours $cours\n"
-    ],
-    [
-      "#!/bin/bashecho courscours=unix echo $coursecho je suis au cours $cours\n"
-    ],
-    [
-      "#!bin/bash\n"
-    ],
-    [
-      "#!bin/bash\n",
-      "echo cours\n"
-    ],
-    [
-      "#!bin/bash\n",
-      "echo cours\n",
-      "cours=unix\n"
-    ],
-    [
-      "#!bin/bash\n",
-      "echo cours\n",
-      "cours=unix\n",
-      "echo $cours\n"
-    ],
-    [
-      "#!bin/bash#\n",
-      "echo cours\n",
-      "cours=unix\n",
-      "echo $cours\n"
-    ],
-    [
-      "echo cours\n",
-      "cours=unix\n",
-      "echo $cours\n"
-    ],
-    [
-      "Mon nom de login est : <root>\n"
-    ],
-    [
-      "Mon nom de login est : <root>\n",
-      "Mon shell est : <tp5_exo2.sh>\n"
-    ],
-    [
-      "Mon nom de login est : <root>\n",
-      "Mon shell est : <tp5_exo2.sh>\n",
-      "Les variables du Shell sont :\n"
-    ],
-    [
-      "Mon nom de login est : <root>\n",
-      "Mon shell est : <tp5_exo2.sh>\n",
-      "Les variables du Shell sont :\n",
-      "<Mes variables>\n"
-    ],
-    [
-      "Mon nom de login est : <root>\n",
-      "Mon shell est : <tp5_exo2.sh>\n",
-      "Les variables du Shell sont :\n",
-      "<Mes variables>\n",
-      "Celles d'environnement sont : \n"
-    ],
-    [
-      "echo Mon nom de login est : root\n",
-      "Mon shell est : tp5_exo2.sh\n",
-      "Les variables du Shell sont :\n",
-      "set\n",
-      "Celles d'environnement sont :\n",
-      "env\n"
-    ],
-    [
-      "echo Cher utilisateur quel est ton prenom \\?\n",
-      "read prenom\n",
-      "echo ravi de te connaitre, $prenom\n",
-      "echo Quel est ton nom et ton age \\?\n",
-      "read nom age\n",
-      "echo Tu es $prenom $nom et tu as $age ans, n\\'est-ce pas \\?\n",
-      "read reponse\n"
-    ],
-    [
-      "echo Je suis le script Shell $0\n",
-      "echo Mes arguments sont $*\n",
-      "echo Le premier argument est $1\n",
-      "echo Le deuxi\u00c3\u00a8me argument est $2\n"
-    ],
-    [
-      "echo Le script $0 possede $#, que voici : $*\n"
-    ]
+    {
+      "name": "tp5_exo1.sh",
+      "lines": [
+        "echo cours\n",
+        "cours=unix\n",
+        "echo $cours\n"
+      ]
+    },
+    {
+      "name": "tp5_exo2.sh",
+      "lines": [
+        "echo Mon nom de login est : root\n",
+        "Mon shell est : tp5_exo2.sh\n",
+        "Les variables du Shell sont :\n",
+        "set\n",
+        "Celles d'environnement sont :\n",
+        "env\n"
+      ]
+    },
+    {
+      "name": "tp5_exo3.sh",
+      "lines": [
+        "echo Cher utilisateur quel est ton prenom \\?\n",
+        "read prenom\n",
+        "echo ravi de te connaitre, $prenom\n",
+        "echo Quel est ton nom et ton age \\?\n",
+        "read nom age\n",
+        "echo Tu es $prenom $nom et tu as $age ans, n\\'est-ce pas \\?\n",
+        "read reponse\n"
+      ]
+    },
+    {
+      "name": "tp5_exo4.sh",
+      "lines": [
+        "echo Je suis le script Shell $0\n",
+        "echo Mes arguments sont $*\n",
+        "echo Le premier argument est $1\n",
+        "echo Le deuxi\u00c3\u00a8me argument est $2\n"
+      ]
+    },
+    {
+      "name": "tp5_exo5.sh",
+      "lines": [
+        "echo Le script $0 possede $#, que voici : $*\n"
+      ]
+    }
   ],
   "profile": [
     {

@@ -2,182 +2,48 @@
   "name": "ext_Mael.Drou-Rives",
   "session": 3,
   "scripts": [
-    [
-      "#!/bin/bash\n",
-      "expr $1 / 2\n",
-      "echo $(($1 / 2))\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "expr $1 / 2\n",
-      "echo $(($1 / 2))\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "expr $1 * 2\n",
-      "echo $(($1 * 2))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "expr $1 \\ 2\n",
-      "echo $(($1 * 2))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "expr $1 \\* 2\n",
-      "echo $(($1 * 2))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "expr date - $1\n",
-      "echo $((date - $1))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Votre ann\u00c3\u00a9e de naissance?\n",
-      "read annee\n",
-      "expr $date - $annee\n",
-      "echo $(($date - $annee))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Votre ann\u00c3\u00a9e de naissance?\n",
-      "read annee\n",
-      "expr date + \"%y\" - $annee\n",
-      "echo $(($date - $annee))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Votre ann\u00c3\u00a9e de naissance?\n",
-      "read annee\n",
-      "expr date + %y - $annee\n",
-      "echo $(($date - $annee))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Votre ann\u00c3\u00a9e de naissance?\n",
-      "read annee\n",
-      "expr date + %Y - $annee\n",
-      "echo $(($date - $annee))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Votre ann\u00c3\u00a9e de naissance?\n",
-      "read annee\n",
-      "expr date + %Y - $annee\n",
-      "echo $((date + %Y - $annee))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Votre ann\u00c3\u00a9e de naissance?\n",
-      "read annee\n",
-      "expr `date + %Y` - $annee\n",
-      "echo $((date + %Y - $annee))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Votre ann\u00c3\u00a9e de naissance?\n",
-      "read annee\n",
-      "expr `date + %Y` - $annee\n",
-      "echo $((`date + %Y` - $annee))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Votre ann\u00c3\u00a9e de naissance?\n",
-      "read annee\n",
-      "expr `date +%y` - $annee\n",
-      "echo $((`date +%Y` - $annee))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Votre ann\u00c3\u00a9e de naissance?\n",
-      "read annee\n",
-      "expr `date +%y` - $annee\n",
-      "echo $((`date +%Y` - $annee))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Votre ann\u00c3\u00a9e de naissance?\n",
-      "read annee\n",
-      "expr `date +%y` - $annee\n",
-      "echo $((`date +%Y` - $annee))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo il y a `who` connecter sur `hostname`\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo il y a $(who|wc -l) connecter sur `hostname`\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo il y a $(who|wc -l)utilisateur connecter sur `hostname`\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo il y a $(who|wc -l) utilisateur connecter sur `hostname`\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo set(ls -l file)\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo `set(ls -l file)`\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo `set(ls -l $1)`\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo `set ls -l $1`\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo $(set ls -l $1)\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo le nom du fichier\n",
-      "read fichier\n",
-      "echo $(set (ls -l $5 $fichier))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo le nom du fichier\n",
-      "read fichier\n",
-      "echo $(set -- $5 $fichier)\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo le nom du fichier\n",
-      "read fichier\n",
-      "echo $(set -- ls -l $5 $fichier)\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "set -- $(ls -l $1)\n",
-      "echo\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "set -- $(ls -l $1)\n",
-      "echo $5\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "set -- $(ls -l $1)\n",
-      "echo $5\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "set -- $(ls -l $1)\n",
-      "echo $5\n"
-    ]
+    {
+      "name": "tp5bis_exo1.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "expr $1 / 2\n",
+        "echo $(($1 / 2))\n",
+        "\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo2.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "expr $1 \\* 2\n",
+        "echo $(($1 * 2))\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo3.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo Votre ann\u00c3\u00a9e de naissance?\n",
+        "read annee\n",
+        "expr `date +%y` - $annee\n",
+        "echo $((`date +%Y` - $annee))\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo4.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo il y a $(who|wc -l) utilisateur connecter sur `hostname`\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo5.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "set -- $(ls -l $1)\n",
+        "echo $5\n"
+      ]
+    }
   ],
   "profile": [
     {

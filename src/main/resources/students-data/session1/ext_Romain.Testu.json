@@ -2,77 +2,58 @@
   "name": "ext_Romain.Testu",
   "session": 1,
   "scripts": [
-    [
-      "#!/bin/bash\n",
-      "echo cours\n",
-      "cours=unix\n",
-      "echo $cours\n",
-      "echo je suis au cours $cours\n"
-    ],
-    [
-      "echo mon login est : $logname\n",
-      "echo mon shell est : $shell\n",
-      "echo les variables du shell sont : $set\n",
-      "echo celles d'environnement sont : $env\n"
-    ],
-    [
-      "#!/bi/bashn\n",
-      "echo mon login est : $logname\n",
-      "echo mon shell est : $shell\n",
-      "echo les variables du shell sont : $set\n",
-      "echo celles d'environnement sont : $env\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo mon login est : $logname\n",
-      "echo mon shell est : $shell\n",
-      "echo les variables du shell sont : $set\n",
-      "echo celles d'environnement sont : $env\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo mon login est : $logname\n",
-      "echo mon shell est : $shell\n",
-      "echo les variables du shell sont : set\n",
-      "echo celles d'environnement sont : env\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo je suis le script shell $0\n",
-      "echo mes arguments sont $*\n",
-      "echo le premier argument est $1\n",
-      "echo le deuxieme argurment est $2\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "Le script $0 poss\u00c3\u00a8de $# parametres que voici : $*\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Le script $0 poss\u00c3\u00a8de $# parametres que voici : $*\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "cat fic1 fic2 > fic3\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "cat f1 f2 > fic3\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "cat f1 f2 > c3\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo voici la date : `date`\n",
-      "echo voici une etoile : /*\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo voici la date : `date`\n",
-      "echo voici une etoile : \\*\n"
-    ]
+    {
+      "name": "tp5_exo1.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo cours\n",
+        "cours=unix\n",
+        "echo $cours\n",
+        "echo je suis au cours $cours\n"
+      ]
+    },
+    {
+      "name": "tp5_exo2.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo mon login est : $logname\n",
+        "echo mon shell est : $shell\n",
+        "echo les variables du shell sont : set\n",
+        "echo celles d'environnement sont : env\n"
+      ]
+    },
+    {
+      "name": "tp5_exo4.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo je suis le script shell $0\n",
+        "echo mes arguments sont $*\n",
+        "echo le premier argument est $1\n",
+        "echo le deuxieme argurment est $2\n"
+      ]
+    },
+    {
+      "name": "tp5_exo5.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo Le script $0 poss\u00c3\u00a8de $# parametres que voici : $*\n"
+      ]
+    },
+    {
+      "name": "tp5_ex6.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "cat f1 f2 > c3\n"
+      ]
+    },
+    {
+      "name": "tp5_ex7.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo voici la date : `date`\n",
+        "echo voici une etoile : \\*\n"
+      ]
+    }
   ],
   "profile": [
     {

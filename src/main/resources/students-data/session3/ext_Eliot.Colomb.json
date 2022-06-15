@@ -2,317 +2,48 @@
   "name": "ext_Eliot.Colomb",
   "session": 3,
   "scripts": [
-    [
-      "#!bin/bash\n",
-      "echo `expr $(($#) / 2)`\n"
-    ],
-    [
-      "#!bin/bash\n",
-      "result=`expr $1/2`\n",
-      "echo $result\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "result=`expr $1/2`\n",
-      "echo $result\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo `expr $# `/` 2`\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo `expr $#/2`\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo `expr $1/2`\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo `expr \\$1/2`\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo $(($1/2))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo $(($1/2))\n",
-      "echo expr`$1/2`\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo $(($1/2))\n",
-      "echo `expr $1/2`\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo $(($1/2))\n",
-      "nb=`expr $1 / 2`\n",
-      "echo $nb\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "nb1=`expr $1 \\* 2`\n",
-      "echo $nb1\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo $(($1\\*2))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo $(($1*2))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo $(($1+$1))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo $(($1))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo $(( $1 * 2))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo $(( $1 * 2))\n",
-      "echo `expr $1 \\* 2`\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance \\?\n",
-      "read naissance\n",
-      "echo Votre \u00c3\u00a2ge est :\n",
-      "echo `expr date - $naissance`\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance \\?\n",
-      "read naissance\n",
-      "echo Votre \u00c3\u00a2ge est :\n",
-      "echo `expr 2020 - $naissance`\n",
-      "echo ans\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance \\?\n",
-      "read naissance\n",
-      "echo Votre \u00c3\u00a2ge est : `expr 2020 - $naissance` ans.\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo $who\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo `who | wc -l`\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Il y a `who | wc -l` utilisateurs connect\u00c3\u00a9s sur `hostname`\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "set -- $(ls -l file)\n",
-      "echo $1\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "set -- $(ls -l F3)\n",
-      "echo $1\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "set -- $(ls -l F3)\n",
-      "echo $1\n",
-      "set -- $(taille.sh F3)\n",
-      "echo $2\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "set -- $(ls -l F3)\n",
-      "echo $1\n",
-      "set -- $(taille.sh F3)\n",
-      "echo $2\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "set -- $(ls -l F3)\n",
-      "echo $1\n",
-      "set -- $(ls -s F3)\n",
-      "echo $2\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "set -- $(ls -l F3)\n",
-      "echo $1\n",
-      "set -- $(ls -sh F3)\n",
-      "echo $2\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "set -- $(ls -l F3)\n",
-      "echo $1\n",
-      "set -- $(./taille.sh F3)\n",
-      "echo $2\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "set -- $(ls -l )\n",
-      "echo $1 $2\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "set $(ls -l )\n",
-      "echo $1 $2\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "set --$(ls -l)\n",
-      "echo $1 \n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "set $(ls -l F3)\n",
-      "echo $1 \n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "set ls -l F3\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "set ls -l F3\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "set ls -l F3\n",
-      "echo $1\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "set (ls -l F3)\n",
-      "echo $1\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "`set (ls -l F3)`\n",
-      "echo $1\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance \\?\n",
-      "read naissance\n",
-      "echo Votre \u00c3\u00a2ge est : `expr date \"+%Y\" - $naissance` ans.\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance \\?\n",
-      "read naissance\n",
-      "date1=date \"+%Y\"\n",
-      "echo Votre \u00c3\u00a2ge est : `expr $date1 - $naissance` ans.\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "set --(ls -l F3)\n",
-      "echo $1\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "set --(ls -l F3)\n",
-      "echo $1\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "set --(ls -l F3)\n",
-      "echo $1\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance \\?\n",
-      "read naissance\n",
-      "date1=`date \"+%Y\"`\n",
-      "echo Votre \u00c3\u00a2ge est : `expr $date1 - $naissance` ans.\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "set --(ls -l F3)\n",
-      "echo $1\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "set --(ls -l F3)\n",
-      "echo $1\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "set -- $(ls -l F3)\n",
-      "echo $1\n",
-      "set -- $(./taille.sh F3)\n",
-      "echo $1\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "set -- $(ls -l F3)\n",
-      "echo $1\n",
-      "set -- $(taille.sh F3)\n",
-      "echo $1\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "set -- $(ls -l F3)\n",
-      "echo $1\n",
-      "set -- $(ls -h F3)\n",
-      "echo $1\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "set -- $(ls -l F3)\n",
-      "echo $1\n",
-      "set -- $(ls -h F3)\n",
-      "echo $2\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "set $(ls -l F3)\n",
-      "echo $1\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "set -- $(ls -l F3)\n",
-      "echo $5\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "set -- $(ls -l F3)\n",
-      "echo $2\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "set -- $(ls -l F3)\n",
-      "echo $3\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "set -- $(ls -l $1)\n",
-      "echo $5\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo $(($1/2))\n",
-      "nb=`expr $1 / 2`\n",
-      "echo $nb\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo $(($1 / 2))\n",
-      "nb=`expr $1 / 2`\n",
-      "echo $nb\n"
-    ]
+    {
+      "name": "tp5bis_exo1.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo $(($1 / 2))\n",
+        "nb=`expr $1 / 2`\n",
+        "echo $nb\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo2.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo $(( $1 * 2))\n",
+        "echo `expr $1 \\* 2`\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo3.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo Quelle est votre ann\u00c3\u00a9e de naissance \\?\n",
+        "read naissance\n",
+        "date1=`date \"+%Y\"`\n",
+        "echo Votre \u00c3\u00a2ge est : `expr $date1 - $naissance` ans.\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo4.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo Il y a `who | wc -l` utilisateurs connect\u00c3\u00a9s sur `hostname`\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo5.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "set -- $(ls -l $1)\n",
+        "echo $5\n"
+      ]
+    }
   ],
   "profile": [
     {

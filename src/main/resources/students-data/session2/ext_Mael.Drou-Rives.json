@@ -2,50 +2,37 @@
   "name": "ext_Mael.Drou-Rives",
   "session": 2,
   "scripts": [
-    [
-      "#!/bin/bash\n",
-      "echo Le script est $0\n",
-      "echo il poss\u00c3\u00a8de $*\n",
-      "echo param\u00c3\u00a8tre que voici $1\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Le script est $0\n",
-      "echo il poss\u00c3\u00a8de $#\n",
-      "echo param\u00c3\u00a8tre que voici $*\n"
-    ],
-    [
-      "echo $path\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo $path\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo $PATH\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "export PATH=$PATH:$PWD\n",
-      "echo \"export PATH=$PATH:$PWD\">>~/.bashrc\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "export PATH=$PATH:$PWD\n",
-      "echo \"export PATH=$PATH:$PWD\">>~/.bashrc\n",
-      "source ~/.bashrc\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Cher utilisateurs quel est ton prenom \\?\n",
-      "read prenom nom\n",
-      "echo Ravi de te connaitre $prenom $nom\n",
-      "echo Quel est ton age \\?\n",
-      "read age \n",
-      "echo Tu es $prenom $nom et tu as $age n\\'est ce pas \\?\n",
-      "read reponse\n"
-    ]
+    {
+      "name": "tp5_exo5.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo Le script est $0\n",
+        "echo il poss\u00c3\u00a8de $#\n",
+        "echo param\u00c3\u00a8tre que voici $*\n"
+      ]
+    },
+    {
+      "name": "tp5_exo9.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "export PATH=$PATH:$PWD\n",
+        "echo \"export PATH=$PATH:$PWD\">>~/.bashrc\n",
+        "source ~/.bashrc\n"
+      ]
+    },
+    {
+      "name": "tp5_exo3.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo Cher utilisateurs quel est ton prenom \\?\n",
+        "read prenom nom\n",
+        "echo Ravi de te connaitre $prenom $nom\n",
+        "echo Quel est ton age \\?\n",
+        "read age \n",
+        "echo Tu es $prenom $nom et tu as $age n\\'est ce pas \\?\n",
+        "read reponse\n"
+      ]
+    }
   ],
   "profile": [
     {

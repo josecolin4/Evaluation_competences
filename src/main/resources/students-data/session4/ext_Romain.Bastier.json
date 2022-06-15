@@ -2,65 +2,42 @@
   "name": "ext_Romain.Bastier",
   "session": 4,
   "scripts": [
-    [
-      "for liste_commande in date who pwd ls\n",
-      "do\n",
-      "\t$liste_commande\n",
-      "done\n"
-    ],
-    [
-      "for \n"
-    ],
-    [
-      "echo il y a `who`\n",
-      "echo le nom de la machine `hostname`\n"
-    ],
-    [
-      "set --  $(ls -l file)\n",
-      "echo $1 \n"
-    ],
-    [
-      "set --  $(ls -l ./tp5bis_exo4)\n",
-      "echo $1 \n"
-    ],
-    [
-      "set --  $(ls -l ./tp5bis_exo4.sh)\n",
-      "echo $1 \n"
-    ],
-    [
-      "set --  $(ls -l ./tp5bis_exo4.sh)\n",
-      "echo $2 \n"
-    ],
-    [
-      "set --  $(ls -l ./tp5bis_exo4.sh)\n",
-      "echo $3 \n"
-    ],
-    [
-      "set --  $(ls -l ./tp5bis_exo4.sh)\n",
-      "echo $4 \n"
-    ],
-    [
-      "set --  $(ls -l ./tp5bis_exo4.sh)\n",
-      "echo $5 \n"
-    ],
-    [
-      "set --  $(ls -l ./tp5bis_exo4.sh)\n",
-      "echo $6 \n"
-    ],
-    [
-      "set --  $(ls -l ./tp5bis_exo4.sh)\n",
-      "echo $5 \n"
-    ],
-    [
-      "nb=1\n",
-      "num=1\n",
-      "for nb in $*\n",
-      "do\n",
-      "\techo argument $num : $nb\n",
-      "\tnum=$((num+1))\n",
-      "done\n",
-      "echo Il y a  $# arguments\n"
-    ]
+    {
+      "name": "tp6_exo4.sh",
+      "lines": [
+        "for liste_commande in date who pwd ls\n",
+        "do\n",
+        "\t$liste_commande\n",
+        "done\n"
+      ]
+    },
+    {
+      "name": "tp6_exo5.sh",
+      "lines": [
+        "nb=1\n",
+        "num=1\n",
+        "for nb in $*\n",
+        "do\n",
+        "\techo argument $num : $nb\n",
+        "\tnum=$((num+1))\n",
+        "done\n",
+        "echo Il y a  $# arguments\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo4.sh",
+      "lines": [
+        "echo il y a `who`\n",
+        "echo le nom de la machine `hostname`\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo5.sh",
+      "lines": [
+        "set --  $(ls -l ./tp5bis_exo4.sh)\n",
+        "echo $5 \n"
+      ]
+    }
   ],
   "profile": [
     {

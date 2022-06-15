@@ -2,248 +2,47 @@
   "name": "ext_Dorian.Filipe",
   "session": 4,
   "scripts": [
-    [
-      "liste_commandes=1\n",
-      "for liste_commandes in 1\n",
-      "do\n",
-      "\techo `date`\n",
-      "\tliste_commandes=2\n",
-      "done\n",
-      "for liste_commandes in 2\n",
-      "do\n",
-      "\techo `who`\n",
-      "\tliste_commandes=3\n",
-      "done\n",
-      "for liste_commandes in 3\n",
-      "do\n",
-      "\techo `pwd`\n",
-      "\tliste_commandes=4\n",
-      "done\n",
-      "for liste_commandes in 4\n",
-      "do\n",
-      "\techo `ls`\n",
-      "done\n"
-    ],
-    [
-      "liste_commandes=date who pwd ls\n",
-      "for liste_commandes in date who pwd ls\n",
-      "do\n",
-      "\techo `date`\n",
-      "\techo `who`\n",
-      "\techo `pwd`\n",
-      "\techo `ls`\n",
-      "done\n"
-    ],
-    [
-      "liste_commandes=date who pwd ls\n",
-      "for liste_commandes in date\n",
-      "do\n",
-      "\techo `date`\n",
-      "\techo `who`\n",
-      "\techo `pwd`\n",
-      "\techo `ls`\n",
-      "done\n"
-    ],
-    [
-      "liste_commandes=date who pwd ls\n",
-      "for liste_commandes in date\n",
-      "do\n",
-      "\techo `date`\n",
-      "\techo `who`\n",
-      "\techo `pwd`\n",
-      "\techo `ls`\n",
-      "done\n"
-    ],
-    [
-      "arg=$#\n",
-      "for $# in arg\n",
-      "do\n",
-      "\techo Argument 1 : $1\n",
-      "\techo Argument 2 : $2\n",
-      "\techo Argument 3 : $3\n",
-      "\techo Argument 4 : $4\n",
-      "done\n"
-    ],
-    [
-      "arg=$#\n",
-      "for $# in arg\n",
-      "do\n",
-      "\techo $1\n",
-      "\techo $2\n",
-      "\techo $3\n",
-      "\techo $4\n",
-      "done\n"
-    ],
-    [
-      "arg=$#\n",
-      "for arg in $#\n",
-      "do\n",
-      "\techo $1\n",
-      "\techo $2\n",
-      "\techo $3\n",
-      "\techo $4\n",
-      "done\n"
-    ],
-    [
-      "arg=$#\n",
-      "for arg in $#\n",
-      "do\n",
-      "\techo Argument 1 : $1\n",
-      "\techo Argument 2 : $2\n",
-      "\techo Argument 3 : $3\n",
-      "\techo Argument 4 : $4\n",
-      "\techo Il y a $# arguments.\n",
-      "done\n"
-    ],
-    [
-      "nb=1\n",
-      "for nb in $*\n",
-      "do\n",
-      "\techo Argument $nb : $$nb\n",
-      "\tnb=nb+1\n",
-      "done\n",
-      "echo Il y a $# arguments.\n"
-    ],
-    [
-      "nb=1\n",
-      "for nb in $*\n",
-      "do\n",
-      "\techo Argument nb : $nb\n",
-      "\tnb=nb+1\n",
-      "done\n",
-      "echo Il y a $# arguments.\n"
-    ],
-    [
-      "nb=1\n",
-      "num=1\n",
-      "for nb in $*\n",
-      "do\n",
-      "\techo Argument $num : $nb\n",
-      "\tnb=nb+1\n",
-      "\tnum=num+1\n",
-      "done\n",
-      "echo Il y a $# arguments.\n"
-    ],
-    [
-      "nb=1\n",
-      "num=1\n",
-      "for nb in $*\n",
-      "do\n",
-      "\techo Argument $num : $nb\n",
-      "\tnb=nb+1\n",
-      "\tnum=num + 1\n",
-      "done\n",
-      "echo Il y a $# arguments.\n"
-    ],
-    [
-      "nb=1\n",
-      "num=1\n",
-      "for nb in $*\n",
-      "do\n",
-      "\techo Argument $num : $nb\n",
-      "\tnb=nb+1\n",
-      "\tnum=num+1\n",
-      "done\n",
-      "echo Il y a $# arguments.\n"
-    ],
-    [
-      "nb=1\n",
-      "num=1\n",
-      "for nb in $*\n",
-      "do\n",
-      "\techo Argument $num : $nb\n",
-      "\tnb=nb+1\n",
-      "\tnum=(num+1)\n",
-      "done\n",
-      "echo Il y a $# arguments.\n"
-    ],
-    [
-      "nb=1\n",
-      "num=1\n",
-      "for nb in $*\n",
-      "do\n",
-      "\techo Argument $num : $nb\n",
-      "\tnb=nb+1\n",
-      "\tnum=((num+1))\n",
-      "done\n",
-      "echo Il y a $# arguments.\n"
-    ],
-    [
-      "nb=1\n",
-      "num=1\n",
-      "for nb in $*\n",
-      "do\n",
-      "\techo Argument $num : $nb\n",
-      "\tnb=nb+1\n",
-      "\tnum=$((num+1))\n",
-      "done\n",
-      "echo Il y a $# arguments.\n"
-    ],
-    [
-      "for $1 in 1..100\n",
-      "do\n",
-      "\t$seq 1 $1\n",
-      "done\n"
-    ],
-    [
-      "for $1 in 1..100\n",
-      "do\n",
-      "\t$seq $1\n",
-      "done\n"
-    ],
-    [
-      "nb=$1\n",
-      "for nb in 1 2 3 4 5 6 7 8 9 10\n",
-      "do\n",
-      "\t$seq $1\n",
-      "done\n"
-    ],
-    [
-      "nb=$1\n",
-      "for nb in 1 2 3 4 5 6 7 8 9 10\n",
-      "do\n",
-      "\t$seq $nb\n",
-      "done\n"
-    ],
-    [
-      "nb=$1\n",
-      "for nb in 1 2 3 4 5 6 7 8 9 10\n",
-      "do\n",
-      "\t$ seq $nb\n",
-      "done\n"
-    ],
-    [
-      "nb=$1\n",
-      "for nb in 1 2 3 4 5 6 7 8 9 10\n",
-      "do\n",
-      "\tseq $nb\n",
-      "done\n"
-    ],
-    [
-      "nb=$1\n",
-      "for nb in 1 2 3 4 5 6 7 8 9 10\n",
-      "do\n",
-      "\tseq $1\n",
-      "done\n"
-    ],
-    [
-      "nb=$1\n",
-      "for nb in 1..100\n",
-      "do\n",
-      "\tseq $1\n",
-      "done\n"
-    ],
-    [
-      "nb=$1\n",
-      "mult=1\n",
-      "fact=1\n",
-      "for nb in $(seq $1)\n",
-      "do\n",
-      "\tfact=$((fact*mult))\n",
-      "\tmult=$((mult+1))\n",
-      "\techo $fact\n",
-      "done\n"
-    ]
+    {
+      "name": "tp6_exo4.sh",
+      "lines": [
+        "liste_commandes=date who pwd ls\n",
+        "for liste_commandes in date\n",
+        "do\n",
+        "\techo `date`\n",
+        "\techo `who`\n",
+        "\techo `pwd`\n",
+        "\techo `ls`\n",
+        "done\n"
+      ]
+    },
+    {
+      "name": "tp6_exo5.sh",
+      "lines": [
+        "nb=1\n",
+        "num=1\n",
+        "for nb in $*\n",
+        "do\n",
+        "\techo Argument $num : $nb\n",
+        "\tnb=nb+1\n",
+        "\tnum=$((num+1))\n",
+        "done\n",
+        "echo Il y a $# arguments.\n"
+      ]
+    },
+    {
+      "name": "tp6_exo6.sh",
+      "lines": [
+        "nb=$1\n",
+        "mult=1\n",
+        "fact=1\n",
+        "for nb in $(seq $1)\n",
+        "do\n",
+        "\tfact=$((fact*mult))\n",
+        "\tmult=$((mult+1))\n",
+        "\techo $fact\n",
+        "done\n"
+      ]
+    }
   ],
   "profile": [
     {

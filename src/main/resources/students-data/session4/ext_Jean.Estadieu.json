@@ -2,114 +2,62 @@
   "name": "ext_Jean.Estadieu",
   "session": 4,
   "scripts": [
-    [
-      "#!/bin/bash\n",
-      "expr $1 \\* 2\n",
-      "n1=$1\n",
-      "echo $(( 2 * n1 ))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "utilisateur=`who | wc - l`\n",
-      "machine=`hostname`\n",
-      "echo il y a $utilisateur utilisateurs connect\u00c3\u00a9s sur $machine .\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "utilisateur=`who | wc -l`\n",
-      "machine=`hostname`\n",
-      "echo il y a $utilisateur utilisateurs connect\u00c3\u00a9s sur $machine .\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "utilisateur=`who | wc -l`\n",
-      "machine=`hostname`\n",
-      "echo il y a $utilisateur utilisateurs connect\u00c3\u00a9s sur $machine .\n",
-      "uti=$(who | wc -l)\n",
-      "ma=$(hostname)\n",
-      "echo Il y a bien $uti utilisateur connact\u00c3\u00a9s sur $m.\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "utilisateur=`who | wc -l`\n",
-      "machine=`hostname`\n",
-      "echo il y a $utilisateur utilisateurs connect\u00c3\u00a9s sur $machine .\n",
-      "uti=$(who | wc -l)\n",
-      "ma=$(hostname)\n",
-      "echo Il y a bien $uti utilisateur connact\u00c3\u00a9s sur $ma.\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "set $(ls -s $1)\n",
-      "echo $1\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "n1=$1\n",
-      "n2=5\n",
-      "n3=10\n",
-      "if test n1 -ge n2 -a n1 -le n3\n",
-      "\tthen\n",
-      "\t\techo la valeur $n1 est comprise entre 5 et 10.\n",
-      "\telse\n",
-      "\t\techo la valeur $n1 n \\'est pas comprise entre 5 et 10\n",
-      "\tfi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "n1=$1\n",
-      "n2=5\n",
-      "n3=10\n",
-      "if  n1 -ge n2 -a n1 -le n3\n",
-      "\tthen\n",
-      "\t\techo la valeur $n1 est comprise entre 5 et 10.\n",
-      "\telse\n",
-      "\t\techo la valeur $n1 n \\'est pas comprise entre 5 et 10\n",
-      "\tfi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "n2=5\n",
-      "n3=10\n",
-      "if  $1  -ge n2 -a $1 -le n3\n",
-      "\tthen\n",
-      "\t\techo la valeur $1 est comprise entre 5 et 10.\n",
-      "\telse\n",
-      "\t\techo la valeur $1 n \\'est pas comprise entre 5 et 10\n",
-      "\tfi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "n2=5\n",
-      "n3=10\n",
-      "if test $1  -ge n2 -a $1 -le n3\n",
-      "\tthen\n",
-      "\t\techo la valeur $1 est comprise entre 5 et 10.\n",
-      "\telse\n",
-      "\t\techo la valeur $1 n \\'est pas comprise entre 5 et 10\n",
-      "\tfi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "n2=5\n",
-      "n3=10\n",
-      "if test $1  -ge $n2 -a $1 -le $n3\n",
-      "\tthen\n",
-      "\t\techo la valeur $1 est comprise entre 5 et 10.\n",
-      "\telse\n",
-      "\t\techo la valeur $1 n \\'est pas comprise entre 5 et 10\n",
-      "\tfi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test -r $1 -a -w $1\n",
-      "\tthen\n",
-      "\t\techo Le fichier $1 existe et est accessible en lecture et \u00c3\u00a9criture.\n",
-      "\telse\n",
-      "\t\techo \"le fichier\" $1 \"n'existe pas, ou n'est pas accessible en lecture ou en ecriture\"\n",
-      "\tfi\n",
-      "\n"
-    ]
+    {
+      "name": "tp5bis_exo2.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "expr $1 \\* 2\n",
+        "n1=$1\n",
+        "echo $(( 2 * n1 ))\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo4.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "utilisateur=`who | wc -l`\n",
+        "machine=`hostname`\n",
+        "echo il y a $utilisateur utilisateurs connect\u00c3\u00a9s sur $machine .\n",
+        "uti=$(who | wc -l)\n",
+        "ma=$(hostname)\n",
+        "echo Il y a bien $uti utilisateur connact\u00c3\u00a9s sur $ma.\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo5.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "set $(ls -s $1)\n",
+        "echo $1\n"
+      ]
+    },
+    {
+      "name": "tp6_exo1.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "n2=5\n",
+        "n3=10\n",
+        "if test $1  -ge $n2 -a $1 -le $n3\n",
+        "\tthen\n",
+        "\t\techo la valeur $1 est comprise entre 5 et 10.\n",
+        "\telse\n",
+        "\t\techo la valeur $1 n \\'est pas comprise entre 5 et 10\n",
+        "\tfi\n"
+      ]
+    },
+    {
+      "name": "tp6_exo2.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "if test -r $1 -a -w $1\n",
+        "\tthen\n",
+        "\t\techo Le fichier $1 existe et est accessible en lecture et \u00c3\u00a9criture.\n",
+        "\telse\n",
+        "\t\techo \"le fichier\" $1 \"n'existe pas, ou n'est pas accessible en lecture ou en ecriture\"\n",
+        "\tfi\n",
+        "\n"
+      ]
+    }
   ],
   "profile": [
     {

@@ -2,15 +2,15 @@
   "name": "ext_Guillaume.Pomies",
   "session": 5,
   "scripts": [
-    [
-      "\n"
-    ],
-    [
-      "#! /bin/bash\n",
-      "echo `ls -l $*`\n",
-      "set -- $(ls -l $*)\n",
-      "echo $7\n"
-    ]
+    {
+      "name": "tp5bis_exo5.sh",
+      "lines": [
+        "#! /bin/bash\n",
+        "echo `ls -l $*`\n",
+        "set -- $(ls -l $*)\n",
+        "echo $7\n"
+      ]
+    }
   ],
   "commands": [
     {

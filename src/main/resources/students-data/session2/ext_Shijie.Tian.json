@@ -2,9 +2,12 @@
   "name": "ext_Shijie.Tian",
   "session": 2,
   "scripts": [
-    [
-      "PATH=${PATH}:.\n"
-    ]
+    {
+      "name": "tp5_exo9.sh",
+      "lines": [
+        "PATH=${PATH}:.\n"
+      ]
+    }
   ],
   "profile": [
     {

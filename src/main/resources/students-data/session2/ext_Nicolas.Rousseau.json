@@ -2,35 +2,31 @@
   "name": "ext_Nicolas.Rousseau",
   "session": 2,
   "scripts": [
-    [
-      "#!/bin/bash\n",
-      "cat $1>>$3\n",
-      "cat $2>>$3\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "$PATH=$(($PATH+$HOME))\n",
-      "echo $PATH\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "$PATH=$(($PATH+$BASH))\n",
-      "echo $PATH\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo old path : $PATH\n",
-      "export PATH=$PATH:$BASH\n",
-      "echo new path : $PATH\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "expr 3 + 1\n"
-    ]
+    {
+      "name": "tp5_exo6.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "cat $1>>$3\n",
+        "cat $2>>$3\n"
+      ]
+    },
+    {
+      "name": "tp5_exo9.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo old path : $PATH\n",
+        "export PATH=$PATH:$BASH\n",
+        "echo new path : $PATH\n",
+        "\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo1.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "expr 3 + 1\n"
+      ]
+    }
   ],
   "profile": [
     {

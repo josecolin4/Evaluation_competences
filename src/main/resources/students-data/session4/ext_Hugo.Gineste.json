@@ -2,389 +2,51 @@
   "name": "ext_Hugo.Gineste",
   "session": 4,
   "scripts": [
-    [
-      "#! /bin/bash\n",
-      "\n",
-      "date = 'date(%Y)'\n",
-      "\n",
-      "echo Quel est ton age ?\n",
-      "read age\n",
-      "echo Tu as\n",
-      "echo date - age\n"
-    ],
-    [
-      "#! /bin/bash\n",
-      "\n",
-      "date = 'date(%Y)'\n",
-      "\n",
-      "echo Quel est ton age ?\n",
-      "read age\n",
-      "echo Tu as\n",
-      "echo $(( date - age))\n"
-    ],
-    [
-      "#! /bin/bash\n",
-      "\n",
-      "date = 'date'\n",
-      "\n",
-      "echo Quel est ton age ?\n",
-      "read age\n",
-      "echo Tu as\n",
-      "echo $(( date - age))\n"
-    ],
-    [
-      "#! /bin/bash\n",
-      "\n",
-      "\n",
-      "\n",
-      "echo Quel est ton age ?\n",
-      "read age\n",
-      "echo Tu as\n",
-      "echo $((|'date' - age))\n"
-    ],
-    [
-      "#! /bin/bash\n",
-      "\n",
-      "\n",
-      "\n",
-      "echo Quel est ton age ?\n",
-      "read age\n",
-      "echo Tu as\n",
-      "echo $(('date' - age))\n"
-    ],
-    [
-      "#! /bin/bash\n",
-      "\n",
-      "\n",
-      "\n",
-      "echo Donne ton annee de naissance\n",
-      "read age\n",
-      "echo Tu as\n",
-      "echo $(('date' - age))\n"
-    ],
-    [
-      "#! /bin/bash\n",
-      "\n",
-      "\n",
-      "\n",
-      "echo Donne ton annee de naissance\n",
-      "read age\n",
-      "echo Tu as\n",
-      "echo $((date '(%Y)' - age))\n"
-    ],
-    [
-      "#! /bin/bash\n",
-      "\n",
-      "\n",
-      "\n",
-      "echo Donne ton annee de naissance\n",
-      "read age\n",
-      "echo Tu as\n",
-      "echo $((date - age))\n"
-    ],
-    [
-      "#! /bin/bash\n",
-      "\n",
-      "var = date +%Y\n",
-      "\n",
-      "echo Donne ton annee de naissance\n",
-      "read age\n",
-      "echo Tu as\n",
-      "expr date - age\n"
-    ],
-    [
-      "#! /bin/bash\n",
-      "\n",
-      "Valeur=date +%Y\n",
-      "\n",
-      "echo Donne ton annee de naissance\n",
-      "read age\n",
-      "echo Tu as\n",
-      "expr date - age\n"
-    ],
-    [
-      "#! /bin/bash\n",
-      "\n",
-      "Valeur=(date +%Y)\n",
-      "\n",
-      "echo Donne ton annee de naissance\n",
-      "read age\n",
-      "echo Tu as\n",
-      "expr date - age\n"
-    ],
-    [
-      "#! /bin/bash\n",
-      "\n",
-      "Valeur=(date +%Y)\n",
-      "\n",
-      "echo Donne ton annee de naissance\n",
-      "read age\n",
-      "echo Tu as\n",
-      "expr Valeur - age\n"
-    ],
-    [
-      "#! /bin/bash\n",
-      "\n",
-      "Valeur=(date +%Y)\n",
-      "\n",
-      "echo Donne ton annee de naissance\n",
-      "read age\n",
-      "echo Tu as\n",
-      "echo$(( Valeur - age))\n"
-    ],
-    [
-      "#! /bin/bash\n",
-      "\n",
-      "echo |date +%Y\n",
-      "\n",
-      "echo Donne ton annee de naissance\n",
-      "read age\n",
-      "echo Tu as\n",
-      "echo $(( Valeur - age))\n"
-    ],
-    [
-      "#! /bin/bash\n",
-      "\n",
-      "echo |date +%Y\n",
-      "\n",
-      "echo Donne ton annee de naissance\n",
-      "read age\n",
-      "echo Tu as\n",
-      "echo $(( (|date +%Y) - age))\n"
-    ],
-    [
-      "#! /bin/bash\n",
-      "\n",
-      "echo |date +%Y\n",
-      "\n",
-      "echo Donne ton annee de naissance\n",
-      "read age\n",
-      "echo Tu as\n",
-      "echo $(( |date +%Y - age))\n"
-    ],
-    [
-      "#! /bin/bash\n",
-      "\n",
-      "echo |date +%Y\n",
-      "\n",
-      "echo Donne ton annee de naissance\n",
-      "read age\n",
-      "echo Tu as\n",
-      "echo $(( |date +%Y - age))\n"
-    ],
-    [
-      "#! /bin/bash\n",
-      "\n",
-      "echo |date +%Y\n",
-      "\n",
-      "echo Donne ton annee de naissance\n",
-      "read age\n",
-      "\n",
-      "echo Tu as `expr $(date \"+%Y\") - $age \n",
-      "\n"
-    ],
-    [
-      "#! /bin/bash\n",
-      "\n",
-      "echo |date +%Y\n",
-      "\n",
-      "echo Donne ton annee de naissance\n",
-      "read age\n",
-      "\n",
-      "echo Tu as `expr $(date \"+%Y\") - $age`\n"
-    ],
-    [
-      "#! /bin/bash\n",
-      "\n",
-      "echo |date +%Y\n",
-      "\n",
-      "echo Donne ton annee de naissance\n",
-      "read age\n",
-      "\n",
-      "echo Tu as `expr $(date \"+%Y\") - $age` ans\n"
-    ],
-    [
-      "#! /bin/bash\n",
-      "\n",
-      "\n"
-    ],
-    [
-      "#! /bin/bash\n",
-      "\n",
-      "\n",
-      "echo `who |wc -l`\n"
-    ],
-    [
-      "#! /bin/bash\n",
-      "\n",
-      "\n",
-      "echo Il y a  `who |wc -l` sur `hostname`\n"
-    ],
-    [
-      "#! /bin/bash\n",
-      "\n",
-      "echo `ls -l $* `\n"
-    ],
-    [
-      "#! /bin/bash\n",
-      "\n",
-      "echo `ls -l $* `\n",
-      "set -- $(ls -l $*)\n",
-      "echo $2\n"
-    ],
-    [
-      "#! /bin/bash\n",
-      "\n",
-      "echo `ls -l $* `\n",
-      "set -- $(ls -l $*)\n",
-      "echo $6\n"
-    ],
-    [
-      "#! /bin/bash\n",
-      "\n",
-      "echo `ls -l $* `\n",
-      "set -- $(ls -l $*)\n",
-      "echo $7\n"
-    ],
-    [
-      "#! /bin/bash\n",
-      "\n",
-      "if $*>5 and $*<10\n",
-      "\t\tthen\n",
-      "\t\t\techo $* est compris entre 5 et 10.\n",
-      "else\n",
-      "\techo $* n/'est pas compris entre 5 et 10.\n",
-      "fi\n"
-    ],
-    [
-      "#! /bin/bash\n",
-      "\n",
-      "if $*>5 and $*<10\n",
-      "\t\tthen\n",
-      "\t\t\techo $* est compris entre 5 et 10.\n",
-      "else\n",
-      "\techo $* n\\'est pas compris entre 5 et 10.\n",
-      "fi\n"
-    ],
-    [
-      "#! /bin/bash\n",
-      "\n",
-      "if $*>5 and $*<1 then\n",
-      "\t\t\techo $* est compris entre 5 et 10.\n",
-      "else\n",
-      "\techo $* n\\'est pas compris entre 5 et 10.\n",
-      "fi\n"
-    ],
-    [
-      "#! /bin/bash\n",
-      "\n",
-      "if $*>5 and $*<1\n",
-      "\tthen\t\n",
-      "\t\techo $* est compris entre 5 et 10.\n",
-      "\telse\n",
-      "\t\techo $* n\\'est pas compris entre 5 et 10.\n",
-      "fi\n"
-    ],
-    [
-      "*#! /bin/bash\n",
-      "\n",
-      "if $1>5 and $1<1\n",
-      "\tthen\t\n",
-      "\t\techo $1 est compris entre 5 et 10.\n",
-      "\telse\n",
-      "\t\techo $1 n\\'est pas compris entre 5 et 10.\n",
-      "fi\n"
-    ],
-    [
-      "#! /bin/bash\n",
-      "\n",
-      "if $1>5 and $1<1\n",
-      "\tthen\t\n",
-      "\t\techo $1 est compris entre 5 et 10.\n",
-      "\telse\n",
-      "\t\techo $1 n\\'est pas compris entre 5 et 10.\n",
-      "fi\n"
-    ],
-    [
-      "#! /bin/bash\n",
-      "\n",
-      "if $1>5 and $1<1\n",
-      "\tthen\t\n",
-      "\t\techo $1 est compris entre 5 et 10.\n",
-      "\telse\n",
-      "\t\techo $1 n est pas compris entre 5 et 10.\n",
-      "fi\n"
-    ],
-    [
-      "#! /bin/bash\n",
-      "\n",
-      "if $1>5 && $1<1\n",
-      "\tthen\t\n",
-      "\t\techo $1 est compris entre 5 et 10.\n",
-      "\telse\n",
-      "\t\techo $1 n est pas compris entre 5 et 10.\n",
-      "fi\n"
-    ],
-    [
-      "#! /bin/bash\n",
-      "\n",
-      "if $1>5 & $1<1\n",
-      "\tthen\t\n",
-      "\t\techo $1 est compris entre 5 et 10.\n",
-      "\telse\n",
-      "\t\techo $1 n est pas compris entre 5 et 10.\n",
-      "fi\n"
-    ],
-    [
-      "#! /bin/bash\n",
-      "\n",
-      "if $1>5 ||  $1<10\n",
-      "\tthen\t\n",
-      "\t\techo $1 est compris entre 5 et 10.\n",
-      "\telse\n",
-      "\t\techo $1 n est pas compris entre 5 et 10.\n",
-      "fi\n"
-    ],
-    [
-      "#! /bin/bash\n",
-      "\n",
-      "if [$1>5] && [ $1<10]\n",
-      "\tthen\t\n",
-      "\t\techo $1 est compris entre 5 et 10.\n",
-      "\telse\n",
-      "\t\techo $1 n est pas compris entre 5 et 10.\n",
-      "fi\n"
-    ],
-    [
-      "#! /bin/bash\n",
-      "\n",
-      "if [$1>5] && [ $1<10];\n",
-      "\tthen\t\n",
-      "\t\techo $1 est compris entre 5 et 10.\n",
-      "\telse\n",
-      "\t\techo $1 n est pas compris entre 5 et 10.\n",
-      "fi\n"
-    ],
-    [
-      "#! /bin/bash\n",
-      "\n",
-      "if [$1>5 -a $1<10];\n",
-      "\tthen\t\n",
-      "\t\techo $1 est compris entre 5 et 10.\n",
-      "\telse\n",
-      "\t\techo $1 n est pas compris entre 5 et 10.\n",
-      "fi\n"
-    ],
-    [
-      "#! /bin/bash\n",
-      "\n",
-      "if [$1>5 -a $1<10]\n",
-      "\tthen\t\n",
-      "\t\techo $1 est compris entre 5 et 10.\n",
-      "\telse\n",
-      "\t\techo $1 n est pas compris entre 5 et 10.\n",
-      "fi\n"
-    ]
+    {
+      "name": "tp5bis_3.sh",
+      "lines": [
+        "#! /bin/bash\n",
+        "\n",
+        "echo |date +%Y\n",
+        "\n",
+        "echo Donne ton annee de naissance\n",
+        "read age\n",
+        "\n",
+        "echo Tu as `expr $(date \"+%Y\") - $age` ans\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo4.sh",
+      "lines": [
+        "#! /bin/bash\n",
+        "\n",
+        "\n",
+        "echo Il y a  `who |wc -l` sur `hostname`\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo5.sh",
+      "lines": [
+        "#! /bin/bash\n",
+        "\n",
+        "echo `ls -l $* `\n",
+        "set -- $(ls -l $*)\n",
+        "echo $7\n"
+      ]
+    },
+    {
+      "name": "tp6_exo1.sh",
+      "lines": [
+        "#! /bin/bash\n",
+        "\n",
+        "if [$1>5 -a $1<10]\n",
+        "\tthen\t\n",
+        "\t\techo $1 est compris entre 5 et 10.\n",
+        "\telse\n",
+        "\t\techo $1 n est pas compris entre 5 et 10.\n",
+        "fi\n"
+      ]
+    }
   ],
   "profile": [
     {

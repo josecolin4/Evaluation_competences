@@ -2,59 +2,61 @@
   "name": "ext_Melanie.Lefevre",
   "session": 3,
   "scripts": [
-    [
-      "echo il y'a $who connecter sur $hostname\n"
-    ],
-    [
-      "echo il y'a who connecter sur hostname\n"
-    ],
-    [
-      "echo Le script $0 possede $# que voici: $*\n"
-    ],
-    [
-      "echo je suis le script F1\n",
-      "\n"
-    ],
-    [
-      "echo je suis le script F2\n",
-      "\n"
-    ],
-    [
-      "echo je suis le script F1\n",
-      "\n",
-      "echo je suis le script F2\n",
-      "\n"
-    ],
-    [
-      "echo je suis le script F1\n",
-      "\n",
-      "echo je suis le script F2\n",
-      "\n"
-    ],
-    [
-      "echo nous somme le `date`\n",
-      "Nous somme le MON NOV 16 15:20:46 CET 2020\n",
-      "ceci est \n",
-      "une tres \n",
-      "longue phrase...\n",
-      "voici une etoile :*\n"
-    ],
-    [
-      "nous somme le `date`\n",
-      "Nous somme le MON NOV 16 15:20:46 CET 2020\n",
-      "ceci est \n",
-      "une tres \n",
-      "longue phrase...\n",
-      "voici une etoile :*\n"
-    ],
-    [
-      "echo nous somme le `date`\n",
-      "echo Nous somme le MON NOV 16 15:20:46 CET 2020\n",
-      "echo ceci est \n",
-      "echo une tres \n",
-      "echo longue phrase...\n",
-      "echo voici une etoile :*\n"
-    ]
+    {
+      "name": "tp5bis_exo4.sh",
+      "lines": [
+        "echo il y'a who connecter sur hostname\n"
+      ]
+    },
+    {
+      "name": "tp5_exo5.sh",
+      "lines": [
+        "echo Le script $0 possede $# que voici: $*\n"
+      ]
+    },
+    {
+      "name": "F1.sh",
+      "lines": [
+        "echo je suis le script F1\n",
+        "\n"
+      ]
+    },
+    {
+      "name": "F2.sh",
+      "lines": [
+        "echo je suis le script F2\n",
+        "\n"
+      ]
+    },
+    {
+      "name": "F3.sh",
+      "lines": [
+        "echo je suis le script F1\n",
+        "\n",
+        "echo je suis le script F2\n",
+        "\n"
+      ]
+    },
+    {
+      "name": "tp5_exo6.sh",
+      "lines": [
+        "echo je suis le script F1\n",
+        "\n",
+        "echo je suis le script F2\n",
+        "\n"
+      ]
+    },
+    {
+      "name": "tp5_exo7.sh",
+      "lines": [
+        "echo nous somme le `date`\n",
+        "echo Nous somme le MON NOV 16 15:20:46 CET 2020\n",
+        "echo ceci est \n",
+        "echo une tres \n",
+        "echo longue phrase...\n",
+        "echo voici une etoile :*\n"
+      ]
+    }
   ],
   "profile": [
     {

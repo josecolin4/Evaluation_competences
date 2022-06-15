@@ -2,53 +2,46 @@
   "name": "ext_Manon.Piquemal",
   "session": 4,
   "scripts": [
-    [
-      "#!/bin/bash\n",
-      "echo var\n",
-      "read var\n",
-      "echo 7expr $var / 2`\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo var\n",
-      "read var\n",
-      "echo `expr $var / 2`\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo var\n",
-      "read var\n",
-      "echo `expr $var / 2`\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "read var\n",
-      "echo $($var / 2)\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "read var\n",
-      "echo $(expr $var / 2)\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "read var\n",
-      "echo `expr $var * 2`\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "read var\n",
-      "echo `expr $var \\* 2`\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "read var\n",
-      "echo $(expr $var \\* 2)\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n"
-    ]
+    {
+      "name": "tp5bis_exo1.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo var\n",
+        "read var\n",
+        "echo `expr $var / 2`\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo1V2.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "read var\n",
+        "echo $(expr $var / 2)\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo2.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "read var\n",
+        "echo `expr $var \\* 2`\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo2V2.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "read var\n",
+        "echo $(expr $var \\* 2)\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo3.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "\n"
+      ]
+    }
   ],
   "profile": [
     {

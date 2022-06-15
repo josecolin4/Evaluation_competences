@@ -2,437 +2,60 @@
   "name": "ext_Hippolyte.Durand",
   "session": 4,
   "scripts": [
-    [
-      "#!/bin/bash\n",
-      "echo \"nom du script $0\"\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo \"nom du script $0\"\n",
-      "echo \"premier param\u00c3\u00a8tre $1\"\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo \"nom du script $0\"\n",
-      "echo \"premier param\u00c3\u00a8tre $1\"\n",
-      "echo \"second param\u00c3\u00a8te $2 \"\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo \"nom du script $0\"\n",
-      "echo \"premier param\u00c3\u00a8tre $1\"\n",
-      "echo \"second param\u00c3\u00a8te $2 \"\n",
-      "echo $1\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo \"nom du script $0\"\n",
-      "echo \"premier param\u00c3\u00a8tre $1\"\n",
-      "echo \"second param\u00c3\u00a8te $2 \"\n",
-      "echo  \"$1\"\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo \"nom du script $0\"\n",
-      "echo \"premier param\u00c3\u00a8tre $1\"\n",
-      "echo \"second param\u00c3\u00a8te $2 \"\n",
-      "echo $1\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo \"nom du script $0\"\n",
-      "echo \"premier param\u00c3\u00a8tre $1\"\n",
-      "echo \"second param\u00c3\u00a8te $2 \"\n",
-      "echo $1\n",
-      "echo \"PID du shell\" \\$\\$\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo \"nom du script $0\"\n",
-      "echo \"premier param\u00c3\u00a8tre $1\"\n",
-      "echo \"second param\u00c3\u00a8te $2 \"\n",
-      "echo $1\n",
-      "echo \"PID du shell\"$$\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo \"nom du script $0\"\n",
-      "echo \"premier param\u00c3\u00a8tre $1\"\n",
-      "echo \"second param\u00c3\u00a8te $2 \"\n",
-      "echo $1\n",
-      "echo \"PID du shell\"$$\n",
-      "echo \"code de retour $?\"\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo \"nom du script $0\"\n",
-      "echo \"premier param\u00c3\u00a8tre $1\"\n",
-      "echo \"second param\u00c3\u00a8te $2 \"\n",
-      "echo $1\n",
-      "echo \"PID du shell\"$$\n",
-      "echo \"code de retour $?\"\n",
-      "VARIABLE=\"valeur\"\n",
-      "echo $VARIABLE\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo \"nom du script $0\"\n",
-      "echo \"premier param\u00c3\u00a8tre $1\"\n",
-      "echo \"second param\u00c3\u00a8te $2 \"\n",
-      "echo $1\n",
-      "echo \"PID du shell\"$$\n",
-      "echo \"code de retour $?\"\n",
-      "VARIABLE=\"valeur\"\n",
-      "echo $VARIABLE\n",
-      "echo ${VARIABLE}\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo \"nom du script $0\"\n",
-      "echo \"premier param\u00c3\u00a8tre $1\"\n",
-      "echo \"second param\u00c3\u00a8te $2 \"\n",
-      "echo $1\n",
-      "echo \"PID du shell\"$$\n",
-      "echo \"code de retour $?\"\n",
-      "VARIABLE=\"valeur\"\n",
-      "echo $VARIABLE\n",
-      "echo ${VARIABLE}\n",
-      "echo \"comment tu t'appelle /?\"\n",
-      "read pr\u00c3\u00a9nom\n",
-      "echo $prenom\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo \"nom du script $0\"\n",
-      "echo \"premier param\u00c3\u00a8tre $1\"\n",
-      "echo \"second param\u00c3\u00a8te $2 \"\n",
-      "echo $1\n",
-      "echo \"PID du shell\"$$\n",
-      "echo \"code de retour $?\"\n",
-      "VARIABLE=\"valeur\"\n",
-      "echo $VARIABLE\n",
-      "echo ${VARIABLE}\n",
-      "echo \"comment tu t'appelle /?\"\n",
-      "read \"pr\u00c3\u00a9nom\"\n",
-      "echo $prenom\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo \"comment tu t'appelle /?\"\n",
-      "read \"pr\u00c3\u00a9nom\"\n",
-      "echo $prenom\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo \"comment tu t'appelle /?\"\n",
-      "read prenom\n",
-      "echo $prenom\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "expr $1 / 3\n",
-      "echo $exp\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "'expr' $1 / 3\n",
-      "echo $exp\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "$((exp))$1 / 3\n",
-      "echo $exp\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo $((exp))$1 / 3\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo nombre utilisateur connect\u00c3\u00a9 sur une machine `who`\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo nombre utilisateur connect\u00c3\u00a9 sur une machine `who -q`\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo nombre utilisateur connect\u00c3\u00a9 sur une machine `who -q`\n",
-      "echo afficher le nom de la machine `hostanme`\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo nombre utilisateur connect\u00c3\u00a9 sur une machine `who -q`\n",
-      "echo afficher le nom de la machine `hostname`\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo nombre utilisateur connect\u00c3\u00a9 sur une machine `who -q`\n",
-      "echo afficher le nom de la machine `hostname`\n",
-      "echo $(xho -q)\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo nombre utilisateur connect\u00c3\u00a9 sur une machine `who -q`\n",
-      "echo afficher le nom de la machine `hostname`\n",
-      "echo $(who -q)\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo nombre utilisateur connect\u00c3\u00a9 sur une machine `who -q`\n",
-      "echo afficher le nom de la machine `hostname`\n",
-      "echo $(who -q)\n",
-      "echo\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "set -- $(du -h)\n",
-      "echo $1\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "fichier = $1\n",
-      "set -- $(du -h)\n",
-      "echo $1\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "set -- `ls -l $1`\n",
-      "echo $5\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "set -- `ls -l $1`\n",
-      "echo $5\n",
-      "echo $1\n",
-      "echo $2\n",
-      "echo $3\n",
-      "echo $4\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "set -- `ls -l $1`\n",
-      "echo $5\n",
-      "\n",
-      "echo le premier param\u00c3\u00a8tre est $1\n",
-      "echo le second param\u00c3\u00a8tre est $2\n",
-      "echo le troisi\u00c3\u00a8mes param\u00c3\u00a8tre est $3\n",
-      "echo le quatri\u00c3\u00a8me param\u00c3\u00a8tre est $4\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "set -- `ls -l $1`\n",
-      "echo $5\n",
-      "echo `ls -l $1`\n",
-      "\n",
-      "echo le premier param\u00c3\u00a8tre est $1\n",
-      "echo le second param\u00c3\u00a8tre est $2\n",
-      "echo le troisi\u00c3\u00a8mes param\u00c3\u00a8tre est $3\n",
-      "echo le quatri\u00c3\u00a8me param\u00c3\u00a8tre est $4\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "set -- `ls -l`\n",
-      "echo $5\n",
-      "echo `ls -l $1`\n",
-      "\n",
-      "echo le premier param\u00c3\u00a8tre est $1\n",
-      "echo le second param\u00c3\u00a8tre est $2\n",
-      "echo le troisi\u00c3\u00a8mes param\u00c3\u00a8tre est $3\n",
-      "echo le quatri\u00c3\u00a8me param\u00c3\u00a8tre est $4\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "set -- `ls -l $2`\n",
-      "echo $5\n",
-      "echo `ls -l $1`\n",
-      "\n",
-      "echo le premier param\u00c3\u00a8tre est $1\n",
-      "echo le second param\u00c3\u00a8tre est $2\n",
-      "echo le troisi\u00c3\u00a8mes param\u00c3\u00a8tre est $3\n",
-      "echo le quatri\u00c3\u00a8me param\u00c3\u00a8tre est $4\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "set -- `ls -l $1`\n",
-      "echo $5\n",
-      "echo `ls -l $1`\n",
-      "\n",
-      "echo le premier param\u00c3\u00a8tre est $1\n",
-      "echo le second param\u00c3\u00a8tre est $2\n",
-      "echo le troisi\u00c3\u00a8mes param\u00c3\u00a8tre est $3\n",
-      "echo le quatri\u00c3\u00a8me param\u00c3\u00a8tre est $4\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "set -- `ls -l $1`\n",
-      "echo $5\n",
-      "\n",
-      "\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "set -- `ls -l $1`\n",
-      "echo $5\n",
-      "\n",
-      "\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "message=\"salut les amis\"\n",
-      "$message\n",
-      "$1\n",
-      "\n",
-      "message=salut les amis\n",
-      "$message\n",
-      "$1\n",
-      "$2\n",
-      "\n",
-      "\n",
-      "\n",
-      "echo \"comment tu t'appelle /?\"\n",
-      "read prenom\n",
-      "echo $prenom\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "message=\"salut les amis\"\n",
-      "$message\n",
-      "$1\n",
-      "\n",
-      "message2=salut les amis\n",
-      "$message2\n",
-      "$1\n",
-      "$2\n",
-      "\n",
-      "\n",
-      "\n",
-      "echo \"comment tu t'appelle /?\"\n",
-      "read prenom\n",
-      "echo $prenom\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "message=\"salut les amis\"\n",
-      "$message\n",
-      "$1\n",
-      "\n",
-      "message2=BONSOIR A TOUS\n",
-      "$message2\n",
-      "$1\n",
-      "$2\n",
-      "\n",
-      "\n",
-      "\n",
-      "echo \"comment tu t'appelle /?\"\n",
-      "read prenom\n",
-      "echo $prenom\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "message=\"salut les amis\"\n",
-      "echo $message\n",
-      "echo $1\n",
-      "\n",
-      "message2=BONSOIR A TOUS\n",
-      "echo $message2\n",
-      "echo $1\n",
-      "echo $2\n",
-      "\n",
-      "\n",
-      "\n",
-      "echo \"comment tu t'appelle /?\"\n",
-      "read prenom\n",
-      "echo $prenom\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "message=\"salut les amis\"\n",
-      "echo $message\n",
-      "\n",
-      "\n",
-      "message2=BONSOIR A TOUS\n",
-      "echo $message2\n",
-      "echo $3\n",
-      "echo $2\n",
-      "\n",
-      "\n",
-      "\n",
-      "echo \"comment tu t'appelle /?\"\n",
-      "read prenom\n",
-      "echo $prenom\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "message=\"salut les amis\"\n",
-      "echo $message\n",
-      "\n",
-      "\n",
-      "message2=BONSOIR A TOUS\n",
-      "echo $message2\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "message=\"salut les amis\"\n",
-      "echo $message\n",
-      "echo$1\n",
-      "\n",
-      "message2='BONSOIR A TOUS'\n",
-      "echo$1\n",
-      "echo $message2\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "message=\"salut les amis\"\n",
-      "\n",
-      "echo$1\n",
-      "\n",
-      "message2='BONSOIR A TOUS'\n",
-      "echo$1\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "message=\"salut les amis\"\n",
-      "\n",
-      "echo $1\n",
-      "\n",
-      "message2='BONSOIR A TOUS'\n",
-      "echo $2\n"
-    ]
+    {
+      "name": "tp0_test.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "message=\"salut les amis\"\n",
+        "\n",
+        "echo $1\n",
+        "\n",
+        "message2='BONSOIR A TOUS'\n",
+        "echo $2\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo1.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "\n",
+        "echo $((exp))$1 / 3\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "\n",
+        "echo nombre utilisateur connect\u00c3\u00a9 sur une machine `who -q`\n",
+        "echo afficher le nom de la machine `hostname`\n",
+        "echo $(who -q)\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo4.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "\n",
+        "echo nombre utilisateur connect\u00c3\u00a9 sur une machine `who -q`\n",
+        "echo afficher le nom de la machine `hostname`\n",
+        "echo $(who -q)\n",
+        "echo\n",
+        "\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo5.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "\n",
+        "set -- `ls -l $1`\n",
+        "echo $5\n",
+        "\n",
+        "\n",
+        "\n"
+      ]
+    }
   ],
   "profile": [
     {

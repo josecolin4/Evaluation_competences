@@ -2,126 +2,21 @@
   "name": "ext_Maxime.Miquel",
   "session": 2,
   "scripts": [
-    [
-      "#!/bin/bash\n",
-      "echo $1+1\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "c=$1\n",
-      "expr c+1\n",
-      "echo c\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "c=$1\n",
-      "echo $1+1\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "c=$1\n",
-      "echo $1+1\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "c=$1\n",
-      "echo $((c))+1\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "c=$1\n",
-      "echo expr $c+1\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "c=$1\n",
-      "expr $c+1\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "op=`expr $1+1`\n",
-      "echo op\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "op=`expr $1+1`\n",
-      "echo $op\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "op=`expr $1 + 1`\n",
-      "echo $op\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "op=\n",
-      "echo $op\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "result=$(($1+4))\n",
-      "echo $result\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "result=$(($1+1))\n",
-      "echo $result\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "cat >> $PATH /\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "cat >> $PATH /root\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "cat /root >> $PATH\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "cat \"/root\" >> $PATH\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\"/root\" >> $PATH\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "cat \":/root\" >> $PATH\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "cat ':/root' >> $PATH\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "cat ':/root' >> PATH\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "cat ':/root' >> PATH\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "cat /root >> PATH\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "cat \"/root\" >> PATH\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "PATH=$PATH:.\n"
-    ]
+    {
+      "name": "tp5_exo8.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "result=$(($1+1))\n",
+        "echo $result\n"
+      ]
+    },
+    {
+      "name": "tp5_exo9.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "PATH=$PATH:.\n"
+      ]
+    }
   ],
   "profile": [
     {

@@ -2,17 +2,26 @@
   "name": "ext_Julien.Armand",
   "session": 3,
   "scripts": [
-    [
-      "expr $1 / 2\n"
-    ],
-    [
-      "echo $(( $1 * 2))\n"
-    ],
-    [
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
-      "read $annee\n",
-      "echo Vous \u00c3\u00aates n\u00c3\u00a9(e) en $annee\\, vous avez donc $(( date - $annee ))\\.\n"
-    ]
+    {
+      "name": "tp5bis_exo1.sh",
+      "lines": [
+        "expr $1 / 2\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo2.sh",
+      "lines": [
+        "echo $(( $1 * 2))\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo3.sh",
+      "lines": [
+        "echo Quelle est votre ann\u00c3\u00a9e de naissance ?\n",
+        "read $annee\n",
+        "echo Vous \u00c3\u00aates n\u00c3\u00a9(e) en $annee\\, vous avez donc $(( date - $annee ))\\.\n"
+      ]
+    }
   ],
   "profile": [
     {

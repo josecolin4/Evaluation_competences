@@ -2,396 +2,74 @@
   "name": "ext_Quentin.Dijoux",
   "session": 3,
   "scripts": [
-    [
-      "if [ $1 -gt 5 ] then\n",
-      "echo La valeur $1 est superieur a 5\n"
-    ],
-    [
-      "if [ $1 -gt 5 ] then\n",
-      "echo La valeur $1 est superieur a 5\n",
-      "fi\n"
-    ],
-    [
-      "if [ $1 -gt 5 ] then\n",
-      "echo La valeur $1 est superieur a 5;\n",
-      "fi\n"
-    ],
-    [
-      "if [ $1 -gt 5 ]\n",
-      " then\n",
-      "echo \"La valeur $1 est superieur a 5\";\n",
-      " else\n",
-      "echo \"La valeur $1 n'est pas comprise\";\n",
-      "fi\n"
-    ],
-    [
-      "if [ $1 -gt 5 ] && [ $1 -lt 10 ]\n",
-      " then\n",
-      "echo \"La valeur $1 est superieur a 5\";\n",
-      " else\n",
-      "echo \"La valeur $1 n'est pas comprise\";\n",
-      "fi\n"
-    ],
-    [
-      "if [ $1 -gt 5 ] && [ $1 -lt 10 ]\n",
-      " then\n",
-      "echo \"La valeur $1 est comprise entre 5 et 10\";\n",
-      " else\n",
-      "echo \"La valeur $1 n'est pas comprise\";\n",
-      "fi\n"
-    ],
-    [
-      "if [ -e $1 ] \n",
-      "then\n",
-      "echo \"$1 existe\";\n",
-      "else\n",
-      "echo \"$1 n'existe pas\";\n",
-      "fi\n"
-    ],
-    [
-      "if [ -e $1 ] && [ -rw $1 ] \n",
-      "then\n",
-      "echo \"$1 existe\";\n",
-      "else\n",
-      "echo \"$1 n'existe pas\";\n",
-      "fi\n"
-    ],
-    [
-      "if [ -e $1 ] && [ -r $1 ] && [ -w $1 ] \n",
-      "then\n",
-      "echo \"$1 existe et est accessible en lecture et en ecriture\";\n",
-      "else\n",
-      "echo \"$1 n'existe pas ou n'est pas accessible en lecture et en ecriture\";\n",
-      "fi\n"
-    ],
-    [
-      "if [ -e $1 ] && [ -e $2 ]\n",
-      "then\n",
-      "echo \"Voulez-vous voir le contenu des fichiers?\";\n",
-      "\telif [ $#=O ]\n",
-      "\tless $1\n",
-      "\tless $2\n",
-      "\tfi\n",
-      "else\n",
-      "echo \"Erreur systeme\";\n",
-      "fi\n"
-    ],
-    [
-      "if [ -e $1 ] && [ -e $2 ]\n",
-      "then\n",
-      "echo \"Voulez-vous voir le contenu des fichiers?\";\n",
-      "\telif [ $#=O ]\n",
-      "\tless $1\n",
-      "\tless $2\n",
-      "else\n",
-      "echo \"Erreur systeme\";\n",
-      "fi\n"
-    ],
-    [
-      "if [ -e $1 ] && [ -e $2 ]\n",
-      "then\n",
-      "echo \"Voulez-vous voir le contenu des fichiers?\";\n",
-      "elif [ $#=O ]\n",
-      "less $1;\n",
-      "less $2;\n",
-      "else\n",
-      "echo \"Erreur systeme\";\n",
-      "fi\n"
-    ],
-    [
-      "if [ -e $1 ] && [ -e $2 ]\n",
-      "then\n",
-      " echo \"Voulez-vous voir le contenu des fichiers?\";\n",
-      "elif [ $#=O ]\n",
-      " less $1;\n",
-      " less $2;\n",
-      "else\n",
-      " echo \"Erreur systeme\";\n",
-      "fi\n"
-    ],
-    [
-      "if [ -e $1 ] && [ -e $2 ]\n",
-      "then\n",
-      " echo \"Voulez-vous voir le contenu des fichiers?\";\n",
-      "elif [ $#=O ]\n",
-      " ls $1;\n",
-      " ls $2;\n",
-      "else\n",
-      " echo \"Erreur systeme\";\n",
-      "fi\n"
-    ],
-    [
-      "if [ -e $1 ] && [ -e $2 ]\n",
-      "then\n",
-      " echo \"Voulez-vous voir le contenu des fichiers?\";\n",
-      "elif [ $#=O ]\n",
-      "echo  less $1;\n",
-      "echo  less $2;\n",
-      "else\n",
-      " echo \"Erreur systeme\";\n",
-      "fi\n"
-    ],
-    [
-      "if [ -e $1 ] && [ -e $2 ]\n",
-      "then\n",
-      " echo \"Voulez-vous voir le contenu des fichiers?\";\n",
-      "elif [ $#=O ]\n",
-      "  cat $1;\n",
-      "  cat $2;\n",
-      "else\n",
-      " echo \"Erreur systeme\";\n",
-      "fi\n"
-    ],
-    [
-      "if [ -e $1 ] && [ -e $2 ]\n",
-      "then\n",
-      " echo \"Voulez-vous voir le contenu des fichiers?\";\n",
-      " read reponse;\n",
-      "elif [ $reponse=O ]\n",
-      "  cat $1;\n",
-      "  cat $2;\n",
-      "else\n",
-      " echo \"Erreur systeme\";\n",
-      "fi\n"
-    ],
-    [
-      "if [ -e $1 ] && [ -e $2 ]\n",
-      "then\n",
-      " echo \"Voulez-vous voir le contenu des fichiers?\";\n",
-      " read reponse;\n",
-      "elif [ $reponse = oui ] \n",
-      "then\n",
-      "  cat $1;\n",
-      "  cat $2;\n",
-      "else\n",
-      " echo \"Erreur systeme\";\n",
-      "fi\n"
-    ],
-    [
-      "if [ -e $1 ] && [ -e $2 ]\n",
-      "then\n",
-      " echo \"Voulez-vous voir le contenu des fichiers?\";\n",
-      " read reponse;\n",
-      "elif [ $reponse = oui ] \n",
-      "then\n",
-      "  ls $1;\n",
-      "  ls $2;\n",
-      "else\n",
-      " echo \"Erreur systeme\";\n",
-      "fi\n"
-    ],
-    [
-      "if [ -e $1 ] && [ -e $2 ]\n",
-      "then\n",
-      " echo \"Voulez-vous voir le contenu des fichiers?\";\n",
-      " read reponse;\n",
-      "elif [ $reponse = oui ] \n",
-      "then\n",
-      "  cat $1;\n",
-      "  cat $2;\n",
-      "else\n",
-      " echo \"Erreur systeme\";\n",
-      "fi\n"
-    ],
-    [
-      "if [ -e $1 ] && [ -e $2 ]\n",
-      "then\n",
-      " echo \"Voulez-vous voir le contenu des fichiers?\";\n",
-      " read reponse;\n",
-      "elif [ $reponse = oui ] \n",
-      "then\n",
-      "  cat $1;\n",
-      "  cat $2;\n",
-      "else\n",
-      " echo \"Erreur systeme\";\n",
-      "fi\n"
-    ],
-    [
-      "if [ -e $1 ] && [ -e $2 ]\n",
-      "then\n",
-      " echo \"Voulez-vous voir le contenu des fichiers?\";\n",
-      " read reponse;\n",
-      "if [ $reponse = oui ] \n",
-      "then\n",
-      "  cat $1;\n",
-      "  cat $2;\n",
-      "else\n",
-      " echo \"Erreur systeme\";\n",
-      "fi\n",
-      "fi\n"
-    ],
-    [
-      "if [ -e $1 ] && [ -e $2 ]\n",
-      "then\n",
-      " echo \"Voulez-vous voir le contenu des fichiers?\";\n",
-      " read reponse;\n",
-      "if [ $reponse = oui ] \n",
-      "then\n",
-      "  cat $1;\n",
-      "  cat $2;\n",
-      "fi\n",
-      "else\n",
-      " echo \"Erreur systeme\";\n",
-      "fi\n",
-      "\n"
-    ],
-    [
-      "while \n"
-    ],
-    [
-      "liste_commandes =\" date who pwd ls\"\n",
-      "for $liste_commandes in $* do\n",
-      "date\n",
-      "who\n",
-      "pwd\n",
-      "ls\n",
-      "done\n"
-    ],
-    [
-      "liste_commandes = date who pwd ls\n",
-      "for $liste_commandes in $* do\n",
-      "`date`\n",
-      "`who`\n",
-      "`pwd`\n",
-      "`ls`\n",
-      "done\n"
-    ],
-    [
-      "liste_commandes =\"date who pwd ls\"\n",
-      "for $liste_commandes in $* do\n",
-      "`date`\n",
-      "`who`\n",
-      "`pwd`\n",
-      "`ls`\n",
-      "done\n"
-    ],
-    [
-      "liste_commandes =\"date who pwd ls\"\n",
-      "for $liste_commandes in $* do\n",
-      "echo`date`\n",
-      "echo`who`\n",
-      "echo`pwd`\n",
-      "echo`ls`\n",
-      "done\n"
-    ],
-    [
-      "liste_commandes =\"date who pwd ls\"\n",
-      "for $liste_commandes in $* do\n",
-      "echo date\n",
-      "echo who\n",
-      "echo pwd\n",
-      "echo ls\n",
-      "done\n"
-    ],
-    [
-      "liste_commandes =\"date who pwd ls\"\n",
-      "for $liste_commandes in $* do\n",
-      "echo date\n",
-      "echo who\n",
-      "echo pwd\n",
-      "echo ls\n",
-      "done\n"
-    ],
-    [
-      "for i in 1 2 3 4 5 6 7\n",
-      "do\n",
-      " echo $i\n",
-      "done\n"
-    ],
-    [
-      "for i in $*\n",
-      "do\n",
-      " echo \"Argument i =\" $i\n",
-      "done\n"
-    ],
-    [
-      "\n",
-      "for i in $*\n",
-      "do\n",
-      " echo \"Argument i =\" $i\n",
-      "done\n"
-    ],
-    [
-      "liste_commandes =\"date who pwd ls\"\n",
-      "for cmd in $liste_commandes do\n",
-      "echo $`cmd`\n",
-      "done\n"
-    ],
-    [
-      "liste_commandes =\"date who pwd ls\"\n",
-      "for cmd in $liste_commandes do\n",
-      "echo `$cmd`\n",
-      "done\n"
-    ],
-    [
-      "liste_commandes=\"date who pwd ls\"\n",
-      "for cmd in $liste_commandes do\n",
-      "echo `$cmd`\n",
-      "done\n"
-    ],
-    [
-      "liste_commandes=\"date who pwd ls\"\n",
-      "for cmd in $liste_commandes do\n",
-      "echo `$cmd`\n",
-      "\n",
-      "done\n"
-    ],
-    [
-      "liste_commandes=\"date who pwd ls\"\n",
-      "for cmd in $liste_commandes\n",
-      " do\n",
-      "\techo `$cmd`\n",
-      "\n",
-      "done\n"
-    ],
-    [
-      "\n",
-      "for i in $*\n",
-      "do\n",
-      " echo \"Argument i =\" $i\n",
-      "done\n",
-      "echo \"Il y a $* arguments\"\n"
-    ],
-    [
-      "\n",
-      "for i in $*\n",
-      "do\n",
-      " echo \"Argument i =\" $i\n",
-      "done\n",
-      "echo \"Il y a $# arguments\"\n"
-    ],
-    [
-      "\n",
-      "for i in $*\n",
-      "do\n",
-      " echo \"Argument $$ =\" $i\n",
-      "done\n",
-      "echo \"Il y a $# arguments\"\n"
-    ],
-    [
-      "\n",
-      "for i in $*\n",
-      "do\n",
-      " echo \"Argument $- =\" $i\n",
-      "done\n",
-      "echo \"Il y a $# arguments\"\n"
-    ],
-    [
-      "\n",
-      "for i in $*\n",
-      "do\n",
-      " echo \"Argument $? =\" $i\n",
-      "done\n",
-      "echo \"Il y a $# arguments\"\n"
-    ],
-    [
-      "\n",
-      "for i in $*\n",
-      "do\n",
-      " echo \"Argument $i =\" $i\n",
-      "done\n",
-      "echo \"Il y a $# arguments\"\n"
-    ]
+    {
+      "name": "tp6_exo1.sh",
+      "lines": [
+        "if [ $1 -gt 5 ] && [ $1 -lt 10 ]\n",
+        " then\n",
+        "echo \"La valeur $1 est comprise entre 5 et 10\";\n",
+        " else\n",
+        "echo \"La valeur $1 n'est pas comprise\";\n",
+        "fi\n"
+      ]
+    },
+    {
+      "name": "tp6_exo2.sh",
+      "lines": [
+        "if [ -e $1 ] && [ -r $1 ] && [ -w $1 ] \n",
+        "then\n",
+        "echo \"$1 existe et est accessible en lecture et en ecriture\";\n",
+        "else\n",
+        "echo \"$1 n'existe pas ou n'est pas accessible en lecture et en ecriture\";\n",
+        "fi\n"
+      ]
+    },
+    {
+      "name": "tp6_exo3.sh",
+      "lines": [
+        "if [ -e $1 ] && [ -e $2 ]\n",
+        "then\n",
+        " echo \"Voulez-vous voir le contenu des fichiers?\";\n",
+        " read reponse;\n",
+        "if [ $reponse = oui ] \n",
+        "then\n",
+        "  cat $1;\n",
+        "  cat $2;\n",
+        "fi\n",
+        "else\n",
+        " echo \"Erreur systeme\";\n",
+        "fi\n",
+        "\n"
+      ]
+    },
+    {
+      "name": "tp4_exo3.sh",
+      "lines": [
+        "while \n"
+      ]
+    },
+    {
+      "name": "tp6_exo4.sh",
+      "lines": [
+        "liste_commandes=\"date who pwd ls\"\n",
+        "for cmd in $liste_commandes\n",
+        " do\n",
+        "\techo `$cmd`\n",
+        "\n",
+        "done\n"
+      ]
+    },
+    {
+      "name": "tp6_exo5.sh",
+      "lines": [
+        "\n",
+        "for i in $*\n",
+        "do\n",
+        " echo \"Argument $i =\" $i\n",
+        "done\n",
+        "echo \"Il y a $# arguments\"\n"
+      ]
+    }
   ],
   "profile": [
     {

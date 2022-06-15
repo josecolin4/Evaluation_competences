@@ -2,20 +2,14 @@
   "name": "ext_Eliot.Colomb",
   "session": 2,
   "scripts": [
-    [
-      "#!/bin/bash\n",
-      "export PATH=$PATH:/home/root\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "export PATH=$PATH:/home/root\n",
-      "echo $PATH\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "export PATH=$PATH:/home/root\n",
-      "echo $PATH\n"
-    ]
+    {
+      "name": "tp5_exo9.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "export PATH=$PATH:/home/root\n",
+        "echo $PATH\n"
+      ]
+    }
   ],
   "profile": [
     {

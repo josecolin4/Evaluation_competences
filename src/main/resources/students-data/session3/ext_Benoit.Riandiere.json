@@ -2,128 +2,23 @@
   "name": "ext_Benoit.Riandiere",
   "session": 3,
   "scripts": [
-    [
-      "if test $1 -ge 5 \u00c3&\n"
-    ],
-    [
-      "if test $1 -ge 5 \u00c3&\n",
-      "if test $1 -ge 10\n"
-    ],
-    [
-      "if test $1 -ge 5 &\n",
-      "if test $1 -le 10\n"
-    ],
-    [
-      "if test $1 -ge 5 &\n",
-      "if test $1 -le 10\n"
-    ],
-    [
-      "if test $1 -ge 5 & if test $1 -le 10\n",
-      "then\n",
-      "echo\n",
-      "vrai\n",
-      "echo\n",
-      "faux\n",
-      "fi\n"
-    ],
-    [
-      "if test $1 -ge 5 & test $1 -le 10\n",
-      "then\n",
-      "echo\n",
-      "vrai\n",
-      "echo\n",
-      "faux\n",
-      "fi\n"
-    ],
-    [
-      "if test $1 -ge 5 & test $1 -le 10\n",
-      "then\n",
-      "echo vrai\n",
-      "echo faux\n",
-      "fi\n"
-    ],
-    [
-      "if test $1 -ge 5 & test $1 -le 10\n",
-      "then\n",
-      "echo vrai\n",
-      "else\n",
-      "echo faux\n",
-      "fi\n"
-    ],
-    [
-      "test $1 -ge 5 & test $1 -le 10 && echo \"vrai\" || echo \"faux\"\n"
-    ],
-    [
-      "test $1 -ge 5 -a $1 -le 10 && echo \"vrai\" || echo \"faux\"\n"
-    ],
-    [
-      "![ test $1 -ge 5 -a $1 -le 10 && echo \"vrai\" || echo \"faux\" !]\n"
-    ],
-    [
-      "if test -e $1 -a -r $1 -a -w $1\n"
-    ],
-    [
-      "if test -e $1 -a -r $1 -a -w $1\n",
-      "\tthen\n"
-    ],
-    [
-      "if test -e $1 -a -r $1 -a -w $1\n",
-      "\tthen\n",
-      "$1 faux\n"
-    ],
-    [
-      "if test -e $1 -a -r $1 -a -w $1\n",
-      "\tthen\n",
-      "$1 faux\n",
-      "\telse\n"
-    ],
-    [
-      "if test -e $1 -a -r $1 -a -w $1\n",
-      "\tthen\n",
-      "$1 faux\n",
-      "\telse\n",
-      "$1 faux\n"
-    ],
-    [
-      "if test -e $1 -a -r $1 -a -w $1\n",
-      "\tthen\n",
-      "$1 faux\n",
-      "\telse\n",
-      "$1 faux\n",
-      "fi\n"
-    ],
-    [
-      "if test -e $1 -a -r $1 -a -w $1\n",
-      "\tthen\n",
-      "$1 vrai\n",
-      "\telse\n",
-      "$1 faux\n",
-      "fi\n"
-    ],
-    [
-      "if test -a -w $1 -a -r $1\n",
-      "\tthen\n",
-      "$1 vrai\n",
-      "\telse\n",
-      "$1 faux\n",
-      "fi\n"
-    ],
-    [
-      "if test -a -r $1 -a -w $1\n",
-      "\tthen\n",
-      "$1 vrai\n",
-      "\telse\n",
-      "$1 faux\n",
-      "fi\n"
-    ],
-    [
-      "if test -a -r $1 -a -w $1\n",
-      "\tthen\n",
-      "echo $1 vrai\n",
-      "\telse\n",
-      "echo $1 faux\n",
-      "fi\n"
-    ]
+    {
+      "name": "tp6_exo1.sh",
+      "lines": [
+        "![ test $1 -ge 5 -a $1 -le 10 && echo \"vrai\" || echo \"faux\" !]\n"
+      ]
+    },
+    {
+      "name": "tp6_exo2.sh",
+      "lines": [
+        "if test -a -r $1 -a -w $1\n",
+        "\tthen\n",
+        "echo $1 vrai\n",
+        "\telse\n",
+        "echo $1 faux\n",
+        "fi\n"
+      ]
+    }
   ],
   "profile": [
     {

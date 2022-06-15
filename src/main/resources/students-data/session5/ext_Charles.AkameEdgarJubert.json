@@ -2,300 +2,59 @@
   "name": "ext_Charles.AkameEdgarJubert",
   "session": 5,
   "scripts": [
-    [
-      "#!/bin/bash\n",
-      "if test -e $1 && $2 \n",
-      "then \n",
-      "\techo \"Les fichiers $1 et $2  existe\"\n",
-      "\techo \"voulez vous concatener?\"\n",
-      "read(reponse)\n",
-      "if reponse = oui then\n",
-      "cat $1 $2\n",
-      "else \n",
-      "echo \"erreur\"\n",
-      "fi\n",
-      "else\n",
-      "\techo \"error\"\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test -e $1 && $2 \n",
-      "then \n",
-      "\techo \"Les fichiers $1 et $2  existe\"\n",
-      "\techo \"voulez vous concatener?\"\n",
-      "read reponse\n",
-      "if reponse = oui then\n",
-      "cat $1 $2\n",
-      "else \n",
-      "echo \"erreur\"\n",
-      "fi\n",
-      "else\n",
-      "\techo \"error\"\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test -e $1 && $2 \n",
-      "then \n",
-      "\techo \"Les fichiers $1 et $2  existe\"\n",
-      "\techo \"voulez vous concatener?\"\n",
-      "read reponse\n",
-      "if reponse = oui then\n",
-      "cp $1 $2\n",
-      "else \n",
-      "echo \"erreur\"\n",
-      "fi\n",
-      "else\n",
-      "\techo \"error\"\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test -e $1 && $2 \n",
-      "then \n",
-      "\techo \"Les fichiers $1 et $2  existe\"\n",
-      "\techo \"voulez vous concatener\"\n",
-      "case reponse in \n",
-      "oui) cp $1 $2\n",
-      "non) echo \"error\"\n",
-      "esac\n",
-      "else\n",
-      "\techo \"error\"\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test -e $1 && $2 \n",
-      "then \n",
-      "\techo \"Les fichiers $1 et $2  existe\"\n",
-      "\techo \"voulez vous concatener\"\n",
-      "read reponse \n",
-      "case reponse in \n",
-      "oui) cp $1 $2\n",
-      "non) echo \"error\"\n",
-      "esac\n",
-      "else\n",
-      "\techo \"error\"\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test -e $1 && $2 \n",
-      "then \n",
-      "\techo \"Les fichiers $1 et $2  existe\"\n",
-      "\techo \"voulez vous concatener\"\n",
-      "read reponse \n",
-      "case reponse in \n",
-      "oui ) cp $1 $2\n",
-      "non ) echo \"error\"\n",
-      "esac\n",
-      "else\n",
-      "\techo \"error\"\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test -e $1 && $2 \n",
-      "then \n",
-      "\techo \"Les fichiers $1 et $2  existe\"\n",
-      "\techo \"voulez vous concatener\"\n",
-      "read reponse \n",
-      "case reponse in \n",
-      "oui ) cp $1 $2\n",
-      "`non ) echo \"error\"`\n",
-      "esac\n",
-      "else\n",
-      "\techo \"error\"\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test -e $1 -o ! -e $2 \n",
-      "then\n",
-      "\techo\"ce script ne fonctionnera pas \"\n",
-      "else\n",
-      "\techo\"shoutez-vous concatener\"\n",
-      "\tread reponse\n",
-      "case $reponse in \n",
-      "\toui) cp $1 $2 >> F3 \n",
-      "\techo\"vous avez concatener les deux fichier\";;\n",
-      "\tnon) \"vous n'avez pas concatener les deux fichier \";;\n",
-      "esac\n",
-      "\n",
-      "fi\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test -e $1 -o ! -e $2 \n",
-      "then\n",
-      "\techo\"ce script ne fonctionnera pas \"\n",
-      "else\n",
-      "\techo\"shoutez-vous concatener\"\n",
-      "\tread reponse\n",
-      "case $reponse in \n",
-      "\toui) cp $1 $2 >> F3 \n",
-      "\techo\"vous avez concatener les deux fichier\";;\n",
-      "\tnon) echo \"vous n'avez pas concatener les deux fichier \";;\n",
-      "esac\n",
-      "\n",
-      "fi\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test ! -e $1 -o ! -e $2 \n",
-      "then\n",
-      "\techo\"ce script ne fonctionnera pas \"\n",
-      "else\n",
-      "\techo\"shoutez-vous concatener\"\n",
-      "\tread reponse\n",
-      "case $reponse in \n",
-      "\toui) cp $1 $2 >> F3 \n",
-      "\techo\"vous avez concatener les deux fichier\";;\n",
-      "\tnon) echo \"vous n'avez pas concatener les deux fichier \";;\n",
-      "esac\n",
-      "\n",
-      "fi\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test -r $1 && test -w $1 && test -e $1\n",
-      "then\n",
-      "\techo \"Le fichier $1 existe et est accessible en lecture et en ecriture \"\n",
-      "else echo\"Le fichier $1 n'est pas accessible en lecture ou en ecriture\"\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test ! -e $1 -o ! -e $2 \n",
-      "then\n",
-      "\techo\"ce script ne fonctionnera pas \"\n",
-      "else\n",
-      "\techo\"shoutez-vous concatener\"\n",
-      "\tread reponse\n",
-      "case $reponse in \n",
-      "\toui) cp $1 $2 >> F3 \n",
-      "\techo \"vous avez concatener les deux fichier\";;\n",
-      "\tnon) echo \"vous n'avez pas concatener les deux fichier \";;\n",
-      "esac\n",
-      "\n",
-      "fi\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "for liste-commandes in date pwd ls\n",
-      "do $liste_commandes\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "for liste-commandes in `date` `pwd` `ls`\n",
-      "do $liste_commandes\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "for liste-commandes in `date` `who`  `pwd` `ls`\n",
-      "do $liste_commandes\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "for liste_commandes in `date` `who`  `pwd` `ls`\n",
-      "do $liste_commandes\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "for liste_commandes in `date` `who` `pwd` `ls`\n",
-      "do $liste_commandes\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "for liste_commandes in `date` `who` `pwd` `ls`\n",
-      "do echo $liste_commandes\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "for i in 3 2 1 \n",
-      "do\n",
-      "\techo \"argument\" $i \"=\"\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "for i in 3 2 1 \n",
-      "do\n",
-      "\techo \"argument\" $i \"=\" $1\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "for i in 3 2 1 \n",
-      "do\n",
-      "\tread $1 $2 $3\n",
-      "\techo \"argument\" $i \"=\" $1\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "for i in 3 2 1 and n in $1 $2 $3 \n",
-      "do\n",
-      "\tread $1 $2 $3\n",
-      "\techo \"argument\" $i \"=\" $1\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "for i in 3 2 1 and n in $1 $2 $3 \n",
-      "do\n",
-      "\t\n",
-      "\techo \"argument\" $i \"=\" $1\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "for i in 3 2 1 \n",
-      "do\n",
-      "\tread $1 $2 $3\n",
-      "\techo \"argument\" $i \"=\" n\n",
-      "\tn = n+1\n",
-      "\t$1 = n\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "for i in 3 2 1 \n",
-      "do\n",
-      "\tread $1 $2 $3\n",
-      "\techo \"argument\" $i \"=\" $1\n",
-      "\tn = n+1\n",
-      "\t$1 = n\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "for i in 3 2 1 \n",
-      "do\n",
-      "\t\n",
-      "\techo \"argument\" $i \"=\" $1\n",
-      "\tn = n+1\n",
-      "\t$1 = n\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "n=0\n",
-      "for i in $*\n",
-      "do\n",
-      "\tn=$((n + 1 ))\t\n",
-      "\techo \"argument$n = $i\"\n",
-      "\n",
-      "done\n",
-      "echo \" il y $n arguments\"\n"
-    ]
+    {
+      "name": "tp6_exo3.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "if test ! -e $1 -o ! -e $2 \n",
+        "then\n",
+        "\techo\"ce script ne fonctionnera pas \"\n",
+        "else\n",
+        "\techo\"shoutez-vous concatener\"\n",
+        "\tread reponse\n",
+        "case $reponse in \n",
+        "\toui) cp $1 $2 >> F3 \n",
+        "\techo \"vous avez concatener les deux fichier\";;\n",
+        "\tnon) echo \"vous n'avez pas concatener les deux fichier \";;\n",
+        "esac\n",
+        "\n",
+        "fi\n",
+        "\n"
+      ]
+    },
+    {
+      "name": "tp6_exo1.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "if test -r $1 && test -w $1 && test -e $1\n",
+        "then\n",
+        "\techo \"Le fichier $1 existe et est accessible en lecture et en ecriture \"\n",
+        "else echo\"Le fichier $1 n'est pas accessible en lecture ou en ecriture\"\n",
+        "fi\n"
+      ]
+    },
+    {
+      "name": "tp6_exo4.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "for liste_commandes in `date` `who` `pwd` `ls`\n",
+        "do echo $liste_commandes\n",
+        "done\n"
+      ]
+    },
+    {
+      "name": "tp6_exo5.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "n=0\n",
+        "for i in $*\n",
+        "do\n",
+        "\tn=$((n + 1 ))\t\n",
+        "\techo \"argument$n = $i\"\n",
+        "\n",
+        "done\n",
+        "echo \" il y $n arguments\"\n"
+      ]
+    }
   ]
 }

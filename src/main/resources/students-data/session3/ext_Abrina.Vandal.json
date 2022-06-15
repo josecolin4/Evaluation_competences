@@ -2,204 +2,120 @@
   "name": "ext_Abrina.Vandal",
   "session": 3,
   "scripts": [
-    [
-      "#!/bin/bash\n",
-      "who=`who`\n",
-      "echo $who\n",
-      "hostname=`hostname`\n",
-      "echo $hostname\n",
-      "\n",
-      "repc=$(who)\n",
-      "echo $repc\n",
-      "repn=$(hostname)\n",
-      "echo $repn\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "set -- $(ls -l tp5bis_exo3.sh)\n",
-      "echo $5\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance?\n",
-      "read ans\n",
-      "echo Vous \u00c3\u00aatres 'n\u00c3\u00a9(e)' en $ans, vous avez donc `date +%Y` ans\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test $1 -gt -a $1 -lt 10\n",
-      "then\n",
-      " echo La valeur $1 est comprise entre 5 et 10\n",
-      "else\n",
-      " echo La valeur $1 n\\'est pas comprise entre 5 et 10\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test $1 -gt 5 -a $1 -lt 10\n",
-      "then\n",
-      " echo La valeur $1 est comprise entre 5 et 10\n",
-      "else\n",
-      " echo La valeur $1 n\\'est pas comprise entre 5 et 10\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if [ $1 -gt 5 -a $1 -lt 10 ]\n",
-      "then\n",
-      " echo La valeur $1 est comprise entre 5 et 10\n",
-      "else\n",
-      " echo La valeur $1 n\\'est pas comprise entre 5 et 10\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test -e $1\n",
-      "then\n",
-      " echo Le fichier existe\n",
-      "else\n",
-      " echo ERROR\n",
-      "fi\n",
-      "\n",
-      "if test -r $1\n",
-      "then \n",
-      " echo Accessible en lecture \n",
-      "else \n",
-      " echo ERROR\n",
-      "fi\n",
-      "\n",
-      "if test -w $1\n",
-      "then\n",
-      " echo Accessible en \u00c3\u00a9criture\n",
-      "else\n",
-      " echo ERROR\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test -e $1 -a -e $2\n",
-      "then\n",
-      "  echo  Les deux fichiers existent\n",
-      "  echo Souhaitez-vous concat\u00c3\u00a9ner les fichiers?\n",
-      "  read reponse\n",
-      "  if $reponse=OUI\n",
-      "     then\n",
-      "     cat $1 $2\n",
-      "  else \n",
-      "     echo ERROR\n",
-      "     fi\n",
-      "\n",
-      "else\n",
-      "echo Les deux fichiers n\\'existent pas\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test -e $1 -a -e $2\n",
-      "then\n",
-      "  echo  Les deux fichiers existent\n",
-      "  echo Souhaitez-vous concat\u00c3\u00a9ner les fichiers?\n",
-      "  read reponse\n",
-      "  if $reponse=oui\n",
-      "     then\n",
-      "     cat $1 $2\n",
-      "  else \n",
-      "     echo ERROR\n",
-      "     fi\n",
-      "\n",
-      "else\n",
-      "echo Les deux fichiers n\\'existent pas\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test -e $1 -a -e $2\n",
-      "then\n",
-      "  echo  Les deux fichiers existent\n",
-      "  echo Souhaitez-vous concat\u00c3\u00a9ner les fichiers?\n",
-      "  read reponse\n",
-      "  if $reponse=\"oui\"\n",
-      "     then\n",
-      "     cat $1 $2\n",
-      "  else \n",
-      "     echo ERROR\n",
-      "     fi\n",
-      "\n",
-      "else\n",
-      "echo Les deux fichiers n\\'existent pas\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test -e $1 -a -e $2\n",
-      "then\n",
-      "  echo  Les deux fichiers existent\n",
-      "  echo Souhaitez-vous concat\u00c3\u00a9ner les fichiers?\n",
-      "  read reponse\n",
-      "  if $reponse=o\n",
-      "     then\n",
-      "     cat $1 $2\n",
-      "  else \n",
-      "     echo ERROR\n",
-      "     fi\n",
-      "\n",
-      "else\n",
-      "echo Les deux fichiers n\\'existent pas\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test -e $1 -a -e $2\n",
-      "then\n",
-      "  echo  Les deux fichiers existent\n",
-      "  echo Souhaitez-vous concat\u00c3\u00a9ner les fichiers?\n",
-      "  read reponse\n",
-      "  if $reponse='oui'\n",
-      "     then\n",
-      "     cat $1 $2\n",
-      "  else \n",
-      "     echo ERROR\n",
-      "     fi\n",
-      "\n",
-      "else\n",
-      "echo Les deux fichiers n\\'existent pas\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test -e $1 -a -e $2\n",
-      "then\n",
-      "  echo  Les deux fichiers existent\n",
-      "  echo Souhaitez-vous concat\u00c3\u00a9ner les fichiers?\n",
-      "  read reponse\n",
-      "  if test $reponse=\"oui\"\n",
-      "     then\n",
-      "     cat $1 $2\n",
-      "  else \n",
-      "     echo ERROR\n",
-      "     fi\n",
-      "\n",
-      "else\n",
-      "echo Les deux fichiers n\\'existent pas\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "liste_commande=\"date\" \"who\" \"pwd\" \"ls\"\n",
-      "echo $i\n",
-      "for i in $liste_commande\n",
-      "do\n",
-      "echo $liste_commande\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "for i in $*\n",
-      "do \n",
-      "echo argument 1=$i\n",
-      "done \n",
-      "echo il y a $# arguments\n"
-    ]
+    {
+      "name": "tp5bis_exo3.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "who=`who`\n",
+        "echo $who\n",
+        "hostname=`hostname`\n",
+        "echo $hostname\n",
+        "\n",
+        "repc=$(who)\n",
+        "echo $repc\n",
+        "repn=$(hostname)\n",
+        "echo $repn\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo5.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "set -- $(ls -l tp5bis_exo3.sh)\n",
+        "echo $5\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo4.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo Quelle est votre ann\u00c3\u00a9e de naissance?\n",
+        "read ans\n",
+        "echo Vous \u00c3\u00aatres 'n\u00c3\u00a9(e)' en $ans, vous avez donc `date +%Y` ans\n"
+      ]
+    },
+    {
+      "name": "tp6_exo1.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "if [ $1 -gt 5 -a $1 -lt 10 ]\n",
+        "then\n",
+        " echo La valeur $1 est comprise entre 5 et 10\n",
+        "else\n",
+        " echo La valeur $1 n\\'est pas comprise entre 5 et 10\n",
+        "fi\n"
+      ]
+    },
+    {
+      "name": "tp6_exo2.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "if test -e $1\n",
+        "then\n",
+        " echo Le fichier existe\n",
+        "else\n",
+        " echo ERROR\n",
+        "fi\n",
+        "\n",
+        "if test -r $1\n",
+        "then \n",
+        " echo Accessible en lecture \n",
+        "else \n",
+        " echo ERROR\n",
+        "fi\n",
+        "\n",
+        "if test -w $1\n",
+        "then\n",
+        " echo Accessible en \u00c3\u00a9criture\n",
+        "else\n",
+        " echo ERROR\n",
+        "fi\n"
+      ]
+    },
+    {
+      "name": "tp6_exo3.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "if test -e $1 -a -e $2\n",
+        "then\n",
+        "  echo  Les deux fichiers existent\n",
+        "  echo Souhaitez-vous concat\u00c3\u00a9ner les fichiers?\n",
+        "  read reponse\n",
+        "  if test $reponse=\"oui\"\n",
+        "     then\n",
+        "     cat $1 $2\n",
+        "  else \n",
+        "     echo ERROR\n",
+        "     fi\n",
+        "\n",
+        "else\n",
+        "echo Les deux fichiers n\\'existent pas\n",
+        "fi\n"
+      ]
+    },
+    {
+      "name": "tp6_exo4.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "liste_commande=\"date\" \"who\" \"pwd\" \"ls\"\n",
+        "echo $i\n",
+        "for i in $liste_commande\n",
+        "do\n",
+        "echo $liste_commande\n",
+        "done\n"
+      ]
+    },
+    {
+      "name": "tp6_exo5.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "for i in $*\n",
+        "do \n",
+        "echo argument 1=$i\n",
+        "done \n",
+        "echo il y a $# arguments\n"
+      ]
+    }
   ],
   "profile": [
     {

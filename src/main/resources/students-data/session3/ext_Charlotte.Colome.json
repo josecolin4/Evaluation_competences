@@ -2,168 +2,31 @@
   "name": "ext_Charlotte.Colome",
   "session": 3,
   "scripts": [
-    [
-      "#!/bin/bash\n",
-      "expr $1 / 2\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo `expr $1 / 2`\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo `expr $1 / 2`\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "expr $1 / 2\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "expr 4 + 2\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "expr $1 / 2\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "expr $1 * 2\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "expr $1 \\* 2\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "expr $1 - date\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "expr $1 / 2\n",
-      "echo $ (($1 / 2))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "expr $1 / 2\n",
-      "echo $ \\(\\($1 / 2\\)\\)\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "expr $1 / 2\n",
-      "echo `$ \\(\\($1 / 2\\)\\)`\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "expr $1 / 2\n",
-      "echo `$ (($1 / 2))`\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "expr $1 / 2\n",
-      "echo `$ (( $1 / 2 ))`\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "expr $1 / 2\n",
-      "echo `$ ( $1 / 2 )`\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "expr date\"+%Y\" - $1\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "expr $1 / 2\n",
-      "echo $ (( $1 / 2 ))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "expr $1 / 2\n",
-      "echo $(( $1 / 2 ))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "expr $1 \\* 2\n",
-      "echo $(( $1 \\* 2))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "expr $1 \\* 2\n",
-      "echo $(( $1 * 2))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo date naissance ?\n",
-      "read $1\n",
-      "echo vous avez `expr date\"+%Y\" - $1`\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo date naissance ?\n",
-      "read $1\n",
-      "echo vous avez `expr date\"+%Y\" - $1` ans\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo date naissance ?\n",
-      "read $1\n",
-      "echo vous avez expr `date\"+%Y\" - $1` ans\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo date naissance ?\n",
-      "read $1\n",
-      "echo vous avez `expr date\"+%Y\" - $1` ans\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo date naissance ?\n",
-      "read $1\n",
-      "echo vous avez ` expr date\"+%Y\" - $1 ` ans\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo date naissance ?\n",
-      "read $1\n",
-      "echo vous avez $1\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo date naissance ?\n",
-      "read d\n",
-      "echo vous avez `expr date\"+%Y\" - d` ans \n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo date naissance ?\n",
-      "read d\n",
-      "echo vous avez ` expr date\"+%Y\" - d ` ans \n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo date naissance ?\n",
-      "read d\n",
-      "echo vous avez ` expr `date\"+%Y\"` - d ` ans \n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo date naissance ?\n",
-      "read d\n",
-      "echo vous avez ` expr date \"+%Y\" - d ` ans \n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo date naissance ?\n",
-      "read d\n",
-      "echo vous avez ` expr date \"+%Y\" - $d ` ans \n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo date naissance ?\n",
-      "read d\n",
-      "echo vous avez `expr date \"+%Y\" - $d` ans \n"
-    ]
+    {
+      "name": "tp5bis_exo1.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "expr $1 / 2\n",
+        "echo $(( $1 / 2 ))\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo2.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "expr $1 \\* 2\n",
+        "echo $(( $1 * 2))\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo3.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo date naissance ?\n",
+        "read d\n",
+        "echo vous avez `expr date \"+%Y\" - $d` ans \n"
+      ]
+    }
   ],
   "profile": [
     {

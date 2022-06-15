@@ -2,310 +2,57 @@
   "name": "ext_Julien.Adami",
   "session": 3,
   "scripts": [
-    [
-      "read $1\n",
-      "if $1>5 and <10 then\n",
-      "\techo $1\n",
-      "fi\n"
-    ],
-    [
-      "read o\n",
-      "if o>5 and <10 then\n",
-      "\techo o\n",
-      "fi\n"
-    ],
-    [
-      "read o\n",
-      "\n",
-      "if o>5 and <10 then\n",
-      "\techo o\n",
-      "\tfi\n"
-    ],
-    [
-      "read o\n",
-      "\n",
-      "if o>5 and <10 then\n",
-      "\techo o\tfi\n"
-    ],
-    [
-      "read o\n",
-      "\n",
-      "if o>5 and <10 then\n",
-      "echo o\n",
-      "fi\n"
-    ],
-    [
-      "read o\n",
-      "\n",
-      "if o>5 and <10 then\n",
-      "echo o\n",
-      "else \n",
-      "echo \"pas bon\"\n",
-      "fi\n"
-    ],
-    [
-      "if test $1 -gt 5 and test $1 -lt 10 then\n",
-      "echo $1\n",
-      "else\n",
-      "echo non\n",
-      "fi\n"
-    ],
-    [
-      "if test $1 -gt 5 and test $1 -lt 10\n",
-      " then echo $1\n",
-      "else\n",
-      "   echo non\n",
-      "fi\n"
-    ],
-    [
-      "if test $1 -gt 5 and test $1 -lt 10\n",
-      "then\n",
-      "\techo $1\n",
-      "else\n",
-      "\t echo non\n",
-      "fi\n"
-    ],
-    [
-      "if test $1 -gt 5 and test $1 -lt 10 then\n",
-      "\techo $1\n",
-      "else\n",
-      "\t echo non\n",
-      "fi\n"
-    ],
-    [
-      "read ok\n",
-      "if test ok -gt 5 and test ok -lt 10 then\n",
-      "\techo ok est cool\n",
-      "else\n",
-      "\techo pas cool\n",
-      "fi\n"
-    ],
-    [
-      "read ok\n",
-      "if test $ok -gt 5 and test $ok -lt 10 then\n",
-      "\techo $ok est cool\n",
-      "else\n",
-      "\techo pas cool\n",
-      "fi\n"
-    ],
-    [
-      "read ok\n",
-      "if test $ok -gt 5 -a $ok -lt 10 then\n",
-      "\techo $ok est cool\n",
-      "else\n",
-      "\techo pas cool\n",
-      "fi\n"
-    ],
-    [
-      "read ok\n",
-      "if test $ok -gt 5 -o $ok -lt 10 then\n",
-      "\techo $ok est cool\n",
-      "else\n",
-      "\techo pas cool\n",
-      "fi\n"
-    ],
-    [
-      "read ok\n",
-      "if test $ok -gt 5 -o test $ok -lt 10 then\n",
-      "\techo $ok est cool\n",
-      "else\n",
-      "\techo pas cool\n",
-      "fi\n"
-    ],
-    [
-      "read ok\n",
-      "if test $ok -gt 5 -a test $ok -lt 10 then\n",
-      "\techo $ok est cool\n",
-      "else\n",
-      "\techo pas cool\n",
-      "fi\n"
-    ],
-    [
-      "read ok\n",
-      "if test $ok -gt 5 -a test $ok -lt 10 then\n",
-      "\techo $ok est cool\n",
-      "else\n",
-      "\techo $ok pas cool\n",
-      "fi\n"
-    ],
-    [
-      "read ok\n",
-      "if test $ok -gt 5 -a test $ok -lt 10 then\n",
-      "echo $ok est cool\n",
-      "else\n",
-      "echo $ok pas cool\n",
-      "fi\n"
-    ],
-    [
-      "read ok\n",
-      "if test $ok -gt 5 -a $ok -lt 10\n",
-      " then\n",
-      "echo $ok est cool\n",
-      "else\n",
-      "echo $ok pas cool\n",
-      "fi\n"
-    ],
-    [
-      "if test  -r $1 -a -w $1\n",
-      "then\n",
-      "echo $1 est executable et lis\n",
-      "else\n",
-      "echo $1 pas lisable\n",
-      "fi\n"
-    ],
-    [
-      "if test -e $1\n",
-      "then\n",
-      "echo le fichier existe\n",
-      "else\n",
-      "echo le fichier existe pas\n",
-      "fi\n"
-    ],
-    [
-      "if test -e $1 -a -e $2\n",
-      "then\n",
-      "\techo le fichier existe\n",
-      "\tread v\n",
-      "\tif $v ='oui'\n",
-      "\tthen\n",
-      "\t\tcat $1\n",
-      "\t\tcat $2\n",
-      "\tfi\n",
-      "else\n",
-      "\techo le fichier existe pas\n",
-      "fi\n"
-    ],
-    [
-      "if test -e $1 -a -e $2\n",
-      "then\n",
-      "\techo le fichier existe\n",
-      "\tread v\n",
-      "\tif $v = oui\n",
-      "\tthen\n",
-      "\t\tcat $1\n",
-      "\t\tcat $2\n",
-      "\tfi\n",
-      "else\n",
-      "\techo le fichier existe pas\n",
-      "fi\n"
-    ],
-    [
-      "if test -e $1 -a -e $2\n",
-      "then\n",
-      "\techo le fichier existe\n",
-      "\techo shouhaite tu concat\n",
-      "\tread v\n",
-      "\tif $v \n",
-      "\tthen\n",
-      "\t\tcat $1\n",
-      "\t\tcat $2\n",
-      "\tfi\n",
-      "else\n",
-      "\techo le fichier existe pas\n",
-      "fi\n"
-    ],
-    [
-      "if test -e $1 -a -e $2\n",
-      "then\n",
-      "\techo le fichier existe\n",
-      "\techo shouhaite tu concat\n",
-      "\tread v\n",
-      "\tif $v=\"oui\"\n",
-      "\tthen\n",
-      "\t\tcat $1\n",
-      "\t\tcat $2\n",
-      "\tfi\n",
-      "else\n",
-      "\techo le fichier existe pas\n",
-      "fi\n"
-    ],
-    [
-      "if test -e $1 -a -e $2\n",
-      "then\n",
-      "\techo le fichier existe\n",
-      "\techo shouhaite tu concat\n",
-      "\tread v\n",
-      "\tif test $v -eq oui\n",
-      "\tthen\n",
-      "\t\tcat $1\n",
-      "\t\tcat $2\n",
-      "\tfi\n",
-      "else\n",
-      "\techo le fichier existe pas\n",
-      "fi\n"
-    ],
-    [
-      "if test -e $1 -a -e $2\n",
-      "then\n",
-      "\techo le fichier existe\n",
-      "\techo shouhaite tu concat\n",
-      "\tread v\n",
-      "\tif test $v = oui\n",
-      "\tthen\n",
-      "\t\tcat $1\n",
-      "\t\tcat $2\n",
-      "\tfi\n",
-      "else\n",
-      "\techo le fichier existe pas\n",
-      "fi\n"
-    ],
-    [
-      "echo $listec\n"
-    ],
-    [
-      "echo $listec\n",
-      "$listec=\"date who pwd ls\"\n",
-      "echo $listec\n"
-    ],
-    [
-      "echo $listec\n",
-      "echo $listec=\"date who pwd ls\"\n",
-      "echo $listec\n"
-    ],
-    [
-      "echo $listec\n",
-      "echo $listec \"date who pwd ls\"\n",
-      "echo $listec\n"
-    ],
-    [
-      "\n",
-      "echo $listec \"date who pwd ls\"\n"
-    ],
-    [
-      "echo x\n",
-      "echo $listec \"date who pwd ls\"\n",
-      "for x in listec\n",
-      "\tdo echo x\n",
-      "done\n"
-    ],
-    [
-      "echo x\n",
-      "echo $listec \"date who pwd ls\"\n",
-      "for x in listec\n",
-      "\tdo echo $x\n",
-      "done\n"
-    ],
-    [
-      "echo x\n",
-      "echo $listec date who pwd ls\n",
-      "for x in listec\n",
-      "\tdo echo $x\n",
-      "done\n"
-    ],
-    [
-      "echo x\n",
-      "echo $listec date who pwd ls\n",
-      "for listec in date who pwd ld\n",
-      "\tdo echo $listec\n",
-      "done\n"
-    ],
-    [
-      "echo x\n",
-      "echo $listec date who pwd ls\n",
-      "for listec in date who pwd ld\n",
-      "\tdo $listec\n",
-      "done\n"
-    ]
+    {
+      "name": "tp6exo1.sh",
+      "lines": [
+        "read ok\n",
+        "if test $ok -gt 5 -a $ok -lt 10\n",
+        " then\n",
+        "echo $ok est cool\n",
+        "else\n",
+        "echo $ok pas cool\n",
+        "fi\n"
+      ]
+    },
+    {
+      "name": "tp6exo2.sh",
+      "lines": [
+        "if test  -r $1 -a -w $1\n",
+        "then\n",
+        "echo $1 est executable et lis\n",
+        "else\n",
+        "echo $1 pas lisable\n",
+        "fi\n"
+      ]
+    },
+    {
+      "name": "tp6exo3.sh",
+      "lines": [
+        "if test -e $1 -a -e $2\n",
+        "then\n",
+        "\techo le fichier existe\n",
+        "\techo shouhaite tu concat\n",
+        "\tread v\n",
+        "\tif test $v = oui\n",
+        "\tthen\n",
+        "\t\tcat $1\n",
+        "\t\tcat $2\n",
+        "\tfi\n",
+        "else\n",
+        "\techo le fichier existe pas\n",
+        "fi\n"
+      ]
+    },
+    {
+      "name": "tp6exo4.sh",
+      "lines": [
+        "echo x\n",
+        "echo $listec date who pwd ls\n",
+        "for listec in date who pwd ld\n",
+        "\tdo $listec\n",
+        "done\n"
+      ]
+    }
   ],
   "profile": [
     {

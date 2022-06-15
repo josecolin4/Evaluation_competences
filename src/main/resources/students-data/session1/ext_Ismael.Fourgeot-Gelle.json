@@ -2,106 +2,30 @@
   "name": "ext_Ismael.Fourgeot-Gelle",
   "session": 1,
   "scripts": [
-    [
-      "#!/bin/bash\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo cours\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo cours\n",
-      "cours=unix\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo cours\n",
-      "cours=unix\n",
-      "echo $cours\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo cours\n",
-      "cours=unix\n",
-      "echo $cours\n",
-      "echo je suis au cours $cours\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Cher utilisateur quel est ton prenom \\?\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Cher utilisateur quel est ton prenom \\?\n",
-      "read prenom\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Cher utilisateur quel est ton prenom \\?\n",
-      "read prenom\n",
-      "echo Ravi de te connaitre , $prenom\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Cher utilisateur quel est ton prenom \\?\n",
-      "read prenom\n",
-      "echo Ravi de te connaitre , $prenom\n",
-      "echo Quel est ton nom et ton age ?\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Cher utilisateur quel est ton prenom \\?\n",
-      "read prenom\n",
-      "echo Ravi de te connaitre , $prenom\n",
-      "echo Quel est ton nom et ton age ?\n",
-      "read nom age \n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Cher utilisateur quel est ton prenom \\?\n",
-      "read prenom\n",
-      "echo Ravi de te connaitre , $prenom\n",
-      "echo Quel est ton nom et ton age ?\n",
-      "read nom age \n",
-      "echo tu est $prenom $nom et tu as $age ans , n\\'est-ce pas \\?\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Cher utilisateur quel est ton prenom \\?\n",
-      "read prenom\n",
-      "echo Ravi de te connaitre , $prenom\n",
-      "echo Quel est ton nom et ton age ?\n",
-      "read nom age \n",
-      "echo tu est $prenom $nom et tu as $age ans , n\\'est-ce pas \\?\n",
-      "read reponse "
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Cher utilisateur quel est ton prenom \\?\n",
-      "read prenom\n",
-      "echo Ravi de te connaitre , $prenom\n",
-      "echo Quel est ton nom et ton age ?\n",
-      "read nom age \n",
-      "echo tu est $prenom $nom et tu as $age ans , n\\'est-ce pas \\?\n",
-      "read reponse \n"
-    ],
-    [],
-    [
-      "ls\n"
-    ],
-    [
-      "ls\n",
-      "\n"
-    ],
-    [],
-    [
-      "Mon"
-    ]
+    {
+      "name": "tp5_exo1.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo cours\n",
+        "cours=unix\n",
+        "echo $cours\n",
+        "echo je suis au cours $cours\n",
+        "\n"
+      ]
+    },
+    {
+      "name": "tp5_exo2.sh",
+      "lines": [
+        "Mon"
+      ]
+    },
+    {
+      "name": "tp5_exo3.sh",
+      "lines": [
+        "ls\n",
+        "\n"
+      ]
+    }
   ],
   "profile": [
     {

@@ -2,329 +2,71 @@
   "name": "ext_Alexis.Duval",
   "session": 3,
   "scripts": [
-    [
-      "#!/bin/bash\n",
-      "read -p \"Quelle est votre ann\u00c3\u00a9e de naissance ?\" nais\n",
-      "dte=`date +%Y`\n",
-      "age=`expr $dte - $nais`\n",
-      "echo vous etes ne\\(e\\) en $nais , vous avez donc $age ans\\.\n",
-      "age=$(($dte-$nais))\n"
-    ],
-    [
-      "#!/bash/bin\n",
-      "echo Il y a `who` utilisateurs\n",
-      "echo $((who))\n",
-      "echo `hostname`\n",
-      "echo $((hostname))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Il y a `who` utilisateurs\n",
-      "echo $((who))\n",
-      "echo `hostname`\n",
-      "echo $((hostname))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Il y a `who` utilisateurs connectes sur `hostname` \n",
-      "echo Il y a  $((who))$ utilisateurs connectes sur ((hostname))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Il y a `who` utilisateurs connectes sur `hostname` \n",
-      "echo Il y a  $((who))$ utilisateurs connectes sur ((hostname))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Il y a `who` utilisateurs connectes sur `hostname` \n",
-      "echo Il y a  $((who)) utilisateurs connectes sur $((hostname))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Il y a `who | wc -l` utilisateurs connectes sur `hostname` \n",
-      "echo Il y a $((who | wc -l)) utilisateurs connectes sur $((hostname))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Il y a `who | wc -l` utilisateurs connectes sur `hostname` \n",
-      "echo Il y a $(( who | wc -l )) utilisateurs connectes sur $(( hostname ))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Il y a `who | wc -l` utilisateurs connectes sur `hostname` \n",
-      "echo Il y a $((who | wc -l)) utilisateurs connectes sur $((hostname))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Il y a `who | wc -l` utilisateurs connectes sur `hostname` \n",
-      "echo Il y a $(( who | wc -l )) utilisateurs connectes sur $(( hostname ))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Il y a `who | wc -l` utilisateurs connectes sur `hostname` \n",
-      "echo Il y a $( who | wc -l ) utilisateurs connectes sur $( hostname )\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo $(ls -s $1) \n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Taille \\= $(ls -s $1) \n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Taille \\= $(ls -sh $1) \n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Taille \\= $(ls -s $1) \n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Taille \\= $(ls du $1) \n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Taille \\= $(ls -sh $1) \n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "set $(ls -sh $1 )\n",
-      "echo $2\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "set $(ls -sh $1 )\n",
-      "echo $1\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "set $(ls -s $1 )\n",
-      "echo $1\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "test $1 -gt 5 -a $1 -lt 10 \n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test $1 -gt 5 -a $1 -lt 10\n",
-      "then echo La valeur est correcte\n",
-      "fi \n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test $1 -gt 5 -a $1 -lt 10\n",
-      "then echo La valeur est correcte\n",
-      "fi \n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test $1 -gt 5 -a $1 -lt 10\n",
-      "then echo La valeur est correcte\n",
-      "else echo La valeur est incorrecte\n",
-      "fi \n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test $1 -gt 5 -a $1 -lt 10\n",
-      "then echo La valeur est correcte\n",
-      "else echo La valeur est incorrecte\n",
-      "fi \n",
-      "\n",
-      "if test $1 -gt 5 -a $1 -lt 10\n",
-      "then echo La valeur est correcte\n",
-      "else echo La valeur est incorrecte\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test $1 -gt 5 -a $1 -lt 10\n",
-      "then echo La valeur est correcte\n",
-      "else echo La valeur est incorrecte\n",
-      "fi \n",
-      "\n",
-      "if [ $1 -gt 5 -a $1 -lt 10 ]\n",
-      "then echo La valeur est correcte\n",
-      "else echo La valeur est incorrecte\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test $1 -gt 5 -a $1 -lt 10\n",
-      "then echo La valeur est correcte\n",
-      "else echo La valeur est incorrecte\n",
-      "fi \n",
-      "\n",
-      "if [ $1 -gt 5 -a $1 -lt 10 ]\n",
-      "then echo La valeur est correcte\n",
-      "else echo La valeur est incorrecte\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test $1 -gt 5 -a $1 -lt 10\n",
-      "then echo La valeur est correcte\n",
-      "else echo La valeur est incorrecte\n",
-      "fi \n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test -e $1\n",
-      "then echo Le fichier existe\n",
-      "else echo Le fichier n'existe pas\n",
-      "fi \n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test -r $1 -a -w $1\n",
-      "then echo Le fichier existe et il est disponible en ecriture et en lecture\n",
-      "else echo Le fichier n\\'existe pas ou n\\'est pas disponible en lecture ou ecriture\n",
-      "fi \n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test -r $1 -a -w $1\n",
-      "then echo Le fichier existe et il est disponible en ecriture et en lecture\n",
-      "else echo Le fichier n\\'existe pas ou n\\'est pas disponible en lecture ou ecriture\n",
-      "fi \n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test -e $1 -a -e $2\n",
-      "read -p \"Souhaitez-vous concatener ces fichiers\\?\n",
-      "else echo Au moins un des fichiers mis en parametre n'est pas trouvable\n",
-      "fi \n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test -e $1 -a -e $2\n",
-      "read -p \"Souhaitez-vous concatener ces fichiers OUI\\/NON \\? rep\n",
-      "if rep = \"OUI\"\n",
-      "then echo $((cat $1 $2) \n",
-      "fi\n",
-      "else echo Erreur \\: Au moins un des fichiers mis en parametre n'est pas trouvable\n",
-      "fi \n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test -e $1 -a -e $2\n",
-      "read -p \"Souhaitez-vous concatener ces fichiers OUI\\/NON \\? rep\n",
-      "if rep = \"OUI\"\n",
-      "then echo $((cat $1 $2) \n",
-      "fi\n",
-      "else echo Erreur \\: Au moins un des fichiers mis en parametre n'est pas trouvable\n",
-      "fi \n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test -e $1 -a -e $2\n",
-      "read -p \"Souhaitez-vous concatener ces fichiers OUI\\/NON \\? rep\n",
-      "if rep = \"OUI\"\n",
-      "then echo $((cat $1 $2) \n",
-      "fi\n",
-      "else echo Erreur \\: Au moins un des fichiers mis en parametre n\\'est pas trouvable\n",
-      "fi \n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test -e $1 -a -e $2\n",
-      "read -p \"Souhaitez-vous concatener ces fichiers OUI\\/NON \\? rep\n",
-      "if rep = \"OUI\"\n",
-      "then echo $(cat $1 $2) \n",
-      "fi\n",
-      "else echo Erreur \\: Au moins un des fichiers mis en parametre n\\'est pas trouvable\n",
-      "fi \n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test -e $1 -a -e $2\n",
-      "read -p \"Souhaitez-vous concatener ces fichiers OUI\\/NON \\? rep\n",
-      "if rep = OUI\n",
-      "then echo $(cat $1 $2) \n",
-      "fi\n",
-      "else echo Erreur \\: Au moins un des fichiers mis en parametre n\\'est pas trouvable\n",
-      "fi \n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test -e $1 -a -e $2\n",
-      "read -p Souhaitez-vous concatener ces fichiers OUI\\/NON \\? rep\n",
-      "if rep = OUI\n",
-      "then echo $(cat $1 $2) \n",
-      "fi\n",
-      "else echo Erreur \\: Au moins un des fichiers mis en parametre n\\'est pas trouvable\n",
-      "fi \n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test -e $1 -a -e $2\n",
-      "read -p \"Souhaitez-vous concatener ces fichiers OUI\\/NON \\?\" rep\n",
-      "if rep = OUI\n",
-      "then echo $(cat $1 $2) \n",
-      "fi\n",
-      "else echo Erreur \\: Au moins un des fichiers mis en parametre n\\'est pas trouvable\n",
-      "fi \n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test -e $1 -a -e $2\n",
-      "read -p \"Souhaitez-vous concatener ces fichiers OUI\\/NON \\?\" rep\n",
-      "if test rep = OUI\n",
-      "then echo $(cat $1 $2) \n",
-      "fi\n",
-      "else echo Erreur \\: Au moins un des fichiers mis en parametre n\\'est pas trouvable\n",
-      "fi \n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test -e $1 -a -e $2\n",
-      "read -p \"Souhaitez-vous concatener ces fichiers OUI\\/NON \\?\" rep\n",
-      "if test rep = OUI\n",
-      "then echo $(cat $1 $2) \n",
-      "fi\n",
-      "else echo Erreur \\: Au moins un des fichiers mis en parametre n\\'est pas trouvable\n",
-      "fi \n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test -e $1 -a -e $2\n",
-      "read -p \"Souhaitez-vous concatener ces fichiers OUI\\/NON \\?\" rep\n",
-      "if test rep = OUI\n",
-      "then echo $(cat $1 $2) \n",
-      "fi\n",
-      "else echo erreur \\: Au moins un des fichiers mis en parametre n\\'est pas trouvable\n",
-      "fi \n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test -e $1 -a -e $2\n",
-      "read -p \"Souhaitez-vous concatener ces fichiers OUI\\/NON \\?\" rep\n",
-      "if test rep = OUI\n",
-      "then echo $(cat $1 $2) \n",
-      "fi\n",
-      "else echo erreur \\: Au moins un des fichiers mis en parametre est introuvable\n",
-      "fi \n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test -e $1 -a -e $2\n",
-      "read -p \"Souhaitez-vous concatener ces fichiers OUI\\/NON \\?\" rep\n",
-      "if test rep = OUI\n",
-      "then echo $(cat $1 $2) \n",
-      "fi\n",
-      "else echo erreur \\: Au moins un des fichiers mis en parametre est introuvable\n",
-      "fi \n"
-    ]
+    {
+      "name": "tp5bis_exo3.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "read -p \"Quelle est votre ann\u00c3\u00a9e de naissance ?\" nais\n",
+        "dte=`date +%Y`\n",
+        "age=`expr $dte - $nais`\n",
+        "echo vous etes ne\\(e\\) en $nais , vous avez donc $age ans\\.\n",
+        "age=$(($dte-$nais))\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo4.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo Il y a `who | wc -l` utilisateurs connectes sur `hostname` \n",
+        "echo Il y a $( who | wc -l ) utilisateurs connectes sur $( hostname )\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo5.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "set $(ls -s $1 )\n",
+        "echo $1\n"
+      ]
+    },
+    {
+      "name": "tp6_exo1.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "if test $1 -gt 5 -a $1 -lt 10\n",
+        "then echo La valeur est correcte\n",
+        "else echo La valeur est incorrecte\n",
+        "fi \n",
+        "\n",
+        "if [ $1 -gt 5 -a $1 -lt 10 ]\n",
+        "then echo La valeur est correcte\n",
+        "else echo La valeur est incorrecte\n",
+        "fi\n"
+      ]
+    },
+    {
+      "name": "tp6_exo2.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "if test -r $1 -a -w $1\n",
+        "then echo Le fichier existe et il est disponible en ecriture et en lecture\n",
+        "else echo Le fichier n\\'existe pas ou n\\'est pas disponible en lecture ou ecriture\n",
+        "fi \n"
+      ]
+    },
+    {
+      "name": "tp6_exo3.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "if test -e $1 -a -e $2\n",
+        "read -p \"Souhaitez-vous concatener ces fichiers OUI\\/NON \\?\" rep\n",
+        "if test rep = OUI\n",
+        "then echo $(cat $1 $2) \n",
+        "fi\n",
+        "else echo erreur \\: Au moins un des fichiers mis en parametre est introuvable\n",
+        "fi \n"
+      ]
+    }
   ],
   "profile": [
     {

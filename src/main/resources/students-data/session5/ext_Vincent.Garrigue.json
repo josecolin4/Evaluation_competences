@@ -2,107 +2,58 @@
   "name": "ext_Vincent.Garrigue",
   "session": 5,
   "scripts": [
-    [
-      "#!/bin/bash\n",
-      "if test $1 -gt 5\n",
-      "  then \n",
-      "\tif test $1 -lt 10\n",
-      "\t then\n",
-      "\t\techo La valeur $1 est comprise entre 5 et 10.\n",
-      "\telse\n",
-      "\t\techo La valeur $1 n\\'est pas comprise entre 5 et 10.\n",
-      "\tfi\n",
-      "fi\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test $1 -gt 5\n",
-      "  then \n",
-      "\tif test $1 -lt 10\n",
-      "\t then\n",
-      "\t\techo La valeur $1 est comprise entre 5 et 10.\n",
-      "\telse\n",
-      "\t\techo La valeur $1 n\\'est pas comprise entre 5 et 10.\n",
-      "\tfi\n",
-      "fi\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test $1 -gt 5\n",
-      "  then \n",
-      "\tif test $1 -lt 10\n",
-      "\t then\n",
-      "\t\techo La valeur $1 est comprise entre 5 et 10.\n",
-      "\t\n",
-      "\tfi\n",
-      "\telse\n",
-      "\t\techo La valeur $1 n\\'est pas comrpise entre 5 et 10.\n",
-      "fi\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test $1 -gt 5\n",
-      "  then \n",
-      "\tif test $1 -lt 10\n",
-      "\t then\n",
-      "\t\techo La valeur $1 est comprise entre 5 et 10.\n",
-      "\t\n",
-      "\tfi\n",
-      "\telse\n",
-      "\t\techo La valeur $1 n\\'est pas comprise entre 5 et 10.\n",
-      "fi\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test -erw $1\n",
-      "then\n",
-      "\techo Le fichier $1 existe et est accessible en lecture et \u00c3\u00a9criture.\n",
-      "else\n",
-      "\techo Le fichier $1 n\\'existe pas,o\\\u00c3\u00b9 n est pas accessible en lecture,o\\\u00c3\u00b9 n est pas \n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test -erw $1\n",
-      "then\n",
-      "\techo Le fichier $1 existe et est accessible en lecture et \u00c3\u00a9criture.\n",
-      "else\n",
-      "\techo Le fichier $1 n\\'existe pas,o\\\u00c3\u00b9 n est pas accessible en lecture,o\\\u00c3\u00b9 n est pas \n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test -e $1\n",
-      "then\n",
-      "\techo Le fichier $1 existe\n",
-      " \n",
-      "\t\tif test -r $1\n",
-      "\n",
-      "\t\t\tthen\n",
-      "\t\t\t\techo il est en lecture\n",
-      "\t\t\telse\techo il n\\'est pas en lecture\n",
-      "\t\tfi\n",
-      "\t\tif\ttest -w $1\n",
-      "\n",
-      "\t\t\tthen\n",
-      "\t\t\t\techo il est en \u00c3\u00a9criture\n",
-      "\t\t\telse\n",
-      "\t\t\t\techo il n\\'est pas en \u00c3\u00a9criture\n",
-      "\t\tfi\n",
-      "else\n",
-      "echo Le fichier n\\'existe pas \n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test -e \n",
-      "\t\n",
-      "\t\tthen \n"
-    ]
+    {
+      "name": "tp6_exo1.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "if test $1 -gt 5\n",
+        "  then \n",
+        "\tif test $1 -lt 10\n",
+        "\t then\n",
+        "\t\techo La valeur $1 est comprise entre 5 et 10.\n",
+        "\t\n",
+        "\tfi\n",
+        "\telse\n",
+        "\t\techo La valeur $1 n\\'est pas comprise entre 5 et 10.\n",
+        "fi\n",
+        "\n"
+      ]
+    },
+    {
+      "name": "tp6_exo2.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "if test -e $1\n",
+        "then\n",
+        "\techo Le fichier $1 existe\n",
+        " \n",
+        "\t\tif test -r $1\n",
+        "\n",
+        "\t\t\tthen\n",
+        "\t\t\t\techo il est en lecture\n",
+        "\t\t\telse\techo il n\\'est pas en lecture\n",
+        "\t\tfi\n",
+        "\t\tif\ttest -w $1\n",
+        "\n",
+        "\t\t\tthen\n",
+        "\t\t\t\techo il est en \u00c3\u00a9criture\n",
+        "\t\t\telse\n",
+        "\t\t\t\techo il n\\'est pas en \u00c3\u00a9criture\n",
+        "\t\tfi\n",
+        "else\n",
+        "echo Le fichier n\\'existe pas \n",
+        "fi\n"
+      ]
+    },
+    {
+      "name": "tp6_exo3.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "if test -e \n",
+        "\t\n",
+        "\t\tthen \n"
+      ]
+    }
   ],
   "commands": [
     {

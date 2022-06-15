@@ -2,38 +2,38 @@
   "name": "ext_Julien.Larramendy",
   "session": 2,
   "scripts": [
-    [
-      "#!/bin/bash\n",
-      "echo Je suis le script Shell $0\n",
-      "echo Mes arguments sont $*\n",
-      "echo Le premier argument $1\n",
-      "echo Le deuxi\u00c3\u00a8me argument $2\n"
-    ],
-    [
-      "echo bon\n",
-      "jour\n"
-    ],
-    [
-      "echo bon\n",
-      "echo jour\n"
-    ],
-    [
-      "echo Le script <> poss\u00c3\u00a8de <> parametre, que voici:<>\n",
-      "\n",
-      "\n"
-    ],
-    [
-      "echo Le script <> poss\u00c3\u00a8de $# parametre, que voici:$*\n"
-    ],
-    [
-      "echo Le script $0 poss\u00c3\u00a8de $# parametre, que voici:$*\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "Bonjour\n",
-      "je ne sais pas quoi ecrire\n",
-      "la non plus\n"
-    ]
+    {
+      "name": "tp5_ex4.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo Je suis le script Shell $0\n",
+        "echo Mes arguments sont $*\n",
+        "echo Le premier argument $1\n",
+        "echo Le deuxi\u00c3\u00a8me argument $2\n"
+      ]
+    },
+    {
+      "name": "test.sh",
+      "lines": [
+        "echo bon\n",
+        "echo jour\n"
+      ]
+    },
+    {
+      "name": "tp5_ex5.sh",
+      "lines": [
+        "echo Le script $0 poss\u00c3\u00a8de $# parametre, que voici:$*\n"
+      ]
+    },
+    {
+      "name": "F2.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "Bonjour\n",
+        "je ne sais pas quoi ecrire\n",
+        "la non plus\n"
+      ]
+    }
   ],
   "profile": [
     {

@@ -2,68 +2,35 @@
   "name": "ext_Asala.LakhdarBarka",
   "session": 3,
   "scripts": [
-    [
-      "#!/bash/bin\n",
-      "expr $1 / 2\n",
-      "echo $(($1 / 2))\n",
-      " \n"
-    ],
-    [
-      "#!/bash/bin\n",
-      "expr $1 / 2\n",
-      "echo $(($1 / 2))\n",
-      " \n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "expr $1 / 2\n",
-      "echo $(($1 / 2))\n",
-      " \n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "expr $1 / 2\n",
-      "echo $(($1 / 2))\n",
-      " \n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "expr $1 \\* 2\n",
-      "echo $(($1 \\* 2))\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "expr $1 * 2\n",
-      "echo $(($1 * 2))\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "expr $1 \\* 2\n",
-      "echo $(($1 \\* 2))\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "expr $1 * 2\n",
-      "echo $(($1 * 2))\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "expr $1 \\* 2\n",
-      "echo $(($1 * 2))\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Ins\u00c3\u00a9rez votre ann\u00c3\u00a9e de naissance?\n",
-      "read $naissance \n",
-      "echo vous \u00c3\u00aates n\u00c3\u00a9 en \n",
-      "expr $naissance - $date\"2020\"\n",
-      " \n"
-    ]
+    {
+      "name": "tp5bis_exo1.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "expr $1 / 2\n",
+        "echo $(($1 / 2))\n",
+        " \n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo2.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "expr $1 \\* 2\n",
+        "echo $(($1 * 2))\n",
+        "\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo3.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo Ins\u00c3\u00a9rez votre ann\u00c3\u00a9e de naissance?\n",
+        "read $naissance \n",
+        "echo vous \u00c3\u00aates n\u00c3\u00a9 en \n",
+        "expr $naissance - $date\"2020\"\n",
+        " \n"
+      ]
+    }
   ],
   "profile": [
     {

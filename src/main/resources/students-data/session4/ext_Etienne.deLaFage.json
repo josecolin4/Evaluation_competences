@@ -2,119 +2,38 @@
   "name": "ext_Etienne.deLaFage",
   "session": 4,
   "scripts": [
-    [
-      "#! /bin/bash\n",
-      "v=$1\n",
-      "echo ls-l $v\n"
-    ],
-    [
-      "#! /bin/bash\n",
-      "v=$1\n",
-      "resultat= ls_l$v\n",
-      "echo $resultat\n"
-    ],
-    [
-      "#! /bin/bash\n",
-      "v=$1\n",
-      "resultat= ls-l$v\n",
-      "echo $resultat\n"
-    ],
-    [
-      "#! /bin/bash\n",
-      "set -- `ls-l$1`\n",
-      "echo $5\n"
-    ],
-    [
-      "#! /bin/bash\n",
-      "set -- `ls-l $1`\n",
-      "echo $5\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "v=$1\n",
-      "if 4< $1<11  then\n",
-      "echo la valeur $1 est comprise entre 5 et 10\n",
-      "else la valeur $1 est pas comprise entre 5 et 10\n"
-    ],
-    [
-      "#! /bin/bash\n",
-      "set -- `ls -l $1`\n",
-      "echo $5\n"
-    ],
-    [
-      "#!/bin/bash1\n",
-      "if test $1 -ge 5 -a test $1 -le 10 then\n",
-      "echo la valeur $1 est comprise entre 5 et 10\n",
-      "else\n",
-      "echo la valeur $1 est pas comprise entre 5 et 10\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test $1 -ge 5 -a test $1 -le 10 then\n",
-      "echo la valeur $1 est comprise entre 5 et 10\n",
-      "else\n",
-      "echo la valeur $1 est pas comprise entre 5 et 10\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test $1 -ge 5 -a test $1 -le 10 then\n",
-      "echo la valeur $1 est comprise entre 5 et 10\n",
-      "`else`\n",
-      "echo la valeur $1 est pas comprise entre 5 et 10\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test $1 -ge 5 -a test $1 -le 10 \n",
-      "then\n",
-      "echo la valeur $1 est comprise entre 5 et 10\n",
-      "else\n",
-      "echo la valeur $1 est pas comprise entre 5 et 10\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test $1 -ge 5 -a test $1 -le 10 \n",
-      "then\n",
-      "echo la valeur $1 est comprise entre 5 et 10\n",
-      "else\n",
-      "echo la valeur $1 est pas comprise entre 5 et 10\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if [ $1 -ge 5 -a $1 -le 10] \n",
-      "then\n",
-      "echo la valeur $1 est comprise entre 5 et 10\n",
-      "else\n",
-      "echo la valeur $1 est pas comprise entre 5 et 10\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test $1 -ge 5 -a test $1 -le 10 \n",
-      "then\n",
-      "echo la valeur $1 est comprise entre 5 et 10\n",
-      "else\n",
-      "echo la valeur $1 est pas comprise entre 5 et 10\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test $1 -ge 5 -a test $1 -le 10 \n",
-      "then\n",
-      "echo la valeur $1 est comprise entre 5 et 10\n",
-      "else\n",
-      "echo la valeur $1 est pas comprise entre 5 et 10\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test -r $1 -a test -w $1\n",
-      "then\n",
-      "echo le fichier $1 existe et est accessible en ecriture et en lecture\n",
-      "else\n",
-      "echo le fichier $1 exite pas ou est pas accessible en lecture ou est pas accessible en ecriture\n",
-      "fi\n"
-    ]
+    {
+      "name": "tp5bis_exo5.sh",
+      "lines": [
+        "#! /bin/bash\n",
+        "set -- `ls -l $1`\n",
+        "echo $5\n"
+      ]
+    },
+    {
+      "name": "tp6_exo1.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "if test $1 -ge 5 -a test $1 -le 10 \n",
+        "then\n",
+        "echo la valeur $1 est comprise entre 5 et 10\n",
+        "else\n",
+        "echo la valeur $1 est pas comprise entre 5 et 10\n",
+        "fi\n"
+      ]
+    },
+    {
+      "name": "tp6_exo2.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "if test -r $1 -a test -w $1\n",
+        "then\n",
+        "echo le fichier $1 existe et est accessible en ecriture et en lecture\n",
+        "else\n",
+        "echo le fichier $1 exite pas ou est pas accessible en lecture ou est pas accessible en ecriture\n",
+        "fi\n"
+      ]
+    }
   ],
   "profile": [
     {

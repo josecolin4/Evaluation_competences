@@ -2,78 +2,28 @@
   "name": "ext_Matthieu.Wittebroodt",
   "session": 4,
   "scripts": [
-    [
-      "!#/bin/bash\n",
-      "echo \"quel est votre ann\u00c3\u00a9e de naissance ?\"\n",
-      "read naissance\n",
-      "echo \"vous avez\"\n",
-      "expr 2020-$naissance\n",
-      "echo \"ans\"\n"
-    ],
-    [
-      "!#/bin/bash\n",
-      "echo \"quel est votre ann\u00c3\u00a9e de naissance ?\"\n",
-      "read naissance\n",
-      "echo \"vous avez\"\n",
-      "expr 2020 - $naissance\n",
-      "echo \"ans\"\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo \"quel est votre ann\u00c3\u00a9e de naissance ?\"\n",
-      "read naissance\n",
-      "echo \"vous avez\"\n",
-      "expr 2020 - $naissance\n",
-      "echo \"ans\"\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo \"quel est votre ann\u00c3\u00a9e de naissance ?\"\n",
-      "read naissance\n",
-      "echo \"vous avez\"\n",
-      "expr 2020 - $naissance\n",
-      "echo \"ans\"\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo \"quel est votre ann\u00c3\u00a9e de naissance ?\"\n",
-      "read naissance\n",
-      "echo \"vous avez\"\n",
-      "echo $((2020 - naissance))\n",
-      "echo \"ans\"\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo \"quel est votre ann\u00c3\u00a9e de naissance ?\"\n",
-      "read naissance\n",
-      "echo \"vous avez\"\n",
-      "echo $((date - naissance))\n",
-      "echo \"ans\"\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo \"quel est votre ann\u00c3\u00a9e de naissance ?\"\n",
-      "read naissance\n",
-      "echo \"vous avez\"\n",
-      "echo $(($date - naissance))\n",
-      "echo \"ans\"\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo \"quel est votre ann\u00c3\u00a9e de naissance ?\"\n",
-      "read naissance\n",
-      "echo \"vous avez\"\n",
-      "echo $((getdate - naissance))\n",
-      "echo \"ans\"\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo \"quel est votre ann\u00c3\u00a9e de naissance ?\"\n",
-      "read naissance\n",
-      "echo \"vous avez\"\n",
-      "echo $(((getdate) - naissance))\n",
-      "echo \"ans\"\n"
-    ]
+    {
+      "name": "tp5_exo3.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo \"quel est votre ann\u00c3\u00a9e de naissance ?\"\n",
+        "read naissance\n",
+        "echo \"vous avez\"\n",
+        "expr 2020 - $naissance\n",
+        "echo \"ans\"\n"
+      ]
+    },
+    {
+      "name": "tp5_exo3v2.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo \"quel est votre ann\u00c3\u00a9e de naissance ?\"\n",
+        "read naissance\n",
+        "echo \"vous avez\"\n",
+        "echo $(((getdate) - naissance))\n",
+        "echo \"ans\"\n"
+      ]
+    }
   ],
   "profile": [
     {

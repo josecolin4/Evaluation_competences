@@ -2,109 +2,42 @@
   "name": "ext_Matthieu.Wittebroodt",
   "session": 3,
   "scripts": [
-    [
-      "!/bin/bash\n",
-      "date=mon nov 16 15H20:46 2020\n",
-      "echo $date\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "date=mon nov 16 15H20:46 2020\n",
-      "echo $date\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "date=30/11/2020\n",
-      "echo $date\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "date=30/11/2020\n",
-      "echo Nous sommes le $date\n",
-      "echo Nous sommes le Mon Nov 16 15:20:46 CET 2020\n",
-      "echo Ceci est \n",
-      "echo une tr\u00c3\u00a8s\n",
-      "echo longue phrase...\n",
-      "echo Voici une \u00c3\u00a9toile : *\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "date=30/11/2020\n",
-      "echo Nous sommes le $date\n",
-      "echo Nous sommes le Mon Nov 16 15:20:46 CET 2020\n",
-      "echo Ceci est \n",
-      "echo une tr\u00c3\u00a8s\n",
-      "echo longue phrase...\n",
-      "echo Voici une \u00c3\u00a9toile :\\*\n"
-    ],
-    [
-      "#!bin/bash\n",
-      "expr$*+1\n",
-      "echo $*\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "expr$*+1\n",
-      "echo $*\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "expr$* + 1\n",
-      "echo $*\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "expr $* + 1\n",
-      "echo $*\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "expr $* + 1\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "expr $* / 2\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "expr $* / 2\n",
-      "echo $(($* / 2))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo $(($* / 2))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "expr $* / 2\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "expr $* * 2\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "expr $* *2\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo ''$(($* * 2))''\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo ''$(($* * 2))''\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo ''$(($* / 2))''\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo 'date'\n",
-      "\n"
-    ]
+    {
+      "name": "TP5bis.exo1.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "date=30/11/2020\n",
+        "echo Nous sommes le $date\n",
+        "echo Nous sommes le Mon Nov 16 15:20:46 CET 2020\n",
+        "echo Ceci est \n",
+        "echo une tr\u00c3\u00a8s\n",
+        "echo longue phrase...\n",
+        "echo Voici une \u00c3\u00a9toile :\\*\n"
+      ]
+    },
+    {
+      "name": "tp5_exo8.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "expr $* + 1\n",
+        "\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo1.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo ''$(($* / 2))''\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo3.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo 'date'\n",
+        "\n"
+      ]
+    }
   ],
   "profile": [
     {

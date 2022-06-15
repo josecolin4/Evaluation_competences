@@ -2,259 +2,34 @@
   "name": "ext_Valentin.Laprois",
   "session": 2,
   "scripts": [
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "expr 6 + 2\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "expr 6 / 2\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "expr 6 / 2\n",
-      "n = 6\n",
-      "echo $((n / 2))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "expr 6 / 2\n",
-      "n=6\n",
-      "echo $((n / 2))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "expr 5 / 2\n",
-      "n=6\n",
-      "echo $((n / 2))\n"
-    ],
-    [
-      "#!/bin/bash/\n",
-      "\n",
-      "expr 2 * 6\n",
-      "n=2\n",
-      "echo $((n*6))\n"
-    ],
-    [
-      "#!/bin/bash/\n",
-      "\n",
-      "expr 2 /* 6\n",
-      "n=2\n",
-      "echo $((n/*6))\n"
-    ],
-    [
-      "#!/bin/bash/\n",
-      "\n",
-      "expr 2 \\* 6\n",
-      "n=2\n",
-      "echo $((n\\*6))\n"
-    ],
-    [
-      "#!/bin/bash/\n",
-      "\n",
-      "expr 2 \\ 6\n",
-      "n=2\n",
-      "echo $((n\\6))\n"
-    ],
-    [
-      "#!/bin/bash/\n",
-      "\n",
-      "expr 6 \\* 2\n",
-      "n=2\n",
-      "echo $((n\\*6))\n"
-    ],
-    [
-      "#!/bin/bash/\n",
-      "\n",
-      "expr 6 \\* 2\n"
-    ],
-    [
-      "#!/bin/bash/\n",
-      "echo df \\?\n",
-      "read n\n",
-      "expr $n \\* 2 #affiche\n"
-    ],
-    [
-      "\n",
-      "echo df \\?\n",
-      "read n\n",
-      "expr $n \\* 2 #affiche\n"
-    ],
-    [
-      "#!/bin/bash/\n",
-      "\n",
-      "$date\n"
-    ],
-    [
-      "\n",
-      "$date\n"
-    ],
-    [
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance \\?\n",
-      "read a\n",
-      "echo Vous etes n\u00c3\u00a9 en 1990 vous avez:\n",
-      "expr date%y - a \n",
-      "\n"
-    ],
-    [
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance \\?\n",
-      "read a\n",
-      "echo Vous etes n\u00c3\u00a9 en 1990 vous avez:\n",
-      "expr date%y - $a \n",
-      "\n"
-    ],
-    [
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance \\?\n",
-      "read a\n",
-      "echo Vous etes n\u00c3\u00a9 en 1990 vous avez:\n",
-      "expr $date%y - $a \n",
-      "\n"
-    ],
-    [
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance \\?\n",
-      "read a\n",
-      "echo Vous etes n\u00c3\u00a9 en 1990 vous avez:\n",
-      "expr $(date%y) - $a \n",
-      "\n"
-    ],
-    [
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance \\?\n",
-      "read a\n",
-      "echo Vous etes n\u00c3\u00a9 en 1990 vous avez:\n",
-      "expr $(date %y) - $a \n",
-      "\n"
-    ],
-    [
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance \\?\n",
-      "read a\n",
-      "echo Vous etes n\u00c3\u00a9 en 1990 vous avez:\n",
-      "expr $(date+%Y) - $a \n",
-      "\n"
-    ],
-    [
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance \\?\n",
-      "read a\n",
-      "echo Vous etes n\u00c3\u00a9 en 1990 vous avez:\n",
-      "expr $(date + %Y) - $a \n",
-      "\n"
-    ],
-    [
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance \\?\n",
-      "read a\n",
-      "echo Vous etes n\u00c3\u00a9 en 1990 vous avez:\n",
-      "expr $(date %Y) - $a \n",
-      "\n"
-    ],
-    [
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance \\?\n",
-      "read a\n",
-      "echo Vous etes n\u00c3\u00a9 en 1990 vous avez:\n",
-      "expr $(date %Y) - $a \n",
-      "\n"
-    ],
-    [
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance \\?\n",
-      "read a\n",
-      "echo Vous etes n\u00c3\u00a9 en 1990 vous avez:\n",
-      "expr $date + %Y - $a \n",
-      "\n"
-    ],
-    [
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance \\?\n",
-      "read a\n",
-      "echo Vous etes n\u00c3\u00a9 en 1990 vous avez:\n",
-      "expr $((date + %Y)) - $a \n",
-      "\n"
-    ],
-    [
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance \\?\n",
-      "read a\n",
-      "echo Vous etes n\u00c3\u00a9 en 1990 vous avez:\n",
-      "expr $((date%Y)) - $a \n",
-      "\n"
-    ],
-    [
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance \\?\n",
-      "read a\n",
-      "echo Vous etes n\u00c3\u00a9 en 1990 vous avez:\n",
-      "expr $((date%Y)) + $a \n",
-      "\n"
-    ],
-    [
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance \\?\n",
-      "read a\n",
-      "echo Vous etes n\u00c3\u00a9 en 1990 vous avez:\n",
-      "date+%Y=$(pwd)\n",
-      "expr $(pwd) + $a \n",
-      "\n"
-    ],
-    [
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance \\?\n",
-      "read a\n",
-      "echo Vous etes n\u00c3\u00a9 en 1990 vous avez:\n",
-      "date=$(pwd)\n",
-      "expr $(pwd) + $a \n",
-      "\n"
-    ],
-    [
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance \\?\n",
-      "read a\n",
-      "echo Vous etes n\u00c3\u00a9 en 1990 vous avez:\n",
-      "date +%Y=$(pwd)\n",
-      "612expr $(pwd) + $a \n",
-      "\n"
-    ],
-    [
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance \\?\n",
-      "read a\n",
-      "echo Vous etes n\u00c3\u00a9 en 1990 vous avez:\n",
-      "date +%Y=$(pwd)\n",
-      "expr $(( $(pwd) + $a)) \n",
-      "\n"
-    ],
-    [
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance \\?\n",
-      "read a\n",
-      "echo Vous etes n\u00c3\u00a9 en 1990 vous avez:\n",
-      "date +%Y=$(pwd)\n",
-      "expr $(pwd) + $a \n",
-      "\n"
-    ],
-    [
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance \\?\n",
-      "read a\n",
-      "echo Vous etes n\u00c3\u00a9 en 1990 vous avez:\n",
-      "expr date +%Y - $a \n",
-      "\n"
-    ],
-    [
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance \\?\n",
-      "read a\n",
-      "echo Vous etes n\u00c3\u00a9 en 1990 vous avez: $((date +%Y - $a)) \n"
-    ],
-    [
-      "\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance \\?\n",
-      "read a\n",
-      "echo Vous etes n\u00c3\u00a9 en 1990 vous avez: $((date +%Y - $a)) \n"
-    ],
-    [
-      "\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance \\?\n",
-      "read a\n",
-      "echo Vous etes n\u00c3\u00a9 en 1990 vous avez: $((`date` +%Y - $a)) \n"
-    ],
-    [
-      "\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance \\?\n",
-      "read a\n",
-      "echo Vous etes n\u00c3\u00a9 en 1990 vous avez: $((`date +%Y` - $a)) \n"
-    ]
+    {
+      "name": "tp5bis_exo1.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "\n",
+        "expr 5 / 2\n",
+        "n=6\n",
+        "echo $((n / 2))\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo2.sh",
+      "lines": [
+        "\n",
+        "echo df \\?\n",
+        "read n\n",
+        "expr $n \\* 2 #affiche\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo3.sh",
+      "lines": [
+        "\n",
+        "echo Quelle est votre ann\u00c3\u00a9e de naissance \\?\n",
+        "read a\n",
+        "echo Vous etes n\u00c3\u00a9 en 1990 vous avez: $((`date +%Y` - $a)) \n"
+      ]
+    }
   ],
   "profile": [
     {

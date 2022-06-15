@@ -2,16 +2,14 @@
   "name": "ext_Paul-Adrien.Durand",
   "session": 4,
   "scripts": [
-    [
-      "#!/bin/bash\n",
-      "set $1 --$(ls -l $1)\n",
-      "echo $2\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "set $1 --$(wc -c $1)\n",
-      "echo $2\n"
-    ]
+    {
+      "name": "tp5bis_exo5.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "set $1 --$(wc -c $1)\n",
+        "echo $2\n"
+      ]
+    }
   ],
   "profile": [
     {

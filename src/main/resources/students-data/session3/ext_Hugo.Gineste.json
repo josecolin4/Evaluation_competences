@@ -2,198 +2,75 @@
   "name": "ext_Hugo.Gineste",
   "session": 3,
   "scripts": [
-    [
-      "#! /bin/bash\n",
-      "\n",
-      "copy F1.txt F2.txt\n",
-      "copy F2.txt F3.txt\n"
-    ],
-    [
-      "#! /bin/bash\n",
-      "\n",
-      "bash copy F1.txt F2.txt\n",
-      "bash copy F2.txt F3.txt\n"
-    ],
-    [
-      "#! /bin/bash\n",
-      "\n",
-      "echo Voici la 'date'\n",
-      "echo Nous sommes le Mon Nov 16 15:20:46 CET 2020\n",
-      "echo Ceci est\n",
-      "echo une tres\n",
-      "echo Longue phrase\n",
-      "echo Voici une etoile : *\n"
-    ],
-    [
-      "#! /bin/bash\n",
-      "\n",
-      "echo Voici la date\n",
-      "echo Nous sommes le Mon Nov 16 15:20:46 CET 2020\n",
-      "echo Ceci est\n",
-      "echo une tres\n",
-      "echo Longue phrase\n",
-      "echo Voici une etoile : *\n"
-    ],
-    [
-      "#! /bin/bash\n",
-      "\n",
-      "echo Voici la %c\n",
-      "echo Nous sommes le Mon Nov 16 15:20:46 CET 2020\n",
-      "echo Ceci est\n",
-      "echo une tres\n",
-      "echo Longue phrase\n",
-      "echo Voici une etoile : *\n"
-    ],
-    [
-      "#! /bin/bash\n",
-      "\n",
-      "echo Voici la date '+ %c'\n",
-      "echo Nous sommes le Mon Nov 16 15:20:46 CET 2020\n",
-      "echo Ceci est\n",
-      "echo une tres\n",
-      "echo Longue phrase\n",
-      "echo Voici une etoile : *\n"
-    ],
-    [
-      "#! /bin/bash\n",
-      "\n",
-      "echo Voici la date 'date'\n",
-      "echo Nous sommes le Mon Nov 16 15:20:46 CET 2020\n",
-      "echo Ceci est\n",
-      "echo une tres\n",
-      "echo Longue phrase\n",
-      "echo Voici une etoile : *\n"
-    ],
-    [
-      "#! /bin/bash\n",
-      "\n",
-      "nb=$*\n",
-      "\n",
-      "nb=nb+1\n",
-      "echo $date\n"
-    ],
-    [
-      "#! /bin/bash\n",
-      "\n",
-      "nb=$*\n",
-      "\n",
-      "nb=nb+1\n",
-      "echo $nb\n"
-    ],
-    [
-      "#! /bin/bash\n",
-      "\n",
-      "nb=$*\n",
-      "\n",
-      "nb=$nb+1\n",
-      "echo $nb\n"
-    ],
-    [
-      "#! /bin/bash\n",
-      "\n",
-      "nb=$*\n",
-      "nb2=1\n",
-      "nb=$nb + $nb2\n",
-      "echo $nb\n"
-    ],
-    [
-      "#! /bin/bash\n",
-      "\n",
-      "who copy F1.txt F2.txt\n",
-      "who copy F2.txt F3.txt\n"
-    ],
-    [
-      "#! /bin/bash\n",
-      "\n",
-      "echo |copy F1.txt F2.txt\n",
-      "echo |copy F2.txt F3.txt\n"
-    ],
-    [
-      "#! /bin/bash\n",
-      "\n",
-      "cp F1.txt F2.txt\n",
-      "\n",
-      "cp F2.txt F3.txt\n"
-    ],
-    [
-      "#! /bin/bash\n",
-      "\n",
-      "echo Voici la date |'date'\n",
-      "echo Nous sommes le Mon Nov 16 15:20:46 CET 2020\n",
-      "echo Ceci est\n",
-      "echo une tres\n",
-      "echo Longue phrase\n",
-      "echo Voici une etoile : *\n"
-    ],
-    [
-      "#! /bin/bash\n",
-      "\n",
-      "nb=$*\n",
-      "nb2=1\n",
-      "nb=' expr $nb + $nb2'\n",
-      "echo $nb\n"
-    ],
-    [
-      "#! /bin/bash\n",
-      "\n",
-      "\n",
-      "\n",
-      "echo | expr $* +1\n"
-    ],
-    [
-      "#! /bin/bash\n",
-      "\n",
-      "\n",
-      "\n",
-      "echo | expr $* +1\n"
-    ],
-    [
-      "#! /bin/bash\n",
-      "\n",
-      "expr $* + 1\n"
-    ],
-    [
-      "#! /bin/bash\n",
-      "\n",
-      "\n",
-      "\n"
-    ],
-    [
-      "#! /bin/bash\n",
-      "\n",
-      "\n",
-      "\n",
-      "\n",
-      "\n",
-      "\n",
-      "\n"
-    ],
-    [
-      "#! /bin/bash\n",
-      "echo $(($* / ))2\n"
-    ],
-    [
-      "#! /bin/bash\n",
-      "echo $(($* / 2 ))\n"
-    ],
-    [
-      "#! /bin/bash\n",
-      "\n",
-      "expr $* / 2\n",
-      "echo $(($* / 2 ))\n"
-    ],
-    [
-      "#! /bin/bash\n",
-      "\n",
-      "expr $* * 2\n",
-      "echo $(($* * 2))\n"
-    ],
-    [
-      "#! /bin/bash\n",
-      "\n",
-      "expr $* + $*\n",
-      "echo $(($* * 2))\n"
-    ]
+    {
+      "name": "tp5_exo6.sh",
+      "lines": [
+        "#! /bin/bash\n",
+        "\n",
+        "cp F1.txt F2.txt\n",
+        "\n",
+        "cp F2.txt F3.txt\n"
+      ]
+    },
+    {
+      "name": "tp5_exo7.sh",
+      "lines": [
+        "#! /bin/bash\n",
+        "\n",
+        "echo Voici la date |'date'\n",
+        "echo Nous sommes le Mon Nov 16 15:20:46 CET 2020\n",
+        "echo Ceci est\n",
+        "echo une tres\n",
+        "echo Longue phrase\n",
+        "echo Voici une etoile : *\n"
+      ]
+    },
+    {
+      "name": "tp5_exo8.sh",
+      "lines": [
+        "#! /bin/bash\n",
+        "\n",
+        "expr $* + 1\n"
+      ]
+    },
+    {
+      "name": "tp5_exo9.sh",
+      "lines": [
+        "#! /bin/bash\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo9.sh",
+      "lines": [
+        "#! /bin/bash\n",
+        "echo $(($* / ))2\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo1.sh",
+      "lines": [
+        "#! /bin/bash\n",
+        "\n",
+        "expr $* / 2\n",
+        "echo $(($* / 2 ))\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo2.sh",
+      "lines": [
+        "#! /bin/bash\n",
+        "\n",
+        "expr $* + $*\n",
+        "echo $(($* * 2))\n"
+      ]
+    }
   ],
   "profile": [
     {

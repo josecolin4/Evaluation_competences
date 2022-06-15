@@ -2,70 +2,14 @@
   "name": "ext_Louis.Leleu",
   "session": 2,
   "scripts": [
-    [
-      "#!/bin/bash\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo $PATH\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "export PATH=~ :$PATH\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "export PATH=:$PATH/root\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "export PATH=:$PATH/root\n",
-      "echo $PATH\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "export PATH=$PATH:/root\n",
-      "echo $PATH\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo 'export PATH=$PATH:/root' >> ~/.bashrc\n",
-      "echo $PATH\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo 'export PATH=$PATH:/root' >> /root/.bashrc\n",
-      "echo $PATH\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "export PATH=$PATH:/root\n",
-      "echo $PATH\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "export PATH=$PATH:/root\n",
-      "echo 'export PATH=$PATH:/root' >> ~/.bashrc\n",
-      "echo $PATH\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "export PATH=$PATH:/root\n",
-      "echo 'export PATH=$PATH:/root' >> /root/.bashrc\n",
-      "echo $PATH\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "export PATH=$PATH:/root\n",
-      "echo 'export PATH=$PATH:/root' >> /root/.bashrc\n",
-      "echo $PATH\n"
-    ],
-    [
-      "export PATH=$PATH:/root\n",
-      "echo 'export PATH=$PATH:/root' >> /root/.bashrc\n",
-      "echo $PATH\n"
-    ]
+    {
+      "name": "tp5_exo9.sh",
+      "lines": [
+        "export PATH=$PATH:/root\n",
+        "echo 'export PATH=$PATH:/root' >> /root/.bashrc\n",
+        "echo $PATH\n"
+      ]
+    }
   ],
   "profile": [
     {

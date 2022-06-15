@@ -2,98 +2,45 @@
   "name": "ext_Kevin.Rochis",
   "session": 2,
   "scripts": [
-    [
-      "#!/bin/bash\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo F1 >> F3\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo F1 >> F3\n",
-      "echo F2 >> F3"
-    ],
-    [
-      "#!/bin/bash\n",
-      "cat F1 >> F3\n",
-      "cat F2 >> F3\n",
-      "\n"
-    ],
-    [
-      "echo nous sommes le \u00c3\u00c3\u00c3\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo nous sommes le \" `date`\"\n",
-      "echo nous sommes le `date`\n",
-      "echo ceci est\n",
-      "echo une tr\u00c3\u00a9s\n",
-      "echo longue phrase...\n",
-      "echo voici une \u00c3\u00a9toile : *\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo nous sommes le \\  `date`\n",
-      "echo nous sommes le `date`\n",
-      "echo ceci est\n",
-      "echo une tr\u00c3\u00a9s\n",
-      "echo longue phrase...\n",
-      "echo voici une \u00c3\u00a9toile :\\ *\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo nous sommes le date\n",
-      "echo nous sommes le `date`\n",
-      "echo ceci est\n",
-      "echo une tr\u00c3\u00a9s\n",
-      "echo longue phrase...\n",
-      "echo voici une \u00c3\u00a9toile :\\ *\n"
-    ],
-    [
-      "#!/bin/bash\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo somme=$"
-    ],
-    [
-      "#!/bin/bash\n",
-      "somme=$(($1+1))\n",
-      "echo $somme\n"
-    ],
-    [
-      "#!/bin/bash\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "export PATH=$PATH:$PWD\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "export PATH=$PATH:$PWD\n",
-      "echo \"export\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "export PATH=$PATH:$PWD\n",
-      "echo \"export\n",
-      "PATH=$PATH:$PWD\">>\u00c3~/.bashrc\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "export PATH=$PATH:$PWD\n",
-      "echo \"export\n",
-      "PATH=$PATH:$PWD\">>\u00c3~/.bashrc\n",
-      "source ~/.bashrc"
-    ],
-    [
-      "#!/bin/bash\n",
-      "export PATH=$PATH:$PWD\n",
-      "echo \"export\n",
-      "PATH=$PATH:$PWD\">>~/.bashrc\n",
-      "source ~/.bashrc\n"
-    ]
+    {
+      "name": "tp5_exo6.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "cat F1 >> F3\n",
+        "cat F2 >> F3\n",
+        "\n"
+      ]
+    },
+    {
+      "name": "tp5_exo7.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo nous sommes le date\n",
+        "echo nous sommes le `date`\n",
+        "echo ceci est\n",
+        "echo une tr\u00c3\u00a9s\n",
+        "echo longue phrase...\n",
+        "echo voici une \u00c3\u00a9toile :\\ *\n"
+      ]
+    },
+    {
+      "name": "tp5_exo8.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "somme=$(($1+1))\n",
+        "echo $somme\n"
+      ]
+    },
+    {
+      "name": "tp5_exo9.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "export PATH=$PATH:$PWD\n",
+        "echo \"export\n",
+        "PATH=$PATH:$PWD\">>~/.bashrc\n",
+        "source ~/.bashrc\n"
+      ]
+    }
   ],
   "profile": [
     {

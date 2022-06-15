@@ -2,51 +2,44 @@
   "name": "ext_Lisa.Duvallet",
   "session": 3,
   "scripts": [
-    [
-      "if test $1 -gt 5 & test $1 -lt 10\n",
-      "\tthen\n",
-      "\techo La valeur $1 est comprise  entre 5 et 10\n",
-      "\telse\n",
-      "\techo La valeur $1 n/'ai pas comprise entre 5 et 10\n",
-      "fi\n"
-    ],
-    [
-      "if test $1 -gt 5 & test $1 -lt 10\n",
-      "\tthen\n",
-      "\techo La valeur $1 est comprise  entre 5 et 10\n",
-      "\telse\n",
-      "\techo La valeur $1 n ai pas comprise entre 5 et 10\n",
-      "fi\n"
-    ],
-    [
-      "if test $1 -ge 5 -a $1 -le 10\n",
-      "\tthen\n",
-      "\techo La valeur $1 est comprise  entre 5 et 10\n",
-      "\telse\n",
-      "\techo La valeur $1 n ai pas comprise entre 5 et 10\n",
-      "fi\n"
-    ],
-    [
-      "if test -e $1 -a -e $2\n",
-      "\tthen\n",
-      "\t\techo concat\u00c3\u00a9ner ?\n",
-      "\t\tread n\n",
-      "\t\tif test $n = \"oui\"\n",
-      "\t\t\tthen\n",
-      "\t\t\t\techo erreur\n",
-      "\t\tfi\n",
-      "\telse\n",
-      "\t\techo existe pas\n",
-      "fi\n"
-    ],
-    [
-      "if test -e $1 -a -r $1\n",
-      "then\n",
-      "echo vrai\n",
-      "else\n",
-      "echo faux\n",
-      "fi\n"
-    ]
+    {
+      "name": "tp6_exo1.sh",
+      "lines": [
+        "if test $1 -ge 5 -a $1 -le 10\n",
+        "\tthen\n",
+        "\techo La valeur $1 est comprise  entre 5 et 10\n",
+        "\telse\n",
+        "\techo La valeur $1 n ai pas comprise entre 5 et 10\n",
+        "fi\n"
+      ]
+    },
+    {
+      "name": "tp6_exo3.sh",
+      "lines": [
+        "if test -e $1 -a -e $2\n",
+        "\tthen\n",
+        "\t\techo concat\u00c3\u00a9ner ?\n",
+        "\t\tread n\n",
+        "\t\tif test $n = \"oui\"\n",
+        "\t\t\tthen\n",
+        "\t\t\t\techo erreur\n",
+        "\t\tfi\n",
+        "\telse\n",
+        "\t\techo existe pas\n",
+        "fi\n"
+      ]
+    },
+    {
+      "name": "tp6_exo2.sh",
+      "lines": [
+        "if test -e $1 -a -r $1\n",
+        "then\n",
+        "echo vrai\n",
+        "else\n",
+        "echo faux\n",
+        "fi\n"
+      ]
+    }
   ],
   "profile": [
     {

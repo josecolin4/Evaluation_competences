@@ -2,70 +2,39 @@
   "name": "ext_Paul-Alexandre.Baudrand",
   "session": 4,
   "scripts": [
-    [
-      "if $1 >= 5 and $1 <=10\n",
-      "then\n",
-      "echo VRAI\n",
-      "else\n",
-      "echo FAUX\n",
-      "fi\n"
-    ],
-    [
-      "if $1 >= 5 or $1 <=10\n",
-      "then\n",
-      "echo VRAI\n",
-      "else\n",
-      "echo FAUX\n",
-      "fi\n"
-    ],
-    [
-      "if $1 >= 5 or $1 <=10\n",
-      "then\n",
-      "echo VRAI\n",
-      "else\n",
-      "echo FAUX\n",
-      "fi\n"
-    ],
-    [
-      "if  test $1 -ge 5 -a $1 -le\n",
-      "then\n",
-      "echo \"$1 compris entre 5 et 10\"\n",
-      "else\n",
-      "echo \"$1 non compris entre 5 et 10\"\n",
-      "fi\n"
-    ],
-    [
-      "if test $1  -ge 5 -a $1 -le 10 \n",
-      "then\n",
-      "echo $1 compris entre 5 et 10\n",
-      "else\n",
-      "echo $1 non compris entre 5 et 10\n",
-      "fi\n"
-    ],
-    [
-      "if test $1  -ge 5 -a $1 -le 10 \n",
-      "then\n",
-      "echo $1 compris entre 5 et 10\n",
-      "else\n",
-      "echo $1 non compris entre 5 et 10\n",
-      "fi\n"
-    ],
-    [
-      "if test $1  -ge 5 -a $1 -le 10 \n",
-      "then\n",
-      "echo $1 compris entre 5 et 10\n",
-      "else\n",
-      "echo $1 non compris entre 5 et 10\n",
-      "fi\n"
-    ],
-    [
-      "if [ $1 -ge 5 -a $1 -le 10 ]\n",
-      "then\n",
-      "echo $1 compris entre 5 et 10\n",
-      "else\n",
-      "echo $1 non compris entre 5 et 10\n",
-      "fi\n"
-    ]
+    {
+      "name": "tp6_exo1.sh",
+      "lines": [
+        "if $1 >= 5 or $1 <=10\n",
+        "then\n",
+        "echo VRAI\n",
+        "else\n",
+        "echo FAUX\n",
+        "fi\n"
+      ]
+    },
+    {
+      "name": "tp6_exo1V1.sh",
+      "lines": [
+        "if test $1  -ge 5 -a $1 -le 10 \n",
+        "then\n",
+        "echo $1 compris entre 5 et 10\n",
+        "else\n",
+        "echo $1 non compris entre 5 et 10\n",
+        "fi\n"
+      ]
+    },
+    {
+      "name": "tp6_exo1V2.sh",
+      "lines": [
+        "if [ $1 -ge 5 -a $1 -le 10 ]\n",
+        "then\n",
+        "echo $1 compris entre 5 et 10\n",
+        "else\n",
+        "echo $1 non compris entre 5 et 10\n",
+        "fi\n"
+      ]
+    }
   ],
   "profile": [
     {

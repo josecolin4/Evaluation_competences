@@ -2,252 +2,58 @@
   "name": "ext_Nathan.Piazzi",
   "session": 4,
   "scripts": [
-    [
-      "for ma_variable in liste_commandes\n",
-      "do\n",
-      "date who pwd ls\n",
-      "done\n"
-    ],
-    [
-      "for  liste_commandes in date who pwd ls\n",
-      "do\n",
-      "\techo $1\n",
-      "done\n"
-    ],
-    [
-      "for liste_commandes in date who pwd ls\n",
-      "do\n",
-      "\techo $liste_commandes\n",
-      "done\n"
-    ],
-    [
-      "for liste_commandes in date who pwd ls\n",
-      "do\n",
-      "\tliste_commandes\n",
-      "done\n"
-    ],
-    [
-      "for liste_commandes in date who pwd ls\n",
-      "do\n",
-      "\t$liste_commandes\n",
-      "done\n"
-    ],
-    [
-      "for liste_commandes in date\n",
-      "do\n",
-      "\t$liste_commandes\n",
-      "done\n"
-    ],
-    [
-      "for i in 1 2 3\n",
-      "do\n",
-      "$i\n",
-      "done\n"
-    ],
-    [
-      "for i in 1 2 3\n",
-      "do\n",
-      "\techo $i\n",
-      "done\n"
-    ],
-    [
-      "for i in 1 2 3\n",
-      "do\n",
-      "\techo argument $i = toto\n",
-      "\techo argument $i = tata\n",
-      "done\n"
-    ],
-    [
-      "for i in 1 2 3\n",
-      "do\n",
-      "\techo argument $i = toto\n",
-      "\techo argument $i = tata\n",
-      "\techo argument \n",
-      "done\n"
-    ],
-    [
-      "echo il y a `who`\n",
-      "echo le nom de la machine est `hostname` \n"
-    ],
-    [
-      "set --$(ls -l file)\n",
-      "echo $1\n"
-    ],
-    [
-      "#affiche la valeur du r\u00c3\u00a9pertoire courant\n",
-      "\n"
-    ],
-    [
-      "set --$(ls -l file)\n",
-      "echo $1\n",
-      "\n"
-    ],
-    [
-      "set --$(ls -l tp5bis_exo4.sh)\n",
-      "echo $1\n",
-      "\n"
-    ],
-    [
-      "set -- $(ls -l tp5bis_exo4.sh)\n",
-      "echo $1\n",
-      "\n"
-    ],
-    [
-      "set -- $(ls -l tp5bis_exo4.sh)\n",
-      "echo $5\n",
-      "\n"
-    ],
-    [
-      "set -- $(ls -l tp5bis_exo4.sh)\n",
-      "echo $*\n",
-      "\n"
-    ],
-    [
-      "echo quel est le fichier \\?\n",
-      "read n\n",
-      "set -- $(ls -l $n)\n",
-      "echo $5\n",
-      "\n"
-    ],
-    [
-      "nb=1\n",
-      "num=1\n",
-      "for nb in $*\n",
-      "do\n",
-      "\techo argument $num : $nb\n",
-      "\tnb=nb+1\n",
-      "\tnum=$((num+1)) \n",
-      "done\n",
-      "echo Il y a $# arguments.\n"
-    ],
-    [
-      "nb=1\n",
-      "num=1\n",
-      "for nb in $*\n",
-      "do\n",
-      "\techo argument $num : $nb\n",
-      "\tnum=$((num+1)) \n",
-      "done\n",
-      "echo Il y a $# arguments.\n"
-    ],
-    [
-      "nb=1\n",
-      "num=1\n",
-      "for nb in $*\n",
-      "do\n",
-      "\techo argument $num : $nb \n",
-      "done\n",
-      "echo Il y a $# arguments.\n"
-    ],
-    [
-      "nb=1\n",
-      "num=1\n",
-      "for nb in $*\n",
-      "do\n",
-      "\techo argument $num : $nb\n",
-      "\tnum=num+1 \n",
-      "done\n",
-      "echo Il y a $# arguments.\n"
-    ],
-    [
-      "nb=1\n",
-      "num=1\n",
-      "for nb in $*\n",
-      "do\n",
-      "\techo argument $num : $nb\n",
-      "\tnum=$((num+1)) \n",
-      "done\n",
-      "echo Il y a $# arguments.\n"
-    ],
-    [
-      "for i in $(seq 1)\n",
-      "do\n",
-      "\techo $1\n",
-      "done\n"
-    ],
-    [
-      "for i in $(seq 10)\n",
-      "do\n",
-      "\tres = $i * $i\n",
-      "\techo $res\n",
-      "done\n"
-    ],
-    [
-      "res=0\n",
-      "for i in $(seq 10)\n",
-      "do\n",
-      "\tres = $i * $i\n",
-      "\techo $res\n",
-      "done\n"
-    ],
-    [
-      "res=0\n",
-      "for i in $(seq 10)\n",
-      "do\n",
-      "\tres = $(($i * $i))\n",
-      "\techo $res\n",
-      "done\n"
-    ],
-    [
-      "e=1\n",
-      "f=1\n",
-      "for i in $(seq 5)\n",
-      "do\n",
-      "\te = $((e*f))\n",
-      "\tf=$((f+1))\n",
-      "\techo $e\n",
-      "done\n"
-    ],
-    [
-      "e=1\n",
-      "f=1\n",
-      "for i in $(seq 5)\n",
-      "do\n",
-      "\te=$((e*f))\n",
-      "\tf=$((f+1))\n",
-      "\techo $e\n",
-      "done\n"
-    ],
-    [
-      "e=1\n",
-      "f=1\n",
-      "for i in $(seq 6)\n",
-      "do\n",
-      "\te=$((e*f))\n",
-      "\tf=$((f+1))\n",
-      "\techo $e\n",
-      "done\n"
-    ],
-    [
-      "e=1\n",
-      "f=1\n",
-      "for i in $(seq 20)\n",
-      "do\n",
-      "\te=$((e*f))\n",
-      "\tf=$((f+1))\n",
-      "\techo $e\n",
-      "done\n"
-    ],
-    [
-      "e=1\n",
-      "f=1\n",
-      "for i in $(seq 21)\n",
-      "do\n",
-      "\te=$((e*f))\n",
-      "\tf=$((f+1))\n",
-      "\techo $e\n",
-      "done\n"
-    ],
-    [
-      "e=1\n",
-      "f=1\n",
-      "for i in $(seq 3)\n",
-      "do\n",
-      "\te=$((e*f))\n",
-      "\tf=$((f+1))\n",
-      "\techo $e\n",
-      "done\n"
-    ]
+    {
+      "name": "tp6_exo4.sh",
+      "lines": [
+        "for liste_commandes in date\n",
+        "do\n",
+        "\t$liste_commandes\n",
+        "done\n"
+      ]
+    },
+    {
+      "name": "tp6_exo5.sh",
+      "lines": [
+        "nb=1\n",
+        "num=1\n",
+        "for nb in $*\n",
+        "do\n",
+        "\techo argument $num : $nb\n",
+        "\tnum=$((num+1)) \n",
+        "done\n",
+        "echo Il y a $# arguments.\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo4.sh",
+      "lines": [
+        "echo il y a `who`\n",
+        "echo le nom de la machine est `hostname` \n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo5.sh",
+      "lines": [
+        "echo quel est le fichier \\?\n",
+        "read n\n",
+        "set -- $(ls -l $n)\n",
+        "echo $5\n",
+        "\n"
+      ]
+    },
+    {
+      "name": "tp6_exo6.sh",
+      "lines": [
+        "e=1\n",
+        "f=1\n",
+        "for i in $(seq 3)\n",
+        "do\n",
+        "\te=$((e*f))\n",
+        "\tf=$((f+1))\n",
+        "\techo $e\n",
+        "done\n"
+      ]
+    }
   ],
   "profile": [
     {

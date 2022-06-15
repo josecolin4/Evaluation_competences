@@ -2,192 +2,40 @@
   "name": "ext_Louis.Guillou",
   "session": 3,
   "scripts": [
-    [
-      "#!/bin/bash\n",
-      "expr $1 / 2\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo $(( $1 / 2 ))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo $(( $1 * 2 ))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo donne votre ann\u00c3\u00a9e de naissance\n",
-      "read a\n",
-      "\n",
-      "echo vous \u00c3\u00aates n\u00c3\u00a9 en $a vous avez donc ans.\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "expr $1 * 2\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "expr $1 x 2\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo donne votre ann\u00c3\u00a9e de naissance\n",
-      "read a\n",
-      "b=date\n",
-      "c=expr a-b\n",
-      "echo vous \u00c3\u00aates n\u00c3\u00a9 en $a vous avez donc $c ans.\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo donne votre ann\u00c3\u00a9e de naissance\n",
-      "read a\n",
-      "b=date\n",
-      "c=expr a - b\n",
-      "echo vous \u00c3\u00aates n\u00c3\u00a9 en $a vous avez donc $c ans.\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo donne votre ann\u00c3\u00a9e de naissance\n",
-      "read a\n",
-      "b=date\n",
-      "c=expr $a - $b\n",
-      "echo vous \u00c3\u00aates n\u00c3\u00a9 en $a vous avez donc $c ans.\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo donne votre ann\u00c3\u00a9e de naissance\n",
-      "read a\n",
-      "b=date\n",
-      "c=expr $a - $date\n",
-      "echo vous \u00c3\u00aates n\u00c3\u00a9 en $a vous avez donc $c ans.\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo donne votre ann\u00c3\u00a9e de naissance\n",
-      "read a\n",
-      "b=date\n",
-      "c=expr $a - $(date)\n",
-      "echo vous \u00c3\u00aates n\u00c3\u00a9 en $a vous avez donc $c ans.\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo donne votre ann\u00c3\u00a9e de naissance\n",
-      "read a\n",
-      "b=date+Y\n",
-      "c=expr $a - $b\n",
-      "echo vous \u00c3\u00aates n\u00c3\u00a9 en $a vous avez donc $c ans.\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo donne votre ann\u00c3\u00a9e de naissance\n",
-      "read a\n",
-      "b=$(date+%Y)\n",
-      "c=expr $a - $b\n",
-      "echo vous \u00c3\u00aates n\u00c3\u00a9 en $a vous avez donc $c ans.\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo donne votre ann\u00c3\u00a9e de naissance\n",
-      "read a\n",
-      "b=$(date +%Y)\n",
-      "c=expr $a - $b\n",
-      "echo vous \u00c3\u00aates n\u00c3\u00a9 en $a vous avez donc $c ans.\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo donne votre ann\u00c3\u00a9e de naissance\n",
-      "read a\n",
-      "b=$(date +%Y)\n",
-      "c=expr $a - $(date +%Y)\n",
-      "echo vous \u00c3\u00aates n\u00c3\u00a9 en $a vous avez donc $c ans.\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo donne votre ann\u00c3\u00a9e de naissance\n",
-      "read a\n",
-      "c=expr $a - $(date +%Y)\n",
-      "echo vous \u00c3\u00aates n\u00c3\u00a9 en $a vous avez donc $c ans.\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo donne votre ann\u00c3\u00a9e de naissance\n",
-      "read a\n",
-      "date=$(date +%Y)\n",
-      "c=$(expr $date - $a)\n",
-      "echo vous \u00c3\u00aates n\u00c3\u00a9 en $a vous avez donc $c ans.\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo $(who)\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "a=$(who)\n",
-      "len($a)\n",
-      "echo $a\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "a=$(who)\n",
-      "len$a\n",
-      "echo $a\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "a=$(who)\n",
-      "$(len($a))\n",
-      "echo $a\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "a=$(who)\n",
-      "b=$(len($a))\n",
-      "echo $b\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "a=$(who)\n",
-      "b=len($a)\n",
-      "echo $b\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "a=$(who)\n",
-      "b=len$a\n",
-      "echo $b\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "a=$(who | wc -l)\n",
-      "echo $a\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "set $(ls -s $1)\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo set $(ls -s $1)\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo `set $(ls -s $1)`\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "a=set $(ls -s $1)\n",
-      "echo $a\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "a=$(set $(ls -s $1))\n",
-      "echo $a\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "set $(ls -s $1)\n",
-      "echo $1\n"
-    ]
+    {
+      "name": "tp5bis_exo1.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "expr $1 x 2\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo3.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo donne votre ann\u00c3\u00a9e de naissance\n",
+        "read a\n",
+        "date=$(date +%Y)\n",
+        "c=$(expr $date - $a)\n",
+        "echo vous \u00c3\u00aates n\u00c3\u00a9 en $a vous avez donc $c ans.\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo4.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "a=$(who | wc -l)\n",
+        "echo $a\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo5.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "set $(ls -s $1)\n",
+        "echo $1\n"
+      ]
+    }
   ],
   "profile": [
     {

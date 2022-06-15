@@ -2,69 +2,20 @@
   "name": "ext_Benoit.Riandiere",
   "session": 5,
   "scripts": [
-    [
-      "nb=1\n"
-    ],
-    [
-      "nb=1\n",
-      "num=1\n"
-    ],
-    [
-      "nb=1\n",
-      "num=1\n",
-      "for nb in $*\n"
-    ],
-    [
-      "nb=1\n",
-      "num=1\n",
-      "for nb in $*\n",
-      "do \n"
-    ],
-    [
-      "nb=1\n",
-      "num=1\n",
-      "for nb in $*\n",
-      "do \n",
-      "\teccho argument $num : $nb\n"
-    ],
-    [
-      "nb=1\n",
-      "num=1\n",
-      "for nb in $*\n",
-      "do \n",
-      "\teccho argument $num : $nb\n",
-      "\tnb=nb+1\n"
-    ],
-    [
-      "nb=1\n",
-      "num=1\n",
-      "for nb in $*\n",
-      "do \n",
-      "\teccho argument $num : $nb\n",
-      "\tnb=nb+1\n",
-      "\tnum=$((num+1))\n"
-    ],
-    [
-      "nb=1\n",
-      "num=1\n",
-      "for nb in $*\n",
-      "do \n",
-      "\teccho argument $num : $nb\n",
-      "\tnb=nb+1\n",
-      "\tnum=$((num+1))\n",
-      "done\n"
-    ],
-    [
-      "nb=1\n",
-      "num=1\n",
-      "for nb in $*\n",
-      "do \n",
-      "\teccho argument $num : $nb\n",
-      "\tnb=nb+1\n",
-      "\tnum=$((num+1))\n",
-      "done\n",
-      "echo il y a $# arguments.\n"
-    ]
+    {
+      "name": "tp6exo5.sh",
+      "lines": [
+        "nb=1\n",
+        "num=1\n",
+        "for nb in $*\n",
+        "do \n",
+        "\teccho argument $num : $nb\n",
+        "\tnb=nb+1\n",
+        "\tnum=$((num+1))\n",
+        "done\n",
+        "echo il y a $# arguments.\n"
+      ]
+    }
   ],
   "commands": [
     {

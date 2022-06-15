@@ -2,116 +2,91 @@
   "name": "ext_Jean.Estadieu",
   "session": 1,
   "scripts": [
-    [
-      "#!/bin/bash\n",
-      "echo cours\n",
-      "cours=unis\n",
-      "echo $cours\n",
-      "echo je suis au cours $cours\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo cours\n",
-      "cours=unix\n",
-      "echo $cours\n",
-      "echo je suis au cours $cours\n",
-      "\n"
-    ],
-    [
-      "chmod Mon nom de login est : $LOGNAME\n",
-      "chmod Mon shell est : $SHELL\n",
-      "chmod Les variables du shell sont :\n",
-      "set\n",
-      "chmod \"Celle d'environement sont : \"\n",
-      "env\n"
-    ],
-    [
-      "echo Mon nom de login est : $LOGNAME\n",
-      "echo Mon shell est : $SHELL\n",
-      "echo Les variables du shell sont :\n",
-      "set\n",
-      "echo \"Celle d'environement sont : \"\n",
-      "env\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Cher utilisateur quel est ton pr\u00c3\u00a9nom \\?\n",
-      "read prenom\n",
-      "echo Ravi de te connaitre, $prenom\n",
-      "echo Quel est ton nom et ton age \\?\n",
-      "read nom age\n",
-      "echo Tu es $prenom $nom et tu as $age ans, n\\'est-ce pas \\?\n",
-      "read reponse\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Je suis le script Shell $0\n",
-      "echo Mes arguments dont $*\n",
-      "echo Le premier argument est $1\n",
-      "echo Le deuxi\u00c3\u00a8me argument est $2\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Je suis le script Shell $0\n",
-      "echo Mes arguments sont $*\n",
-      "echo Le premier argument est $1\n",
-      "echo Le deuxi\u00c3\u00a8me argument est $2\n",
-      "\n"
-    ],
-    [
-      "echo Le script $0 poss\u00c3\u00a8de $# param\u00c3\u00a8tre, que voici: \n",
-      "$*\n"
-    ],
-    [
-      "echo Le script $0 poss\u00c3\u00a8de $# param\u00c3\u00a8tre, que voici:\n",
-      "echo $*\n"
-    ],
-    [
-      "echo F1\n",
-      "echo F2\n"
-    ],
-    [
-      "echo F3\n"
-    ],
-    [
-      "echo\"Nous sommes le `date`\"\n",
-      "echo Nous sommes le mois `date`\n",
-      "echo Ceci est\n",
-      "echo une tr\u00c3\u00a8s\n",
-      "echo longue phrase...\n",
-      "echo \"Voici une \u00c3\u00a9toile :*\"\n"
-    ],
-    [
-      "echo \"Nous sommes le `date`\"\n",
-      "echo Nous sommes le mois `date`\n",
-      "echo Ceci est\n",
-      "echo une tr\u00c3\u00a8s\n",
-      "echo longue phrase...\n",
-      "echo \"Voici une \u00c3\u00a9toile :*\"\n"
-    ],
-    [
-      "echo Nous sommes le `date`\n",
-      "echo Nous sommes le mois $date\n",
-      "echo Ceci est\n",
-      "echo une tr\u00c3\u00a8s\n",
-      "echo longue phrase...\n",
-      "echo \"Voici une \u00c3\u00a9toile :*\"\n"
-    ],
-    [
-      "echo Nous sommes le `date`\n",
-      "echo Nous sommes le mois  Nov 16 19:39 CET 2020\n",
-      "echo Ceci est\n",
-      "echo une tr\u00c3\u00a8s\n",
-      "echo longue phrase...\n",
-      "echo \"Voici une \u00c3\u00a9toile :*\"\n"
-    ],
-    [
-      "$2 = $1+1\n",
-      "echo $2\n"
-    ]
+    {
+      "name": "tp5_exo1.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo cours\n",
+        "cours=unix\n",
+        "echo $cours\n",
+        "echo je suis au cours $cours\n",
+        "\n"
+      ]
+    },
+    {
+      "name": "tp5_exo2.sh",
+      "lines": [
+        "echo Mon nom de login est : $LOGNAME\n",
+        "echo Mon shell est : $SHELL\n",
+        "echo Les variables du shell sont :\n",
+        "set\n",
+        "echo \"Celle d'environement sont : \"\n",
+        "env\n"
+      ]
+    },
+    {
+      "name": "tp5_exo3.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo Cher utilisateur quel est ton pr\u00c3\u00a9nom \\?\n",
+        "read prenom\n",
+        "echo Ravi de te connaitre, $prenom\n",
+        "echo Quel est ton nom et ton age \\?\n",
+        "read nom age\n",
+        "echo Tu es $prenom $nom et tu as $age ans, n\\'est-ce pas \\?\n",
+        "read reponse\n",
+        "\n"
+      ]
+    },
+    {
+      "name": "tp5_exo4.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo Je suis le script Shell $0\n",
+        "echo Mes arguments sont $*\n",
+        "echo Le premier argument est $1\n",
+        "echo Le deuxi\u00c3\u00a8me argument est $2\n",
+        "\n"
+      ]
+    },
+    {
+      "name": "tp5_exo5.sh",
+      "lines": [
+        "echo Le script $0 poss\u00c3\u00a8de $# param\u00c3\u00a8tre, que voici:\n",
+        "echo $*\n"
+      ]
+    },
+    {
+      "name": "tp5_exo6.sh",
+      "lines": [
+        "echo F1\n",
+        "echo F2\n"
+      ]
+    },
+    {
+      "name": "tp5_exo6_2.sh",
+      "lines": [
+        "echo F3\n"
+      ]
+    },
+    {
+      "name": "tp5_exo7.sh",
+      "lines": [
+        "echo Nous sommes le `date`\n",
+        "echo Nous sommes le mois  Nov 16 19:39 CET 2020\n",
+        "echo Ceci est\n",
+        "echo une tr\u00c3\u00a8s\n",
+        "echo longue phrase...\n",
+        "echo \"Voici une \u00c3\u00a9toile :*\"\n"
+      ]
+    },
+    {
+      "name": "tp5_exo8.sh",
+      "lines": [
+        "$2 = $1+1\n",
+        "echo $2\n"
+      ]
+    }
   ],
   "profile": [
     {

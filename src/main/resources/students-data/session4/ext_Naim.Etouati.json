@@ -2,199 +2,45 @@
   "name": "ext_Naim.Etouati",
   "session": 4,
   "scripts": [
-    [
-      "expr $0 / 2\n",
-      "eho expr\n"
-    ],
-    [
-      "expr $0 / \n",
-      "\n"
-    ],
-    [
-      "expr $0 / 2\n",
-      "\n"
-    ],
-    [
-      "calcul= expr $0 / 2\n",
-      "echo $calcul\n"
-    ],
-    [
-      "calcul = expr $1 / 2\n",
-      "echo $calcul\n"
-    ],
-    [
-      "calcul = expr $1 / 2\n",
-      "echo calcul\n"
-    ],
-    [
-      "calcul=expr$1/2\n",
-      "echo calcul\n"
-    ],
-    [
-      "expr $a + $b\n"
-    ],
-    [
-      "calcul=`expr $nb - 2`\n",
-      "\n",
-      "echo $calcul\n"
-    ],
-    [
-      "calcul=`expr $1 / 2`\n",
-      "\n",
-      "echo $calcul\n"
-    ],
-    [
-      "calcul=`expr $1 / 2`\n",
-      "echo $calcul\n",
-      "calcul=$(($1/2))\n",
-      "echo $calcul\n"
-    ],
-    [
-      "calcul=`expr $1 * 2`\n",
-      "echo calcul\n",
-      "calcul=$(($1*2))\n",
-      "echo $calcul\n"
-    ],
-    [
-      "calcul =`expr $1 * 2`\n",
-      "echo calcul\n",
-      "calcul=$(($1*2))\n",
-      "echo $calcul\n"
-    ],
-    [
-      "calcul =`expr $1 * 2`\n",
-      "echo $calcul\n",
-      "calcul=$(($1*2))\n",
-      "echo $calcul\n"
-    ],
-    [
-      "calcul=`expr $1 * 2`\n",
-      "\n",
-      "echo $calcul\n",
-      "\n",
-      "calcul=$(($1 * 2))\n",
-      "\n",
-      "echo $calcul\n"
-    ],
-    [
-      "calcul=`expr$1 * 2`\n",
-      "\n",
-      "echo $calcul\n",
-      "\n",
-      "calcul=$(($1 * 2))\n",
-      "\n",
-      "echo $calcul\n"
-    ],
-    [
-      "calcul=`expr$1/*2`\n",
-      "\n",
-      "echo $calcul\n",
-      "\n",
-      "calcul=$(($1 * 2))\n",
-      "\n",
-      "echo $calcul\n"
-    ],
-    [
-      "calcul=`expr$1\\*2`\n",
-      "\n",
-      "echo $calcul\n",
-      "\n",
-      "calcul=$(($1 * 2))\n",
-      "\n",
-      "echo $calcul\n"
-    ],
-    [
-      "calcul=`expr $1 \\* 2`\n",
-      "\n",
-      "echo $calcul\n",
-      "\n",
-      "calcul=$(($1 * 2))\n",
-      "\n",
-      "echo $calcul\n"
-    ],
-    [
-      "echo \"Quel est vote date de naissance? \"\n",
-      "read naissance\n",
-      "age= `expr `date` - naissance`\n"
-    ],
-    [
-      "echo \"Quel est vote annee de naissance? \"\n",
-      "read naissance\n",
-      "annee=$(date '+%y')\n",
-      "echo vous avez $((2000 + annee - naissance)) ans\n"
-    ],
-    [
-      "echo \"Quel est vote annee de naissance? \"\n",
-      "read naissance\n",
-      "annee=$ ('+%y')\n",
-      "echo vous avez $(( annee - naissance)) ans\n"
-    ],
-    [
-      "echo \"Quel est vote annee de naissance? \"\n",
-      "read naissance\n",
-      "annee=$('+%y')\n",
-      "echo vous avez $(( annee - naissance)) ans\n"
-    ],
-    [
-      "echo \"Quel est vote annee de naissance? \"\n",
-      "read naissance\n",
-      "annee=$('%y')\n",
-      "echo vous avez $(( annee - naissance)) ans\n"
-    ],
-    [
-      "echo \"Quel est vote annee de naissance? \"\n",
-      "read naissance\n",
-      "annee=$('%y')\n",
-      "echo vous avez $((2000 + annee - naissance)) ans\n"
-    ],
-    [
-      "echo \"Quel est vote annee de naissance? \"\n",
-      "read naissance\n",
-      "annee=$(date '%y')\n",
-      "echo vous avez $((2000 + annee - naissance)) ans\n"
-    ],
-    [
-      "echo \"Quel est vote annee de naissance? \"\n",
-      "read naissance\n",
-      "annee=$(date '+%y')\n",
-      "echo vous avez $((2000 + annee - naissance)) ans\n"
-    ],
-    [
-      "echo \"Quel est vote annee de naissance? \"\n",
-      "read naissance\n",
-      "annee=$(date '+%y')\n",
-      "echo vous avez $((2000 + annee - naissance)) ans\n",
-      "age= `expr (2000 + annee - naissance)`\n",
-      "echo $age\n"
-    ],
-    [
-      "echo \"Quel est vote annee de naissance? \"\n",
-      "read naissance\n",
-      "annee=$(date '+%y')\n",
-      "echo vous avez $((2000 + annee - naissance)) ans\n",
-      "age=`expr (2000 + annee - naissance)`\n",
-      "echo $age\n"
-    ],
-    [
-      "echo \"Quel est vote annee de naissance? \"\n",
-      "read naissance\n",
-      "annee=$(date '+%y')\n",
-      "echo vous avez $((2000 + annee - naissance)) ans\n",
-      "age=`expr 2000 + annee - naissance`\n",
-      "echo $age\n"
-    ],
-    [
-      "echo \"Quel est vote annee de naissance? \"\n",
-      "read naissance\n",
-      "annee=$(date '+%y')\n",
-      "echo vous avez $((2000 + annee - naissance)) ans\n",
-      "age=`expr 2000 + annee - $1`\n",
-      "echo $age\n"
-    ],
-    [
-      "echo vous etes sur la machine: `hostname`\n",
-      "echo il y a:  `who | wc -l` utilisateurs connet\u00c3\u00a9s\n"
-    ]
+    {
+      "name": "tp5bisexo1.sh",
+      "lines": [
+        "calcul=`expr $1 / 2`\n",
+        "echo $calcul\n",
+        "calcul=$(($1/2))\n",
+        "echo $calcul\n"
+      ]
+    },
+    {
+      "name": "tp5bisexo2.sh",
+      "lines": [
+        "calcul=`expr $1 \\* 2`\n",
+        "\n",
+        "echo $calcul\n",
+        "\n",
+        "calcul=$(($1 * 2))\n",
+        "\n",
+        "echo $calcul\n"
+      ]
+    },
+    {
+      "name": "tp5bisexo3.sh",
+      "lines": [
+        "echo \"Quel est vote annee de naissance? \"\n",
+        "read naissance\n",
+        "annee=$(date '+%y')\n",
+        "echo vous avez $((2000 + annee - naissance)) ans\n",
+        "age=`expr 2000 + annee - $1`\n",
+        "echo $age\n"
+      ]
+    },
+    {
+      "name": "tp5bisexo4.sh",
+      "lines": [
+        "echo vous etes sur la machine: `hostname`\n",
+        "echo il y a:  `who | wc -l` utilisateurs connet\u00c3\u00a9s\n"
+      ]
+    }
   ],
   "profile": [
     {

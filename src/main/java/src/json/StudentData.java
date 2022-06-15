@@ -15,7 +15,7 @@ public class StudentData {
     private int session;
 
     @Expose
-    private List<List<String>> scripts;
+    private List<Script> scripts;
 
     @Expose
     private List<StudentCompetency> profile;
@@ -35,7 +35,12 @@ public class StudentData {
         if (scripts == null) {
             return new ArrayList<>();
         }
-        return scripts;
+
+        List<List<String>> toReturn = new ArrayList<>();
+        for (Script script : scripts) {
+            toReturn.add(script.getLines());
+        }
+        return toReturn;
     }
 
     public List<StudentCompetency> getProfile() {

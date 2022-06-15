@@ -2,103 +2,50 @@
   "name": "ext_Tom.Philippe",
   "session": 3,
   "scripts": [
-    [
-      "#! /bin/bash\n",
-      "echo(($1/2))\n"
-    ],
-    [
-      "#! /bin/bash\n",
-      "resultat=$1\n",
-      "resultat=$((resultat/2))\n",
-      "echo $resultat\n"
-    ],
-    [
-      "#! /bin/bash\n",
-      "echo $(($1*2))\n"
-    ],
-    [
-      "#! /bin/bash\n",
-      "resultat=$1\n",
-      "resultat=$((resultat*2))\n",
-      "echo $resultat\n"
-    ],
-    [
-      "#! /bin/bash\n",
-      "resultat=$1\n",
-      "resultat=$((resultat\\2))\n",
-      "echo $resultat\n"
-    ],
-    [
-      "#! /bin/bash\n",
-      "resultat=$1\n",
-      "resultat=$((resultat*2))\n",
-      "echo $resultat\n"
-    ],
-    [
-      "#! /bin/bash\n",
-      "echo Quelle est votre annee de naissance ?\n",
-      "read $annee\n",
-      "age=$((2020-$annee))\n",
-      "echo  Vous etes n\u00c3\u00a9 en $annee , vous avez donc $age ans.\n"
-    ],
-    [
-      "#! /bin/bash\n",
-      "echo Quelle est votre annee de naissance ?\n",
-      "read $annee\n",
-      "age=$((2020-$annee))\n",
-      "echo  Vous etes n\u00c3\u00a9 en $annee , vous avez donc $age ans.\n"
-    ],
-    [
-      "#! /bin/bash\n",
-      "echo Quelle est votre annee de naissance ?\n",
-      "read $annee\n",
-      "age=$((2020-$annee))\n",
-      "echo  Vous etes n\u00c3\u00a9 en $annee , vous avez donc $age ans.\n"
-    ],
-    [
-      "#! /bin/bash\n",
-      "echo Quelle est votre annee de naissance \\?\n",
-      "read $annee\n",
-      "age=$((2020-$annee))\n",
-      "echo  Vous etes n\u00c3\u00a9 en $annee \\, vous avez donc $age ans\\.\n"
-    ],
-    [
-      "#! /bin/bash\n",
-      "echo Quelle est votre annee de naissance \\?\n",
-      "read $annee\n",
-      "anneeajd=2020\n",
-      "age=$(($aneeajd-$annee))\n",
-      "echo  Vous etes n\u00c3\u00a9 en $annee \\, vous avez donc $age ans\\.\n"
-    ],
-    [
-      "#! /bin/bash\n",
-      "echo Quelle est votre annee de naissance \\?\n",
-      "read $annee\n",
-      "age=$anee\n",
-      "age=$((2020-$age))\n",
-      "echo  Vous etes n\u00c3\u00a9 en $annee \\, vous avez donc $age ans\\.\n"
-    ],
-    [
-      "#! /bin/bash\n",
-      "echo Quelle est votre annee de naissance \\?\n",
-      "read $age\n",
-      "annee=$age\n",
-      "age=$((2020-$age))\n",
-      "echo  Vous etes n\u00c3\u00a9 en $annee \\, vous avez donc $age ans\\.\n"
-    ],
-    [
-      "#! /bin/bash\n",
-      "echo il y a `$who` utilisateurs sur `$hostname`\n"
-    ],
-    [
-      "#! /bin/bash\n",
-      "echo il y a `who` utilisateurs sur `hostname`\n"
-    ],
-    [
-      "#! /bin/bash\n",
-      "echo voici la taille du fichier:\n",
-      "echo $(wc -m $1)\n"
-    ]
+    {
+      "name": "tp5bis_exo1.sh",
+      "lines": [
+        "#! /bin/bash\n",
+        "resultat=$1\n",
+        "resultat=$((resultat/2))\n",
+        "echo $resultat\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo2.sh",
+      "lines": [
+        "#! /bin/bash\n",
+        "resultat=$1\n",
+        "resultat=$((resultat*2))\n",
+        "echo $resultat\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo3.sh",
+      "lines": [
+        "#! /bin/bash\n",
+        "echo Quelle est votre annee de naissance \\?\n",
+        "read $age\n",
+        "annee=$age\n",
+        "age=$((2020-$age))\n",
+        "echo  Vous etes n\u00c3\u00a9 en $annee \\, vous avez donc $age ans\\.\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo4.sh",
+      "lines": [
+        "#! /bin/bash\n",
+        "echo il y a `who` utilisateurs sur `hostname`\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo5.sh",
+      "lines": [
+        "#! /bin/bash\n",
+        "echo voici la taille du fichier:\n",
+        "echo $(wc -m $1)\n"
+      ]
+    }
   ],
   "profile": [
     {

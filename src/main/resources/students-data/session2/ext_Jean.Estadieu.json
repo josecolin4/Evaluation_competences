@@ -2,49 +2,26 @@
   "name": "ext_Jean.Estadieu",
   "session": 2,
   "scripts": [
-    [
-      "PATH=.:$PATH\n"
-    ],
-    [
-      "V=$v+1\n",
-      "echo V\n"
-    ],
-    [
-      "$v =$0+1\n",
-      "echo $v\n"
-    ],
-    [
-      "$v =$1+1\n",
-      "echo $v\n"
-    ],
-    [
-      "v =$1+1\n",
-      "echo $v\n"
-    ],
-    [
-      "$v =$1+1\n",
-      "echo $?\n"
-    ],
-    [
-      "v =$1+1\n",
-      "echo $?\n"
-    ],
-    [
-      "$v =$1+1\n",
-      "expr $v\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo extr $1+1\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo extr $1 + 1\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo extr $1 + 1\n"
-    ]
+    {
+      "name": "tp5_exo9.sh",
+      "lines": [
+        "PATH=.:$PATH\n"
+      ]
+    },
+    {
+      "name": "tp5exo8.sh",
+      "lines": [
+        "V=$v+1\n",
+        "echo V\n"
+      ]
+    },
+    {
+      "name": "tp5_exo8.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo extr $1 + 1\n"
+      ]
+    }
   ],
   "profile": [
     {

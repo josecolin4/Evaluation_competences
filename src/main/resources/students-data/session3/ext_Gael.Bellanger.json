@@ -2,291 +2,98 @@
   "name": "ext_Gael.Bellanger",
   "session": 3,
   "scripts": [
-    [
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "expr $a / $b #affiche 1\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "expr $a / 2 #affiche 1\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "expr $a / 2\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "expr $1 / 2 \n"
-    ],
-    [
-      "#!/bin/dash\n",
-      "\n",
-      "echo $(( $1 / 2 ))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "expr $1 * 2\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo $(($1 * 2 ))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "expr $1 \\* 2\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo \"Quelle est votre ann\u00c3\u00a9e de naissance /?\"\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo \"Quelle est votre ann\u00c3\u00a9e de naissance \" \\?\n",
-      "read ann\u00c3\u00a9e\n",
-      "echo \"vous \u00c3\u00aates n\u00c3\u00a9(e) en \" $ann\u00c3\u00a9e \", vous avez donc \" $(( DATE - $ann\u00c3\u00a9e )) \" ans.\"\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "\n",
-      "\n",
-      "\n",
-      "echo \"Quelle est votre ann\u00c3\u00a9e de naissance \" \\?\n",
-      "read ann\u00c3\u00a9e\n",
-      "echo \"vous \u00c3\u00aates n\u00c3\u00a9(e) en \" $ann\u00c3\u00a9e \", vous avez donc \" $(( DATE - $ann\u00c3\u00a9e )) \" ans.\"\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo \"Quelle est votre ann\u00c3\u00a9e de naissance \" \\?\n",
-      "read ann\u00c3\u00a9e\n",
-      "echo \"vous \u00c3\u00aates n\u00c3\u00a9(e) en \" $ann\u00c3\u00a9e \", vous avez donc \" $(( DATE - $ann\u00c3\u00a9e )) \" ans.\"\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo \"Quelle est votre ann\u00c3\u00a9e de naissance \" \\?\n",
-      "read annee\n",
-      "echo \"vous \u00c3\u00aates n\u00c3\u00a9(e) en \" $annee \", vous avez donc \" $(( DATE - $ann\u00c3\u00a9e )) \" ans.\"\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo \"Quelle est votre ann\u00c3\u00a9e de naissance \" \\?\n",
-      "read annee\n",
-      "echo \"vous \u00c3\u00aates n\u00c3\u00a9(e) en \" $annee \", vous avez donc \" $(( DATE - $annee )) \" ans.\"\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "date\n",
-      "\n",
-      "echo \"Quelle est votre ann\u00c3\u00a9e de naissance \" \\?\n",
-      "read annee\n",
-      "echo \"vous \u00c3\u00aates n\u00c3\u00a9(e) en \" $annee \", vous avez donc \" $(( DATE - $annee )) \" ans.\"\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "date=DATE\n",
-      "\n",
-      "echo \"Quelle est votre ann\u00c3\u00a9e de naissance \" \\?\n",
-      "read annee\n",
-      "echo \"vous \u00c3\u00aates n\u00c3\u00a9(e) en \" $annee \", vous avez donc \" $(( $date - $annee )) \" ans.\"\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "date=DATE -d\n",
-      "\n",
-      "echo \"Quelle est votre ann\u00c3\u00a9e de naissance \" \\?\n",
-      "read annee\n",
-      "echo \"vous \u00c3\u00aates n\u00c3\u00a9(e) en \" $annee \", vous avez donc \" $(( $date - $annee )) \" ans.\"\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "date=DATE -f\n",
-      "\n",
-      "echo \"Quelle est votre ann\u00c3\u00a9e de naissance \" \\?\n",
-      "read annee\n",
-      "echo \"vous \u00c3\u00aates n\u00c3\u00a9(e) en \" $annee \", vous avez donc \" $(( $date - $annee )) \" ans.\"\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "date=date -f\n",
-      "\n",
-      "echo \"Quelle est votre ann\u00c3\u00a9e de naissance \" \\?\n",
-      "read annee\n",
-      "echo \"vous \u00c3\u00aates n\u00c3\u00a9(e) en \" $annee \", vous avez donc \" $(( $date - $annee )) \" ans.\"\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "date=date -f\n",
-      "\n",
-      "echo \"Quelle est votre ann\u00c3\u00a9e de naissance \" \\?\n",
-      "read annee\n",
-      "echo \"vous \u00c3\u00aates n\u00c3\u00a9(e) en \" $annee \", vous avez donc \" $(( $date - $annee )) \" ans.\"\n",
-      "echo $date\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "date=date -d\n",
-      "\n",
-      "echo \"Quelle est votre ann\u00c3\u00a9e de naissance \" \\?\n",
-      "read annee\n",
-      "echo \"vous \u00c3\u00aates n\u00c3\u00a9(e) en \" $annee \", vous avez donc \" $(( $date - $annee )) \" ans.\"\n",
-      "echo $date\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "date=date -d\n",
-      "\n",
-      "echo \"Quelle est votre ann\u00c3\u00a9e de naissance \" \\?\n",
-      "read annee\n",
-      "echo \"vous \u00c3\u00aates n\u00c3\u00a9(e) en \" $annee \", vous avez donc \" $(( $date - $annee )) \" ans.\"\n",
-      "echo date\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "date=date -d\n",
-      "\n",
-      "echo \"Quelle est votre ann\u00c3\u00a9e de naissance \" \\?\n",
-      "read annee\n",
-      "echo \"vous \u00c3\u00aates n\u00c3\u00a9(e) en \" $annee \", vous avez donc \" $(( $date - $annee )) \" ans.\"\n",
-      "date\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "date=date -d\n",
-      "\n",
-      "echo \"Quelle est votre ann\u00c3\u00a9e de naissance \" \\?\n",
-      "read annee\n",
-      "echo \"vous \u00c3\u00aates n\u00c3\u00a9(e) en \" $annee \", vous avez donc \" $(( $date - $annee )) \" ans.\"\n",
-      "man date\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo \"Quelle est votre ann\u00c3\u00a9e de naissance \" \\?\n",
-      "read annee\n",
-      "echo \"vous \u00c3\u00aates n\u00c3\u00a9(e) en \" $annee \", vous avez donc \" $(( $date - $annee )) \" ans.\"\n",
-      "date Idate\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo \"Quelle est votre ann\u00c3\u00a9e de naissance \" \\?\n",
-      "read annee\n",
-      "echo \"vous \u00c3\u00aates n\u00c3\u00a9(e) en \" $annee \", vous avez donc \" $(( $date - $annee )) \" ans.\"\n",
-      "date I[date]\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo \"Quelle est votre ann\u00c3\u00a9e de naissance \" \\?\n",
-      "read annee\n",
-      "echo \"vous \u00c3\u00aates n\u00c3\u00a9(e) en \" $annee \", vous avez donc \" $(( $date - $annee )) \" ans.\"\n",
-      "date I[TIMESPEC='date']\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo \"Quelle est votre ann\u00c3\u00a9e de naissance \" \\?\n",
-      "read annee\n",
-      "echo \"vous \u00c3\u00aates n\u00c3\u00a9(e) en \" $annee \", vous avez donc \" $(( $date - $annee )) \" ans.\"\n",
-      "date I date\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo \"Quelle est votre ann\u00c3\u00a9e de naissance \" \\?\n",
-      "read annee\n",
-      "echo \"vous \u00c3\u00aates n\u00c3\u00a9(e) en \" $annee \", vous avez donc \" $(( $date - $annee )) \" ans.\"\n",
-      "date -Idate\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo \"Quelle est votre ann\u00c3\u00a9e de naissance \" \\?\n",
-      "read annee\n",
-      "echo \"vous \u00c3\u00aates n\u00c3\u00a9(e) en \" $annee \", vous avez donc \" $(( date -idate - $annee )) \" ans.\"\n",
-      "date -Idate\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo \"Quelle est votre ann\u00c3\u00a9e de naissance \" \\?\n",
-      "read annee\n",
-      "echo \"vous \u00c3\u00aates n\u00c3\u00a9(e) en \" $annee \", vous avez donc \" $(( date -Idate - $annee )) \" ans.\"\n",
-      "date -Idate\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "date=date -Idate\n",
-      "\n",
-      "echo \"Quelle est votre ann\u00c3\u00a9e de naissance \" \\?\n",
-      "read annee\n",
-      "echo \"vous \u00c3\u00aates n\u00c3\u00a9(e) en \" $annee \", vous avez donc \" $(( $date - $annee )) \" ans.\"\n",
-      "date -Idate\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo \"Je suis le script Shell\" $0\n",
-      "echo \"Mes argumets sont \" $*\n",
-      "echo \"Le premier argument est \" $1\n",
-      "echo \"Le deuxi\u00c3\u00a8me argument est \" $2\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "#concatise de fichier dans un troisieme\n",
-      "\n",
-      "echo \" donner le nom des 2 fichier a concatiser puis le nom du fichier les regroupent :\"\n",
-      "cat $1 $2 >> $3\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "#concatise de fichier dans un troisieme\n",
-      "\n",
-      "cat $1 $2 >> $3\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo Nous sommes le 'date'\n",
-      "echo Nous sommes le Mon Nov 16 15:20:46 CET 2020\n",
-      "echo Ceci et\n",
-      "echo une tr\u00c3\u00a8s\n",
-      "echo longue phrase...\n",
-      "echo Voici une \u00c3\u00a9toile : \\*\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo \"le resulat est :\" $(( $1 + 1 ))\n"
-    ],
-    [
-      "echo $path\n"
-    ]
+    {
+      "name": "tp5bis_exo1.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "\n",
+        "expr $1 / 2 \n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo1V2.sh",
+      "lines": [
+        "#!/bin/dash\n",
+        "\n",
+        "echo $(( $1 / 2 ))\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo2.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "\n",
+        "expr $1 \\* 2\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo2V2.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "\n",
+        "echo $(($1 * 2 ))\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo3.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "\n",
+        "date=date -Idate\n",
+        "\n",
+        "echo \"Quelle est votre ann\u00c3\u00a9e de naissance \" \\?\n",
+        "read annee\n",
+        "echo \"vous \u00c3\u00aates n\u00c3\u00a9(e) en \" $annee \", vous avez donc \" $(( $date - $annee )) \" ans.\"\n",
+        "date -Idate\n"
+      ]
+    },
+    {
+      "name": "tp5_exo6.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo \"Je suis le script Shell\" $0\n",
+        "echo \"Mes argumets sont \" $*\n",
+        "echo \"Le premier argument est \" $1\n",
+        "echo \"Le deuxi\u00c3\u00a8me argument est \" $2\n"
+      ]
+    },
+    {
+      "name": "tp5_exo66.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "\n",
+        "#concatise de fichier dans un troisieme\n",
+        "\n",
+        "cat $1 $2 >> $3\n"
+      ]
+    },
+    {
+      "name": "tp5_ex7.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "\n",
+        "echo Nous sommes le 'date'\n",
+        "echo Nous sommes le Mon Nov 16 15:20:46 CET 2020\n",
+        "echo Ceci et\n",
+        "echo une tr\u00c3\u00a8s\n",
+        "echo longue phrase...\n",
+        "echo Voici une \u00c3\u00a9toile : \\*\n"
+      ]
+    },
+    {
+      "name": "tp5_ex8.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "\n",
+        "echo \"le resulat est :\" $(( $1 + 1 ))\n"
+      ]
+    },
+    {
+      "name": "test_path.sh",
+      "lines": [
+        "echo $path\n"
+      ]
+    }
   ],
   "profile": [
     {

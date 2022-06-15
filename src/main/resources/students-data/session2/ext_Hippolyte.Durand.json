@@ -2,89 +2,26 @@
   "name": "ext_Hippolyte.Durand",
   "session": 2,
   "scripts": [
-    [
-      "#!/bin/bash\n",
-      "a=$1\n",
-      "b=1\n",
-      "result=$(($a+$b))\n",
-      "echo $resultat\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "a=$1\n",
-      "b=1\n",
-      "result=$(($a+1))\n",
-      "echo $resultat\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "result=$(($1+1))\n",
-      "echo $resultat\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "result=$(($1+1))\n",
-      "echo $result\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "resultat=$(($1+1))\n",
-      "echo $resultat\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo$PATH\n",
-      "cat PATH./\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "PATH=$PATH:.\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "PATH=${PATH}:.\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo PATH\n",
-      "\n",
-      "PATH=${PATH}:.\n",
-      "\n",
-      "echo PATH\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "\n",
-      "PATH=${PATH}:.\n",
-      "echo PATH\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "\n",
-      "PATH=${PATH}:.\n",
-      "echo $PATH\n"
-    ]
+    {
+      "name": "tp5_exo8.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "\n",
+        "resultat=$(($1+1))\n",
+        "echo $resultat\n",
+        "\n"
+      ]
+    },
+    {
+      "name": "tp5_exo9.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "\n",
+        "\n",
+        "PATH=${PATH}:.\n",
+        "echo $PATH\n"
+      ]
+    }
   ],
   "profile": [
     {

@@ -2,164 +2,42 @@
   "name": "ext_Anthony.Chipolina",
   "session": 2,
   "scripts": [
-    [
-      "#!/bin/bash\n",
-      "echo Je suis le script Shell $0\n",
-      "echo Mes arguments sont $*\n",
-      "echo Le premier argument est $1\n",
-      "echo Le deuxi\u00c3\u00a8me argument est $2\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "Le script $0 poss\u00c3\u00a8de $* param\u00c3\u00a8tres(s) que voici:\n",
-      "$*\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "Le script $0 poss\u00c3\u00a8de $* param\u00c3\u00a8tres que voici:\n",
-      "$*\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "Le script $0 poss\u00c3\u00a8de $# param\u00c3\u00a8tres que voici:\n",
-      "$*\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "Le script $0 poss\u00c3\u00a8de $# param\u00c3\u00a8tres que voici ':'\n",
-      "$*\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo \"Le script $0 poss\u00c3\u00a8de $# param\u00c3\u00a8tres que voici :\"\n",
-      "$*\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "cat $1 $2 > $3\n"
-    ],
-    [
-      "echo \"Nous sommes le 'date'\"\n",
-      "echo Nous sommes le 'date'\n",
-      "\n"
-    ],
-    [
-      "echo \"Nous sommes le 'date'\"\n",
-      "echo Nous sommes le $date\n",
-      "\n"
-    ],
-    [
-      "echo \"Nous sommes le 'date'\"\n",
-      "echo Nous sommes le \"date\"\n",
-      "\n"
-    ],
-    [
-      "echo \"Nous sommes le 'date'\"\n",
-      "echo Nous sommes le 'date'\n",
-      "\n"
-    ],
-    [
-      "echo \"Nous sommes le 'date'\"\n",
-      "echo \"Nous sommes le \"date\n",
-      "\n"
-    ],
-    [
-      "echo \"Nous sommes le 'date'\"\n",
-      "echo \"Nous sommes le \"'date'\n",
-      "\n"
-    ],
-    [
-      "echo \"Nous sommes le 'date'\"\n",
-      "echo Nous sommes le `date`\n",
-      "\n"
-    ],
-    [
-      "echo \"Nous sommes le `date7`\"\n",
-      "echo Nous sommes le `date`\n",
-      "\n"
-    ],
-    [
-      "echo \"Nous sommes le \"`date`\"\"\n",
-      "echo Nous sommes le `date`\n",
-      "\n"
-    ],
-    [
-      "echo \"Nous sommes le `date`\"\n",
-      "echo Nous sommes le `date`\n",
-      "\n"
-    ],
-    [
-      "echo \"Nous sommes le \"\"`date`\"\n",
-      "echo Nous sommes le `date`\n",
-      "\n"
-    ],
-    [
-      "echo 'Nous sommes le `date`'\n",
-      "echo Nous sommes le `date`\n",
-      "echo Ceci est\n",
-      "echo une tr\u00c3\u00a8s\n",
-      "echo longue phrase...\n",
-      "echo Voici une \u00c3\u00a9toile : *\n",
-      "\n"
-    ],
-    [
-      "echo 'Nous sommes le `date`'\n",
-      "echo Nous sommes le `date`\n",
-      "echo Ceci est\n",
-      "echo une tr\u00c3\u00a8s\n",
-      "echo longue phrase...\n",
-      "echo Voici une \u00c3\u00a9toile : \\*\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo 'Nous sommes le `date`'\n",
-      "echo Nous sommes le `date`\n",
-      "echo Ceci est\n",
-      "echo une tr\u00c3\u00a8s\n",
-      "echo longue phrase...\n",
-      "echo Voici une \u00c3\u00a9toile : \\*\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo $#-1\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo $#+1\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo $#:=$#+1\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "$#=$#+1\n",
-      "echo $#\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "v=$#+1\n",
-      "echo v\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "expr $*+1\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "let \"total=$1+1\"\n",
-      "echo $total\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "let \"total=$#+1\"\n",
-      "echo $total\n"
-    ]
+    {
+      "name": "tp5_exo6.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "cat $1 $2 > $3\n"
+      ]
+    },
+    {
+      "name": "tp5_exo5.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo \"Le script $0 poss\u00c3\u00a8de $# param\u00c3\u00a8tres que voici :\"\n",
+        "$*\n"
+      ]
+    },
+    {
+      "name": "tp5_exo7.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo 'Nous sommes le `date`'\n",
+        "echo Nous sommes le `date`\n",
+        "echo Ceci est\n",
+        "echo une tr\u00c3\u00a8s\n",
+        "echo longue phrase...\n",
+        "echo Voici une \u00c3\u00a9toile : \\*\n",
+        "\n"
+      ]
+    },
+    {
+      "name": "tp5_exo8.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "let \"total=$#+1\"\n",
+        "echo $total\n"
+      ]
+    }
   ],
   "profile": [
     {

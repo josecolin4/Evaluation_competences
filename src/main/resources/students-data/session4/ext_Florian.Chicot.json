@@ -2,134 +2,57 @@
   "name": "ext_Florian.Chicot",
   "session": 4,
   "scripts": [
-    [
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance \\?\n",
-      "read anneenaissance\n",
-      "$D=date +%Y\n",
-      "echo $D\n",
-      "echo Vous \u00c3\u00aates n\u00c3\u00a9\"(\"e\")\" en $anneenaissance, vous avez donc $(($D-$anneenaissance)) ans.\n",
-      "\n"
-    ],
-    [
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance \\?\n",
-      "read anneenaissance\n",
-      "$D=date +%Y\n",
-      "echo $D\n",
-      "echo Vous \u00c3\u00aates n\u00c3\u00a9\"(\"e\")\" en $anneenaissance, vous avez donc $(($D-$anneenaissance)) ans.\n",
-      "\n"
-    ],
-    [
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance \\?\n",
-      "read anneenaissance\n",
-      "$D=`date +%Y`\n",
-      "echo $D\n",
-      "echo Vous \u00c3\u00aates n\u00c3\u00a9\"(\"e\")\" en $anneenaissance, vous avez donc $(($D-$anneenaissance)) ans.\n",
-      "\n"
-    ],
-    [
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance \\?\n",
-      "read anneenaissance\n",
-      "echo Vous \u00c3\u00aates n\u00c3\u00a9\"(\"e\")\" en $anneenaissance, vous avez donc $((`date +%Y`-$anneenaissance)) ans.\n",
-      "\n"
-    ],
-    [
-      "echo Il y a `who -q` utilisateurs connect\u00c3\u00a9s sur `hostname`.\n"
-    ],
-    [
-      "echo Il y a `who|wc -l` utilisateurs connect\u00c3\u00a9s sur `hostname`.\n"
-    ],
-    [
-      "echo Il y a `who|wc -l` utilisateurs connect\u00c3\u00a9s sur `hostname`.\n"
-    ],
-    [
-      "echo Taille du fichier $1 \\= `wc -c < $1`\n"
-    ],
-    [
-      "set -- $(ls -l $1)\n",
-      "echo $5\n"
-    ],
-    [
-      "if test -ge $1 5 -a -l $1 -le 10\n",
-      "\tthen\n",
-      "\t\techo La valeur $1 est comprise entre 5 et 10\n",
-      "\telse\n",
-      "\t\techo La valeur $1 n\\'est pas comprise entre 5 et 10\n",
-      "fi\n"
-    ],
-    [
-      "if test -ge $1 5 -a -le $1 10\n",
-      "\tthen\n",
-      "\t\techo La valeur $1 est comprise entre 5 et 10\n",
-      "\telse\n",
-      "\t\techo La valeur $1 n\\'est pas comprise entre 5 et 10\n",
-      "fi\n"
-    ],
-    [
-      "if test -ge $1 5 -a test -le $1 10\n",
-      "\tthen\n",
-      "\t\techo La valeur $1 est comprise entre 5 et 10\n",
-      "\telse\n",
-      "\t\techo La valeur $1 n\\'est pas comprise entre 5 et 10\n",
-      "fi\n"
-    ],
-    [
-      "if test \\(-ge $1 5\\) -a \\(-le $1 10\\)\n",
-      "\tthen\n",
-      "\t\techo La valeur $1 est comprise entre 5 et 10\n",
-      "\telse\n",
-      "\t\techo La valeur $1 n\\'est pas comprise entre 5 et 10\n",
-      "fi\n"
-    ],
-    [
-      "if test -ge $1 5\n",
-      "\tthen\n",
-      "\t\tif test -le $1 10\n",
-      "\t\t\tthen\n",
-      "\t\t\t\techo La valeur $1 est comprise entre 5 et 10\n",
-      "\t\t\telse\n",
-      "\t\t\t\techo La valeur $1 n\\'est pas comprise entre 5 et 10\n",
-      "\t\tfi\n",
-      "\telse\n",
-      "\t\techo La valeur $1 n\\'est pas comprise entre 5 et 10\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test -ge $1 5\n",
-      "  then\n",
-      "      if test -le $1 10\n",
-      "        then\n",
-      "             echo La valeur $1 est comprise entre 5 et 10\n",
-      "        else\n",
-      "            echo La valeur $1 n\\'est pas comprise entre 5 et 10\n",
-      "\tfi\n",
-      "   else\n",
-      "       echo La valeur $1 n\\'est pas comprise entre 5 et 10\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test $1 -ge 5\n",
-      "  then\n",
-      "      if test $1 -le 10\n",
-      "        then\n",
-      "             echo La valeur $1 est comprise entre 5 et 10\n",
-      "        else\n",
-      "            echo La valeur $1 n\\'est pas comprise entre 5 et 10\n",
-      "\tfi\n",
-      "   else\n",
-      "       echo La valeur $1 n\\'est pas comprise entre 5 et 10\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test -e $1 -a -r $1 -a -w $1\n",
-      "  then\n",
-      "  echo Le fichier $1 existe et est accessible en lecture et \u00c3\u00a9criture\n",
-      "  else\n",
-      "  echo Le fichier $1 n\\'existe pas ou n\\'est pas pas accessible en lecture ou \u00c3\u00a9criture\n",
-      "fi\n"
-    ]
+    {
+      "name": "tp5bis_exo3.sh",
+      "lines": [
+        "echo Quelle est votre ann\u00c3\u00a9e de naissance \\?\n",
+        "read anneenaissance\n",
+        "echo Vous \u00c3\u00aates n\u00c3\u00a9\"(\"e\")\" en $anneenaissance, vous avez donc $((`date +%Y`-$anneenaissance)) ans.\n",
+        "\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo4.sh",
+      "lines": [
+        "echo Il y a `who|wc -l` utilisateurs connect\u00c3\u00a9s sur `hostname`.\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo5.sh",
+      "lines": [
+        "set -- $(ls -l $1)\n",
+        "echo $5\n"
+      ]
+    },
+    {
+      "name": "tp6_exo1.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "if test $1 -ge 5\n",
+        "  then\n",
+        "      if test $1 -le 10\n",
+        "        then\n",
+        "             echo La valeur $1 est comprise entre 5 et 10\n",
+        "        else\n",
+        "            echo La valeur $1 n\\'est pas comprise entre 5 et 10\n",
+        "\tfi\n",
+        "   else\n",
+        "       echo La valeur $1 n\\'est pas comprise entre 5 et 10\n",
+        "fi\n"
+      ]
+    },
+    {
+      "name": "tp6_exo2.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "if test -e $1 -a -r $1 -a -w $1\n",
+        "  then\n",
+        "  echo Le fichier $1 existe et est accessible en lecture et \u00c3\u00a9criture\n",
+        "  else\n",
+        "  echo Le fichier $1 n\\'existe pas ou n\\'est pas pas accessible en lecture ou \u00c3\u00a9criture\n",
+        "fi\n"
+      ]
+    }
   ],
   "profile": [
     {

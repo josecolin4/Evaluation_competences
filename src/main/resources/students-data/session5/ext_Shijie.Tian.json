@@ -2,187 +2,70 @@
   "name": "ext_Shijie.Tian",
   "session": 5,
   "scripts": [
-    [
-      "for i in toto titi tutu\n",
-      "do\n",
-      "\techo $1 $2 $3\n",
-      "done\n"
-    ],
-    [
-      "for i in toto titi tutu\n",
-      "do\n",
-      "\techo $i\n",
-      "done\n"
-    ],
-    [
-      "for i in $*\n",
-      "do\n",
-      "\techo $i\n",
-      "done\n"
-    ],
-    [
-      "for liste_commandes in date who pwd ls\n"
-    ],
-    [
-      "for i in `seq $1`\n",
-      "do\n",
-      "\techo $i\n",
-      "done\n"
-    ],
-    [
-      "case $1 in\n",
-      "\t1 ) $(date);;\n",
-      "\t2 ) who;;\n",
-      "\t3 ) ls;;\n",
-      "\t4 ) pwd;;\n",
-      "esac\n"
-    ],
-    [
-      "for liste_commandes in $(date) $(who) $(pwd) $(ls)\n",
-      "do\n",
-      "\techo $liste_commandes\n",
-      "done\n"
-    ],
-    [
-      "i=chos\n",
-      "while i/=sortir\n",
-      "do\n",
-      "\tread i\n",
-      "done\n"
-    ],
-    [
-      "i=chos\n",
-      "while i!=sortir\n",
-      "do\n",
-      "\tread i\n",
-      "done\n"
-    ],
-    [
-      "i=chos\n",
-      "while $i != sortir\n",
-      "do\n",
-      "\tread i\n",
-      "done\n"
-    ],
-    [
-      "i=\\chos\n",
-      "while $i != sortir\n",
-      "do\n",
-      "\tread i\n",
-      "done\n"
-    ],
-    [
-      "i= \\chos\n",
-      "while $i != sortir\n",
-      "do\n",
-      "\tread i\n",
-      "done\n"
-    ],
-    [
-      "i=c\n",
-      "while (($i != sortir))\n",
-      "do\n",
-      "\tread i\n",
-      "done\n"
-    ],
-    [
-      "i=c\n",
-      "while [ $i != sortir ]\n",
-      "do\n",
-      "\tread i\n",
-      "done\n"
-    ],
-    [
-      "read i\n",
-      "while [ $i !=1,2,3,4 ]\n",
-      "do\n",
-      "\tcase $i in\n",
-      "\t\t1 ) date;;\n",
-      "\t\t2 ) who;;\n",
-      "\t\t3 ) ls;;\n",
-      "\t\t4 ) pwd;;\n",
-      "\tesac\n",
-      "\tread i\n",
-      "done\n"
-    ],
-    [
-      "read i\n",
-      "while [ test $1 -gt 4 -o test $1 -lt 1 ]\n",
-      "do\n",
-      "\tcase $i in\n",
-      "\t\t1 ) date;;\n",
-      "\t\t2 ) who;;\n",
-      "\t\t3 ) ls;;\n",
-      "\t\t4 ) pwd;;\n",
-      "\tesac\n",
-      "\tread i\n",
-      "done\n"
-    ],
-    [
-      "read i\n",
-      "while [ test $(expr $1) -gt 4 -o test $(expr $1) -lt 1 ]\n",
-      "do\n",
-      "\tcase $i in\n",
-      "\t\t1 ) date;;\n",
-      "\t\t2 ) who;;\n",
-      "\t\t3 ) ls;;\n",
-      "\t\t4 ) pwd;;\n",
-      "\tesac\n",
-      "\tread i\n",
-      "done\n"
-    ],
-    [
-      "read i\n",
-      "while [ test $1 -gt 4 -o test $1 -lt 1 ]\n",
-      "do\n",
-      "\tcase $i in\n",
-      "\t\t1 ) date;;\n",
-      "\t\t2 ) who;;\n",
-      "\t\t3 ) ls;;\n",
-      "\t\t4 ) pwd;;\n",
-      "\tesac\n",
-      "\tread i\n",
-      "done\n"
-    ],
-    [
-      "read i\n",
-      "while [ test $i -gt 4 -o test $i -lt 1 ]\n",
-      "do\n",
-      "\tcase $i in\n",
-      "\t\t1 ) date;;\n",
-      "\t\t2 ) who;;\n",
-      "\t\t3 ) ls;;\n",
-      "\t\t4 ) pwd;;\n",
-      "\tesac\n",
-      "\tread i\n",
-      "done\n"
-    ],
-    [
-      "read i\n",
-      "while test $i -gt 4 -o $i -lt 1 \n",
-      "do\n",
-      "\tcase $i in\n",
-      "\t\t1 ) date;;\n",
-      "\t\t2 ) who;;\n",
-      "\t\t3 ) ls;;\n",
-      "\t\t4 ) pwd;;\n",
-      "\tesac\n",
-      "\tread i\n",
-      "done\n"
-    ],
-    [
-      "read i\n",
-      "while test $i -gt 1 -o $i -lt 4 \n",
-      "do\n",
-      "\tcase $i in\n",
-      "\t\t1 ) date;;\n",
-      "\t\t2 ) who;;\n",
-      "\t\t3 ) ls;;\n",
-      "\t\t4 ) pwd;;\n",
-      "\tesac\n",
-      "\tread i\n",
-      "done\n"
-    ]
+    {
+      "name": "tp6_exo5.sh",
+      "lines": [
+        "for i in $*\n",
+        "do\n",
+        "\techo $i\n",
+        "done\n"
+      ]
+    },
+    {
+      "name": "tp6_exo4.sh",
+      "lines": [
+        "for liste_commandes in $(date) $(who) $(pwd) $(ls)\n",
+        "do\n",
+        "\techo $liste_commandes\n",
+        "done\n"
+      ]
+    },
+    {
+      "name": "tp6_exo6.sh",
+      "lines": [
+        "for i in `seq $1`\n",
+        "do\n",
+        "\techo $i\n",
+        "done\n"
+      ]
+    },
+    {
+      "name": "tp6_exo7.sh",
+      "lines": [
+        "case $1 in\n",
+        "\t1 ) $(date);;\n",
+        "\t2 ) who;;\n",
+        "\t3 ) ls;;\n",
+        "\t4 ) pwd;;\n",
+        "esac\n"
+      ]
+    },
+    {
+      "name": "tp6_exo8.sh",
+      "lines": [
+        "i=c\n",
+        "while [ $i != sortir ]\n",
+        "do\n",
+        "\tread i\n",
+        "done\n"
+      ]
+    },
+    {
+      "name": "tp6_exo9.sh",
+      "lines": [
+        "read i\n",
+        "while test $i -gt 1 -o $i -lt 4 \n",
+        "do\n",
+        "\tcase $i in\n",
+        "\t\t1 ) date;;\n",
+        "\t\t2 ) who;;\n",
+        "\t\t3 ) ls;;\n",
+        "\t\t4 ) pwd;;\n",
+        "\tesac\n",
+        "\tread i\n",
+        "done\n"
+      ]
+    }
   ],
   "commands": [
     {

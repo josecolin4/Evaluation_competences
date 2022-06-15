@@ -2,25 +2,31 @@
   "name": "ext_Baptiste.Berretta",
   "session": 4,
   "scripts": [
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "if test $1 -gt 5 -a $1 -lt 10\n",
-      "\tthen \n",
-      "\t\techo La valeur $1 est comprise entre 5 et 10\n",
-      "\telse\n",
-      "\t\techo La valeur $1 n\\'est pas comprise entre 5 et 10\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test -e $1 -a -r $1 -a -w $1\n",
-      "\tthen \n",
-      "\t\techo Le fichier $1 existe et est accesible en lecture et \u00c3\u00a9criture\n",
-      "\telse \n",
-      "\t\techo Le fichier $1 n\\' existe pas et n\\'est pas accessible en lecture ou \u00c3\u00a9criture\n",
-      "fi\n"
-    ]
+    {
+      "name": "_1607354665__root_TP6__tp6_exo1.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "\n",
+        "if test $1 -gt 5 -a $1 -lt 10\n",
+        "\tthen \n",
+        "\t\techo La valeur $1 est comprise entre 5 et 10\n",
+        "\telse\n",
+        "\t\techo La valeur $1 n\\'est pas comprise entre 5 et 10\n",
+        "fi\n"
+      ]
+    },
+    {
+      "name": "_1607355563__root_TP6__tp6_exo2.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "if test -e $1 -a -r $1 -a -w $1\n",
+        "\tthen \n",
+        "\t\techo Le fichier $1 existe et est accesible en lecture et \u00c3\u00a9criture\n",
+        "\telse \n",
+        "\t\techo Le fichier $1 n\\' existe pas et n\\'est pas accessible en lecture ou \u00c3\u00a9criture\n",
+        "fi\n"
+      ]
+    }
   ],
   "profile": [
     {

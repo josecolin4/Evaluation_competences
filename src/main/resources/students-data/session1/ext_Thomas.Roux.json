@@ -2,272 +2,70 @@
   "name": "ext_Thomas.Roux",
   "session": 1,
   "scripts": [
-    [
-      "#!/bin/bash\n",
-      "echo cours\n",
-      "cours=unix\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo cours cours=unix \n",
-      "echo $cours\n",
-      "echo je suis au cours $cours\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo cours \n",
-      "cours=unix \n",
-      "echo $cours\n",
-      "echo je suis au cours $cours\n"
-    ],
-    [
-      "echo \"Mon login est: $USER\"\n"
-    ],
-    [
-      "echo \"Mon login est: $USER\"\n",
-      "echo \"Mon shell est: $SHELL\"\n",
-      "echo \"Les variables du SHELL sont: \"\n"
-    ],
-    [
-      "echo \"Mon login est: $USER\"\n",
-      "echo \"Mon shell est: $SHELL\"\n",
-      "echo \"Les variables du SHELL sont: \"\n",
-      "env\n"
-    ],
-    [
-      "echo \"Mon login est: $USER\"\n",
-      "echo \"Mon shell est: $SHELL\"\n",
-      "\n",
-      "echo \"Les variables du SHELL sont: \"\n",
-      "set\n",
-      "\n",
-      "echo \"Les variables d'environnement sont: \"\n",
-      "env\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Cher utilisateur quel est ton pr\u00c3\u00a9nom \\?\n",
-      "read prenom echo Ravi de te connaitre, $prenom \n",
-      "\n",
-      "echo Quel est ton nom et ton age \\? \n",
-      "read nom age \n",
-      "\n",
-      "echo Tu es $prenom $nom et tu as $age ans, n\\'est-ce pas \\?\n",
-      "read reponse\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Cher utilisateur quel est ton pr\u00c3\u00a9nom \\?\n",
-      "read prenom \n",
-      "echo Ravi de te connaitre, $prenom \n",
-      "\n",
-      "echo Quel est ton nom et ton age \\? \n",
-      "read nom age \n",
-      "\n",
-      "echo Tu es $prenom $nom et tu as $age ans, n\\'est-ce pas \\?\n",
-      "read reponse\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Je suis le script Shell $0 \n",
-      "\n",
-      "echo Mes arguments sont $* \n",
-      "\n",
-      "echo Le premier argument est $1\n",
-      "\n",
-      "echo Le deuxi\u00c3\u00a8me argument est $2\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Le script $PATH poss\u00c3\u00a8de $# param\u00c3\u00a8tre(s), que voici $*\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo \"Le script $PATH poss\u00c3\u00a8de $# param\u00c3\u00a8tre(s), que voici $*\"\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo \"Le script $PATH poss\u00c3\u00a8de $# param\u00c3\u00a8tre(s), que voici: $*\"\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo \"Le script basename poss\u00c3\u00a8de $# param\u00c3\u00a8tre(s), que voici: $*\"\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo \"Le script ${0} poss\u00c3\u00a8de $# param\u00c3\u00a8tre(s), que voici: $*\"\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "cat F1 > F3\n",
-      "cat F2 > F3\n",
-      "\n",
-      "echo \"OK\"\n"
-    ],
-    [
-      "echo \"Nous sommes la `date`\"\n"
-    ],
-    [
-      "echo \"Nous sommes le `date`\"\n"
-    ],
-    [
-      "echo \"Nous sommes le `date`\"\n",
-      "echo \"Ceci est /n une tr\u00c3\u00a8s /n longue phrase...\"\n",
-      "echo \"Voici une \u00c3\u00a9toile: *\"\n"
-    ],
-    [
-      "echo \"Nous sommes le `date`\"\n",
-      "echo \"Ceci est \\n une tr\u00c3\u00a8s \\n longue phrase...\"\n",
-      "echo \"Voici une \u00c3\u00a9toile: *\"\n"
-    ],
-    [
-      "echo \"Nous sommes le `date`\"\n",
-      "echo -e \"Ceci est \\n une tr\u00c3\u00a8s \\n longue phrase...\"\n",
-      "echo \"Voici une \u00c3\u00a9toile: *\"\n"
-    ],
-    [
-      "echo \"Nous sommes le `date`\"\n",
-      "echo -e \"Ceci est \\nune tr\u00c3\u00a8s \\nlongue phrase...\"\n",
-      "echo \"Voici une \u00c3\u00a9toile: *\"\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "cat $1 > $3\n",
-      "cat $2 > $3\n",
-      "\n",
-      "echo \"OK\"\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "cat $1 > $3\n",
-      "cat $2 > $3\n",
-      "\n",
-      "echo \"OK\"\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo \"$1 + 1\"\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo $1 + 1\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo ``$1 + 1`\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo `$1 + 1`\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "result = $1 + 1\n",
-      "echo $result\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "result = $1 + 1\n",
-      "echo \"$result\"\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "$result = $($1 + 1)\n",
-      "echo \"$result\"\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "result = $($1 + 1)\n",
-      "echo \"$result\"\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "result= $1 + 1\n",
-      "echo \"$result\"\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "result= $1+1\n",
-      "echo \"$result\"\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "result= $(( $1+1 ))\n",
-      "echo \"$result\"\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo `expr $1 + 1` \n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "cat $1 > $3\n",
-      "cat $2 > $3\n",
-      "\n",
-      "echo \"OK\"\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "`export PATH /root/`\n",
-      "echo \"Nouvelle variable d'environnement: $PATH\"\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "`export PATH=/root/`\n",
-      "echo \"Nouvelle variable d'environnement: $PATH\"\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "`export PATH=$PATH:/root/`\n",
-      "echo \"Nouvelle variable d'environnement: $PATH\"\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "`PATH=$PATH:/root/`\n",
-      "echo \"Nouvelle variable d'environnement: $PATH\"\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "`PATH=/root/`\n",
-      "echo \"Nouvelle variable d'environnement: $PATH\"\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "`PATH=$PATH:/root/`\n",
-      "echo \"Nouvelle variable d'environnement: $PATH\"\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "`EXPORT PATH=$PATH:/root/`\n",
-      "echo \"Nouvelle variable d'environnement: $PATH\"\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "`export PATH=$PATH:/root/`\n",
-      "echo \"Nouvelle variable d'environnement: $PATH\"\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "export PATH=$PATH:/root/\n",
-      "echo \"Nouvelle variable d'environnement: $PATH\"\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo \"export PATH=$PATH:/root/\" >> .bashrc\n",
-      "source .bashrc\n"
-    ]
+    {
+      "name": "tp5_exo1.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo cours \n",
+        "cours=unix \n",
+        "echo $cours\n",
+        "echo je suis au cours $cours\n"
+      ]
+    },
+    {
+      "name": "tp5_exo2.sh",
+      "lines": [
+        "echo \"Mon login est: $USER\"\n",
+        "echo \"Mon shell est: $SHELL\"\n",
+        "\n",
+        "echo \"Les variables du SHELL sont: \"\n",
+        "set\n",
+        "\n",
+        "echo \"Les variables d'environnement sont: \"\n",
+        "env\n"
+      ]
+    },
+    {
+      "name": "tp5_exo5.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo \"Le script ${0} poss\u00c3\u00a8de $# param\u00c3\u00a8tre(s), que voici: $*\"\n"
+      ]
+    },
+    {
+      "name": "tp5_exo6.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "\n",
+        "cat $1 > $3\n",
+        "cat $2 > $3\n",
+        "\n",
+        "echo \"OK\"\n"
+      ]
+    },
+    {
+      "name": "tp5_exo7.sh",
+      "lines": [
+        "echo \"Nous sommes le `date`\"\n",
+        "echo -e \"Ceci est \\nune tr\u00c3\u00a8s \\nlongue phrase...\"\n",
+        "echo \"Voici une \u00c3\u00a9toile: *\"\n"
+      ]
+    },
+    {
+      "name": "tp5_exo8.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo `expr $1 + 1` \n"
+      ]
+    },
+    {
+      "name": "tp5_exo9.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo \"export PATH=$PATH:/root/\" >> .bashrc\n",
+        "source .bashrc\n"
+      ]
+    }
   ],
   "profile": [
     {

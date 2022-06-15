@@ -2,122 +2,35 @@
   "name": "ext_Damien.Buosi",
   "session": 2,
   "scripts": [
-    [
-      "echo Nous sommes le 7`date`\n",
-      "echo Nous sommes le \n"
-    ],
-    [
-      "echo Nous sommes le \"`date`\"\n",
-      "echo Nous sommes le `date`\n",
-      "echo Ceci est echo une tr\u00c3\u00a8s echo longue phrase...\n",
-      "echo Voici une \u00c3\u00a9toile :*\n"
-    ],
-    [
-      "echo Nous sommes le \"`date`\"\n",
-      "echo Nous sommes le `date`\n",
-      "echo Ceci est \n",
-      "echo une tr\u00c3\u00a8s \n",
-      "echo longue phrase...\n",
-      "echo Voici une \u00c3\u00a9toile :\"*\"\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Nous sommes le \"`date`\"\n",
-      "echo Nous sommes le `date`\n",
-      "echo Ceci est \n",
-      "echo une tr\u00c3\u00a8s \n",
-      "echo longue phrase...\n",
-      "echo Voici une \u00c3\u00a9toile :\"*\"\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo $1 + 1\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "$1 + 1\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo `$1 + 1`\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "a = $1\n",
-      "b = 1\n",
-      "resultat = $(($a+$b))\n",
-      "echo resultat\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "a = $1\n",
-      "b = 1\n",
-      "resultat = $(($a+$b))\n",
-      "echo resultat\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "resultat = $(($1+1))\n",
-      "echo resultat\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "resultat = $(($1+1))\n",
-      "echo $resultat\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "resultat = $(($1+1))\n",
-      "echo $resultat\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "resultat=$(($1+1))\n",
-      "echo $resultat\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo $PATH\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo $PATH\n",
-      "cat PATH . > PATH\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo $PATH\n",
-      "cat PATH ./\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo $PATH\n",
-      "cat $PATH ./ > $PATH\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo $PATH\n",
-      "$PATH:.\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo $PATH\n",
-      "PATH=$PATH:.\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo $PATH\n",
-      "PATH=${PATH}:.\n",
-      "echo $PATH\n"
-    ]
+    {
+      "name": "tp5_exo7.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo Nous sommes le \"`date`\"\n",
+        "echo Nous sommes le `date`\n",
+        "echo Ceci est \n",
+        "echo une tr\u00c3\u00a8s \n",
+        "echo longue phrase...\n",
+        "echo Voici une \u00c3\u00a9toile :\"*\"\n"
+      ]
+    },
+    {
+      "name": "tp5_exo8.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "resultat=$(($1+1))\n",
+        "echo $resultat\n"
+      ]
+    },
+    {
+      "name": "tp5_exo9.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo $PATH\n",
+        "PATH=${PATH}:.\n",
+        "echo $PATH\n"
+      ]
+    }
   ],
   "profile": [
     {

@@ -2,124 +2,31 @@
   "name": "ext_Daniel.AntunesDosSantosNabais",
   "session": 2,
   "scripts": [
-    [
-      "#!/bin/bash\n",
-      "echo $PATH\n",
-      "PATH=\"$PATH:/root\"\n",
-      "echo $PATH\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo $PATH\n",
-      "export PATH=\"$PATH:/root\"\n",
-      "echo $PATH\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo $PATH\n",
-      "export $PATH=\"$PATH:/root\"\n",
-      "echo $PATH\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo $PATH\n",
-      "export PATH=$PATH\n",
-      "export PATH=\"$PATH:/root\"\n",
-      "echo $PATH\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo $PATH\n",
-      "export \"$PATH\"=\"$PATH:/root\"\n",
-      "echo $PATH\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo $PATH\n",
-      "export PATH=\"$PATH:/root\"\n",
-      "echo PATH\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo $PATH\n",
-      "export `$`PATH=\"$PATH:/root\"\n",
-      "echo $PATH\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo $PATH\n",
-      "export `$PATH`=\"$PATH:/root\"\n",
-      "echo $PATH\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo $PATH\n",
-      "export PATH=\"$PATH:/root\"\n",
-      "echo $PATH\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo $PATH\n",
-      "export PATH=$PATH:/root\n",
-      "echo $PATH\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "nb=4\n",
-      "echo `expr nb / 2`\n",
-      "echo $((nb/2))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "nb=4\n",
-      "echo `expr $nb / 2`\n",
-      "echo $((nb/2))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo expr `$1 * 2`\n",
-      "echo $(($1 *2))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo `expr $1 / 2`\n",
-      "echo $((nb/2))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo `expr $1 / 2`\n",
-      "echo $(($1/2))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo expr`$1 * 2`\n",
-      "echo $(($1 *2))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo expr`$1 *2`\n",
-      "echo $(($1 *2))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo expr`$1 \\*\\2`\n",
-      "echo $(($1 *2))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo expr`$1 \\*2`\n",
-      "echo $(($1 *2))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo expr`$1 \\* 2`\n",
-      "echo $(($1 *2))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo `expr $1 \\* 2`\n",
-      "echo $(($1 *2))\n"
-    ]
+    {
+      "name": "tp5_exo9.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo $PATH\n",
+        "export PATH=$PATH:/root\n",
+        "echo $PATH\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo1.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo `expr $1 / 2`\n",
+        "echo $(($1/2))\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo2.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo `expr $1 \\* 2`\n",
+        "echo $(($1 *2))\n"
+      ]
+    }
   ],
   "profile": [
     {

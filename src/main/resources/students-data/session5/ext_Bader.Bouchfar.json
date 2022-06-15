@@ -2,24 +2,13 @@
   "name": "ext_Bader.Bouchfar",
   "session": 5,
   "scripts": [
-    [
-      "find / -name$1 -perm 4000 2>/dev/null\n"
-    ],
-    [
-      "find / -name $1 \n"
-    ],
-    [
-      "file =$(find / -name $1)\n",
-      " \n"
-    ],
-    [
-      "file=$(find / -name $1)\n",
-      " \n"
-    ],
-    [
-      "file=$(find / -name $1)\n",
-      "echo $file \n"
-    ]
+    {
+      "name": "tp6_exo2.sh",
+      "lines": [
+        "file=$(find / -name $1)\n",
+        "echo $file \n"
+      ]
+    }
   ],
   "commands": [
     {

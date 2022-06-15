@@ -2,229 +2,91 @@
   "name": "ext_Killian.Falguiere",
   "session": 1,
   "scripts": [
-    [
-      "#!/bin/bash\n",
-      "echo cours\n",
-      "cours=unix\n",
-      "echo $cours\n",
-      "echo je suis au cours $cours\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Mon nom de login est: $USER\n",
-      "echo Mon shell est: $0\n",
-      "echo Les variables du sheel sont:\n",
-      "set\n",
-      "echo Celles d'environnement sont:\n",
-      "env\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Mon nom de login est: $USER\n",
-      "echo Mon shell est: $0\n",
-      "echo Les variables du sheel sont:\n",
-      "set\n",
-      "echo Celles d'environnement sont:\n",
-      "env\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Mon nom de login est: $USER\n",
-      "echo Mon shell est: $0\n",
-      "echo 'Les variables du sheel sont:'\n",
-      "set\n",
-      "echo 'Celles d''environnement sont:'\n",
-      "env\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Cher utilisateur quel est ton pr\u00c3\u00a9nom \\?\n",
-      "read prenom\n",
-      "echo Ravi de te connaitre, $prenom\n",
-      "echo Quel est ton nom et ton age \\?\n",
-      "read nom age\n",
-      "echo Tu es $prenom $nom et tu as $age ans, n\\'est ce pas \\?\n",
-      "read reponse\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Je suis le script Shell $O\n",
-      "echo Mes arguments sont $*\n",
-      "echo Le premier argument est $1\n",
-      "echo Le deuxi\u00c3\u00a8me argument est $2\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Je suis le script Shell $0\n",
-      "echo Mes arguments sont $*\n",
-      "echo Le premier argument est $1\n",
-      "echo Le deuxi\u00c3\u00a8me argument est $2\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Le script $0 poss\u00c3\u00a8de $# param\u00c3\u00a8tre, que voici: $*\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "cat * >> echo\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "cat $1 $2 >> $3\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Nous commes le 'date'\n",
-      "echo Ceci est '\\n' une tr\u00c3\u00a8s '\\n' longue phrase...\n",
-      "echo Voici une \u00c3\u00a9toile: *\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Nous commes le $date\n",
-      "echo Ceci est \\n une tr\u00c3\u00a8s \\n longue phrase...\n",
-      "echo Voici une \u00c3\u00a9toile: '*'\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Nous commes le $date\n",
-      "echo \"Ceci est \\n une tr\u00c3\u00a8s \\n longue phrase...\"\n",
-      "echo Voici une \u00c3\u00a9toile: '*'\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Nous commes le $date\n",
-      "echo -e \"Ceci est \\n une tr\u00c3\u00a8s \\n longue phrase...\"\n",
-      "echo Voici une \u00c3\u00a9toile: '*'\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Nous commes le '''date'''\n",
-      "echo -e \"Ceci est \\n une tr\u00c3\u00a8s \\n longue phrase...\"\n",
-      "echo Voici une \u00c3\u00a9toile: '*'\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Nous commes le \"'date'\"\n",
-      "echo -e \"Ceci est \\n une tr\u00c3\u00a8s \\n longue phrase...\"\n",
-      "echo Voici une \u00c3\u00a9toile: '*'\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Nous sommes le \"'date'\"\n",
-      "echo Nous sommes le $DATE\n",
-      "echo -e \"Ceci est \\n une tr\u00c3\u00a8s \\n longue phrase...\"\n",
-      "echo Voici une \u00c3\u00a9toile: '*'\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Nous sommes le \"'date'\"\n",
-      "time=date\n",
-      "echo Nous sommes le $time\n",
-      "echo -e \"Ceci est \\n une tr\u00c3\u00a8s \\n longue phrase...\"\n",
-      "echo Voici une \u00c3\u00a9toile: '*'\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Nous sommes le \"'date'\"\n",
-      "time=\"fr_FR.UTF-8\" date\n",
-      "echo Nous sommes le $time\n",
-      "echo -e \"Ceci est \\n une tr\u00c3\u00a8s \\n longue phrase...\"\n",
-      "echo Voici une \u00c3\u00a9toile: '*'\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Nous sommes le \"'date'\"\n",
-      "date\n",
-      "echo Nous sommes le $time\n",
-      "echo -e \"Ceci est \\n une tr\u00c3\u00a8s \\n longue phrase...\"\n",
-      "echo Voici une \u00c3\u00a9toile: '*'\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Nous sommes le \"'date'\"\n",
-      "\"fr_FR.UTF-8\" date\n",
-      "echo Nous sommes le $time\n",
-      "echo -e \"Ceci est \\n une tr\u00c3\u00a8s \\n longue phrase...\"\n",
-      "echo Voici une \u00c3\u00a9toile: '*'\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Nous sommes le \"'date'\"\n",
-      "time=\"fr_FR.UTF-8\" date\n",
-      "echo Nous sommes le $time\n",
-      "echo -e \"Ceci est \\n une tr\u00c3\u00a8s \\n longue phrase...\"\n",
-      "echo Voici une \u00c3\u00a9toile: '*'\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Nous sommes le \"'date'\"\n",
-      "time=\"fr_FR.UTF-8\" date\n",
-      "echo Nous sommes le\n",
-      "echo -e \"Ceci est \\n une tr\u00c3\u00a8s \\n longue phrase...\"\n",
-      "echo Voici une \u00c3\u00a9toile: '*'\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Nous sommes le \"'date'\"\n",
-      "echo Nous sommes le '\"fr_FR.UTF-8\" date'\n",
-      "echo -e \"Ceci est \\n une tr\u00c3\u00a8s \\n longue phrase...\"\n",
-      "echo Voici une \u00c3\u00a9toile: '*'\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Nous sommes le \"'date'\"\n",
-      "echo Nous sommes le \"fr_FR.UTF-8\" date\n",
-      "echo -e \"Ceci est \\n une tr\u00c3\u00a8s \\n longue phrase...\"\n",
-      "echo Voici une \u00c3\u00a9toile: '*'\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Nous sommes le \"'date'\"\n",
-      "echo Nous sommes le \n",
-      "time=\"fr_FR.UTF-8\" date\n",
-      "echo -e \"Ceci est \\n une tr\u00c3\u00a8s \\n longue phrase...\"\n",
-      "echo Voici une \u00c3\u00a9toile: '*'\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Nous sommes le \"'date'\"\n",
-      "echo Nous sommes le 'date'\n",
-      "time=\"fr_FR.UTF-8\" date\n",
-      "echo -e \"Ceci est \\n une tr\u00c3\u00a8s \\n longue phrase...\"\n",
-      "echo Voici une \u00c3\u00a9toile: '*'\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Nous sommes le \"'date'\"\n",
-      "echo Nous sommes le \n",
-      "time=\"fr_FR.UTF-8\" date\n",
-      "echo -e \"Ceci est \\n une tr\u00c3\u00a8s \\n longue phrase...\"\n",
-      "echo Voici une \u00c3\u00a9toile: '*'\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo $(($1 + 1))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo $($1 + 1)\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo $(($1 + 1))\n"
-    ],
-    [
-      "#!/bin/bash\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "export PATH=$PATH:$HOME\n",
-      "echo $PATH\n"
-    ]
+    {
+      "name": "tp5_exo1.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo cours\n",
+        "cours=unix\n",
+        "echo $cours\n",
+        "echo je suis au cours $cours\n"
+      ]
+    },
+    {
+      "name": "tp5_exo2.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo Mon nom de login est: $USER\n",
+        "echo Mon shell est: $0\n",
+        "echo 'Les variables du sheel sont:'\n",
+        "set\n",
+        "echo 'Celles d''environnement sont:'\n",
+        "env\n"
+      ]
+    },
+    {
+      "name": "tp5_exo3.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo Cher utilisateur quel est ton pr\u00c3\u00a9nom \\?\n",
+        "read prenom\n",
+        "echo Ravi de te connaitre, $prenom\n",
+        "echo Quel est ton nom et ton age \\?\n",
+        "read nom age\n",
+        "echo Tu es $prenom $nom et tu as $age ans, n\\'est ce pas \\?\n",
+        "read reponse\n"
+      ]
+    },
+    {
+      "name": "tp5_exo4.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo Je suis le script Shell $0\n",
+        "echo Mes arguments sont $*\n",
+        "echo Le premier argument est $1\n",
+        "echo Le deuxi\u00c3\u00a8me argument est $2\n"
+      ]
+    },
+    {
+      "name": "tp5_exo5.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo Le script $0 poss\u00c3\u00a8de $# param\u00c3\u00a8tre, que voici: $*\n"
+      ]
+    },
+    {
+      "name": "tp5_exo6.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "cat $1 $2 >> $3\n"
+      ]
+    },
+    {
+      "name": "tp5_exo7.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo Nous sommes le \"'date'\"\n",
+        "echo Nous sommes le \n",
+        "time=\"fr_FR.UTF-8\" date\n",
+        "echo -e \"Ceci est \\n une tr\u00c3\u00a8s \\n longue phrase...\"\n",
+        "echo Voici une \u00c3\u00a9toile: '*'\n"
+      ]
+    },
+    {
+      "name": "tp5_exo8.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo $(($1 + 1))\n"
+      ]
+    },
+    {
+      "name": "tp5_exo9.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "export PATH=$PATH:$HOME\n",
+        "echo $PATH\n"
+      ]
+    }
   ],
   "profile": [
     {

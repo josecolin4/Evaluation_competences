@@ -2,132 +2,46 @@
   "name": "ext_Philemon.Hinfray-Cacheux",
   "session": 4,
   "scripts": [
-    [
-      "#!/bin/bash\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "nb= `who -q`\n",
-      "echo Il y a $nb utilisateurs connect\u00c3\u00a9s sur r-info-nacre\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "nb=`who -q`\n",
-      "echo Il y a $nb utilisateurs connect\u00c3\u00a9s sur r-info-nacre\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "nb=`who | wc -1`\n",
-      "echo Il y a $nb utilisateurs connect\u00c3\u00a9s sur r-info-nacre\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "nb=`who | wc -l`\n",
-      "echo Il y a $nb utilisateurs connect\u00c3\u00a9s sur r-info-nacre\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "nb=`who | wc -l`\n",
-      "echo Il y a $nb utilisateurs connect\u00c3\u00a9s sur `hostname`\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "nb=`who | wc -l`\n",
-      "echo Il y a $nb utilisateur\\(s\\) connect\u00c3\u00a9\\(s\\) sur `hostname`\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "set -- (ls -l $1)\n",
-      "echo La taille du fichier est \n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "set -- (ls -l $1)\n",
-      "echo La taille du fichier est $5\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "set -- [ls -l $5]\n",
-      "echo La taille du fichier est $5\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "set -- [ls -l $1]\n",
-      "echo La taille du fichier est $5\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "set -- [ls -l $1]\n",
-      "echo La taille du fichier est $5\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "set -- [ls -l $1]\n",
-      "echo La taille du fichier est $1\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "set -- `ls -l $1`\n",
-      "echo La taille du fichier est $1\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "set -- `ls -l $1`\n",
-      "echo La taille du fichier est $5\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test $1 -ge 5 -a $1 -le 10\n",
-      "then \n",
-      "echo La valeur $1 est comprise entre 5 et 10\n",
-      "else\n",
-      "echo La valeur $1 n'est pas comprise entre 5 et 10\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test $1 -ge 5 -a $1 -le 10\n",
-      "then \n",
-      "echo La valeur $1 est comprise entre 5 et 10\n",
-      "else\n",
-      "echo La valeur $1 n\\'est pas comprise entre 5 et 10\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test -e $1 -a -r $1 -a -w $1\n",
-      "then\n",
-      "echo Le fichier $1 existe et est accessible en \u00c3\u00a9criture et en lecture \n",
-      "else\n",
-      "echo Le fichier $1 n\\'existe pas ou n\\'est pas accessible en lecture ou en \u00c3\u00a9criture\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test -e $1 -a -r $1 -a -w $1\n",
-      "then\n",
-      "echo Le fichier $1 existe et est accessible en \u00c3\u00a9criture et en lecture \n",
-      "else\n",
-      "echo Le fichier $1 n\\'existe pas ou n\\'est pas accessible en lecture ou en \\\u00c3\u00a9criture\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test -e $1 -a -r $1 -a -w $1\n",
-      "then\n",
-      "echo Le fichier $1 existe et est accessible en \u00c3\u00a9criture et en lecture \n",
-      "else\n",
-      "echo Le fichier $1 n\\'existe pas ou n\\'est pas accessible en lecture ou en \\\u00c3\u00a9criture\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test -e $1 -a -r $1 -a -w $1\n",
-      "then\n",
-      "echo Le fichier $1 existe et est accessible en \u00c3\u00a9criture et en lecture \n",
-      "else\n",
-      "echo Le fichier $1 n\\'existe pas ou n\\'est pas accessible en lecture ou en \\\u00c3\u00a9criture\n",
-      "fi\n"
-    ]
+    {
+      "name": "tp5bis_exo4.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "nb=`who | wc -l`\n",
+        "echo Il y a $nb utilisateur\\(s\\) connect\u00c3\u00a9\\(s\\) sur `hostname`\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo5.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "set -- `ls -l $1`\n",
+        "echo La taille du fichier est $5\n"
+      ]
+    },
+    {
+      "name": "tp6_exo1.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "if test $1 -ge 5 -a $1 -le 10\n",
+        "then \n",
+        "echo La valeur $1 est comprise entre 5 et 10\n",
+        "else\n",
+        "echo La valeur $1 n\\'est pas comprise entre 5 et 10\n",
+        "fi\n"
+      ]
+    },
+    {
+      "name": "tp6_exo2.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "if test -e $1 -a -r $1 -a -w $1\n",
+        "then\n",
+        "echo Le fichier $1 existe et est accessible en \u00c3\u00a9criture et en lecture \n",
+        "else\n",
+        "echo Le fichier $1 n\\'existe pas ou n\\'est pas accessible en lecture ou en \\\u00c3\u00a9criture\n",
+        "fi\n"
+      ]
+    }
   ],
   "profile": [
     {

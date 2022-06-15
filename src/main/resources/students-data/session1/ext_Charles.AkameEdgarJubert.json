@@ -2,160 +2,78 @@
   "name": "ext_Charles.AkameEdgarJubert",
   "session": 1,
   "scripts": [
-    [
-      "azeazeaze\n",
-      "azeazeaze\n",
-      "azeazeaez\n",
-      "azeazeaze\n",
-      "azeazeaze\n"
-    ],
-    [
-      "azeazeaze\n",
-      "azeazeaze\n",
-      "azeazeaze\n",
-      "azeazeaze\n",
-      "azeazeaze\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo cours\n",
-      "cours=unix\n",
-      "echo $cours\n",
-      "echo je suis en cours $cours\n"
-    ],
-    [
-      "echo \"Mon nom de login est :\"< mon login>\n",
-      "echo \"Monsehll est :\" <mon shell>\n",
-      "echo \"Les variables du shell sont :\"\n",
-      "<>\n",
-      "echo \"celles d'environnement sont:\"\n",
-      "<>\n"
-    ],
-    [
-      "echo \"Mon nom de login est :\"$LOGNAME\n",
-      "echo \"Monsehll est :\" <mon shell>\n",
-      "echo \"Les variables du shell sont :\"\n",
-      "<>\n",
-      "echo \"celles d'environnement sont:\"\n",
-      "<>\n"
-    ],
-    [
-      "echo \"Mon nom de login est :\"$LOGNAME\n",
-      "echo \"Monsehll est :\" $shell\n",
-      "echo \"Les variables du shell sont :\"\n",
-      "<>\n",
-      "echo \"celles d'environnement sont:\"\n",
-      "<>\n"
-    ],
-    [
-      "echo \"Mon nom de login est :\"$LOGNAME\n",
-      "echo \"Monsehll est :\" $shell\n",
-      "echo \"Les variables du shell sont :\"\n",
-      "$env\n",
-      "echo \"celles d'environnement sont:\"\n",
-      "<>\n"
-    ],
-    [
-      "echo \"Mon nom de login est :\"$LOGNAME\n",
-      "echo \"Monsehll est :\" $shell\n",
-      "echo \"Les variables du shell sont :\"\n",
-      "$env\n",
-      "echo \"celles d'environnement sont:\"\n",
-      "$ls_colors\n"
-    ],
-    [
-      "echo \"Mon nom de login est :\"$LOGNAME\n",
-      "echo \"Monsehll est :\" $SHELL\n",
-      "echo \"Les variables du shell sont :\"\n",
-      "$env\n",
-      "echo \"celles d'environnement sont:\"\n",
-      "$ls_colors\n"
-    ],
-    [
-      "echo \"Mon nom de login est :\"$LOGNAME\n",
-      "echo \"Monsehll est :\" $SHELL\n",
-      "echo \"Les variables du shell sont :\"\n",
-      "env\n",
-      "echo \"celles d'environnement sont:\"\n",
-      "$ls_colors\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo \"Cher utilisateur quel est ton pr\u00c3\u00a9nom\\?\"\n",
-      "read prenom\n",
-      "echo Ravi de te connaitre, $prenom\n",
-      "echo \"Quel  est ton age\"\n",
-      "read mon age\n",
-      "echo \"tu es $prenom $nom et tu as $age ans, n\\'est-ce pas\\?\n",
-      "read reponse\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo \"Cher utilisateur quel est ton pr\u00c3\u00a9nom\\?\"\n",
-      "read prenom\n",
-      "echo Ravi de te connaitre, $prenom\n",
-      "echo \"Quel  est ton age\"\n",
-      "read mon age\n",
-      "echo \"tu es $prenom $nom et tu as $age ans, n\\'est-ce pas\\?\"\n",
-      "read reponse\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo \"Cher utilisateur quel est ton pr\u00c3\u00a9nom\\?\"\n",
-      "read prenom\n",
-      "echo Ravi de te connaitre, $prenom\n",
-      "echo \"Quel  est ton age\"\n",
-      "read age\n",
-      "echo \"tu es $prenom $nom et tu as $age ans, n\\'est-ce pas\\?\"\n",
-      "read reponse\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Je suis me script shell $0\n",
-      "ecgo Mes arguments sont $*\n",
-      "echo Le premier argument est $1\n",
-      "echo Le deuxie\u00c3\u00a8me argument est $2\n",
-      "\n"
-    ],
-    [
-      "af\n"
-    ],
-    [
-      "Nous sommes le $DATE\n",
-      "Nous somme le \n"
-    ],
-    [
-      " Nous sommes le $DATE\n",
-      "Nous somme le \n",
-      "Cesi est \n",
-      "une tr\u00c3\u00a8s \n",
-      "longue phrase...\n",
-      "Voici une \u00c3\u00a9toile : *\n"
-    ],
-    [
-      "' Nous sommes le' $DATE\n",
-      "'Nous somme le '\n",
-      "'Cesi est '\n",
-      "'une tr\u00c3\u00a8s '\n",
-      "'longue phrase...'\n",
-      "'Voici une \u00c3\u00a9toile : *'\n"
-    ],
-    [
-      "' Nous sommes le' $DATE\n",
-      "'Nous somme le '$TIME\n",
-      "'Cesi est '\n",
-      "'une tr\u00c3\u00a8s '\n",
-      "'longue phrase...'\n",
-      "'Voici une \u00c3\u00a9toile : *'\n"
-    ],
-    [
-      "echo' Nous sommes le' $DATE\n",
-      "echo'Nous somme le '$TIME\n",
-      "echo'Cesi est '\n",
-      "echo'une tr\u00c3\u00a8s '\n",
-      "echo'longue phrase...'\n",
-      "echo'Voici une \u00c3\u00a9toile : *'\n"
-    ]
+    {
+      "name": "tp5_ex1.sh",
+      "lines": [
+        "azeazeaze\n",
+        "azeazeaze\n",
+        "azeazeaez\n",
+        "azeazeaze\n",
+        "azeazeaze\n"
+      ]
+    },
+    {
+      "name": "tp5_exo1.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo cours\n",
+        "cours=unix\n",
+        "echo $cours\n",
+        "echo je suis en cours $cours\n"
+      ]
+    },
+    {
+      "name": "tp5_exo2.sh",
+      "lines": [
+        "echo \"Mon nom de login est :\"$LOGNAME\n",
+        "echo \"Monsehll est :\" $SHELL\n",
+        "echo \"Les variables du shell sont :\"\n",
+        "env\n",
+        "echo \"celles d'environnement sont:\"\n",
+        "$ls_colors\n"
+      ]
+    },
+    {
+      "name": "tp5_exo5.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo \"Cher utilisateur quel est ton pr\u00c3\u00a9nom\\?\"\n",
+        "read prenom\n",
+        "echo Ravi de te connaitre, $prenom\n",
+        "echo \"Quel  est ton age\"\n",
+        "read age\n",
+        "echo \"tu es $prenom $nom et tu as $age ans, n\\'est-ce pas\\?\"\n",
+        "read reponse\n"
+      ]
+    },
+    {
+      "name": "tp5_exo6.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo Je suis me script shell $0\n",
+        "ecgo Mes arguments sont $*\n",
+        "echo Le premier argument est $1\n",
+        "echo Le deuxie\u00c3\u00a8me argument est $2\n",
+        "\n"
+      ]
+    },
+    {
+      "name": "tp5_exo7_2.sh",
+      "lines": [
+        "af\n"
+      ]
+    },
+    {
+      "name": "tp5_exo7.sh",
+      "lines": [
+        "echo' Nous sommes le' $DATE\n",
+        "echo'Nous somme le '$TIME\n",
+        "echo'Cesi est '\n",
+        "echo'une tr\u00c3\u00a8s '\n",
+        "echo'longue phrase...'\n",
+        "echo'Voici une \u00c3\u00a9toile : *'\n"
+      ]
+    }
   ],
   "profile": [
     {

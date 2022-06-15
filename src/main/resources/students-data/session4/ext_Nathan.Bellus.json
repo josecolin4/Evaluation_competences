@@ -2,95 +2,54 @@
   "name": "ext_Nathan.Bellus",
   "session": 4,
   "scripts": [
-    [
-      "n1=5\n",
-      "\n",
-      "read n2\n",
-      "\n",
-      "test n2 -le n2\n",
-      "\n",
-      "echo\"n2 est compris entre 1 et 5.\"\n"
-    ],
-    [
-      "if [ $1 -gt 4 ] && [ $1 -lt 11 ]\n",
-      "\n",
-      "then\n",
-      "\n",
-      "        echo \"OK\"\n",
-      "\n",
-      "else\n",
-      "\n",
-      "        echo \"PAS OK\"\n",
-      "\n",
-      "fi\n"
-    ],
-    [
-      "\n",
-      "if [ $1 -gt 4 ] && [ $1 -lt 11 ]\n",
-      "\n",
-      "then\n",
-      "\n",
-      "        echo \"OK\"\n",
-      "\n",
-      "else\n",
-      "\n",
-      "        echo \"PAS OK\"\n",
-      "\n",
-      "fi\n"
-    ],
-    [
-      "if test -r $1 and test -w $1\n",
-      "\n",
-      "then echo \"Le fichier\" $1 \"existe et est accessible en lecture et en \u00c3\u00a9criture\"\n",
-      "\n",
-      "else echo \"Le fichier\" $1 \"nexiste pas ou nest pas accessible en lectureou en \u00c3\u00a9criture\"\n",
-      "\n",
-      "fi\n"
-    ],
-    [
-      "if test -r $1 and test -w $1\n",
-      "\n",
-      "then echo \"Le fichier\" $1 \"existe et est accessible en lecture et en \u00c3\u00a9criture\"\n",
-      "\n",
-      "else echo \"Le fichier\" $1 \"nexiste pas ou nest pas accessible en lecture ou en \u00c3\u00a9criture\"\n",
-      "\n",
-      "fi\n"
-    ],
-    [
-      "if test -r $1 and test -w $1\n",
-      "\n",
-      "then echo \"Le fichier\" $1 \"existe et est accessible en lecture et en \u00c3\u00a9criture\"\n",
-      "\n",
-      "else echo \"Le fichier\" $1 \"nexiste pas ou nest pas accessible en lecture ou en \u00c3\u00a9critur\n",
-      "e\"\n",
-      "\n",
-      "fi\n"
-    ],
-    [
-      "if test -r $1 && test -w $1\n",
-      "\n",
-      "then echo \"Le fichier\" $1 \"existe et est accessible en lecture et en \u00c3\u00a9criture\"\n",
-      "\n",
-      "else echo \"Le fichier\" $1 \"nexiste pas ou nest pas accessible en lecture ou en \u00c3\u00a9critur\n",
-      "e\"\n",
-      "\n",
-      "fi\n"
-    ],
-    [
-      "if $1 test-e && $2 test -e\n",
-      "\n",
-      "then echo \"Les 2 fichiers existent\"\n",
-      "\n",
-      "echo \"Voulez vous concat\u00c3\u00a9nez les fichiers ?\"\n",
-      "\n",
-      "elif \n",
-      "\n",
-      "then  cat $1 $2 > fic0\n",
-      " \n",
-      "\n",
-      "else echo \"ERROR 404\"\n",
-      "\n"
-    ]
+    {
+      "name": "tp6_exo1.sh",
+      "lines": [
+        "\n",
+        "if [ $1 -gt 4 ] && [ $1 -lt 11 ]\n",
+        "\n",
+        "then\n",
+        "\n",
+        "        echo \"OK\"\n",
+        "\n",
+        "else\n",
+        "\n",
+        "        echo \"PAS OK\"\n",
+        "\n",
+        "fi\n"
+      ]
+    },
+    {
+      "name": "tp6_exo2.sh",
+      "lines": [
+        "if test -r $1 && test -w $1\n",
+        "\n",
+        "then echo \"Le fichier\" $1 \"existe et est accessible en lecture et en \u00c3\u00a9criture\"\n",
+        "\n",
+        "else echo \"Le fichier\" $1 \"nexiste pas ou nest pas accessible en lecture ou en \u00c3\u00a9critur\n",
+        "e\"\n",
+        "\n",
+        "fi\n"
+      ]
+    },
+    {
+      "name": "tp6_exo3.sh",
+      "lines": [
+        "if $1 test-e && $2 test -e\n",
+        "\n",
+        "then echo \"Les 2 fichiers existent\"\n",
+        "\n",
+        "echo \"Voulez vous concat\u00c3\u00a9nez les fichiers ?\"\n",
+        "\n",
+        "elif \n",
+        "\n",
+        "then  cat $1 $2 > fic0\n",
+        " \n",
+        "\n",
+        "else echo \"ERROR 404\"\n",
+        "\n"
+      ]
+    }
   ],
   "profile": [
     {

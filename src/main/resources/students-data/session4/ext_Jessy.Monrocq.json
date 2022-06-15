@@ -2,371 +2,92 @@
   "name": "ext_Jessy.Monrocq",
   "session": 4,
   "scripts": [
-    [
-      "#!/bin/bash\n",
-      "expr $1 / 2\n",
-      "echo $(( $1 / 2 ))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "expr $1 / 2\n",
-      "echo $(( $1 / 2 ))\n",
-      "#Lorsque le parametre est un nombre impair, le resultat est arrondie a l'entier inferieur\n",
-      "#ex 5/2 = 2.5 renvoie 2\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "expr $1 * 2\n",
-      "echo $(( $1 * 2 ))\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "expr $1 \\* 2\n",
-      "echo $(( $1 * 2 ))\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance \\?\n",
-      "read naissance\n",
-      "expr `date` - naissance\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance \\?\n",
-      "read naissance\n",
-      "a=`date +%Y`\n",
-      "expr a - naissance\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance \\?\n",
-      "read naissance\n",
-      "a=`date +%Y`\n",
-      "expr $a - $naissance\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance \\?\n",
-      "read naissance\n",
-      "a=`date +%Y`\n",
-      "echo Vous \u00c3\u00aates n\u00c3\u00a9(e) en $naissance, vous avez donc expr $a - $naissance ans\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance \\?\n",
-      "read naissance\n",
-      "a=`date +%Y`\n",
-      "echo Vous \u00c3\u00aates n\u00c3\u00a9\\(e) en $naissance, vous avez donc (expr $a - $naissance) ans\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance \\?\n",
-      "read naissance\n",
-      "a=`date +%Y`\n",
-      "echo Vous \u00c3\u00aates n\u00c3\u00a9 en $naissance, vous avez donc (expr $a - $naissance) ans\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance \\?\n",
-      "read naissance\n",
-      "a=`date +%Y`\n",
-      "echo Vous \u00c3\u00aates n\u00c3\u00a9 en $naissance, vous avez donc expr $a - $naissance ans\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance \\?\n",
-      "read naissance\n",
-      "a=`date +%Y`\n",
-      "echo Vous \u00c3\u00aates n\u00c3\u00a9 en $naissance, vous avez donc expr $a - $naissance\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance \\?\n",
-      "read naissance\n",
-      "a=`date +%Y`\n",
-      "echo Vous \u00c3\u00aates n\u00c3\u00a9 en $naissance, vous avez donc\n",
-      "expr $a - $naissance\n",
-      "echo ans\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance \\?\n",
-      "read naissance\n",
-      "a=`date +%Y`\n",
-      "echo Vous \u00c3\u00aates n\u00c3\u00a9 en $naissance, vous avez donc\n",
-      "expr $a - $naissance\n",
-      "echo ans\n",
-      "echo Quelle est votre ann\u00c3\u00a9e de naissance \\?\n",
-      "read naissance\n",
-      "echo Vous \u00c3\u00aates n\u00c3\u00a9 en $naissance, vous avez donc $(( $a - $naissance)) ans\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo `who`\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo `who -q`\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "a=`who -q`\n",
-      "echo Il y a $a utilisateurs connect\u00c3\u00a9s sur `hostname`\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Il y a `who | wc -l` utilisateurs connect\u00c3\u00a9s sur `hostname`\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Il y a `who | wc -l` utilisateurs connect\u00c3\u00a9s sur `hostname`\n",
-      "w=$(who | wc -l)\n",
-      "h=$(hostname)\n",
-      "echo Il y a $w utilisateurs connect\u00c3\u00a9s sur $h\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "set $(wc -c)\n",
-      "echo $1\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "set $(wc -c)\n",
-      "echo $1\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "set $(ls -h)\n",
-      "echo $1\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "set $(ls -h $1)\n",
-      "echo $1\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "set $(ls -lh $1)\n",
-      "echo $1\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "a=$(ls -lh $1)\n",
-      "set $a\n",
-      "echo $1\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "a=$(ls -h $1)\n",
-      "set $a\n",
-      "echo $1\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "a=$(ls -lah $1)\n",
-      "set a\n",
-      "echo $1\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "a=$(ls -lah $1)\n",
-      "set $a\n",
-      "echo $1\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "a=$(ls -lah $1)\n",
-      "echo $a\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "a=$(ls -lh $1)\n",
-      "echo $a\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "a=$(ls -h $1)\n",
-      "echo $a\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "a=$(ls -sh $1)\n",
-      "echo $a\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "a=$(ls -sh $1)\n",
-      "set $a\n",
-      "echo $1\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "size=$(ls -h $1)\n",
-      "set $a\n",
-      "echo $1\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "size=$(ls -lh $1)\n",
-      "set $a\n",
-      "echo $1\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "size=$(ls -sh $1)\n",
-      "set $a\n",
-      "echo $1\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "a=$(ls -h $1)\n",
-      "set $a\n",
-      "echo $1\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "a=$(ls -lh $1)\n",
-      "set $a\n",
-      "echo $1\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "a=$(ls -sh $1)\n",
-      "set $a\n",
-      "echo $1\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "a=$(ls -s $1)\n",
-      "set $a\n",
-      "echo $1\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "a=$(ls -s --size $1)\n",
-      "set $a\n",
-      "echo $1\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "a=$(ls -sh $1)\n",
-      "set $a\n",
-      "echo $1\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "liste_commandes = \"date who pwd ls\"\n",
-      "for i in liste_commandes\n",
-      "do\n",
-      "\techo $i\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "liste_commandes=\"date who pwd ls\"\n",
-      "for i in $liste_commandes\n",
-      "do\n",
-      "\techo $i\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "liste_commandes=date who pwd ls\n",
-      "for i in $liste_commandes\n",
-      "do\n",
-      "\techo $i\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "liste_commandes=`date` who pwd ls\n",
-      "for i in $liste_commandes\n",
-      "do\n",
-      "\techo $i\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "liste_commandes=$((date)) $((who)) $((pwd)) $((ls))\n",
-      "for i in $liste_commandes\n",
-      "do\n",
-      "\techo $i\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "liste_commandes=date who pwd ls\n",
-      "for i in $liste_commandes\n",
-      "do\n",
-      "\techo $i\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "a=1\n",
-      "for i in $#\n",
-      "do\n",
-      "\techo argument $a \\= $i\n",
-      "\ta=a+1\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "a=1\n",
-      "for i in $*\n",
-      "do\n",
-      "\techo argument $a \\= $i\n",
-      "\ta=a+1\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "a=1\n",
-      "for i in $*\n",
-      "do\n",
-      "\techo argument $a \\= $i\n",
-      "\t$a=$a+1\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "a=1\n",
-      "for i in $*\n",
-      "do\n",
-      "\techo argument $a \\= $i\n",
-      "\ta=$a+1\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "a=1\n",
-      "for i in $*\n",
-      "do\n",
-      "\techo argument $a \\= $i\n",
-      "\ta=$(( $a + 1 ))\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "a=1\n",
-      "for i in $*\n",
-      "do\n",
-      "\techo argument $a \\= $i\n",
-      "\ta=$(( $a + 1 ))\n",
-      "done\n",
-      "echo Il y a $# arguments.\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "for i in $seq($1)\n",
-      "do\n",
-      "\t\n"
-    ]
+    {
+      "name": "tp5bis_exo1.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "expr $1 / 2\n",
+        "echo $(( $1 / 2 ))\n",
+        "#Lorsque le parametre est un nombre impair, le resultat est arrondie a l'entier inferieur\n",
+        "#ex 5/2 = 2.5 renvoie 2\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo2.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "expr $1 \\* 2\n",
+        "echo $(( $1 * 2 ))\n",
+        "\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo3.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo Quelle est votre ann\u00c3\u00a9e de naissance \\?\n",
+        "read naissance\n",
+        "a=`date +%Y`\n",
+        "echo Vous \u00c3\u00aates n\u00c3\u00a9 en $naissance, vous avez donc\n",
+        "expr $a - $naissance\n",
+        "echo ans\n",
+        "echo Quelle est votre ann\u00c3\u00a9e de naissance \\?\n",
+        "read naissance\n",
+        "echo Vous \u00c3\u00aates n\u00c3\u00a9 en $naissance, vous avez donc $(( $a - $naissance)) ans\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo4.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo Il y a `who | wc -l` utilisateurs connect\u00c3\u00a9s sur `hostname`\n",
+        "w=$(who | wc -l)\n",
+        "h=$(hostname)\n",
+        "echo Il y a $w utilisateurs connect\u00c3\u00a9s sur $h\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo5.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "a=$(ls -sh $1)\n",
+        "set $a\n",
+        "echo $1\n"
+      ]
+    },
+    {
+      "name": "tp6_exo4.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "liste_commandes=date who pwd ls\n",
+        "for i in $liste_commandes\n",
+        "do\n",
+        "\techo $i\n",
+        "done\n"
+      ]
+    },
+    {
+      "name": "tp6_exo5.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "a=1\n",
+        "for i in $*\n",
+        "do\n",
+        "\techo argument $a \\= $i\n",
+        "\ta=$(( $a + 1 ))\n",
+        "done\n",
+        "echo Il y a $# arguments.\n"
+      ]
+    },
+    {
+      "name": "tp6_exo6.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "for i in $seq($1)\n",
+        "do\n",
+        "\t\n"
+      ]
+    }
   ],
   "profile": [
     {

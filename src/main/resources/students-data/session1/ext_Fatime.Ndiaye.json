@@ -2,94 +2,26 @@
   "name": "ext_Fatime.Ndiaye",
   "session": 1,
   "scripts": [
-    [],
-    [
-      "\u00c3\u00c2\u00c3\u00c3\u00c3\u00c3#!/bin/bash\n"
-    ],
-    [
-      "\u00c3\u00c2\u00c3\u00c3\u00c3\u00c3#!/bin/bash\n",
-      "echo cours\n"
-    ],
-    [
-      "\u00c3\u00c2\u00c3\u00c3\u00c3\u00c3#!/bin/bash\n",
-      "echo cours\n",
-      "cours\u00c2=unix\n"
-    ],
-    [
-      "\u00c3\u00c2\u00c3\u00c3\u00c3\u00c3#!/bin/bash\n",
-      "echo cours\n",
-      "cours\u00c2=unix\n",
-      "echo $cours\n"
-    ],
-    [
-      "\u00c3\u00c2\u00c3\u00c3\u00c3\u00c3#!/bin/bash\n",
-      "echo cours\n",
-      "cours\u00c2=unix\n",
-      "echo $cours\n",
-      "echo je suis en cours $cours"
-    ],
-    [],
-    [
-      "Mon nom de login est : <login>\n"
-    ],
-    [
-      "Mon nom de login est : <login>\n",
-      "Mon shell est : <mon shell>\n"
-    ],
-    [
-      "Mon nom de login est : <login>\n",
-      "Mon shell est : <mon shell>\n",
-      "Les variables de shell sont : <liste des variables du shell>\n"
-    ],
-    [
-      "Mon nom de login est : <login>\n",
-      "Mon shell est : <mon shell>\n",
-      "Les variables de shell sont : <liste des variables du shell>\n",
-      "Celles d'environnement sont : <liste des variables d'environnement>\n"
-    ],
-    [],
-    [
-      "Mon nom de login est : <$USER>\n"
-    ],
-    [
-      "Mon nom de login est : <$USER>\n",
-      "Mon shell est : <$0>\n"
-    ],
-    [
-      "Mon nom de login est : <$USER>\n",
-      "Mon shell est : <$0>\n",
-      "Les variables de shell sont : <$0>\n"
-    ],
-    [],
-    [
-      "echo Mon nom de login est : $USER\n"
-    ],
-    [
-      "echo Mon nom de login est : $USER\n",
-      "echo Mon shell est : $0\n"
-    ],
-    [
-      "echo Mon nom de login est : $USER\n",
-      "echo Mon shell est : $0\n",
-      "echo Les variables du shell sont : $\n"
-    ],
-    [
-      "echo Mon nom de login est : $USER\n",
-      "echo Mon shell est : $0\n",
-      "echo Les variables du shell sont : $\n"
-    ],
-    [
-      "echo Mon nom de login est : $USER\n",
-      "echo Mon shell est : $0\n",
-      "echo Les variables du shell sont : $\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Mon nom de login est : $USER\n",
-      "echo Mon shell est : $0\n",
-      "echo Les variables du shell sont : $#\n",
-      "echo Celles d'environnements sont : $BASH\n"
-    ]
+    {
+      "name": "tp5_exo1.sh",
+      "lines": [
+        "\u00c3\u00c2\u00c3\u00c3\u00c3\u00c3#!/bin/bash\n",
+        "echo cours\n",
+        "cours\u00c2=unix\n",
+        "echo $cours\n",
+        "echo je suis en cours $cours"
+      ]
+    },
+    {
+      "name": "tp5_exo2.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo Mon nom de login est : $USER\n",
+        "echo Mon shell est : $0\n",
+        "echo Les variables du shell sont : $#\n",
+        "echo Celles d'environnements sont : $BASH\n"
+      ]
+    }
   ],
   "profile": [
     {

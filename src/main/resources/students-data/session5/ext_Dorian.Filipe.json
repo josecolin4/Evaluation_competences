@@ -2,274 +2,85 @@
   "name": "ext_Dorian.Filipe",
   "session": 5,
   "scripts": [
-    [
-      "case $1 in\n",
-      "\t1 ) echo `date`\n",
-      "\t2 ) echo `who`\n",
-      "\t3 ) echo `ls`\n",
-      "\t4 ) echo `pwd`\n",
-      "esac\n"
-    ],
-    [
-      "case $1 in\n",
-      "\t\"1\" echo `date`\n",
-      "\t\"2\" echo `who`\n",
-      "\t\"3\" echo `ls`\n",
-      "\t\"4\" echo `pwd`\n",
-      "esac\n"
-    ],
-    [
-      "case $1 in\n",
-      "\t\"1\") echo `date`;;\n",
-      "\t\"2\") echo `who`;;\n",
-      "\t\"3\") echo `ls`;;\n",
-      "\t\"4\") echo `pwd`;;\n",
-      "esac\n"
-    ],
-    [
-      "case $1 in\n",
-      "\t\"1\") date;;\n",
-      "\t\"2\") who;;\n",
-      "\t\"3\") ls;;\n",
-      "\t\"4\") pwd;;\n",
-      "esac\n"
-    ],
-    [
-      "string=\"string\"\n",
-      "while string!=\"sortir\"\n",
-      "do\n",
-      "\techo Tapez une chaine de caractere\n",
-      "\tread string\n",
-      "done\n"
-    ],
-    [
-      "string=string\n",
-      "while string!=sortir\n",
-      "do\n",
-      "\techo Tapez une chaine de caractere\n",
-      "\tread string\n",
-      "done\n"
-    ],
-    [
-      "string=string\n",
-      "while $string != sortir\n",
-      "do\n",
-      "\techo Tapez une chaine de caractere\n",
-      "\tread $string\n",
-      "done\n"
-    ],
-    [
-      "string=\"string\"\n",
-      "while $string != \"sortir\"\n",
-      "do\n",
-      "\techo Tapez une chaine de caractere\n",
-      "\tread $string\n",
-      "done\n"
-    ],
-    [
-      "string=string\n",
-      "echo $string\n"
-    ],
-    [
-      "string=string\n",
-      "while $string != \"sortir\"\n",
-      "do\n",
-      "\techo Tapez une chaine de caractere\n",
-      "\tread sortir\n",
-      "done\n"
-    ],
-    [
-      "string=string\n",
-      "while [$string != \"sortir\"]\n",
-      "do\n",
-      "\techo Tapez une chaine de caractere\n",
-      "\tread sortir\n",
-      "done\n"
-    ],
-    [
-      "string=string\n",
-      "while [ $string != \"sortir\" ]\n",
-      "do\n",
-      "\techo Tapez une chaine de caractere\n",
-      "\tread sortir\n",
-      "done\n"
-    ],
-    [
-      "string=string\n",
-      "while [ $string != \"sortir\" ]\n",
-      "do\n",
-      "\techo Tapez une chaine de caractere\n",
-      "\tread string\n",
-      "done\n"
-    ],
-    [
-      "string=string\n",
-      "while [ $string != \"sortir\" ]\n",
-      "do\n",
-      "\techo Tapez une chaine de caractere\n",
-      "\tread string\n",
-      "done\n",
-      "echo $string\n"
-    ],
-    [
-      "string=string\n",
-      "while [ $string != \"sortir\" ]\n",
-      "do\n",
-      "\techo Tapez une chaine de caractere\n",
-      "\tread string\n",
-      "done\n"
-    ],
-    [
-      "phrase=\"\"\n",
-      "string=string\n",
-      "while [ $string != \"sortir\" ]\n",
-      "do\n",
-      "\techo Tapez une chaine de caractere\n",
-      "\tread string\n",
-      "\tphrase+=$string\n",
-      "done\n",
-      "echo $phrase\n"
-    ],
-    [
-      "phrase=\"\"\n",
-      "string=string\n",
-      "while [ $string != \"sortir\" ]\n",
-      "do\n",
-      "\techo Tapez une chaine de caractere\n",
-      "\tread string\n",
-      "\tphrase+=\"$string \"\n",
-      "done\n",
-      "echo $phrase\n"
-    ],
-    [
-      "phrase=\"\"\n",
-      "string=string\n",
-      "while [ $string != \"sortir\" ]\n",
-      "do\n",
-      "\techo Tapez une chaine de caractere\n",
-      "\tread string\n",
-      "\tphrase+=\"$string \"\n",
-      "done\n",
-      "phrase-=$string\n",
-      "echo $phrase\n"
-    ],
-    [
-      "phrase=\"\"\n",
-      "string=string\n",
-      "while [ $string != \"sortir\" ]\n",
-      "do\n",
-      "\techo Tapez une chaine de caractere\n",
-      "\tread string\n",
-      "\tphrase+=\"$string \"\n",
-      "done\n",
-      "echo $phrase\n"
-    ],
-    [
-      "rep=$1\n",
-      "while $rep in 1 2 3 4\n",
-      "do\n",
-      "\techo \"Saisissez une nouvelle commande (1,2,3, ou 4)\"\n",
-      "\tread $rep\n",
-      "case $rep in\n",
-      "\t\"1\") date\n",
-      "\t\"2\") who\n",
-      "\t\"3\") ls\n",
-      "\t\"4\") pwd\n",
-      "esac\n",
-      "done\n"
-    ],
-    [
-      "rep=$1\n",
-      "while $rep in 1 2 3 4\n",
-      "do\n",
-      "\techo \"Saisissez une nouvelle commande (1,2,3, ou 4)\"\n",
-      "\tread $rep\n",
-      "case $rep in\n",
-      "\t\"1\") date;;\n",
-      "\t\"2\") who;;\n",
-      "\t\"3\") ls;;\n",
-      "\t\"4\") pwd;;\n",
-      "esac\n",
-      "done\n"
-    ],
-    [
-      "rep=$1\n",
-      "test=1\n",
-      "while test $rep -ge 4 -a $rep -le 1\n",
-      "do\n",
-      "\techo \"Saisissez une nouvelle commande (1,2,3, ou 4)\"\n",
-      "\tread rep\n",
-      "case $rep in\n",
-      "\t\"1\") date;;\n",
-      "\t\"2\") who;;\n",
-      "\t\"3\") ls;;\n",
-      "\t\"4\") pwd;;\n",
-      "esac\n",
-      "done\n"
-    ],
-    [
-      "rep=$1\n",
-      "test=1\n",
-      "while test $rep -ge 1 -a $rep -le 4\n",
-      "do\n",
-      "\techo \"Saisissez une nouvelle commande (1,2,3, ou 4)\"\n",
-      "\tread rep\n",
-      "case $rep in\n",
-      "\t\"1\") date;;\n",
-      "\t\"2\") who;;\n",
-      "\t\"3\") ls;;\n",
-      "\t\"4\") pwd;;\n",
-      "esac\n",
-      "done\n"
-    ],
-    [
-      "rep=$1\n",
-      "while test $rep -ge 1 -a $rep -le 4\n",
-      "do\n",
-      "case $rep in\n",
-      "\t\"1\") date;;\n",
-      "\t\"2\") who;;\n",
-      "\t\"3\") ls;;\n",
-      "\t\"4\") pwd;;\n",
-      "esac\n",
-      "\techo \"Saisissez une commande (1,2,3, ou 4) :\"\n",
-      "\tread rep\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/sh\n",
-      "\n",
-      "\n",
-      "fct(){\n",
-      "\n",
-      " var2=\"variable 2\"\n",
-      "\n",
-      " echo \"\\nDans fonction\"\n",
-      "\n",
-      " echo \"\\$1 = $1\"\n",
-      "\n",
-      " echo \"var1 = $var1\"\n",
-      "\n",
-      " echo \"var2 = $var2\"\n",
-      "\n",
-      " echo \"fin fonction\\n\"\n",
-      "\n",
-      "}\n",
-      "\n",
-      "var1=\"variable 1\"\n",
-      "\n",
-      "echo \"dans script principal\"\n",
-      "\n",
-      "echo \"\\$1 = $1\"\n",
-      "\n",
-      "echo \"var1 = $var1\"\n",
-      "\n",
-      "fct $var1\n",
-      "\n",
-      "echo \"var2 = $var2\"\n",
-      "\n",
-      "echo \"fin script principal\"\n"
-    ]
+    {
+      "name": "tp6_exo7.sh",
+      "lines": [
+        "case $1 in\n",
+        "\t\"1\") date;;\n",
+        "\t\"2\") who;;\n",
+        "\t\"3\") ls;;\n",
+        "\t\"4\") pwd;;\n",
+        "esac\n"
+      ]
+    },
+    {
+      "name": "tp6_exo8.sh",
+      "lines": [
+        "phrase=\"\"\n",
+        "string=string\n",
+        "while [ $string != \"sortir\" ]\n",
+        "do\n",
+        "\techo Tapez une chaine de caractere\n",
+        "\tread string\n",
+        "\tphrase+=\"$string \"\n",
+        "done\n",
+        "echo $phrase\n"
+      ]
+    },
+    {
+      "name": "tp6_exo9.sh",
+      "lines": [
+        "rep=$1\n",
+        "while test $rep -ge 1 -a $rep -le 4\n",
+        "do\n",
+        "case $rep in\n",
+        "\t\"1\") date;;\n",
+        "\t\"2\") who;;\n",
+        "\t\"3\") ls;;\n",
+        "\t\"4\") pwd;;\n",
+        "esac\n",
+        "\techo \"Saisissez une commande (1,2,3, ou 4) :\"\n",
+        "\tread rep\n",
+        "done\n"
+      ]
+    },
+    {
+      "name": "tp7_exo1.sh",
+      "lines": [
+        "#!/bin/sh\n",
+        "\n",
+        "\n",
+        "fct(){\n",
+        "\n",
+        " var2=\"variable 2\"\n",
+        "\n",
+        " echo \"\\nDans fonction\"\n",
+        "\n",
+        " echo \"\\$1 = $1\"\n",
+        "\n",
+        " echo \"var1 = $var1\"\n",
+        "\n",
+        " echo \"var2 = $var2\"\n",
+        "\n",
+        " echo \"fin fonction\\n\"\n",
+        "\n",
+        "}\n",
+        "\n",
+        "var1=\"variable 1\"\n",
+        "\n",
+        "echo \"dans script principal\"\n",
+        "\n",
+        "echo \"\\$1 = $1\"\n",
+        "\n",
+        "echo \"var1 = $var1\"\n",
+        "\n",
+        "fct $var1\n",
+        "\n",
+        "echo \"var2 = $var2\"\n",
+        "\n",
+        "echo \"fin script principal\"\n"
+      ]
+    }
   ],
   "commands": [
     {

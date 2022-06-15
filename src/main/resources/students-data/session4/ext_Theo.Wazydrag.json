@@ -2,17 +2,23 @@
   "name": "ext_Theo.Wazydrag",
   "session": 4,
   "scripts": [
-    [
-      "#!/bin/bash\n",
-      "echo Je suis le script Shell $0\n",
-      "echo Mes argument sont $*\n",
-      "echo Le premier argument est $1\n",
-      "echo Le deuxieme argument est $2\n",
-      "echo Le dernier argument $3\n"
-    ],
-    [
-      "#!/bin/bash\n"
-    ]
+    {
+      "name": "tp5_exo4.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo Je suis le script Shell $0\n",
+        "echo Mes argument sont $*\n",
+        "echo Le premier argument est $1\n",
+        "echo Le deuxieme argument est $2\n",
+        "echo Le dernier argument $3\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo4.sh",
+      "lines": [
+        "#!/bin/bash\n"
+      ]
+    }
   ],
   "profile": [
     {

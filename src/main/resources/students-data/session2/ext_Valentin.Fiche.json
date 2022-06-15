@@ -2,66 +2,22 @@
   "name": "ext_Valentin.Fiche",
   "session": 2,
   "scripts": [
-    [
-      "#!/bin/bash\n",
-      "echo $*+1\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo $*+1\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "$*=v\n",
-      "echo v+1\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo $*+1\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "v=$1+1\n",
-      "echo v\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "v=$1+1\n",
-      "echo $v\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "v=$*+1\n",
-      "echo $v\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "`v=$1+17`\n",
-      "echo $v\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "v=`$1+1`\n",
-      "echo $v\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "v=$(($1+1))\n",
-      "echo $v\n"
-    ],
-    [
-      "#!/bin/bash     \n",
-      "export PATH=$PATH:$PWD     \n",
-      "echo \"export PATH=$PATH:$PWD\">>~/.bashrc\n",
-      "source ~/.bashrc\n"
-    ],
-    [
-      "#!/bin/bash     \n",
-      "export PATH=$PATH:$PWD     \n",
-      "echo \"export PATH=$PATH:$PWD\">>~/.bashrc\n"
-    ]
+    {
+      "name": "tp5_ex8.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "v=$(($1+1))\n",
+        "echo $v\n"
+      ]
+    },
+    {
+      "name": "tp5_ex9.sh",
+      "lines": [
+        "#!/bin/bash     \n",
+        "export PATH=$PATH:$PWD     \n",
+        "echo \"export PATH=$PATH:$PWD\">>~/.bashrc\n"
+      ]
+    }
   ],
   "profile": [
     {

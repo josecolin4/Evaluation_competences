@@ -2,130 +2,31 @@
   "name": "ext_Xavier.Cimber",
   "session": 3,
   "scripts": [
-    [
-      "#!/bin/bash\n",
-      "if test $1 -gt 5 -o $1 -lt 10\n",
-      "\tthen\n",
-      "\t\techo $1 est compris entre 5 et 10\n",
-      "\telse\n",
-      "\t\techo $1 n'est pas compris entre 5 et 10\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test $1 -gt 5 -a $1 -lt 10\n",
-      "\tthen\n",
-      "\t\techo $1 est compris entre 5 et 10\n",
-      "\telse\n",
-      "\t\techo $1 n'est pas compris entre 5 et 10\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test $1 -gt 5 -a test $1 -lt 10\n",
-      "\tthen\n",
-      "\t\techo $1 est compris entre 5 et 10\n",
-      "\telse\n",
-      "\t\techo $1 n'est pas compris entre 5 et 10\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test $1 -gt 5 -a test $1 -lt 10\n",
-      "then\n",
-      "echo $1 est compris entre 5 et 10\n",
-      "else\n",
-      "echo $1 n'est pas compris entre 5 et 10\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test $1 -gt 5 -a $1 -lt 10\n",
-      "then\n",
-      "echo $1 est compris entre 5 et 10\n",
-      "else\n",
-      "echo $1 n\\'est pas compris entre 5 et 10\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "#if test $1 -gt 5 -a $1 -lt 10\n",
-      "#then\n",
-      "#echo $1 est compris entre 5 et 10\n",
-      "#else\n",
-      "#echo $1 n\\'est pas compris entre 5 et 10\n",
-      "#fi\n",
-      "\n",
-      "if [ $1 -gt 5 ] -a [ $1 -lt 10 ]\n",
-      "  then\n",
-      "\techo $1 est compris entre 5 et 10\n",
-      "  else\n",
-      "\techo $1 n\\'est pas compris entre 5 et 10\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "#if test $1 -gt 5 -a $1 -lt 10\n",
-      "#then\n",
-      "#echo $1 est compris entre 5 et 10\n",
-      "#else\n",
-      "#echo $1 n\\'est pas compris entre 5 et 10\n",
-      "#fi\n",
-      "\n",
-      "if [$1 -gt 5] -a [$1 -lt 10]\n",
-      "  then\n",
-      "\techo $1 est compris entre 5 et 10\n",
-      "  else\n",
-      "\techo $1 n\\'est pas compris entre 5 et 10\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if [ $1 -gt 5 ] -a [ $1 -lt 10 ]\n",
-      "  then\n",
-      "\techo $1 est compris entre 5 et 10\n",
-      "  else\n",
-      "\techo $1 n\\'est pas compris entre 5 et 10\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if [$1 -gt 5] -a [$1 -lt 10]\n",
-      "  then\n",
-      "\techo $1 est compris entre 5 et 10\n",
-      "  else\n",
-      "\techo $1 n\\'est pas compris entre 5 et 10\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if [ $1 -gt 5 -a $1 -lt 10 ]\n",
-      "  then\n",
-      "\techo $1 est compris entre 5 et 10\n",
-      "  else\n",
-      "\techo $1 n\\'est pas compris entre 5 et 10\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if [ -e $1 -a -r $1 -a -w $1 ]\n",
-      "then\n",
-      "echo Le fichier $1 existe et est accessible en lecture et \u00c3\u00a9criture\n",
-      "else\n",
-      "echo Le fichier $1 n existe pas, ou n est pas accessible en lecture,\n",
-      "ou n est pas accessible en \u00c3\u00a9criture\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if [ -e $1 -a -r $1 -a -w $1 ]\n",
-      "then\n",
-      "echo Le fichier $1 existe et est accessible en lecture et \u00c3\u00a9criture\n",
-      "else\n",
-      "echo Le fichier $1 n existe pas, ou n est pas accessible en lecture,\n",
-      "echo ou n est pas accessible en \u00c3\u00a9criture\n",
-      "fi\n"
-    ]
+    {
+      "name": "tp6_exo1.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "if [ $1 -gt 5 -a $1 -lt 10 ]\n",
+        "  then\n",
+        "\techo $1 est compris entre 5 et 10\n",
+        "  else\n",
+        "\techo $1 n\\'est pas compris entre 5 et 10\n",
+        "fi\n"
+      ]
+    },
+    {
+      "name": "tp6_exo2.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "if [ -e $1 -a -r $1 -a -w $1 ]\n",
+        "then\n",
+        "echo Le fichier $1 existe et est accessible en lecture et \u00c3\u00a9criture\n",
+        "else\n",
+        "echo Le fichier $1 n existe pas, ou n est pas accessible en lecture,\n",
+        "echo ou n est pas accessible en \u00c3\u00a9criture\n",
+        "fi\n"
+      ]
+    }
   ],
   "profile": [
     {

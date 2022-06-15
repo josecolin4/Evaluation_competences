@@ -2,255 +2,44 @@
   "name": "ext_Gael.Bellanger",
   "session": 4,
   "scripts": [
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "year=date + '%Y'\n",
-      "\n",
-      "echo \"Quelle est votre ann\u00c3\u00a9e de naissance \" \\?\n",
-      "read annee\n",
-      "echo \"vous \u00c3\u00aates n\u00c3\u00a9(e) en \" $annee \", vous avez donc \" $(( $year - $annee )) \" ans.\"\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "year='date + %Y'\n",
-      "\n",
-      "echo \"Quelle est votre ann\u00c3\u00a9e de naissance \" \\?\n",
-      "read annee\n",
-      "echo \"vous \u00c3\u00aates n\u00c3\u00a9(e) en \" $annee \", vous avez donc \" $(( $year - $annee )) \" ans.\"\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "year=date + %Y\n",
-      "\n",
-      "echo \"Quelle est votre ann\u00c3\u00a9e de naissance \" \\?\n",
-      "read annee\n",
-      "echo \"vous \u00c3\u00aates n\u00c3\u00a9(e) en \" $annee \", vous avez donc \" $(( $year - $annee )) \" ans.\"\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "year=date + %Y\n",
-      "\n",
-      "echo $year\n",
-      "echo \"Quelle est votre ann\u00c3\u00a9e de naissance \" \\?\n",
-      "read annee\n",
-      "exper $year - $naissance\n",
-      "echo \"vous \u00c3\u00aates n\u00c3\u00a9(e) en \" $annee \", vous avez donc \" $(( $year - $annee )) \" ans.\"\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "year=date + %Y\n",
-      "\n",
-      "echo $year\n",
-      "echo \"Quelle est votre ann\u00c3\u00a9e de naissance \" \\?\n",
-      "read naissance\n",
-      "expr $year - $naissance\n",
-      "echo $(($year - $naissance ))\n",
-      "echo \"an\"\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "year=date + %Y\n",
-      "\n",
-      "echo $year\n",
-      "echo \"Quelle est votre ann\u00c3\u00a9e de naissance \" \n",
-      "read naissance\n",
-      "expr $year - $naissance\n",
-      "echo $(($year - $naissance ))\n",
-      "echo \"an\"\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "year=date + '%Y'\n",
-      "\n",
-      "echo $year\n",
-      "echo \"Quelle est votre ann\u00c3\u00a9e de naissance \"\n",
-      "read naissance\n",
-      "expr $year - $naissance\n",
-      "echo $(($year - $naissance ))\n",
-      "echo \"an\"\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "year=`date + '%Y'`\n",
-      "\n",
-      "echo $year\n",
-      "echo \"Quelle est votre ann\u00c3\u00a9e de naissance \"\n",
-      "read naissance\n",
-      "expr $year - $naissance\n",
-      "echo $(($year - $naissance ))\n",
-      "echo \"an\"\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "year=`date + '%Y'`\n",
-      "\n",
-      "echo $year\n",
-      "echo \"Quelle est votre ann\u00c3\u00a9e de naissance \"\n",
-      "read naissance\n",
-      "\n",
-      "echo \"vous avez \"\n",
-      "expr $year - $naissance\n",
-      "echo $(($year - $naissance ))\n",
-      "echo \"an\"\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "year=`date +'%Y'`\n",
-      "\n",
-      "echo $year\n",
-      "echo \"Quelle est votre ann\u00c3\u00a9e de naissance \"\n",
-      "read naissance\n",
-      "\n",
-      "echo \"vous avez \"\n",
-      "expr $year - $naissance\n",
-      "echo $(($year - $naissance ))\n",
-      "echo \"an\"\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo who\n",
-      "echo hostname\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "who\n",
-      "hostname\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "nbUti = who\n",
-      "name = hostname\n",
-      "\n",
-      "echo \"il y a \" $nbUti  \" utilisateurs connect\u00c3\u00a9s sur \" $name\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "nbUti = `who`\n",
-      "name =`hostname`\n",
-      "\n",
-      "echo \"il y a \" $nbUti  \" utilisateurs connect\u00c3\u00a9s sur \" $name\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "\n",
-      "echo \"il y a \" $nbUti  \" utilisateurs connect\u00c3\u00a9s sur \" hostname\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "$host = hostname\n",
-      "\n",
-      "echo \"il y a \" $nbUti  \" utilisateurs connect\u00c3\u00a9s sur \" $host\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "host=hostname\n",
-      "\n",
-      "echo \"il y a \" $nbUti  \" utilisateurs connect\u00c3\u00a9s sur \" $host\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "host=`hostname`\n",
-      "\n",
-      "echo \"il y a \" $nbUti  \" utilisateurs connect\u00c3\u00a9s sur \" $host\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "host=`hostname`\n",
-      "nbUti=`who`\n",
-      "\n",
-      "echo \"il y a \" $nbUti  \" utilisateurs connect\u00c3\u00a9s sur \" $host\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "host=`hostname`\n",
-      "nbUti=`who -q`\n",
-      "\n",
-      "echo \"il y a \" $nbUti  \" utilisateurs connect\u00c3\u00a9s sur \" $host\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "host=`hostname`\n",
-      "nbUti=`who -q`\n",
-      "\n",
-      "echo \"il y a \"  $nbUti  \" connect\u00c3\u00a9s sur \" $host\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "host=`hostname`\n",
-      "nbUti=`who -q`\n",
-      "\n",
-      "echo \"il y a \"  $nbUti  \" connect\u00c3\u00a9s sur \" $host\n"
-    ],
-    [
-      "#!bin/bash\n",
-      "echo \"ls -l \" \n",
-      "read file\n",
-      "ls -l $file\n"
-    ],
-    [
-      "#!bin/bash\n",
-      "\n",
-      "echo \"ls -l \" \n",
-      "read file\n",
-      "ls -l $file\n"
-    ],
-    [
-      "#!bin/bash\n",
-      "\n",
-      "echo \"ls -l \"\n",
-      "ls -l F1\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo \"ls -l \"\n",
-      "read file\n",
-      "ls -l $file\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo \"ls -l \"\n",
-      "read file\n",
-      "ls -l $file\n",
-      "du $file\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo \"ls -l  \"\n",
-      "ls -l $1\n",
-      "du $1\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "set $(du -sh $1 | cut -f1 -dK)\n",
-      "echo $1\n",
-      "\n"
-    ]
+    {
+      "name": "tp5bis_exo3.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "\n",
+        "year=`date +'%Y'`\n",
+        "\n",
+        "echo $year\n",
+        "echo \"Quelle est votre ann\u00c3\u00a9e de naissance \"\n",
+        "read naissance\n",
+        "\n",
+        "echo \"vous avez \"\n",
+        "expr $year - $naissance\n",
+        "echo $(($year - $naissance ))\n",
+        "echo \"an\"\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo4.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "\n",
+        "host=`hostname`\n",
+        "nbUti=`who -q`\n",
+        "\n",
+        "echo \"il y a \"  $nbUti  \" connect\u00c3\u00a9s sur \" $host\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo5.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "\n",
+        "set $(du -sh $1 | cut -f1 -dK)\n",
+        "echo $1\n",
+        "\n"
+      ]
+    }
   ],
   "profile": [
     {

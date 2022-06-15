@@ -2,46 +2,64 @@
   "name": "ext_Nathan.Ruiz",
   "session": 1,
   "scripts": [
-    [
-      "#$/bin/bash\n",
-      "echo cours\n",
-      "cours=unix\n",
-      "echo $cours\n",
-      "echo je suis au cours $cours\n"
-    ],
-    [
-      "#$/bin/bash\n",
-      "echo mon login est : $USER\n",
-      "echo mon shell est : $0\n",
-      "echo \"les variables du shell sont : \"\n",
-      "set\n",
-      "echo \"les variables d'environnement sont : \"\n",
-      "env \n"
-    ],
-    [
-      "#$/bin/bash\n",
-      "echo \"cher utilisateur quel est votre pr\u00c3\u00a9nom ?\"\n",
-      "read prenom\n",
-      "echo Ravi de te connaitre $prenom\n",
-      "echo \"quel est ton nom et ton age ?\"\n",
-      "read nom age\n",
-      "echo Tu est $prenom $nom et tu as $age ans.\n"
-    ],
-    [
-      "#!/bin/bash \n",
-      "echo Je suis le script Shell $0 \n",
-      "echo Mes arguments sont $*\n",
-      "echo Le premier argument est $1\n",
-      "echo Le 2e argument est $2\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Le script $0 possede $# parametres que voici : $*  \n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "cat $1 $2 > $3\n"
-    ]
+    {
+      "name": "tp5_exo1.sh",
+      "lines": [
+        "#$/bin/bash\n",
+        "echo cours\n",
+        "cours=unix\n",
+        "echo $cours\n",
+        "echo je suis au cours $cours\n"
+      ]
+    },
+    {
+      "name": "tp5_ex2.sh",
+      "lines": [
+        "#$/bin/bash\n",
+        "echo mon login est : $USER\n",
+        "echo mon shell est : $0\n",
+        "echo \"les variables du shell sont : \"\n",
+        "set\n",
+        "echo \"les variables d'environnement sont : \"\n",
+        "env \n"
+      ]
+    },
+    {
+      "name": "tp5_ex3.sh",
+      "lines": [
+        "#$/bin/bash\n",
+        "echo \"cher utilisateur quel est votre pr\u00c3\u00a9nom ?\"\n",
+        "read prenom\n",
+        "echo Ravi de te connaitre $prenom\n",
+        "echo \"quel est ton nom et ton age ?\"\n",
+        "read nom age\n",
+        "echo Tu est $prenom $nom et tu as $age ans.\n"
+      ]
+    },
+    {
+      "name": "tp5_ex4.sh",
+      "lines": [
+        "#!/bin/bash \n",
+        "echo Je suis le script Shell $0 \n",
+        "echo Mes arguments sont $*\n",
+        "echo Le premier argument est $1\n",
+        "echo Le 2e argument est $2\n"
+      ]
+    },
+    {
+      "name": "tp5_ex5.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo Le script $0 possede $# parametres que voici : $*  \n"
+      ]
+    },
+    {
+      "name": "tp5_ex6.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "cat $1 $2 > $3\n"
+      ]
+    }
   ],
   "profile": [
     {

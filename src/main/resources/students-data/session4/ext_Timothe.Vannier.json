@@ -2,332 +2,64 @@
   "name": "ext_Timothe.Vannier",
   "session": 4,
   "scripts": [
-    [
-      "#!/bin/bash\n",
-      "if test -r $1 -a test -w $1\n",
-      "\tthen \n",
-      "\t\techo Le fichier $1 existe et est accessible en lecture et \u00c3\u00a9criture.\n",
-      "\telse\n",
-      "\t\techo Le fichier $1 n\\'existe pas, ou n\\'est pas accesssible en lecture, ou n\\'est pas accessible en \u00c3\u00a9criture. \n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test -r $1 -a -w $1\n",
-      "\tthen \n",
-      "\t\techo Le fichier $1 existe et est accessible en lecture et \u00c3\u00a9criture.\n",
-      "\telse\n",
-      "\t\techo Le fichier $1 n\\'existe pas, ou n\\'est pas accesssible en lecture, ou n\\'est pas accessible en \u00c3\u00a9criture. \n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test -r $1 -a -w $1 and -e $1\n",
-      "\tthen \n",
-      "\t\techo Le fichier $1 existe et est accessible en lecture et \u00c3\u00a9criture.\n",
-      "\telse\n",
-      "\t\techo Le fichier $1 n\\'existe pas, ou n\\'est pas accesssible en lecture, ou n\\'est pas accessible en \u00c3\u00a9criture. \n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test -r $1 -a -w $1 -a -e $1\n",
-      "\tthen \n",
-      "\t\techo Le fichier $1 existe et est accessible en lecture et \u00c3\u00a9criture.\n",
-      "\telse\n",
-      "\t\techo Le fichier $1 n\\'existe pas, ou n\\'est pas accesssible en lecture, ou n\\'est pas accessible en \u00c3\u00a9criture. \n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test -r $1 -a -w $1 -a -e $1\n",
-      "\tthen \n",
-      "\t\techo Le fichier $1 existe et est accessible en lecture et \u00c3\u00a9criture.\n",
-      "\telse\n",
-      "\t\techo Le fichier $1 n\\'existe pas, ou n\\'est pas accesssible en lecture, ou n\\'est pas accessible en \u00c3\u00a9criture. \n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "if test -e $1 -a -e $2\n",
-      "\tthen \n",
-      "\t\techo Shoutaitez-vous concat\u00c3\u00a9ner les fichiers ?\n",
-      "\t\tread rep\n",
-      "\t\tif $rep = oui \n",
-      "\t\t\tthen \n",
-      "\t\t\t\tless $1\n",
-      "\t\t\t\tless $2\n",
-      "\t\t\telse \n",
-      "\t\t\t\techo reponse invalide\n",
-      "\t\tfi\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "if test -e $1 -a -e $2\n",
-      "\tthen \n",
-      "\t\techo Shoutaitez-vous concat\u00c3\u00a9ner les fichiers ?\n",
-      "\t\tread rep\n",
-      "\t\tif $rep=oui \n",
-      "\t\t\tthen \n",
-      "\t\t\t\tless $1\n",
-      "\t\t\t\tless $2\n",
-      "\t\t\telse \n",
-      "\t\t\t\techo reponse invalide\n",
-      "\t\tfi\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "if test -e $1 -a -e $2\n",
-      "\tthen \n",
-      "\t\techo Shoutaitez-vous concat\u00c3\u00a9ner les fichiers ?\n",
-      "\t\tread rep\n",
-      "\t\tif test $rep = oui \n",
-      "\t\t\tthen \n",
-      "\t\t\t\tless $1\n",
-      "\t\t\t\tless $2\n",
-      "\t\t\telse \n",
-      "\t\t\t\techo reponse invalide\n",
-      "\t\tfi\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "if test -e $1 -a -e $2\n",
-      "\tthen \n",
-      "\t\techo Shoutaitez-vous concat\u00c3\u00a9ner les fichiers ?\n",
-      "\t\tread rep\n",
-      "\t\tif test $rep = oui \n",
-      "\t\t\tthen \n",
-      "\t\t\t\tless $1\n",
-      "\t\t\t\tless $2\n",
-      "\t\t\telse \n",
-      "\t\t\t\techo reponse invalide\n",
-      "\t\tfi\n",
-      "\telse \n",
-      "\t\techo fichier introuvable\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "liste_commandes=date who pwd ls\n",
-      "for i in 1 2 3 4 \n",
-      "do \n",
-      "\t$i\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "liste_commandes=date who pwd ls\n",
-      "set $liste_commandes\n",
-      "for i in 1 2 3 4 \n",
-      "do \n",
-      "\t$i\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "liste_commandes=date who pwd ls\n",
-      "set $liste_commandes\n",
-      "for i in 1 2 3 4 \n",
-      "do \n",
-      "\techo $i\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "liste_commandes=date who pwd ls\n",
-      "set $liste_commandes\n",
-      "echo $liste_commandes\n",
-      "for i in 1 2 3 4 \n",
-      "do \n",
-      "\techo $i\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "liste_commandes=date who pwd ls\n",
-      "echo $liste_commandes\n",
-      "for i in 1 2 3 4 \n",
-      "do \n",
-      "\techo $i\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "liste_commandes=\"date who pwd ls\"\n",
-      "echo $liste_commandes\n",
-      "for i in 1 2 3 4 \n",
-      "do \n",
-      "\techo $i\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "liste_commandes=\"date who pwd ls\"\n",
-      "set $liste_commandes\n",
-      "for i in 1 2 3 4 \n",
-      "do \n",
-      "\techo $i\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "liste_commandes=\"date who pwd ls\"\n",
-      "set $liste_commandes\n",
-      "for i in 1 2 3 4 \n",
-      "do \n",
-      "\techo $i\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "liste_commandes=\"date who pwd ls\"\n",
-      "set $liste_commandes\n",
-      "for i in 1 2 3 4 \n",
-      "do \n",
-      "\techo $i\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "liste_commandes=\"date who pwd ls\"\n",
-      "set $liste_commandes\n",
-      "for i in 1 2 3 4 \n",
-      "do \n",
-      "\t$i\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "liste_commandes=\"date who pwd ls\"\n",
-      "set $liste_commandes\n",
-      "echo $1\n",
-      "for i in 1 2 3 4 \n",
-      "do \n",
-      "\techo $i\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "liste_commandes=\"date who pwd ls\"\n",
-      "set $liste_commandes\n",
-      "echo $1\n",
-      "for i in 1 2 3 4 \n",
-      "do \n",
-      "\techo$($i)\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "liste_commandes=\"date who pwd ls\"\n",
-      "set $liste_commandes\n",
-      "echo $1\n",
-      "for i in 1 2 3 4 \n",
-      "do \n",
-      "\tset $liste_commandes\n",
-      "\techo $i\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "liste_commandes=\"date who pwd ls\"\n",
-      "set $liste_commandes\n",
-      "echo $1\n",
-      "for i in 1 2 3 4 \n",
-      "do \n",
-      "\techo $2\n",
-      "\techo $i\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "liste_commandes=\"date who pwd ls\"\n",
-      "for i in $liste_commandes\n",
-      "do \n",
-      "\t$i\n",
-      "done\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "for i in $*\n",
-      "do \n",
-      "\techo argument i \\= $i,\n",
-      "done\n",
-      "\techo Il y a $# arguments.\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "n=1\n",
-      "for i in $*\n",
-      "do \n",
-      "\techo argument $n \\= $i,\n",
-      "\tn=n+1\n",
-      "done\n",
-      "\techo Il y a $# arguments.\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "n=1\n",
-      "for i in $*\n",
-      "do \n",
-      "\techo argument $n \\= $i,\n",
-      "\tn=$n+1\n",
-      "done\n",
-      "\techo Il y a $# arguments.\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "n=1\n",
-      "for i in $*\n",
-      "do \n",
-      "\techo argument $n \\= $i,\n",
-      "\tn=expr` $n + 1`\n",
-      "done\n",
-      "\techo Il y a $# arguments.\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "n=1\n",
-      "for i in $*\n",
-      "do \n",
-      "\techo argument $n \\= $i,\n",
-      "\tn=expr` $n + 1`\n",
-      "done\n",
-      "\techo Il y a $# arguments.\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "n=1\n",
-      "for i in $*\n",
-      "do \n",
-      "\techo argument $n \\= $i,\n",
-      "\tn=expr` $n + 1`\n",
-      "done\n",
-      "\techo Il y a $# arguments.\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "n=1\n",
-      "for i in $*\n",
-      "do \n",
-      "\techo argument $n \\= $i,\n",
-      "\tn=`expr $n + 1`\n",
-      "done\n",
-      "\techo Il y a $# arguments.\n",
-      "\n"
-    ]
+    {
+      "name": "tp6_exo2.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "if test -r $1 -a -w $1 -a -e $1\n",
+        "\tthen \n",
+        "\t\techo Le fichier $1 existe et est accessible en lecture et \u00c3\u00a9criture.\n",
+        "\telse\n",
+        "\t\techo Le fichier $1 n\\'existe pas, ou n\\'est pas accesssible en lecture, ou n\\'est pas accessible en \u00c3\u00a9criture. \n",
+        "fi\n"
+      ]
+    },
+    {
+      "name": "tp6_exo3.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "\n",
+        "if test -e $1 -a -e $2\n",
+        "\tthen \n",
+        "\t\techo Shoutaitez-vous concat\u00c3\u00a9ner les fichiers ?\n",
+        "\t\tread rep\n",
+        "\t\tif test $rep = oui \n",
+        "\t\t\tthen \n",
+        "\t\t\t\tless $1\n",
+        "\t\t\t\tless $2\n",
+        "\t\t\telse \n",
+        "\t\t\t\techo reponse invalide\n",
+        "\t\tfi\n",
+        "\telse \n",
+        "\t\techo fichier introuvable\n",
+        "fi\n"
+      ]
+    },
+    {
+      "name": "tp6_exo4.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "liste_commandes=\"date who pwd ls\"\n",
+        "for i in $liste_commandes\n",
+        "do \n",
+        "\t$i\n",
+        "done\n"
+      ]
+    },
+    {
+      "name": "tp6_exo5.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "n=1\n",
+        "for i in $*\n",
+        "do \n",
+        "\techo argument $n \\= $i,\n",
+        "\tn=`expr $n + 1`\n",
+        "done\n",
+        "\techo Il y a $# arguments.\n",
+        "\n"
+      ]
+    }
   ],
   "profile": [
     {

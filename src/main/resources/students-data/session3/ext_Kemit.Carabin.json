@@ -2,12 +2,15 @@
   "name": "ext_Kemit.Carabin",
   "session": 3,
   "scripts": [
-    [
-      "#!/bin/bash\n",
-      "expr $1/2\n",
-      "echo $(($1 / 2))\n",
-      "\n"
-    ]
+    {
+      "name": "tp5bis_exo1.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "expr $1/2\n",
+        "echo $(($1 / 2))\n",
+        "\n"
+      ]
+    }
   ],
   "profile": [
     {

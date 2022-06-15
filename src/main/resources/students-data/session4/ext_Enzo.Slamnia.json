@@ -2,123 +2,59 @@
   "name": "ext_Enzo.Slamnia",
   "session": 4,
   "scripts": [
-    [
-      "#!/bin/bash\n",
-      "echo \"Quelle est votre annee de naissance?\"\n",
-      "read annee\n",
-      "echo \"Votre age est\"\n",
-      "expr date +\"%Y\" - $annee\n",
-      "echo $((date =\"%Y\" - $annee))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo \"Quelle est votre annee de naissance?\"\n",
-      "read annee\n",
-      "echo \"Votre age est\"\n",
-      "expr `date` +\"%Y\" - $annee\n",
-      "echo $((date =\"%Y\" - $annee))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo \"Quelle est votre annee de naissance?\"\n",
-      "read annee\n",
-      "echo \"Votre age est\"\n",
-      "anneeact=`date +\"%Y\"`\n",
-      "expr $anneeact - $annee\n",
-      "echo $(($anneeact - $annee))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo \"Il y a \"\n",
-      "echo `who | wc -l`\n",
-      "echo \" utilisateurs connect\u00c3\u00a9s sur \"\n",
-      "echo `hostname`\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo \"Il y a \"\n",
-      "echo `who | wc -l`\n",
-      "echo \" utilisateurs connect\u00c3\u00a9s sur \"\n",
-      "echo `hostname`\n",
-      "\n",
-      "echo \"il y a \"\n",
-      "echo $(who | wc -l)\n",
-      "echo \" utilisateurs connect\u00c3\u00a9s sur \"\n",
-      "echo $(hostname)\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "ls -h $1\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "ls -l $1\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "ls -l $1 | cut -f 5\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "ls -l $1 | cut -f `5-5'\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "ls -l $1 | cut -f 5-5\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo \"ls -l file\"\n",
-      "ls -l $1\n",
-      "ls -l $1 | cut -d \" \" -f5\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test $1 -gt 5\n",
-      "\telif test $1 -lt 10\n",
-      "\t\tthen\n",
-      "\t\t\techo \"La valeur \"\n",
-      "\t\t\techo $1\n",
-      "\t\t\techo \"est comprise entre 5 et 10.\"\n",
-      "\t\telse\n",
-      "\t\t\techo \"La valeur \"\n",
-      "\t\t\techo $1\n",
-      "\t\t\techo \"n'est pas comprise entre 5 et 10.\"\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test $1 -gt 5\n",
-      "\telif test `expr $1` -lt 10\n",
-      "\t\tthen\n",
-      "\t\t\techo \"La valeur \"\n",
-      "\t\t\techo $1\n",
-      "\t\t\techo \"est comprise entre 5 et 10.\"\n",
-      "\t\telse\n",
-      "\t\t\techo \"La valeur \"\n",
-      "\t\t\techo $1\n",
-      "\t\t\techo \"n'est pas comprise entre 5 et 10.\"\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if test $1 -ge 5 -a $1 -le 10\n",
-      "\tthen\n",
-      "\t\techo \"La valeur \"\n",
-      "\t\techo $1\n",
-      "\t\techo \"est comprise entre 5 et 10.\"\n",
-      "\telse\n",
-      "\t\techo \"La valeur \"\n",
-      "\t\techo $1\n",
-      "\t\techo \"n'est pas comprise entre 5 et 10.\"\n",
-      "fi\n"
-    ]
+    {
+      "name": "tp5bis_exo3.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo \"Quelle est votre annee de naissance?\"\n",
+        "read annee\n",
+        "echo \"Votre age est\"\n",
+        "anneeact=`date +\"%Y\"`\n",
+        "expr $anneeact - $annee\n",
+        "echo $(($anneeact - $annee))\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo4.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo \"Il y a \"\n",
+        "echo `who | wc -l`\n",
+        "echo \" utilisateurs connect\u00c3\u00a9s sur \"\n",
+        "echo `hostname`\n",
+        "\n",
+        "echo \"il y a \"\n",
+        "echo $(who | wc -l)\n",
+        "echo \" utilisateurs connect\u00c3\u00a9s sur \"\n",
+        "echo $(hostname)\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo5.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo \"ls -l file\"\n",
+        "ls -l $1\n",
+        "ls -l $1 | cut -d \" \" -f5\n",
+        "\n"
+      ]
+    },
+    {
+      "name": "tp6_exo1.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "if test $1 -ge 5 -a $1 -le 10\n",
+        "\tthen\n",
+        "\t\techo \"La valeur \"\n",
+        "\t\techo $1\n",
+        "\t\techo \"est comprise entre 5 et 10.\"\n",
+        "\telse\n",
+        "\t\techo \"La valeur \"\n",
+        "\t\techo $1\n",
+        "\t\techo \"n'est pas comprise entre 5 et 10.\"\n",
+        "fi\n"
+      ]
+    }
   ],
   "profile": [
     {

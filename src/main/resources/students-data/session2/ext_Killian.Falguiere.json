@@ -2,48 +2,24 @@
   "name": "ext_Killian.Falguiere",
   "session": 2,
   "scripts": [
-    [
-      "#!/bin/bash\n",
-      "echo Nous sommes le \"'date'\"\n",
-      "echo Nous sommes le\n",
-      "time=\"fr_FR.UTF-8\" date\n",
-      "echo -e \"Ceci est \\n une tr\u00c3\u00a8s \\n longue phrase...\"\n",
-      "echo Voici une \u00c3\u00a9toile: '*'\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Nous sommes le \"'date'\"\n",
-      "echo Nous sommes le `date`\n",
-      "time=\"fr_FR.UTF-8\" date\n",
-      "echo -e \"Ceci est \\n une tr\u00c3\u00a8s \\n longue phrase...\"\n",
-      "echo Voici une \u00c3\u00a9toile: '*'\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Nous sommes le \"'date'\"\n",
-      "echo Nous sommes le `date`\n",
-      "echo -e \"Ceci est \\n une tr\u00c3\u00a8s \\n longue phrase...\"\n",
-      "echo Voici une \u00c3\u00a9toile: '*'\n"
-    ],
-    [
-      "#/bin/bash\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "who = `ls -l`\n",
-      "echo who\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n",
-      "echo whoww `ls -l`\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "who = `ls -l`\n",
-      "echo whoww $who\n"
-    ]
+    {
+      "name": "tp5_exo7.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo Nous sommes le \"'date'\"\n",
+        "echo Nous sommes le `date`\n",
+        "echo -e \"Ceci est \\n une tr\u00c3\u00a8s \\n longue phrase...\"\n",
+        "echo Voici une \u00c3\u00a9toile: '*'\n"
+      ]
+    },
+    {
+      "name": "test.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "who = `ls -l`\n",
+        "echo whoww $who\n"
+      ]
+    }
   ],
   "profile": [
     {

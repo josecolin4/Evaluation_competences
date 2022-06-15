@@ -2,163 +2,40 @@
   "name": "ext_Damien.Buosi",
   "session": 3,
   "scripts": [
-    [
-      "#!/bin/bash\n",
-      "echo `test -e F1`\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo test -e F1\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "test -e F1\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo La valeur $1 est comprise entre 5 et 10.\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo La valeur $1 \n",
-      "if $1 > 5 and $1 < 11 \n",
-      "\tthen\n",
-      "\t    est comprise entre 5 et 10.\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo La valeur $1 \n",
-      "a = 5\n",
-      "b = 11\n",
-      "if $1 > a and $1 < b \n",
-      "\tthen\n",
-      "\t    est comprise entre 5 et 10.\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo La valeur $1 \n",
-      "if [ $1 -gt 5 ] and [ $1 -lt 10] \n",
-      "\tthen\n",
-      "\t\techo est comprise entre 5 et 10.\n",
-      "\telse\n",
-      "\t\techo n'est pas comprise entre 5 et 10.\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo La valeur $1 \n",
-      "if [ $1 -gt 5 ] and [ $1 -lt 10] \n",
-      "\tthen\n",
-      "\t\techo est comprise entre 5 et 10.\n",
-      "\telse\n",
-      "\t\techo n est pas comprise entre 5 et 10.\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo La valeur $1 \n",
-      "if [ $1 -gt 5 ] and [ $1 -lt 10 ] \n",
-      "\tthen\n",
-      "\t\techo est comprise entre 5 et 10.\n",
-      "\telse\n",
-      "\t\techo n est pas comprise entre 5 et 10.\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo La valeur $1 \n",
-      "if [ $1 -gt 5 ] and [ $1 -lt 10 ] \n",
-      "\tthen\n",
-      "\t\techo est comprise entre 5 et 10.\n",
-      "\telse\n",
-      "\t\techo n est pas comprise entre 5 et 10.\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo La valeur $1 \n",
-      "if [ $1 -gt 5 ] and[ $1 -lt 10 ] \n",
-      "\tthen\n",
-      "\t\techo est comprise entre 5 et 10.\n",
-      "\telse\n",
-      "\t\techo n est pas comprise entre 5 et 10.\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo La valeur $1 \n",
-      "if [ $1 -gt 5 ] -a [ $1 -lt 10 ] \n",
-      "\tthen\n",
-      "\t\techo est comprise entre 5 et 10.\n",
-      "\telse\n",
-      "\t\techo n est pas comprise entre 5 et 10.\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo La valeur $1 \n",
-      "if [ $1 -gt 5 ]-a[ $1 -lt 10 ] \n",
-      "\tthen\n",
-      "\t\techo est comprise entre 5 et 10.\n",
-      "\telse\n",
-      "\t\techo n est pas comprise entre 5 et 10.\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo La valeur $1 \n",
-      "if [ $1 -gt 5 ] -a[ $1 -lt 10 ] \n",
-      "\tthen\n",
-      "\t\techo est comprise entre 5 et 10.\n",
-      "\telse\n",
-      "\t\techo n est pas comprise entre 5 et 10.\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo La valeur $1 \n",
-      "if [ $1 -gt 5 -a $1 -lt 10 ] \n",
-      "\tthen\n",
-      "\t\techo est comprise entre 5 et 10.\n",
-      "\telse\n",
-      "\t\techo n est pas comprise entre 5 et 10.\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo La valeur $1 \n",
-      "if [ $1 -gt 5 -a $1 -lt 11 ] \n",
-      "\tthen\n",
-      "\t\techo est comprise entre 5 et 10.\n",
-      "\telse\n",
-      "\t\techo n est pas comprise entre 5 et 10.\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo La valeur $1 \n",
-      "if [ $1 -gt 5 -a $1 -lt 10 ] \n",
-      "\tthen\n",
-      "\t\techo est comprise entre 5 et 10.\n",
-      "\telse\n",
-      "\t\techo n est pas comprise entre 5 et 10.\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo La valeur $1 \n",
-      "if test $1 -gt 5 -a $1 -lt 10\n",
-      "\tthen\n",
-      "\t\techo valeur comprise entre 5 et 10\n",
-      "\telse\n",
-      "\t\techo valeur non comprise entre 5 et 10\n",
-      "fi\n"
-    ]
+    {
+      "name": "test.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "test -e F1\n",
+        "\n"
+      ]
+    },
+    {
+      "name": "tp6_exo1.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo La valeur $1 \n",
+        "if [ $1 -gt 5 -a $1 -lt 10 ] \n",
+        "\tthen\n",
+        "\t\techo est comprise entre 5 et 10.\n",
+        "\telse\n",
+        "\t\techo n est pas comprise entre 5 et 10.\n",
+        "fi\n"
+      ]
+    },
+    {
+      "name": "tp6_exo1BIS.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo La valeur $1 \n",
+        "if test $1 -gt 5 -a $1 -lt 10\n",
+        "\tthen\n",
+        "\t\techo valeur comprise entre 5 et 10\n",
+        "\telse\n",
+        "\t\techo valeur non comprise entre 5 et 10\n",
+        "fi\n"
+      ]
+    }
   ],
   "profile": [
     {

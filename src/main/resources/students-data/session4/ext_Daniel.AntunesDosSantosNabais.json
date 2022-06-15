@@ -2,210 +2,36 @@
   "name": "ext_Daniel.AntunesDosSantosNabais",
   "session": 4,
   "scripts": [
-    [
-      "#!/bin/bash\n",
-      "echo test $1 -gt 10\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo `test $1 -gt 10`\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "n1=5\n",
-      "n2=10\n",
-      "if test $1 -gt n1 \n",
-      "\tthen\n",
-      "\t\techo $1 est compris entre $n1 et $n2\n",
-      "\telse [ $# -lt $n1]\n",
-      "\t\techo $1 n\\'est pas compris entre $n1 et $n2\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "n1=5\n",
-      "n2=10\n",
-      "if test $1 -gt n1 \n",
-      "\tthen\n",
-      "\t\techo $1 est compris entre $n1 et $n2\n",
-      "if test [ $1 -lt n1]\n",
-      "\tthen\n",
-      "\t\techo $1 n\\'est pas compris entre $n1 et $n2\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "n1=5\n",
-      "n2=10\n",
-      "if test $1 -gt n1 \n",
-      "\tthen\n",
-      "\t\techo $1 est compris entre $n1 et $n2\n",
-      "fi\n",
-      "\n",
-      "if test [ $1 -lt n 1]\n",
-      "\tthen\n",
-      "\t\techo $1 n\\'est pas compris entre $n1 et $n2\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "n1=5\n",
-      "n2=10\n",
-      "if test $1 -gt $n1 \n",
-      "\tthen\n",
-      "\t\techo $1 est compris entre $n1 et $n2\n",
-      "fi\n",
-      "\n",
-      "if test [ $1 -lt $n1 ]\n",
-      "\tthen\n",
-      "\t\techo $1 n\\'est pas compris entre $n1 et $n2\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "n1=5\n",
-      "n2=10\n",
-      "if test $1 -gt $n1 \n",
-      "\tthen\n",
-      "\t\techo $1 est compris entre $n1 et $n2\n",
-      "fi\n",
-      "\n",
-      "if test [ $1 -lt n1 ]\n",
-      "\tthen\n",
-      "\t\techo $1 n\\'est pas compris entre $n1 et $n2\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "n1=5\n",
-      "n2=10\n",
-      "if test $1 -gt $n1 \n",
-      "\tthen\n",
-      "\t\techo $1 est compris entre $n1 et $n2\n",
-      "fi\n",
-      "\n",
-      "if [ $1 -lt n1 ]\n",
-      "\tthen\n",
-      "\t\techo $1 n\\'est pas compris entre $n1 et $n2\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "n1=5\n",
-      "n2=10\n",
-      "if test $1 -gt $n1 \n",
-      "\tthen\n",
-      "\t\techo $1 est compris entre $n1 et $n2\n",
-      "fi\n",
-      "\n",
-      "if [ $1 -lt $n1 ]\n",
-      "\tthen\n",
-      "\t\techo $1 n\\'est pas compris entre $n1 et $n2\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if [ -e $1 ]\n",
-      "\tthen\n",
-      "\t\techo le fichier $1 existe  \n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if [ -e $1 -a -x -r ]\n",
-      "\tthen\n",
-      "\t\techo le fichier $1 existe  \n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if [ -e $1 -a -w -r ]\n",
-      "\tthen\n",
-      "\t\techo le fichier $1 existe et est accessible en \u00c3\u00a9criture et en lecture\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if [ -e $1 -a -w -a -r ]\n",
-      "\tthen\n",
-      "\t\techo le fichier $1 existe et est accessible en \u00c3\u00a9criture et en lecture\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if [ -e $1 -a -w -r ]\n",
-      "\tthen\n",
-      "\t\techo le fichier $1 existe et est accessible en \u00c3\u00a9criture et en lecture\n",
-      "\telse\n",
-      "\t\techo tu tes tromp\u00c3\u00a9\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if [ -e $1 -a -r ]\n",
-      "\tthen\n",
-      "\t\techo le fichier $1 existe et est accessible en \u00c3\u00a9criture et en lecture\n",
-      "\telse\n",
-      "\t\techo tu tes tromp\u00c3\u00a9\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if [ -e $1 -o -r ]\n",
-      "\tthen\n",
-      "\t\techo le fichier $1 existe et est accessible en \u00c3\u00a9criture et en lecture\n",
-      "\telse\n",
-      "\t\techo tu tes tromp\u00c3\u00a9\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if [ -e $1 -a -r -w $1 ]\n",
-      "\tthen\n",
-      "\t\techo le fichier $1 existe et est accessible en \u00c3\u00a9criture et en lecture\n",
-      "\telse\n",
-      "\t\techo tu tes tromp\u00c3\u00a9\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if [ -e $1 -a -w $1 ]\n",
-      "\tthen\n",
-      "\t\techo le fichier $1 existe et est accessible en \u00c3\u00a9criture et en lecture\n",
-      "\telse\n",
-      "\t\techo tu tes tromp\u00c3\u00a9\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if [ -e $1 -a -w $1 -a -r $1 ]\n",
-      "\tthen\n",
-      "\t\techo le fichier $1 existe et est accessible en \u00c3\u00a9criture et en lecture\n",
-      "\telse\n",
-      "\t\techo tu tes tromp\u00c3\u00a9\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if [ -w $1 -a -r $1 ]\n",
-      "\tthen\n",
-      "\t\techo le fichier $1 existe et est accessible en \u00c3\u00a9criture et en lecture\n",
-      "\telse\n",
-      "\t\techo tu tes tromp\u00c3\u00a9\n",
-      "fi\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "if [ -w $1 -a -r $1 ]\n",
-      "\tthen\n",
-      "\t\techo le fichier $1 existe et est accessible en \u00c3\u00a9criture et en lecture\n",
-      "\telse\n",
-      "\t\techo le fichier $1 n\\'\u00c3\u00a9xiste pas ou il n est pas accessible en \n",
-      "\t\techo \u00c3\u00a9criture ou en lecture\n",
-      "fi\n"
-    ]
+    {
+      "name": "tp6_exo1.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "n1=5\n",
+        "n2=10\n",
+        "if test $1 -gt $n1 \n",
+        "\tthen\n",
+        "\t\techo $1 est compris entre $n1 et $n2\n",
+        "fi\n",
+        "\n",
+        "if [ $1 -lt $n1 ]\n",
+        "\tthen\n",
+        "\t\techo $1 n\\'est pas compris entre $n1 et $n2\n",
+        "fi\n"
+      ]
+    },
+    {
+      "name": "tp6_exo2.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "if [ -w $1 -a -r $1 ]\n",
+        "\tthen\n",
+        "\t\techo le fichier $1 existe et est accessible en \u00c3\u00a9criture et en lecture\n",
+        "\telse\n",
+        "\t\techo le fichier $1 n\\'\u00c3\u00a9xiste pas ou il n est pas accessible en \n",
+        "\t\techo \u00c3\u00a9criture ou en lecture\n",
+        "fi\n"
+      ]
+    }
   ],
   "profile": [
     {

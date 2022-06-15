@@ -2,94 +2,33 @@
   "name": "ext_Enzo.Slamnia",
   "session": 3,
   "scripts": [
-    [
-      "#! /bin/bash\n",
-      "expr $1 / 2\n",
-      "echo $((expr $1 / 2))\n"
-    ],
-    [
-      "#! /bin/bash\n",
-      "expr $1 / 2\n",
-      "resultat=$((expr $1 / 2))\n",
-      "echo resultat\n"
-    ],
-    [
-      "expr $1 / 2\n",
-      "resultat=$((expr $1 / 2))\n",
-      "echo resultat\n"
-    ],
-    [
-      "expr $1 / 2\n",
-      "echo $(($1 / 2))\n",
-      "\n"
-    ],
-    [
-      "expr $1 / 2\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "expr $1 / 2\n",
-      "echo $(($1 / 2))\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "expr $1 * 2\n",
-      "echo $(($1 * 2))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "a=2\n",
-      "expr $1 * $a\n",
-      "echo $(($1 * 2))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "a=2\n",
-      "expr $1 \\* $a\n",
-      "echo $(($1 * 2))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "expr $1 \\* 2\n",
-      "echo $(($1 * 2))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo \"Quelle est votre annee de naissance?\"\n",
-      "read annee\n",
-      "echo \"Votre age est\"\n",
-      "expr $date - $annee\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo \"Quelle est votre annee de naissance?\"\n",
-      "read annee\n",
-      "echo \"Votre age est\"\n",
-      "expr $\"date +%Y\" - $annee\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo \"Quelle est votre annee de naissance?\"\n",
-      "read annee\n",
-      "date +%Y|annee_act\n",
-      "echo \"Votre age est\"\n",
-      "expr $annee_act - $annee\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo \"Quelle est votre annee de naissance?\"\n",
-      "read annee\n",
-      "echo \"Votre age est\"\n",
-      "expr date \\+%Y - $annee\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo \"Quelle est votre annee de naissance?\"\n",
-      "read annee\n",
-      "echo \"Votre age est\"\n",
-      "expr date +%Y - $annee\n"
-    ]
+    {
+      "name": "tp5bis_exo1.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "expr $1 / 2\n",
+        "echo $(($1 / 2))\n",
+        "\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo2.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "expr $1 \\* 2\n",
+        "echo $(($1 * 2))\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo3.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo \"Quelle est votre annee de naissance?\"\n",
+        "read annee\n",
+        "echo \"Votre age est\"\n",
+        "expr date +%Y - $annee\n"
+      ]
+    }
   ],
   "profile": [
     {

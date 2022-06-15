@@ -2,192 +2,33 @@
   "name": "ext_Anthony.Chipolina",
   "session": 3,
   "scripts": [
-    [
-      "#!/bin/bash\n",
-      "expr $1 / 2\n",
-      "echo $(( $1 + 1 )) \n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "expr $1 / 2\n",
-      "echo $(( $1 / 2 )) \n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "expr $1 * 2\n",
-      "echo $(( $1 * 2 ))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "expr $1 \\* 2\n",
-      "echo $(( $1 * 2 ))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo \"Entrez votre ann\u00c3\u00a9e de naissance : \"\n",
-      "read date\n",
-      "echo \"Vous avez\" \n",
-      "expr $date - (date %Y)\n",
-      "echo \"ans\"\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo \"Entrez votre ann\u00c3\u00a9e de naissance : \"\n",
-      "read date\n",
-      "echo \"Vous avez\" \n",
-      "expr $date - date '%Y'\n",
-      "echo \"ans\"\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo \"Entrez votre ann\u00c3\u00a9e de naissance : \"\n",
-      "read date\n",
-      "echo \"Vous avez\" \n",
-      "expr $date - 'date '%Y''\n",
-      "echo \"ans\"\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo \"Entrez votre ann\u00c3\u00a9e de naissance : \"\n",
-      "read dateN\n",
-      "echo \"Vous avez\" \n",
-      "expr $dateN - 'date '%Y''\n",
-      "echo \"ans\"\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo \"Entrez votre ann\u00c3\u00a9e de naissance : \"\n",
-      "read dateN\n",
-      "echo \"Vous avez\" \n",
-      "expr dateN - 'date '%Y''\n",
-      "echo \"ans\"\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo \"Entrez votre ann\u00c3\u00a9e de naissance : \"\n",
-      "read dateN\n",
-      "echo \"Vous avez\" \n",
-      "expr $dateN - 'date %Y'\n",
-      "echo \"ans\"\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo \"Entrez votre ann\u00c3\u00a9e de naissance : \"\n",
-      "read dateN\n",
-      "echo \"Vous avez\" \n",
-      "expr $dateN - 'date -%Y'\n",
-      "echo \"ans\"\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo \"Entrez votre ann\u00c3\u00a9e de naissance : \"\n",
-      "read dateN\n",
-      "echo \"Vous avez\" \n",
-      "expr \\'date -%Y' - $dateN\n",
-      "echo \"ans\"\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo \"Entrez votre ann\u00c3\u00a9e de naissance : \"\n",
-      "read dateN\n",
-      "echo \"Vous avez\" \n",
-      "expr 'date -%Y' - $dateN\n",
-      "echo \"ans\"\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo \"Entrez votre ann\u00c3\u00a9e de naissance : \"\n",
-      "read dateN\n",
-      "echo \"Vous avez\" \n",
-      "expr date %Y - $dateN\n",
-      "echo \"ans\"\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo \"Entrez votre ann\u00c3\u00a9e de naissance : \"\n",
-      "read dateN\n",
-      "echo \"Vous avez\" \n",
-      "expr \\date %Y - $dateN\n",
-      "echo \"ans\"\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo \"Entrez votre ann\u00c3\u00a9e de naissance : \"\n",
-      "read dateN\n",
-      "echo \"Vous avez\" \n",
-      "expr `date %Y` - $dateN\n",
-      "echo \"ans\"\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo \"Entrez votre ann\u00c3\u00a9e de naissance : \"\n",
-      "read dateN\n",
-      "echo \"Vous avez\" \n",
-      "expr `date -%Y` - $dateN\n",
-      "echo \"ans\"\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo \"Entrez votre ann\u00c3\u00a9e de naissance : \"\n",
-      "read dateN\n",
-      "echo \"Vous avez\" \n",
-      "expr `date '%Y'` - $dateN\n",
-      "echo \"ans\"\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo \"Entrez votre ann\u00c3\u00a9e de naissance : \"\n",
-      "read dateN\n",
-      "echo \"Vous avez\" \n",
-      "expr `date +%Y` - $dateN\n",
-      "echo \"ans\"\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo \"Entrez votre ann\u00c3\u00a9e de naissance : \"\n",
-      "read dateN\n",
-      "echo \"Vous avez\" expr `date +%Y` - $dateN echo \"ans\"\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo \"Entrez votre ann\u00c3\u00a9e de naissance : \"\n",
-      "read dateN\n",
-      "echo \"Vous avez\"; expr `date +%Y` - $dateN; echo \"ans\"\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo \"Entrez votre ann\u00c3\u00a9e de naissance : \"\n",
-      "read dateN\n",
-      "echo \"Vous avez \\expr `date +%Y` - $dateN\\ ans\"\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo \"Entrez votre ann\u00c3\u00a9e de naissance : \"\n",
-      "read dateN\n",
-      "age= expr `date +%Y7` - $dateN\n",
-      "echo \"Vous avez \\$age ans \"\n",
-      "expr `date +%Y` - $dateN\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo \"Entrez votre ann\u00c3\u00a9e de naissance : \"\n",
-      "read dateN\n",
-      "age=expr `date +%Y7` - $dateN\n",
-      "echo \"Vous avez '$age' ans \"\n",
-      "expr `date +%Y` - $dateN\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo \"Entrez votre ann\u00c3\u00a9e de naissance : \"\n",
-      "read dateN\n",
-      "echo \"Vous avez\"\n",
-      "expr `date +%Y` - $dateN\n",
-      "echo \"ans\"\n"
-    ]
+    {
+      "name": "tp5bis_exo1.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "expr $1 / 2\n",
+        "echo $(( $1 / 2 )) \n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo2.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "expr $1 \\* 2\n",
+        "echo $(( $1 * 2 ))\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo3.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo \"Entrez votre ann\u00c3\u00a9e de naissance : \"\n",
+        "read dateN\n",
+        "echo \"Vous avez\"\n",
+        "expr `date +%Y` - $dateN\n",
+        "echo \"ans\"\n"
+      ]
+    }
   ],
   "profile": [
     {

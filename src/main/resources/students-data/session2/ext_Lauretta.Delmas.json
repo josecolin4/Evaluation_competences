@@ -2,64 +2,35 @@
   "name": "ext_Lauretta.Delmas",
   "session": 2,
   "scripts": [
-    [
-      "echo $0 poss\u00c3\u00a8de $# param\u00c3\u00a8tre(s), que voici : $*\n"
-    ],
-    [
-      "echo le script $0 poss\u00c3\u00a8de $# parametres que voici: $*\n"
-    ],
-    [
-      "cp $0 $1|nano $2 \n"
-    ],
-    [
-      "echo $1 $2 > $3\n"
-    ],
-    [
-      "$1 $2 | cat > $3\n"
-    ],
-    [
-      "cp $1 $2 cat > $3\n"
-    ],
-    [
-      "cp $1 $2 | cat>$3\n"
-    ],
-    [
-      "cp $1 $2 > $3\n"
-    ],
-    [
-      "echo nous sommes le `date`\n",
-      "ceci est une tres \n",
-      "longue phrase...\n",
-      "voici une etoile: \\*\n"
-    ],
-    [
-      "echo nous sommes le `date`\n",
-      "echo ceci est \n",
-      "echo une tres longue \n",
-      "echo phrase\n",
-      "echo voici une etoile \\*\n"
-    ],
-    [
-      "echo $0=$0+1\n"
-    ],
-    [
-      "echo $1=$1+1\n"
-    ],
-    [
-      "echo $1=$1+1\n"
-    ],
-    [
-      "reponse=$1+1\n",
-      "echo $reponse\n"
-    ],
-    [
-      "reponse=$1+expr1\n",
-      "echo $reponse\n"
-    ],
-    [
-      "reponse=$(($1+1))\n",
-      "echo $reponse\n"
-    ]
+    {
+      "name": "tp5_exo5.sh",
+      "lines": [
+        "echo le script $0 poss\u00c3\u00a8de $# parametres que voici: $*\n"
+      ]
+    },
+    {
+      "name": "tp5_exo6.sh",
+      "lines": [
+        "cp $1 $2 > $3\n"
+      ]
+    },
+    {
+      "name": "tp5_exo7.sh",
+      "lines": [
+        "echo nous sommes le `date`\n",
+        "echo ceci est \n",
+        "echo une tres longue \n",
+        "echo phrase\n",
+        "echo voici une etoile \\*\n"
+      ]
+    },
+    {
+      "name": "tp5_exo8.sh",
+      "lines": [
+        "reponse=$(($1+1))\n",
+        "echo $reponse\n"
+      ]
+    }
   ],
   "profile": [
     {

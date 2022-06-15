@@ -2,46 +2,64 @@
   "name": "ext_Pierre.Lacoste",
   "session": 1,
   "scripts": [
-    [
-      "#!/bin/bash\n",
-      "echo cours\n",
-      "cours=unix \n",
-      "echo $cours\n",
-      "echo je suis au cours $cours\n"
-    ],
-    [
-      "echo \"Mon nom de login est $USER\"\n",
-      "\n"
-    ],
-    [
-      "echo \"Mon nom de login est $USER\"\n",
-      "echo \"Mon shell est $SHELL\"\n",
-      "echo \"Les variables du shell sont\"\n",
-      "set\n",
-      "echo \"Les variables d'environnement sont\"\n",
-      "env\n"
-    ],
-    [
-      "echo \"Cher utilisateur quel est ton pr\u00c3\u00a9nom \\?\"\n",
-      "read prenom\n",
-      "echo \"Ravi de te connaitre, $prenomecho\" \n",
-      "Quel est ton nom et ton age \\?\n",
-      "read nom age\n",
-      "echo \"Tu es $prenom $nom et tu as $age ans, n\\'est-ce pas \\?\"\n",
-      "read reponse\n"
-    ],
-    [
-      "echo \"Cher utilisateur quel est ton pr\u00c3\u00a9nom \\?\"\n",
-      "read prenom\n",
-      "echo \"Ravi de te connaitre, $prenomecho\" \n",
-      "echo \"Quel est ton nom et ton age \\?\"\n",
-      "read nom age\n",
-      "echo \"Tu es $prenom $nom et tu as $age ans, n\\'est-ce pas \\?\"\n",
-      "read reponse\n"
-    ],
-    [
-      "echo Le script $0 possede $# parametres que voici : $*\n"
-    ]
+    {
+      "name": "_1605509858__root_TP1__tp5_exo1.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo cours\n",
+        "cours=unix \n",
+        "echo $cours\n",
+        "echo je suis au cours $cours\n"
+      ]
+    },
+    {
+      "name": "_1605510224__root_TP1__tp5_exo2.sh",
+      "lines": [
+        "echo \"Mon nom de login est $USER\"\n",
+        "\n"
+      ]
+    },
+    {
+      "name": "_1605510505__root_TP1__tp5_exo2.sh",
+      "lines": [
+        "echo \"Mon nom de login est $USER\"\n",
+        "echo \"Mon shell est $SHELL\"\n",
+        "echo \"Les variables du shell sont\"\n",
+        "set\n",
+        "echo \"Les variables d'environnement sont\"\n",
+        "env\n"
+      ]
+    },
+    {
+      "name": "_1605512038__root_TP1__tp5_exo5.sh",
+      "lines": [
+        "echo \"Cher utilisateur quel est ton pr\u00c3\u00a9nom \\?\"\n",
+        "read prenom\n",
+        "echo \"Ravi de te connaitre, $prenomecho\" \n",
+        "Quel est ton nom et ton age \\?\n",
+        "read nom age\n",
+        "echo \"Tu es $prenom $nom et tu as $age ans, n\\'est-ce pas \\?\"\n",
+        "read reponse\n"
+      ]
+    },
+    {
+      "name": "_1605512150__root_TP1__tp5_exo5.sh",
+      "lines": [
+        "echo \"Cher utilisateur quel est ton pr\u00c3\u00a9nom \\?\"\n",
+        "read prenom\n",
+        "echo \"Ravi de te connaitre, $prenomecho\" \n",
+        "echo \"Quel est ton nom et ton age \\?\"\n",
+        "read nom age\n",
+        "echo \"Tu es $prenom $nom et tu as $age ans, n\\'est-ce pas \\?\"\n",
+        "read reponse\n"
+      ]
+    },
+    {
+      "name": "_1605512628__root_TP1__heky5y.sh",
+      "lines": [
+        "echo Le script $0 possede $# parametres que voici : $*\n"
+      ]
+    }
   ],
   "profile": [
     {

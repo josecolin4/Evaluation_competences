@@ -2,53 +2,29 @@
   "name": "ext_Leopold.Toure",
   "session": 4,
   "scripts": [
-    [
-      "read n\n",
-      "echo $(( n / 2 )) \n"
-    ],
-    [
-      "read n\n",
-      "echo $(( n * 2 ))\n"
-    ],
-    [
-      "echo Quelle est votre annnee de naissance ?\n",
-      "nead annee_n \n",
-      "echo vous etes ne en $annee_n , vous avez donc $(( date - annee_n ))\n"
-    ],
-    [
-      "echo Quelle est votre annnee de naissance ?\n",
-      "read annee_n \n",
-      "echo vous etes ne en $annee_n , vous avez donc $(( date - annee_n ))\n"
-    ],
-    [
-      "echo Quelle est votre annnee de naissance ?\n",
-      "read annee_n \n",
-      "echo vous etes ne en $annee_n , vous avez donc $(( date%Y - annee_n ))\n"
-    ],
-    [
-      "echo Quelle est votre annnee de naissance ?\n",
-      "read annee_n\n",
-      "annee_act = date%Y \n",
-      "echo vous etes ne en $annee_n , vous avez donc $(( anne_act - annee_n ))\n"
-    ],
-    [
-      "echo Quelle est votre annnee de naissance ?\n",
-      "read annee_n\n",
-      "date%Y=anne_act\n",
-      "echo vous etes ne en $annee_n , vous avez donc $(( anne_act - annee_n ))\n"
-    ],
-    [
-      "echo Quelle est votre annnee de naissance ?\n",
-      "read annee_n\n",
-      "date%Y=$(anne_act)\n",
-      "echo vous etes ne en $annee_n , vous avez donc $(( anne_act - annee_n ))\n"
-    ],
-    [
-      "echo Quelle est votre annnee de naissance ?\n",
-      "read annee_n\n",
-      "dateY=$(anne_act)\n",
-      "echo vous etes ne en $annee_n , vous avez donc $(( anne_act - annee_n ))\n"
-    ]
+    {
+      "name": "tp5bis_exo1.sh",
+      "lines": [
+        "read n\n",
+        "echo $(( n / 2 )) \n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo2.sh",
+      "lines": [
+        "read n\n",
+        "echo $(( n * 2 ))\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo3.sh",
+      "lines": [
+        "echo Quelle est votre annnee de naissance ?\n",
+        "read annee_n\n",
+        "dateY=$(anne_act)\n",
+        "echo vous etes ne en $annee_n , vous avez donc $(( anne_act - annee_n ))\n"
+      ]
+    }
   ],
   "profile": [
     {

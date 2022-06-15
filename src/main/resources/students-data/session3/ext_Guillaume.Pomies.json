@@ -2,204 +2,32 @@
   "name": "ext_Guillaume.Pomies",
   "session": 3,
   "scripts": [
-    [
-      "#!/bin/bash\n",
-      "expr 2 / 2\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "expr $1 / 2\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "expr $1 / 2\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "expr $1 / 2\n",
-      "echo$($1/2)\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "expr $1 / 2\n",
-      "echo$($1/2)\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "expr $1 / 2\n",
-      "echo$(($1/2))\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "expr $1 / 2\n",
-      "echo$(($1 / 2))\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "expr $1 / 2\n",
-      "echo $(($1 / 2))\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "expr $1 * $2\n",
-      "echo $(($1 * $2))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "expr $1 \\* $2\n",
-      "echo $(($1 \\* $2))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "expr $1 \\* $2\n",
-      "echo $(($1 * $2))\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo quelle est votre ann\u00c3\u00a9e de naissance\\ ?\n",
-      "read dn \n",
-      "vous \u00c3\u00aates n\u00c3\u00a9 en $dn, vous avez donc $dn ans.\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo quelle est votre ann\u00c3\u00a9e de naissance\\ ?\n",
-      "read dn \n",
-      "vous \u00c3\u00aates n\u00c3\u00a9 en $dn, vous avez donc expr date\"+%Y\"-$dn ans.\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo quelle est votre ann\u00c3\u00a9e de naissance\\ ?\n",
-      "read dn \n",
-      "vous \u00c3\u00aates n\u00c3\u00a9 en $dn, vous avez donc expr `date\"+%Y\"-$dn ans`.\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo quelle est votre ann\u00c3\u00a9e de naissance\\ ?\n",
-      "read dn\n",
-      "vous \u00c3\u00aates n\u00c3\u00a9 en $dn, vous avez donc expr `date\"+%Y\"-$dn ans`.\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo quelle est votre ann\u00c3\u00a9e de naissance\\ ?\n",
-      "read dn\n",
-      "vous \u00c3\u00aates n\u00c3\u00a9 en $dn, vous avez donc expr `date\"+%Y\"-$dn ans.`\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo quelle est votre ann\u00c3\u00a9e de naissance\\ ?\n",
-      "read dn\n",
-      "vous \u00c3\u00aates n\u00c3\u00a9 en $dn, vous avez donc expr `date\"+%Y\"`-$dn ans.\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo quelle est votre ann\u00c3\u00a9e de naissance\\ ?\n",
-      "read dn\n",
-      "vous \u00c3\u00aates n\u00c3\u00a9 en $dn, vous avez donc ans.\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo quelle est votre ann\u00c3\u00a9e de naissance\\ ?\n",
-      "read $dn\n",
-      "vous \u00c3\u00aates n\u00c3\u00a9 en $dn, vous avez donc ans.\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo quelle est votre ann\u00c3\u00a9e de naissance\\ ?\n",
-      "read dn\n",
-      "vous \u00c3\u00aates n\u00c3\u00a9 en $dn, vous avez donc ans.\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo quelle est votre ann\u00c3\u00a9e de naissance\\ ?\n",
-      "read dn\n",
-      "vous \u00c3\u00aates n\u00c3\u00a9 en $dn, vous avez donc ans.\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo quelle est votre ann\u00c3\u00a9e de naissance\\ ?\n",
-      "read dn\n",
-      "echo vous \u00c3\u00aates n\u00c3\u00a9 en $dn, vous avez donc ans.\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo quelle est votre ann\u00c3\u00a9e de naissance\\ ?\n",
-      "read dn\n",
-      "echo vous \u00c3\u00aates n\u00c3\u00a9 en $dn, vous avez donc expr date \"+%Y\"-$dn ans.\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo quelle est votre ann\u00c3\u00a9e de naissance\\ ?\n",
-      "read dn\n",
-      "echo vous \u00c3\u00aates n\u00c3\u00a9 en $dn, vous avez donc `expr date \"+%Y\"` - $dn ans.\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo quelle est votre ann\u00c3\u00a9e de naissance\\ ?\n",
-      "read dn\n",
-      "echo vous \u00c3\u00aates n\u00c3\u00a9 en $dn, vous avez donc expr `date \"+%Y\"` - $dn ans.\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo quelle est votre ann\u00c3\u00a9e de naissance\\ ?\n",
-      "read dn\n",
-      "echo vous \u00c3\u00aates n\u00c3\u00a9 en $dn, vous avez donc `expr `date \"+%Y\"` - $dn` ans.\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo quelle est votre ann\u00c3\u00a9e de naissance\\ ?\n",
-      "read dn\n",
-      "echo vous \u00c3\u00aates n\u00c3\u00a9 en $dn, vous avez donc `expr date \"+%Y\" - $dn` ans.\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo quelle est votre ann\u00c3\u00a9e de naissance\\ ?\n",
-      "read dn\n",
-      "echo vous \u00c3\u00aates n\u00c3\u00a9 en $dn, vous avez donc \\ expr `date \"+%Y\"` - $dn ans.\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo quelle est votre ann\u00c3\u00a9e de naissance\\ ?\n",
-      "read dn\n",
-      "echo vous \u00c3\u00aates n\u00c3\u00a9 en $dn, vous avez donc \\ expr `date \"+%Y\"` - $dn ans.\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo quelle est votre ann\u00c3\u00a9e de naissance\\ ?\n",
-      "read dn\n",
-      "echo vous \u00c3\u00aates n\u00c3\u00a9 en $dn, vous avez donc expr ``date \"+%Y\"` - $dn` ans.\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo quelle est votre ann\u00c3\u00a9e de naissance\\ ?\n",
-      "read dn\n",
-      "echo vous \u00c3\u00aates n\u00c3\u00a9 en $dn, vous avez donc expr `date \"+%Y\"` - $dn` ans.\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo quelle est votre ann\u00c3\u00a9e de naissance\\ ?\n",
-      "read dn\n",
-      "echo vous \u00c3\u00aates n\u00c3\u00a9 en $dn, vous avez donc expr `date \"+%Y\" - $dn` ans.\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo quelle est votre ann\u00c3\u00a9e de naissance\\ ?\n",
-      "read dn\n",
-      "echo vous \u00c3\u00aates n\u00c3\u00a9 en $dn, vous avez donc `expr` `date \"+%Y\"` - $dn ans.\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo quelle est votre ann\u00c3\u00a9e de naissance\\ ?\n",
-      "read dn\n",
-      "echo vous \u00c3\u00aates n\u00c3\u00a9 en $dn, vous avez donc `expr``date \"+%Y\"` - $dn ans.\n"
-    ]
+    {
+      "name": "tp5bis_exo1.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "expr $1 / 2\n",
+        "echo $(($1 / 2))\n",
+        "\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo2.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "expr $1 \\* $2\n",
+        "echo $(($1 * $2))\n"
+      ]
+    },
+    {
+      "name": "tp5bis_exo3.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo quelle est votre ann\u00c3\u00a9e de naissance\\ ?\n",
+        "read dn\n",
+        "echo vous \u00c3\u00aates n\u00c3\u00a9 en $dn, vous avez donc `expr``date \"+%Y\"` - $dn ans.\n"
+      ]
+    }
   ],
   "profile": [
     {

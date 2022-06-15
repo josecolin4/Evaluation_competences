@@ -2,100 +2,43 @@
   "name": "ext_Philemon.Hinfray-Cacheux",
   "session": 2,
   "scripts": [
-    [
-      "#!/bin/bash\n",
-      "cat $1 $2>$3\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo Nous sommes le \\`date\\`\n",
-      "echo Nous sommes le `date`\n",
-      "echo Ceci est\n",
-      "echo une tr\u00c3\u00a8s\n",
-      "echo longue phrase...\n",
-      "echo Voici une \u00c3\u00a9toile : \\*\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "$1=$1+1\n",
-      "echo valeur : $$1\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "$$1=$$1+1\n",
-      "echo valeur : $$1\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "$1=$$1+1\n",
-      "echo valeur : $$1\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "$1=$1+1\n",
-      "echo valeur : $$1\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "$1=$1+1\n",
-      "echo valeur : $1\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "$$1=$1+1\n",
-      "echo valeur : $1\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "$1=$($1+1)\n",
-      "echo valeur : $1\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "valeur=$($1+1)\n",
-      "echo valeur : $valeur\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "valeur=$(($1+1))\n",
-      "echo valeur : $valeur\n",
-      "\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo ancien PATH $PATH\n",
-      "$PATH= \n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo ancien PATH $PATH\n",
-      "$PATH=$PATH+$BASH\n",
-      "echo Nouveau PATH $PATH\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo ancien PATH $PATH\n",
-      "export PATH=$PATH$BASH\n",
-      "echo Nouveau PATH $PATH\n"
-    ],
-    [
-      "#!/bin/bash\n",
-      "echo ancien PATH $PATH\n",
-      "export PATH=$PATH:$BASH\n",
-      "echo Nouveau PATH $PATH\n"
-    ]
+    {
+      "name": "tp5_exo6.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "cat $1 $2>$3\n"
+      ]
+    },
+    {
+      "name": "tp5_exo7.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo Nous sommes le \\`date\\`\n",
+        "echo Nous sommes le `date`\n",
+        "echo Ceci est\n",
+        "echo une tr\u00c3\u00a8s\n",
+        "echo longue phrase...\n",
+        "echo Voici une \u00c3\u00a9toile : \\*\n"
+      ]
+    },
+    {
+      "name": "tp5_exo8.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "valeur=$(($1+1))\n",
+        "echo valeur : $valeur\n",
+        "\n"
+      ]
+    },
+    {
+      "name": "tp5_exo9.sh",
+      "lines": [
+        "#!/bin/bash\n",
+        "echo ancien PATH $PATH\n",
+        "export PATH=$PATH:$BASH\n",
+        "echo Nouveau PATH $PATH\n"
+      ]
+    }
   ],
   "profile": [
     {
