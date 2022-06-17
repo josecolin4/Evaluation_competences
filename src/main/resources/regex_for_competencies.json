@@ -1,25 +1,37 @@
 {
-  "competencies": [
+  "regexForCompetencies": [
     {
-      "name": "Conna\u00c3\u00aetre_la_syntaxe_de_instruction_set",
+      "competencyName": "Conna\u00c3\u00aetre_la_syntaxe_de_instruction_set",
       "regex": [
         "(.*;)?set(;.*)?",
         ".*\\$(set).*",
         ".*`set`.*",
         "(.*;)?set .+"
+      ],
+      "weights": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
       ]
     },
     {
-      "name": "Conna\u00c3\u00aetre_les_variables_denvironnement",
+      "competencyName": "Conna\u00c3\u00aetre_les_variables_denvironnement",
       "regex": [
         "(.*;)?env(;.*)?",
         ".*\\$(env).*",
         ".*`env`.*",
         ".*\\$PATH.*"
+      ],
+      "weights": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
       ]
     },
     {
-      "name": "Conna\u00c3\u00aetre_les_variables_sp\u00c3\u00a9ciales",
+      "competencyName": "Conna\u00c3\u00aetre_les_variables_sp\u00c3\u00a9ciales",
       "regex": [
         ".*\\$#.*",
         ".*\\$\\-.*",
@@ -28,12 +40,35 @@
         ".*\\$!.*",
         ".*\\$0.*",
         ".*\\$\\*.*"
+      ],
+      "weights": [
+        0.2,
+        0.2,
+        0.2,
+        0.2,
+        0.2,
+        0.2,
+        0.2
       ]
     },
     {
-      "name": "Afficher_le_manuel_dune_commande_Unix",
+      "competencyName": "Afficher_le_manuel_dune_commande_Unix",
       "regex": [
         "man .+"
+      ],
+      "weights": [
+        1
+      ]
+    },
+    {
+      "competencyName": "Affecter_une_valeur_\u00c3\u00a0_une_variable",
+      "regex": [
+        "(.*;)?.+=.+(;.*)?",
+        "(.*;)?read .+(;.*)?"
+      ],
+      "weights": [
+        0.5,
+        0.5
       ]
     }
   ]

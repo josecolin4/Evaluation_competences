@@ -15,17 +15,21 @@ public class TestAllStudents {
         double minError = 0.2;
 
         List<String> toEvaluate = List.of(
-                                          //"Conna\u00c3\u00aetre_la_syntaxe_de_instruction_set",
-                                          //"Conna\u00c3\u00aetre_les_variables_denvironnement",
-                                          //"Conna\u00c3\u00aetre_les_variables_sp\u00c3\u00a9ciales",
-                                          "Afficher_le_manuel_dune_commande_Unix");
+                "Conna\u00c3\u00aetre_la_syntaxe_de_instruction_set"
+                //"Conna\u00c3\u00aetre_les_variables_denvironnement",
+                //"Conna\u00c3\u00aetre_les_variables_sp\u00c3\u00a9ciales",
+                //"Afficher_le_manuel_dune_commande_Unix",
+                //"Affecter_une_valeur_\u00c3\u00a0_une_variable"
+        );
 
         for (int session = 1; session <= 4; session++) {
-            System.out.println("session n°" + session + "\n");
+            System.out.println("\nsession n°" + session + "\n");
 
             HashMap<String, Double> totalError = new HashMap<>();
+            HashMap<String, Integer> nbOFStudentAbove06 = new HashMap<>();
             for (String competency : toEvaluate) {
                 totalError.put(competency, 0.0);
+                nbOFStudentAbove06.put(competency, 0);
             }
 
             double nbProfileTested = 1;
@@ -44,6 +48,9 @@ public class TestAllStudents {
                     HashMap<String, Double> error = ResultAnalyser.mesureError(generatedProfile, correctProfile, false);
                     for (String competency : error.keySet()) {
                         totalError.put(competency, totalError.get(competency) + error.get(competency));
+                        if (error.get(competency) >= 0.6) {
+                            nbOFStudentAbove06.put(competency, nbOFStudentAbove06.get(competency) + 1);
+                        }
 
                         if (error.get(competency) > minError) {
                             System.out.println(data.getName() + " : session " + session + " : " + competency + " : " + error.get(competency));
@@ -59,6 +66,11 @@ public class TestAllStudents {
             System.out.println("\naverage error at session " + session + " :");
             for (String competency : toEvaluate) {
                 System.out.println(competency + " : " + totalError.get(competency) / nbProfileTested);
+            }
+
+            System.out.println("\nnb of big errors ( >= 0.6 ) : ");
+            for (String competency : toEvaluate) {
+                System.out.println(competency + " : " + nbOFStudentAbove06.get(competency));
             }
 
         }

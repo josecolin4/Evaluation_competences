@@ -15,7 +15,7 @@ public class Main {
 //        Matcher matcher = pattern.matcher("ihrgihdorghdrgd;set;efsefs");
 //        System.out.println("match : " + matcher.matches());
 
-        BashUtils.isCommandSyntaxCorrect("> test.sh");
+        BashUtils.isCommandSyntaxCorrect("echo oui");
     }
 
     public static void visit(Tree tree, int depth){

@@ -1,6 +1,9 @@
 package src.evaluation;
 
+import src.evaluation.rating.RatingStrategy;
+import src.evaluation.rating.SimpleRating;
 import src.json.Command;
+import src.json.RegexRule;
 import src.json.StudentData;
 import src.util.JsonUtils;
 
@@ -23,31 +26,35 @@ public class SimpleEvaluationRegex extends Evaluation {
             profile.put(competency, 0.0);
         }
 
-        HashMap<String, List<String>> regexList = JsonUtils.getRegexForCompetenciesFromJson().getAllRegex();
+        HashMap<String, RegexRule> regexList = JsonUtils.getRegexForCompetenciesFromJson().getAllRegex();
 
         for (String competency : competenciesToEvaluate) {
             if (regexList.containsKey(competency)) {
-                // TODO implement a better strategy
-                int occurence = 0;
-                for (String regex : regexList.get(competency)) {
+
+                EvaluationResult result = new EvaluationResult();
+                for (String regex : regexList.get(competency).getRegexs()) {
 
                     for (List<String> script : data.getScripts()) {
                         String code = "";
                         for (String line : script) {
                             code += line;
                         }
-                        occurence += search(regex, code, printWhenFound) ? 1 : 0;
+                        if (search(regex, code, printWhenFound)) {
+                            result.addMatchForRegex(regex, code);
+                        }
                     }
 
                     for (Command command : data.getCommands()) {
-                        occurence += search(regex, command.getCommand(), printWhenFound) && command.getScore() ? 1 : 0;
+                        // TODO place the verification of the command elsewhere
+                        if (search(regex, command.getCommand(), printWhenFound) && command.getScore()) {
+                            result.addMatchForRegex(regex, command.getCommand());
+                        }
                     }
                 }
 
-                // TODO find better measurement
-                if (occurence >= 1) {
-                    profile.put(competency, 1.0);
-                }
+                result.checkSyntax();
+                RatingStrategy rating = new SimpleRating();
+                profile.put(competency, rating.rate(result, regexList.get(competency)));
             }
         }
 

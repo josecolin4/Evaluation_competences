@@ -8,16 +8,16 @@ import java.util.List;
 public class RegexForCompetencies {
 
     @Expose
-    private List<RegexForCompetency> competencies;
+    private List<RegexRule> regexForCompetencies;
 
-    public List<RegexForCompetency> getCompetencies() {
-        return competencies;
+    public List<RegexRule> getRegexForCompetencies() {
+        return regexForCompetencies;
     }
 
-    public HashMap<String, List<String>> getAllRegex() {
-        HashMap<String, List<String>> regexList = new HashMap<>();
-        for (RegexForCompetency regex : competencies) {
-            regexList.put(regex.getName(), regex.getRegex());
+    public HashMap<String, RegexRule> getAllRegex() {
+        HashMap<String, RegexRule> regexList = new HashMap<>();
+        for (RegexRule regexs : regexForCompetencies) {
+            regexList.put(regexs.getCompetencyName(), regexs);
         }
 
         return regexList;
