@@ -16,7 +16,7 @@ public class TestAllStudents {
 
         List<String> toEvaluate = List.of(
                 "Conna\u00c3\u00aetre_la_syntaxe_de_instruction_set"
-                //"Conna\u00c3\u00aetre_les_variables_denvironnement",
+                //"Conna\u00c3\u00aetre_les_variables_denvironnement"
                 //"Conna\u00c3\u00aetre_les_variables_sp\u00c3\u00a9ciales",
                 //"Afficher_le_manuel_dune_commande_Unix",
                 //"Affecter_une_valeur_\u00c3\u00a0_une_variable"

@@ -1,5 +1,7 @@
 package src.evaluation;
 
+import src.util.BashUtils;
+
 public class Match {
 
     private String code;
@@ -11,8 +13,7 @@ public class Match {
     }
 
     public void checkSyntax() {
-        // TODO
-        syntaxIsCorrect = true;
+        syntaxIsCorrect = BashUtils.isCommandSyntaxCorrect(code);
     }
 
     public boolean isSyntaxIsCorrect() {
