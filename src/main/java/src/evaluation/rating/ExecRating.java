@@ -5,18 +5,18 @@ import src.evaluation.Match;
 import src.json.RegexRule;
 
 /**
- * Rate by the number of matches
+ * Rate by the number of matches where the script is also executed without errors.
  * We count up to 1 match per regex.
  */
-public class SimpleRating implements RatingStrategy {
+public class ExecRating implements RatingStrategy {
 
     @Override
     public double rate(EvaluationResult result, RegexRule weights) {
         double rating = 0.0;
 
         for (String regex : result.getMatchesForRegex().keySet()) {
-            if (!result.getMatchesForRegex().get(regex).isEmpty()) {
-                rating += weights.getWeightForRegex(regex);
+            for (Match match : result.getMatchesForRegex().get(regex)) {
+                // TODO
             }
         }
 
@@ -25,6 +25,6 @@ public class SimpleRating implements RatingStrategy {
 
     @Override
     public String toString() {
-        return "simpleRating";
+        return "syntaxRating";
     }
 }

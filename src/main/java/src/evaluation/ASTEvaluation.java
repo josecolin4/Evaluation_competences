@@ -1,6 +1,7 @@
 package src.evaluation;
 
 import org.antlr.runtime.tree.Tree;
+import src.evaluation.rating.RatingStrategy;
 import src.json.StudentData;
 
 import java.util.HashMap;
@@ -14,10 +15,10 @@ import java.util.List;
  * If it is a skill, then we check if the command or the script runs correctly, and then
  * we increase the mastery in that competency
  */
-public class SimpleEvaluation extends Evaluation {
+public class ASTEvaluation extends Evaluation {
 
     @Override
-    public HashMap<String, Double> evaluate(StudentData data, List<String> competenciesToEvaluate, boolean printWhenFound) {
+    public HashMap<String, Double> evaluate(StudentData data, List<String> competenciesToEvaluate, boolean printWhenFound, RatingStrategy rating) {
         HashMap<String, Double> profile = new HashMap<>();
 
         // init at 0

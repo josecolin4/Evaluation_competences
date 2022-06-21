@@ -1,10 +1,27 @@
 package src.util;
 
 import java.io.*;
-import java.nio.file.Files;
-import java.nio.file.Path;
 
 public class BashUtils {
+
+    private static Process bashProcess;
+    private static BufferedWriter bashStdin;
+
+    static {
+        ProcessBuilder builder = new ProcessBuilder("bash.exe");
+        builder.directory(new File("test-env"));
+
+        try {
+            bashProcess = builder.start();
+            bashStdin = new BufferedWriter(new OutputStreamWriter(bashProcess.getOutputStream()));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public static boolean isCommandSyntaxCorrect(String code) {
+        return syntaxCheck(code).equals("");
+    }
 
     /**
      * Usage of the bash command
@@ -12,56 +29,46 @@ public class BashUtils {
      * to check the syntax of a script or command
      *
      * @param code
-     * @return
+     * @return return value of bash -n
      */
-    public synchronized static boolean isCommandSyntaxCorrect(String code) {
-        File file = new File("test-env/flag");
-        file.delete();
+    public static String syntaxCheck(String code) {
+        // clear output file
+        File fileOutput = new File("test-env/output");
+        fileOutput.delete();
 
-        ProcessBuilder builder = new ProcessBuilder("bash.exe");
-        builder.directory(new File("test-env"));
-
-        Process p = null;
         try {
-            p = builder.start();
-
-            BufferedWriter p_stdin =
-                    new BufferedWriter(new OutputStreamWriter(p.getOutputStream()));
-
-            // clear output file
-            p_stdin.write("> output;");
-            p_stdin.newLine();
-
             // rewrite the script in working directory
-            p_stdin.write("echo \"" + code + "\"" + " > script.sh;");
-            p_stdin.newLine();
+            File fileScript = new File("test-env/script.sh");
+            fileScript.delete();
+            fileScript.createNewFile();
+            FileWriter fileWriterScript = new FileWriter("test-env/script.sh");
+            fileWriterScript.write(code);
+            fileWriterScript.close();
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
 
-            p_stdin.write("bash -n script.sh &> output;");
-            p_stdin.newLine();
-
-            p_stdin.write("> flag;");
-            p_stdin.newLine();
-
-            p_stdin.write("exit;");
-            p_stdin.newLine();
-
-            p_stdin.write("exit");
-            p_stdin.newLine();
-            p_stdin.flush();
+        try {
+            bashStdin.write("bash -n script.sh &> output;");
+            bashStdin.newLine();
+            bashStdin.flush();
         } catch (IOException e) {
             e.printStackTrace();
         }
 
-
-        // check validity of the script (check if output of bash -n is empty)
         try {
             // wait for the process to finish printing the output
-            file = new File("test-env/flag");
-            while (!file.exists());
-            p.destroy();
+            while (!fileOutput.exists());
 
             BufferedReader reader = new BufferedReader(new FileReader("test-env/output"));
-            return reader.readLine() == null;
+            StringBuilder result = new StringBuilder();
+            String line = reader.readLine();
+            while (line != null) {
+                result.append(line);
+                line = reader.readLine();
+            }
+
+            return result.toString();
         } catch (IOException e) {
             throw new RuntimeException(e);
         }

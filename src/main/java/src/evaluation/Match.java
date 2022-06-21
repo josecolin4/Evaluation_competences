@@ -16,7 +16,7 @@ public class Match {
         syntaxIsCorrect = BashUtils.isCommandSyntaxCorrect(code);
     }
 
-    public boolean isSyntaxIsCorrect() {
+    public boolean isSyntaxCorrect() {
         return syntaxIsCorrect;
     }
 }

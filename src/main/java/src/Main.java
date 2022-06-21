@@ -16,6 +16,7 @@ public class Main {
 //        System.out.println("match : " + matcher.matches());
 
         System.out.println(BashUtils.isCommandSyntaxCorrect("echo oui\nls -l\necho voila\nif fi") ? "oui" : "non");
+        //System.out.println(BashUtils.isCommandSyntaxCorrect("#!bin/bash\necho cours\ncours=unix\necho $cours\necho je suis en cours\n") ? "oui" : "non");
     }
 
     public static void visit(Tree tree, int depth){

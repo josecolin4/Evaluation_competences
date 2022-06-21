@@ -1,6 +1,7 @@
 package src.evaluation;
 
 import org.antlr.runtime.tree.Tree;
+import src.evaluation.rating.RatingStrategy;
 import src.json.Command;
 import src.json.StudentData;
 import src.parser.BashParser;
@@ -11,7 +12,8 @@ import java.util.List;
 
 public abstract class Evaluation {
 
-    public abstract HashMap<String, Double> evaluate(StudentData data, List<String> competenciesToEvaluate, boolean printWhenFound);
+    public abstract HashMap<String, Double> evaluate(StudentData data, List<String> competenciesToEvaluate, boolean printWhenFound,
+                                                     RatingStrategy rating);
 
     public abstract HashMap<String, Double> evaluate(StudentData data);
 
