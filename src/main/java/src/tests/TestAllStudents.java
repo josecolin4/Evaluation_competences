@@ -1,7 +1,7 @@
 package src.tests;
 
 import src.evaluation.Evaluation;
-import src.evaluation.SimpleEvaluationRegex;
+import src.evaluation.EvaluationRegex;
 import src.evaluation.rating.SyntaxRating;
 import src.json.StudentData;
 import src.util.JsonUtils;
@@ -13,14 +13,17 @@ import java.util.stream.Collectors;
 public class TestAllStudents {
 
     public static void main(String[] args) {
-        double minError = 0.6;
+        double minError = 0.2;
 
         List<String> toEvaluate = List.of(
+                //"Conna\u00c3\u00aetre_la_syntaxe_IfThenElifElse"
+                //"Conna\u00c3\u00aetre_la_syntaxe_de_instruction_while"
+                //"Conna\u00c3\u00aetre_la_syntaxe_de_instruction_for"
                 //"Conna\u00c3\u00aetre_la_syntaxe_de_instruction_set"
-                "Conna\u00c3\u00aetre_les_variables_denvironnement"
+                //"Conna\u00c3\u00aetre_les_variables_denvironnement"
                 //"Conna\u00c3\u00aetre_les_variables_sp\u00c3\u00a9ciales",
                 //"Afficher_le_manuel_dune_commande_Unix",
-                //"Affecter_une_valeur_\u00c3\u00a0_une_variable"
+                "Affecter_une_valeur_\u00c3\u00a0_une_variable"
         );
 
         for (int session = 1; session <= 4; session++) {
@@ -41,7 +44,7 @@ public class TestAllStudents {
                 // keep only competencies to evaluate
                 data.setProfile(data.getProfile().stream().filter(studentCompetency -> toEvaluate.contains(studentCompetency.getName())).collect(Collectors.toList()));
 
-                Evaluation simpleEvaluation = new SimpleEvaluationRegex();
+                Evaluation simpleEvaluation = new EvaluationRegex();
                 HashMap<String, Double> generatedProfile = simpleEvaluation.evaluate(data, toEvaluate, false, new SyntaxRating());
                 HashMap<String, Double> correctProfile = data.getHashMapProfile();
 
@@ -67,7 +70,7 @@ public class TestAllStudents {
                 System.out.println(competency + " : " + totalError.get(competency) / nbProfileTested);
             }
 
-            System.out.println("\nnb of big errors ( >= 0.6 ) : ");
+            System.out.println("\nnb of big errors ( >= " + minError + " ) : ");
             for (String competency : toEvaluate) {
                 System.out.println(competency + " : " + nbOFStudentAboveMinError.get(competency));
             }

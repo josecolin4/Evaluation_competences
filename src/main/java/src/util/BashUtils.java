@@ -1,5 +1,9 @@
 package src.util;
 
+import org.antlr.runtime.tree.CommonErrorNode;
+import org.antlr.runtime.tree.Tree;
+import src.parser.BashParser;
+
 import java.io.*;
 
 public class BashUtils {
@@ -72,5 +76,25 @@ public class BashUtils {
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
+    }
+
+    public static boolean parsingCheck(String code) {
+        // remove empty lines
+        code = code.replaceAll("(?m)^[ \t]*\r?\n", "");
+
+        // check if contains error node
+        return !searchForError(BashParser.parse(code));
+    }
+
+    public static boolean searchForError(Tree tree) {
+        if (tree instanceof CommonErrorNode) {
+            return true;
+        }
+
+        boolean found = false;
+        for (int i = 0; i < tree.getChildCount(); i++) {
+            found = found || searchForError(tree.getChild(i));
+        }
+        return found;
     }
 }

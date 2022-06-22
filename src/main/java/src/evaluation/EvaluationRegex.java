@@ -1,8 +1,6 @@
 package src.evaluation;
 
 import src.evaluation.rating.RatingStrategy;
-import src.evaluation.rating.SimpleRating;
-import src.evaluation.rating.SyntaxRating;
 import src.json.Command;
 import src.json.RegexRule;
 import src.json.StudentData;
@@ -16,7 +14,7 @@ import java.util.regex.Pattern;
 /**
  * Works like SimpleEvaluation but using regex on the command and scripts text instead of an AST.
  */
-public class SimpleEvaluationRegex extends Evaluation {
+public class EvaluationRegex extends Evaluation {
 
     @Override
     public HashMap<String, Double> evaluate(StudentData data, List<String> competenciesToEvaluate, boolean printWhenFound,
@@ -48,8 +46,7 @@ public class SimpleEvaluationRegex extends Evaluation {
                     }
 
                     for (Command command : data.getCommands()) {
-                        // TODO place the verification of the command elsewhere
-                        if (search(regex, command.getCommand(), printWhenFound) && command.getScore()) {
+                        if (search(regex, command.getCommand(), printWhenFound)) {
                             result.addMatchForRegex(regex, command.getCommand());
                         }
                     }

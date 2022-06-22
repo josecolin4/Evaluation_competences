@@ -10,6 +10,11 @@ public class StudentCompetency {
     @Expose
     private double mastery;
 
+    public StudentCompetency(String name, double mastery) {
+        this.name = name;
+        this.mastery = mastery;
+    }
+
     public String getName() {
         return name;
     }

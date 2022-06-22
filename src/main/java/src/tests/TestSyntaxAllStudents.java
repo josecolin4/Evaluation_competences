@@ -12,6 +12,8 @@ import java.util.List;
 public class TestSyntaxAllStudents {
 
     public static void main(String[] args) {
+        int nbOfIncorrectSyntax = 0;
+
         for (int session = 1; session <= 4; session++) {
             List<StudentData> studentDataList = JsonUtils.getAllStudentData(session);
             for (StudentData data : studentDataList) {
@@ -21,12 +23,14 @@ public class TestSyntaxAllStudents {
                         code += line;
                     }
 
-                    String result = BashUtils.syntaxCheck(code);
-                    if (!result.equals("")) {
-                        System.out.println("syntax incorrecte pour : " + data.getName() + "\n\n" + code + "\n" + result + "\n");
+                    if (!BashUtils.parsingCheck(code)) {
+                        nbOfIncorrectSyntax++;
+                        System.out.println("syntax incorrecte pour : " + data.getName() + "\n\n" + code + "\n");
                     }
                 }
             }
         }
+
+        System.out.println("total : " + nbOfIncorrectSyntax);
     }
 }

@@ -4,13 +4,17 @@ import com.google.gson.FieldNamingPolicy;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import src.json.RegexForCompetencies;
+import src.json.StudentCompetency;
 import src.json.StudentData;
 
 import java.io.File;
+import java.io.FileOutputStream;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class JsonUtils {
 
@@ -63,14 +67,18 @@ public class JsonUtils {
         }
     }
 
-//    public static void bashNodeToJson(List<BashNode> nodes) {
-//        File file = new File("src/main/resources/nodes_with_competencies.json");
-//        try (FileOutputStream fos = new FileOutputStream(file)) {
-//            Nodes allNodes = new Nodes(nodes);
-//            fos.write(gson.toJson(allNodes, Nodes.class).getBytes());
-//            fos.flush();
-//        } catch (IOException e) {
-//            throw new RuntimeException(e);
-//        }
-//    }
+    public static void profileToJson(HashMap<String, Double> profile, String studentName, int session) {
+        List<StudentCompetency> jsonProfile = new ArrayList<>();
+        for (Map.Entry<String, Double> competency : profile.entrySet()) {
+            jsonProfile.add(new StudentCompetency(competency.getKey(), competency.getValue()));
+        }
+
+        File file = new File("src/main/resources/generated/session" + session + "/" + studentName + ".json");
+        try (FileOutputStream fos = new FileOutputStream(file)) {
+            fos.write(gson.toJson(jsonProfile).getBytes());
+            fos.flush();
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+    }
 }

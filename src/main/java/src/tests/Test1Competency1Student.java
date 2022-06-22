@@ -1,7 +1,7 @@
 package src.tests;
 
 import src.evaluation.Evaluation;
-import src.evaluation.SimpleEvaluationRegex;
+import src.evaluation.EvaluationRegex;
 import src.evaluation.rating.SyntaxRating;
 import src.json.StudentData;
 import src.util.JsonUtils;
@@ -26,7 +26,7 @@ public class Test1Competency1Student {
         // keep only 1 competency
         data.setProfile(data.getProfile().stream().filter(studentCompetency -> studentCompetency.getName().equals(toEvaluate)).collect(Collectors.toList()));
 
-        Evaluation simpleEvaluation = new SimpleEvaluationRegex();
+        Evaluation simpleEvaluation = new EvaluationRegex();
         HashMap<String, Double> generatedProfile = simpleEvaluation.evaluate(data, new ArrayList<>(Collections.singleton(toEvaluate)),
                 true, new SyntaxRating());
         HashMap<String, Double> correctProfile = data.getHashMapProfile();

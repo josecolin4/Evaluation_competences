@@ -7,16 +7,19 @@ import src.util.BashUtils;
 public class Main {
 
     public static void main(String[] args) {
-//        BashParser parser = new BashParser();
-//        Tree tree = parser.parse("if condition\n then; echo bonjour; fi");
-//        visit(tree, 0);
-
+        String code = "#!/bin/bash\n" +
+                "echo cours\n" +
+                "cours=unix\n" +
+                "echo $cours\n" +
+                "echo je suis en cours\n";
+        System.out.println(BashUtils.parsingCheck(code) ? "pas d'erreur" : "erreur");
+        visit(BashParser.parse(code), 0);
 //        Pattern pattern = Pattern.compile("(.*;)?set(;.*)?");
 //        Matcher matcher = pattern.matcher("ihrgihdorghdrgd;set;efsefs");
 //        System.out.println("match : " + matcher.matches());
 
-        System.out.println(BashUtils.isCommandSyntaxCorrect("echo oui\nls -l\necho voila\nif fi") ? "oui" : "non");
-        //System.out.println(BashUtils.isCommandSyntaxCorrect("#!bin/bash\necho cours\ncours=unix\necho $cours\necho je suis en cours\n") ? "oui" : "non");
+        //System.out.println(BashUtils.isCommandSyntaxCorrect("echo oui\nls -l\necho voila\nif fi") ? "oui" : "non");
+        //System.out.println(BashUtils.isCommandSyntaxCorrect("#!/bin/bash\nset -- $(ls -l tp5bis_exo3.sh)\necho $5\n") ? "oui" : "non");
     }
 
     public static void visit(Tree tree, int depth){

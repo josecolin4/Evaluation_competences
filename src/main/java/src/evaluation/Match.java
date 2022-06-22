@@ -13,7 +13,7 @@ public class Match {
     }
 
     public void checkSyntax() {
-        syntaxIsCorrect = BashUtils.isCommandSyntaxCorrect(code);
+        syntaxIsCorrect = BashUtils.parsingCheck(code);
     }
 
     public boolean isSyntaxCorrect() {

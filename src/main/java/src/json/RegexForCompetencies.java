@@ -10,10 +10,6 @@ public class RegexForCompetencies {
     @Expose
     private List<RegexRule> regexForCompetencies;
 
-    public List<RegexRule> getRegexForCompetencies() {
-        return regexForCompetencies;
-    }
-
     public HashMap<String, RegexRule> getAllRegex() {
         HashMap<String, RegexRule> regexList = new HashMap<>();
         for (RegexRule regexs : regexForCompetencies) {

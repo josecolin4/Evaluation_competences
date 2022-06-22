@@ -1,17 +1,50 @@
 {
   "regexForCompetencies": [
     {
+      "competencyName": "Conna\u00c3\u00aetre_la_syntaxe_de_instruction_for",
+      "regex": [
+        ".*for.*in.*do.*done.*"
+      ],
+      "weights": [
+        1
+      ]
+    },
+    {
+      "competencyName": "Conna\u00c3\u00aetre_la_syntaxe_IfThenElifElse",
+      "regex": [
+        ".*if.*then.*(else)?.*fi.*"
+      ],
+      "weights": [
+        1
+      ]
+    },
+    {
+      "competencyName": "Conna\u00c3\u00aetre_la_syntaxe_de_instruction_while",
+      "regex": [
+        ".*while.*do.*done.*"
+      ],
+      "weights": [
+        1
+      ]
+    },
+    {
       "competencyName": "Conna\u00c3\u00aetre_la_syntaxe_de_instruction_set",
       "regex": [
         "(.*;)?set(;.*)?",
         ".*\\$(set).*",
         ".*`set`.*",
-        "(.*;)?set .+"
+        "(.*;)?set .+",
+        "(.*;)?set \\| .+",
+        "(.*;)?set >> .+",
+        "(.*;)?set > .+"
       ],
       "weights": [
         0.4,
         0.15,
         0.15,
+        0.3,
+        0.3,
+        0.3,
         0.3
       ]
     },
@@ -21,13 +54,19 @@
         "(.*;)?env(;.*)?",
         ".*\\$(env).*",
         ".*`env`.*",
-        ".*\\$PATH.*"
+        ".*\\$PATH.*",
+        "(.*;)?env \\| .+",
+        "(.*;)?env >> .+",
+        "(.*;)?env > .+"
       ],
       "weights": [
         0.6,
         0.15,
         0.15,
-        0.1
+        0.1,
+        0.3,
+        0.3,
+        0.3
       ]
     },
     {
