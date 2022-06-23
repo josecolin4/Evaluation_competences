@@ -17,14 +17,20 @@ public class CompareStrategy {
     public static void main(String[] args) {
         List<RatingStrategy> strategies = List.of(new SyntaxRating(), new SimpleRating());
         List<String> toEvaluate = List.of(
-                "Conna\u00c3\u00aetre_la_syntaxe_IfThenElifElse"
+                //"Banaliser_un_caract\u00c3\u00a8re"
+                //"Conna\u00c3\u00aetre_la_syntaxe_IfThenElifElse"
                 //"Conna\u00c3\u00aetre_la_syntaxe_de_instruction_while"
                 //"Conna\u00c3\u00aetre_la_syntaxe_de_instruction_for"
                 //"Conna\u00c3\u00aetre_la_syntaxe_de_instruction_set"
                 //"Conna\u00c3\u00aetre_les_variables_denvironnement"
                 //"Conna\u00c3\u00aetre_les_variables_sp\u00c3\u00a9ciales"
+                //"Afficher_le_contenu_de_un_fichier_Unix"
                 //"Afficher_le_manuel_dune_commande_Unix",
+                //"Interpr\u00c3\u00a9ter_de_fa\u00c3\u00a7on_num\u00c3\u00a9rique_la_valeur_dune_variable"
+                //"Tester_l\u00c3\u00a9tat_dun_fichier"
                 //"Affecter_une_valeur_\u00c3\u00a0_une_variable"
+                //"Cr\u00c3\u00a9er_un_fichier_Unix"
+                "Modifier_les_droits_dun_fichier_Unix"
         );
 
         for (int session = 1; session <= 4; session++) {

@@ -14,7 +14,7 @@ public class Command {
     private int score;
 
     public String getCommand() {
-        return command + " " + args; // concat command name & args
+        return command + " " + args;
     }
 
     public boolean getScore() {

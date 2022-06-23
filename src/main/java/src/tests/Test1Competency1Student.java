@@ -17,9 +17,9 @@ import java.util.stream.Collectors;
 public class Test1Competency1Student {
 
     public static void main(String[] args) {
-        String studentName = "ext_Alexis.Duval";
-        int session = 1;
-        String toEvaluate = "Conna\u00c3\u00aetre_la_syntaxe_de_instruction_set";
+        String studentName = "ext_Abrina.Vandal";
+        int session = 4;
+        String toEvaluate = "Interpr\u00c3\u00a9ter_de_fa\u00c3\u00a7on_num\u00c3\u00a9rique_la_valeur_dune_variable";
 
         StudentData data = JsonUtils.getStudentDataFromJson(studentName, session);
 

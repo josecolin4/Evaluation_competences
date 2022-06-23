@@ -81,4 +81,19 @@ public class JsonUtils {
             throw new RuntimeException(e);
         }
     }
+
+    public static void globalProfileToJson(HashMap<String, Double> profile, String studentName) {
+        List<StudentCompetency> jsonProfile = new ArrayList<>();
+        for (Map.Entry<String, Double> competency : profile.entrySet()) {
+            jsonProfile.add(new StudentCompetency(competency.getKey(), competency.getValue()));
+        }
+
+        File file = new File("src/main/resources/generated/global/" + studentName + ".json");
+        try (FileOutputStream fos = new FileOutputStream(file)) {
+            fos.write(gson.toJson(jsonProfile).getBytes());
+            fos.flush();
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+    }
 }
