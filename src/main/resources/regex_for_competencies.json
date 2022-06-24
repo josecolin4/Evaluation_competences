@@ -12,7 +12,7 @@
     {
       "competencyName": "Conna\u00c3\u00aetre_la_syntaxe_IfThenElifElse",
       "regex": [
-        ".*if.*then.*(else)?.*fi.*"
+        ".*if.*then.*fi.*"
       ],
       "weights": [
         1

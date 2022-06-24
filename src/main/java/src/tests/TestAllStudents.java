@@ -18,7 +18,7 @@ public class TestAllStudents {
         List<String> toEvaluate = List.of(
                 //"Banaliser_un_caract\u00c3\u00a8re"
                 //"Conna\u00c3\u00aetre_la_syntaxe_IfThenElifElse"
-                //"Conna\u00c3\u00aetre_la_syntaxe_de_instruction_while"
+                "Conna\u00c3\u00aetre_la_syntaxe_de_instruction_while"
                 //"Conna\u00c3\u00aetre_la_syntaxe_de_instruction_for"
                 //"Conna\u00c3\u00aetre_la_syntaxe_de_instruction_set"
                 //"Conna\u00c3\u00aetre_les_variables_denvironnement"
@@ -29,7 +29,7 @@ public class TestAllStudents {
                 //"Tester_l\u00c3\u00a9tat_dun_fichier"
                 //"Affecter_une_valeur_\u00c3\u00a0_une_variable"
                 //"Cr\u00c3\u00a9er_un_fichier_Unix"
-                "Modifier_les_droits_dun_fichier_Unix"
+                //"Modifier_les_droits_dun_fichier_Unix"
         );
 
         for (int session = 1; session <= 4; session++) {
