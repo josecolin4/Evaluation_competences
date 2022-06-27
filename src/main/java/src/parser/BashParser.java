@@ -8,6 +8,8 @@ import org.antlr.runtime.tree.Tree;
 import src.libbash.java_libbashLexer;
 import src.libbash.java_libbashParser;
 
+import java.io.OutputStream;
+import java.io.PrintStream;
 import java.lang.reflect.Field;
 import java.lang.reflect.Modifier;
 import java.util.ArrayList;
@@ -39,6 +41,13 @@ public class BashParser {
                 }
             }
         }
+
+        // remove stderr to avoid printing from the lexer/parser
+        System.setErr(new PrintStream(new OutputStream() {
+            public void write(int b) {
+                // nothing
+            }
+        }));
     }
 
     public static Tree parse(String code) {

@@ -2,6 +2,7 @@ package src.evaluation;
 
 import src.evaluation.rating.RatingStrategy;
 import src.json.Command;
+import src.json.GlobalCompetency;
 import src.json.RegexRule;
 import src.json.StudentData;
 import src.util.JsonUtils;
@@ -55,6 +56,11 @@ public class EvaluationRegex extends Evaluation {
                 result.checkSyntax();
                 profile.put(competency, rating.rate(result, regexList.get(competency)));
             }
+        }
+
+        // now evaluate global competencies
+        for (GlobalCompetency globalCompetency : JsonUtils.getRegexForCompetenciesFromJson().getGlobalCompetencies()) {
+            profile.put(globalCompetency.getName(), globalCompetency.evaluate(profile));
         }
 
         return profile;

@@ -1,18 +1,18 @@
 {
+  "globalCompetencies": [
+    {
+      "name": "R\u00c3\u00a9p\u00c3\u00a9ter_des_instructions",
+      "competencies": [
+        "Conna\u00c3\u00aetre_la_syntaxe_de_instruction_for",
+        "Conna\u00c3\u00aetre_la_syntaxe_de_instruction_while"
+      ]
+    }
+  ],
   "regexForCompetencies": [
     {
       "competencyName": "Conna\u00c3\u00aetre_la_syntaxe_de_instruction_for",
       "regex": [
         ".*for.*in.*do.*done.*"
-      ],
-      "weights": [
-        1
-      ]
-    },
-    {
-      "competencyName": "Conna\u00c3\u00aetre_la_syntaxe_IfThenElifElse",
-      "regex": [
-        ".*if.*then.*fi.*"
       ],
       "weights": [
         1
@@ -42,6 +42,15 @@
         0.15,
         0.3,
         0.3
+      ]
+    },
+    {
+      "competencyName": "Conna\u00c3\u00aetre_la_syntaxe_IfThenElifElse",
+      "regex": [
+        ".*if.*then.*fi.*"
+      ],
+      "weights": [
+        1
       ]
     },
     {
