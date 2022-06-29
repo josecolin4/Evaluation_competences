@@ -5,6 +5,7 @@ import src.json.Command;
 import src.json.GlobalCompetency;
 import src.json.RegexRule;
 import src.json.StudentData;
+import src.util.BashUtils;
 import src.util.JsonUtils;
 
 import java.util.HashMap;
@@ -60,7 +61,9 @@ public class EvaluationRegex extends Evaluation {
 
         // now evaluate global competencies
         for (GlobalCompetency globalCompetency : JsonUtils.getRegexForCompetenciesFromJson().getGlobalCompetencies()) {
-            profile.put(globalCompetency.getName(), globalCompetency.evaluate(profile));
+            if (competenciesToEvaluate.contains(globalCompetency.getName())) {
+                profile.put(globalCompetency.getName(), globalCompetency.evaluate(profile));
+            }
         }
 
         return profile;
@@ -71,16 +74,18 @@ public class EvaluationRegex extends Evaluation {
         return null;
     }
 
-    public boolean search(String regex, String codeLine, boolean printWhenFound) {
+    public static boolean search(String regex, String code, boolean printWhenFound) {
+        code = BashUtils.removeUselessWhiteSpace(code);
+
         // remove \n to avoid problems with matcher
-        codeLine = codeLine.replace("\n", ";");
+        code = code.replace("\n", ";");
 
         Pattern pattern = Pattern.compile(regex);
-        Matcher matcher = pattern.matcher(codeLine);
+        Matcher matcher = pattern.matcher(code);
 
         if (matcher.matches()) {
             if (printWhenFound) {
-                System.out.println(regex + "matched with command : " + codeLine);
+                System.out.println(regex + "matched with command : " + code);
             }
             return true;
         } else {

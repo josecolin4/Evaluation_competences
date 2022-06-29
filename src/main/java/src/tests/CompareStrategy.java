@@ -23,7 +23,7 @@ public class CompareStrategy {
                 //"Conna\u00c3\u00aetre_la_syntaxe_de_instruction_while"
                 //"Conna\u00c3\u00aetre_la_syntaxe_de_instruction_for"
                 //"Conna\u00c3\u00aetre_la_syntaxe_de_instruction_set"
-                "Conna\u00c3\u00aetre_les_variables_denvironnement"
+                //"Conna\u00c3\u00aetre_les_variables_denvironnement"
                 //"Conna\u00c3\u00aetre_les_variables_sp\u00c3\u00a9ciales"
                 //"Afficher_le_contenu_de_un_fichier_Unix"
                 //"Afficher_le_manuel_dune_commande_Unix",

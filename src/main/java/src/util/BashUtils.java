@@ -5,6 +5,8 @@ import org.antlr.runtime.tree.Tree;
 import src.parser.BashParser;
 
 import java.io.*;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class BashUtils {
 
@@ -96,5 +98,19 @@ public class BashUtils {
             found = found || searchForError(tree.getChild(i));
         }
         return found;
+    }
+
+    /**
+     * Format the code to remove useless white spaces :
+     *      - double space
+     *      - tabulation and spaces at start and end of line
+     * @param code
+     * @return
+     */
+    public static String removeUselessWhiteSpace(String code) {
+        code = code.replaceAll("  +", " "); // remove extra spaces
+        code = code.replaceAll("\n[ \t]+", "\n"); // clear start of line
+        code = code.replaceAll("[ \t]+\n", "\n"); // clear end of line
+        return code;
     }
 }
