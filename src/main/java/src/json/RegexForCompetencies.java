@@ -29,4 +29,19 @@ public class RegexForCompetencies {
         }
         return globalCompetencies;
     }
+
+    public int getCompetencyIndex(String competencyName) {
+        for (int i = 0; i < globalCompetencies.size(); i++) {
+            if (globalCompetencies.get(i).getName().equals(competencyName)) {
+                return i;
+            }
+        }
+        for (int i = 0; i < regexForCompetencies.size(); i++) {
+            if (regexForCompetencies.get(i).getCompetencyName().equals(competencyName)) {
+                return i + globalCompetencies.size();
+            }
+        }
+
+        return Integer.MAX_VALUE;
+    }
 }

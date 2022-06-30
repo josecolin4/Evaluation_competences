@@ -18,7 +18,7 @@ public class TestAllStudents {
 
         List<String> toEvaluate = List.of(
                 //"Banaliser_un_caract\u00c3\u00a8re"
-                //"Conna\u00c3\u00aetre_la_syntaxe_IfThenElifElse"
+                "Conna\u00c3\u00aetre_la_syntaxe_IfThenElifElse"
                 //"Conna\u00c3\u00aetre_la_syntaxe_de_instruction_while"
                 //"Conna\u00c3\u00aetre_la_syntaxe_de_instruction_for"
                 //"Conna\u00c3\u00aetre_la_syntaxe_de_instruction_set"
@@ -45,7 +45,7 @@ public class TestAllStudents {
                 //"Conna\u00c3\u00aetre_les_op\u00c3\u00a9rateurs_logiques"
                 //"Conna\u00c3\u00aetre_les_op\u00c3\u00a9rateurs_de_comparaison_num\u00c3\u00a9rique"
                 //"Conna\u00c3\u00aetre_les_op\u00c3\u00a9rateurs_de_comparaison_de_caract\u00c3\u00a8res"
-                "Conna\u00c3\u00aetre_la_syntaxe_de_instruction_seq"
+                //"Conna\u00c3\u00aetre_la_syntaxe_de_instruction_seq"
         );
 
         for (int session = 1; session <= 4; session++) {

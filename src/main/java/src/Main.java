@@ -12,19 +12,21 @@ public class Main {
 
     public static void main(String[] args) {
         String code = "#!/bin/bash\n" +
-        "echo Quelle est votre ann\u00c3\u00a9e de naissance?\n" +
-                "read ans\n" +
-                "echo Vous \u00c3\u00aates ne en $ans, vous avez donc `expr $(date +%Y) - $ans` ans\n";
+                "if test -r -a -w $1\n" +
+                "then\n" +
+                "\techo Le fichier $1 existe et est accessible en lecture et écriture.\n" +
+                "else\n" +
+                "\techo Le fichier $1 n\\'existe pas,o\\ù n est pas accessible en lecture,o\\ù n est pas \n" +
+                "fi\n";
         //System.out.println(BashUtils.parsingCheck(code) ? "pas d'erreur" : "erreur");
-        //visit(BashParser.parse(code), 0);
+        visit(BashParser.parse(code), 0);
 //        Pattern pattern = Pattern.compile("[a-zA-Z0-9_]+");
 //        Matcher matcher = pattern.matcher("");
 //        System.out.println("match : " + matcher.matches());
-        System.out.println(EvaluationRegex.search(".*\\[ .* [0-9\\$].* -((eq)|(ne)|(gt)|(lt)|(ge)|(le)) [0-9\\$].* .* \\].+",
-                "if [ $1 -gt 5 -a $1 -lt 10 ]\n",
-                true));
+//        System.out.println(EvaluationRegex.search(".*\\[ .* [0-9\\$].* -((eq)|(ne)|(gt)|(lt)|(ge)|(le)) [0-9\\$].* .* \\].+",
+//                "if [ $1 -gt 5 -a $1 -lt 10 ]\n",
+//                true));
 
-        //System.out.println(BashUtils.isCommandSyntaxCorrect("echo oui\nls -l\necho voila\nif fi") ? "oui" : "non");
         //System.out.println(BashUtils.isCommandSyntaxCorrect("#!/bin/bash\nset -- $(ls -l tp5bis_exo3.sh)\necho $5\n") ? "oui" : "non");
 
         // test

@@ -11,15 +11,14 @@ import java.io.File;
 import java.io.FileOutputStream;
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public class JsonUtils {
 
     private static final GsonBuilder gsonBuilder;
     private static Gson gson;
+
+    private static RegexForCompetencies regexForCompetencies;
 
     static {
         gsonBuilder = new GsonBuilder();
@@ -59,9 +58,14 @@ public class JsonUtils {
     }
 
     public static RegexForCompetencies getRegexForCompetenciesFromJson() {
+        if (regexForCompetencies != null) {
+            return regexForCompetencies;
+        }
+
         File file = new File("src/main/resources/regex_for_competencies.json");
         try (FileReader fileReader = new FileReader(file)) {
-            return gson.fromJson(fileReader, RegexForCompetencies.class);
+            regexForCompetencies = gson.fromJson(fileReader, RegexForCompetencies.class);
+            return regexForCompetencies;
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
@@ -72,6 +76,9 @@ public class JsonUtils {
         for (Map.Entry<String, Double> competency : profile.entrySet()) {
             jsonProfile.add(new StudentCompetency(competency.getKey(), competency.getValue()));
         }
+
+        jsonProfile.sort(Comparator.comparingInt(competency ->
+                regexForCompetencies.getCompetencyIndex(competency.getName())));
 
         File file = new File("src/main/resources/generated/session" + session + "/" + studentName + ".json");
         try (FileOutputStream fos = new FileOutputStream(file)) {
