@@ -14,15 +14,16 @@ public class SyntaxWithErrorRating implements RatingStrategy {
         double rating = 0.0;
 
         for (String regex : result.getMatchesForRegex().keySet()) {
-            int nbOfErrors = 0; // nb of syntax error for all the matches on this regex
+            int nbOfErrors = 0;
             int nbOfCorrect = 0;
+            int maxNbOfError = weights.getNumberOfPossibleLossForRegex(regex);
+            int maxNbOfCorrect = weights.getNumberOfPossibleGainForRegex(regex);
             for (Match match : result.getMatchesForRegex().get(regex)) {
-                if (match.isSyntaxCorrect() && nbOfCorrect < 1) {
+                if (match.isSyntaxCorrect() && nbOfCorrect < maxNbOfCorrect) {
                     rating += weights.getWeightForRegex(regex);
                     nbOfCorrect++;
-                } else if (!match.isSyntaxCorrect() && nbOfErrors < 2){
-                    // TODO make this value not a constant
-                    rating -= weights.getWeightForRegex(regex) / 2;
+                } else if (!match.isSyntaxCorrect() && nbOfErrors < maxNbOfError){
+                    rating -= weights.getErrorWeightForRegex(regex);
                     nbOfErrors++;
                 }
             }
