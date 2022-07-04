@@ -47,7 +47,7 @@ public class JsonUtils {
         if (dir.isDirectory()) {
             for (File file : dir.listFiles()) {
                 try (FileReader fileReader = new FileReader(file)) {
-                     data.add(gson.fromJson(fileReader, StudentData.class));
+                    data.add(gson.fromJson(fileReader, StudentData.class));
                 } catch (IOException e) {
                     throw new RuntimeException(e);
                 }
@@ -83,6 +83,17 @@ public class JsonUtils {
         File file = new File("src/main/resources/generated/session" + session + "/" + studentName + ".json");
         try (FileOutputStream fos = new FileOutputStream(file)) {
             fos.write(gson.toJson(jsonProfile).getBytes());
+            fos.flush();
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    public static void profileWithRegexMatchToJson(List<Integer> regexMatches,
+                                                   StudentCompetency competency, String studentName, int session) {
+        File file = new File("src/main/resources/generated_regex_matches/session" + session + "/" + studentName + ".json");
+        try (FileOutputStream fos = new FileOutputStream(file)) {
+            fos.write(gson.toJson(competency).getBytes());
             fos.flush();
         } catch (IOException e) {
             throw new RuntimeException(e);

@@ -140,7 +140,7 @@
     {
       "competencyName": "Conna\u00c3\u00aetre_la_notion_de_variable",
       "regex": [
-        ".*\\$[a-zA-Z0-9_]+( .*)?",
+        ".*\\$\\w+.*",
         "(.*;)?\\w+=[^;]+(;.*)?",
         "(.*;)?read \\w+(;.*)?"
       ],
