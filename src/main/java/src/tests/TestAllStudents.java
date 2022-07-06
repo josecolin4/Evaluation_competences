@@ -18,7 +18,7 @@ public class TestAllStudents {
 
         List<String> toEvaluate = List.of(
                 //"Banaliser_un_caract\u00c3\u00a8re"
-                "Conna\u00c3\u00aetre_la_syntaxe_IfThenElifElse"
+                //"Conna\u00c3\u00aetre_la_syntaxe_IfThenElifElse"
                 //"Conna\u00c3\u00aetre_la_syntaxe_de_instruction_while"
                 //"Conna\u00c3\u00aetre_la_syntaxe_de_instruction_for"
                 //"Conna\u00c3\u00aetre_la_syntaxe_de_instruction_set"
@@ -27,7 +27,7 @@ public class TestAllStudents {
                 //"Obtenir_la_valeur_affect\u00c3\u00a9e_\u00c3\u00a0_une_variable"
                 //"Modifier_la_valeur_de_une_variable"
                 //"Afficher_la_valeur_dune_variable"
-                //"Conna\u00c3\u00aetre_la_notion_de_variable"
+                "Conna\u00c3\u00aetre_la_notion_de_variable"
                 //"R\u00c3\u00a9cup\u00c3\u00a9rer_des_donn\u00c3\u00a9es_saisies_par_lutilisateur"
                 //"Conna\u00c3\u00aetre_la_notion_de_redirection_entr\u00c3\u00a9e_et_sortie"
                 //"Afficher_le_contenu_de_un_fichier_Unix"
