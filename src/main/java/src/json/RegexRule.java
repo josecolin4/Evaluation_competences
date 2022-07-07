@@ -22,10 +22,10 @@ public class RegexRule {
     private List<Double> errorWeights;
 
     @Expose
-    private List<Integer> nbOfPossibleGains;
+    private List<Double> nbOfPossibleGains;
 
     @Expose
-    private List<Integer> nbOfPossibleLoss;
+    private List<Double> nbOfPossibleLoss;
 
     public String getCompetencyName() {
         return competencyName;
@@ -38,13 +38,13 @@ public class RegexRule {
         return regex;
     }
 
-    public double getWeightForRegex(String regex) {
+    public double getWeightForRegex(String regexToFind) {
         if (weights == null) {
             // no weight specified
             return 0;
         }
 
-        int index = regex.indexOf(regex);
+        int index = regex.indexOf(regexToFind);
         if (index >= 0 && index < weights.size()) {
             return weights.get(index);
         } else {
@@ -53,26 +53,26 @@ public class RegexRule {
         }
     }
 
-    public double getErrorWeightForRegex(String regex) {
+    public double getErrorWeightForRegex(String regexToFind) {
         if (errorWeights == null) {
-            return getWeightForRegex(regex) / 2;  // default value
+            return getWeightForRegex(regexToFind) / 2;  // default value
         }
 
-        int index = regex.indexOf(regex);
+        int index = regex.indexOf(regexToFind);
         if (index >= 0 && index < errorWeights.size()) {
             return errorWeights.get(index);
         } else {
             // no error weight specified for this regex
-            return getWeightForRegex(regex) / 2;  // default value
+            return getWeightForRegex(regexToFind) / 2;  // default value
         }
     }
 
-    public int getNumberOfPossibleGainForRegex(String regex) {
+    public double getNumberOfPossibleGainForRegex(String regexToFind) {
         if (nbOfPossibleGains == null) {
             return 1; // default value
         }
 
-        int index = regex.indexOf(regex);
+        int index = regex.indexOf(regexToFind);
         if (index >= 0 && index < nbOfPossibleGains.size()) {
             return nbOfPossibleGains.get(index);
         } else {
@@ -80,12 +80,12 @@ public class RegexRule {
         }
     }
 
-    public int getNumberOfPossibleLossForRegex(String regex) {
+    public double getNumberOfPossibleLossForRegex(String regexToFind) {
         if (nbOfPossibleLoss == null) {
             return 2; // default value
         }
 
-        int index = regex.indexOf(regex);
+        int index = regex.indexOf(regexToFind);
         if (index >= 0 && index < nbOfPossibleLoss.size()) {
             return nbOfPossibleLoss.get(index);
         } else {
