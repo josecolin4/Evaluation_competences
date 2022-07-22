@@ -8,7 +8,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * A competency that is a summary of different skills and knowledge.
+ * A competency that is a summary of other competencies.
  */
 public class GlobalCompetency {
 
@@ -37,7 +37,7 @@ public class GlobalCompetency {
 
         for (Map.Entry<String, Double> evaluation : alreadyEvaluated.entrySet()) {
             if (competencies.contains(evaluation.getKey())) {
-                // TODO maybe try weighted average instead of a simple average
+                // TODO weighted average instead of a simple average
                 result += evaluation.getValue() / competencies.size();
             }
         }

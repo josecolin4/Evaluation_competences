@@ -5,6 +5,10 @@ import com.google.gson.annotations.Expose;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * List of regex associated with a competency and different parameters
+ * like weight for the rating, ...
+ */
 public class RegexRule {
 
     @Expose
@@ -40,7 +44,7 @@ public class RegexRule {
 
     public double getWeightForRegex(String regexToFind) {
         if (weights == null) {
-            // no weight specified
+            // no weights specified, default value
             return 0;
         }
 
@@ -48,48 +52,53 @@ public class RegexRule {
         if (index >= 0 && index < weights.size()) {
             return weights.get(index);
         } else {
-            // no weight specified for this regex
+            // no weight specified for this regex, default value
             return 0;
         }
     }
 
     public double getErrorWeightForRegex(String regexToFind) {
         if (errorWeights == null) {
-            return getWeightForRegex(regexToFind) / 2;  // default value
+            // no error weights specified, default value
+            return getWeightForRegex(regexToFind) / 2;
         }
 
         int index = regex.indexOf(regexToFind);
         if (index >= 0 && index < errorWeights.size()) {
             return errorWeights.get(index);
         } else {
-            // no error weight specified for this regex
-            return getWeightForRegex(regexToFind) / 2;  // default value
+            // no error weight specified for this regex, default value
+            return getWeightForRegex(regexToFind) / 2;
         }
     }
 
     public double getNumberOfPossibleGainForRegex(String regexToFind) {
         if (nbOfPossibleGains == null) {
-            return 1; // default value
+            // no nb of possible gains specified, default value
+            return 1;
         }
 
         int index = regex.indexOf(regexToFind);
         if (index >= 0 && index < nbOfPossibleGains.size()) {
             return nbOfPossibleGains.get(index);
         } else {
-            return 1;  // default value
+            // no nb of possible gains specified for this regex, default value
+            return 1;
         }
     }
 
     public double getNumberOfPossibleLossForRegex(String regexToFind) {
         if (nbOfPossibleLoss == null) {
-            return 2; // default value
+            // no nb of possible loss specified, default value
+            return 2;
         }
 
         int index = regex.indexOf(regexToFind);
         if (index >= 0 && index < nbOfPossibleLoss.size()) {
             return nbOfPossibleLoss.get(index);
         } else {
-            return 2;  // default value
+            // no nb of possible loss specified for this regex, default value
+            return 2;
         }
     }
 }

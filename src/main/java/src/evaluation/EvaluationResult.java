@@ -6,19 +6,15 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * Result of the evaluation on a single StudentData for a single competency
+ * Result of the evaluation on a set of traces for a single competency
  */
 public class EvaluationResult {
 
     /**
-     * For each regex of this evaluation, the list of matches, in the form of the whole script or the
-     * whole command that matched.
+     * For each regex of this evaluation, the list of matches.
      */
     private HashMap<String, List<Match>> matchesForRegex = new HashMap<>();
 
-    /**
-     * Init the number of matches at 0 for all regex
-     */
     public void init(List<String> allRegex) {
         for (String regex : allRegex) {
             matchesForRegex.put(regex, new ArrayList<>());

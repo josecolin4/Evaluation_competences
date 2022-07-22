@@ -1,6 +1,7 @@
 package src.json;
 
 import com.google.gson.annotations.Expose;
+import src.api.StudentTraces;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -49,6 +50,10 @@ public class StudentData {
         }
 
         return profile;
+    }
+
+    public StudentTraces getTraces() {
+        return new StudentTraces(scripts, commands);
     }
 
     public HashMap<String, Double> getHashMapProfile() {

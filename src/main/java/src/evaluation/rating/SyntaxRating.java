@@ -4,20 +4,16 @@ import src.evaluation.EvaluationResult;
 import src.evaluation.Match;
 import src.json.RegexRule;
 
-/**
- * Rate by the number of matches that also have a correct bash syntax.
- * We count up to 1 match per regex.
- */
 public class SyntaxRating implements RatingStrategy {
 
     @Override
-    public double rate(EvaluationResult result, RegexRule weights) {
+    public double rate(EvaluationResult result, RegexRule regexRule) {
         double rating = 0.0;
 
         for (String regex : result.getMatchesForRegex().keySet()) {
             for (Match match : result.getMatchesForRegex().get(regex)) {
                 if (match.isSyntaxCorrect()) {
-                    rating += weights.getWeightForRegex(regex);
+                    rating += regexRule.getWeightForRegex(regex);
                     break; // we count only one occurrence per regex
                 }
             }

@@ -10,5 +10,5 @@ public interface RatingStrategy {
      * @param result
      * @return
      */
-    double rate(EvaluationResult result, RegexRule weights);
+    double rate(EvaluationResult result, RegexRule regexRule);
 }

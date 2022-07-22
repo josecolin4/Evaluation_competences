@@ -67,7 +67,7 @@ public class TestAllStudents {
                 data.setProfile(data.getProfile().stream().filter(studentCompetency -> toEvaluate.contains(studentCompetency.getName())).collect(Collectors.toList()));
 
                 Evaluation simpleEvaluation = new EvaluationRegex();
-                HashMap<String, Double> generatedProfile = simpleEvaluation.evaluate(data, toEvaluate, false, new SyntaxWithErrorRating());
+                HashMap<String, Double> generatedProfile = simpleEvaluation.evaluate(data.getTraces(), toEvaluate, new SyntaxWithErrorRating());
                 HashMap<String, Double> correctProfile = data.getHashMapProfile();
 
                 try {
@@ -77,7 +77,7 @@ public class TestAllStudents {
 
                         if (error.get(competency) > minError) {
                             nbOFStudentAboveMinError.put(competency, nbOFStudentAboveMinError.get(competency) + 1);
-                            System.out.println(data.getName() + " : session " + session + " : " + competency + " : " + error.get(competency));
+                            System.out.println(data.getName() + " : session " + session + " : " + competency + " : error : " + error.get(competency));
                         }
                     }
                     nbProfileTested++;

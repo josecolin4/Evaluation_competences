@@ -27,8 +27,7 @@ public class Test1Competency1Student {
         data.setProfile(data.getProfile().stream().filter(studentCompetency -> studentCompetency.getName().equals(toEvaluate)).collect(Collectors.toList()));
 
         Evaluation simpleEvaluation = new EvaluationRegex();
-        HashMap<String, Double> generatedProfile = simpleEvaluation.evaluate(data, new ArrayList<>(Collections.singleton(toEvaluate)),
-                true, new SyntaxRating());
+        HashMap<String, Double> generatedProfile = simpleEvaluation.evaluate(data.getTraces(), new ArrayList<>(Collections.singleton(toEvaluate)), new SyntaxRating());
         HashMap<String, Double> correctProfile = data.getHashMapProfile();
 
         ResultAnalyser.mesureError(generatedProfile, correctProfile, true);

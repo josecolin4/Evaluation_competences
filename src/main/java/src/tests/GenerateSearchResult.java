@@ -14,13 +14,13 @@ public class GenerateSearchResult {
 
     public static void main(String[] args) {
         String competencyName = "Conna\u00c3\u00aetre_la_notion_de_variable";
-        List<String> allRegex = JsonUtils.getRegexForCompetenciesFromJson().getAllRegex().get(competencyName).getRegexs();
+        List<String> allRegex = JsonUtils.getCompetencyFramework().getAllRegexRules().get(competencyName).getRegexs();
 
         for (int session = 1; session <= 4; session++) {
 
             for (StudentData data : JsonUtils.getAllStudentData(session)) {
                 // generate EvaluationResult
-                EvaluationResult evaluationResult = RegexUtils.searchForAllMatches(allRegex, data, false);
+                EvaluationResult evaluationResult = RegexUtils.searchForAllMatches(allRegex, data.getTraces());
                 List<Integer> results = evaluationResult.getFormatedRegexMatchInfo();
 
                 // generate json with results and grade

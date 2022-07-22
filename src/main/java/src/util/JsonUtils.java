@@ -3,7 +3,7 @@ package src.util;
 import com.google.gson.FieldNamingPolicy;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-import src.json.RegexForCompetencies;
+import src.json.CompetencyFramework;
 import src.json.StudentCompetency;
 import src.json.StudentData;
 
@@ -18,7 +18,7 @@ public class JsonUtils {
     private static final GsonBuilder gsonBuilder;
     private static Gson gson;
 
-    private static RegexForCompetencies regexForCompetencies;
+    private static CompetencyFramework regexForCompetencies;
 
     static {
         gsonBuilder = new GsonBuilder();
@@ -57,14 +57,14 @@ public class JsonUtils {
         return data;
     }
 
-    public static RegexForCompetencies getRegexForCompetenciesFromJson() {
+    public static CompetencyFramework getCompetencyFramework() {
         if (regexForCompetencies != null) {
             return regexForCompetencies;
         }
 
         File file = new File("src/main/resources/regex_for_competencies.json");
         try (FileReader fileReader = new FileReader(file)) {
-            regexForCompetencies = gson.fromJson(fileReader, RegexForCompetencies.class);
+            regexForCompetencies = gson.fromJson(fileReader, CompetencyFramework.class);
             return regexForCompetencies;
         } catch (IOException e) {
             throw new RuntimeException(e);

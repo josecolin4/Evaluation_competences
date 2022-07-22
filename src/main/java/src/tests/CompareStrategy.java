@@ -51,7 +51,7 @@ public class CompareStrategy {
                     data.setProfile(data.getProfile().stream().filter(studentCompetency -> toEvaluate.contains(studentCompetency.getName())).collect(Collectors.toList()));
 
                     Evaluation simpleEvaluation = new EvaluationRegex();
-                    HashMap<String, Double> generatedProfile = simpleEvaluation.evaluate(data, toEvaluate, false, strategy);
+                    HashMap<String, Double> generatedProfile = simpleEvaluation.evaluate(data.getTraces(), toEvaluate, strategy);
                     HashMap<String, Double> correctProfile = data.getHashMapProfile();
 
                     try {

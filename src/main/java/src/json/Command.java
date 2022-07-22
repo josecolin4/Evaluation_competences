@@ -10,14 +10,7 @@ public class Command {
     @Expose
     private String args;
 
-    @Expose
-    private int score;
-
-    public String getCommand() {
+    public String getCode() {
         return command + " " + args;
-    }
-
-    public boolean getScore() {
-        return score == 1;
     }
 }

@@ -1,8 +1,9 @@
 package src.evaluation.utils;
 
 import src.evaluation.EvaluationResult;
+import src.api.StudentTraces;
 import src.json.Command;
-import src.json.StudentData;
+import src.json.Script;
 import src.util.BashUtils;
 
 import java.util.List;
@@ -11,24 +12,21 @@ import java.util.regex.Pattern;
 
 public class RegexUtils {
 
-    public static EvaluationResult searchForAllMatches(List<String> allRegex, StudentData data, boolean printWhenFound) {
+    /**
+     * Parse through the traces to look for match for all the regex.
+     */
+    public static EvaluationResult searchForAllMatches(List<String> allRegex, StudentTraces traces) {
         EvaluationResult result = new EvaluationResult();
         result.init(allRegex);
         for (String regex : allRegex) {
-
-            for (List<String> script : data.getScripts()) {
-                String code = "";
-                for (String line : script) {
-                    code += line;
-                }
-                if (search(regex, code, printWhenFound)) {
-                    result.addMatchForRegex(regex, code);
+            for (Script script : traces.getScripts()) {
+                if (search(regex, script.getCode())) {
+                    result.addMatchForRegex(regex, script.getCode());
                 }
             }
-
-            for (Command command : data.getCommands()) {
-                if (search(regex, command.getCommand(), printWhenFound)) {
-                    result.addMatchForRegex(regex, command.getCommand());
+            for (Command command : traces.getCommands()) {
+                if (search(regex, command.getCode())) {
+                    result.addMatchForRegex(regex, command.getCode());
                 }
             }
         }
@@ -37,22 +35,15 @@ public class RegexUtils {
         return result;
     }
 
-    public static boolean search(String regex, String code, boolean printWhenFound) {
+    public static boolean search(String regex, String code) {
         code = BashUtils.removeUselessWhiteSpace(code);
 
-        // remove \n to avoid problems with matcher
+        // change \n to ; to have a single type of line separator
         code = code.replace("\n", ";");
 
         Pattern pattern = Pattern.compile(regex);
         Matcher matcher = pattern.matcher(code);
 
-        if (matcher.matches()) {
-            if (printWhenFound) {
-                System.out.println(regex + "matched with command : " + code);
-            }
-            return true;
-        } else {
-            return false;
-        }
+        return matcher.matches();
     }
 }

@@ -2,7 +2,6 @@ package src.tests;
 
 import src.evaluation.Evaluation;
 import src.evaluation.EvaluationRegex;
-import src.evaluation.rating.SyntaxRating;
 import src.evaluation.rating.SyntaxWithErrorRating;
 import src.json.RegexRule;
 import src.json.StudentData;
@@ -23,7 +22,7 @@ public class GenerateGlobalProfile {
     }
 
     public static void generateGlobalProfile(String studentName) {
-        HashMap<String, RegexRule> regexForCompetencies = JsonUtils.getRegexForCompetenciesFromJson().getAllRegex();
+        HashMap<String, RegexRule> regexForCompetencies = JsonUtils.getCompetencyFramework().getAllRegexRules();
         List<HashMap<String, Double>> allProfiles = new ArrayList<>();
 
         // generate all for this student
@@ -35,8 +34,8 @@ public class GenerateGlobalProfile {
                     .toList().get(0);
 
             Evaluation simpleEvaluation = new EvaluationRegex();
-            allProfiles.add(simpleEvaluation.evaluate(data,
-                    regexForCompetencies.keySet().stream().toList(), false, new SyntaxWithErrorRating()));
+            allProfiles.add(simpleEvaluation.evaluate(data.getTraces(),
+                    regexForCompetencies.keySet().stream().toList(), new SyntaxWithErrorRating()));
         }
 
         // generate global profile from all profiles
