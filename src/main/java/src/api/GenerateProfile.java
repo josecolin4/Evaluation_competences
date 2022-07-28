@@ -11,8 +11,8 @@ import java.util.HashMap;
 
 public class GenerateProfile {
 
-    private static final RatingStrategy RATING_STRATEGY = new SyntaxWithErrorRating();
     private static final Evaluation EVALUATION_METHOD = new EvaluationRegex();
+    private static final RatingStrategy RATING_STRATEGY = new SyntaxWithErrorRating();
     private static final CompetencyFramework COMPETENCY_FRAMEWORK = JsonUtils.getCompetencyFramework();
 
     public static StudentProfile generate(String studentName, StudentTraces traces) {
